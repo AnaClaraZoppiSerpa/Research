@@ -48,4 +48,5 @@ def do_it():
     #print_lat(l, 6, 4)
     pandas_lat(l)
 
-do_it()
+if __name__ == "__main__":
+    do_it()
