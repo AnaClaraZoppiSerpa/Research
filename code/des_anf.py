@@ -210,7 +210,7 @@ def get_poly(inputs, outputs):
     poly = ""
     for v in inputs:
         if outputs[v]:
-            poly += get_term(v) + "+"
+            poly += get_term(v) + "+\n"
 
     poly
     return poly[:-1]
@@ -283,7 +283,21 @@ def small_should_sum_test():
         print(v)
         print(wished_sums[v])
 
+def monomial_count(anf_string):
+    mons = anf_string.split()
+    print("Há", len(mons), "monômios")
+    max = 0
+    mon = ""
+    for s in mons:
+        if len(s) > max:
+            max = len(s)
+            mon = s
+    print("Maior monômio:", mon)
+
+symbol = 'x_'
 for s in [1, 2, 3, 4, 5, 6, 7, 8]:
     for y in [1, 2, 3, 4]:
         print("Encontrando ANF de y", y, "da S-Box", s, "do DES:")
-        print(get_anf_from_sbox_fi(s, y))
+        anf_string = get_anf_from_sbox_fi(s, y)
+        #print(anf_string)
+        monomial_count(anf_string)

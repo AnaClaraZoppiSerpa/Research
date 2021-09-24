@@ -24,7 +24,7 @@ def get_term(binary_string):
     i = 1
     for bit in binary_string:
         if bit == "1":
-            term += "x_"+str(i)
+            term += symbol+str(i)
         i += 1
 
     if term == "":
@@ -36,7 +36,7 @@ def get_poly(inputs, outputs):
     poly = ""
     for v in inputs:
         if outputs[v]:
-            poly += get_term(v) + "+"
+            poly += get_term(v) + "+\n"
 
     poly
     return poly[:-1]
@@ -75,25 +75,45 @@ def get_vs_and_fis_from_sbox(which_sbox, which_fi):
 
     return vs, fis
 
+def term_count(anf_string):
+    for i in range(1, 9):
+        print(symbol+str(i), 'aparece', anf_string.count(symbol+str(i)), 'vezes')
+
+def monomial_count(anf_string):
+    mons = anf_string.split()
+    print("Há", len(mons), "monômios")
+    max = 0
+    mon = ""
+    for s in mons:
+        if len(s) > max:
+            max = len(s)
+            mon = s
+    print("Maior monômio:", mon)
+
 def validation(anf_string):
     # Difusão completa
-    print('x_1 aparece?', 'x_1' in anf_string)
-    print('x_2 aparece?', 'x_2' in anf_string)
-    print('x_3 aparece?', 'x_3' in anf_string)
-    print('x_4 aparece?', 'x_4' in anf_string)
-    print('x_5 aparece?', 'x_5' in anf_string)
-    print('x_6 aparece?', 'x_6' in anf_string)
-    print('x_7 aparece?', 'x_7' in anf_string)
-    print('x_8 aparece?', 'x_8' in anf_string)
+    print(symbol+'1 aparece?', symbol+'1' in anf_string)
+    print(symbol+'2 aparece?', symbol+'2' in anf_string)
+    print(symbol+'3 aparece?', symbol+'3' in anf_string)
+    print(symbol+'4 aparece?', symbol+'4' in anf_string)
+    print(symbol+'5 aparece?', symbol+'5' in anf_string)
+    print(symbol+'6 aparece?', symbol+'6' in anf_string)
+    print(symbol+'7 aparece?', symbol+'7' in anf_string)
+    print(symbol+'8 aparece?', symbol+'8' in anf_string)
+    term_count(anf_string)
 
 output_bit = int(sys.argv[1])
 
+symbol = 'x_'
 print("Encontrando ANF de y", output_bit, "da S-Box", '', "do SAFER:")
 sbox_anf = get_anf_from_sbox_fi('', output_bit)
-print(sbox_anf)
-validation(sbox_anf)
+#print(sbox_anf)
+#validation(sbox_anf)
+monomial_count(sbox_anf)
 
-print("Encontrando ANF de y", output_bit, "da S-Box", 'inv', "do SAFER:")
+symbol = 'y_'
+print("Encontrando ANF de x", output_bit, "da S-Box", 'inv', "do SAFER:")
 inv_anf = get_anf_from_sbox_fi('inv', output_bit)
-print(inv_anf)
-validation(inv_anf)
+#print(inv_anf)
+#validation(inv_anf)
+monomial_count(inv_anf)
