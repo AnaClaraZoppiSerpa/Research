@@ -10,7 +10,7 @@ for i in range(256):
 
 def get_sbox_result(which_sbox, input_int):
     if which_sbox == 'inv':
-        return safer_sbox[input_int]
+        return safer_inv_sbox[input_int]
     if which_sbox == '':
         return safer_sbox[input_int]
 
@@ -107,13 +107,13 @@ output_bit = int(sys.argv[1])
 symbol = 'x_'
 print("Encontrando ANF de y", output_bit, "da S-Box", '', "do SAFER:")
 sbox_anf = get_anf_from_sbox_fi('', output_bit)
-#print(sbox_anf)
+print(sbox_anf)
 #validation(sbox_anf)
-monomial_count(sbox_anf)
+#monomial_count(sbox_anf)
 
 symbol = 'y_'
 print("Encontrando ANF de x", output_bit, "da S-Box", 'inv', "do SAFER:")
 inv_anf = get_anf_from_sbox_fi('inv', output_bit)
-#print(inv_anf)
+print(inv_anf)
 #validation(inv_anf)
-monomial_count(inv_anf)
+#monomial_count(inv_anf)
