@@ -2,6 +2,8 @@ from aes_sbox_aux import *
 import numpy as np
 import pandas as pd
 import sys
+import seaborn as sns
+import matplotlib.pylab as plt
 
 if sys.argv[1] == 'inv':
     S = aes_inv_sbox
@@ -34,9 +36,13 @@ def print_ddt(ddt):
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
 
-    my_df.to_csv(csv_path)
+    #my_df.to_csv(csv_path)
 
     print(my_df)
+
+def heatmap(ddt):
+    ax = sns.heatmap(ddt, linewidth=0.5, vmax=2, cmap="YlGnBu")
+    plt.show()
 
 def differential_uniformity(ddt):
     maximum = 0
@@ -53,4 +59,5 @@ def differential_uniformity(ddt):
 
 d = get_ddt()
 print_ddt(d)
+heatmap(d)
 print("Differential uniformity = ", differential_uniformity(d))

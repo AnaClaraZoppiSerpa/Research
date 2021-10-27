@@ -1,6 +1,11 @@
 import sys
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pylab as plt
 
 dft = [ [ 0 for i in range(16) ] for j in range(64) ]
+csv_path = "../results/des_ddt"+sys.argv[1]+".csv"
 
 S = [
         #S1
@@ -126,9 +131,43 @@ def get_dft(which_sbox):
 
             dft[input_diff][output_diff] += 1
 
+def save_csv(ddt):
+    A = np.array(ddt)
+    df_cols = []
+    for i in range(2**4):
+        df_cols.append(hex(i))
+
+    my_df = pd.DataFrame(A, columns=df_cols)
+
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_rows', None)
+
+    my_df.to_csv(csv_path)
+
+    print(my_df)
+
+def differential_uniformity(ddt):
+    maximum = 0
+    maxid = 0
+    maxod = 0
+    for id in range(2**6):
+        for od in range(2**4):
+            if id != 0 or od != 0:
+                if ddt[id][od] > maximum:
+                    maximum = ddt[id][od]
+                    maxid = id
+                    maxod = od
+    return maximum, maxid, hex(maxod)
+
+def heatmap(ddt):
+    ax = sns.heatmap(ddt, linewidth=0.5, vmax=16, cmap="YlGnBu")
+    plt.show()
+
 get_dft(int(sys.argv[1]))
 print_dft()
-
+save_csv(dft)
+print("Differential uniformity = ", differential_uniformity(dft))
+heatmap(dft)
 
 """
 00 00 00

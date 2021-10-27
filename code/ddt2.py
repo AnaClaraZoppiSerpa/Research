@@ -1,4 +1,6 @@
 from sbox_aux import *
+import seaborn as sns
+import matplotlib.pylab as plt
 
 def get_s_inputs(k, p):
     # 1 2 3 4 5 6 7 8 9 10 (formato de p e p*)
@@ -67,8 +69,28 @@ def ddt_to_csv(sbox1, sbox2, joint_ddt, key):
     #my_df.index += 1
     my_df.to_csv("ddt2/des_joint_ddt_"+str(sbox1)+"_"+str(sbox2)+"_"+str(key)+".csv")
 
+def heatmap(ddt, maxval):
+    ax = sns.heatmap(ddt, linewidth=0.5, vmax=maxval, cmap="YlGnBu")
+    plt.show()
+
+def differential_uniformity(ddt):
+    maximum = 0
+    maxid = 0
+    maxod = 0
+    for id in range(2**10):
+        for od in range(2**8):
+            if id != 0 or od != 0:
+                if ddt[id][od] > maximum:
+                    maximum = ddt[id][od]
+                    maxid = id
+                    maxod = od
+    return maximum, maxid, hex(maxod)
+
 ddt = fill_ddt(int(sys.argv[1]), int(sys.argv[2]))
 #print_ddt_column_important_ids(ddt, int(sys.argv[1]))
 for k in range(2**4):
     #ddt_to_csv(8, 1, ddt, k)
     print_ddt_column_important_ids(ddt, 0)
+    du = differential_uniformity(ddt[k])
+    print("Differential uniformity for k =", k, "is", du)
+    #heatmap(ddt[k], du[0])
