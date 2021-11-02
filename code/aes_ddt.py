@@ -41,7 +41,7 @@ def print_ddt(ddt):
     print(my_df)
 
 def heatmap(ddt):
-    ax = sns.heatmap(ddt, linewidth=0.5, vmax=2, cmap="YlGnBu")
+    ax = sns.heatmap(ddt, linewidth=0.5, vmax=4, cmap="YlGnBu")
     plt.show()
 
 def differential_uniformity(ddt):
