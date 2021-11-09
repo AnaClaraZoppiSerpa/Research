@@ -21,15 +21,15 @@ def compute_linear_expression(x, mask, bits):
     return xor
 
 def compute_lat(input_size, output_size, initial_value, sbox):
-    lat = [ [initial_value for i in range(1, 2**output_size)] for j in range(1, 2**input_size) ]
+    lat = [ [initial_value for i in range(0, 2**output_size)] for j in range(0, 2**input_size) ]
 
-    for mask_a in range(1, 2**input_size): # input mask
-        for mask_b in range(1, 2**output_size): # output mask
+    for mask_a in range(0, 2**input_size): # input mask
+        for mask_b in range(0, 2**output_size): # output mask
             for x in range(2**input_size): # input
                 left_side = compute_linear_expression(x, mask_a, input_size)
                 right_side = compute_linear_expression(get_aes_sbox_result(sbox, x), mask_b, output_size)
                 if left_side == right_side:
-                    lat[mask_a-1][mask_b-1] += 1
+                    lat[mask_a][mask_b] += 1
     return lat
 
 def print_lat(lat, input_size, output_size):
@@ -44,14 +44,14 @@ def heatmap(lat):
 def pandas_lat(lat):
     A = np.array(lat)
     df_cols = []
-    for i in range(1, 2**8):
+    for i in range(0, 2**8):
         df_cols.append(str(i))
 
     df = pd.DataFrame(A, columns=df_cols)
-    df.index += 1
+    #df.index += 1
     pd.set_option('display.max_rows', None)
     print(df)
-    df.to_csv("../results/LAT/no_zero_index_sbox"+sys.argv[1]+".csv")
+    df.to_csv("../results/LAT/sbox"+sys.argv[1]+".csv")
 
 def do_it():
     l = compute_lat(8, 8, -(2**8)/2, sys.argv[1])
