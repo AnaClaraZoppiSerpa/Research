@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{Whirlwind2010}
+Paulo S. L.~M. Barreto, Ventzislav Nikov, Svetla Nikova, Vincent Rijmen, and
+  Elmar Tischhauser.
+\newblock Whirlwind: a new cryptographic hash function.
+\newblock {\em Des. Codes Cryptogr.}, 56(2-3):141--162, 2010.
+
+\bibitem{ANUBIS2000}
+Paulo S. L.~M. Barreto and Vincent Rijmen.
+\newblock The {ANUBIS} block cipher.
+\newblock In {\em First NESSIE Workshop, Heverlee, Belgium}, 2000.
+
+\bibitem{KHAZAD2000}
+Paulo S. L.~M. Barreto and Vincent Rijmen.
+\newblock The {KHAZAD Legacy-Level} block cipher.
+\newblock In {\em First NESSIE Workshop, Heverlee, Belgium}, 2000.
+
+\bibitem{barreto2007curupira}
+PSLM Barreto and M~Simplicio.
+\newblock Curupira, a block cipher for constrained platforms.
+\newblock {\em Anais do 25o Simpsio Brasileiro de Redes de Computadores e
+  Sistemas Distribudos-SBRC}, 1:61--74, 2007.
+
+\bibitem{Hierocrypt2000}
+Toshiba Corporation.
+\newblock Specification of {Hierocrypt-3}.
+\newblock In {\em First NESSIE Workshop, Heverlee, Belgium}, 2000.
+
+\bibitem{SQUARE1997}
+Joan Daemen, Lars~R. Knudsen, and Vincent Rijmen.
+\newblock The block cipher square.
+\newblock In Eli Biham, editor, {\em Fast Software Encryption, 4th
+  International Workshop, {FSE} '97, Haifa, Israel, January 20-22, 1997,
+  Proceedings}, volume 1267 of {\em Lecture Notes in Computer Science}, pages
+  149--165. Springer, 1997.
+
+\bibitem{BKSQ1998}
+Joan Daemen and Vincent Rijmen.
+\newblock The block cipher {BKSQ}.
+\newblock In Jean{-}Jacques Quisquater and Bruce Schneier, editors, {\em Smart
+  Card Research and Applications, This International Conference, {CARDIS} '98,
+  Louvain-la-Neuve, Belgium, September 14-16, 1998, Proceedings}, volume 1820
+  of {\em Lecture Notes in Computer Science}, pages 236--245. Springer, 1998.
+
+\bibitem{DesignOfRijndael2002}
+Joan Daemen and Vincent Rijmen.
+\newblock {\em The Design of Rijndael: {AES} - The Advanced Encryption
+  Standard}.
+\newblock Information Security and Cryptography. Springer, 2002.
+
+\bibitem{Grostl2009}
+Praveen Gauravaram, Lars~R. Knudsen, Krystian Matusiewicz, Florian Mendel,
+  Christian Rechberger, Martin Schl{\"{a}}ffer, and S{\o}ren~S. Thomsen.
+\newblock Gr{\o}stl - a {SHA-3} candidate.
+\newblock In Helena Handschuh, Stefan Lucks, Bart Preneel, and Phillip Rogaway,
+  editors, {\em Symmetric Cryptography, 11.01. - 16.01.2009}, volume 09031 of
+  {\em Dagstuhl Seminar Proceedings}. Schloss Dagstuhl - Leibniz-Zentrum
+  f{\"{u}}r Informatik, Germany, 2009.
+
+\bibitem{SloaneBook}
+F.J. MacWilliams and N.J.A. Sloane.
+\newblock {\em The Theory of Error-Correcting Codes}.
+\newblock North-holland Publishing Company, 2nd edition, 1978.
+
+\bibitem{panario2007topicos}
+A.M. Masuda and D.~Panario.
+\newblock {\em Topicos de corpos finitos com aplicacoes em criptografia e
+  teoria de codigos}.
+\newblock Publica{\c{c}}{\~o}es matem{\'a}ticas. IMPA, 2007.
+
+\bibitem{Handbook1996}
+Alfred~J. Menezes, Scott~A. Vanstone, and Paul C.~Van Oorschot.
+\newblock {\em Handbook of Applied Cryptography}.
+\newblock CRC Press, Inc., USA, 1st edition, 1996.
+
+\bibitem{panario2013handbook}
+G.L. Mullen and D.~Panario.
+\newblock {\em Handbook of Finite Fields}.
+\newblock Discrete Mathematics and Its Applications. CRC Press, 2013.
+
+\bibitem{SHARK1996}
+Vincent Rijmen, Joan Daemen, Bart Preneel, Antoon Bosselaers, and Erik~De Win.
+\newblock The cipher {SHARK}.
+\newblock In Dieter Gollmann, editor, {\em Fast Software Encryption, Third
+  International Workshop, Cambridge, UK, February 21-23, 1996, Proceedings},
+  volume 1039 of {\em Lecture Notes in Computer Science}, pages 99--111.
+  Springer, 1996.
+
+\end{thebibliography}
