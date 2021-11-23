@@ -54,6 +54,9 @@ def add_polynomials(p, q, modulus):
         result.append(modular_addition(p_coeff, q_coeff, modulus))
     return result
 
+def multiply_polynomials(poly1, poly2, mod_poly, mod_coeff):
+    pass
+
 def generic_poly_str(p):
     degree = 0
     coeff = 0
