@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ORDER} \PYG{o}{=} \PYG{l+m+mi}{4} \PYG{c+c1}{\PYGZsh{}8}
+\PYG{n}{TWO\PYGZus{}ORDER\PYGZus{}POWER} \PYG{o}{=} \PYG{l+m+mi}{16} \PYG{c+c1}{\PYGZsh{}256}
+
+\PYG{n}{SHARK\PYGZus{}POLY} \PYG{o}{=}    \PYG{l+m+mh}{0x1f5}
+\PYG{n}{KHAZAD\PYGZus{}POLY} \PYG{o}{=}   \PYG{l+m+mb}{0b100011101}
+\PYG{n}{SQUARE\PYGZus{}POLY} \PYG{o}{=}   \PYG{l+m+mb}{0b111110101}
+\PYG{n}{BKSQ\PYGZus{}POLY} \PYG{o}{=} \PYG{l+m+mb}{0b111110101}
+\PYG{n}{RIJNDAEL\PYGZus{}POLY} \PYG{o}{=} \PYG{l+m+mb}{0b100011011}
+\PYG{n}{HIEROCRYPT\PYGZus{}POLY} \PYG{o}{=} \PYG{l+m+mh}{0x163}
+
+\PYG{n}{DEGREE\PYGZus{}LIMIT\PYGZus{}MASK} \PYG{o}{=} \PYG{l+m+mb}{0b10000}\PYG{c+c1}{\PYGZsh{}0x100 pra grau 8}
+\PYG{n}{IRREDUCIBLE\PYGZus{}POLY} \PYG{o}{=} \PYG{n}{HIEROCRYPT\PYGZus{}POLY}
+\end{Verbatim}

@@ -182,6 +182,10 @@ $$
 
 Note that circulant matrices can be defined by just one row, since all the other rows are cyclical shifts of the first. Therefore, they can be denoted as $circ(a_0, a_1, ..., a_{n-1})$. In the case of left circulant and right circulant matrices, respectively, $lcirc(a_0, ..., a_{n-1})$ and $rcirc(a_0, ..., a_{n-1})$. For example, matrices (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael}), used in the Rijndael cipher, can be denoted as $rcirc(02_x, 03_x, 01_x, 01_x)$ and $rcirc(0e_x, 0b_x, 0d_x, 09_x)$.
 
+\begin{definition}[Transpose matrix]
+The transpose of a matrix $A$, denoted by $A^T$, is the matrix such that $A^T[I][j] = A[j][I]$. In other words, it is the matrix obtained by writing the rows of $A$ as columns. Note that, if $A$ is an $m \times n$ matrix, then $A^T$ will be $n \times m$.
+\end{definition}
+
 \begin{definition}[Submatrix]
 Given a matrix $M$, a submatrix of $M$ is the matrix obtained after removing $z$ rows and columns of $M$, $z \geq 1$, provided that there are sufficient rows (and columns) to be removed.
 \end{definition}
@@ -330,15 +334,17 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 % Tavares
 1997 & 8 & Cauchy & yes & \shortstack{\cite{Youssef1997}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 240 & 344 & \ref{mat:tavares} \\ \hline
 % BKSQ
-1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ \cite{BKSQ1998}} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & 9 & 9 & \shortstack{\\ \ref{mat:bksq} \\ \ref{mat:bksq-inv}} \\ \hline
+1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ \cite{BKSQ1998}} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{9 \\39} & \shortstack{9 \\63} & \shortstack{\\ \ref{mat:bksq} \\ \ref{mat:bksq-inv}} \\ \hline
 % Rijndael
-1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES) \cite{DesignOfRijndael2002}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16,\\40} & \shortstack{8, \\48} & \shortstack{\\ \ref{mat:rijndael}, \\ \ref{mat:rijndael-inv}} \\ \hline
+1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES) \cite{DesignOfRijndael2002}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16 \\40} & \shortstack{8 \\48} & \shortstack{\\ \ref{mat:rijndael} \\ \ref{mat:rijndael-inv}} \\ \hline
 % KHAZAD
 2000 & 8 & Hadamard & yes & \shortstack{KHAZAD \cite{KHAZAD2000}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 112 & 120 & \ref{mat:khazad} \\ \hline
 % ANUBIS
 2000 & 4 & Hadamard & yes & \shortstack{ANUBIS \cite{ANUBIS2000}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & \ref{mat:anubis} \\ \hline
 % Hierocrypt
-2000 & ord & type & inv & \shortstack{Hierocrypt-3 \cite{Hierocrypt2000}} & poly & xor & xtime & mat \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3 \cite{Hierocrypt2000}, \\ Hierocrypt-L1 \cite{Hierocrypt-L1-2000} \\ (low level)} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{\ref{mat:hierocrypt-3-lower} \\ \ref{mat:hierocrypt-3-lower-inv}} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3 \cite{Hierocrypt2000} \\ (high level)} & $GF(2^4)$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{\ref{mat:hierocrypt-3-higher} \\ \ref{mat:hierocrypt-3-higher-inv}} \\ \hline
+2000 & 4 & --- & no & \shortstack{Hierocrypt-L1 \cite{Hierocrypt-L1-2000} \\ (high level)} & $GF(2^4)$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{\ref{mat:hierocrypt-l1-higher} \\ \ref{mat:hierocrypt-l1-higher-inv}} \\ \hline
 % Curupira
 2007 & ord & type & inv & \shortstack{Curupira \cite{barreto2007curupira}} & poly & xor & xtime & mat \\ \hline
 % Grostl
@@ -483,7 +489,9 @@ x^3+x+1 & x^3+x^2+1 & x^3+1 & x^3+x^2+x
 \end{bmatrix}
 \end{equation}
 
-Matrix (\ref{mat:bksq}) is used in the BKSQ \cite{BKSQ1998} cipher. It is circulant.
+Furthermore, it is interesting to note that Rijndael's matrix (\ref{mat:rijndael}) is the transpose of SQUARE's matrix (\ref{mat:square}) and this also happens to the inverses (matrix \ref{mat:square-inv} is the transpose of \ref{mat:rijndael-inv}).
+
+Matrices (\ref{mat:bksq}) and its inverse (\ref{mat:bksq-inv}) is used in the BKSQ \cite{BKSQ1998} cipher. They are circulant.
 
 \begin{equation}\label{mat:bksq}
 \begin{bmatrix}
@@ -493,11 +501,89 @@ Matrix (\ref{mat:bksq}) is used in the BKSQ \cite{BKSQ1998} cipher. It is circul
 \end{bmatrix}
 \end{equation}
 
-%\begin{equation}\label{mat:bksq-inv}
+\begin{equation}\label{mat:bksq-inv}
+\begin{bmatrix}
+ac_x & ad_x & ad_x\\
+ad_x & ac_x & ad_x\\
+ad_x & ad_x & ac_x
+\end{bmatrix}
+\end{equation}
+
+The Hierocrypt-3 cipher makes use of two MDS matrices, one for lower level diffusion and another for higher level diffusion on the cipher, which follows a nested Substitution Permutation Network design (for more detail the reader may refer to \cite{Hierocrypt2000}). Matrix (\ref{mat:hierocrypt-3-lower}) and its inverse (\ref{mat:hierocrypt-3-lower-inv}) are used for lower level diffusion. (\ref{mat:hierocrypt-3-higher}) and (\ref{mat:hierocrypt-3-higher-inv}) (the inverse) are used for higher level diffusion. It is worth noting that, for lower level diffusion, the \begin{listing}[H]
+	\caption{caption}
+	\label{lst:code_mds_field_args}
+	\inputminted{py}{../../code/mds/field_args.py}
+\end{listing}finite field is $GF(2^8)$, whilst, for higher level diffusion, the authors choose $GF(2^4)$.
+
+\begin{equation}\label{mat:hierocrypt-3-lower}
+\begin{bmatrix}
+c4_x & 65_x & c8_x & 8b_x\\
+8b_x & c4_x & 65_x & c8_x\\
+c8_x & 8b_x & c4_x & 65_x\\
+65_x & c8_x & 8b_x & c4_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-lower-inv}
+\begin{bmatrix}
+82_x & c4_x & 34_x & f6_x\\
+f6_x & 82_x & c4_x & 34_x\\
+34_x & f6_x & 82_x & c4_x\\
+c4_x & 34_x & f6_x & 82_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-higher}
+\begin{bmatrix}
+05_x & 05_x & 0a_x & 0e_x\\
+0e_x & 05_x & 05_x & 0a_x\\
+0a_x & 0e_x & 05_x & 05_x\\
+05_x & 0a_x & 0e_x & 05_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-higher-inv}
+\begin{bmatrix}
+0b_x & 0e_x & 0e_x & 06_x\\
+06_x & 0b_x & 0e_x & 0e_x\\
+0e_x & 06_x & 0b_x & 0e_x\\
+0e_x & 0e_x & 06_x & 0b_x
+\end{bmatrix}
+\end{equation}
+
+The Hierocrypt-L1 cipher too uses matrix (\ref{mat:hierocrypt-3-lower}) and the inverse (\ref{mat:hierocrypt-3-lower-inv}) in its lower diffusion layer. However, for the higher layer, (\ref{mat:hierocrypt-l1-higher}) and (\ref{mat:hierocrypt-l1-higher-inv}) (inverse) are used. Analogously to Hierocrypt-3, the higher layer uses $GF(2^4)$.
+
+\begin{equation}\label{mat:hierocrypt-l1-higher}
+\begin{bmatrix}
+05_x & 07_x\\
+0a_x & 0b_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-l1-higher-inv}
+\begin{bmatrix}
+0c_x & 0a_x\\
+05_x & 0b_x
+\end{bmatrix}
+\end{equation}
+
+%\begin{equation}\label{mat:hierocrypt-3-higher-16x16}
 %\begin{bmatrix}
-%ac_x & ad_x & ad_x\\
-%ad_x & ac_x & ad_x\\
-%ad_x & ad_x & ac_x
+%1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 1\\
+%1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1\\
+%1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1\\
+%0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0\\
+%1 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1\\
+%0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0\\
+%0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0\\
+%1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0\\
+%1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1\\
+%1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0\\
+%1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+%1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1\\
+%1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0\\
+%0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1
 %\end{bmatrix}
 %\end{equation}
 

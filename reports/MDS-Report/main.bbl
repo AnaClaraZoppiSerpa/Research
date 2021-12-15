@@ -50,6 +50,11 @@ Toshiba Corporation.
 \newblock Specification of {Hierocrypt-3}.
 \newblock In {\em First NESSIE Workshop, Heverlee, Belgium}, 2000.
 
+\bibitem{Hierocrypt-L1-2000}
+Toshiba Corporation.
+\newblock Specification of {Hierocrypt-L1}.
+\newblock In {\em First NESSIE Workshop, Heverlee, Belgium}, 2000.
+
 \bibitem{SQUARE1997}
 Joan Daemen, Lars~R. Knudsen, and Vincent Rijmen.
 \newblock The block cipher {SQUARE}.

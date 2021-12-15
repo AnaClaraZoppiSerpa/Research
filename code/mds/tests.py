@@ -85,6 +85,68 @@ bksq_mat = [
     [2, 2, 3]
 ]
 
+# hierocrypt 3
+
+mds = [
+  [0xc4, 0x65, 0xc8, 0x8b],
+  [0x8b, 0xc4, 0x65, 0xc8],
+  [0xc8, 0x8b, 0xc4, 0x65],
+  [0x65, 0xc8, 0x8b, 0xc4]
+]
+
+mds_inv = [
+  [0x82, 0xc4, 0x34, 0xf6],
+  [0xf6, 0x82, 0xc4, 0x34],
+  [0x34, 0xf6, 0x82, 0xc4],
+  [0xc4, 0x34, 0xf6, 0x82]
+]
+
+mdsh = [
+  [0x5, 0x5, 0xa, 0xe],
+  [0xe, 0x5, 0x5, 0xa],
+  [0xa, 0xe, 0x5, 0x5],
+  [0x5, 0xa, 0xe, 0x5]
+]
+
+mdsh_inv = [
+  [0xb, 0xe, 0xe, 0x6],
+  [0x6, 0xb, 0xe, 0xe],
+  [0xe, 0x6, 0xb, 0xe],
+  [0xe, 0xe, 0x6, 0xb]
+]
+
+# hierocrypt l1
+
+l1_mdsh = [
+  [0x5, 0x7],
+  [0xa, 0xb]
+]
+
+l1_mdsh_inv = [
+  [0xc, 0xa],
+  [0x5, 0xb]
+]
+
+def get_hierocrypt_cost():
+    print(mds)
+    print(matrix_xtime_cost(mds, 4), 'xtime')
+    print(matrix_xor_cost(mds, 4), 'xor')
+    print('inversa')
+    print(mds_inv)
+    print(matrix_xtime_cost(mds_inv, 4), 'xtime')
+    print(matrix_xor_cost(mds_inv, 4), 'xor')
+    
+def get_hierocrypt_higher_cost():
+    print(matrix_xor_cost(mdsh, 4), 'xor')
+    print(matrix_xor_cost(mdsh_inv, 4), 'xor')
+    print(matrix_xtime_cost(mdsh, 4), 'xtime')
+    print(matrix_xtime_cost(mdsh_inv, 4), 'xtime')
+    print("for L1")
+    print(matrix_xor_cost(l1_mdsh, 2), 'xor')
+    print(matrix_xor_cost(l1_mdsh_inv, 2), 'xor')
+    print(matrix_xtime_cost(l1_mdsh, 2), 'xtime')
+    print(matrix_xtime_cost(l1_mdsh_inv, 2), 'xtime')
+
 def get_inverse_bksq():
     init_discrete_log()
     print(bin(IRREDUCIBLE_POLY))
@@ -93,6 +155,8 @@ def get_inverse_bksq():
     print(inverse)
     print("mul")
     print(matrix_multiplication(bksq_mat, inverse, 3))
+    print(matrix_xtime_cost(inverse, 3), 'xtime')
+    print(matrix_xor_cost(inverse, 3), 'xor')
 
 def get_inverse_khazad():
     print(matrix_multiplication(khazad_mat, khazad_mat, 8))
@@ -171,4 +235,5 @@ def print_mat_hex(m):
 #test_inv()
 
 #get_costs()
-get_inverse_bksq()
+#get_inverse_bksq()
+get_hierocrypt_higher_cost()
