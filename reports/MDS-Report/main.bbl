@@ -22,6 +22,29 @@ PSLM Barreto and M~Simplicio.
 \newblock {\em Anais do 25o Simpsio Brasileiro de Redes de Computadores e
   Sistemas Distribudos-SBRC}, 1:61--74, 2007.
 
+\bibitem{Keccak2013}
+Guido Bertoni, Joan Daemen, Micha{\"e}l Peeters, and Gilles Van~Assche.
+\newblock Keccak.
+\newblock In {\em Annual international conference on the theory and
+  applications of cryptographic techniques}, pages 313--314. Springer, 2013.
+
+\bibitem{Serpent1998}
+Eli Biham, Ross~J. Anderson, and Lars~R. Knudsen.
+\newblock Serpent: {A} new block cipher proposal.
+\newblock In Serge Vaudenay, editor, {\em Fast Software Encryption, 5th
+  International Workshop, {FSE} '98, Paris, France, March 23-25, 1998,
+  Proceedings}, volume 1372 of {\em Lecture Notes in Computer Science}, pages
+  222--238. Springer, 1998.
+
+\bibitem{PRESENT2007}
+Andrey Bogdanov, Lars~R. Knudsen, Gregor Leander, Christof Paar, Axel
+  Poschmann, Matthew J.~B. Robshaw, Yannick Seurin, and C.~Vikkelsoe.
+\newblock {PRESENT:} an ultra-lightweight block cipher.
+\newblock In Pascal Paillier and Ingrid Verbauwhede, editors, {\em
+  Cryptographic Hardware and Embedded Systems - {CHES} 2007, 9th International
+  Workshop, Vienna, Austria, September 10-13, 2007, Proceedings}, volume 4727
+  of {\em Lecture Notes in Computer Science}, pages 450--466. Springer, 2007.
+
 \bibitem{Hierocrypt2000}
 Toshiba Corporation.
 \newblock Specification of {Hierocrypt-3}.
@@ -29,7 +52,7 @@ Toshiba Corporation.
 
 \bibitem{SQUARE1997}
 Joan Daemen, Lars~R. Knudsen, and Vincent Rijmen.
-\newblock The block cipher square.
+\newblock The block cipher {SQUARE}.
 \newblock In Eli Biham, editor, {\em Fast Software Encryption, 4th
   International Workshop, {FSE} '97, Haifa, Israel, January 20-22, 1997,
   Proceedings}, volume 1267 of {\em Lecture Notes in Computer Science}, pages
@@ -58,6 +81,17 @@ Praveen Gauravaram, Lars~R. Knudsen, Krystian Matusiewicz, Florian Mendel,
   {\em Dagstuhl Seminar Proceedings}. Schloss Dagstuhl - Leibniz-Zentrum
   f{\"{u}}r Informatik, Germany, 2009.
 
+\bibitem{IDEA2000}
+X~Lai and J~Massey.
+\newblock The idea block cipher.
+\newblock {\em NESSIE Block Cipher Submissions}, 2000.
+
+\bibitem{LangeLinearAlgebra}
+S.~Lang.
+\newblock {\em Linear Algebra}.
+\newblock Springer Undergraduate Texts in Mathematics and Technology. Springer,
+  1987.
+
 \bibitem{SloaneBook}
 F.J. MacWilliams and N.J.A. Sloane.
 \newblock {\em The Theory of Error-Correcting Codes}.
@@ -65,8 +99,8 @@ F.J. MacWilliams and N.J.A. Sloane.
 
 \bibitem{panario2007topicos}
 A.M. Masuda and D.~Panario.
-\newblock {\em Topicos de corpos finitos com aplicacoes em criptografia e
-  teoria de codigos}.
+\newblock {\em Tópicos de corpos finitos com aplicações em criptografia e
+  teoria de códigos}.
 \newblock Publica{\c{c}}{\~o}es matem{\'a}ticas. IMPA, 2007.
 
 \bibitem{Handbook1996}
@@ -86,5 +120,13 @@ Vincent Rijmen, Joan Daemen, Bart Preneel, Antoon Bosselaers, and Erik~De Win.
   International Workshop, Cambridge, UK, February 21-23, 1996, Proceedings},
   volume 1039 of {\em Lecture Notes in Computer Science}, pages 99--111.
   Springer, 1996.
+
+\bibitem{Youssef1997}
+A.~M. Youssef, S.~Mister, and S.~E. Tavares.
+\newblock On the design of linear transformations for substitution permutation
+  encryption networks.
+\newblock In C.~Adams and M.~Just, editors, {\em Selected Areas in
+  Cryptography, 11th International Workshop, {SAC} 1997, Ottawa, Canada, August
+  11 - 12, 1997, Revised Selected Papers}, pages 40--48. Springer, 1997.
 
 \end{thebibliography}

@@ -1,15 +1,19 @@
-\contentsline {concept}{{}{1}{Singular matrix}}{4}{concept.1}%
-\contentsline {concept}{{}{2}{Involutory matrix}}{4}{concept.2}%
-\contentsline {concept}{{}{3}{Circulant matrix}}{4}{concept.3}%
-\contentsline {concept}{{}{4}{Right circulant matrix}}{4}{concept.4}%
-\contentsline {concept}{{}{5}{Left circulant matrix}}{4}{concept.5}%
-\contentsline {concept}{{}{6}{Right circulant matrix}}{4}{concept.6}%
-\contentsline {theorem}{{Theorem}{1}{MDS matrices and singularity \cite {SQUARE1997}}}{4}{theorem.1}%
-\contentsline {concept}{{}{7}{Finite field \cite {DesignOfRijndael2002}}}{5}{concept.7}%
-\contentsline {concept}{{}{8}{Characteristic and order \cite {DesignOfRijndael2002}}}{5}{concept.8}%
-\contentsline {concept}{{}{9}{Representing finite fields with prime order \cite {DesignOfRijndael2002}}}{5}{concept.9}%
-\contentsline {concept}{{}{10}{Representing finite fields with non-prime order \cite {DesignOfRijndael2002}}}{5}{concept.10}%
-\contentsline {concept}{{}{11}{Polynomial \cite {DesignOfRijndael2002}}}{6}{concept.11}%
-\contentsline {concept}{{}{12}{Polynomial addition \cite {DesignOfRijndael2002}}}{6}{concept.12}%
-\contentsline {concept}{{}{13}{Polynomial multiplication \cite {DesignOfRijndael2002}}}{6}{concept.13}%
-\contentsline {concept}{{}{14}{Irreducible polynomial \cite {DesignOfRijndael2002}}}{6}{concept.14}%
+\contentsline {definition}{{Definition}{1}{Singular matrix}}{4}{definition.1}%
+\contentsline {definition}{{Definition}{2}{Non-singular matrix}}{4}{definition.2}%
+\contentsline {definition}{{Definition}{3}{Involutory matrix}}{4}{definition.3}%
+\contentsline {definition}{{Definition}{4}{Circulant matrix}}{4}{definition.4}%
+\contentsline {definition}{{Definition}{5}{Left circulant matrix}}{4}{definition.5}%
+\contentsline {definition}{{Definition}{6}{Right circulant matrix}}{4}{definition.6}%
+\contentsline {definition}{{Definition}{7}{Submatrix}}{5}{definition.7}%
+\contentsline {theorem}{{Theorem}{1}{MDS codes \cite {SloaneBook}}}{5}{theorem.1}%
+\contentsline {definition}{{Definition}{8}{Cauchy matrix}}{5}{definition.8}%
+\contentsline {definition}{{Definition}{9}{Hadamard matrix}}{5}{definition.9}%
+\contentsline {definition}{{Definition}{10}{Vandermonde matrix}}{5}{definition.10}%
+\contentsline {concept}{{}{1}{Finite field \cite {DesignOfRijndael2002}}}{6}{concept.1}%
+\contentsline {concept}{{}{2}{Characteristic and order \cite {DesignOfRijndael2002}}}{6}{concept.2}%
+\contentsline {concept}{{}{3}{Representing finite fields with prime order \cite {DesignOfRijndael2002}}}{6}{concept.3}%
+\contentsline {concept}{{}{4}{Representing finite fields with non-prime order \cite {DesignOfRijndael2002}}}{6}{concept.4}%
+\contentsline {concept}{{}{5}{Polynomial \cite {DesignOfRijndael2002}}}{6}{concept.5}%
+\contentsline {concept}{{}{6}{Polynomial addition \cite {DesignOfRijndael2002}}}{6}{concept.6}%
+\contentsline {concept}{{}{7}{Polynomial multiplication \cite {DesignOfRijndael2002}}}{6}{concept.7}%
+\contentsline {concept}{{}{8}{Irreducible polynomial \cite {DesignOfRijndael2002}}}{7}{concept.8}%

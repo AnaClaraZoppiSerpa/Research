@@ -48,9 +48,9 @@ def matrix_xtime_cost(mat, dim):
         row_cost = 0
         for col in range(dim):
             row_cost += poly_xtime_cost(mat[row][col])
-        print("Row", row, "costs", row_cost, "xtime")
+        #print("Row", row, "costs", row_cost, "xtime")
         total_cost += row_cost
-    print("The full matrix costs", total_cost, "xtime")
+    #print("The full matrix costs", total_cost, "xtime")
     return total_cost
 
 def matrix_xor_cost(mat, dim):
@@ -59,9 +59,9 @@ def matrix_xor_cost(mat, dim):
         row_cost = dim - 1
         for col in range(dim):
             row_cost += poly_xor_cost(mat[row][col])
-        print("Row", row, "costs", row_cost, "xor")
+        #print("Row", row, "costs", row_cost, "xor")
         total_cost += row_cost
-    print("The full matrix costs", total_cost, "xor")
+    #print("The full matrix costs", total_cost, "xor")
     return total_cost
 
 def add_poly(poly1, poly2):
@@ -90,6 +90,8 @@ def invert_poly(poly):
     return discrete_log_inverse[-discrete_log[poly] + modulus]
 
 def matrix_multiplication(mat1, mat2, dim):
+    print("chamando")
+    init_discrete_log()
     result = []
     for i in range(dim):
         result.append([0])
@@ -130,6 +132,8 @@ def transpose_matrix(m):
     return transpose
 
 def invert_matrix(mat, dim):
+    print("chamou")
+    init_discrete_log()
     determinant = get_determinant(mat, dim)
     
     if determinant == 0:
