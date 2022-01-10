@@ -22,6 +22,11 @@ PSLM Barreto and M~Simplicio.
 \newblock {\em Anais do 25o Simpsio Brasileiro de Redes de Computadores e
   Sistemas Distribudos-SBRC}, 1:61--74, 2007.
 
+\bibitem{beauchamp1975walsh}
+K.G. Beauchamp.
+\newblock {\em Walsh Functions and Their Applications}.
+\newblock Nutrition, Basic and Applied Science. Academic Press, 1975.
+
 \bibitem{Keccak2013}
 Guido Bertoni, Joan Daemen, Micha{\"e}l Peeters, and Gilles Van~Assche.
 \newblock Keccak.
@@ -85,6 +90,19 @@ Praveen Gauravaram, Lars~R. Knudsen, Krystian Matusiewicz, Florian Mendel,
   editors, {\em Symmetric Cryptography, 11.01. - 16.01.2009}, volume 09031 of
   {\em Dagstuhl Seminar Proceedings}. Schloss Dagstuhl - Leibniz-Zentrum
   f{\"{u}}r Informatik, Germany, 2009.
+
+\bibitem{hoffmann1971linear}
+Kenneth Hoffmann and Ray Kunze.
+\newblock Linear algebra.
+\newblock {\em Mathematics of Computation}, 15(75):407, 1971.
+
+\bibitem{FOX2004}
+Pascal Junod and Serge Vaudenay.
+\newblock {FOX} : {A} new family of block ciphers.
+\newblock In Helena Handschuh and M.~Anwar Hasan, editors, {\em Selected Areas
+  in Cryptography, 11th International Workshop, {SAC} 2004, Waterloo, Canada,
+  August 9-10, 2004, Revised Selected Papers}, volume 3357 of {\em Lecture
+  Notes in Computer Science}, pages 114--129. Springer, 2004.
 
 \bibitem{IDEA2000}
 X~Lai and J~Massey.

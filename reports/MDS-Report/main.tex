@@ -88,7 +88,7 @@ We assume the reader is familiar with:
     %\item Whirlwind: refers to the Whirlwind hash function \cite{Whirlwind2010}
     %\item Gr{\o}stl: refers to the Gr{\o}stl hash function \cite{Grostl2009}
     \item \textbf{xor}: bitwise XOR between two bit strings
-    \item \textbf{xtime}: refers to the multiplication by the polynomial $x$ in the cipher's Finite Field, i.e GF($2^m$) for an integer $m$
+    \item \textbf{xtime}: refers to the multiplication by the polynomial $x$ in the finite field GF($2^m$) for an integer $m$
 \end{itemize}
 
 \section{Preliminaries}
@@ -122,12 +122,12 @@ A generator matrix $G$ for an $[n, k, d]$ code $C$ is a $k \times n$ matrix whos
 A parity-check matrix $H$ for an $[n, k, d]$ code $C$ is an $(n-k) \times k$ matrix with the property that a vector $x$ is a codeword of $C$ iff $Hx^T = 0$.
 \end{definition}
 
-\begin{definition}[Singleton Bound \cite{SloaneBook}]
+\begin{theorem}[Singleton Bound \cite{SloaneBook}]
 If $C$ is an $[n, k, d]$ code, then $d \leq n - k + 1$.
 \end{definition}
 
 \begin{definition}[MDS code \cite{SloaneBook}]\label{def:mds-code-singleton}
-An \emph{MDS code} is a \emph{linear code} that reaches the \emph{Singleton bound}.
+An \emph{MDS code} is a \emph{linear code} that meets the \emph{Singleton bound}, i.e a linear code with $d = n - k + 1$.
 \end{definition}
 
 An MDS matrix associated to a $[n, k, d]$ code has \emph{branch number} equal to $d$, which is the maximum possible branch number, thus providing optimal diffusion.
@@ -183,7 +183,7 @@ $$
 Note that circulant matrices can be defined by just one row, since all the other rows are cyclical shifts of the first. Therefore, they can be denoted as $circ(a_0, a_1, ..., a_{n-1})$. In the case of left circulant and right circulant matrices, respectively, $lcirc(a_0, ..., a_{n-1})$ and $rcirc(a_0, ..., a_{n-1})$. For example, matrices (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael}), used in the Rijndael cipher, can be denoted as $rcirc(02_x, 03_x, 01_x, 01_x)$ and $rcirc(0e_x, 0b_x, 0d_x, 09_x)$.
 
 \begin{definition}[Transpose matrix]
-The transpose of a matrix $A$, denoted by $A^T$, is the matrix such that $A^T[I][j] = A[j][I]$. In other words, it is the matrix obtained by writing the rows of $A$ as columns. Note that, if $A$ is an $m \times n$ matrix, then $A^T$ will be $n \times m$.
+The transpose of a matrix $A$, denoted by $A^T$, is the matrix such that $A^T[i][j] = A[j][i]$. In other words, it is the matrix obtained by writing the rows of $A$ as columns. Note that, if $A$ is an $m \times n$ matrix, then $A^T$ will be $n \times m$.
 \end{definition}
 
 \begin{definition}[Submatrix]
@@ -204,19 +204,42 @@ Given $x_0, ..., x_{n-1}$ and $y_0, ..., y_{n-1}$, the matrix $A$ where $A[i][j]
 
 An $n\times n$ matrix posesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy and circulant matrices allow us to lower the number of elements we need to select. A circulant matrix can be defined by one row only, therefore only $n$ elements are required. However, there are no guarantees about the MDS property. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. On the other hand, a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, requiring $2n$ choices of elements (the $x_i$ and the $y_i$) to be defined. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy) matrices for any arbitrary $n$.
 
-\begin{definition}[Hadamard matrix]
-\textcolor{red}{yet to write}
+\begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]
+Given $n$ elements $a_0, a_1, ..., a_{n-1}$, $n$ being a power of 2, the matrix $H$ such that $H[i][j] = a_{i \oplus j}$ is a Hadamard matrix.
 \end{definition}
 
-\begin{definition}[Vandermonde matrix]
-\textcolor{red}{yet to write}
+\begin{definition}[Vandermonde matrix \cite{hoffmann1971linear}]
+Given $z$ elements $a_0, a_1, ..., a_{z-1}$, the $z \times n$ matrix $V$ such that
+\begin{equation}\label{eq:cost}
+V = 
+\begin{bmatrix}
+1 & a_0 & a_0^2 & ... & a_0^{n-1}\\
+1 & a_1 & a_1^2 & ... & a_1^{n-1}\\
+... & ... & ... & ... & ...\\
+1 & a_{z-1} & a_{z-1}^2 & ... & a_{z-1}^{n-1}
+\end{bmatrix}
+\end{equation}
+is a Vandermonde matrix.
 \end{definition}
+
+Note that Hadamard and Vandermonde constructions too allow us to lower the number of required choices to obtain a matrix. Only $n$ elements are necessary for a Hadamard matrix to be defined, provided that $n$ is a power of 2. In the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. There are no guarantees about the MDS property with Hadamard or Vandermonde constructions, so we must construct the matrices and then evaluate whether they are MDS or not, e.g using Theorem \ref{teo:mds}.
 
 %\subsubsection{Evaluating a matrix for MDS property}
 %If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices, and we must check that they are non-zero. This can be done in $O(n!^2)$ time with a recursive implementation to compute the determinants.
 
 %\subsubsection{Computational complexity to obtain the determinant}
 %The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications in the underlying Finite Field. The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. There are $3^2 = 9$ such submatrices, therefore $3^2$ determinants of $2 \times 2$ matrices are calculated --- and thus $9 \times 2 = 18$ multiplications in GF($2^m$). The determinant of a $4 \times 4$ matrix can be computed similarly by calculating the cofactors of $4^2 = 16$ submatrices which are $3 \times 3$ and thus require $3^2$ determinants of $2 \times 2$ submatrices each, therefore totalizing $4^2 \times 3^2$ determinants of $2 \times 2$ submatrices. For a $5 \times 5$ matrix, the total amount is $5^2 \times 4^2 \times 3^2$, and so forth. Therefore, for an $n \times n$ matrix, the complexity is bounded by $n!^2$ operations (in asymptotic notation, $O(n!^2)$).
+
+\subsubsection{Evaluating a matrix for MDS property}
+If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in the finite field}.
+
+The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications. 
+
+The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
+
+The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in the finite field.
+
+\textcolor{red}{Quantas submatrizes quadradas existem dentro de uma matriz n x n? Preciso disso pra saber como fica a o custo de testar se uma matriz é MDS.}
 
 \subsection{Abstract algebra}
 \textcolor{red}{Aqui pretendo colocar definições de grupo, grupo abeliano, corpo etc. A parte de álgebra abstrata que não é específica de corpos finitos e que a gente geralmente vê na faculdade}
@@ -236,10 +259,8 @@ Elements of a finite field GF($p$) can be represented by the integers $0, 1, ...
 \end{concept}
 
 \begin{concept}[Representing finite fields with non-prime order \cite{DesignOfRijndael2002}]
-For finite fields with an order that is not prime, addition and multiplication cannot be represented by addition and multiplication modulo a number. One of the possible representations for GF($p^m$) is by means of \emph{polynomials over GF($p$)}.
+For finite fields with an order $r = p^m$ that is not prime, addition and multiplication cannot be represented by addition and multiplication modulo $r$, and instead other representations must be used. One of the possible representations for GF($p^m$) is by means of \emph{polynomials over GF($p$) with degree at most $m-1$}. Addition and multiplication are then defined modulo an \emph{irreducible polynomial of degree $m$}.
 \end{concept}
-
-In this chapter, we focus particularly on fields with characteristic $p = 2$, due to their wide application in cryptography.
 
 \begin{concept}[Polynomial \cite{DesignOfRijndael2002}]
 A polynomial over a field $\mathbb{F}$ is an expression of the form
@@ -250,6 +271,10 @@ $$
 
 where $x$ is the \emph{indeterminate} and $b_i \in \mathbb{F}$ are the coefficients. The \emph{degree} of the polynomial equals $l$ if $b_j = 0$ for all $j > l$ and $l$ is the smallest number with this property.
 \end{concept}
+
+Note that, when using polynomials over GF($p$) to represent the GF($p^m$) field, the degree is at most $m-1$.
+
+In this chapter, we focus particularly on fields with characteristic $p = 2$, due to their wide application in cryptography.
 
 Addition and multiplication are defined on polynomials as follows.
 
@@ -262,7 +287,7 @@ For polynomials over GF($2$) stored as integers in a cryptographic software impl
 \begin{concept}[Polynomial multiplication \cite{DesignOfRijndael2002}]
 In order to make multiplication closed, we select a polynomial $p(x)$ of degree $l$, called the \emph{reduction polynomial}. Multiplication of $a(x)$ and $b(x)$ is then defined as the algebraic product of the polynomials modulo the reduction polynomial $p(x)$.
 
-The neutral element is 1 (the polynomial of degree 0 and with coefficient of $x^0$ equal to 1). The inverse element of $a(x)$ is $a^{-1}(x)$ such that $a(x) \times a^{-1}(x) = 1$. Note that $a^{-1}(x)$ exists only when $a(x) \neq 0$.
+The neutral element is 1 (the polynomial of degree 0 and with coefficient of $x^0$ equal to 1). The inverse element of $a(x)$ is $a^{-1}(x)$ such that $a(x) \times a^{-1}(x) = 1 \text{mod} p(x)$. Note that $a^{-1}(x)$ exists only when $a(x) \neq 0$.
 \end{concept}
 
 For polynomials over GF($2$) stored as integers in a cryptographic software implementation, multiplication by $x$ can be implemented as a logical bit shift followed by conditional XOR (i.e subtraction) of the reduction polynomial (the \textbf{xtime} operation). Multiplication by other polynomials can be implemented as a series of \textbf{xtime}.
@@ -317,43 +342,61 @@ Note that matrix (\ref{mat:square}) contains 4 rows, yielding a total cost of 8 
 
 \section{MDS matrix catalogue}
 
-In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimensions, the \textbf{Inv} column refers to whether they are involutory or not, \textbf{\#xor} refers to the necessary amount of \textbf{xor} operations, and \textbf{\#xtime} refers to the necessary amount of \textbf{xtime} operations. All finite fields of Table \ref{tbl:mds-list} have characteristic $p = 2$. The order is $2^m$, with $m$ being given by the degree of the irreducible polynomial in the column $GF(2)[x]/(p(x))$. For example, $m = 8$ for SHARK, SQUARE, BKSQ, KHAZAD, ANUBIS, Hierocrypt, Rijndael and the Cauchy matrix found by \cite{Youssef1997}.
+In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimensions, the \textbf{Inv} column refers to whether they are involutory or not, \textbf{Use} refers to application in e.g a block cipher or hash function, \textbf{Bib} contains the bibliographic reference, \textbf{\#xor} refers to the necessary amount of \textbf{xor} operations, and \textbf{\#xtime} refers to the necessary amount of \textbf{xtime} operations. All finite fields of Table \ref{tbl:mds-list} have characteristic $p = 2$. The order is $2^m$, with $m$ being given by the degree of the irreducible polynomial in the column $GF(2)[x]/(p(x))$. For example, $m = 8$ for SHARK, SQUARE, BKSQ, KHAZAD, ANUBIS, Hierocrypt, Rijndael and the Cauchy matrix found by \cite{Youssef1997}.
 
 \begin{footnotesize}
-\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|}
+\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|l|}
 \hline
-\textbf{Year} & \textbf{Ord} & \textbf{Type} & \textbf{Inv} & \textbf{Use} & \textbf{$GF(2)[x]/(p(x))$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrices} \\ \hline
+\textbf{Year} & \textbf{Ord} & \textbf{Type} & \textbf{Inv} & \textbf{Use} & \textbf{Bib} & \textbf{$GF(2)[x]/(p(x))$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrices} \\ \hline
 \endfirsthead
 \endhead
+
 % row template
 % year & type & inv & use & poly & xor & xtime & mats
 % SHARK
-1996 & 8 & --- & no & \shortstack{SHARK \cite{SHARK1996}} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x^2 + 1$} & \shortstack{235 \\223} & \shortstack{369 \\393} & \shortstack{\\ \ref{mat:shark} \\ \ref{mat:shark-inv}} \\ \hline
+1996 & 8 & --- & no & \shortstack{SHARK} & \cite{SHARK1996} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x^2 + 1$} & \shortstack{235 \\ 223} & \shortstack{369 \\393} & \shortstack{\\ (\ref{mat:shark}) \\ (\ref{mat:shark-inv})} \\ \hline
+
 % SQUARE
-1997 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{SQUARE \cite{SQUARE1997}} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{16 \\40} & \shortstack{8 \\ 48} & \shortstack{\\ \ref{mat:square} \\ \ref{mat:square-inv}} \\ \hline
+1997 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{SQUARE} &  \cite{SQUARE1997} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{16 \\40} & \shortstack{8 \\ 48} & \shortstack{\\ (\ref{mat:square}) \\ (\ref{mat:square-inv})} \\ \hline
+
 % Tavares
-1997 & 8 & Cauchy & yes & \shortstack{\cite{Youssef1997}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 240 & 344 & \ref{mat:tavares} \\ \hline
+1997 & 8 & Cauchy & yes & \shortstack{---} & \cite{Youssef1997} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 240 & 344 & (\ref{mat:tavares}) \\ \hline
+
 % BKSQ
-1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ \cite{BKSQ1998}} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{9 \\39} & \shortstack{9 \\63} & \shortstack{\\ \ref{mat:bksq} \\ \ref{mat:bksq-inv}} \\ \hline
+1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ} & \cite{BKSQ1998} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{9 \\39} & \shortstack{9 \\63} & \shortstack{\\ (\ref{mat:bksq}) \\ (\ref{mat:bksq-inv})} \\ \hline
+
 % Rijndael
-1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES) \cite{DesignOfRijndael2002}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16 \\40} & \shortstack{8 \\48} & \shortstack{\\ \ref{mat:rijndael} \\ \ref{mat:rijndael-inv}} \\ \hline
+1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES)} & \cite{DesignOfRijndael2002} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16 \\40} & \shortstack{8 \\48} & \shortstack{\\ (\ref{mat:rijndael}) \\ (\ref{mat:rijndael-inv})} \\ \hline
+
 % KHAZAD
-2000 & 8 & Hadamard & yes & \shortstack{KHAZAD \cite{KHAZAD2000}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 112 & 120 & \ref{mat:khazad} \\ \hline
+2000 & 8 & Hadamard & yes & \shortstack{KHAZAD} & \cite{KHAZAD2000}& \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 112 & 120 & (\ref{mat:khazad}) \\ \hline
+
 % ANUBIS
-2000 & 4 & Hadamard & yes & \shortstack{ANUBIS \cite{ANUBIS2000}} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & \ref{mat:anubis} \\ \hline
+2000 & 4 & Hadamard & yes & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & (\ref{mat:anubis}) \\ \hline
+2000 & 4 & Vandermonde & no & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & xor & xtime & (\ref{mat:anubis-ke}) \\ \hline
+
 % Hierocrypt
-2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3 \cite{Hierocrypt2000}, \\ Hierocrypt-L1 \cite{Hierocrypt-L1-2000} \\ (low level)} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{\ref{mat:hierocrypt-3-lower} \\ \ref{mat:hierocrypt-3-lower-inv}} \\ \hline
-2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3 \cite{Hierocrypt2000} \\ (high level)} & $GF(2^4)$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{\ref{mat:hierocrypt-3-higher} \\ \ref{mat:hierocrypt-3-higher-inv}} \\ \hline
-2000 & 4 & --- & no & \shortstack{Hierocrypt-L1 \cite{Hierocrypt-L1-2000} \\ (high level)} & $GF(2^4)$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{\ref{mat:hierocrypt-l1-higher} \\ \ref{mat:hierocrypt-l1-higher-inv}} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\ (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $GF(2^4)$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\ (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
+2000 & 4 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $GF(2^4)$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
+
+% FOX
+2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & $GF(2^8)$ & xor & xtime & (\ref{mat:fox}) \\ \hline
+2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & $GF(2^8)$ & xor & xtime & (\ref{mat:fox}) \\ \hline
+
 % Curupira
-2007 & ord & type & inv & \shortstack{Curupira \cite{barreto2007curupira}} & poly & xor & xtime & mat \\ \hline
+2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & xor & xtime & (\ref{mat:curupira}) \\ \hline
+2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & xor & xtime & (\ref{mat:curupira-keysched}) \\ \hline
+
 % Grostl
-2009 & ord & type & inv & \shortstack{Gr{\o}stl \cite{Grostl2009}} & poly & xor & xtime & mat \\ \hline
+2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & xor & xtime & (\ref{mat:grostl}) \\ \hline
+
 % Whirlwind
-2010 & ord & type & inv & \shortstack{Whirlwind \cite{Whirlwind2010}} & poly & xor & xtime & mat \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & xor & xtime & (\ref{mat:whirlwind-m0}) \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & xor & xtime & (\ref{mat:whirlwind-m1}) \\ \hline
 \caption{MDS matrix usage and cost}\label{tbl:mds-list}
 \end{longtable}
-\end{footnotezize}
+\end{footnotesize}
 
 Matrix (\ref{mat:shark}) and its inverse (\ref{mat:shark-inv}) are used in the SHARK \cite{SHARK1996} cipher.
 
@@ -444,18 +487,18 @@ Matrix (\ref{mat:anubis}) is Hadamard and involutory. It is used in the ANUBIS \
 \end{bmatrix}
 \end{equation}
 
-Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linear transformation layer, (\ref{mat:anubis-ke}) is used in the key extraction. It is a Vandermonde construction. When $N = 4$, it is an MDS matrix.
+Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linear transformation layer, (\ref{mat:anubis-ke}) is used in the key extraction. It is a Vandermonde construction. When $N = 4$, it is an MDS matrix (see Theorem \ref{teo:mds}).
 
 \begin{equation}\label{mat:anubis-ke}
 \begin{bmatrix}
 01_x & 01_x & 01_x & ... & 01_x\\
 01_x & 02_x & 02_x^2 & ... & 02_x^{N-1}\\
 01_x & 06_x & 06_x^2 & ... & 06_x^{N-1}\\
-01_x & 08_x & 08_x^2 & ... & 06_x^{N-1}
+01_x & 08_x & 08_x^2 & ... & 08_x^{N-1}
 \end{bmatrix}
 \end{equation}
 
-Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are circulant. We show the hexadecimal notation and the corresponding polynomials to enphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
+Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
 
 \begin{equation}\label{mat:rijndael}
 \begin{bmatrix}
@@ -469,7 +512,7 @@ Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in
 x & x+1 & 1 & 1\\
 1 & x & x+1 & 1\\
 1 & 1 & x & x+1\\
-x+1 & 1 & 1 x
+x+1 & 1 & 1 & x
 \end{bmatrix}
 \end{equation}
 
@@ -489,7 +532,7 @@ x^3+x+1 & x^3+x^2+1 & x^3+1 & x^3+x^2+x
 \end{bmatrix}
 \end{equation}
 
-Furthermore, it is interesting to note that Rijndael's matrix (\ref{mat:rijndael}) is the transpose of SQUARE's matrix (\ref{mat:square}) and this also happens to the inverses (matrix \ref{mat:square-inv} is the transpose of \ref{mat:rijndael-inv}).
+Furthermore, it is interesting to note that Rijndael's matrix (\ref{mat:rijndael}) is the transpose of SQUARE's matrix (\ref{mat:square}) and this also happens to the inverses (matrix (\ref{mat:square-inv}) is the transpose of (\ref{mat:rijndael-inv})).
 
 Matrices (\ref{mat:bksq}) and its inverse (\ref{mat:bksq-inv}) is used in the BKSQ \cite{BKSQ1998} cipher. They are circulant.
 
@@ -509,11 +552,7 @@ ad_x & ad_x & ac_x
 \end{bmatrix}
 \end{equation}
 
-The Hierocrypt-3 cipher makes use of two MDS matrices, one for lower level diffusion and another for higher level diffusion on the cipher, which follows a nested Substitution Permutation Network design (for more detail the reader may refer to \cite{Hierocrypt2000}). Matrix (\ref{mat:hierocrypt-3-lower}) and its inverse (\ref{mat:hierocrypt-3-lower-inv}) are used for lower level diffusion. (\ref{mat:hierocrypt-3-higher}) and (\ref{mat:hierocrypt-3-higher-inv}) (the inverse) are used for higher level diffusion. It is worth noting that, for lower level diffusion, the \begin{listing}[H]
-	\caption{caption}
-	\label{lst:code_mds_field_args}
-	\inputminted{py}{../../code/mds/field_args.py}
-\end{listing}finite field is $GF(2^8)$, whilst, for higher level diffusion, the authors choose $GF(2^4)$.
+The Hierocrypt-3 cipher makes use of two MDS matrices, one for lower level diffusion and another for higher level diffusion on the cipher, which follows a nested Substitution Permutation Network design (for more detail the reader may refer to \cite{Hierocrypt2000}). Matrix (\ref{mat:hierocrypt-3-lower}) and its inverse (\ref{mat:hierocrypt-3-lower-inv}) are used for lower level diffusion. (\ref{mat:hierocrypt-3-higher}) and (\ref{mat:hierocrypt-3-higher-inv}) (the inverse) are used for higher level diffusion. It is worth noting that, for lower level diffusion, the finite field is $GF(2^8)$, whilst, for higher level diffusion, the authors choose $GF(2^4)$.
 
 \begin{equation}\label{mat:hierocrypt-3-lower}
 \begin{bmatrix}
@@ -535,19 +574,19 @@ c4_x & 34_x & f6_x & 82_x
 
 \begin{equation}\label{mat:hierocrypt-3-higher}
 \begin{bmatrix}
-05_x & 05_x & 0a_x & 0e_x\\
-0e_x & 05_x & 05_x & 0a_x\\
-0a_x & 0e_x & 05_x & 05_x\\
-05_x & 0a_x & 0e_x & 05_x
+5_x & 5_x & a_x & e_x\\
+e_x & 5_x & 5_x & a_x\\
+a_x & e_x & 5_x & 5_x\\
+5_x & a_x & e_x & 5_x
 \end{bmatrix}
 \end{equation}
 
 \begin{equation}\label{mat:hierocrypt-3-higher-inv}
 \begin{bmatrix}
-0b_x & 0e_x & 0e_x & 06_x\\
-06_x & 0b_x & 0e_x & 0e_x\\
-0e_x & 06_x & 0b_x & 0e_x\\
-0e_x & 0e_x & 06_x & 0b_x
+b_x & e_x & e_x & 6_x\\
+6_x & b_x & e_x & e_x\\
+e_x & 6_x & b_x & e_x\\
+e_x & e_x & 6_x & b_x
 \end{bmatrix}
 \end{equation}
 
@@ -555,15 +594,15 @@ The Hierocrypt-L1 cipher too uses matrix (\ref{mat:hierocrypt-3-lower}) and the 
 
 \begin{equation}\label{mat:hierocrypt-l1-higher}
 \begin{bmatrix}
-05_x & 07_x\\
-0a_x & 0b_x
+5_x & 7_x\\
+a_x & b_x
 \end{bmatrix}
 \end{equation}
 
 \begin{equation}\label{mat:hierocrypt-l1-higher-inv}
 \begin{bmatrix}
-0c_x & 0a_x\\
-05_x & 0b_x
+c_x & a_x\\
+5_x & b_x
 \end{bmatrix}
 \end{equation}
 
