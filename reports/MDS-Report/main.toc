@@ -11,6 +11,7 @@
 \contentsline {subsubsection}{Computational cost of multiplication in GF($2^8$)}{9}{section*.3}%
 \contentsline {subsubsection}{Computational cost of a matrix}{9}{section*.4}%
 \contentsline {section}{\numberline {1.4}MDS matrix catalogue}{10}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Computing \textbf {xtime} and \textbf {xor} of the matrices}{15}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}SQUARE manual calculation example}{17}{subsection.1.5.1}%
-\contentsline {section}{\numberline {1.6}Conclusions}{17}{section.1.6}%
+\contentsline {section}{\numberline {1.5}Non-MDS matrix catalogue}{16}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Computing \textbf {xtime} and \textbf {xor} of the matrices}{16}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}SQUARE manual calculation example}{17}{subsection.1.6.1}%
+\contentsline {section}{\numberline {1.7}Conclusions}{18}{section.1.7}%

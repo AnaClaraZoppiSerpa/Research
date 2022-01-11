@@ -381,8 +381,8 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 2000 & 4 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
 
 % FOX
-2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & 30 & 25 & (\ref{mat:fox-mu4}) \\ \hline
-2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & 141 & 169 & (\ref{mat:fox-mu8}) \\ \hline
+2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{30\\72} & \shortstack{25\\106} & \shortstack{(\ref{mat:fox-mu4})\\(\ref{mat:fox-mu4-inv})} \\ \hline
+2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{141\\284} & \shortstack{169\\392} & \shortstack{(\ref{mat:fox-mu8})\\(\ref{mat:fox-mu8-inv})} \\ \hline
 
 % Curupira
 2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 12 & 15 & (\ref{mat:curupira}) \\ \hline
@@ -633,7 +633,7 @@ c_x & a_x\\
 %\end{bmatrix}
 %\end{equation}
 
-Matrices (\ref{mat:fox-mu4}) and (\ref{mat:fox-mu8}) are used in the FOX block cipher family, with $z = x^7+x^6+x^5+x^4+x^3+x^2+1, a = x+1, b = x^7+x, c = x, d = x^2, e = x^7+x^6+x^5+x^4+x^3+x^2$ and $f = x^6+x^5+x^4+x^3+x^2+x$.
+Matrices (\ref{mat:fox-mu4}) (inverse: (\ref{mat:fox-mu4-inv})) and (\ref{mat:fox-mu8}) (inverse: (\ref{mat:fox-mu8-inv})) are used in the FOX block cipher family, with $z = x^7+x^6+x^5+x^4+x^3+x^2+1, a = x+1, b = x^7+x, c = x, d = x^2, e = x^7+x^6+x^5+x^4+x^3+x^2$ and $f = x^6+x^5+x^4+x^3+x^2+x$.
 
 \begin{equation}\label{mat:fox-mu4}
 \begin{bmatrix}
@@ -686,6 +686,14 @@ c3_x & 7e_x & 7e_x & 7e_x
 
 \begin{equation}\label{mat:fox-mu8-inv}
 \begin{bmatrix}
+c6_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x & b7_x\\
+c6_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x & b7_x & fe_x\\
+c6_x & 73_x & 6d_x & 0c_x & d2_x & b7_x & fe_x & 3a_x\\
+c6_x & 6d_x & 0c_x & d2_x & b7_x & fe_x & 3a_x & 73_x\\
+c6_x & 0c_x & d2_x & b7_x & fe_x & 3a_x & 73_x & 6d_x\\
+c6_x & d2_x & b7_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x\\
+c6_x & b7_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x\\
+ea_x & c6_x & c6_x & c6_x & c6_x & c6_x & c6_x & c6_x
 \end{bmatrix}
 \end{equation}
 
@@ -751,6 +759,8 @@ f_x & 8_x & 1_x & 3_x & 4_x & 7_x & 5_x & e_x\\
 8_x & f_x & 3_x & 1_x & 7_x & 4_x & e_x & 5_x
 \end{bmatrix}
 \end{equation}
+
+\section{Non-MDS matrix catalogue}
 
 \section{Computing \textbf{xtime} and \textbf{xor} of the matrices}
 

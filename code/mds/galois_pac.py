@@ -539,6 +539,13 @@ def fox():
     
     print("mu4 inverse")
     print_mat_hex(mu4_inv)
+    print("xor mu4 inv", matrix_xor_cost(mu4_inv, 4))
+    print("xtime mu4 inv", matrix_xtime_cost(mu4_inv, 4))
+    
+    print("mu8 inverse")
+    print_mat_hex(mu8_inv)
+    print("xor mu8 inv", matrix_xor_cost(mu8_inv, 8))
+    print("xtime mu8 inv", matrix_xtime_cost(mu8_inv, 8))
     
 fox()
 
