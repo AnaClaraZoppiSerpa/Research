@@ -373,27 +373,27 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 
 % ANUBIS
 2000 & 4 & Hadamard & yes & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & (\ref{mat:anubis}) \\ \hline
-2000 & 4 & Vandermonde & no & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & xor & xtime & (\ref{mat:anubis-ke}) \\ \hline
+2000 & 4 & Vandermonde & no & \shortstack{ANUBIS \\ key schedule} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 20 & 32 & (\ref{mat:anubis-ke}) \\ \hline
 
 % Hierocrypt
 2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\ (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
-2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $GF(2^4)$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\ (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
-2000 & 4 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $GF(2^4)$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $x^4+x+1$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\ (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
+2000 & 4 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
 
 % FOX
-2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & $GF(2^8)$ & xor & xtime & (\ref{mat:fox}) \\ \hline
-2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & $GF(2^8)$ & xor & xtime & (\ref{mat:fox}) \\ \hline
+2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & 30 & 25 & (\ref{mat:fox-mu4}) \\ \hline
+2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & 141 & 169 & (\ref{mat:fox-mu8}) \\ \hline
 
 % Curupira
-2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & xor & xtime & (\ref{mat:curupira}) \\ \hline
-2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & xor & xtime & (\ref{mat:curupira-keysched}) \\ \hline
+2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 12 & 15 & (\ref{mat:curupira}) \\ \hline
+2007 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{Curupira \\ key schedule} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 27 & 36 & (\ref{mat:curupira-ke}) \\ \hline
 
 % Grostl
-2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & xor & xtime & (\ref{mat:grostl}) \\ \hline
+2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 104 & 96 & (\ref{mat:grostl}) \\ \hline
 
 % Whirlwind
-2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & xor & xtime & (\ref{mat:whirlwind-m0}) \\ \hline
-2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & xor & xtime & (\ref{mat:whirlwind-m1}) \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 104 & 136 & (\ref{mat:whirlwind-m0}) \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 128 & 128 & (\ref{mat:whirlwind-m1}) \\ \hline
 \caption{MDS matrix usage and cost}\label{tbl:mds-list}
 \end{longtable}
 \end{footnotesize}
@@ -496,6 +496,13 @@ Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linea
 01_x & 06_x & 06_x^2 & ... & 06_x^{N-1}\\
 01_x & 08_x & 08_x^2 & ... & 08_x^{N-1}
 \end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 01_x\\
+01_x & 02_x & 04_x & 08_x\\
+01_x & 06_x & 14_x & 78_x\\
+01_x & 08_x & 40_x & 3a_x
+\end{bmatrix} \text{for } N=4
 \end{equation}
 
 Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
@@ -625,6 +632,125 @@ c_x & a_x\\
 %0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1
 %\end{bmatrix}
 %\end{equation}
+
+Matrices (\ref{mat:fox-mu4}) and (\ref{mat:fox-mu8}) are used in the FOX block cipher family, with $z = x^7+x^6+x^5+x^4+x^3+x^2+1, a = x+1, b = x^7+x, c = x, d = x^2, e = x^7+x^6+x^5+x^4+x^3+x^2$ and $f = x^6+x^5+x^4+x^3+x^2+x$.
+
+\begin{equation}\label{mat:fox-mu4}
+\begin{bmatrix}
+1 & 1 & 1 & x\\
+1 & z & x & 1\\
+z & x & 1 & 1\\
+x & 1 & z & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 02_x\\
+01_x & fd_x & 02_x & 01_x\\
+fd_x & 02_x & 01_x & 01_x\\
+02_x & 01_x & fd_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu8}
+\begin{bmatrix}
+1 & 1 & 1 & 1 & 1 & 1 & 1 & a\\
+1 & a & b & c & d & e & f & 1\\
+a & b & c & d & e & f & 1 & 1\\
+b & c & d & e & f & 1 & a & 1\\
+c & d & e & f & 1 & a & b & 1\\
+d & e & f & 1 & a & b & c & 1\\
+e & f & 1 & a & b & c & d & 1\\
+f & 1 & a & b & c & d & e & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 01_x & 01_x & 01_x & 01_x & 03_x\\
+01_x & 03_x & 82_x & 02_x & 04_x & fc_x & 7e_x & 01_x\\
+03_x & 82_x & 02_x & 04_x & fc_x & 7e_x & 01_x & 01_x\\
+82_x & 02_x & 04_x & fc_x & 7e_x & 01_x & 03_x & 01_x\\
+02_x & 04_x & fc_x & 7e_x & 01_x & 03_x & 82_x & 01_x\\
+04_x & fc_x & 7e_x & 01_x & 03_x & 82_x & 02_x & 01_x\\
+fc_x & 7e_x & 01_x & 03_x & 82_x & 02_x & 04_x & 01_x\\
+7e_x & 01_x & 03_x & 82_x & 02_x & 04_x & fc_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu4-inv}
+\begin{bmatrix}
+7e_x & e1_x & ad_x & b0_x\\
+7e_x & ad_x & b0_x & e1_x\\
+7e_x & b0_x & e1_x & ad_x\\
+c3_x & 7e_x & 7e_x & 7e_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu8-inv}
+\begin{bmatrix}
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:curupira}) is used in Curupira's diffusion layer. It is involutory.
+
+\begin{equation}\label{mat:curupira}
+\begin{bmatrix}
+03_x & 02_x & 02_x\\
+04_x & 05_x & 04_x\\
+06_x & 06_x & 07_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:curupira-ke}) is used in Curupira's key scheduling process, with $c(x) = x^4 + x^3 + x^2$.
+
+\begin{equation}\label{mat:curupira-ke}
+\begin{bmatrix}
+1+c(x) & c(x) & c(x)\\
+c(x) & 1+c(x) & c(x)\\
+c(x) & c(x) & 1+c(x)
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is circulant.
+
+\begin{equation}\label{mat:grostl}
+\begin{bmatrix}
+02_x & 02_x & 03_x & 04_x & 05_x & 03_x & 05_x & 07_x\\
+07_x & 02_x & 02_x & 03_x & 04_x & 05_x & 03_x & 05_x\\
+05_x & 07_x & 02_x & 02_x & 03_x & 04_x & 05_x & 03_x\\
+03_x & 05_x & 07_x & 02_x & 02_x & 03_x & 04_x & 05_x\\
+05_x & 03_x & 05_x & 07_x & 02_x & 02_x & 03_x & 04_x\\
+04_x & 05_x & 03_x & 05_x & 07_x & 02_x & 02_x & 03_x\\
+03_x & 04_x & 05_x & 03_x & 05_x & 07_x & 02_x & 02_x\\
+02_x & 03_x & 04_x & 05_x & 03_x & 05_x & 07_x & 02_x
+\end{bmatrix}
+\end{equation}
+
+Matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) are used in the Whirlwind hash function.
+
+\begin{equation}\label{mat:whirlwind-m0}
+\begin{bmatrix}
+5_x & 4_x & a_x & 6_x & 2_x & d_x & 8_x & 3_x\\
+4_x & 5_x & 6_x & a_x & d_x & 2_x & 3_x & 8_x\\
+a_x & 6_x & 5_x & 4_x & 8_x & 3_x & 2_x & d_x\\
+6_x & a_x & 4_x & 5_x & 3_x & 8_x & d_x & 2_x\\
+2_x & d_x & 8_x & 3_x & 5_x & 4_x & a_x & 6_x\\
+d_x & 2_x & 3_x & 8_x & 4_x & 5_x & 6_x & a_x\\
+8_x & 3_x & 2_x & d_x & a_x & 6_x & 5_x & 4_x\\
+3_x & 8_x & d_x & 2_x & 6_x & a_x & 4_x & 5_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlwind-m1}
+\begin{bmatrix}
+5_x & e_x & 4_x & 7_x & 1_x & 3_x & f_x & 8_x\\
+e_x & 5_x & 7_x & 4_x & 3_x & 1_x & 8_x & f_x\\
+4_x & 7_x & 5_x & e_x & f_x & 8_x & 1_x & 3_x\\
+7_x & 4_x & e_x & 5_x & 8_x & f_x & 3_x & 1_x\\
+1_x & 3_x & f_x & 8_x & 5_x & e_x & 4_x & 7_x\\
+3_x & 1_x & 8_x & f_x & e_x & 5_x & 7_x & 4_x\\
+f_x & 8_x & 1_x & 3_x & 4_x & 7_x & 5_x & e_x\\
+8_x & f_x & 3_x & 1_x & 7_x & 4_x & e_x & 5_x
+\end{bmatrix}
+\end{equation}
 
 \section{Computing \textbf{xtime} and \textbf{xor} of the matrices}
 
