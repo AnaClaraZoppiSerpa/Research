@@ -11,14 +11,14 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{ntheorem}
-\usepackage[table_x &xcdraw]{xcolor}
+%\usepackage[table_x &xcdraw]{xcolor}
 \usepackage{longtable}
 \usepackage{listings}
 \usepackage{minted}
 
 % Definition
 \newtheorem{definition}{Definition}{\bfseries}{\itshape}
-\newtheorem*{definition*}{Definition}{\bfseries}{\itshape}
+%\newtheorem*{definition*}{Definition}{\bfseries}{\itshape}
 
 % Theorem
 \newtheorem{theorem}{Theorem}{\bfseries}{\itshape}
@@ -31,7 +31,7 @@
 \date{\today}
 
 \begin{document}
-%\nocite{*} 
+%\nocite{*}
 
 \maketitle
 
@@ -39,7 +39,7 @@
 
 \chapter{A history of the application of MDS matrices in cryptography}
 
-MDS matrices have been widely used in the construction of diffusion layers for block ciphers such as SHARK \cite{SHARK1996}, SQUARE \cite{SQUARE1997}, BKSQ \cite{BKSQ1998}, KHAZAD \cite{KHAZAD2000}, ANUBIS \cite{ANUBIS2000}, Hierocrypt-3 \cite{Hierocrypt2000}, Rijndael (AES) \cite{DesignOfRijndael2002} and Curupira \cite{barreto2007curupira}. They have also been applied in the design of hash functions (e.g Whirlwind \cite{Whirlwind2010} and Gr{\o}stl \cite{Grostl2009}). The choice is due to the fact that MDS codes provide transformations with optimal linear and differential branch numbers (see e.g \cite{SQUARE1997} or \cite{SHARK1996}), thus contributing to security against Differential and Linear Cryptanalysis attacks. 
+MDS matrices have been widely used in the construction of diffusion layers for block ciphers such as SHARK \cite{SHARK1996}, SQUARE \cite{SQUARE1997}, BKSQ \cite{BKSQ1998}, KHAZAD \cite{KHAZAD2000}, ANUBIS \cite{ANUBIS2000}, Hierocrypt-3 \cite{Hierocrypt2000}, Rijndael (AES) \cite{DesignOfRijndael2002} and Curupira \cite{barreto2007curupira}. They have also been applied in the design of hash functions (e.g Whirlwind \cite{Whirlwind2010} and Gr{\o}stl \cite{Grostl2009}). The choice is due to the fact that MDS codes provide transformations with optimal linear and differential branch numbers (see e.g \cite{SQUARE1997} or \cite{SHARK1996}), thus contributing to security against Differential and Linear Cryptanalysis attacks.
 
 When a matrix is MDS, optimal \emph{branch number} (a measure of diffusion power) is ensured, therefore, from the theoretical security perspective, any two distinct $n \times n$ MDS matrices present equal contribution to a cipher's design in terms of diffusion power. However, their computational cost, which is a relevant practical implementation criterion, \emph{is not} necessarily the same. This motivates not only the search for MDS matrices, but the search for \emph{MDS matrices with low computational cost}. In this work, the computational cost of a matrix $A$ is measured by the amount of \textbf{xor} and \textbf{xtime} operations required when multiplying a cipher's state column vector by $A$.
 
@@ -49,7 +49,7 @@ It is also worth noting that, although MDS matrices are widely used in cryptogra
 
 In this chapter, we aim at providing a history of the application of MDS matrices in cryptography, listing the matrices, the ciphers in which they have been applied, the respective Finite Fields (order and irreducible polynomial), and their cost (amount of \textbf{xor} and \textbf{xtime} operations).
 
-\textcolor{red}{Note: this is a partial report. For the moment, it contains only Preliminaries and information about the ciphers SHARK and SQUARE. It will be expanded in the future.}
+\textcolor{red}{Note: this is a partial report. It will be expanded in the future.}
 
 We assume the reader is familiar with:
 \begin{itemize}
@@ -92,13 +92,6 @@ We assume the reader is familiar with:
 \end{itemize}
 
 \section{Preliminaries}
-%- Explain GF arithmetic (groups, finite fields...)
-%- Explain what is an irreducible polynomial
-%- Definition: Hadamard matrix
-%- Definition: Involutory matrix
-%- Definition: circulant matrix
-%- Definition: Vandermonde matrix
-
 \subsection{Linear codes}
 \begin{definition}[Hamming weight \cite{SloaneBook}]
 The Hamming weight $w(x)$ of a vector $x$ is the number of nonzero components of the vector $x$.
@@ -124,7 +117,7 @@ A parity-check matrix $H$ for an $[n, k, d]$ code $C$ is an $(n-k) \times k$ mat
 
 \begin{theorem}[Singleton Bound \cite{SloaneBook}]
 If $C$ is an $[n, k, d]$ code, then $d \leq n - k + 1$.
-\end{definition}
+\end{theorem}
 
 \begin{definition}[MDS code \cite{SloaneBook}]\label{def:mds-code-singleton}
 An \emph{MDS code} is a \emph{linear code} that meets the \emph{Singleton bound}, i.e a linear code with $d = n - k + 1$.
@@ -145,7 +138,7 @@ $A$ is non-singular if and only if $det(A) \neq 0$.
 \end{definition}
 
 \begin{definition}[Involutory matrix]
-An $n \times n$ square matrix $A$ is involutory if $A \times A = I_n$, where $I_n$ is the identity matrix. In other words, $A$ is involutory when $A = A^{-1}$. 
+An $n \times n$ square matrix $A$ is involutory if $A \times A = I_n$, where $I_n$ is the identity matrix. In other words, $A$ is involutory when $A = A^{-1}$.
 \end{definition}
 
 \begin{definition}[Circulant matrix]
@@ -156,7 +149,7 @@ An $n \times n$ matrix $A$ is circulant if each row $i$ is formed by a cyclical 
 A circulant matrix in which the shift is a cyclical shift to the left, i.e
 
 $$
-A = 
+A =
 \begin{bmatrix}
 a_0 & a_1 & ... & ... & a_{n-1}\\
 a_1 & a_2 & ... & a_{n-1} & a_0\\
@@ -170,7 +163,7 @@ $$
 A circulant matrix in which the shift is a cyclical shift to the right, i.e
 
 $$
-A = 
+A =
 \begin{bmatrix}
 a_0 & a_1 & ... & ... & a_{n-1}\\
 a_{n-1} & a_0 & a_1 & ... & a_{n-2}\\
@@ -204,14 +197,14 @@ Given $x_0, ..., x_{n-1}$ and $y_0, ..., y_{n-1}$, the matrix $A$ where $A[i][j]
 
 An $n\times n$ matrix posesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy and circulant matrices allow us to lower the number of elements we need to select. A circulant matrix can be defined by one row only, therefore only $n$ elements are required. However, there are no guarantees about the MDS property. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. On the other hand, a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, requiring $2n$ choices of elements (the $x_i$ and the $y_i$) to be defined. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy) matrices for any arbitrary $n$.
 
-\begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]
+\begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]\label{def:hadamard}
 Given $n$ elements $a_0, a_1, ..., a_{n-1}$, $n$ being a power of 2, the matrix $H$ such that $H[i][j] = a_{i \oplus j}$ is a Hadamard matrix.
 \end{definition}
 
 \begin{definition}[Vandermonde matrix \cite{hoffmann1971linear}]
 Given $z$ elements $a_0, a_1, ..., a_{z-1}$, the $z \times n$ matrix $V$ such that
 \begin{equation}\label{eq:cost}
-V = 
+V =
 \begin{bmatrix}
 1 & a_0 & a_0^2 & ... & a_0^{n-1}\\
 1 & a_1 & a_1^2 & ... & a_1^{n-1}\\
@@ -224,22 +217,18 @@ is a Vandermonde matrix.
 
 Note that Hadamard and Vandermonde constructions too allow us to lower the number of required choices to obtain a matrix. Only $n$ elements are necessary for a Hadamard matrix to be defined, provided that $n$ is a power of 2. In the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. There are no guarantees about the MDS property with Hadamard or Vandermonde constructions, so we must construct the matrices and then evaluate whether they are MDS or not, e.g using Theorem \ref{teo:mds}.
 
-%\subsubsection{Evaluating a matrix for MDS property}
-%If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices, and we must check that they are non-zero. This can be done in $O(n!^2)$ time with a recursive implementation to compute the determinants.
+In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i}+{j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic.
 
-%\subsubsection{Computational complexity to obtain the determinant}
-%The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications in the underlying Finite Field. The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. There are $3^2 = 9$ such submatrices, therefore $3^2$ determinants of $2 \times 2$ matrices are calculated --- and thus $9 \times 2 = 18$ multiplications in GF($2^m$). The determinant of a $4 \times 4$ matrix can be computed similarly by calculating the cofactors of $4^2 = 16$ submatrices which are $3 \times 3$ and thus require $3^2$ determinants of $2 \times 2$ submatrices each, therefore totalizing $4^2 \times 3^2$ determinants of $2 \times 2$ submatrices. For a $5 \times 5$ matrix, the total amount is $5^2 \times 4^2 \times 3^2$, and so forth. Therefore, for an $n \times n$ matrix, the complexity is bounded by $n!^2$ operations (in asymptotic notation, $O(n!^2)$).
+\subsection{Evaluating a matrix for MDS property}
+If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in the finite field}, since it is the most expensive operation.
 
-\subsubsection{Evaluating a matrix for MDS property}
-If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in the finite field}.
-
-The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications. 
+The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications.
 
 The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
 
 The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in the finite field.
 
-\textcolor{red}{Quantas submatrizes quadradas existem dentro de uma matriz n x n? Preciso disso pra saber como fica a o custo de testar se uma matriz é MDS.}
+In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in the finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
 
 \subsection{Abstract algebra}
 \textcolor{red}{Aqui pretendo colocar definições de grupo, grupo abeliano, corpo etc. A parte de álgebra abstrata que não é específica de corpos finitos e que a gente geralmente vê na faculdade}
@@ -247,7 +236,7 @@ The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications
 \subsection{Finite fields --- GF($2^m$)}
 
 \begin{concept}[Finite field \cite{DesignOfRijndael2002}]
-A \emph{finite field} is a field with a finite number of elements. The number of elements in the set is called the \emph{order} of the field. 
+A \emph{finite field} is a field with a finite number of elements. The number of elements in the set is called the \emph{order} of the field.
 \end{concept}
 
 \begin{concept}[Characteristic and order \cite{DesignOfRijndael2002}]
@@ -303,7 +292,7 @@ For further reference on abstract algebra and Finite Fields, the reader may refe
 \subsection{Computational cost unit}\label{sec:comp-cost}
 
 \subsubsection{Computational cost of multiplication in GF($2^8$)}
-Consider $T$ a state byte, which we multiply by the polynomial $2e_x = 00101110_2 = x^5 + x^3 + x^2 + x$ in GF($2^8$). Note that 
+Consider $T$ a state byte, which we multiply by the polynomial $2e_x = 00101110_2 = x^5 + x^3 + x^2 + x$ in GF($2^8$). Note that
 
 $$
 T \cdot 2e_x = T \cdot x^5 + T \cdot x^3 + T \cdot x^2 + T \cdot x = T \cdot x \cdot x \cdot x \cdot x \cdot x + T \cdot x \cdot x \cdot x + T \cdot x \cdot x + T \cdot x,
@@ -320,7 +309,7 @@ Let $W \cdot x = Z$. Then $T \cdot 2e_x = Y + W + Z + Z \cdot x \cdot x$.
 The total number of \textbf{xtime} operations in this process is 5 (1 to obtain $Y$ from $T$, 1 to obtain $W$ from $Y$, 1 to obtain $Z$ from $W$, 2 to compute $Z \cdot x \cdot x$), since we can reuse intermediate \textbf{xtime} calls. The total number of \textbf{xor} operations is 3. For multiplication in GF($2^8$), in the worst case, 7 \textbf{xtime} would be necessary, since the maximum degree of polynomials in GF($2^8$) is 7.
 
 \subsubsection{Computational cost of a matrix}
-The computational cost of an $n\timesn$ matrix $A$ is given by the necessary \textbf{xor} and \textbf{xtime} operations when multiplying a $n\times1$ column vector by $A$. As an example, we calculate the cost of matrix (\ref{mat:square}), used in the SQUARE \cite{SQUARE1997} cipher. 
+The computational cost of an $n\times n$ matrix $A$ is given by the necessary \textbf{xor} and \textbf{xtime} operations when multiplying a $n\times1$ column vector by $A$. As an example, we calculate the cost of matrix (\ref{mat:square}), used in the SQUARE \cite{SQUARE1997} cipher.
 
 A row of matrix (\ref{mat:square}) contains the elements $01_x = 1, 02_x = x$ and $03_x = x + 1$ only. Multiplying by $01_x$ does not require \textbf{xtime} or \textbf{xor}, since $01_x \cdot T = T$. Computing $02_x \cdot T = x \cdot T$ requires 1 \textbf{xtime}. Computing $03_x \cdot T = (x + 1) \cdot T = T \cdot x + T$ requires 1 \textbf{xtime} and 1 \textbf{xor}. Furthermore, adding the row multiplication results costs 3 \textbf{xor}. Therefore, the cost of a row is 2 \textbf{xtime} and 4 \textbf{xor}. Equation \ref{eq:cost} illustrates this, with $t_1, t_2, t_3$ and $t_4$ being bytes of the state column vector.
 
@@ -328,7 +317,7 @@ A row of matrix (\ref{mat:square}) contains the elements $01_x = 1, 02_x = x$ an
 \begin{bmatrix}
 02_x & 01_x & 01_x & 03_x\\
 \end{bmatrix}
-\cdot 
+\cdot
 \begin{bmatrix}
 t_1\\
 t_2\\
@@ -402,7 +391,7 @@ Matrix (\ref{mat:shark}) and its inverse (\ref{mat:shark-inv}) are used in the S
 
 \begin{equation}\label{mat:shark}
 \begin{bmatrix}
-ce_x & 95_x & 57_x & 82_x & 8a_x & 19_x & b0_x & 01_x\\ 
+ce_x & 95_x & 57_x & 82_x & 8a_x & 19_x & b0_x & 01_x\\
 e7_x & fe_x & 05_x & d2_x & 52_x & c1_x & 88_x & f1_x\\
 b9_x & da_x & 4d_x & d1_x & 9e_x & 17_x & 83_x & 86_x\\
 d0_x & 9d_x & 26_x & 2c_x & 5d_x & 9f_x & 6d_x & 75_x\\
@@ -430,7 +419,7 @@ Matrix (\ref{mat:square}) and its inverse (\ref{mat:square-inv}) are used in the
 
 \begin{equation}\label{mat:square}
 \begin{bmatrix}
-02_x & 01_x & 01_x & 03_x\\ 
+02_x & 01_x & 01_x & 03_x\\
 03_x & 02_x & 01_x & 01_x\\
 01_x & 03_x & 02_x & 01_x\\
 01_x & 01_x & 03_x & 02_x
@@ -613,26 +602,6 @@ c_x & a_x\\
 \end{bmatrix}
 \end{equation}
 
-%\begin{equation}\label{mat:hierocrypt-3-higher-16x16}
-%\begin{bmatrix}
-%1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 1\\
-%1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1\\
-%1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1\\
-%0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0\\
-%1 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1\\
-%0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0\\
-%0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1\\
-%1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0\\
-%1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0\\
-%1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1\\
-%1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0\\
-%1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
-%1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1\\
-%1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0\\
-%0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1
-%\end{bmatrix}
-%\end{equation}
-
 Matrices (\ref{mat:fox-mu4}) (inverse: (\ref{mat:fox-mu4-inv})) and (\ref{mat:fox-mu8}) (inverse: (\ref{mat:fox-mu8-inv})) are used in the FOX block cipher family, with $z = x^7+x^6+x^5+x^4+x^3+x^2+1, a = x+1, b = x^7+x, c = x, d = x^2, e = x^7+x^6+x^5+x^4+x^3+x^2$ and $f = x^6+x^5+x^4+x^3+x^2+x$.
 
 \begin{equation}\label{mat:fox-mu4}
@@ -760,7 +729,33 @@ f_x & 8_x & 1_x & 3_x & 4_x & 7_x & 5_x & e_x\\
 \end{bmatrix}
 \end{equation}
 
-\section{Non-MDS matrix catalogue}
+\section{A note on Hierocrypt 3 and Hierocrypt-L1}
+In the Hierocrypt 3 and Hierocrypt-L1 ciphers, there are two different diffusion layers, referred as low level ($mds_l$) and high level ($MDS_H$) by the authors, since these ciphers follow a nested SPN structure (for more details please refer to \cite{Hierocrypt2000} and \cite{Hierocrypt-L1-2000}). Their high level diffusion layer is called $MDS_H$ and is based on multiplication by matrices (\ref{mat:hierocrypt-3-higher}) (for Hierocrypt 3) and (\ref{mat:hierocrypt-l1-higher}) (for Hierocrypt-L1). They are both MDS, as stated in the design rationale section of the ciphers' specification documents (see \cite{Hierocrypt2000} and \cite{Hierocrypt-L1-2000}). However, for the implementation, the $MDS_H$ transformation can be equivalently expressed as multiplication by a $16 \times 16$ binary matrix which is \emph{not MDS}, but yields the same result. In \cite{Hierocrypt2000}, they state \begin{quote}``$MDS(32, 4)$ consists of eight parallel $MDS(4,4)$. When all $MDS(4,4)$ are the same, $MDS_H$ is nothing but the combination of byte-wise XOR's and is expressed as $16 \times 16$ matrix."\end{quote}
+
+See for example matrix \ref{mat:hierocrypt-3-higher-16x16}, which is the binary matrix used for $MDS_H$ in Hierocrypt 3. We can see that it is not MDS, since it has a zero element (see Theorem \ref{teo:mds}).
+
+\begin{equation}\label{mat:hierocrypt-3-higher-16x16}
+\begin{bmatrix}
+1010101011011111\\
+1101110111100111\\
+1110111011110011\\
+0101010110101110\\
+1111101010101101\\
+0111110111011110\\
+0011111011101111\\
+1110010101011010\\
+1101111110101010\\
+1110011111011101\\
+1111001111101110\\
+1010111001010101\\
+1101111001111101\\
+1110111100111110\\
+0101101011100101
+\end{bmatrix}
+\end{equation}
+
+\section{About the irreducible polynomials}
+\textcolor{red}{yet to be written}
 
 \section{Computing \textbf{xtime} and \textbf{xor} of the matrices}
 
@@ -839,7 +834,7 @@ unsigned int matrix_xor_cost(unsigned int mat[DIM][DIM]) {
 \subsection{SQUARE manual calculation example}
 The computational cost for matrix (\ref{mat:shark}), used in the SQUARE cipher, was explained in Section \ref{sec:comp-cost}.
 
-For matrix (\ref{mat:square-inv}), used in SQUARE's decryption process, each row contains elements from $\{0e_x, 09_x, 0d_x, 0b_x\}$. 
+For matrix (\ref{mat:square-inv}), used in SQUARE's decryption process, each row contains elements from $\{0e_x, 09_x, 0d_x, 0b_x\}$.
 
 \begin{equation*}
 0e_x = 00001110_2 = x^3 + x^2 + x \text{ requires 3 \textbf{xtime} and 2 \textbf{xor} }
