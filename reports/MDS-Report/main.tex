@@ -184,7 +184,7 @@ Given a matrix $M$, a submatrix of $M$ is the matrix obtained after removing $z$
 \end{definition}
 
 \begin{theorem}[MDS codes \cite{SloaneBook}]\label{teo:mds}
-An $(n, k, d)$-code $\mathcal{C}$ with generator matrix $G = [I_nB]$, where $B$ is a $k \times (n - k)$ matrix, is MDS if and only if every square submatrix of $B$ is non-singular.
+An $[n, k, d]$-code $\mathcal{C}$ with generator matrix $G = [I_nB]$, where $B$ is a $k \times (n - k)$ matrix, is MDS if and only if every square submatrix of $B$ is non-singular.
 \end{theorem}
 
 We call the $B$ matrix of Theorem \ref{teo:mds} the \emph{MDS matrix} throughout this work, i.e the MDS matrices we study are the $B$ matrices of the respective MDS codes chosen when designing them.
@@ -195,7 +195,7 @@ For further detail on matrices, determinants and linear algebra, the reader may 
 Given $x_0, ..., x_{n-1}$ and $y_0, ..., y_{n-1}$, the matrix $A$ where $A[i][j] = \frac{1}{x_i + y_j}$ is called a Cauchy matrix. According to \cite{Youssef1997}, provided that $x_i \neq x_j$ for $0\leq i,j\leq n-1$, that $y_i \neq y_j$ for $0\leq i,j\leq n-1$ and that $x_i + y_j \neq 0$ for all $i, j$, any square submatrix of a Cauchy matrix is nonsingular over any field.
 \end{definition}
 
-An $n\times n$ matrix posesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy and circulant matrices allow us to lower the number of elements we need to select. A circulant matrix can be defined by one row only, therefore only $n$ elements are required. However, there are no guarantees about the MDS property. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. On the other hand, a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, requiring $2n$ choices of elements (the $x_i$ and the $y_i$) to be defined. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy) matrices for any arbitrary $n$.
+An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy and circulant matrices allow us to lower the number of elements we need to select. A circulant matrix can be defined by one row only, therefore only $n$ elements are required. However, there are no guarantees about the MDS property. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. On the other hand, a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, requiring $2n$ choices of elements (the $x_i$ and the $y_i$) to be defined. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy) matrices for any arbitrary $n$.
 
 \begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]\label{def:hadamard}
 Given $n$ elements $a_0, a_1, ..., a_{n-1}$, $n$ being a power of 2, the matrix $H$ such that $H[i][j] = a_{i \oplus j}$ is a Hadamard matrix.
@@ -217,18 +217,18 @@ is a Vandermonde matrix.
 
 Note that Hadamard and Vandermonde constructions too allow us to lower the number of required choices to obtain a matrix. Only $n$ elements are necessary for a Hadamard matrix to be defined, provided that $n$ is a power of 2. In the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. There are no guarantees about the MDS property with Hadamard or Vandermonde constructions, so we must construct the matrices and then evaluate whether they are MDS or not, e.g using Theorem \ref{teo:mds}.
 
-In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i}+{j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic.
+In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i\oplus j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic.
 
 \subsection{Evaluating a matrix for MDS property}
-If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in the finite field}, since it is the most expensive operation.
+If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in a finite field}, since it is the most expensive operation.
 
 The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications.
 
 The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
 
-The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in the finite field.
+The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in a finite field.
 
-In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in the finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
+In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the underlying finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in a finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
 
 \subsection{Abstract algebra}
 \textcolor{red}{Aqui pretendo colocar definições de grupo, grupo abeliano, corpo etc. A parte de álgebra abstrata que não é específica de corpos finitos e que a gente geralmente vê na faculdade}
@@ -367,7 +367,7 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 % Hierocrypt
 2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\ (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
 2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $x^4+x+1$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\ (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
-2000 & 4 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
+2000 & 2 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
 
 % FOX
 2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{30\\72} & \shortstack{25\\106} & \shortstack{(\ref{mat:fox-mu4})\\(\ref{mat:fox-mu4-inv})} \\ \hline
@@ -415,7 +415,7 @@ a1_x &f1_x &71_x &40_x &91_x &27_x &18_x &a5_x\\
 \end{bmatrix}
 \end{equation}
 
-Matrix (\ref{mat:square}) and its inverse (\ref{mat:square-inv}) are used in the SQUARE \cite{SQUARE1997} cipher. They are circulant.
+Matrix (\ref{mat:square}) and its inverse (\ref{mat:square-inv}) are used in the SQUARE \cite{SQUARE1997} cipher. They are right-circulant.
 
 \begin{equation}\label{mat:square}
 \begin{bmatrix}
@@ -494,7 +494,7 @@ Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linea
 \end{bmatrix} \text{for } N=4
 \end{equation}
 
-Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
+Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are right-circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
 
 \begin{equation}\label{mat:rijndael}
 \begin{bmatrix}
@@ -530,7 +530,7 @@ x^3+x+1 & x^3+x^2+1 & x^3+1 & x^3+x^2+x
 
 Furthermore, it is interesting to note that Rijndael's matrix (\ref{mat:rijndael}) is the transpose of SQUARE's matrix (\ref{mat:square}) and this also happens to the inverses (matrix (\ref{mat:square-inv}) is the transpose of (\ref{mat:rijndael-inv})).
 
-Matrices (\ref{mat:bksq}) and its inverse (\ref{mat:bksq-inv}) is used in the BKSQ \cite{BKSQ1998} cipher. They are circulant.
+Matrices (\ref{mat:bksq}) and its inverse (\ref{mat:bksq-inv}) are used in the BKSQ \cite{BKSQ1998} cipher. They are right-circulant.
 
 \begin{equation}\label{mat:bksq}
 \begin{bmatrix}
@@ -686,7 +686,7 @@ c(x) & c(x) & 1+c(x)
 \end{bmatrix}
 \end{equation}
 
-Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is circulant.
+Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is right-circulant.
 
 \begin{equation}\label{mat:grostl}
 \begin{bmatrix}
@@ -748,6 +748,7 @@ See for example matrix \ref{mat:hierocrypt-3-higher-16x16}, which is the binary 
 1110011111011101\\
 1111001111101110\\
 1010111001010101\\
+1010110111111010\\
 1101111001111101\\
 1110111100111110\\
 0101101011100101
