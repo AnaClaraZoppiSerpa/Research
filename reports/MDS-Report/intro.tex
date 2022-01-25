@@ -1,0 +1,51 @@
+MDS matrices have been widely used in the construction of diffusion layers for block ciphers such as SHARK \cite{SHARK1996}, SQUARE \cite{SQUARE1997}, BKSQ \cite{BKSQ1998}, KHAZAD \cite{KHAZAD2000}, ANUBIS \cite{ANUBIS2000}, Hierocrypt-3 \cite{Hierocrypt2000}, Rijndael (AES) \cite{DesignOfRijndael2002} and Curupira \cite{barreto2007curupira}. They have also been applied in the design of hash functions (e.g Whirlwind \cite{Whirlwind2010} and Gr{\o}stl \cite{Grostl2009}). The choice is due to the fact that MDS codes provide transformations with optimal linear and differential branch numbers (see e.g \cite{SQUARE1997} or \cite{SHARK1996}), thus contributing to security against Differential and Linear Cryptanalysis attacks.
+
+When a matrix is MDS, optimal \emph{branch number} (a measure of diffusion power) is ensured, therefore, from the theoretical security perspective, any two distinct $n \times n$ MDS matrices present equal contribution to a cipher's design in terms of diffusion power. However, their computational cost, which is a relevant practical implementation criterion, \emph{is not} necessarily the same. This motivates not only the search for MDS matrices, but the search for \emph{MDS matrices with low computational cost}. In this work, the computational cost of a matrix $A$ is measured by the amount of \textbf{xor} and \textbf{xtime} operations required when multiplying a cipher's state column vector by $A$.
+
+Due to the computational cost of matrix multiplication, there is an interest in finding MDS matrices with coefficients as small as possible, in order to minimize the required amount of \textbf{xor} and \textbf{xtime} operations required by the implementations. However, the complexity of finding MDS matrices through random search increases proportionally to the dimension, which led to the investigation of systematic methods to construct (or find) MDS matrices. One possible avenue is trying to find direct mathematical constructions which ensure the MDS property, and another is to impose restrictions to limit the random search space (e.g imposing the matrix should be circulant, as was done by the authors of \cite{SQUARE1997}). Furthermore, there is an interest in finding involutory MDS matrices (as pointed by \cite{KHAZAD2000} and \cite{ANUBIS2000}), so that the encryption and the decryption computational cost are the same.
+
+It is also worth noting that, although MDS matrices are widely used in cryptographic algorithms, there are designs which prefer not to make use of them. The block ciphers Serpent \cite{Serpent1998}, IDEA \cite{IDEA2000} and PRESENT \cite{PRESENT2007}, for instance, do not include MDS matrices in their design. The hash function Keccak \cite{Keccak2013}, which was later selected by NIST to become the SHA-3 standard, also does not use MDS matrices. The computational cost can be related to this choice.
+
+In this chapter, we aim at providing a history of the application of MDS matrices in cryptography, listing the matrices, the ciphers in which they have been applied, the respective Finite Fields (order and irreducible polynomial), and their cost (amount of \textbf{xor} and \textbf{xtime} operations).
+
+\textcolor{red}{Note: this is a partial report. It will be expanded in the future.}
+
+We assume the reader is familiar with:
+\begin{itemize}
+    \item Linear branch number (see \textcolor{red}{Chapter X})
+    \item Differential branch number (see \textcolor{red}{Chapter X})
+    \item Differential Cryptanalysis (see \textcolor{red}{Chapter X})
+    \item Linear Cryptanalysis (see \textcolor{red}{Chapter X})
+    \item MDS codes (see \textcolor{red}{Chapter X} and, for further detail, reference \cite{SloaneBook})
+    \item Diffusion property in cryptography (see \textcolor{red}{Chapter X})
+    \item Groups, rings and fields in abstract algebra (see \textcolor{red}{Chapter X})
+\end{itemize}
+
+\section{Notation}
+\begin{itemize}
+    \item $det(A)$: determinant of the matrix $A$
+    \item $A^{-1}$: inverse matrix of $A$
+    \item $n, k, d$: parameters of a code
+    \item $\mathcal{C}$: a code
+    \item $G$: generator matrix of a code
+    \item $I_n$: the $n \times n$ identity matrix
+    \item $[I_nB]$: matrix obtained by placing the $n \times n$ matrix $B$ to the right of the $n \times n$ identity matrix $I_n$. For example, for $B = \begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$, $[I_nB] = \begin{bmatrix} 1 & 0 & 1 & 2 \\ 0 & 1 & 3 & 4\end{bmatrix}$
+\end{itemize}
+
+\section{Acronyms}
+\begin{itemize}
+    \item MDS: Maximum Distance Separable
+    %\item SHARK: refers to the SHARK cipher \cite{SHARK1996}
+    %\item SQUARE: refers to the SQUARE cipher \cite{SQUARE1997}
+    %\item BKSQ: refers to the BKSQ cipher \cite{BKSQ1998}
+    %\item KHAZAD: refers to the KHAZAD cipher \cite{KHAZAD2000}
+    %\item ANUBIS: refers to the ANUBIS cipher \cite{ANUBIS2000}
+    %\item Hierocrypt-3: refers to the Hierocrypt-3 cipher \cite{Hierocrypt2000}
+    %\item Rijndael: refers to the Rijndael cipher which later became AES \cite{DesignOfRijndael2002}
+    \item AES: Advanced Encryption Standard (Rijndael's name after being chosen by NIST)
+    %\item Curupira: refers to the Curupira cipher \cite{barreto2007curupira}
+    %\item Whirlwind: refers to the Whirlwind hash function \cite{Whirlwind2010}
+    %\item Gr{\o}stl: refers to the Gr{\o}stl hash function \cite{Grostl2009}
+    \item \textbf{xor}: bitwise XOR between two bit strings
+    \item \textbf{xtime}: refers to the multiplication by the polynomial $x$ in the finite field GF($2^m$) for an integer $m$
+\end{itemize}

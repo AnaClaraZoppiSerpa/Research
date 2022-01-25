@@ -1,0 +1,38 @@
+In the Hierocrypt 3 and Hierocrypt-L1 ciphers, there are two different diffusion layers, referred as low level ($mds_l$) and high level ($MDS_H$) by the authors, since these ciphers follow a nested SPN structure (for more details please refer to \cite{Hierocrypt2000} and \cite{Hierocrypt-L1-2000}). Their high level diffusion layer is called $MDS_H$ and is based on multiplication by matrices (\ref{mat:hierocrypt-3-higher}) (for Hierocrypt 3) and (\ref{mat:hierocrypt-l1-higher}) (for Hierocrypt-L1). They are both MDS, as stated in the design rationale section of the ciphers' specification documents (see \cite{Hierocrypt2000} and \cite{Hierocrypt-L1-2000}). However, for the implementation, the $MDS_H$ transformation can be equivalently expressed as multiplication by a $16 \times 16$ binary matrix (in Hierocrypt-3) which is \emph{not MDS}, but yields the same result. For Hierocrypt-L1, a $8 \times 8$ non-MDS matrix is used. In \cite{Hierocrypt2000}, they state \begin{quote}``$MDS(32, 4)$ consists of eight parallel $MDS(4,4)$. When all $MDS(4,4)$ are the same, $MDS_H$ is nothing but the combination of byte-wise XOR's and is expressed as $16 \times 16$ matrix."\end{quote} In \cite{Hierocrypt-L1-2000}, they present a similar statement about the $8 \times 8$ matrix.
+
+Matrix (\ref{mat:hierocrypt-3-higher-16x16}) is the binary matrix used for $MDS_H$ in Hierocrypt 3. We can see that it is not MDS, since it has a zero element (see Theorem \ref{teo:mds}).
+
+\begin{equation}\label{mat:hierocrypt-3-higher-16x16}
+\begin{bmatrix}
+1010101011011111\\
+1101110111100111\\
+1110111011110011\\
+0101010110101110\\
+1111101010101101\\
+0111110111011110\\
+0011111011101111\\
+1110010101011010\\
+1101111110101010\\
+1110011111011101\\
+1111001111101110\\
+1010111001010101\\
+1010110111111010\\
+1101111001111101\\
+1110111100111110\\
+0101101011100101
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:hierocrypt-l1-higher-8x8}) is also not MDS, since it has a zero element. It is used for $MDS_H$ in Hierocrypt L1.
+\begin{equation}\label{mat:hierocrypt-l1-higher-8x8}
+\begin{bmatrix}
+10101110\\
+11011111\\
+11100111\\
+01011101\\
+11010101\\
+11101010\\
+11111101\\
+10101011
+\end{bmatrix}
+\end{equation}

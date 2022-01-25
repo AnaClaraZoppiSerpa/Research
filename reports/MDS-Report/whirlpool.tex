@@ -1,0 +1,64 @@
+Matrix (\ref{mat:whirlpool}) is used in the Whirlpool hash function. The irreducible polynomial of the field is $p(x) = x^8+x^4+x^3+x^2+1$, and the inverse matrix is (\ref{mat:whirlpool-inv}).
+
+\begin{equation}\label{mat:whirlpool}
+\begin{bmatrix}
+01_x & 01_x & 03_x & 01_x & 05_x & 08_x & 09_x & 05_x\\
+05_x & 01_x & 01_x & 03_x & 01_x & 05_x & 08_x & 09_x\\
+09_x & 05_x & 01_x & 01_x & 03_x & 01_x & 05_x & 08_x\\
+08_x & 09_x & 05_x & 01_x & 01_x & 03_x & 01_x & 05_x\\
+05_x & 08_x & 09_x & 05_x & 01_x & 01_x & 03_x & 01_x\\
+01_x & 05_x & 08_x & 09_x & 05_x & 01_x & 01_x & 03_x\\
+03_x & 01_x & 05_x & 08_x & 09_x & 05_x & 01_x & 01_x\\
+01_x & 03_x & 01_x & 05_x & 08_x & 09_x & 05_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlpool-inv}
+\begin{bmatrix}
+a5_x & 07_x & 95_x & 9e_x & 0c_x & a7_x & 01_x & ea_x\\
+d1_x & b3_x & e8_x & 5a_x & 01_x & ab_x & 3d_x & 6c_x\\
+f8_x & 3c_x & 8a_x & 12_x & 2e_x & 8b_x & cc_x & 5e_x\\
+73_x & 27_x & 4e_x & e0_x & bf_x & c0_x & 24_x & 4a_x\\
+85_x & 17_x & 1c_x & 47_x & 0d_x & 4e_x & 5b_x & aa_x\\
+17_x & b0_x & d6_x & 2d_x & 6c_x & 26_x & ef_x & cb_x\\
+dd_x & ce_x & 15_x & da_x & 6c_x & 17_x & 03_x & fc_x\\
+ec_x & 78_x & d8_x & ea_x & da_x & 21_x & 17_x & b1_x
+\end{bmatrix}
+\end{equation}
+
+In \cite{Whirlpool2003}, it is claimed that (\ref{mat:whirlpool}) is MDS. However, in \cite{Shirai2003}, Shirai and Shibutani find singular submatrices, which implies that the matrix is, in fact, not MDS. They also present alternative circulant matrices which are MDS.
+
+One of the singular submatrices found in \cite{Shirai2003} is matrix (\ref{mat:singular-whirlpool}). Other singular submatrices were found, for further detail we refer the reader to \cite{Shirai2003}.
+
+\begin{equation}\label{mat:singular-whirlpool}
+\begin{bmatrix}
+  01_x & 05_x\\
+  01_x & 05_x
+\end{bmatrix}
+\end{equation}
+
+Furthermore, Shirai and Shibutani obtain 224 MDS matrices satisfying the desired conditions for Whirlpool:
+\begin{itemize}
+  \item Branch number equal to 9;
+  \item As many 1-elements as possible (namely, 3);
+  \item Hamming weight of any element is at most 2.
+\end{itemize}
+
+Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}.
+
+\begin{gather}
+C_0 = rcirc(01_x, 01_x, 02_x, 01_x, 05_x, 08_x, 09_x, 04_x)\label{shirai-0}\\
+C_1 = rcirc(01_x, 01_x, 02_x, 01_x, 06_x, 09_x, 08_x, 03_x)\label{shirai-1}\\
+C_2 = rcirc(01_x, 01_x, 02_x, 01_x, 08_x, 09_x, 04_x, 05_x)\label{shirai-2}\\
+C_3 = rcirc(01_x, 01_x, 02_x, 01_x, 09_x, 06_x, 04_x, 03_x)\label{shirai-3}\\
+C_4 = rcirc(01_x, 01_x, 02_x, 06_x, 05_x, 09_x, 01_x, 08_x)\label{shirai-4}\\
+C_5 = rcirc(01_x, 01_x, 03_x, 01_x, 04_x, 09_x, 05_x, 06_x)\label{shirai-5}\\
+C_6 = rcirc(01_x, 01_x, 03_x, 01_x, 08_x, 04_x, 09_x, 06_x)\label{shirai-6}\\
+C_7 = rcirc(01_x, 01_x, 04_x, 01_x, 08_x, 05_x, 02_x, 09_x)\label{shirai-7}\\
+C_8 = rcirc(01_x, 01_x, 04_x, 03_x, 06_x, 08_x, 01_x, 09_x)\label{shirai-8}\\
+C_9 = rcirc(01_x, 01_x, 04_x, 03_x, 06_x, 08_x, 01_x, 09_x)\label{shirai-9}\\
+C_{10} = rcirc(01_x, 01_x, 05_x, 01_x, 04_x, 06_x, 03_x, 09_x)\label{shirai-10}\\
+C_{11} = rcirc(01_x, 01_x, 05_x, 08_x, 02_x, 09_x, 01_x, 06_x)\label{shirai-11}\\
+C_{12} = rcirc(01_x, 01_x, 08_x, 01_x, 06_x, 03_x, 02_x, 09_x)\label{shirai-12}\\
+C_{13} = rcirc(01_x, 01_x, 08_x, 02_x, 04_x, 05_x, 01_x, 09_x)\label{shirai-13}
+\end{gather}

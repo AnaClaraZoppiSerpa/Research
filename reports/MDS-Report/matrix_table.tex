@@ -1,0 +1,60 @@
+In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimensions, the \textbf{Inv} column refers to whether they are involutory or not, \textbf{Use} refers to application in e.g a block cipher or hash function, \textbf{Bib} contains the bibliographic reference, \textbf{\#xor} refers to the necessary amount of \textbf{xor} operations, and \textbf{\#xtime} refers to the necessary amount of \textbf{xtime} operations. All finite fields of Table \ref{tbl:mds-list} have characteristic $p = 2$. The order is $2^m$, with $m$ being given by the degree of the irreducible polynomial in the column $GF(2)[x]/(p(x))$. For example, $m = 8$ for SHARK, SQUARE, BKSQ, KHAZAD, ANUBIS, Hierocrypt, Rijndael and the Cauchy matrix found by \cite{Youssef1997}.
+
+\begin{footnotesize}
+\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Year} & \textbf{Ord} & \textbf{Type} & \textbf{Inv} & \textbf{Use} & \textbf{Bib} & \textbf{$GF(2)[x]/(p(x))$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrices} \\ \hline
+\endfirsthead
+\endhead
+
+% row template
+% year & type & inv & use & poly & xor & xtime & mats
+% SHARK
+1996 & 8 & --- & no & \shortstack{SHARK} & \cite{SHARK1996} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x^2 + 1$} & \shortstack{235 \\ 223} & \shortstack{369 \\393} & \shortstack{\\ (\ref{mat:shark}) \\ (\ref{mat:shark-inv})} \\ \hline
+
+% SQUARE
+1997 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{SQUARE} &  \cite{SQUARE1997} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{16 \\40} & \shortstack{8 \\ 48} & \shortstack{\\ (\ref{mat:square}) \\ (\ref{mat:square-inv})} \\ \hline
+
+% Tavares
+1997 & 8 & Cauchy & yes & \shortstack{---} & \cite{Youssef1997} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 240 & 344 & (\ref{mat:tavares}) \\ \hline
+
+% BKSQ
+1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ} & \cite{BKSQ1998} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{9 \\39} & \shortstack{9 \\63} & \shortstack{\\ (\ref{mat:bksq}) \\ (\ref{mat:bksq-inv})} \\ \hline
+
+% Rijndael
+1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES)} & \cite{DesignOfRijndael2002} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16 \\40} & \shortstack{8 \\48} & \shortstack{\\ (\ref{mat:rijndael}) \\ (\ref{mat:rijndael-inv})} \\ \hline
+
+% KHAZAD
+2000 & 8 & Hadamard & yes & \shortstack{KHAZAD} & \cite{KHAZAD2000}& \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 112 & 120 & (\ref{mat:khazad}) \\ \hline
+
+% ANUBIS
+2000 & 4 & Hadamard & yes & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & (\ref{mat:anubis}) \\ \hline
+2000 & 4 & Vandermonde & no & \shortstack{ANUBIS \\ key schedule} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 20 & 32 & (\ref{mat:anubis-ke}) \\ \hline
+
+% Hierocrypt
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\ (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $x^4+x+1$ & \shortstack{32\\40} & \shortstack{40\\44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\ (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
+2000 & 2 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\7} & \shortstack{10\\11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\ (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
+
+% Whirlpool
+%2003 & 8 & \shortstack{\\ right \\ circulant} & no & Whirlpool & \cite{Whirlpool2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
+
+% FOX
+2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{30\\72} & \shortstack{25\\106} & \shortstack{(\ref{mat:fox-mu4})\\(\ref{mat:fox-mu4-inv})} \\ \hline
+2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{141\\284} & \shortstack{169\\392} & \shortstack{(\ref{mat:fox-mu8})\\(\ref{mat:fox-mu8-inv})} \\ \hline
+
+% Curupira
+2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 12 & 15 & (\ref{mat:curupira}) \\ \hline
+2007 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{Curupira \\ key schedule} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 27 & 36 & (\ref{mat:curupira-ke}) \\ \hline
+
+% Grostl
+2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 104 & 96 & (\ref{mat:grostl}) \\ \hline
+
+% Whirlwind
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 104 & 136 & (\ref{mat:whirlwind-m0}) \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 128 & 128 & (\ref{mat:whirlwind-m1}) \\ \hline
+\caption{MDS matrix usage and cost}\label{tbl:mds-list}
+\end{longtable}
+\end{footnotesize}
+
+Please note that matrices \eqref{shirai-0} to \eqref{shirai-13} and others derived from them are also MDS, although not yet listed in Table \ref{tbl:mds-list}. See Section \ref{sec:whirlpool} for further detail on this.

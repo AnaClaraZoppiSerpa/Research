@@ -1,0 +1,152 @@
+== SHARK == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+SHARK Inv best xtime: 370 with Poly(x^8 + x^5 + x^3 + x^2 + 1, GF(2))
+SHARK Inv best xor: 223 with Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+SHARK Inv xtime: 393 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+SHARK Inv xor: 223 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+
+== SQUARE == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+SQUARE Inv best xtime: 48 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+SQUARE Inv best xor: 40 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+SQUARE Inv xtime: 48 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+SQUARE Inv xor: 40 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+
+== BKSQ == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+BKSQ Inv best xtime: 63 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+BKSQ Inv best xor: 21 with Poly(x^8 + x^7 + x^2 + x + 1, GF(2))
+BKSQ Inv xtime: 63 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+BKSQ Inv xor: 39 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1, GF(2))
+
+== Tavares == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Tavares Inv best xtime: 344 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Tavares Inv best xor: 240 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Tavares Inv xtime: 344 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+Tavares Inv xor: 240 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+
+== KHAZAD == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+KHAZAD Inv best xtime: 120 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+KHAZAD Inv best xor: 112 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+KHAZAD Inv xtime: 120 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+KHAZAD Inv xor: 112 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+
+== Anubis == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Anubis Inv best xtime: 20 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Anubis Inv best xor: 16 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Anubis Inv xtime: 20 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+Anubis Inv xor: 16 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+
+== Anubis (key schedule) == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Anubis (key schedule) Inv best xtime: 81 with Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+Anubis (key schedule) Inv best xor: 47 with Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+Anubis (key schedule) Inv xtime: 101 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+Anubis (key schedule) Inv xor: 69 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+
+== Whirlwind m0 == 
+
+Configurações dos polinômios: ORDER 4 DEGREE_MASK 0b10000
+Whirlwind m0 Inv best xtime: 136 with Poly(x^4 + x + 1, GF(2))
+Whirlwind m0 Inv best xor: 128 with Poly(x^4 + x + 1, GF(2))
+Whirlwind m0 Inv xtime: 136 with original poly = Poly(x^4 + x + 1, GF(2))
+Whirlwind m0 Inv xor: 128 with original poly = Poly(x^4 + x + 1, GF(2))
+
+== Whirlwind m1 == 
+
+Configurações dos polinômios: ORDER 4 DEGREE_MASK 0b10000
+Whirlwind m1 Inv best xtime: 128 with Poly(x^4 + x + 1, GF(2))
+Whirlwind m1 Inv best xor: 120 with Poly(x^4 + x^3 + 1, GF(2))
+Whirlwind m1 Inv xtime: 128 with original poly = Poly(x^4 + x + 1, GF(2))
+Whirlwind m1 Inv xor: 128 with original poly = Poly(x^4 + x + 1, GF(2))
+
+== Grostl == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Grostl Inv best xtime: 344 with Poly(x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1, GF(2))
+Grostl Inv best xor: 176 with Poly(x^8 + x^7 + x^4 + x^3 + x^2 + x + 1, GF(2))
+Grostl Inv xtime: 376 with original poly = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Grostl Inv xor: 232 with original poly = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+
+== Curupira == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Curupira Inv best xtime: 15 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Curupira Inv best xor: 12 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Curupira Inv xtime: 15 with original poly = Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+Curupira Inv xor: 12 with original poly = Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+
+== Curupira (ke) == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Curupira (ke) Inv best xtime: 36 with Poly(x^8 + x^5 + x^4 + x^3 + 1, GF(2))
+Curupira (ke) Inv best xor: 9 with Poly(x^8 + x^7 + x^6 + x^4 + x^2 + x + 1, GF(2))
+Curupira (ke) Inv xtime: 36 with original poly = Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+Curupira (ke) Inv xor: 30 with original poly = Poly(x^8 + x^6 + x^3 + x^2 + 1, GF(2))
+
+== Rijndael == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Rijndael Inv best xtime: 48 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Rijndael Inv best xor: 40 with Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Rijndael Inv xtime: 48 with original poly = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Rijndael Inv xor: 40 with original poly = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+
+== Hierocrypt 3 and L1 (low) == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Hierocrypt 3 and L1 (low) Inv best xtime: 40 with Poly(x^8 + x^7 + x^3 + x + 1, GF(2))
+Hierocrypt 3 and L1 (low) Inv best xor: 32 with Poly(x^8 + x^7 + x^3 + x + 1, GF(2))
+Hierocrypt 3 and L1 (low) Inv xtime: 104 with original poly = Poly(x^8 + x^6 + x^5 + x + 1, GF(2))
+Hierocrypt 3 and L1 (low) Inv xor: 52 with original poly = Poly(x^8 + x^6 + x^5 + x + 1, GF(2))
+
+== Hierocrypt 3 (high) == 
+
+Configurações dos polinômios: ORDER 4 DEGREE_MASK 0b10000
+Hierocrypt 3 (high) Inv best xtime: 32 with Poly(x^4 + x^3 + 1, GF(2))
+Hierocrypt 3 (high) Inv best xor: 28 with Poly(x^4 + x^3 + 1, GF(2))
+Hierocrypt 3 (high) Inv xtime: 44 with original poly = Poly(x^4 + x + 1, GF(2))
+Hierocrypt 3 (high) Inv xor: 40 with original poly = Poly(x^4 + x + 1, GF(2))
+
+== Hierocrypt L1 (high) == 
+
+Configurações dos polinômios: ORDER 4 DEGREE_MASK 0b10000
+Hierocrypt L1 (high) Inv best xtime: 10 with Poly(x^4 + x^3 + 1, GF(2))
+Hierocrypt L1 (high) Inv best xor: 7 with Poly(x^4 + x + 1, GF(2))
+Hierocrypt L1 (high) Inv xtime: 11 with original poly = Poly(x^4 + x + 1, GF(2))
+Hierocrypt L1 (high) Inv xor: 7 with original poly = Poly(x^4 + x + 1, GF(2))
+
+== FOX mu4 == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+FOX mu4 Inv best xtime: 84 with Poly(x^8 + x^7 + x^6 + x^5 + x^2 + x + 1, GF(2))
+FOX mu4 Inv best xor: 43 with Poly(x^8 + x^5 + x^4 + x^3 + 1, GF(2))
+FOX mu4 Inv xtime: 106 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1, GF(2))
+FOX mu4 Inv xor: 72 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1, GF(2))
+
+== FOX mu8 == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+FOX mu8 Inv best xtime: 350 with Poly(x^8 + x^6 + x^4 + x^3 + x^2 + x + 1, GF(2))
+FOX mu8 Inv best xor: 172 with Poly(x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1, GF(2))
+FOX mu8 Inv xtime: 392 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1, GF(2))
+FOX mu8 Inv xor: 284 with original poly = Poly(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1, GF(2))
+
+== Whirlpool == 
+
+Configurações dos polinômios: ORDER 8 DEGREE_MASK 0b100000000
+Whirlpool Inv best xtime: 328 with Poly(x^8 + x^6 + x^5 + x^3 + 1, GF(2))
+Whirlpool Inv best xor: 184 with Poly(x^8 + x^7 + x^2 + x + 1, GF(2))
+Whirlpool Inv xtime: 360 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+Whirlpool Inv xor: 240 with original poly = Poly(x^8 + x^4 + x^3 + x^2 + 1, GF(2))
+

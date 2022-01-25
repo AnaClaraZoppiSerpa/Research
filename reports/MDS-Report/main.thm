@@ -5,18 +5,19 @@
 \contentsline {definition}{{Definition}{5}{Parity-check matrix \cite {SloaneBook}}}{4}{definition.5}%
 \contentsline {theorem}{{Theorem}{1}{Singleton Bound \cite {SloaneBook}}}{4}{theorem.1}%
 \contentsline {definition}{{Definition}{6}{MDS code \cite {SloaneBook}}}{4}{definition.6}%
-\contentsline {definition}{{Definition}{7}{Singular matrix}}{5}{definition.7}%
-\contentsline {definition}{{Definition}{8}{Non-singular matrix}}{5}{definition.8}%
-\contentsline {definition}{{Definition}{9}{Involutory matrix}}{5}{definition.9}%
-\contentsline {definition}{{Definition}{10}{Circulant matrix}}{5}{definition.10}%
-\contentsline {definition}{{Definition}{11}{Left circulant matrix}}{5}{definition.11}%
-\contentsline {definition}{{Definition}{12}{Right circulant matrix}}{5}{definition.12}%
-\contentsline {definition}{{Definition}{13}{Transpose matrix}}{5}{definition.13}%
-\contentsline {definition}{{Definition}{14}{Submatrix}}{6}{definition.14}%
+\contentsline {definition}{{Definition}{7}{Branch number \cite {Shirai2003}}}{5}{definition.7}%
+\contentsline {definition}{{Definition}{8}{Singular matrix}}{5}{definition.8}%
+\contentsline {definition}{{Definition}{9}{Non-singular matrix}}{5}{definition.9}%
+\contentsline {definition}{{Definition}{10}{Involutory matrix}}{5}{definition.10}%
+\contentsline {definition}{{Definition}{11}{Circulant matrix}}{5}{definition.11}%
+\contentsline {definition}{{Definition}{12}{Left circulant matrix}}{5}{definition.12}%
+\contentsline {definition}{{Definition}{13}{Right circulant matrix}}{5}{definition.13}%
+\contentsline {definition}{{Definition}{14}{Transpose matrix}}{6}{definition.14}%
+\contentsline {definition}{{Definition}{15}{Submatrix}}{6}{definition.15}%
 \contentsline {theorem}{{Theorem}{2}{MDS codes \cite {SloaneBook}}}{6}{theorem.2}%
-\contentsline {definition}{{Definition}{15}{Cauchy matrix}}{6}{definition.15}%
-\contentsline {definition}{{Definition}{16}{Hadamard matrix \cite {beauchamp1975walsh}}}{6}{definition.16}%
-\contentsline {definition}{{Definition}{17}{Vandermonde matrix \cite {hoffmann1971linear}}}{6}{definition.17}%
+\contentsline {definition}{{Definition}{16}{Cauchy matrix}}{6}{definition.16}%
+\contentsline {definition}{{Definition}{17}{Hadamard matrix \cite {beauchamp1975walsh}}}{6}{definition.17}%
+\contentsline {definition}{{Definition}{18}{Vandermonde matrix \cite {hoffmann1971linear}}}{7}{definition.18}%
 \contentsline {concept}{{}{1}{Finite field \cite {DesignOfRijndael2002}}}{8}{concept.1}%
 \contentsline {concept}{{}{2}{Characteristic and order \cite {DesignOfRijndael2002}}}{8}{concept.2}%
 \contentsline {concept}{{}{3}{Representing finite fields with prime order \cite {DesignOfRijndael2002}}}{8}{concept.3}%

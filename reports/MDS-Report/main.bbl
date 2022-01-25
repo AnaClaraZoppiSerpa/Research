@@ -144,6 +144,16 @@ Vincent Rijmen, Joan Daemen, Bart Preneel, Antoon Bosselaers, and Erik~De Win.
   volume 1039 of {\em Lecture Notes in Computer Science}, pages 99--111.
   Springer, 1996.
 
+\bibitem{Shirai2003}
+Taizo Shirai and Kyoji Shibutani.
+\newblock On the diffusion matrix employed in the whirlpool hashing function.
+\newblock 01 2003.
+
+\bibitem{Whirlpool2003}
+Paulo S.L.M and Vincent Rijmen.
+\newblock The whirlpool hashing function.
+\newblock 2003.
+
 \bibitem{Youssef1997}
 A.~M. Youssef, S.~Mister, and S.~E. Tavares.
 \newblock On the design of linear transformations for substitution permutation

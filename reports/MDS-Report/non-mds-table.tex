@@ -1,0 +1,18 @@
+Table \ref{tbl:non-mds-list} presents matrices which were reported in the literature for usage in symmetric block ciphers (or hash functions) but are not MDS. It shows their \textbf{xor} and \textbf{xtime} costs, as well as the respective branch numbers. Column \textbf{Ord} refers to the matrix dimensions, \textbf{Src} contains the bibliographic reference, \textbf{\#xor} and \textbf{\#xtime} refer to the required amount of \textbf{xor} and \textbf{xtime} operations, i.e the costs, and \textbf{$\mathcal{B}(\theta)$} presents the branch number.
+
+\textcolor{red}{Fiquei em dúvida quando fui calcular o branch number das matrizes binárias do Hierocrypt, podemos revisar isso na próxima reunião? Obrigada!}
+
+\begin{footnotesize}
+\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Year} & \textbf{Ord} & \textbf{Src} & \textbf{Type} & \textbf{Use} & \textbf{$\mathcal{B}(\theta)$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrix} \\ \hline
+\endfirsthead
+\endhead
+
+2000 & 16 & \cite{Hierocrypt2000} & binary & Hierocrypt-3 & branch & 160 & 0 & (\ref{mat:hierocrypt-3-higher-16x16}) \\ \hline
+2000 & 8 & \cite{Hierocrypt-L1-2000} & binary & Hierocrypt-L1 & branch & 37 & 0 & (\ref{mat:hierocrypt-l1-higher-8x8}) \\ \hline
+2003 & 8 & \cite{Whirlpool2003} & \shortstack{right \\ circulant} & Whirlpool & 8 & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
+
+\caption{Non-MDS matrix usage, cost and branch numbers}\label{tbl:non-mds-list}
+\end{longtable}
+\end{footnotesize}
