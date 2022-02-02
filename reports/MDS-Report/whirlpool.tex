@@ -1,4 +1,4 @@
-Matrix (\ref{mat:whirlpool}) is used in the Whirlpool hash function. The irreducible polynomial of the field is $p(x) = x^8+x^4+x^3+x^2+1$, and the inverse matrix is (\ref{mat:whirlpool-inv}).
+Matrix (\ref{mat:whirlpool}) is used in the Whirlpool-0 hash function. The irreducible polynomial of the field is $p(x) = x^8+x^4+x^3+x^2+1$, and the inverse matrix is (\ref{mat:whirlpool-inv}).
 
 \begin{equation}\label{mat:whirlpool}
 \begin{bmatrix}
@@ -44,7 +44,7 @@ Furthermore, Shirai and Shibutani obtain 224 MDS matrices satisfying the desired
   \item Hamming weight of any element is at most 2.
 \end{itemize}
 
-Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}.
+Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}. The authors of Whirlpool decided to replace the non-MDS matrix by Shirai's $C_7$ matrix, and therefore Whirlpool-0 refers to the version with the non-MDS matrix, prior to the correction, and Whirlpool refers to the corrected version, with the MDS matrix. For further detail on the history and the updates of Whirlpool, the reader may refer to the Whirlpool web page \cite{WhirlpoolWebPage}.
 
 \begin{gather}
 C_0 = rcirc(01_x, 01_x, 02_x, 01_x, 05_x, 08_x, 09_x, 04_x)\label{shirai-0}\\

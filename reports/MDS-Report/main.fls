@@ -1224,11 +1224,11 @@ INPUT prelim.tex
 INPUT ./prelim.tex
 INPUT prelim.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./matrix_table.tex
-INPUT matrix_table.tex
-INPUT ./matrix_table.tex
-INPUT matrix_table.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT ./matrix_table.tex
+INPUT matrix_table.tex
+INPUT ./matrix_table.tex
+INPUT matrix_table.tex
 INPUT ./matrix_notes.tex
 INPUT matrix_notes.tex
 INPUT ./matrix_notes.tex

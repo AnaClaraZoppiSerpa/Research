@@ -89,7 +89,7 @@ a_1 & ... & a_{n-2} & a_{n-1} & a_0
 $$
 \end{definition}
 
-Note that circulant matrices can be defined by just one row, since all the other rows are cyclical shifts of the first. Therefore, they can be denoted as $circ(a_0, a_1, ..., a_{n-1})$. In the case of left circulant and right circulant matrices, respectively, $lcirc(a_0, ..., a_{n-1})$ and $rcirc(a_0, ..., a_{n-1})$. For example, matrices (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael}), used in the Rijndael cipher, can be denoted as $rcirc(02_x, 03_x, 01_x, 01_x)$ and $rcirc(0e_x, 0b_x, 0d_x, 09_x)$.
+Note that circulant matrices can be defined by just one row, since all the other rows are cyclical shifts of the first. Therefore, they can be denoted as $circ(a_0, a_1, ..., a_{n-1})$. In the case of left circulant and right circulant matrices, respectively, $lcirc(a_0, ..., a_{n-1})$ and $rcirc(a_0, ..., a_{n-1})$. For example, matrices (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael}), used in the Rijndael cipher, can be denoted as $rcirc(02_x, 03_x, 01_x, 01_x)$ and $rcirc(0e_x, 0b_x, 0d_x, 09_x)$. Since a circulant matrix can be defined by one row only, only $n$ elements are required, and this optimizes the process of searching for (and finding) such matrices. However, \emph{there are no guarantees about the MDS property}. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. As an example, the circulant matrix initially employed in Whirlpool-0 \cite{Whirlpool2003} is not MDS, and was further replaced by an actual MDS matrix found by Shirai in \cite{Shirai2003}.
 
 \begin{definition}[Transpose matrix]
 The transpose of a matrix $A$, denoted by $A^T$, is the matrix such that $A^T[i][j] = A[j][i]$. In other words, it is the matrix obtained by writing the rows of $A$ as columns. Note that, if $A$ is an $m \times n$ matrix, then $A^T$ will be $n \times m$.
@@ -111,11 +111,15 @@ For further detail on matrices, determinants and linear algebra, the reader may 
 Given $x_0, ..., x_{n-1}$ and $y_0, ..., y_{n-1}$, the matrix $A$ where $A[i][j] = \frac{1}{x_i + y_j}$ is called a Cauchy matrix. According to \cite{Youssef1997}, provided that $x_i \neq x_j$ for $0\leq i,j\leq n-1$, that $y_i \neq y_j$ for $0\leq i,j\leq n-1$ and that $x_i + y_j \neq 0$ for all $i, j$, any square submatrix of a Cauchy matrix is nonsingular over any field.
 \end{definition}
 
-An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy and circulant matrices allow us to lower the number of elements we need to select. A circulant matrix can be defined by one row only, therefore only $n$ elements are required. However, there are no guarantees about the MDS property. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. On the other hand, a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, requiring $2n$ choices of elements (the $x_i$ and the $y_i$) to be defined. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy) matrices for any arbitrary $n$.
+It is worth noting that a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, and it requires only $2n$ choices of elements, since the $x_i$ and the $y_i$ must be defined.
 
 \begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]\label{def:hadamard}
 Given $n$ elements $a_0, a_1, ..., a_{n-1}$, $n$ being a power of 2, the matrix $H$ such that $H[i][j] = a_{i \oplus j}$ is a Hadamard matrix.
 \end{definition}
+
+In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i\oplus j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic. Therefore, for dyadic matrices, the same situation described for Hadamard applies: a dyadic construction allows us to reduce the scope of the element choice, i.e only $n$ elements must be chosen, but there is no guarantee of MDS property.
+
+Note that a Hadamard construction, similarly to a circulant construction, requires only $n$ elements to be defined, but it does not guarantee MDS property either. To the best of our knowledge, no proofs about Hadamard matrices being MDS have been presented in the literature at the time of writing. Furthermore, in this work, we believe we present an example of a Hadamard non-MDS matrix. See Section \ref{sec:non-mds} for further detail on this.
 
 \begin{definition}[Vandermonde matrix \cite{hoffmann1971linear}]
 Given $z$ elements $a_0, a_1, ..., a_{z-1}$, the $z \times n$ matrix $V$ such that
@@ -131,9 +135,28 @@ V =
 is a Vandermonde matrix.
 \end{definition}
 
-Note that Hadamard and Vandermonde constructions too allow us to lower the number of required choices to obtain a matrix. Only $n$ elements are necessary for a Hadamard matrix to be defined, provided that $n$ is a power of 2. In the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. There are no guarantees about the MDS property with Hadamard or Vandermonde constructions, so we must construct the matrices and then evaluate whether they are MDS or not, e.g using Theorem \ref{teo:mds}.
+Similarly to circulant and Hadamard constructions, in the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. However, again there are no guarantees about the MDS property with a Vandermonde construction. To the best of our knowledge, at the time of writing, there are no such guarantees. The matrices must be constructed and then evaluated with respect to the MDS property, e.g using Theorem \ref{teo:mds}.
 
-In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i\oplus j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic.
+\subsubsection{A summary on the types of matrices}
+An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy, circulant, Vandermonde and Hadamard (dyadic) constructions allow us to lower the number of elements we need to select. Circulant, Vandermonde and Hadamard constructions allow us to select only $n$ elements, whilst Cauchy constructions require selecting $2n$ elements. The Cauchy construction ensures MDS property, whilst the other constructions do not and e.g Theorem \ref{teo:mds} must be used to evaluate MDS property. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy, or Vandermonde) matrices for any arbitrary $n$. The dimension $n$ must only be a power of two for the Hadamard (dyadic) construction. Table \ref{tab:matrix-types} summarizes this information.
+
+\begin{footnotesize}
+\begin{longtable}{|l|l|l|l|}
+\hline
+\textbf{Type}     & \textbf{Elements to select} & \textbf{MDS guarantee} & \textbf{$n$ must be power of two} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+Circulant         & $n$                              & no                              & no                                       \\ \hline
+Hadamard (dyadic) & $n$                              & no                              & yes                                      \\ \hline
+Vandermonde       & $n$                              & no                              & no                                       \\ \hline
+Cauchy            & $2n$                             & yes                             & no                                       \\ \hline
+random            & $n^2$                             & no                            & no                                       \\ \hline
+\caption{Matrix classification summary}
+\label{tab:matrix-types}\\
+\end{longtable}
+\end{footnotesize}
 
 \subsection{Evaluating a matrix for MDS property}
 If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in a finite field}, since it is the most expensive operation.
