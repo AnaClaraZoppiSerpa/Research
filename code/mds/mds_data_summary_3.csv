@@ -1,0 +1,31 @@
+label,poly,det,det_mul_inverse,xor,xtime,involutory,mds,inv_det,inv_xor,inv_xtime,inv_involutory,inv_mds
+SHARK,x^8 + x^4 + x^3 + x + 1,0xa1,0x7c,235,369,False,False,0x7c,261,399,False,False
+SHARK,x^8 + x^4 + x^3 + x^2 + 1,0xfe,0x7e,235,369,False,False,0x7e,233,372,False,False
+SHARK,x^8 + x^5 + x^3 + x + 1,0x23,0xe8,235,369,False,False,0xe8,237,380,False,False
+SHARK,x^8 + x^5 + x^3 + x^2 + 1,0x55,0x89,235,369,False,False,0x89,235,370,False,False
+SHARK,x^8 + x^5 + x^4 + x^3 + 1,0x87,0x9b,235,369,False,False,0x9b,255,380,False,False
+SHARK,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x60,0xe3,235,369,False,False,0xe3,258,389,False,False
+SHARK,x^8 + x^6 + x^3 + x^2 + 1,0x4f,0xe3,235,369,False,False,0xe3,257,398,False,False
+SHARK,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0xc2,0xea,235,369,False,False,0xea,260,390,False,False
+SHARK,x^8 + x^6 + x^5 + x + 1,0xfd,0xcb,235,369,False,False,0xcb,232,384,False,False
+SHARK,x^8 + x^6 + x^5 + x^2 + 1,0x4e,0xb8,235,369,False,False,0xb8,242,396,False,False
+SHARK,x^8 + x^6 + x^5 + x^3 + 1,0x3c,0xe,235,369,False,False,0xe,257,375,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + 1,0x5b,0x95,235,369,False,False,0x95,225,372,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x94,0x67,235,369,False,False,0x67,249,396,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x91,0xb3,235,369,False,False,0xb3,257,392,False,False
+SHARK,x^8 + x^7 + x^2 + x + 1,0x9a,0xea,235,369,False,False,0xea,240,387,False,False
+SHARK,x^8 + x^7 + x^3 + x + 1,0x1d,0xf6,235,369,False,False,0xf6,256,400,False,False
+SHARK,x^8 + x^7 + x^3 + x^2 + 1,0x63,0x4,235,369,False,False,0x4,247,373,False,False
+SHARK,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x29,0x32,235,369,False,False,0x32,233,377,False,False
+SHARK,x^8 + x^7 + x^5 + x + 1,0xef,0x95,235,369,False,False,0x95,241,380,False,False
+SHARK,x^8 + x^7 + x^5 + x^3 + 1,0x76,0x54,235,369,False,False,0x54,246,381,False,False
+SHARK,x^8 + x^7 + x^5 + x^4 + 1,0x8,0x36,235,369,False,False,0x36,230,390,False,False
+SHARK,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xa,0xad,235,369,False,False,0xad,245,382,False,False
+SHARK,x^8 + x^7 + x^6 + x + 1,0x34,0x64,235,369,False,False,0x64,243,394,False,False
+SHARK,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0xf9,0x78,235,369,False,False,0x78,274,403,False,False
+SHARK,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xa3,0x24,235,369,False,False,0x24,230,383,False,False
+SHARK,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x86,0xce,235,369,False,False,0xce,241,379,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x37,0x52,235,369,False,False,0x52,254,375,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x29,0x40,235,369,False,False,0x40,254,395,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xfc,0xec,235,369,False,True,0xec,223,393,False,True
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xbf,0x1b,235,369,False,False,0x1b,257,385,False,False

@@ -29,7 +29,7 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 
 % ANUBIS
 2000 & 4 & Hadamard & yes & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & (\ref{mat:anubis}) \\ \hline
-2000 & 4 & Vandermonde & no & \shortstack{ANUBIS \\ key schedule} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 20 & 32 & (\ref{mat:anubis-ke}) \\ \hline
+2000 & 4 & Vandermonde & no & \shortstack{ANUBIS \\ key schedule} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & \shortstack{20\\69} & \shortstack{32\\101} & \shortstack{(\ref{mat:anubis-ke}) \\ (\ref{mat:anubis-ke-inv})} \\ \hline
 
 % Hierocrypt
 2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\52} & \shortstack{108\\104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\ (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
@@ -39,22 +39,38 @@ In Table \ref{tbl:mds-list}, the \textbf{Ord} column refers to the matrix dimens
 % Whirlpool
 %2003 & 8 & \shortstack{\\ right \\ circulant} & no & Whirlpool & \cite{Whirlpool2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
 
+% Shirai
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\240} & \shortstack{88\\400} & \shortstack{\eqref{shirai-0}\\\eqref{shirai-0-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\288} & \shortstack{80\\424} & \shortstack{\eqref{shirai-1}\\\eqref{shirai-1-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\224} & \shortstack{88\\360} & \shortstack{\eqref{shirai-2}\\\eqref{shirai-2-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\224} & \shortstack{72\\360} & \shortstack{\eqref{shirai-3}\\\eqref{shirai-3-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\240} & \shortstack{88\\424} & \shortstack{\eqref{shirai-4}\\\eqref{shirai-4-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{88\\224} & \shortstack{80\\424} & \shortstack{\eqref{shirai-5}\\\eqref{shirai-5-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\256} & \shortstack{88\\416} & \shortstack{\eqref{shirai-6}\\\eqref{shirai-6-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{\\ Whirlpool \\ (suggestion adopted)} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\224} & \shortstack{88\\360} & \shortstack{\eqref{shirai-7}\\\eqref{shirai-7-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\224} & \shortstack{72\\360} & \shortstack{\eqref{shirai-8}\\\eqref{shirai-8-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\256} & \shortstack{88\\416} & \shortstack{\eqref{shirai-9}\\\eqref{shirai-9-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{88\\224} & \shortstack{80\\424} & \shortstack{\eqref{shirai-10}\\\eqref{shirai-10-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\240} & \shortstack{88\\424} & \shortstack{\eqref{shirai-11}\\\eqref{shirai-11-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\288} & \shortstack{80\\424} & \shortstack{\eqref{shirai-12}\\\eqref{shirai-12-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{suggested by Shirai \\ for Whirlpool-0} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\240} & \shortstack{88\\400} & \shortstack{\eqref{shirai-13}\\\eqref{shirai-13-inv}} \\ \hline
+
 % FOX
 2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{30\\72} & \shortstack{25\\106} & \shortstack{(\ref{mat:fox-mu4})\\(\ref{mat:fox-mu4-inv})} \\ \hline
 2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{141\\284} & \shortstack{169\\392} & \shortstack{(\ref{mat:fox-mu8})\\(\ref{mat:fox-mu8-inv})} \\ \hline
 
 % Curupira
 2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 12 & 15 & (\ref{mat:curupira}) \\ \hline
-2007 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{Curupira \\ key schedule} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 27 & 36 & (\ref{mat:curupira-ke}) \\ \hline
+2007 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{Curupira \\ key schedule} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & \shortstack{27\\30} & \shortstack{36\\36} & \shortstack{(\ref{mat:curupira-ke}) \\ (\ref{mat:curupira-ke-inv})} \\ \hline
 
 % Grostl
-2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 104 & 96 & (\ref{mat:grostl}) \\ \hline
+2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{104 \\ 232} & \shortstack{96 \\ 376} & \shortstack{(\ref{mat:grostl}) \\ (\ref{mat:grostl-inv})} \\ \hline
 
 % Whirlwind
-2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 104 & 136 & (\ref{mat:whirlwind-m0}) \\ \hline
-2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & 128 & 128 & (\ref{mat:whirlwind-m1}) \\ \hline
-\caption{MDS matrices: parameters, usage and cos}\label{tbl:mds-list}
+%2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{104\\128} & \shortstack{136\\136} & \shortstack{(\ref{mat:whirlwind-m0}) \\ (\ref{mat:whirlwind-m0-inv})} \\ \hline
+%2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{128\\128} & \shortstack{128\\128} & \shortstack{(\ref{mat:whirlwind-m1}) \\ (\ref{mat:whirlwind-m1-inv})} \\ \hline
+\caption{MDS matrices: parameters, usage and cost}\label{tbl:mds-list}
 \end{longtable}
 \end{footnotesize}
 
-Please note that matrices \eqref{shirai-0} to \eqref{shirai-13} and others derived from them are also MDS, although not yet listed in Table \ref{tbl:mds-list}. See Section \ref{sec:whirlpool} for further detail on this.
+Please note that matrices derived from \eqref{shirai-0} to \eqref{shirai-13} by Shirai and Shibutani are also MDS, although not listed in Table \ref{tbl:mds-list}. See Section \ref{sec:whirlpool} for further detail on this.

@@ -1,0 +1,463 @@
+label,poly,det,det_mul_inverse,xor,xtime,involutory,mds,inv_det,inv_xor,inv_xtime,inv_involutory,inv_mds
+SHARK,x^8 + x^4 + x^3 + x + 1,0xa1,0x7c,235,369,False,False,0x7c,261,399,False,False
+SHARK,x^8 + x^4 + x^3 + x^2 + 1,0xfe,0x7e,235,369,False,False,0x7e,233,372,False,False
+SHARK,x^8 + x^5 + x^3 + x + 1,0x23,0xe8,235,369,False,False,0xe8,237,380,False,False
+SHARK,x^8 + x^5 + x^3 + x^2 + 1,0x55,0x89,235,369,False,False,0x89,235,370,False,False
+SHARK,x^8 + x^5 + x^4 + x^3 + 1,0x87,0x9b,235,369,False,False,0x9b,255,380,False,False
+SHARK,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x60,0xe3,235,369,False,False,0xe3,258,389,False,False
+SHARK,x^8 + x^6 + x^3 + x^2 + 1,0x4f,0xe3,235,369,False,False,0xe3,257,398,False,False
+SHARK,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0xc2,0xea,235,369,False,False,0xea,260,390,False,False
+SHARK,x^8 + x^6 + x^5 + x + 1,0xfd,0xcb,235,369,False,False,0xcb,232,384,False,False
+SHARK,x^8 + x^6 + x^5 + x^2 + 1,0x4e,0xb8,235,369,False,False,0xb8,242,396,False,False
+SHARK,x^8 + x^6 + x^5 + x^3 + 1,0x3c,0xe,235,369,False,False,0xe,257,375,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + 1,0x5b,0x95,235,369,False,False,0x95,225,372,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x94,0x67,235,369,False,False,0x67,249,396,False,False
+SHARK,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x91,0xb3,235,369,False,False,0xb3,257,392,False,False
+SHARK,x^8 + x^7 + x^2 + x + 1,0x9a,0xea,235,369,False,False,0xea,240,387,False,False
+SHARK,x^8 + x^7 + x^3 + x + 1,0x1d,0xf6,235,369,False,False,0xf6,256,400,False,False
+SHARK,x^8 + x^7 + x^3 + x^2 + 1,0x63,0x4,235,369,False,False,0x4,247,373,False,False
+SHARK,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x29,0x32,235,369,False,False,0x32,233,377,False,False
+SHARK,x^8 + x^7 + x^5 + x + 1,0xef,0x95,235,369,False,False,0x95,241,380,False,False
+SHARK,x^8 + x^7 + x^5 + x^3 + 1,0x76,0x54,235,369,False,False,0x54,246,381,False,False
+SHARK,x^8 + x^7 + x^5 + x^4 + 1,0x8,0x36,235,369,False,False,0x36,230,390,False,False
+SHARK,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xa,0xad,235,369,False,False,0xad,245,382,False,False
+SHARK,x^8 + x^7 + x^6 + x + 1,0x34,0x64,235,369,False,False,0x64,243,394,False,False
+SHARK,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0xf9,0x78,235,369,False,False,0x78,274,403,False,False
+SHARK,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xa3,0x24,235,369,False,False,0x24,230,383,False,False
+SHARK,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x86,0xce,235,369,False,False,0xce,241,379,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x37,0x52,235,369,False,False,0x52,254,375,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x29,0x40,235,369,False,False,0x40,254,395,False,False
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xfc,0xec,235,369,False,True,0xec,223,393,False,True
+SHARK,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xbf,0x1b,235,369,False,False,0x1b,257,385,False,False
+SQUARE,x^8 + x^4 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^5 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^5 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+SQUARE,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+BKSQ,x^8 + x^4 + x^3 + x + 1,0x3,0xf6,9,9,False,True,0xf6,57,63,False,True
+BKSQ,x^8 + x^4 + x^3 + x^2 + 1,0x3,0xf4,9,9,False,True,0xf4,48,63,False,True
+BKSQ,x^8 + x^5 + x^3 + x + 1,0x3,0xe6,9,9,False,True,0xe6,48,63,False,True
+BKSQ,x^8 + x^5 + x^3 + x^2 + 1,0x3,0xe4,9,9,False,True,0xe4,39,63,False,True
+BKSQ,x^8 + x^5 + x^4 + x^3 + 1,0x3,0xe8,9,9,False,True,0xe8,39,63,False,True
+BKSQ,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x3,0xea,9,9,False,True,0xea,48,63,False,True
+BKSQ,x^8 + x^6 + x^3 + x^2 + 1,0x3,0xc4,9,9,False,True,0xc4,30,63,False,True
+BKSQ,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x3,0xca,9,9,False,True,0xca,39,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x + 1,0x3,0xde,9,9,False,True,0xde,57,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x^2 + 1,0x3,0xdc,9,9,False,True,0xdc,48,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x^3 + 1,0x3,0xd8,9,9,False,True,0xd8,39,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x^4 + 1,0x3,0xd0,9,9,False,True,0xd0,30,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x3,0xd2,9,9,False,True,0xd2,39,63,False,True
+BKSQ,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x3,0xd6,9,9,False,True,0xd6,48,63,False,True
+BKSQ,x^8 + x^7 + x^2 + x + 1,0x3,0x82,9,9,False,True,0x82,21,63,False,True
+BKSQ,x^8 + x^7 + x^3 + x + 1,0x3,0x86,9,9,False,True,0x86,30,63,False,True
+BKSQ,x^8 + x^7 + x^3 + x^2 + 1,0x3,0x84,9,9,False,True,0x84,21,63,False,True
+BKSQ,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x3,0x8a,9,9,False,True,0x8a,30,63,False,True
+BKSQ,x^8 + x^7 + x^5 + x + 1,0x3,0x9e,9,9,False,True,0x9e,48,63,False,True
+BKSQ,x^8 + x^7 + x^5 + x^3 + 1,0x3,0x98,9,9,False,True,0x98,30,63,False,True
+BKSQ,x^8 + x^7 + x^5 + x^4 + 1,0x3,0x90,9,9,False,True,0x90,21,63,False,True
+BKSQ,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x3,0x94,9,9,False,True,0x94,30,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x + 1,0x3,0xbe,9,9,False,True,0xbe,57,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x3,0xba,9,9,False,True,0xba,48,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x3,0xb2,9,9,False,True,0xb2,39,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x3,0xb4,9,9,False,True,0xb4,39,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x3,0xa2,9,9,False,True,0xa2,30,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x3,0xae,9,9,False,True,0xae,48,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x3,0xac,9,9,False,True,0xac,39,63,False,True
+BKSQ,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x3,0xa8,9,9,False,True,0xa8,30,63,False,True
+Tavares,x^8 + x^4 + x^3 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^5 + x^3 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^6 + x^5 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^3 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^5 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,240,344,True,True,0x1,240,344,True,True
+Tavares,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+Tavares,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,240,344,True,False,0x1,240,344,True,False
+KHAZAD,x^8 + x^4 + x^3 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^5 + x^3 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^6 + x^5 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^2 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^3 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^5 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^6 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,112,120,True,False,0x1,112,120,True,False
+KHAZAD,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+KHAZAD,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,112,120,True,True,0x1,112,120,True,True
+Anubis,x^8 + x^4 + x^3 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^5 + x^3 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^3 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^5 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,20,True,True,0x1,16,20,True,True
+Anubis (key schedule),x^8 + x^4 + x^3 + x + 1,0x63,0xd3,20,32,False,True,0xd3,65,96,False,True
+Anubis (key schedule),x^8 + x^4 + x^3 + x^2 + 1,0xa5,0xc2,20,32,False,True,0xc2,69,101,False,True
+Anubis (key schedule),x^8 + x^5 + x^3 + x + 1,0xa9,0xef,20,32,False,True,0xef,71,100,False,True
+Anubis (key schedule),x^8 + x^5 + x^3 + x^2 + 1,0x7b,0xb1,20,32,False,True,0xb1,55,93,False,True
+Anubis (key schedule),x^8 + x^5 + x^4 + x^3 + 1,0xe5,0x3c,20,32,False,True,0x3c,59,97,False,True
+Anubis (key schedule),x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x3b,0x29,20,32,False,True,0x29,61,101,False,True
+Anubis (key schedule),x^8 + x^6 + x^3 + x^2 + 1,0x9d,0xf4,20,32,False,True,0xf4,47,81,False,True
+Anubis (key schedule),x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0xe1,0x18,20,32,False,True,0x18,55,104,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x + 1,0xec,0xd0,20,32,False,True,0xd0,57,97,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x^2 + 1,0x4,0x59,20,32,False,True,0x59,57,93,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x^3 + 1,0xbd,0xd4,20,32,False,True,0xd4,49,81,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x^4 + 1,0x96,0x4d,20,32,False,True,0x4d,63,101,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x72,0x56,20,32,False,True,0x56,63,100,False,True
+Anubis (key schedule),x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0xc1,0xf3,20,32,False,True,0xf3,67,92,False,True
+Anubis (key schedule),x^8 + x^7 + x^2 + x + 1,0xac,0xb,20,32,False,True,0xb,61,98,False,True
+Anubis (key schedule),x^8 + x^7 + x^3 + x + 1,0x37,0xa5,20,32,False,True,0xa5,57,93,False,True
+Anubis (key schedule),x^8 + x^7 + x^3 + x^2 + 1,0xb9,0xec,20,32,False,True,0xec,63,100,False,True
+Anubis (key schedule),x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x2d,0x42,20,32,False,True,0x42,57,94,False,True
+Anubis (key schedule),x^8 + x^7 + x^5 + x + 1,0xf3,0xb,20,32,False,True,0xb,63,93,False,True
+Anubis (key schedule),x^8 + x^7 + x^5 + x^3 + 1,0xe0,0x42,20,32,False,True,0x42,59,96,False,True
+Anubis (key schedule),x^8 + x^7 + x^5 + x^4 + 1,0x73,0x88,20,32,False,True,0x88,53,101,False,True
+Anubis (key schedule),x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xfa,0x41,20,32,False,True,0x41,61,100,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x + 1,0x87,0x5a,20,32,False,True,0x5a,67,97,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x34,0xc5,20,32,False,True,0xc5,59,100,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xad,0xaa,20,32,False,True,0xaa,61,93,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0xa6,0xf5,20,32,False,True,0xf5,61,101,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x88,0x3b,20,32,False,True,0x3b,53,102,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0xae,0x3,20,32,False,True,0x3,59,98,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x2,0xfa,20,32,False,True,0xfa,57,95,False,True
+Anubis (key schedule),x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xa3,0x36,20,32,False,True,0x36,57,93,False,True
+Whirlwind m0,x^4 + x + 1,0xb,0x5,104,136,False,False,0x5,128,136,False,False
+Whirlwind m0,x^4 + x^3 + 1,0x4,0x6,104,136,False,False,0x6,112,160,False,False
+Whirlwind m0,x^4 + x^3 + x^2 + x + 1,0xe,0xb,104,136,False,False,0xb,128,128,False,False
+Whirlwind m1,x^4 + x + 1,0x9,0x2,128,128,False,False,0x2,128,128,False,False
+Whirlwind m1,x^4 + x^3 + 1,0x6,0x4,128,128,False,False,0x4,120,144,False,False
+Whirlwind m1,x^4 + x^3 + x^2 + x + 1,0xc,0xd,128,128,False,False,0xd,120,160,False,False
+Grostl,x^8 + x^4 + x^3 + x + 1,0x1a,0xfd,104,96,False,True,0xfd,232,376,False,True
+Grostl,x^8 + x^4 + x^3 + x^2 + 1,0x1c,0xa0,104,96,False,False,0xa0,240,384,False,False
+Grostl,x^8 + x^5 + x^3 + x + 1,0x2a,0xb9,104,96,False,False,0xb9,288,376,False,False
+Grostl,x^8 + x^5 + x^3 + x^2 + 1,0x2c,0x74,104,96,False,False,0x74,216,352,False,False
+Grostl,x^8 + x^5 + x^4 + x^3 + 1,0x38,0xc7,104,96,False,False,0xc7,248,408,False,False
+Grostl,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x3e,0x22,104,96,False,False,0x22,224,408,False,False
+Grostl,x^8 + x^6 + x^3 + x^2 + 1,0x4c,0x3c,104,96,False,False,0x3c,240,400,False,False
+Grostl,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x5e,0x91,104,96,False,False,0x91,248,432,False,False
+Grostl,x^8 + x^6 + x^5 + x + 1,0x62,0x2b,104,96,False,False,0x2b,264,416,False,False
+Grostl,x^8 + x^6 + x^5 + x^2 + 1,0x64,0x1c,104,96,False,False,0x1c,240,328,False,False
+Grostl,x^8 + x^6 + x^5 + x^3 + 1,0x68,0x34,104,96,False,True,0x34,248,376,False,True
+Grostl,x^8 + x^6 + x^5 + x^4 + 1,0x70,0x7a,104,96,False,False,0x7a,288,384,False,False
+Grostl,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x76,0x63,104,96,False,False,0x63,232,400,False,False
+Grostl,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x7a,0x3d,104,96,False,False,0x3d,208,360,False,False
+Grostl,x^8 + x^7 + x^2 + x + 1,0x86,0xb8,104,96,False,False,0xb8,280,376,False,False
+Grostl,x^8 + x^7 + x^3 + x + 1,0x8a,0xf7,104,96,False,False,0xf7,208,376,False,False
+Grostl,x^8 + x^7 + x^3 + x^2 + 1,0x8c,0xa9,104,96,False,True,0xa9,200,384,False,True
+Grostl,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x9e,0xb1,104,96,False,True,0xb1,176,360,False,True
+Grostl,x^8 + x^7 + x^5 + x + 1,0xa2,0xdf,104,96,False,False,0xdf,224,376,False,False
+Grostl,x^8 + x^7 + x^5 + x^3 + 1,0xa8,0x3b,104,96,False,False,0x3b,272,376,False,False
+Grostl,x^8 + x^7 + x^5 + x^4 + 1,0xb0,0x7f,104,96,False,False,0x7f,216,344,False,False
+Grostl,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xbc,0x79,104,96,False,False,0x79,272,376,False,False
+Grostl,x^8 + x^7 + x^6 + x + 1,0xc2,0xf8,104,96,False,False,0xf8,248,352,False,False
+Grostl,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0xce,0xc0,104,96,False,False,0xc0,240,416,False,False
+Grostl,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xd6,0x29,104,96,False,False,0x29,232,384,False,False
+Grostl,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0xdc,0x8d,104,96,False,False,0x8d,200,344,False,False
+Grostl,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0xe6,0xe0,104,96,False,False,0xe0,256,384,False,False
+Grostl,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0xf2,0x1b,104,96,False,False,0x1b,240,376,False,False
+Grostl,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xf4,0x13,104,96,False,False,0x13,200,312,False,False
+Grostl,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xf8,0x70,104,96,False,True,0x70,256,408,False,True
+Curupira,x^8 + x^4 + x^3 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^5 + x^3 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^3 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^5 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,12,15,True,True,0x1,12,15,True,True
+Curupira (ke),x^8 + x^4 + x^3 + x + 1,0x1d,0x40,27,36,False,True,0x40,12,54,False,True
+Curupira (ke),x^8 + x^4 + x^3 + x^2 + 1,0x1d,0x83,27,36,False,True,0x83,18,63,False,True
+Curupira (ke),x^8 + x^5 + x^3 + x + 1,0x1d,0x33,27,36,False,True,0x33,27,45,False,True
+Curupira (ke),x^8 + x^5 + x^3 + x^2 + 1,0x1d,0xb0,27,36,False,True,0xb0,30,63,False,True
+Curupira (ke),x^8 + x^5 + x^4 + x^3 + 1,0x1d,0x18,27,36,False,True,0x18,21,36,False,True
+Curupira (ke),x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1d,0x61,27,36,False,True,0x61,18,54,False,True
+Curupira (ke),x^8 + x^6 + x^3 + x^2 + 1,0x1d,0x1c,27,36,False,True,0x1c,30,36,False,True
+Curupira (ke),x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1d,0x3b,27,36,False,True,0x3b,36,45,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x + 1,0x1d,0x9e,27,36,False,True,0x9e,48,63,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x^2 + 1,0x1d,0x3f,27,36,False,True,0x3f,45,45,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x^3 + 1,0x1d,0xbb,27,36,False,True,0xbb,45,63,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x^4 + 1,0x1d,0x79,27,36,False,True,0x79,36,54,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1d,0x1e,27,36,False,True,0x1e,39,36,False,True
+Curupira (ke),x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1d,0xf5,27,36,False,True,0xf5,45,63,False,True
+Curupira (ke),x^8 + x^7 + x^2 + x + 1,0x1d,0x64,27,36,False,True,0x64,30,54,False,True
+Curupira (ke),x^8 + x^7 + x^3 + x + 1,0x1d,0xf6,27,36,False,True,0xf6,57,63,False,True
+Curupira (ke),x^8 + x^7 + x^3 + x^2 + 1,0x1d,0x2f,27,36,False,True,0x2f,36,45,False,True
+Curupira (ke),x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1d,0x16,27,36,False,True,0x16,30,36,False,True
+Curupira (ke),x^8 + x^7 + x^5 + x + 1,0x1d,0x51,27,36,False,True,0x51,18,54,False,True
+Curupira (ke),x^8 + x^7 + x^5 + x^3 + 1,0x1d,0xa5,27,36,False,True,0xa5,27,63,False,True
+Curupira (ke),x^8 + x^7 + x^5 + x^4 + 1,0x1d,0xec,27,36,False,True,0xec,48,63,False,True
+Curupira (ke),x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1d,0x6a,27,36,False,True,0x6a,39,54,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x + 1,0x1d,0x23,27,36,False,True,0x23,18,45,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1d,0xef,27,36,False,True,0xef,54,63,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1d,0x41,27,36,False,True,0x41,9,54,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1d,0x85,27,36,False,True,0x85,18,63,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1d,0x95,27,36,False,True,0x95,27,63,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1d,0x78,27,36,False,True,0x78,39,54,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1d,0xf3,27,36,False,True,0xf3,45,63,False,True
+Curupira (ke),x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1d,0x27,27,36,False,True,0x27,27,45,False,True
+Rijndael,x^8 + x^4 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^5 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^5 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x^4 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^3 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^5 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^5 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^5 + x^4 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Rijndael,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x1,0x1,16,8,False,True,0x1,40,48,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^4 + x^3 + x + 1,0xf1,0x23,52,108,False,True,0x23,64,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^4 + x^3 + x^2 + 1,0x33,0x2e,52,108,False,True,0x2e,64,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^5 + x^3 + x + 1,0xc,0xac,52,108,False,True,0xac,64,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^5 + x^3 + x^2 + 1,0xca,0x61,52,108,False,True,0x61,56,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^5 + x^4 + x^3 + 1,0x69,0xef,52,108,False,True,0xef,44,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0xcd,0x18,52,108,False,True,0x18,64,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^3 + x^2 + 1,0xaa,0x66,52,108,False,True,0x66,60,92,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x32,0xe6,52,108,False,True,0xe6,80,108,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x + 1,0x13,0x85,52,108,False,True,0x85,52,104,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x^2 + 1,0x1b,0x31,52,108,False,True,0x31,48,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x^3 + 1,0x63,0x6f,52,108,False,True,0x6f,36,76,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x^4 + 1,0x12,0xee,52,108,False,True,0xee,40,88,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0xc,0x8f,52,108,False,True,0x8f,48,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x28,0x3c,52,108,False,True,0x3c,52,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^2 + x + 1,0x6,0x41,52,108,False,True,0x41,68,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^3 + x + 1,0x5,0xfb,52,108,False,True,0xfb,32,40,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^3 + x^2 + 1,0xfa,0x31,52,108,False,True,0x31,36,68,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0xcd,0x79,52,108,False,True,0x79,60,104,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^5 + x + 1,0xd9,0x6e,52,108,False,True,0x6e,64,92,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^5 + x^3 + 1,0x46,0xb,52,108,False,True,0xb,76,108,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^5 + x^4 + 1,0x95,0x78,52,108,False,True,0x78,76,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xc5,0xe2,52,108,False,True,0xe2,60,96,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x + 1,0xa4,0x86,52,108,False,True,0x86,56,108,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0xeb,0x3b,52,108,False,True,0x3b,60,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xab,0xb6,52,108,False,True,0xb6,68,108,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0xdb,0xad,52,108,False,True,0xad,68,100,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0xad,0x94,52,108,False,False,0x94,56,108,False,False
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0xdc,0x7,52,108,False,True,0x7,40,84,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xb2,0x79,52,108,False,True,0x79,48,88,False,True
+Hierocrypt 3 and L1 (low),x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x3d,0xb6,52,108,False,False,0xb6,76,104,False,False
+Hierocrypt 3 (high),x^4 + x + 1,0x5,0xb,32,40,False,True,0xb,40,44,False,True
+Hierocrypt 3 (high),x^4 + x^3 + 1,0xe,0x7,32,40,False,False,0x7,28,32,False,False
+Hierocrypt 3 (high),x^4 + x^3 + x^2 + x + 1,0x8,0x4,32,40,False,True,0x4,16,28,False,True
+Hierocrypt L1 (high),x^4 + x + 1,0x2,0x9,8,10,False,True,0x9,7,11,False,True
+Hierocrypt L1 (high),x^4 + x^3 + 1,0x8,0x3,8,10,False,True,0x3,8,10,False,True
+Hierocrypt L1 (high),x^4 + x^3 + x^2 + x + 1,0xe,0xb,8,10,False,True,0xb,9,10,False,True
+FOX mu4,x^8 + x^4 + x^3 + x + 1,0xc4,0xda,30,25,False,True,0xda,70,105,False,True
+FOX mu4,x^8 + x^4 + x^3 + x^2 + 1,0x62,0xca,30,25,False,True,0xca,58,91,False,True
+FOX mu4,x^8 + x^5 + x^3 + x + 1,0x75,0xfd,30,25,False,True,0xfd,76,111,False,True
+FOX mu4,x^8 + x^5 + x^3 + x^2 + 1,0x55,0x89,30,25,False,True,0x89,71,103,False,True
+FOX mu4,x^8 + x^5 + x^4 + x^3 + 1,0x1f,0x35,30,25,False,True,0x35,43,85,False,True
+FOX mu4,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x1c,0xe2,30,25,False,True,0xe2,46,90,False,True
+FOX mu4,x^8 + x^6 + x^3 + x^2 + 1,0x79,0xce,30,25,False,True,0xce,61,104,False,True
+FOX mu4,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0xb6,0x25,30,25,False,True,0x25,58,91,False,True
+FOX mu4,x^8 + x^6 + x^5 + x + 1,0xaa,0xf2,30,25,False,True,0xf2,59,87,False,True
+FOX mu4,x^8 + x^6 + x^5 + x^2 + 1,0x55,0x6c,30,25,False,True,0x6c,59,100,False,True
+FOX mu4,x^8 + x^6 + x^5 + x^3 + 1,0x60,0xe8,30,25,False,True,0xe8,75,98,False,True
+FOX mu4,x^8 + x^6 + x^5 + x^4 + 1,0xbc,0x2b,30,25,False,True,0x2b,89,95,False,True
+FOX mu4,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x66,0xd4,30,25,False,True,0xd4,73,112,False,True
+FOX mu4,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x28,0x3c,30,25,False,True,0x3c,76,96,False,True
+FOX mu4,x^8 + x^7 + x^2 + x + 1,0x14,0xdc,30,25,False,True,0xdc,66,106,False,True
+FOX mu4,x^8 + x^7 + x^3 + x + 1,0x72,0x18,30,25,False,True,0x18,61,95,False,True
+FOX mu4,x^8 + x^7 + x^3 + x^2 + 1,0xdb,0xe6,30,25,False,True,0xe6,79,91,False,True
+FOX mu4,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x69,0x7d,30,25,False,True,0x7d,65,109,False,True
+FOX mu4,x^8 + x^7 + x^5 + x + 1,0xb6,0x98,30,25,False,True,0x98,52,100,False,True
+FOX mu4,x^8 + x^7 + x^5 + x^3 + 1,0x25,0xb7,30,25,False,True,0xb7,72,97,False,True
+FOX mu4,x^8 + x^7 + x^5 + x^4 + 1,0xf2,0x64,30,25,False,True,0x64,67,112,False,True
+FOX mu4,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x32,0xf8,30,25,False,True,0xf8,59,100,False,True
+FOX mu4,x^8 + x^7 + x^6 + x + 1,0xd3,0x16,30,25,False,False,0x16,57,103,False,False
+FOX mu4,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x8a,0xd,30,25,False,True,0xd,61,104,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x90,0x5d,30,25,False,True,0x5d,86,108,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0xa8,0x65,30,25,False,True,0x65,56,106,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x3,0xa2,30,25,False,True,0xa2,59,84,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x71,0x70,30,25,False,True,0x70,64,88,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xd6,0x11,30,25,False,True,0x11,47,103,False,True
+FOX mu4,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0x13,0x26,30,25,False,True,0x26,72,106,False,True
+FOX mu8,x^8 + x^4 + x^3 + x + 1,0x3,0xf6,141,169,False,False,0xf6,283,399,False,False
+FOX mu8,x^8 + x^4 + x^3 + x^2 + 1,0x5a,0xcb,141,169,False,False,0xcb,268,371,False,False
+FOX mu8,x^8 + x^5 + x^3 + x + 1,0x43,0x44,141,169,False,False,0x44,268,391,False,False
+FOX mu8,x^8 + x^5 + x^3 + x^2 + 1,0xbd,0xfa,141,169,False,False,0xfa,248,392,False,False
+FOX mu8,x^8 + x^5 + x^4 + x^3 + 1,0xa2,0x11,141,169,False,False,0x11,229,405,False,False
+FOX mu8,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x11,0x7c,141,169,False,False,0x7c,194,369,False,False
+FOX mu8,x^8 + x^6 + x^3 + x^2 + 1,0xcd,0x71,141,169,False,False,0x71,290,411,False,False
+FOX mu8,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0xa2,0x34,141,169,False,False,0x34,234,350,False,False
+FOX mu8,x^8 + x^6 + x^5 + x + 1,0x14,0xa3,141,169,False,False,0xa3,290,418,False,False
+FOX mu8,x^8 + x^6 + x^5 + x^2 + 1,0x3,0xdc,141,169,False,False,0xdc,255,405,False,False
+FOX mu8,x^8 + x^6 + x^5 + x^3 + 1,0x85,0xde,141,169,False,False,0xde,229,399,False,False
+FOX mu8,x^8 + x^6 + x^5 + x^4 + 1,0x9b,0x6f,141,169,False,False,0x6f,246,392,False,False
+FOX mu8,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0xe5,0x51,141,169,False,False,0x51,212,342,False,False
+FOX mu8,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0xe2,0x9a,141,169,False,False,0x9a,251,364,False,False
+FOX mu8,x^8 + x^7 + x^2 + x + 1,0x31,0xd7,141,169,False,False,0xd7,234,397,False,False
+FOX mu8,x^8 + x^7 + x^3 + x + 1,0x19,0xcd,141,169,False,False,0xcd,256,406,False,False
+FOX mu8,x^8 + x^7 + x^3 + x^2 + 1,0xf8,0xc4,141,169,False,False,0xc4,257,364,False,False
+FOX mu8,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0xfa,0xfb,141,169,False,False,0xfb,235,371,False,False
+FOX mu8,x^8 + x^7 + x^5 + x + 1,0xba,0xe1,141,169,False,False,0xe1,255,427,False,False
+FOX mu8,x^8 + x^7 + x^5 + x^3 + 1,0x5,0xef,141,169,False,False,0xef,246,404,False,False
+FOX mu8,x^8 + x^7 + x^5 + x^4 + 1,0xa1,0xe1,141,169,False,False,0xe1,235,392,False,False
+FOX mu8,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0x73,0xdc,141,169,False,False,0xdc,172,363,False,False
+FOX mu8,x^8 + x^7 + x^6 + x + 1,0xce,0xc,141,169,False,False,0xc,263,371,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0x49,0xec,141,169,False,False,0xec,256,391,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0x1d,0x41,141,169,False,False,0x41,230,406,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0x51,0xbb,141,169,False,False,0xbb,283,426,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0x71,0xeb,141,169,False,False,0xeb,304,378,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0x20,0x52,141,169,False,False,0x52,269,377,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0x82,0x1b,141,169,False,False,0x1b,276,383,False,False
+FOX mu8,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xf0,0x99,141,169,False,True,0x99,284,392,False,True
+Whirlpool,x^8 + x^4 + x^3 + x + 1,0x1a,0xfd,88,88,False,False,0xfd,248,336,False,False
+Whirlpool,x^8 + x^4 + x^3 + x^2 + 1,0x1c,0xa0,88,88,False,False,0xa0,240,360,False,False
+Whirlpool,x^8 + x^5 + x^3 + x + 1,0x2a,0xb9,88,88,False,False,0xb9,256,416,False,False
+Whirlpool,x^8 + x^5 + x^3 + x^2 + 1,0x2c,0x74,88,88,False,False,0x74,248,392,False,False
+Whirlpool,x^8 + x^5 + x^4 + x^3 + 1,0x38,0xc7,88,88,False,False,0xc7,264,440,False,False
+Whirlpool,x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,0x3e,0x22,88,88,False,False,0x22,256,408,False,False
+Whirlpool,x^8 + x^6 + x^3 + x^2 + 1,0x4c,0x3c,88,88,False,False,0x3c,192,360,False,False
+Whirlpool,x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,0x5e,0x91,88,88,False,False,0x91,280,440,False,False
+Whirlpool,x^8 + x^6 + x^5 + x + 1,0x62,0x2b,88,88,False,False,0x2b,264,424,False,False
+Whirlpool,x^8 + x^6 + x^5 + x^2 + 1,0x64,0x1c,88,88,False,False,0x1c,224,384,False,False
+Whirlpool,x^8 + x^6 + x^5 + x^3 + 1,0x68,0x34,88,88,False,False,0x34,216,328,False,False
+Whirlpool,x^8 + x^6 + x^5 + x^4 + 1,0x70,0x7a,88,88,False,False,0x7a,272,376,False,False
+Whirlpool,x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,0x76,0x63,88,88,False,False,0x63,248,408,False,False
+Whirlpool,x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,0x7a,0x3d,88,88,False,False,0x3d,272,408,False,False
+Whirlpool,x^8 + x^7 + x^2 + x + 1,0x86,0xb8,88,88,False,False,0xb8,184,328,False,False
+Whirlpool,x^8 + x^7 + x^3 + x + 1,0x8a,0xf7,88,88,False,False,0xf7,208,328,False,False
+Whirlpool,x^8 + x^7 + x^3 + x^2 + 1,0x8c,0xa9,88,88,False,False,0xa9,216,392,False,False
+Whirlpool,x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,0x9e,0xb1,88,88,False,False,0xb1,256,400,False,False
+Whirlpool,x^8 + x^7 + x^5 + x + 1,0xa2,0xdf,88,88,False,False,0xdf,256,376,False,False
+Whirlpool,x^8 + x^7 + x^5 + x^3 + 1,0xa8,0x3b,88,88,False,False,0x3b,256,392,False,False
+Whirlpool,x^8 + x^7 + x^5 + x^4 + 1,0xb0,0x7f,88,88,False,False,0x7f,264,400,False,False
+Whirlpool,x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,0xbc,0x79,88,88,False,False,0x79,240,400,False,False
+Whirlpool,x^8 + x^7 + x^6 + x + 1,0xc2,0xf8,88,88,False,False,0xf8,264,400,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,0xce,0xc0,88,88,False,False,0xc0,240,432,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,0xd6,0x29,88,88,False,False,0x29,184,384,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,0xdc,0x8d,88,88,False,False,0x8d,248,336,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,0xe6,0xe0,88,88,False,False,0xe0,240,432,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,0xf2,0x1b,88,88,False,False,0x1b,272,392,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,0xf4,0x13,88,88,False,False,0x13,200,360,False,False
+Whirlpool,x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,0xf8,0x70,88,88,False,False,0x70,272,424,False,False

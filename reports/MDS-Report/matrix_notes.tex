@@ -87,7 +87,7 @@ Matrix (\ref{mat:anubis}) is Hadamard and involutory. It is used in the ANUBIS \
 \end{bmatrix}
 \end{equation}
 
-Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linear transformation layer, (\ref{mat:anubis-ke}) is used in the key extraction. It is a Vandermonde construction. When $N = 4$, it is an MDS matrix (see Theorem \ref{teo:mds}).
+Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linear transformation layer, (\ref{mat:anubis-ke}) is used in the key extraction. It is a Vandermonde construction. When $N = 4$, it is an MDS matrix (see Theorem \ref{teo:mds}). Matrix (\ref{mat:anubis-ke-inv}) is the inverse of (\ref{mat:anubis-ke}).
 
 \begin{equation}\label{mat:anubis-ke}
 \begin{bmatrix}
@@ -103,6 +103,15 @@ Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linea
 01_x & 06_x & 14_x & 78_x\\
 01_x & 08_x & 40_x & 3a_x
 \end{bmatrix} \text{for } N=4
+\end{equation}
+
+\begin{equation}\label{mat:anubis-ke-inv}
+\begin{bmatrix}
+71_x & 53_x & 7c_x & 5f_x\\
+8c_x & 25_x & c3_x & 6a_x\\
+a3_x & ad_x & 71_x & 7f_x\\
+5f_x & db_x & ce_x & 4a_x
+\end{bmatrix}
 \end{equation}
 
 Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are right-circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
@@ -295,9 +304,24 @@ Matrix (\ref{mat:curupira-ke}) is used in Curupira's key scheduling process, wit
 c(x) & 1+c(x) & c(x)\\
 c(x) & c(x) & 1+c(x)
 \end{bmatrix}
+=
+\begin{bmatrix}
+1d_x & 1c_x & 1c_x\\
+1c_x & 1d_x & 1c_x\\
+1c_x & 1c_x & 1d_x
+\end{bmatrix}
 \end{equation}
 
-Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is right-circulant.
+Matrix (\ref{mat:curupira-ke-inv}) is the inverse of (\ref{mat:curupira-ke}).
+\begin{equation}\label{mat:curupira-ke-inv}
+\begin{bmatrix}
+1c_x & 1d_x & 1d_x\\
+1d_x & 1c_x & 1d_x\\
+1d_x & 1d_x & 1c_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is right-circulant. Its inverse is (\ref{mat:grostl-inv}).
 
 \begin{equation}\label{mat:grostl}
 \begin{bmatrix}
@@ -312,30 +336,15 @@ Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is right-ci
 \end{bmatrix}
 \end{equation}
 
-Matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) are used in the Whirlwind hash function.
-
-\begin{equation}\label{mat:whirlwind-m0}
+\begin{equation}\label{mat:grostl-inv}
 \begin{bmatrix}
-5_x & 4_x & a_x & 6_x & 2_x & d_x & 8_x & 3_x\\
-4_x & 5_x & 6_x & a_x & d_x & 2_x & 3_x & 8_x\\
-a_x & 6_x & 5_x & 4_x & 8_x & 3_x & 2_x & d_x\\
-6_x & a_x & 4_x & 5_x & 3_x & 8_x & d_x & 2_x\\
-2_x & d_x & 8_x & 3_x & 5_x & 4_x & a_x & 6_x\\
-d_x & 2_x & 3_x & 8_x & 4_x & 5_x & 6_x & a_x\\
-8_x & 3_x & 2_x & d_x & a_x & 6_x & 5_x & 4_x\\
-3_x & 8_x & d_x & 2_x & 6_x & a_x & 4_x & 5_x
-\end{bmatrix}
-\end{equation}
-
-\begin{equation}\label{mat:whirlwind-m1}
-\begin{bmatrix}
-5_x & e_x & 4_x & 7_x & 1_x & 3_x & f_x & 8_x\\
-e_x & 5_x & 7_x & 4_x & 3_x & 1_x & 8_x & f_x\\
-4_x & 7_x & 5_x & e_x & f_x & 8_x & 1_x & 3_x\\
-7_x & 4_x & e_x & 5_x & 8_x & f_x & 3_x & 1_x\\
-1_x & 3_x & f_x & 8_x & 5_x & e_x & 4_x & 7_x\\
-3_x & 1_x & 8_x & f_x & e_x & 5_x & 7_x & 4_x\\
-f_x & 8_x & 1_x & 3_x & 4_x & 7_x & 5_x & e_x\\
-8_x & f_x & 3_x & 1_x & 7_x & 4_x & e_x & 5_x
+13_x & 5a_x & 54_x & 72_x & 50_x & df_x & 45_x & 53_x\\
+53_x & 13_x & 5a_x & 54_x & 72_x & 50_x & df_x & 45_x\\
+45_x & 53_x & 13_x & 5a_x & 54_x & 72_x & 50_x & df_x\\
+df_x & 45_x & 53_x & 13_x & 5a_x & 54_x & 72_x & 50_x\\
+50_x & df_x & 45_x & 53_x & 13_x & 5a_x & 54_x & 72_x\\
+72_x & 50_x & df_x & 45_x & 53_x & 13_x & 5a_x & 54_x\\
+54_x & 72_x & 50_x & df_x & 45_x & 53_x & 13_x & 5a_x\\
+5a_x & 54_x & 72_x & 50_x & df_x & 45_x & 53_x & 13_x
 \end{bmatrix}
 \end{equation}

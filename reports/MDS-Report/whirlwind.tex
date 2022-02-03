@@ -1,0 +1,105 @@
+% Whirlwind
+
+Matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) are used in the Whirlwind hash function, with the irreducible polynomial $p(x) = x^4+x+1$. The inverses are, respectively, (\ref{mat:whirlwind-m0-inv}) and (\ref{mat:whirlwind-m1-inv}). In \cite{Whirlwind2010}, it is claimed that the matrix is MDS. However, in our work, we have found singular submatrices, which leads us to believe, according to Theorem \ref{teo:mds}, that it is not MDS.
+
+For example, the smallest singular submatrix we have found (matrix (\ref{mat:singular-whirlwind-m0})) for (\ref{mat:whirlwind-m0}) is $2 \times 2$. It is clear that the determinant is $(x+1)(x^2+x) - x(x^2+1) = x^3+x^2+x^2+x - (x^3+x) = x^3+x-x^3-x = 0$.
+
+\begin{equation}\label{mat:singular-whirlwind-m0}
+\begin{bmatrix}
+3_x & 5_x\\
+2_x & 6_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+x+1 & x^2+1\\
+x & x^2+x
+\end{bmatrix}
+\end{equation}
+
+There are too many singular submatrices to list, therefore, we list which rows and columns should be removed from the original matrix in order to obtain them, in Table \ref{tbl:m0-singular}. Our row/column index starts at $0$ and ends at $7$.
+
+\input{whirlwind-m0-table.tex}
+
+For (\ref{mat:whirlwind-m1}), an example of singular submatrix is (\ref{mat:singular-whirlwind-m1}), and the list of rows and columns to be removed to yield all singular submatrices is given by Table \ref{tbl:m1-singular}.
+
+\begin{equation}\label{mat:singular-whirlwind-m1}
+\begin{bmatrix}
+8_x & 7_x\\
+3_x & e_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+x^3 & x^2 + x + 1\\
+x + 1 & x^3 + x^2 + x
+\end{bmatrix}
+\end{equation}
+
+\input{whirlwind-m1-table.tex}
+
+The fact that we have found singular submatrices for Whirlwind's $m_0$ and $m_1$ matrices shows they are not MDS in $GF(2^4)$. However, it is relevant to note that, in \cite{Whirlwind2010}, the authors mention the usage of the $GF(2^{16})$ field with \emph{decompositions} to $GF(2^4)$, as well as the usage of a \emph{normal basis} representation for the finite fields. It is possible that, despite not MDS in $GF(2^4)$ with $p(x) = x^4+x+1$ as the irreducible polynomial and a polynomial basis $\{1, x, x^2, x^3, x^4\}$, matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) be MDS for the normal basis representation. We are still studying and evaluating this in our research. This report will be updated with our future findings. For this reason, we place Whirlwind's matrices in Table \ref{tbl:maybe-non-mds-list}, while we are still investigating.
+
+\begin{footnotesize}
+\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Year} & \textbf{Ord} & \textbf{Type} & \textbf{Inv} & \textbf{Use} & \textbf{Bib} & \textbf{$GF(2)[x]/(p(x))$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrices} \\ \hline
+\endfirsthead
+\endhead
+
+% Whirlwind
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{104\\128} & \shortstack{136\\136} & \shortstack{(\ref{mat:whirlwind-m0}) \\ (\ref{mat:whirlwind-m0-inv})} \\ \hline
+2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{128\\128} & \shortstack{128\\128} & \shortstack{(\ref{mat:whirlwind-m1}) \\ (\ref{mat:whirlwind-m1-inv})} \\ \hline
+\caption{Non-MDS matrices under further investigation: parameters, usage and cost}\label{tbl:maybe-non-mds-list}
+\end{longtable}
+\end{footnotesize}
+
+\begin{equation}\label{mat:whirlwind-m0}
+\begin{bmatrix}
+5_x & 4_x & a_x & 6_x & 2_x & d_x & 8_x & 3_x\\
+4_x & 5_x & 6_x & a_x & d_x & 2_x & 3_x & 8_x\\
+a_x & 6_x & 5_x & 4_x & 8_x & 3_x & 2_x & d_x\\
+6_x & a_x & 4_x & 5_x & 3_x & 8_x & d_x & 2_x\\
+2_x & d_x & 8_x & 3_x & 5_x & 4_x & a_x & 6_x\\
+d_x & 2_x & 3_x & 8_x & 4_x & 5_x & 6_x & a_x\\
+8_x & 3_x & 2_x & d_x & a_x & 6_x & 5_x & 4_x\\
+3_x & 8_x & d_x & 2_x & 6_x & a_x & 4_x & 5_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlwind-m0-inv}
+\begin{bmatrix}
+7_x & 3_x & e_x & b_x & 8_x & 1_x & 6_x & c_x\\
+3_x & 7_x & b_x & e_x & 1_x & 8_x & c_x & 6_x\\
+e_x & b_x & 7_x & 3_x & 6_x & c_x & 8_x & 1_x\\
+b_x & e_x & 3_x & 7_x & c_x & 6_x & 1_x & 8_x\\
+8_x & 1_x & 6_x & c_x & 7_x & 3_x & e_x & b_x\\
+1_x & 8_x & c_x & 6_x & 3_x & 7_x & b_x & e_x\\
+6_x & c_x & 8_x & 1_x & e_x & b_x & 7_x & 3_x\\
+c_x & 6_x & 1_x & 8_x & b_x & e_x & 3_x & 7_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlwind-m1}
+\begin{bmatrix}
+5_x & e_x & 4_x & 7_x & 1_x & 3_x & f_x & 8_x\\
+e_x & 5_x & 7_x & 4_x & 3_x & 1_x & 8_x & f_x\\
+4_x & 7_x & 5_x & e_x & f_x & 8_x & 1_x & 3_x\\
+7_x & 4_x & e_x & 5_x & 8_x & f_x & 3_x & 1_x\\
+1_x & 3_x & f_x & 8_x & 5_x & e_x & 4_x & 7_x\\
+3_x & 1_x & 8_x & f_x & e_x & 5_x & 7_x & 4_x\\
+f_x & 8_x & 1_x & 3_x & 4_x & 7_x & 5_x & e_x\\
+8_x & f_x & 3_x & 1_x & 7_x & 4_x & e_x & 5_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlwind-m1-inv}
+\begin{bmatrix}
+f_x & 1_x & c_x & 9_x & 3_x & 5_x & 2_x & b_x\\
+1_x & f_x & 9_x & c_x & 5_x & 3_x & b_x & 2_x\\
+c_x & 9_x & f_x & 1_x & 2_x & b_x & 3_x & 5_x\\
+9_x & c_x & 1_x & f_x & b_x & 2_x & 5_x & 3_x\\
+3_x & 5_x & 2_x & b_x & f_x & 1_x & c_x & 9_x\\
+5_x & 3_x & b_x & 2_x & 1_x & f_x & 9_x & c_x\\
+2_x & b_x & 3_x & 5_x & c_x & 9_x & f_x & 1_x\\
+b_x & 2_x & 5_x & 3_x & 9_x & c_x & 1_x & f_x
+\end{bmatrix}
+\end{equation}

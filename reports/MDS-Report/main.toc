@@ -14,8 +14,9 @@
 \contentsline {section}{\numberline {1.4}MDS matrix catalogue}{11}{section.1.4}%
 \contentsline {section}{\numberline {1.5}A note on Hierocrypt 3 and Hierocrypt-L1}{17}{section.1.5}%
 \contentsline {section}{\numberline {1.6}A note on Whirlpool-0}{18}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Non-MDS matrix catalogue}{20}{section.1.7}%
-\contentsline {section}{\numberline {1.8}About the irreducible polynomials}{20}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Computing \textbf {xtime} and \textbf {xor} of the matrices}{21}{section.1.9}%
-\contentsline {subsection}{\numberline {1.9.1}SQUARE manual calculation example}{22}{subsection.1.9.1}%
-\contentsline {section}{\numberline {1.10}Conclusions}{23}{section.1.10}%
+\contentsline {section}{\numberline {1.7}About Whirlwind and its (possibly) non-MDS matrix}{21}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Non-MDS matrix catalogue}{53}{section.1.8}%
+\contentsline {section}{\numberline {1.9}About the irreducible polynomials}{54}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Computing \textbf {xtime} and \textbf {xor} of the matrices}{67}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}SQUARE manual calculation example}{68}{subsection.1.10.1}%
+\contentsline {section}{\numberline {1.11}Conclusions}{69}{section.1.11}%

@@ -488,11 +488,14 @@ def anubis_vandermonde_invol():
     m = int_to_gf_mat(anubis_ke_mat, anubis_field)
     inv = np.linalg.inv(m)
 
-    print(m)
-    print(inv)
+    print_mat_hex(m)
+    print("inv")
+    print_mat_hex(inv)
 
     print("xor", matrix_xor_cost(anubis_ke_mat, 4))
     print("xtime", matrix_xtime_cost(anubis_ke_mat, 4))
+    print("xor inv", matrix_xor_cost(inv, 4))
+    print("xtime inv", matrix_xtime_cost(inv, 4))
 
 def curupira_test():
     m = int_to_gf_mat(curupira, curupira_field)
@@ -527,20 +530,32 @@ def curupira_ke_test():
 
     m = int_to_gf_mat(intmat, curupira_field)
     inv = np.linalg.inv(m)
-    print(m)
-    print(inv)
+
+    with curupira_field.display("poly"):
+        print(m)
+        print(inv)
+
+    print("Original")
+    print_mat_hex(m)
+    print("Inv")
+    print_mat_hex(inv)
 
     print("xor", matrix_xor_cost(intmat, 3))
     print("xtime", matrix_xtime_cost(intmat, 3))
+    print("xor inv", matrix_xor_cost(inv, 3))
+    print("xtime inv", matrix_xtime_cost(inv, 3))
 
 
 def grostl_info():
     m = int_to_gf_mat(grostl, grostl_field)
     inv = np.linalg.inv(m)
-    print(m)
-    print(inv)
+    print_mat_hex(m)
+    print("inv")
+    print_mat_hex(inv)
     print("xor", matrix_xor_cost(grostl, 8))
     print("xtime", matrix_xtime_cost(grostl, 8))
+    print("xor inv", matrix_xor_cost(inv, 8))
+    print("xtime inv", matrix_xtime_cost(inv, 8))
 
 def whirlpool_info():
 	m = int_to_gf_mat(whirlpool_mat, whirlpool_field)
@@ -549,24 +564,55 @@ def whirlpool_info():
 	print("xtime", matrix_xtime_cost(m, 8))
 
 	inv = np.linalg.inv(m)
-	print_mat_hex(inv)
+	print(inv)
 	print("xor", matrix_xor_cost(inv, 8))
 	print("xtime", matrix_xtime_cost(inv, 8))
 
+	is_mds(inv)
+
 def whirlwind_info():
+	pass
+	#m1 = int_to_gf_mat(whirlwind_m1, hierocrypt_higher_field)
+	#m0 = int_to_gf_mat(whirlwind_m0, hierocrypt_higher_field)
     #print("m1")
-    #print_mat_hex(whirlwind_m1)
+    #print_mat_hex(m1)
     #print("m0")
-    #print_mat_hex(whirlwind_m0)
+    #print_mat_hex(m0)
     #print("ver se dyadic ta certa")
     #print_mat_hex(dyadic([0x5, 0x4, 0xa, 0x6, 0x2, 0xd, 0x8, 0x3]))
     #assert(whirlwind_m0 == dyadic([0x5, 0x4, 0xa, 0x6, 0x2, 0xd, 0x8, 0x3]))
 
-    print("xor m0", matrix_xor_cost(whirlwind_m0, 8))
-    print("xtime m0", matrix_xtime_cost(whirlwind_m0, 8))
+    #print("xor m0", matrix_xor_cost(m0, 8))
+    #print("xtime m0", matrix_xtime_cost(m0, 8))
 
-    print("xor m1", matrix_xor_cost(whirlwind_m1, 8))
-    print("xtime m1", matrix_xtime_cost(whirlwind_m1, 8))
+    #print("xor m1", matrix_xor_cost(m1, 8))
+    #print("xtime m1", matrix_xtime_cost(m1, 8))
+
+def whirlwind_info_2():
+	m1 = int_to_gf_mat(whirlwind_m1, hierocrypt_higher_field)
+	m0 = int_to_gf_mat(whirlwind_m0, hierocrypt_higher_field)
+	print("m1")
+	print_mat_hex(m1)
+	print("xor m1", matrix_xor_cost(m1, 8))
+	print("xtime m1", matrix_xtime_cost(m1, 8))
+	print("m0")
+	print_mat_hex(m0)
+	print("xor m0", matrix_xor_cost(m0, 8))
+	print("xtime m0", matrix_xtime_cost(m0, 8))
+	invm1 = np.linalg.inv(m1)
+	invm0 = np.linalg.inv(m0)
+	print("inv m1")
+	print_mat_hex(invm1)
+	print("xor invm1", matrix_xor_cost(invm1, 8))
+	print("xtime invm1", matrix_xtime_cost(invm1, 8))
+	print("inv m0")
+	print_mat_hex(invm0)
+	print("xor invm0", matrix_xor_cost(invm0, 8))
+	print("xtime invm0", matrix_xtime_cost(invm0, 8))
+
+def whirlwind_m0_mds_checker():
+	m1 = int_to_gf_mat(whirlwind_m1, hierocrypt_higher_field)
+	is_mds(m1)
 
 def get_mu4():
 	z = galois.Poly.Degrees([7, 6, 5, 4, 3, 2, 0])
@@ -658,9 +704,6 @@ def fox():
     print("xtime mu8 inv", matrix_xtime_cost(mu8_inv, 8))
 
 def submatrix_checker(mat, field):
-	pass
-
-def is_mds(mat):
 	check = True
 	smallest_submat = []
 	smallest_submat_dim = 100
@@ -687,9 +730,9 @@ def is_mds(mat):
 						smallest_submat_dim = len(submat)
 						smallest_rows = rows_to_be_removed
 						smallest_cols = columns_to_be_removed
-					#print(np.linalg.det(submat))
-					#print("Linhas removidas:", rows_to_be_removed)
-					#print("Colunas removidas:", columns_to_be_removed)
+					print(np.linalg.det(submat))
+					print("Linhas removidas:", rows_to_be_removed)
+					print("Colunas removidas:", columns_to_be_removed)
 					#print("Submatriz com determinante zero")
 					#print(submat)
 					#print("Matriz original")
@@ -698,18 +741,42 @@ def is_mds(mat):
 					#return False
 		z += 1
 	print("Menor submatriz com determinante zero")
-	with hierocrypt_higher_field.display("poly"):
+	with field.display("poly"):
 		print(smallest_submat)
-	with hierocrypt_higher_field.display("int"):
+	with field.display("int"):
 		print(smallest_submat)
 	print("Obtida removendo linhas", smallest_rows, "e colunas", smallest_cols)
 	print("Matriz original")
-	print(mat)
+	print_mat_hex(mat)
+	print("---")
+	print_mat_hex(smallest_submat)
 	return check
+
+def is_mds(mat):
+	if np.linalg.det(mat) == 0:
+		return False
+
+	dim = len(mat)
+
+	dim_list = [i for i in range(dim)]
+
+	z = 1
+	while z < dim:
+		possibilities = list(itertools.combinations(dim_list, z))
+
+		for rows_to_be_removed in possibilities:
+			for columns_to_be_removed in possibilities:
+				submat = np.delete(mat, rows_to_be_removed, axis=0)
+				submat = np.delete(submat, columns_to_be_removed, axis=1)
+				if np.linalg.det(submat) == 0:
+					return False
+		z += 1
+	return True
 
 class MatData():
 	def __init__(self):
 		self.det = 0
+		self.det_mul_inverse = 0
 		self.xor = 0
 		self.xtime = 0
 		self.involutory = False
@@ -727,6 +794,7 @@ class MatData():
 		d.pop("mat")
 		d.pop("inv")
 		d["det"] = hex(int(d["det"]))
+		d["det_mul_inverse"] = hex(int(d["det_mul_inverse"]))
 		d["inv_det"] = hex(int(d["inv_det"]))
 		return d
 
@@ -744,6 +812,10 @@ def get_matrix_information_in_field(m, irreducible_poly):
 
 	mat_data.mat = mat
 	mat_data.det = np.linalg.det(mat)
+	mat_data.det_mul_inverse = np.reciprocal(mat_data.det)
+
+	print(mat_data.det_mul_inverse * mat_data.det)
+
 	mat_data.xor = matrix_xor_cost(mat, len(mat))
 	mat_data.xtime = matrix_xtime_cost(mat, len(mat))
 
@@ -837,12 +909,12 @@ def test_det():
 		print(str(np.linalg.det(m)))
 
 def get_csvs(csv_name):
-	header = ['label', 'poly', 'det', 'xor', 'xtime', 'involutory', 'mds', 'inv_det', 'inv_xor', 'inv_xtime', 'inv_involutory', 'inv_mds']
+	header = ['label', 'poly', 'det', 'det_mul_inverse', 'xor', 'xtime', 'involutory', 'mds', 'inv_det', 'inv_xor', 'inv_xtime', 'inv_involutory', 'inv_mds']
 	rows = [header]
 	for alg in data_map:
 		for poly in data_map[alg]:
 			row = [alg, poly]
-			for key in ['det', 'xor', 'xtime', 'involutory', 'mds', 'inv_det', 'inv_xor', 'inv_xtime', 'inv_involutory', 'inv_mds']:
+			for key in ['det', 'det_mul_inverse', 'xor', 'xtime', 'involutory', 'mds', 'inv_det', 'inv_xor', 'inv_xtime', 'inv_involutory', 'inv_mds']:
 				row.append(data_map[alg][poly][key])
 			rows.append(row)
 
@@ -871,7 +943,29 @@ def mds_data():
 	explore_fields(get_mu4(), "FOX mu4", 8, fox_poly)
 	explore_fields(get_mu8(), "FOX mu8", 8, fox_poly)
 	explore_fields(whirlpool_mat, "Whirlpool", 8, tavares_khazad_anubis_poly)
-	get_csvs("mds_data_summary_2.csv")
+	get_csvs("mds_data_summary_3.csv")
+
+def mds_data_2():
+	explore_fields(shark_mat, "SHARK", 8, shark_square_bksq_poly)
+	explore_fields(square_mat, "SQUARE", 8, shark_square_bksq_poly)
+	explore_fields(bksq_mat, "BKSQ", 8, shark_square_bksq_poly)
+	explore_fields(tavares_mat, "Tavares", 8, tavares_khazad_anubis_poly)
+	explore_fields(khazad_mat, "KHAZAD", 8, tavares_khazad_anubis_poly)
+	explore_fields(anubis_mat, "Anubis", 8, tavares_khazad_anubis_poly)
+	explore_fields(anubis_ke_mat, "Anubis (key schedule)", 8, tavares_khazad_anubis_poly)
+	explore_fields(whirlwind_m0, "Whirlwind m0", 4, whirlwind_poly)
+	explore_fields(whirlwind_m1, "Whirlwind m1", 4, whirlwind_poly)
+	explore_fields(grostl, "Grostl", 8, rijndael_poly)
+	explore_fields(curupira, "Curupira", 8, curupira_poly)
+	explore_fields(get_curupira_ke(), "Curupira (ke)", 8, curupira_poly)
+	explore_fields(rijndael_mat, "Rijndael", 8, rijndael_poly)
+	explore_fields(mds, "Hierocrypt 3 and L1 (low)", 8, hierocrypt_poly)
+	explore_fields(mdsh, "Hierocrypt 3 (high)", 4, whirlwind_poly)
+	explore_fields(l1_mdsh, "Hierocrypt L1 (high)", 4, whirlwind_poly)
+	explore_fields(get_mu4(), "FOX mu4", 8, fox_poly)
+	explore_fields(get_mu8(), "FOX mu8", 8, fox_poly)
+	explore_fields(whirlpool_mat, "Whirlpool", 8, tavares_khazad_anubis_poly)
+	get_csvs("mds_data_summary_4.csv")
 
 def hiero_non_mds():
 	print("8x8 xor", matrix_xor_cost(hiero_8x8, 8))
@@ -879,12 +973,53 @@ def hiero_non_mds():
 	print("16x16 xor", matrix_xor_cost(hiero_16x16, 16))
 	print("16x16 xtime", matrix_xtime_cost(hiero_16x16, 16))
 
-#print(is_mds(int_to_gf_mat(whirlwind_m0, hierocrypt_higher_field)))
-#print(is_mds(int_to_gf_mat(whirlwind_m1, hierocrypt_higher_field)))
-#print(is_mds(int_to_gf_mat(whirlpool_mat, rijndael_field)))
-#explore_fields(whirlwind_m0, "Whirlwind m0", 4, whirlwind_poly)
-#explore_fields(whirlwind_m1, "Whirlwind m1", 4, whirlwind_poly)
-#mds_data()
-#print(poly_xtime_cost(1))
+def rcirc(first_row):
+	dim = len(first_row)
 
-hiero_non_mds()
+	rows = []
+	prev_row = []
+
+	for i in range(dim):
+		if i == 0:
+			rows.append(first_row)
+			prev_row = first_row
+		else:
+			new_first = prev_row[-1]
+			new_row = [new_first]
+			new_row += prev_row[0:-1]
+			rows.append(new_row)
+			prev_row = new_row
+	return rows
+	print(rows)
+
+def shirai_costs():
+	s0 = int_to_gf_mat(rcirc([1, 1, 2, 1, 5, 8, 9, 4]), whirlpool_field)
+	s1 = int_to_gf_mat(rcirc([1, 1, 2, 1, 6, 9, 8, 3]), whirlpool_field)
+	s2 = int_to_gf_mat(rcirc([1, 1, 2, 1, 8, 9, 4, 5]), whirlpool_field)
+	s3 = int_to_gf_mat(rcirc([1, 1, 2, 1, 9, 6, 4, 3]), whirlpool_field)
+	s4 = int_to_gf_mat(rcirc([1, 1, 2, 6, 5, 9, 1, 8]), whirlpool_field)
+	s5 = int_to_gf_mat(rcirc([1, 1, 3, 1, 4, 9, 5, 6]), whirlpool_field)
+	s6 = int_to_gf_mat(rcirc([1, 1, 3, 1, 8, 4, 9, 6]), whirlpool_field)
+	s7 = int_to_gf_mat(rcirc([1, 1, 4, 1, 8, 5, 2, 9]), whirlpool_field)
+	s8 = int_to_gf_mat(rcirc([1, 1, 4, 1, 9, 3, 2, 6]), whirlpool_field)
+	s9 = int_to_gf_mat(rcirc([1, 1, 4, 3, 6, 8, 1, 9]), whirlpool_field)
+	s10 = int_to_gf_mat(rcirc([1, 1, 5, 1, 4, 6, 3, 9]), whirlpool_field)
+	s11 = int_to_gf_mat(rcirc([1, 1, 5, 8, 2, 9, 1, 6]), whirlpool_field)
+	s12 = int_to_gf_mat(rcirc([1, 1, 8, 1, 6, 3, 2, 9]), whirlpool_field)
+	s13 = int_to_gf_mat(rcirc([1, 1, 8, 2, 4, 5, 1, 9]), whirlpool_field)
+
+	#shirai = [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13]
+	shirai = [s8]
+	for s in shirai:
+		print("xor", matrix_xor_cost(s, 8))
+
+	for s in shirai:
+		print("xtime", matrix_xtime_cost(s, 8))
+
+	for s in shirai:
+		inv = np.linalg.inv(s)
+		print("ixr", matrix_xor_cost(inv, 8), "ixt", matrix_xtime_cost(inv, 8))
+		print_mat_hex(inv)
+		print("---")
+
+mds_data_2()

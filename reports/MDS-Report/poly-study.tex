@@ -1,0 +1,479 @@
+It is worth noting that, when changing the irreducible polynomial, the finite field changes, and that may cause the inverse matrices to change, resulting in inverse matrices with different computational costs. In this work, we briefly explore this. Table \ref{tbl:different-pol} shows, for each matrix studied in this work (column $A$) and each possible irreducible polynomial (column $p(x)$), the determinant (column $|A|$), the multiplicative inverse of the determinant ($\frac{1}{|A|}$), the \textbf{xor} cost (xr), the \textbf{xtime} cost (xt), whether $A$ is involutory (column Iv), whether the MDS property holds (column MDS) on the finite field, the determinant of the inverse matrix, $A^{-1}$, on the finite field (column $|A|_i$), \textbf{xor} and \textbf{xtime} costs (xr$_i$ and xt$_i$, respectively), involutory property for $A^{-1}$ (Iv$_i$) and, finally, MDS property for $A^{-1}$ (MDS$_i$).
+
+It is worth noting that, for some matrices and fields, the MDS property does not hold. It is the case of SHARK, where the MDS property only holds for the $p(x)
+$ chosen by the cipher's authors. However, for others, such as Rijndael, KHAZAD and Anubis, the MDS and involutory properties always hold, no matter the field, and the \textbf{xor} and \textbf{xtime} costs of the inverse matrix do not change. This suggests that it is possible to choose the best irreducible polynomial when designing a diffusion layer --- the polynomial which keeps MDS property and yields inverse matrices with the lowest cost.
+
+\begin{tiny}
+\begin{longtable}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$A$ & $p(x)$ & $|A|$ & $\frac{1}{|A|}$ & xr & xt & Iv & MDS & $|A|_i$ & xr$_i$ & xt$_i$ & Iv$_i$ & MDS$_i$ \\ \hline
+\endfirsthead
+%
+\endhead
+%
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^4 + x^3 + x + 1$ & A1 & 7C & 235 & 369 & no & no & 7C & 261 & 399 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^4 + x^3 + x^2 + 1$ & FE & 7E & 235 & 369 & no & no & 7E & 233 & 372 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^5 + x^3 + x + 1$ & 23 & E8 & 235 & 369 & no & no & E8 & 237 & 380 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 55 & 89 & 235 & 369 & no & no & 89 & 235 & 370 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 87 & 9B & 235 & 369 & no & no & 9B & 255 & 380 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 60 & E3 & 235 & 369 & no & no & E3 & 258 & 389 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 4F & E3 & 235 & 369 & no & no & E3 & 257 & 398 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & C2 & EA & 235 & 369 & no & no & EA & 260 & 390 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x + 1$ & FD & CB & 235 & 369 & no & no & CB & 232 & 384 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 4E & B8 & 235 & 369 & no & no & B8 & 242 & 396 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 3C & E & 235 & 369 & no & no & E & 257 & 375 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 5B & 95 & 235 & 369 & no & no & 95 & 225 & 372 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 94 & 67 & 235 & 369 & no & no & 67 & 249 & 396 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 91 & B3 & 235 & 369 & no & no & B3 & 257 & 392 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^2 + x + 1$ & 9A & EA & 235 & 369 & no & no & EA & 240 & 387 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^3 + x + 1$ & 1D & F6 & 235 & 369 & no & no & F6 & 256 & 400 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 63 & 4 & 235 & 369 & no & no & 4 & 247 & 373 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 29 & 32 & 235 & 369 & no & no & 32 & 233 & 377 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^5 + x + 1$ & EF & 95 & 235 & 369 & no & no & 95 & 241 & 380 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 76 & 54 & 235 & 369 & no & no & 54 & 246 & 381 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 8 & 36 & 235 & 369 & no & no & 36 & 230 & 390 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & A & AD & 235 & 369 & no & no & AD & 245 & 382 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x + 1$ & 34 & 64 & 235 & 369 & no & no & 64 & 243 & 394 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & F9 & 78 & 235 & 369 & no & no & 78 & 274 & 403 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & A3 & 24 & 235 & 369 & no & no & 24 & 230 & 383 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 86 & CE & 235 & 369 & no & no & CE & 241 & 379 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 37 & 52 & 235 & 369 & no & no & 52 & 254 & 375 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 29 & 40 & 235 & 369 & no & no & 40 & 254 & 395 & no & no \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & FC & EC & 235 & 369 & no & yes & EC & 223 & 393 & no & yes \\ \hline
+\shortstack{SHARK \\ \eqref{mat:shark}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & BF & 1B & 235 & 369 & no & no & 1B & 257 & 385 & no & no \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{SQUARE \\ \eqref{mat:square}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^4 + x^3 + x + 1$ & 3 & F6 & 9 & 9 & no & yes & F6 & 57 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 3 & F4 & 9 & 9 & no & yes & F4 & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^5 + x^3 + x + 1$ & 3 & E6 & 9 & 9 & no & yes & E6 & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 3 & E4 & 9 & 9 & no & yes & E4 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 3 & E8 & 9 & 9 & no & yes & E8 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 3 & EA & 9 & 9 & no & yes & EA & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 3 & C4 & 9 & 9 & no & yes & C4 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 3 & CA & 9 & 9 & no & yes & CA & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x + 1$ & 3 & DE & 9 & 9 & no & yes & DE & 57 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 3 & DC & 9 & 9 & no & yes & DC & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 3 & D8 & 9 & 9 & no & yes & D8 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 3 & D0 & 9 & 9 & no & yes & D0 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 3 & D2 & 9 & 9 & no & yes & D2 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 3 & D6 & 9 & 9 & no & yes & D6 & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^2 + x + 1$ & 3 & 82 & 9 & 9 & no & yes & 82 & 21 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^3 + x + 1$ & 3 & 86 & 9 & 9 & no & yes & 86 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 3 & 84 & 9 & 9 & no & yes & 84 & 21 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 3 & 8A & 9 & 9 & no & yes & 8A & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^5 + x + 1$ & 3 & 9E & 9 & 9 & no & yes & 9E & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 3 & 98 & 9 & 9 & no & yes & 98 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 3 & 90 & 9 & 9 & no & yes & 90 & 21 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 3 & 94 & 9 & 9 & no & yes & 94 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x + 1$ & 3 & BE & 9 & 9 & no & yes & BE & 57 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 3 & BA & 9 & 9 & no & yes & BA & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 3 & B2 & 9 & 9 & no & yes & B2 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 3 & B4 & 9 & 9 & no & yes & B4 & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 3 & A2 & 9 & 9 & no & yes & A2 & 30 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 3 & AE & 9 & 9 & no & yes & AE & 48 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 3 & AC & 9 & 9 & no & yes & AC & 39 & 63 & no & yes \\ \hline
+\shortstack{BKSQ \\ \eqref{mat:bksq}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 3 & A8 & 9 & 9 & no & yes & A8 & 30 & 63 & no & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 240 & 344 & yes & yes & 1 & 240 & 344 & yes & yes \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{Tavares \\ \eqref{mat:tavares}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 240 & 344 & yes & no & 1 & 240 & 344 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 112 & 120 & yes & no & 1 & 112 & 120 & yes & no \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{KHAZAD \\ \eqref{mat:khazad}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 112 & 120 & yes & yes & 1 & 112 & 120 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ \eqref{mat:anubis}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 20 & yes & yes & 1 & 16 & 20 & yes & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^4 + x^3 + x + 1$ & 63 & D3 & 20 & 32 & no & yes & D3 & 65 & 96 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^4 + x^3 + x^2 + 1$ & A5 & C2 & 20 & 32 & no & yes & C2 & 69 & 101 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^5 + x^3 + x + 1$ & A9 & EF & 20 & 32 & no & yes & EF & 71 & 100 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 7B & B1 & 20 & 32 & no & yes & B1 & 55 & 93 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^5 + x^4 + x^3 + 1$ & E5 & 3C & 20 & 32 & no & yes & 3C & 59 & 97 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 3B & 29 & 20 & 32 & no & yes & 29 & 61 & 101 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 9D & F4 & 20 & 32 & no & yes & F4 & 47 & 81 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & E1 & 18 & 20 & 32 & no & yes & 18 & 55 & 104 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x + 1$ & EC & D0 & 20 & 32 & no & yes & D0 & 57 & 97 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 4 & 59 & 20 & 32 & no & yes & 59 & 57 & 93 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x^3 + 1$ & BD & D4 & 20 & 32 & no & yes & D4 & 49 & 81 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 96 & 4D & 20 & 32 & no & yes & 4D & 63 & 101 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 72 & 56 & 20 & 32 & no & yes & 56 & 63 & 100 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & C1 & F3 & 20 & 32 & no & yes & F3 & 67 & 92 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^2 + x + 1$ & AC & B & 20 & 32 & no & yes & B & 61 & 98 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^3 + x + 1$ & 37 & A5 & 20 & 32 & no & yes & A5 & 57 & 93 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^3 + x^2 + 1$ & B9 & EC & 20 & 32 & no & yes & EC & 63 & 100 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 2D & 42 & 20 & 32 & no & yes & 42 & 57 & 94 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^5 + x + 1$ & F3 & B & 20 & 32 & no & yes & B & 63 & 93 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^5 + x^3 + 1$ & E0 & 42 & 20 & 32 & no & yes & 42 & 59 & 96 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 73 & 88 & 20 & 32 & no & yes & 88 & 53 & 101 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & FA & 41 & 20 & 32 & no & yes & 41 & 61 & 100 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x + 1$ & 87 & 5A & 20 & 32 & no & yes & 5A & 67 & 97 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 34 & C5 & 20 & 32 & no & yes & C5 & 59 & 100 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & AD & AA & 20 & 32 & no & yes & AA & 61 & 93 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & A6 & F5 & 20 & 32 & no & yes & F5 & 61 & 101 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 88 & 3B & 20 & 32 & no & yes & 3B & 53 & 102 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & AE & 3 & 20 & 32 & no & yes & 3 & 59 & 98 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 2 & FA & 20 & 32 & no & yes & FA & 57 & 95 & no & yes \\ \hline
+\shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & A3 & 36 & 20 & 32 & no & yes & 36 & 57 & 93 & no & yes \\ \hline
+\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x + 1$ & B & 5 & 104 & 136 & no & no & 5 & 128 & 136 & no & no \\ \hline
+\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + 1$ & 4 & 6 & 104 & 136 & no & no & 6 & 112 & 160 & no & no \\ \hline
+\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + x^2 + x + 1$ & E & B & 104 & 136 & no & no & B & 128 & 128 & no & no \\ \hline
+\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x + 1$ & 9 & 2 & 128 & 128 & no & no & 2 & 128 & 128 & no & no \\ \hline
+\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + 1$ & 6 & 4 & 128 & 128 & no & no & 4 & 120 & 144 & no & no \\ \hline
+\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + x^2 + x + 1$ & C & D & 128 & 128 & no & no & D & 120 & 160 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^4 + x^3 + x + 1$ & 1A & FD & 104 & 96 & no & yes & FD & 232 & 376 & no & yes \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1C & A0 & 104 & 96 & no & no & A0 & 240 & 384 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^5 + x^3 + x + 1$ & 2A & B9 & 104 & 96 & no & no & B9 & 288 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 2C & 74 & 104 & 96 & no & no & 74 & 216 & 352 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 38 & C7 & 104 & 96 & no & no & C7 & 248 & 408 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 3E & 22 & 104 & 96 & no & no & 22 & 224 & 408 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 4C & 3C & 104 & 96 & no & no & 3C & 240 & 400 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 5E & 91 & 104 & 96 & no & no & 91 & 248 & 432 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x + 1$ & 62 & 2B & 104 & 96 & no & no & 2B & 264 & 416 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 64 & 1C & 104 & 96 & no & no & 1C & 240 & 328 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 68 & 34 & 104 & 96 & no & yes & 34 & 248 & 376 & no & yes \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 70 & 7A & 104 & 96 & no & no & 7A & 288 & 384 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 76 & 63 & 104 & 96 & no & no & 63 & 232 & 400 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 7A & 3D & 104 & 96 & no & no & 3D & 208 & 360 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^2 + x + 1$ & 86 & B8 & 104 & 96 & no & no & B8 & 280 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^3 + x + 1$ & 8A & F7 & 104 & 96 & no & no & F7 & 208 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 8C & A9 & 104 & 96 & no & yes & A9 & 200 & 384 & no & yes \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 9E & B1 & 104 & 96 & no & yes & B1 & 176 & 360 & no & yes \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^5 + x + 1$ & A2 & DF & 104 & 96 & no & no & DF & 224 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^5 + x^3 + 1$ & A8 & 3B & 104 & 96 & no & no & 3B & 272 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^5 + x^4 + 1$ & B0 & 7F & 104 & 96 & no & no & 7F & 216 & 344 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & BC & 79 & 104 & 96 & no & no & 79 & 272 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x + 1$ & C2 & F8 & 104 & 96 & no & no & F8 & 248 & 352 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & CE & C0 & 104 & 96 & no & no & C0 & 240 & 416 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & D6 & 29 & 104 & 96 & no & no & 29 & 232 & 384 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & DC & 8D & 104 & 96 & no & no & 8D & 200 & 344 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & E6 & E0 & 104 & 96 & no & no & E0 & 256 & 384 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & F2 & 1B & 104 & 96 & no & no & 1B & 240 & 376 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & F4 & 13 & 104 & 96 & no & no & 13 & 200 & 312 & no & no \\ \hline
+\shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & F8 & 70 & 104 & 96 & no & yes & 70 & 256 & 408 & no & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ \eqref{mat:curupira}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 12 & 15 & yes & yes & 1 & 12 & 15 & yes & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^4 + x^3 + x + 1$ & 1D & 40 & 27 & 36 & no & yes & 40 & 12 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1D & 83 & 27 & 36 & no & yes & 83 & 18 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^5 + x^3 + x + 1$ & 1D & 33 & 27 & 36 & no & yes & 33 & 27 & 45 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1D & B0 & 27 & 36 & no & yes & B0 & 30 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1D & 18 & 27 & 36 & no & yes & 18 & 21 & 36 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1D & 61 & 27 & 36 & no & yes & 61 & 18 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1D & 1C & 27 & 36 & no & yes & 1C & 30 & 36 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1D & 3B & 27 & 36 & no & yes & 3B & 36 & 45 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x + 1$ & 1D & 9E & 27 & 36 & no & yes & 9E & 48 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1D & 3F & 27 & 36 & no & yes & 3F & 45 & 45 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1D & BB & 27 & 36 & no & yes & BB & 45 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1D & 79 & 27 & 36 & no & yes & 79 & 36 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1D & 1E & 27 & 36 & no & yes & 1E & 39 & 36 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1D & F5 & 27 & 36 & no & yes & F5 & 45 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^2 + x + 1$ & 1D & 64 & 27 & 36 & no & yes & 64 & 30 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^3 + x + 1$ & 1D & F6 & 27 & 36 & no & yes & F6 & 57 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1D & 2F & 27 & 36 & no & yes & 2F & 36 & 45 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1D & 16 & 27 & 36 & no & yes & 16 & 30 & 36 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^5 + x + 1$ & 1D & 51 & 27 & 36 & no & yes & 51 & 18 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1D & A5 & 27 & 36 & no & yes & A5 & 27 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1D & EC & 27 & 36 & no & yes & EC & 48 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1D & 6A & 27 & 36 & no & yes & 6A & 39 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x + 1$ & 1D & 23 & 27 & 36 & no & yes & 23 & 18 & 45 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1D & EF & 27 & 36 & no & yes & EF & 54 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1D & 41 & 27 & 36 & no & yes & 41 & 9 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1D & 85 & 27 & 36 & no & yes & 85 & 18 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1D & 95 & 27 & 36 & no & yes & 95 & 27 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1D & 78 & 27 & 36 & no & yes & 78 & 39 & 54 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1D & F3 & 27 & 36 & no & yes & F3 & 45 & 63 & no & yes \\ \hline
+\shortstack{Curupira \\ (KE) \\ \eqref{mat:curupira-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1D & 27 & 27 & 36 & no & yes & 27 & 27 & 45 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^5 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^3 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^5 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Rijndael \\ \eqref{mat:rijndael}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 1 & 1 & 16 & 8 & no & yes & 1 & 40 & 48 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^4 + x^3 + x + 1$ & F1 & 23 & 52 & 108 & no & yes & 23 & 64 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 33 & 2E & 52 & 108 & no & yes & 2E & 64 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^5 + x^3 + x + 1$ & C & AC & 52 & 108 & no & yes & AC & 64 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^5 + x^3 + x^2 + 1$ & CA & 61 & 52 & 108 & no & yes & 61 & 56 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 69 & EF & 52 & 108 & no & yes & EF & 44 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & CD & 18 & 52 & 108 & no & yes & 18 & 64 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^3 + x^2 + 1$ & AA & 66 & 52 & 108 & no & yes & 66 & 60 & 92 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 32 & E6 & 52 & 108 & no & yes & E6 & 80 & 108 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x + 1$ & 13 & 85 & 52 & 108 & no & yes & 85 & 52 & 104 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 1B & 31 & 52 & 108 & no & yes & 31 & 48 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 63 & 6F & 52 & 108 & no & yes & 6F & 36 & 76 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 12 & EE & 52 & 108 & no & yes & EE & 40 & 88 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & C & 8F & 52 & 108 & no & yes & 8F & 48 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 28 & 3C & 52 & 108 & no & yes & 3C & 52 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^2 + x + 1$ & 6 & 41 & 52 & 108 & no & yes & 41 & 68 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^3 + x + 1$ & 5 & FB & 52 & 108 & no & yes & FB & 32 & 40 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^3 + x^2 + 1$ & FA & 31 & 52 & 108 & no & yes & 31 & 36 & 68 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & CD & 79 & 52 & 108 & no & yes & 79 & 60 & 104 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^5 + x + 1$ & D9 & 6E & 52 & 108 & no & yes & 6E & 64 & 92 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 46 & B & 52 & 108 & no & yes & B & 76 & 108 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^5 + x^4 + 1$ & 95 & 78 & 52 & 108 & no & yes & 78 & 76 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & C5 & E2 & 52 & 108 & no & yes & E2 & 60 & 96 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x + 1$ & A4 & 86 & 52 & 108 & no & yes & 86 & 56 & 108 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & EB & 3B & 52 & 108 & no & yes & 3B & 60 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & AB & B6 & 52 & 108 & no & yes & B6 & 68 & 108 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & DB & AD & 52 & 108 & no & yes & AD & 68 & 100 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & AD & 94 & 52 & 108 & no & no & 94 & 56 & 108 & no & no \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & DC & 7 & 52 & 108 & no & yes & 7 & 40 & 84 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & B2 & 79 & 52 & 108 & no & yes & 79 & 48 & 88 & no & yes \\ \hline
+\shortstack{Hierocrypt \\ (low) \\ \eqref{mat:hierocrypt-3-lower}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 3D & B6 & 52 & 108 & no & no & B6 & 76 & 104 & no & no \\ \hline
+\shortstack{Hierocrypt-3 \\ (high) \\ \eqref{mat:hierocrypt-3-higher}} & $x^4 + x + 1$ & 5 & B & 32 & 40 & no & yes & B & 40 & 44 & no & yes \\ \hline
+\shortstack{Hierocrypt-3 \\ (high) \\ \eqref{mat:hierocrypt-3-higher}} & $x^4 + x^3 + 1$ & E & 7 & 32 & 40 & no & no & 7 & 28 & 32 & no & no \\ \hline
+\shortstack{Hierocrypt-3 \\ (high) \\ \eqref{mat:hierocrypt-3-higher}} & $x^4 + x^3 + x^2 + x + 1$ & 8 & 4 & 32 & 40 & no & yes & 4 & 16 & 28 & no & yes \\ \hline
+\shortstack{Hierocrypt L1 \\ (high) \\ \eqref{mat:hierocrypt-l1-higher}} & $x^4 + x + 1$ & 2 & 9 & 8 & 10 & no & yes & 9 & 7 & 11 & no & yes \\ \hline
+\shortstack{Hierocrypt L1 \\ (high) \\ \eqref{mat:hierocrypt-l1-higher}} & $x^4 + x^3 + 1$ & 8 & 3 & 8 & 10 & no & yes & 3 & 8 & 10 & no & yes \\ \hline
+\shortstack{Hierocrypt L1 \\ (high) \\ \eqref{mat:hierocrypt-l1-higher}} & $x^4 + x^3 + x^2 + x + 1$ & E & B & 8 & 10 & no & yes & B & 9 & 10 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^4 + x^3 + x + 1$ & C4 & DA & 30 & 25 & no & yes & DA & 70 & 105 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 62 & CA & 30 & 25 & no & yes & CA & 58 & 91 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^5 + x^3 + x + 1$ & 75 & FD & 30 & 25 & no & yes & FD & 76 & 111 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 55 & 89 & 30 & 25 & no & yes & 89 & 71 & 103 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 1F & 35 & 30 & 25 & no & yes & 35 & 43 & 85 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 1C & E2 & 30 & 25 & no & yes & E2 & 46 & 90 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 79 & CE & 30 & 25 & no & yes & CE & 61 & 104 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & B6 & 25 & 30 & 25 & no & yes & 25 & 58 & 91 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x + 1$ & AA & F2 & 30 & 25 & no & yes & F2 & 59 & 87 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 55 & 6C & 30 & 25 & no & yes & 6C & 59 & 100 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 60 & E8 & 30 & 25 & no & yes & E8 & 75 & 98 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x^4 + 1$ & BC & 2B & 30 & 25 & no & yes & 2B & 89 & 95 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 66 & D4 & 30 & 25 & no & yes & D4 & 73 & 112 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 28 & 3C & 30 & 25 & no & yes & 3C & 76 & 96 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^2 + x + 1$ & 14 & DC & 30 & 25 & no & yes & DC & 66 & 106 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^3 + x + 1$ & 72 & 18 & 30 & 25 & no & yes & 18 & 61 & 95 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^3 + x^2 + 1$ & DB & E6 & 30 & 25 & no & yes & E6 & 79 & 91 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 69 & 7D & 30 & 25 & no & yes & 7D & 65 & 109 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^5 + x + 1$ & B6 & 98 & 30 & 25 & no & yes & 98 & 52 & 100 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 25 & B7 & 30 & 25 & no & yes & B7 & 72 & 97 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^5 + x^4 + 1$ & F2 & 64 & 30 & 25 & no & yes & 64 & 67 & 112 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 32 & F8 & 30 & 25 & no & yes & F8 & 59 & 100 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x + 1$ & D3 & 16 & 30 & 25 & no & no & 16 & 57 & 103 & no & no \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 8A & D & 30 & 25 & no & yes & D & 61 & 104 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 90 & 5D & 30 & 25 & no & yes & 5D & 86 & 108 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & A8 & 65 & 30 & 25 & no & yes & 65 & 56 & 106 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 3 & A2 & 30 & 25 & no & yes & A2 & 59 & 84 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 71 & 70 & 30 & 25 & no & yes & 70 & 64 & 88 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & D6 & 11 & 30 & 25 & no & yes & 11 & 47 & 103 & no & yes \\ \hline
+\shortstack{FOX mu4 \\ \eqref{mat:fox-mu4}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & 13 & 26 & 30 & 25 & no & yes & 26 & 72 & 106 & no & yes \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^4 + x^3 + x + 1$ & 3 & F6 & 141 & 169 & no & no & F6 & 283 & 399 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 5A & CB & 141 & 169 & no & no & CB & 268 & 371 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^5 + x^3 + x + 1$ & 43 & 44 & 141 & 169 & no & no & 44 & 268 & 391 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^5 + x^3 + x^2 + 1$ & BD & FA & 141 & 169 & no & no & FA & 248 & 392 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^5 + x^4 + x^3 + 1$ & A2 & 11 & 141 & 169 & no & no & 11 & 229 & 405 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 11 & 7C & 141 & 169 & no & no & 7C & 194 & 369 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^3 + x^2 + 1$ & CD & 71 & 141 & 169 & no & no & 71 & 290 & 411 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & A2 & 34 & 141 & 169 & no & no & 34 & 234 & 350 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x + 1$ & 14 & A3 & 141 & 169 & no & no & A3 & 290 & 418 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 3 & DC & 141 & 169 & no & no & DC & 255 & 405 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 85 & DE & 141 & 169 & no & no & DE & 229 & 399 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 9B & 6F & 141 & 169 & no & no & 6F & 246 & 392 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & E5 & 51 & 141 & 169 & no & no & 51 & 212 & 342 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & E2 & 9A & 141 & 169 & no & no & 9A & 251 & 364 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^2 + x + 1$ & 31 & D7 & 141 & 169 & no & no & D7 & 234 & 397 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^3 + x + 1$ & 19 & CD & 141 & 169 & no & no & CD & 256 & 406 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^3 + x^2 + 1$ & F8 & C4 & 141 & 169 & no & no & C4 & 257 & 364 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & FA & FB & 141 & 169 & no & no & FB & 235 & 371 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^5 + x + 1$ & BA & E1 & 141 & 169 & no & no & E1 & 255 & 427 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^5 + x^3 + 1$ & 5 & EF & 141 & 169 & no & no & EF & 246 & 404 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^5 + x^4 + 1$ & A1 & E1 & 141 & 169 & no & no & E1 & 235 & 392 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & 73 & DC & 141 & 169 & no & no & DC & 172 & 363 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x + 1$ & CE & C & 141 & 169 & no & no & C & 263 & 371 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & 49 & EC & 141 & 169 & no & no & EC & 256 & 391 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & 1D & 41 & 141 & 169 & no & no & 41 & 230 & 406 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & 51 & BB & 141 & 169 & no & no & BB & 283 & 426 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & 71 & EB & 141 & 169 & no & no & EB & 304 & 378 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & 20 & 52 & 141 & 169 & no & no & 52 & 269 & 377 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 82 & 1B & 141 & 169 & no & no & 1B & 276 & 383 & no & no \\ \hline
+\shortstack{FOX mu8 \\ \eqref{mat:fox-mu8}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & F0 & 99 & 141 & 169 & no & yes & 99 & 284 & 392 & no & yes \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^4 + x^3 + x + 1$ & 1A & FD & 88 & 88 & no & no & FD & 248 & 336 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1C & A0 & 88 & 88 & no & no & A0 & 240 & 360 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^5 + x^3 + x + 1$ & 2A & B9 & 88 & 88 & no & no & B9 & 256 & 416 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^5 + x^3 + x^2 + 1$ & 2C & 74 & 88 & 88 & no & no & 74 & 248 & 392 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^5 + x^4 + x^3 + 1$ & 38 & C7 & 88 & 88 & no & no & C7 & 264 & 440 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^5 + x^4 + x^3 + x^2 + x + 1$ & 3E & 22 & 88 & 88 & no & no & 22 & 256 & 408 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^3 + x^2 + 1$ & 4C & 3C & 88 & 88 & no & no & 3C & 192 & 360 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^4 + x^3 + x^2 + x + 1$ & 5E & 91 & 88 & 88 & no & no & 91 & 280 & 440 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x + 1$ & 62 & 2B & 88 & 88 & no & no & 2B & 264 & 424 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x^2 + 1$ & 64 & 1C & 88 & 88 & no & no & 1C & 224 & 384 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x^3 + 1$ & 68 & 34 & 88 & 88 & no & no & 34 & 216 & 328 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x^4 + 1$ & 70 & 7A & 88 & 88 & no & no & 7A & 272 & 376 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x^4 + x^2 + x + 1$ & 76 & 63 & 88 & 88 & no & no & 63 & 248 & 408 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^6 + x^5 + x^4 + x^3 + x + 1$ & 7A & 3D & 88 & 88 & no & no & 3D & 272 & 408 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^2 + x + 1$ & 86 & B8 & 88 & 88 & no & no & B8 & 184 & 328 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^3 + x + 1$ & 8A & F7 & 88 & 88 & no & no & F7 & 208 & 328 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^3 + x^2 + 1$ & 8C & A9 & 88 & 88 & no & no & A9 & 216 & 392 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^4 + x^3 + x^2 + x + 1$ & 9E & B1 & 88 & 88 & no & no & B1 & 256 & 400 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^5 + x + 1$ & A2 & DF & 88 & 88 & no & no & DF & 256 & 376 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^5 + x^3 + 1$ & A8 & 3B & 88 & 88 & no & no & 3B & 256 & 392 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^5 + x^4 + 1$ & B0 & 7F & 88 & 88 & no & no & 7F & 264 & 400 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1$ & BC & 79 & 88 & 88 & no & no & 79 & 240 & 400 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x + 1$ & C2 & F8 & 88 & 88 & no & no & F8 & 264 & 400 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^3 + x^2 + x + 1$ & CE & C0 & 88 & 88 & no & no & C0 & 240 & 432 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^4 + x^2 + x + 1$ & D6 & 29 & 88 & 88 & no & no & 29 & 184 & 384 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1$ & DC & 8D & 88 & 88 & no & no & 8D & 248 & 336 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^5 + x^2 + x + 1$ & E6 & E0 & 88 & 88 & no & no & E0 & 240 & 432 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & F2 & 1B & 88 & 88 & no & no & 1B & 272 & 392 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & F4 & 13 & 88 & 88 & no & no & 13 & 200 & 360 & no & no \\ \hline
+\shortstack{Whirlpool-0 \\ \eqref{mat:whirlpool}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & F8 & 70 & 88 & 88 & no & no & 70 & 272 & 424 & no & no \\ \hline
+\caption{Studying different irreducible polynomials for each matrix}
+\label{tbl:different-poly}\\
+\end{longtable}
+\end{tiny}
