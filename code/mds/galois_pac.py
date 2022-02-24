@@ -5,8 +5,8 @@ import pprint
 import csv
 import itertools
 
-DEGREE_LIMIT_MASK = 0x100
-ORDER = 8
+DEGREE_LIMIT_MASK = 0b10000 # 0x100 for order=8
+ORDER = 4
 
 GF2 = galois.GF(2)
 
@@ -27,6 +27,15 @@ curupira_field = galois.GF(2**8, irreducible_poly=curupira_poly)
 grostl_field = galois.GF(2**8, irreducible_poly=rijndael_poly) # Grostl uses the same poly!
 fox_field = galois.GF(2**8, irreducible_poly=fox_poly)
 whirlpool_field = galois.GF(2**8, irreducible_poly=tavares_khazad_anubis_poly)
+
+led_poly = galois.Poly.Degrees([4, 1, 0], field=GF2)
+led_field = galois.GF(2**4, irreducible_poly=led_poly)
+
+photon4cells_poly = galois.Poly.Degrees([4, 1, 0], field=GF2)
+photon4cells_field = galois.GF(2**4, irreducible_poly=led_poly)
+
+photon8cells_poly = rijndael_poly
+photon8cells_field = rijndael_field
 
 hiero_16x16 = [
 	[1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1],
@@ -611,8 +620,12 @@ def whirlwind_info_2():
 	print("xtime invm0", matrix_xtime_cost(invm0, 8))
 
 def whirlwind_m0_mds_checker():
+	m0 = int_to_gf_mat(whirlwind_m0, hierocrypt_higher_field)
+	submatrix_checker(m0, hierocrypt_higher_field)
+
+def whirlwind_m1_mds_checker():
 	m1 = int_to_gf_mat(whirlwind_m1, hierocrypt_higher_field)
-	is_mds(m1)
+	submatrix_checker(m1, hierocrypt_higher_field)
 
 def get_mu4():
 	z = galois.Poly.Degrees([7, 6, 5, 4, 3, 2, 0])
@@ -704,6 +717,10 @@ def fox():
     print("xtime mu8 inv", matrix_xtime_cost(mu8_inv, 8))
 
 def submatrix_checker(mat, field):
+	total_submats = 0
+
+	submats_per_dim = {}
+
 	check = True
 	smallest_submat = []
 	smallest_submat_dim = 100
@@ -725,6 +742,13 @@ def submatrix_checker(mat, field):
 				submat = np.delete(mat, rows_to_be_removed, axis=0)
 				submat = np.delete(submat, columns_to_be_removed, axis=1)
 				if np.linalg.det(submat) == 0:
+
+					total_submats += 1
+					if len(submat) in submats_per_dim:
+						submats_per_dim[len(submat)] += 1
+					else:
+						submats_per_dim[len(submat)] = 1
+
 					if len(submat) < smallest_submat_dim:
 						smallest_submat = submat
 						smallest_submat_dim = len(submat)
@@ -750,6 +774,8 @@ def submatrix_checker(mat, field):
 	print_mat_hex(mat)
 	print("---")
 	print_mat_hex(smallest_submat)
+	print("Total de submatrizes singulares:", total_submats)
+	print("Submatrizes singulares por dimensão:", submats_per_dim)
 	return check
 
 def is_mds(mat):
@@ -1022,4 +1048,239 @@ def shirai_costs():
 		print_mat_hex(inv)
 		print("---")
 
-mds_data_2()
+def hamming_weight(vector):
+	hw = 0
+	for element in vector:
+		if element %2 != 0:
+			hw += 1
+	return hw
+
+def hierocrypt_8x8_branch_number():
+	mat = [[1,0,1,0,1,1,1,0],
+	[1,1,0,1,1,1,1,1],
+	[1,1,1,0,0,1,1,1],
+	[0,1,0,1,1,1,0,1],
+	[1,1,0,1,0,1,0,1],
+	[1,1,1,0,1,0,1,0],
+	[1,1,1,1,1,1,0,1],
+	[1,0,1,0,1,0,1,1]]
+	a = [1, 1, 0, 0, 0, 0, 0, 0]
+	theta = np.dot(mat, np.array([a]).T)
+	wa = hamming_weight(a)
+	wtheta = hamming_weight(theta)
+	branch = wa + wtheta
+	print(theta)
+	print("wa = ", wa, "wtheta = ", wtheta, "branch =", branch)
+
+def hierocrypt_16x16_branch_number():
+	# matrix
+	mat = [[1,0,1,0,1,0,1,0,1,1,0,1,1,1,1,1],
+		   [1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,1],
+		   [1,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1],
+		   [0,1,0,1,0,1,0,1,1,0,1,0,1,1,1,0],
+		   [1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,1],
+		   [0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0],
+		   [0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1],
+		   [1,1,1,0,0,1,0,1,0,1,0,1,1,0,1,0],
+		   [1,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0],
+		   [1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1],
+		   [1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0],
+		   [1,0,1,0,1,1,1,0,0,1,0,1,0,1,0,1],
+		   [1,0,1,0,1,1,0,1,1,1,1,1,1,0,1,0],
+		   [1,1,0,1,1,1,1,0,0,1,1,1,1,1,0,1],
+		   [1,1,1,0,1,1,1,1,0,0,1,1,1,1,1,0],
+		   [0,1,0,1,1,0,1,0,1,1,1,0,0,1,0,1]]
+
+	v1  = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	v2  = [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	v3  = [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	v4  = [0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+	v5  = [0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]
+	v6  = [0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+	v7  = [0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+	v8  = [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0]
+	v9  = [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+	v10 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+	v11 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+	v12 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+	v13 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0]
+	v14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]
+	v15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0]
+	v16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+
+	vecs = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16]
+
+	min_branch = 20
+	min_a = []
+	min_wtheta = []
+	min_theta = []
+
+	for v in vecs:
+		mult = np.dot(mat, np.array([v]).T)
+		wa = hamming_weight(v)
+		wtheta = hamming_weight(mult)
+		#print("a =", v, "w(a) =", wa)
+		#print("theta(a) =", mult, "w(theta(a)) =", wtheta)
+		branch = wa + wtheta
+		#print("branch =", branch)
+
+		if branch < min_branch:
+			min_branch = branch
+			min_a = v
+			min_wtheta = wtheta
+			min_theta = mult
+
+	print(min_branch, "obtido com a =", min_a, "e w(theta) = ", min_wtheta, "(theta = ", min_theta ,")")
+
+def led_info():
+	mat = [
+		[4, 1, 2, 2],
+		[8, 6, 5, 6],
+		[0x0b, 0x0e, 0x0a, 9],
+		[2, 2, 0x0f, 0x0b]
+	]
+	led_mat = int_to_gf_mat(mat, led_field)
+	# is mds?
+	print(is_mds(led_mat))
+	# xor
+	print("xor", matrix_xor_cost(led_mat, 4))
+	# xtime
+	print("xtime", matrix_xtime_cost(led_mat, 4))
+
+	# inverse
+	inv = np.linalg.inv(led_mat)
+	print("inverse")
+	print_mat_hex(inv)
+	# inv xor
+	print("xor", matrix_xor_cost(inv, 4))
+	# inv xtime
+	print("xtime", matrix_xtime_cost(inv, 4))
+	print(is_mds(inv))
+
+def get_mat_info_for_mds_table(mat, field, dim, name):
+	print(name)
+	alg_mat = int_to_gf_mat(mat, field)
+	print_mat_hex(alg_mat)
+	print(is_mds(alg_mat))
+	print("xor", matrix_xor_cost(alg_mat, dim))
+	print("xtime", matrix_xtime_cost(alg_mat, dim))
+
+	inv = np.linalg.inv(alg_mat)
+	print("inverse")
+	print_mat_hex(inv)
+	print("xor", matrix_xor_cost(inv, dim))
+	print("xtime", matrix_xtime_cost(inv, dim))
+	print(is_mds(inv))
+
+photon4_a100 = [
+	[1, 2, 9, 9, 2],
+	[2, 5, 3, 8, 13],
+	[13, 11, 10, 12, 1],
+	[1, 15, 2, 3, 14],
+	[14, 14, 8, 5, 12]
+]
+
+photon4_a144 = [
+	[1, 2, 8, 5, 8, 2],
+	[2, 5, 1, 2, 6, 12],
+	[12, 9, 15, 8, 8, 13],
+	[13, 5, 11, 3, 10, 1],
+	[1, 15, 13, 14, 11, 8],
+	[8, 2, 3, 3, 2, 8]
+]
+
+photon4_a196 = [
+	[1, 4, 6, 1, 1, 6, 4],
+	[4, 2, 15, 2, 5, 10, 5],
+	[5, 3, 15, 10, 7, 8, 13],
+	[13, 4, 11, 2, 7, 15, 9],
+	[9, 15, 7, 2, 11, 4, 13],
+	[13, 8, 7, 10, 15, 3, 5],
+	[5, 10, 5, 2, 15, 2, 4]
+]
+
+photon4_a256 = [
+	[2, 4, 2, 11, 2, 8, 5, 6],
+	[12, 9, 8, 13, 7, 7, 5, 2],
+	[4, 4, 13, 13, 9, 4, 13, 9],
+	[1, 6, 5, 1, 12, 13, 15, 14],
+	[15, 12, 9, 13, 14, 5, 14, 13],
+	[9, 14, 5, 15, 4, 12, 9, 6],
+	[12, 2, 2, 10, 3, 1, 1, 14],
+	[15, 1, 13, 10, 5, 10, 2, 3]
+]
+
+photon8_a288 = [
+	[2, 3, 1, 2, 1, 4],
+	[8, 14, 7, 9, 6, 17],
+	[34, 59, 31, 37, 24, 66],
+	[132, 228, 121, 155, 103, 11],
+	[22, 153, 239, 111, 144, 75],
+	[150, 203, 210, 121, 36, 167]
+]
+
+elcio = [[0x01, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x10, 0x02, 0x1e],
+[0x03, 0x01, 0x05, 0x04, 0x07, 0x06, 0x09, 0x08, 0x0b, 0x0a, 0x0d, 0x0c, 0x10, 0x0d, 0x1d, 0x02],
+[0x04, 0x05, 0x01, 0x03, 0x08, 0x09, 0x06, 0x07, 0x0c, 0x0d, 0x0a, 0x0b, 0x02, 0x1e, 0x0e, 0x10],
+[0x05, 0x04, 0x03, 0x01, 0x09, 0x08, 0x07, 0x06, 0x0d, 0x0c, 0x0b, 0x0a, 0x1e, 0x02, 0x10, 0x0e],
+[0x06, 0x07, 0x08, 0x09, 0x01, 0x03, 0x04, 0x05, 0x0e, 0x10, 0x02, 0x1e, 0x0a, 0x0b, 0x0c, 0x0d],
+[0x07, 0x06, 0x09, 0x08, 0x03, 0x01, 0x05, 0x04, 0x10, 0x0e, 0x1e, 0x02, 0x0b, 0x0a, 0x0d, 0x0c],
+[0x08, 0x09, 0x06, 0x07, 0x04, 0x05, 0x01, 0x03, 0x02, 0x1e, 0x0e, 0x10, 0x0c, 0x0d, 0x0a, 0x0b],
+[0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x01, 0x1e, 0x02, 0x10, 0x0e, 0x0d, 0x0c, 0x0b, 0x0a],
+[0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x10, 0x02, 0x1e, 0x01, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09],
+[0x0b, 0x0a, 0x0d, 0x0c, 0x10, 0x0e, 0x1e, 0x02, 0x03, 0x01, 0x05, 0x04, 0x07, 0x06, 0x09, 0x08],
+[0x0c, 0x0d, 0x0a, 0x0b, 0x02, 0x1e, 0x0e, 0x10, 0x04, 0x05, 0x01, 0x03, 0x08, 0x09, 0x06, 0x07],
+[0x0d, 0x0c, 0x0b, 0x0a, 0x1e, 0x02, 0x10, 0x0e, 0x05, 0x04, 0x03, 0x01, 0x09, 0x08, 0x07, 0x06],
+[0x0e, 0x10, 0x02, 0x1e, 0x0a, 0x0b, 0x0c, 0x0d, 0x06, 0x07, 0x08, 0x09, 0x01, 0x03, 0x04, 0x05],
+[0x10, 0x0e, 0x1e, 0x02, 0x0b, 0x0a, 0x0d, 0x0c, 0x07, 0x06, 0x09, 0x08, 0x03, 0x01, 0x05, 0x04],
+[0x02, 0x1e, 0x0e, 0x10, 0x0c, 0x0d, 0x0a, 0x0b, 0x08, 0x09, 0x06, 0x07, 0x04, 0x05, 0x01, 0x03],
+[0x1e, 0x02, 0x10, 0x0e, 0x0d, 0x0c, 0x0b, 0x0a, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x01]]
+
+def look_for_small_singular_submat(mat, small_dim, field):
+	total_submats = 0
+
+	check = True
+	smallest_submat = []
+	smallest_submat_dim = 100
+	smallest_rows = []
+	smallest_cols = []
+	if np.linalg.det(mat) == 0:
+		return False
+
+	dim = len(mat)
+
+	dim_list = [i for i in range(dim)]
+
+	z = dim - small_dim
+	print(z)
+	possibilities = list(itertools.combinations(dim_list, z))
+
+	for rows_to_be_removed in possibilities:
+		for columns_to_be_removed in possibilities:
+			submat = np.delete(mat, rows_to_be_removed, axis=0)
+			submat = np.delete(submat, columns_to_be_removed, axis=1)
+			if np.linalg.det(submat) == 0:
+
+				total_submats += 1
+
+				#print(np.linalg.det(submat))
+				print("Linhas removidas:", rows_to_be_removed)
+				print("Colunas removidas:", columns_to_be_removed)
+				print("Hexadecimal singular submatrix:")
+				print_mat_hex(submat)
+				print("Polynomial singular submatrix:")
+				with field.display("poly"):
+					print(submat)
+				check = False
+
+	print("Total de submatrizes singulares:", total_submats)
+	return check
+
+look_for_small_singular_submat(int_to_gf_mat(elcio, rijndael_field), 2, rijndael_field)
+#get_mat_info_for_mds_table(elcio, rijndael_field, 16, "elcio")
+#submatrix_checker(int_to_gf_mat(elcio, rijndael_field), rijndael_field)
+#get_mat_info_for_mds_table(photon4_a100, photon4cells_field, 5, "photon4_a100")
+#get_mat_info_for_mds_table(photon4_a144, photon4cells_field, 6, "photon4_a144")
+#get_mat_info_for_mds_table(photon4_a196, photon4cells_field, 7, "photon4_a196")
+#get_mat_info_for_mds_table(photon4_a256, photon4cells_field, 8, "photon4_a256")
+#get_mat_info_for_mds_table(photon8_a288, photon8cells_field, 6, "photon4_a288")

@@ -1,18 +1,52 @@
-Table \ref{tbl:non-mds-list} presents matrices which were reported in the literature for usage in symmetric block ciphers (or hash functions) but are not MDS. It shows their \textbf{xor} and \textbf{xtime} costs, as well as the respective branch numbers. Column \textbf{Ord} refers to the matrix dimensions, \textbf{Bib} contains the bibliographic reference, \textbf{\#xor} and \textbf{\#xtime} refer to the required amount of \textbf{xor} and \textbf{xtime} operations, i.e the costs, and \textbf{$\mathcal{B}(\theta)$} presents the branch number.
+Table \ref{tbl:non-mds-list} presents matrices which were reported in the literature for usage in symmetric block ciphers (or hash functions) but are not MDS. It shows their \textbf{xor} and \textbf{xtime} costs, as well as the respective branch numbers. Column \textbf{Ord} refers to the matrix dimensions, \textbf{Bib} contains the bibliographic reference, \textbf{\#xor} and \textbf{\#xtime} refer to the required amount of \textbf{xor} and \textbf{xtime} operations, i.e the costs, and \textbf{$\mathcal{B}(\theta)$} presents the upper bound for the branch number. According to the analysis conducted in \cite{Shirai2003}, Whirlpool's matrix has $\mathcal{B}(\theta) \leq 8$. We present now a brief analysis for Hierocrypt-L1 and Hierocrypt-3.
 
-\textcolor{red}{Fiquei em dúvida quando fui calcular o branch number das matrizes binárias do Hierocrypt, podemos revisar isso na próxima reunião? Obrigada!}
+For convenience, we recall that the branch number (see Definition \ref{def:branch-number}) $\mathcal{B}$ of a linear mapping $\theta$ is $\mathcal{B}(\theta) = \min_{a\neq0}\{w(a) + w(\theta(a))\}$, where $w(a)$ is the Hamming weight. The Hamming weight $w(a)$ is the number of non-zero componentes in the vector $a$. In order to compute the branch number of a transformation $\theta$, we must test non-zero vectors. For a given Hamming weight $z$, there are $\binom{n}{z}$ possible vectors, assuming we have a fixed symbolic non-zero value $d$ and that we must choose whether a component is zero or equal to $d$. Since $z$ ranges from $1$ to $n$, the total amount of vectors to be tested with this approach is $\sum_{z=1}^{z=n}\binom{n}{z} = 2^n-1$.
+
+For Hierocrypt-L1, $\theta$ consists of left multiplication by an $8\times8$ matrix, therefore, we must test non-zero vectors $a$ with $n=8$ components. For $a = (d, 0, 0, 0, 0, 0, 0, 0)$, $w(a) = 1$, $\theta(a) = (1,1,1,0,1,1,1,1)$ and $w(\theta(a)) = 7$, which tells us $\mathcal{B}(\theta) \leq 1+7 = 8$. For $a = (d, d, 0, 0, 0, 0, 0, 0)$, on the other hand, $w(a) = 2$, $\theta(a) = (1, 0, 0, 1, 0, 0, 0, 1)$ and $w(\theta(a)) = 3$. Thus we know that actually $\mathcal{B}(\theta) \leq 2+3 = 5$.
+
+For Hierocrypt-3, the matrix is $16\times16$, thus we must test non-zero vectors with $n=16$ components. For $a= (0, 0, 0, d, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)$, we have $w(a) = 1$, $\theta(a) = (0,d,0,d,d,d,d,0,d,0,d,0,0,d,0,d)$ and $w(\theta(a)) = 9$, leading to $\mathcal{B}(\theta) \leq 1+9 = 10$.
+
+\textcolor{red}{Percebi uma coisa. No artigo do Élcio, é dito que a matriz 16x16 é Cauchy. Mas, se fosse Cauchy, seria MDS, porque Cauchy garante MDS. Acredito que ela não seja Cauchy então, ou que tenha alguma diferença na minha definição e na dele. Sobre o branch number da matriz do Élcio, preciso adaptar meu código com calma ainda pra calcular.}
 
 \begin{footnotesize}
 \begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|}
 \hline
 \textbf{Year} & \textbf{Ord} & \textbf{Bib} & \textbf{Type} & \textbf{Use} & \textbf{$\mathcal{B}(\theta)$} & \textbf{\#xor} & \textbf{\#xtime} & \textbf{Matrix} \\ \hline
-\endfirsthead
+%\endfirsthead
 \endhead
 
-2000 & 16 & \cite{Hierocrypt2000} & binary & Hierocrypt-3 & branch & 160 & 0 & (\ref{mat:hierocrypt-3-higher-16x16}) \\ \hline
-2000 & 8 & \cite{Hierocrypt-L1-2000} & binary & Hierocrypt-L1 & branch & 37 & 0 & (\ref{mat:hierocrypt-l1-higher-8x8}) \\ \hline
-2003 & 8 & \cite{Whirlpool2003} & \shortstack{right \\ circulant} & Whirlpool-0 & 8 & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
+2000 & 16 & \cite{Hierocrypt2000} & binary & Hierocrypt-3 & $\leq 10$ & 160 & 0 & (\ref{mat:hierocrypt-3-higher-16x16}) \\ \hline
+2000 & 8 & \cite{Hierocrypt-L1-2000} & binary & Hierocrypt-L1 & $\leq 5$ & 37 & 0 & (\ref{mat:hierocrypt-l1-higher-8x8}) \\ \hline
+2003 & 8 & \cite{Whirlpool2003} & \shortstack{right \\ circulant} & Whirlpool-0 & $\leq 8$ & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
+2009 & 16 & \cite{Nakahara2009} & \textcolor{red}{Cauchy?} & \shortstack{\\ suggested \\ for AES} & --- & 480 & 624 & \eqref{mat:elcio} \\ \hline
 
 \caption{Non-MDS matrices: parameters, usage and costs.}\label{tbl:non-mds-list}
 \end{longtable}
 \end{footnotesize}
+
+\textcolor{red}{Pretendo colocar aqui uns exemplos de submatrizes singulares da matriz do Élcio, mas ainda estou fazendo a busca pelas matrizes, vou enviar por e-mail mais detalhes disso.}
+
+In \cite{Nakahara2009}, they propose a $16 \times 16$ matrix (\ref{mat:elcio}) which could replace AES's matrix and result in complete diffusion in a single round of the cipher. However, although claimed MDS, it is not MDS. As an example, removing rows $(0, 2, 9, 10, 12)$ and columns $(2, 9, 11, 12, 15)$ results in a singular submatrix.
+
+%\begin{tiny}
+\begin{equation}\label{mat:elcio}
+\begin{bmatrix}
+01_x 03_x 04_x 05_x 06_x 07_x 08_x 09_x 0a_x 0b_x 0c_x 0d_x 0e_x 10_x 02_x 1e_x\\
+03_x 01_x 05_x 04_x 07_x 06_x 09_x 08_x 0b_x 0a_x 0d_x 0c_x 10_x 0d_x 1d_x 02_x\\
+04_x 05_x 01_x 03_x 08_x 09_x 06_x 07_x 0c_x 0d_x 0a_x 0b_x 02_x 1e_x 0e_x 10_x\\
+05_x 04_x 03_x 01_x 09_x 08_x 07_x 06_x 0d_x 0c_x 0b_x 0a_x 1e_x 02_x 10_x 0e_x\\
+06_x 07_x 08_x 09_x 01_x 03_x 04_x 05_x 0e_x 10_x 02_x 1e_x 0a_x 0b_x 0c_x 0d_x\\
+07_x 06_x 09_x 08_x 03_x 01_x 05_x 04_x 10_x 0e_x 1e_x 02_x 0b_x 0a_x 0d_x 0c_x\\
+08_x 09_x 06_x 07_x 04_x 05_x 01_x 03_x 02_x 1e_x 0e_x 10_x 0c_x 0d_x 0a_x 0b_x\\
+09_x 08_x 07_x 06_x 05_x 04_x 03_x 01_x 1e_x 02_x 10_x 0e_x 0d_x 0c_x 0b_x 0a_x\\
+0a_x 0b_x 0c_x 0d_x 0e_x 10_x 02_x 1e_x 01_x 03_x 04_x 05_x 06_x 07_x 08_x 09_x\\
+0b_x 0a_x 0d_x 0c_x 10_x 0e_x 1e_x 02_x 03_x 01_x 05_x 04_x 07_x 06_x 09_x 08_x\\
+0c_x 0d_x 0a_x 0b_x 02_x 1e_x 0e_x 10_x 04_x 05_x 01_x 03_x 08_x 09_x 06_x 07_x\\
+0d_x 0c_x 0b_x 0a_x 1e_x 02_x 10_x 0e_x 05_x 04_x 03_x 01_x 09_x 08_x 07_x 06_x\\
+0e_x 10_x 02_x 1e_x 0a_x 0b_x 0c_x 0d_x 06_x 07_x 08_x 09_x 01_x 03_x 04_x 05_x\\
+10_x 0e_x 1e_x 02_x 0b_x 0a_x 0d_x 0c_x 07_x 06_x 09_x 08_x 03_x 01_x 05_x 04_x\\
+02_x 1e_x 0e_x 10_x 0c_x 0d_x 0a_x 0b_x 08_x 09_x 06_x 07_x 04_x 05_x 01_x 03_x\\
+1e_x 02_x 10_x 0e_x 0d_x 0c_x 0b_x 0a_x 09_x 08_x 07_x 06_x 05_x 04_x 03_x 01_x
+\end{bmatrix}
+\end{equation}
+%\end{tiny}

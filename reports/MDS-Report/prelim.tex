@@ -31,14 +31,14 @@ An \emph{MDS code} is a \emph{linear code} that meets the \emph{Singleton bound}
 
 An MDS matrix associated to a $[n, k, d]$ code has \emph{branch number} equal to $d$, which is the maximum possible branch number, thus providing optimal diffusion.
 
-\begin{definition}[Branch number \cite{Shirai2003}]
+\begin{definition}[Branch number \cite{Shirai2003}]\label{def:branch-number}
 The branch number $\mathcal{B}$ of a linear mapping $\theta: GF(2^m)^k \rightarrow GF(2^m)^l$ is defined as:
 
 $$\mathcal{B}(\theta) = \min_{a\neq0}\{w(a) + w(\theta(a))\}.$$
 
 Note that here, $+$ denotes a XOR operation, since the fields have characteristic equal to 2.
 
-Furthermore, given a matrix $M$, associated to a $[n, k, d]$ linear code, the linear mapping defined by $\theta(a) = a \cdot M$ has branch number $\mathcal{B}(\theta) = d$. When the linear code is MDS, i.e when $M$ is MDS, the mapping is an optimal diffusion mapping.
+Furthermore, given a matrix $M$, associated to a $[n, k, d]$ linear code, the linear mapping defined by $\theta(a) = M \cdot a$ has branch number $\mathcal{B}(\theta) = d$. When the linear code is MDS, i.e when $M$ is MDS, the mapping is an optimal diffusion mapping.
 \end{definition}
 
 \subsection{Matrices}
@@ -137,37 +137,68 @@ is a Vandermonde matrix.
 
 Similarly to circulant and Hadamard constructions, in the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. However, again there are no guarantees about the MDS property with a Vandermonde construction. To the best of our knowledge, at the time of writing, there are no such guarantees. The matrices must be constructed and then evaluated with respect to the MDS property, e.g using Theorem \ref{teo:mds}.
 
+% Colocar as coisas do Gupta aqui!
+In the PHOTON hash function \cite{PHOTON2011} and the LED block cipher \cite{LED2012}, \emph{serial} MDS matrices are used. Serial matrices are especially useful for hardware implementations. In \cite{Gupta2016}, they refer to serial matrices as \emph{recursive} matrices, and show how to obtain them from companion matrices (see Theorem \ref{teo:mds-serial}).
+
+\begin{definition}[Companion matrix \cite{Gupta2016}]
+Let $g(x) = a_0 + a_1x + ... + a_{k-1}x^{k-1} + x^k$ be a monic polynomial over $\mathbb{F}_q$ of degree $k$. The \emph{companion matrix} $C_g$ associated to the polynomial $g$ is given by
+
+$$
+C_g =
+\begin{bmatrix}
+0 & 1 & 0 & ... & 0\\
+... & ... & ... & ... & ...\\
+0 & 0 & ... & ... & 1\\
+-a_0 & -a_1 & ... & ... & -a_{k-1}
+\end{bmatrix}.
+$$
+
+In other words, it is a matrix with the negative coefficients of the polynomial in the last row, and a diagonal of ones above the main diagonal.
+\end{definition}
+
+Note that, in the case of matrix composed by elements of $GF(2^4)$ and $GF(2^8)$, as is the case of the studied companion matrices in this work, we can ignore the negative sign. We denote by $Companion(a_0, a_1, ..., a_{k-1})$ the companion matrix with $a_0, a_1, ..., a_{k-1}$ in the last row.
+
+A recursive MDS matrix, according to \cite{Gupta2016}, is an MDS matrix which can be computed as a power of a simple companion matrix, i.e, an MDS matrix $M = C_g^k$ for some companion matrix corresponding to a polynomial $g(x) \in \mathbb{F}_q[x]$ of degree $k$. We then say that the polynomial $g(x)$ yields a recursive MDS matrix.
+
+\begin{theorem}[Obtaining a serial MDS matrix from a companion matrix \cite{Gupta2016}]\label{teo:mds-serial}
+Let $g(x) \in \mathbb{F}_q[x]$ be a polynomial of degree $k$. Then the matrix $M = C_g^k$ is MDS if and only if the polynomial $g(x)$ has no multiple with weight $\leq k$ and degree $\leq 2k-1$.
+\end{theorem}
+
 \subsubsection{A summary on the types of matrices}
-An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy, circulant, Vandermonde and Hadamard (dyadic) constructions allow us to lower the number of elements we need to select. Circulant, Vandermonde and Hadamard constructions allow us to select only $n$ elements, whilst Cauchy constructions require selecting $2n$ elements. The Cauchy construction ensures MDS property, whilst the other constructions do not and e.g Theorem \ref{teo:mds} must be used to evaluate MDS property. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy, or Vandermonde) matrices for any arbitrary $n$. The dimension $n$ must only be a power of two for the Hadamard (dyadic) construction. Table \ref{tab:matrix-types} summarizes this information.
+An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy, circulant, Vandermonde, Hadamard (dyadic) and serial constructions allow us to lower the number of elements we need to select. Circulant, Vandermonde, serial and Hadamard constructions allow us to select only $n$ elements, whilst Cauchy constructions require selecting $2n$ elements. The Cauchy construction ensures MDS property, the serial construction also ensures MDS property if Theorem \ref{teo:mds-serial} is satisfied, whilst the other constructions do not and e.g Theorem \ref{teo:mds} must be used to evaluate MDS property. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy, or Vandermonde, or serial) matrices for any arbitrary $n$. The dimension $n$ must only be a power of two for the Hadamard (dyadic) construction.
+
+There is a great interest in building involutory MDS matrices such as e.g the ones employed in ANUBIS \cite{ANUBIS2000} and KHAZAD \cite{KHAZAD2000}. However, although their constructions are Hadamard, it is relevant to note that a Hadamard construction does not imply involutory property. As an example, the matrices $M_0$ and $M_1$ used in Whirlwind \cite{Whirlwind2010} are Hadamard (dyadic), but not involutory (see Table \ref{tbl:mds-list}). Furthermore, \cite{Youssef1997} has shown how to obtain an involutory MDS matrix from a Cauchy construction. However, a Cauchy matrix itself is not necessarily involutory. In order to obtain an involutory matrix, additional manipulation on the coefficients is necessary. For further detail the reader may refer to \cite{Youssef1997}. Table \ref{tab:matrix-types} summarizes the matrix types and properties studied in this work.
 
 \begin{footnotesize}
-\begin{longtable}{|l|l|l|l|}
+\begin{longtable}{|l|l|l|l|l|}
 \hline
-\textbf{Type}     & \textbf{Elements to select} & \textbf{MDS guarantee} & \textbf{$n$ must be power of two} \\ \hline
+\textbf{Type} & \shortstack{\textbf{Elements} \\ \textbf{to select}} & \shortstack{\textbf{MDS} \\ \textbf{guarantee}} & \shortstack{\textbf{$n$ must be} \\ \textbf{power of two}} & \shortstack{\textbf{Involution} \\ \textbf{guarantee}} \\ \hline
 \endfirsthead
 %
 \endhead
 %
-Circulant         & $n$                              & no                              & no                                       \\ \hline
-Hadamard (dyadic) & $n$                              & no                              & yes                                      \\ \hline
-Vandermonde       & $n$                              & no                              & no                                       \\ \hline
-Cauchy            & $2n$                             & yes                             & no                                       \\ \hline
-random            & $n^2$                             & no                            & no                                       \\ \hline
+Circulant         & $n$ & no & no & no \\ \hline
+Hadamard (dyadic) & $n$ & no & yes & no \\ \hline
+Vandermonde       & $n$ & no & no & no \\ \hline
+Cauchy            & $2n$ & yes & no & \shortstack{with additional \\ coefficient \\ manipulation} \\ \hline
+serial       & $n$ & \shortstack{with adequate \\ polynomial \\ (see Theorem \ref{teo:mds-serial})} & no & no \\ \hline
+random            & $n^2$ & no & no & no \\ \hline
 \caption{Matrix classification summary}
 \label{tab:matrix-types}\\
 \end{longtable}
 \end{footnotesize}
 
 \subsection{Evaluating a matrix for MDS property}
-If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in a finite field}, since it is the most expensive operation.
+\textcolor{red}{this section will be re-written soon because the sentences were confusing}
+%If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in a finite field}, since it is the most expensive operation.
 
-The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications.
+%The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications.
 
-The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
+%The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
 
-The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in a finite field.
+%The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in a finite field.
 
-In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the underlying finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in a finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
+%In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the underlying finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in a finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
 
 \subsection{Abstract algebra}
 \textcolor{red}{Aqui pretendo colocar definições de grupo, grupo abeliano, corpo etc. A parte de álgebra abstrata que não é específica de corpos finitos e que a gente geralmente vê na faculdade}

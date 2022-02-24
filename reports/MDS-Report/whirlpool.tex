@@ -44,7 +44,7 @@ Furthermore, Shirai and Shibutani obtain 224 MDS matrices satisfying the desired
   \item Hamming weight of any element is at most 2.
 \end{itemize}
 
-Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}. The authors of Whirlpool decided to replace the non-MDS matrix by Shirai's $C_7$ matrix, and therefore Whirlpool-0 refers to the version with the non-MDS matrix, prior to the correction, and Whirlpool refers to the corrected version, with the MDS matrix. For further detail on the history and the updates of Whirlpool, the reader may refer to the Whirlpool web page \cite{WhirlpoolWebPage}.
+Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}. The authors of Whirlpool decided to replace the non-MDS matrix by Shirai's $C_7$ matrix, and therefore Whirlpool-0 refers to the version with the non-MDS matrix, prior to the correction, and Whirlpool refers to the corrected version, with the MDS matrix, which was submitted (and accepted) as a standard at ISO/IEC 10118-3. For further detail on the history and the updates of Whirlpool, the reader may refer to the Whirlpool web page \cite{WhirlpoolWebPage}.
 
 \begin{gather}
 C_0 = rcirc(01_x, 01_x, 02_x, 01_x, 05_x, 08_x, 09_x, 04_x)\label{shirai-0}\\
@@ -79,5 +79,5 @@ C_9^{-1} = rcirc(e2_x, 44_x, 7e_x, a8_x, ef_x, 42_x, 71_x, ad_x)\label{shirai-9-
 C_{10}^{-1} = rcirc(87_x, 80_x, 24_x, d4_x, 9d_x, c5_x, 76_x, e4_x)\label{shirai-10-inv}\\
 C_{11}^{-1} = rcirc(ed_x, 98_x, 5b_x, e2_x, 82_x, e8_x, 33_x, 94_x)\label{shirai-11-inv}\\
 C_{12}^{-1} = rcirc(bb_x, df_x, 7a_x, de_x, 4a_x, c5_x, a0_x, 55_x)\label{shirai-12-inv}\\
-C_{13}^{-1} = rcirc(a5_x, 23_x, 30_x, 23_x, 98_x, b6_x, fa_x, b5_x)\label{shirai-13-inv}\\
+C_{13}^{-1} = rcirc(a5_x, 23_x, 30_x, 23_x, 98_x, b6_x, fa_x, b5_x)\label{shirai-13-inv}
 \end{gather}

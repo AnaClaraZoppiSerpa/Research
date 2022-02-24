@@ -1,6 +1,18 @@
 % Whirlwind
 
-Matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) are used in the Whirlwind hash function, with the irreducible polynomial $p(x) = x^4+x+1$. The inverses are, respectively, (\ref{mat:whirlwind-m0-inv}) and (\ref{mat:whirlwind-m1-inv}). In \cite{Whirlwind2010}, it is claimed that the matrix is MDS. However, in our work, we have found singular submatrices, which leads us to believe, according to Theorem \ref{teo:mds}, that it is not MDS.
+Matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) are used in the Whirlwind hash function, with the irreducible polynomial $p(x) = x^4+x+1$. The inverses are, respectively, (\ref{mat:whirlwind-m0-inv}) and (\ref{mat:whirlwind-m1-inv}). In \cite{Whirlwind2010}, it is claimed that the matrix is MDS. However, in our work, we have found singular submatrices (see Table \ref{tbl:singular-count}), which leads us to believe, according to Theorem \ref{teo:mds}, that it is not MDS.
+
+\begin{footnotesize}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\shortstack{\textbf{Singular} \\ \textbf{submatrix} \\ \textbf{dimension}} & \textbf{$8\times8$} & \textbf{$7\times7$} & \textbf{$6\times6$} & \textbf{$5\times5$} & \textbf{$4\times4$} & \textbf{$3\times3$} & \textbf{$2\times2$} & \textbf{$1\times1$} & \textbf{Total} \\ \hline
+$M_0$                        & 0                   & 0                   & 48                  & 176                 & 152                 & 176                 & 48                  & 0                   & 600                            \\ \hline
+$M_1$                        & 0                   & 0                   & 48                  & 256                 & 448                 & 256                 & 48                  & 0                   & 1056                           \\ \hline
+\end{tabular}
+\caption{Amount of singular submatrices found in Whirlwind}\label{tbl:singular-count}
+\end{table}
+\end{footnotesize}
 
 For example, the smallest singular submatrix we have found (matrix (\ref{mat:singular-whirlwind-m0})) for (\ref{mat:whirlwind-m0}) is $2 \times 2$. It is clear that the determinant is $(x+1)(x^2+x) - x(x^2+1) = x^3+x^2+x^2+x - (x^3+x) = x^3+x-x^3-x = 0$.
 
@@ -36,7 +48,7 @@ x + 1 & x^3 + x^2 + x
 
 \input{whirlwind-m1-table.tex}
 
-The fact that we have found singular submatrices for Whirlwind's $m_0$ and $m_1$ matrices shows they are not MDS in $GF(2^4)$. However, it is relevant to note that, in \cite{Whirlwind2010}, the authors mention the usage of the $GF(2^{16})$ field with \emph{decompositions} to $GF(2^4)$, as well as the usage of a \emph{normal basis} representation for the finite fields. It is possible that, despite not MDS in $GF(2^4)$ with $p(x) = x^4+x+1$ as the irreducible polynomial and a polynomial basis $\{1, x, x^2, x^3, x^4\}$, matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) be MDS for the normal basis representation. We are still studying and evaluating this in our research. This report will be updated with our future findings. For this reason, we place Whirlwind's matrices in Table \ref{tbl:maybe-non-mds-list}, while we are still investigating.
+The fact that we have found singular submatrices for Whirlwind's $M_0$ and $M_1$ matrices shows they are not MDS in $GF(2^4)$. However, it is relevant to note that, in \cite{Whirlwind2010}, the authors mention the usage of the $GF(2^{16})$ field with \emph{decompositions} to $GF(2^4)$, as well as the usage of a \emph{normal basis} representation for the finite fields. It is possible that, despite not MDS in $GF(2^4)$ with $p(x) = x^4+x+1$ as the irreducible polynomial and a polynomial basis $\{1, x, x^2, x^3, x^4\}$, matrices (\ref{mat:whirlwind-m0}) and (\ref{mat:whirlwind-m1}) be MDS for the normal basis representation. We are still studying and evaluating this in our research. This report will be updated with our future findings. For this reason, we place Whirlwind's matrices in Table \ref{tbl:maybe-non-mds-list}, while we are still investigating.
 
 \begin{footnotesize}
 \begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|l|}

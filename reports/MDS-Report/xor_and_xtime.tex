@@ -1,77 +1,80 @@
-One can compute the costs manually, however, the following following C code can also be used for this purpose, considering that polynomials in GF($2^8$) are stored in integers (a set bit means coefficient equal to 1, a zero bit means coefficient equal to 0).
+%One can compute the costs manually, however, the following following C code can also be used for this purpose, considering that polynomials in GF($2^8$) are stored in integers (a set bit means coefficient equal to 1, a zero bit means coefficient equal to 0).
 
-For e.g SHARK and SQUARE, the field order is equal to 8, therefore \texttt{ORDER} must be set to 8 and \texttt{DEGREE_LIMIT_MASK} must be set to $x^8$.
+%For e.g SHARK and SQUARE, the field order is equal to 8, therefore \texttt{ORDER} must be set to 8 and \texttt{DEGREE_LIMIT_MASK} must be set to $x^8$.
 
-\begin{minted}{C}
-#define DEGREE_LIMIT_MASK 0x100
-#define ORDER 8
-\end{minted}
+%\begin{minted}{C}
+%#define DEGREE_LIMIT_MASK 0x100
+%#define ORDER 8
+%\end{minted}
 
-The following function obtains the amount of \textbf{xtime} required to multiply by the polynomial.
+%The following function obtains the amount of \textbf{xtime} required to multiply by the polynomial.
 
-\begin{minted}{C}
-unsigned int poly_xtime_cost(unsigned int poly) {
-	unsigned int degree_mask = DEGREE_LIMIT_MASK;
-	unsigned int degree = ORDER;
-	while ((poly & degree_mask) == 0) {
-		degree_mask >>= 1;
-		degree--;
-	}
-	return degree;
-}
-\end{minted}
+%\begin{minted}{C}
+%unsigned int poly_xtime_cost(unsigned int poly) {
+%	unsigned int degree_mask = DEGREE_LIMIT_MASK;
+%	unsigned int degree = ORDER;
+%	while ((poly & degree_mask) == 0) {
+%		degree_mask >>= 1;
+%		degree--;
+%	}
+%	return degree;
+%}
+%\end{minted}
 
-The following function obtains the amount of \textbf{xor} required to multiply by the polynomial.
-\begin{minted}{C}
-unsigned int poly_xor_cost(unsigned int poly) {
-	unsigned int mask = 1;
-	unsigned int set_bits = 0;
-	unsigned int current_bit = 0;
-	while (current_bit <= ORDER) {
-		set_bits += ((poly & mask) != 0);
-		mask <<= 1;
-		current_bit++;
-	}
-	return set_bits - 1;
-}
-\end{minted}
+%The following function obtains the amount of \textbf{xor} required to multiply by the polynomial.
+%\begin{minted}{C}
+%unsigned int poly_xor_cost(unsigned int poly) {
+%	unsigned int mask = 1;
+%	unsigned int set_bits = 0;
+%	unsigned int current_bit = 0;
+%	while (current_bit <= ORDER) {
+%		set_bits += ((poly & mask) != 0);
+%		mask <<= 1;
+%		current_bit++;
+%	}
+%	return set_bits - 1;
+%}
+%\end{minted}
 
-And, to compute the \textbf{xtime} and \textbf{xor} costs of a matrix, we must sum the costs of each row, which is accomplished by the following functions. Note that for e.g SHARK \texttt{DIM} must be set to 8, for SQUARE, to 4, and so forth.
+%And, to compute the \textbf{xtime} and \textbf{xor} costs of a matrix, we must sum the costs of each row, which is accomplished by the following functions. Note that for e.g SHARK \texttt{DIM} must be set to 8, for SQUARE, to 4, and so forth.
 
-\begin{minted}{C}
-#define DIM 8
+%\begin{minted}{C}
+%#define DIM 8
+%
+%unsigned int matrix_xtime_cost(unsigned int mat [DIM][DIM]) {
+%	unsigned int total_cost = 0;
+%	for (int row = 0; row < DIM; row++) {
+%		unsigned int row_cost = 0;
+%		for (int col = 0; col < DIM; col++) {
+%			row_cost += poly_xtime_cost(mat[row][col]);
+%		}
+%		printf("Row %d costs %d xtime\n", row, row_cost);
+%		total_cost += row_cost;
+%	}
+%	printf("The full matrix costs %d xtime\n", total_cost);
+%	return total_cost;
+%}
 
-unsigned int matrix_xtime_cost(unsigned int mat [DIM][DIM]) {
-	unsigned int total_cost = 0;
-	for (int row = 0; row < DIM; row++) {
-		unsigned int row_cost = 0;
-		for (int col = 0; col < DIM; col++) {
-			row_cost += poly_xtime_cost(mat[row][col]);
-		}
-		printf("Row %d costs %d xtime\n", row, row_cost);
-		total_cost += row_cost;
-	}
-	printf("The full matrix costs %d xtime\n", total_cost);
-	return total_cost;
-}
+%unsigned int matrix_xor_cost(unsigned int mat[DIM][DIM]) {
+%	unsigned int total_cost = 0;
+%	for (int row = 0; row < DIM; row++) {
+%		unsigned int row_cost = DIM - 1; //sum elements
+%		for (int col = 0; col < DIM; col++) {
+%			row_cost += poly_xor_cost(mat[row][col]);
+%		}
+%		printf("Row %d costs %d xor\n", row, row_cost);
+%		total_cost += row_cost;
+%	}
+%	printf("The full matrix costs %d xor\n", total_cost);
+%	return total_cost;
+%}
+%\end{minted}
 
-unsigned int matrix_xor_cost(unsigned int mat[DIM][DIM]) {
-	unsigned int total_cost = 0;
-	for (int row = 0; row < DIM; row++) {
-		unsigned int row_cost = DIM - 1; //sum elements
-		for (int col = 0; col < DIM; col++) {
-			row_cost += poly_xor_cost(mat[row][col]);
-		}
-		printf("Row %d costs %d xor\n", row, row_cost);
-		total_cost += row_cost;
-	}
-	printf("The full matrix costs %d xor\n", total_cost);
-	return total_cost;
-}
-\end{minted}
+%\subsection{SQUARE manual calculation example}
 
-\subsection{SQUARE manual calculation example}
-The computational cost for matrix (\ref{mat:shark}), used in the SQUARE cipher, was explained in Section \ref{sec:comp-cost}.
+\textcolor{red}{Observação: eu tirei o código que calcula o custo daqui porque eu troquei a linguagem pra Python depois (tava em C), e porque desde a última vez que mexi nessa seção eu mudei esse código pra consertar um pequeno problema nele, então depois eu vou pegar a versão final ou disponibilizar link pro GitHub}
+
+The computational cost for matrix (\ref{mat:shark}), used in the SQUARE cipher, was explained in Section \ref{sec:comp-cost}. Here we present an example for (\ref{mat:square-inv}), to illustrate how the cost is computed in this work.
 
 For matrix (\ref{mat:square-inv}), used in SQUARE's decryption process, each row contains elements from $\{0e_x, 09_x, 0d_x, 0b_x\}$.
 
@@ -91,4 +94,4 @@ For matrix (\ref{mat:square-inv}), used in SQUARE's decryption process, each row
 0b_x = 00001011_2 = x^3 + x + 1 \text{ requires 3 \textbf{xtime} and 2 \textbf{xor} }
 \end{equation*}
 
-There are 3 \textbf{xor} to add the intermediate row multiplication results, totalizing 12 \textbf{xtime} and 10 \textbf{xor} per row. There are 4 rows, hence 48 \textbf{xtime} and 40 \textbf{xor}.
+There are 3 \textbf{xor} to add the intermediate row multiplication results, totalizing 12 \textbf{xtime} and 10 \textbf{xor} per row. There are 4 rows, hence 48 \textbf{xtime} and 40 \textbf{xor}. In this case, since all rows are composed of the same elements due to the circulant property of SQUARE's matrix, we can simply multiply the cost of a single row by the amount of rows. However, for e.g SHARK's matrix, we have to compute the cost of each row separately.

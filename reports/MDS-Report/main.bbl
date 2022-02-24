@@ -90,6 +90,11 @@ Joan Daemen and Vincent Rijmen.
   Standard}.
 \newblock Information Security and Cryptography. Springer, 2002.
 
+\bibitem{sagemath}
+The~Sage Developers, William Stein, David Joyner, David Kohel, John Cremona,
+  and Burçin Eröcal.
+\newblock Sagemath, version 9.0, 2020.
+
 \bibitem{Grostl2009}
 Praveen Gauravaram, Lars~R. Knudsen, Krystian Matusiewicz, Florian Mendel,
   Christian Rechberger, Martin Schl{\"{a}}ffer, and S{\o}ren~S. Thomsen.
@@ -99,10 +104,32 @@ Praveen Gauravaram, Lars~R. Knudsen, Krystian Matusiewicz, Florian Mendel,
   {\em Dagstuhl Seminar Proceedings}. Schloss Dagstuhl - Leibniz-Zentrum
   f{\"{u}}r Informatik, Germany, 2009.
 
+\bibitem{PHOTON2011}
+Jian Guo, Thomas Peyrin, and Axel Poschmann.
+\newblock The {PHOTON} family of lightweight hash functions.
+\newblock In Phillip Rogaway, editor, {\em Advances in Cryptology - {CRYPTO}
+  2011 - 31st Annual Cryptology Conference, Santa Barbara, CA, USA, August
+  14-18, 2011. Proceedings}, volume 6841 of {\em Lecture Notes in Computer
+  Science}, pages 222--239. Springer, 2011.
+
+\bibitem{LED2012}
+Jian Guo, Thomas Peyrin, Axel Poschmann, and Matthew J.~B. Robshaw.
+\newblock The {LED} block cipher.
+\newblock {\em {IACR} Cryptol. ePrint Arch.}, page 600, 2012.
+
+\bibitem{Gupta2016}
+Kishan~Chand Gupta, Sumit~Kumar Pandey, and Ayineedi Venkateswarlu.
+\newblock On the direct construction of recursive {MDS} matrices.
+\newblock {\em Des. Codes Cryptogr.}, 82(1-2):77--94, 2017.
+
 \bibitem{hoffmann1971linear}
 Kenneth Hoffmann and Ray Kunze.
 \newblock Linear algebra.
 \newblock {\em Mathematics of Computation}, 15(75):407, 1971.
+
+\bibitem{galoispython}
+Matt Hostetter.
+\newblock {Galois: A performant NumPy extension for Galois fields}, 11 2020.
 
 \bibitem{FOX2004}
 Pascal Junod and Serge Vaudenay.
@@ -143,6 +170,11 @@ Alfred~J. Menezes, Scott~A. Vanstone, and Paul C.~Van Oorschot.
 G.L. Mullen and D.~Panario.
 \newblock {\em Handbook of Finite Fields}.
 \newblock Discrete Mathematics and Its Applications. CRC Press, 2013.
+
+\bibitem{Nakahara2009}
+Jorge Nakahara and {\'E}lcio Abrah{\~a}o.
+\newblock A new involutory mds matrix for the aes.
+\newblock {\em Int. J. Netw. Secur.}, 9:109--116, 2009.
 
 \bibitem{SHARK1996}
 Vincent Rijmen, Joan Daemen, Bart Preneel, Antoon Bosselaers, and Erik~De Win.

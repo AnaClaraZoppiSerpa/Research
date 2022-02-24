@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: refs.bib
 Warning--empty journal in Shirai2003
 Warning--empty booktitle in Whirlpool2003
-You've used 27 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            677 strings with 8947 characters,
-and the built_in function-call counts, 9796 in all, are:
-= -- 936
-> -- 494
-< -- 15
-+ -- 195
-- -- 159
-* -- 644
-:= -- 1598
-add.period$ -- 96
-call.type$ -- 27
-change.case$ -- 148
+            716 strings with 9877 characters,
+and the built_in function-call counts, 11947 in all, are:
+= -- 1140
+> -- 610
+< -- 18
++ -- 243
+- -- 198
+* -- 794
+:= -- 1946
+add.period$ -- 113
+call.type$ -- 33
+change.case$ -- 185
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 414
-empty$ -- 789
-format.name$ -- 159
-if$ -- 2111
+cite$ -- 35
+duplicate$ -- 492
+empty$ -- 950
+format.name$ -- 198
+if$ -- 2566
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 33
-newline$ -- 139
-num.names$ -- 70
-pop$ -- 202
+int.to.str$ -- 33
+missing$ -- 37
+newline$ -- 167
+num.names$ -- 84
+pop$ -- 247
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 157
 quote$ -- 0
-skip$ -- 285
+skip$ -- 350
 stack$ -- 0
-substring$ -- 440
-swap$ -- 121
-text.length$ -- 15
+substring$ -- 551
+swap$ -- 146
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
+type$ -- 118
 warning$ -- 2
-while$ -- 91
-width$ -- 29
-write$ -- 307
+while$ -- 111
+width$ -- 35
+write$ -- 369
 (There were 2 warnings)

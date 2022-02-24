@@ -1,13 +1,45 @@
-It is worth noting that, when changing the irreducible polynomial, the finite field changes, and that may cause the inverse matrices to change, resulting in inverse matrices with different computational costs. In this work, we briefly explore this. Table \ref{tbl:different-pol} shows, for each matrix studied in this work (column $A$) and each possible irreducible polynomial (column $p(x)$), the determinant (column $|A|$), the multiplicative inverse of the determinant ($\frac{1}{|A|}$), the \textbf{xor} cost (xr), the \textbf{xtime} cost (xt), whether $A$ is involutory (column Iv), whether the MDS property holds (column MDS) on the finite field, the determinant of the inverse matrix, $A^{-1}$, on the finite field (column $|A|_i$), \textbf{xor} and \textbf{xtime} costs (xr$_i$ and xt$_i$, respectively), involutory property for $A^{-1}$ (Iv$_i$) and, finally, MDS property for $A^{-1}$ (MDS$_i$).
+It is worth noting that, when changing the irreducible polynomial, the finite field changes, and that may cause the inverse matrices to change, resulting in inverse matrices with different computational costs. In this work, we briefly explore this. There are 30 irreducible polynomials of degree 8, which can be used to build $GF(2^8)$, and 3 irreducible polynomials of degree 4, which can respectively be used to build $GF(2^4)$. It is possible to obtain them e.g using the SAGE tool \cite{sagemath} or the Galois Python package \cite{galoispython} for finite field arithmetic.
 
-It is worth noting that, for some matrices and fields, the MDS property does not hold. It is the case of SHARK, where the MDS property only holds for the $p(x)
-$ chosen by the cipher's authors. However, for others, such as Rijndael, KHAZAD and Anubis, the MDS and involutory properties always hold, no matter the field, and the \textbf{xor} and \textbf{xtime} costs of the inverse matrix do not change. This suggests that it is possible to choose the best irreducible polynomial when designing a diffusion layer --- the polynomial which keeps MDS property and yields inverse matrices with the lowest cost.
+Table \ref{tbl:different-poly} shows, for each matrix studied in this work (column $A$) and each possible irreducible polynomial (column $p(x)$), the determinant (column $|A|$), the multiplicative inverse of the determinant ($\frac{1}{|A|}$), the \textbf{xor} cost (xr), the \textbf{xtime} cost (xt), whether $A$ is involutory (column Iv), whether the MDS property holds (column MDS) on the finite field, the determinant of the inverse matrix $A^{-1}$ (column $|A|_i$), \textbf{xor} and \textbf{xtime} costs (xr$_i$ and xt$_i$, respectively), involutory property for $A^{-1}$ (column Iv$_i$) and, finally, MDS property for $A^{-1}$ (column MDS$_i$).
+
+It is worth noting that, for some matrices and fields, the MDS property does not hold. It is the case of SHARK, where the MDS property only holds for the $p(x)$ chosen by the cipher's authors. However, for others, such as Rijndael, KHAZAD and Anubis, the MDS and involutory properties always hold, no matter the field, the determinant does not change, nor do the \textbf{xor} and \textbf{xtime} costs of the inverse matrix. This suggests that it is possible to choose the best irreducible polynomial when designing a diffusion layer --- the polynomial which keeps MDS property and yields inverse matrices with the lowest cost. A brief analysis of this phenomenon follows.
+
+The inverse $A^{-1}$ of a given matrix $A$ exists only if $|A| \neq 0$. Furthermore, the elements of $A^{-1}$ depend on $\frac{1}{|A|}$, which depends on $|A|$. On the other hand, $|A|$ depends on $p(x)$, since multiplication of matrix elements may require modular reductions. Therefore, changing $p(x)$ may change $|A|$, which consequently may change $A^{-1}$. Table \ref{tbl:poly-summary} summarizes this for all the studied matrices.
+
+\begin{footnotesize}
+\begin{longtable}{|l|l|l|l|l|}
+\hline
+\textbf{Matrix identifier} & \textbf{Determinant} & \textbf{MDS property} & \textbf{Inverse changes} & \textbf{Involutory} \\ \hline
+%\endfirsthead
+%
+\endhead
+%
+SHARK                      & changes              & for one (or more) of the $p(x)$             & yes                      & never               \\ \hline
+SQUARE                     & always 1             & always                & no                       & never               \\ \hline
+BKSQ                       & always 3             & always                & yes                      & never               \\ \hline
+Tavares                    & always 1             & for one or more of the $p(x)$             & no                       & always              \\ \hline
+KHAZAD                     & always 1             & for one or more of the $p(x)$             & no                       & always              \\ \hline
+ANUBIS                     & always 1             & always                & no                       & always              \\ \hline
+ANUBIS (KE)                & changes              & always                & yes                      & never               \\ \hline
+Grostl                     & changes              & for one or more of the $p(x)$             & yes                      & never               \\ \hline
+Curupira                   & always 1             & always                & no                       & always              \\ \hline
+Curupira (KE)              & always 1D            & always                & yes                      & never               \\ \hline
+Rijndael                   & always 1             & always                & no                       & never               \\ \hline
+Hierocrypt low             & changes              & for one or more of the $p(x)$             & yes                      & never               \\ \hline
+Hierocrypt L1              & changes              & for one or more of the $p(x)$             & yes                      & never               \\ \hline
+FOX mu4                    & changes              & for one or more of the $p(x)$             & yes                      & never               \\ \hline
+FOX mu8                    & changes              & for one or more of the $p(x)$             & yes                      & never               \\ \hline
+Whirlpool-0                & changes              & never                 & yes                      & never               \\ \hline
+\caption{Summarizing the effect of changing the irreducible polynomial}
+\label{tbl:poly-summary}\\
+\end{longtable}
+\end{footnotesize}
 
 \begin{tiny}
 \begin{longtable}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
 $A$ & $p(x)$ & $|A|$ & $\frac{1}{|A|}$ & xr & xt & Iv & MDS & $|A|_i$ & xr$_i$ & xt$_i$ & Iv$_i$ & MDS$_i$ \\ \hline
-\endfirsthead
+%\endfirsthead
 %
 \endhead
 %
@@ -221,12 +253,12 @@ $A$ & $p(x)$ & $|A|$ & $\frac{1}{|A|}$ & xr & xt & Iv & MDS & $|A|_i$ & xr$_i$ &
 \shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x + 1$ & AE & 3 & 20 & 32 & no & yes & 3 & 59 & 98 & no & yes \\ \hline
 \shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1$ & 2 & FA & 20 & 32 & no & yes & FA & 57 & 95 & no & yes \\ \hline
 \shortstack{Anubis \\ (KE) \\ \eqref{mat:anubis-ke}} & $x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1$ & A3 & 36 & 20 & 32 & no & yes & 36 & 57 & 93 & no & yes \\ \hline
-\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x + 1$ & B & 5 & 104 & 136 & no & no & 5 & 128 & 136 & no & no \\ \hline
-\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + 1$ & 4 & 6 & 104 & 136 & no & no & 6 & 112 & 160 & no & no \\ \hline
-\shortstack{Whirlwind \\ $m_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + x^2 + x + 1$ & E & B & 104 & 136 & no & no & B & 128 & 128 & no & no \\ \hline
-\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x + 1$ & 9 & 2 & 128 & 128 & no & no & 2 & 128 & 128 & no & no \\ \hline
-\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + 1$ & 6 & 4 & 128 & 128 & no & no & 4 & 120 & 144 & no & no \\ \hline
-\shortstack{Whirlwind \\ $m_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + x^2 + x + 1$ & C & D & 128 & 128 & no & no & D & 120 & 160 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x + 1$ & B & 5 & 104 & 136 & no & no & 5 & 128 & 136 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + 1$ & 4 & 6 & 104 & 136 & no & no & 6 & 112 & 160 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_0$ \\ \eqref{mat:whirlwind-m0}} & $x^4 + x^3 + x^2 + x + 1$ & E & B & 104 & 136 & no & no & B & 128 & 128 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x + 1$ & 9 & 2 & 128 & 128 & no & no & 2 & 128 & 128 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + 1$ & 6 & 4 & 128 & 128 & no & no & 4 & 120 & 144 & no & no \\ \hline
+\shortstack{Whirlwind \\ $M_1$ \\ \eqref{mat:whirlwind-m1}} & $x^4 + x^3 + x^2 + x + 1$ & C & D & 128 & 128 & no & no & D & 120 & 160 & no & no \\ \hline
 \shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^4 + x^3 + x + 1$ & 1A & FD & 104 & 96 & no & yes & FD & 232 & 376 & no & yes \\ \hline
 \shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^4 + x^3 + x^2 + 1$ & 1C & A0 & 104 & 96 & no & no & A0 & 240 & 384 & no & no \\ \hline
 \shortstack{Gr{\o}stl \\ \eqref{mat:grostl}} & $x^8 + x^5 + x^3 + x + 1$ & 2A & B9 & 104 & 96 & no & no & B9 & 288 & 376 & no & no \\ \hline

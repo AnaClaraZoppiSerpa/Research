@@ -48603,7 +48603,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.222 W
-       hirlwind $m_0$ \ref{mat:whirlwind-m0} & $x^4 + x + 1$ & B & 5 & 104 &...
+       hirlwind $M_0$ \ref{mat:whirlwind-m0} & $x^4 + x + 1$ & B & 5 & 104 &...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -48619,7 +48619,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:222: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m0' on page \thepage 
                                                   \space undefined\on@line .
-l.222 Whirlwind $m_0$ \ref{mat:whirlwind-m0}
+l.222 Whirlwind $M_0$ \ref{mat:whirlwind-m0}
                                              & $x^4 + x + 1$ & B & 5 & 104 &...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -48631,7 +48631,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m0' on page  undefined on input line 222.
 
 ./poly-study.tex:222: Misplaced alignment tab character &.
-l.222 Whirlwind $m_0$ \ref{mat:whirlwind-m0} &
+l.222 Whirlwind $M_0$ \ref{mat:whirlwind-m0} &
                                                $x^4 + x + 1$ & B & 5 & 104 &...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -48831,7 +48831,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.223 W
-       hirlwind $m_0$ \ref{mat:whirlwind-m0} & $x^4 + x^3 + 1$ & 4 & 6 & 104...
+       hirlwind $M_0$ \ref{mat:whirlwind-m0} & $x^4 + x^3 + 1$ & 4 & 6 & 104...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -48847,7 +48847,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:223: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m0' on page \thepage 
                                                   \space undefined\on@line .
-l.223 Whirlwind $m_0$ \ref{mat:whirlwind-m0}
+l.223 Whirlwind $M_0$ \ref{mat:whirlwind-m0}
                                              & $x^4 + x^3 + 1$ & 4 & 6 & 104...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -48859,7 +48859,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m0' on page  undefined on input line 223.
 
 ./poly-study.tex:223: Misplaced alignment tab character &.
-l.223 Whirlwind $m_0$ \ref{mat:whirlwind-m0} &
+l.223 Whirlwind $M_0$ \ref{mat:whirlwind-m0} &
                                                $x^4 + x^3 + 1$ & 4 & 6 & 104...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -49059,7 +49059,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.224 W
-       hirlwind $m_0$ \ref{mat:whirlwind-m0} & $x^4 + x^3 + x^2 + x + 1$ & E...
+       hirlwind $M_0$ \ref{mat:whirlwind-m0} & $x^4 + x^3 + x^2 + x + 1$ & E...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -49075,7 +49075,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:224: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m0' on page \thepage 
                                                   \space undefined\on@line .
-l.224 Whirlwind $m_0$ \ref{mat:whirlwind-m0}
+l.224 Whirlwind $M_0$ \ref{mat:whirlwind-m0}
                                              & $x^4 + x^3 + x^2 + x + 1$ & E...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -49087,7 +49087,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m0' on page  undefined on input line 224.
 
 ./poly-study.tex:224: Misplaced alignment tab character &.
-l.224 Whirlwind $m_0$ \ref{mat:whirlwind-m0} &
+l.224 Whirlwind $M_0$ \ref{mat:whirlwind-m0} &
                                                $x^4 + x^3 + x^2 + x + 1$ & E...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -49297,7 +49297,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.225 W
-       hirlwind $m_1$ \ref{mat:whirlwind-m1} & $x^4 + x + 1$ & 9 & 2 & 128 &...
+       hirlwind $M_1$ \ref{mat:whirlwind-m1} & $x^4 + x + 1$ & 9 & 2 & 128 &...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -49313,7 +49313,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:225: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m1' on page \thepage 
                                                   \space undefined\on@line .
-l.225 Whirlwind $m_1$ \ref{mat:whirlwind-m1}
+l.225 Whirlwind $M_1$ \ref{mat:whirlwind-m1}
                                              & $x^4 + x + 1$ & 9 & 2 & 128 &...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -49325,7 +49325,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m1' on page  undefined on input line 225.
 
 ./poly-study.tex:225: Misplaced alignment tab character &.
-l.225 Whirlwind $m_1$ \ref{mat:whirlwind-m1} &
+l.225 Whirlwind $M_1$ \ref{mat:whirlwind-m1} &
                                                $x^4 + x + 1$ & 9 & 2 & 128 &...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -49525,7 +49525,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.226 W
-       hirlwind $m_1$ \ref{mat:whirlwind-m1} & $x^4 + x^3 + 1$ & 6 & 4 & 128...
+       hirlwind $M_1$ \ref{mat:whirlwind-m1} & $x^4 + x^3 + 1$ & 6 & 4 & 128...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -49541,7 +49541,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:226: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m1' on page \thepage 
                                                   \space undefined\on@line .
-l.226 Whirlwind $m_1$ \ref{mat:whirlwind-m1}
+l.226 Whirlwind $M_1$ \ref{mat:whirlwind-m1}
                                              & $x^4 + x^3 + 1$ & 6 & 4 & 128...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -49553,7 +49553,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m1' on page  undefined on input line 226.
 
 ./poly-study.tex:226: Misplaced alignment tab character &.
-l.226 Whirlwind $m_1$ \ref{mat:whirlwind-m1} &
+l.226 Whirlwind $M_1$ \ref{mat:whirlwind-m1} &
                                                $x^4 + x^3 + 1$ & 6 & 4 & 128...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -49753,7 +49753,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.227 W
-       hirlwind $m_1$ \ref{mat:whirlwind-m1} & $x^4 + x^3 + x^2 + x + 1$ & C...
+       hirlwind $M_1$ \ref{mat:whirlwind-m1} & $x^4 + x^3 + x^2 + x + 1$ & C...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -49769,7 +49769,7 @@ Missing character: There is no d in font nullfont!
 ./poly-study.tex:227: Undefined control sequence.
 <write> ...ce `mat:whirlwind-m1' on page \thepage 
                                                   \space undefined\on@line .
-l.227 Whirlwind $m_1$ \ref{mat:whirlwind-m1}
+l.227 Whirlwind $M_1$ \ref{mat:whirlwind-m1}
                                              & $x^4 + x^3 + x^2 + x + 1$ & C...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -49781,7 +49781,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `mat:whirlwind-m1' on page  undefined on input line 227.
 
 ./poly-study.tex:227: Misplaced alignment tab character &.
-l.227 Whirlwind $m_1$ \ref{mat:whirlwind-m1} &
+l.227 Whirlwind $M_1$ \ref{mat:whirlwind-m1} &
                                                $x^4 + x^3 + x^2 + x + 1$ & C...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is

@@ -348,3 +348,158 @@ df_x & 45_x & 53_x & 13_x & 5a_x & 54_x & 72_x & 50_x\\
 5a_x & 54_x & 72_x & 50_x & df_x & 45_x & 53_x & 13_x
 \end{bmatrix}
 \end{equation}
+
+Matrix \eqref{mat:led} is used in the LED block cipher. Its inverse is matrix \eqref{mat:led-inv}.
+
+\begin{equation}\label{mat:led}
+\begin{bmatrix}
+  4_x & 1_x & 2_x & 2_x\\
+  8_x & 6_x & 5_x & 6_x\\
+  b_x & e_x & a_x & 9_x\\
+  2_x & 2_x & f_x & b_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+  0_x & 1_x & 0_x & 0_x\\
+  0_x & 0_x & 1_x & 0_x\\
+  0_x & 0_x & 0_x & 1_x\\
+  4_x & 1_x & 2_x & 2_x
+\end{bmatrix}^4
+=
+Companion(4_x,1_x,2_x,2_x)^4
+\end{equation}
+
+\begin{equation}\label{mat:led-inv}
+  \begin{bmatrix}
+  c_x & c_x & d_x & 4_x\\
+  3_x & 8_x & 4_x & 5_x\\
+  7_x & 6_x & 2_x & e_x\\
+  d_x & 9_x & 9_x & d_x
+  \end{bmatrix}
+\end{equation}
+
+Matrices \eqref{mat:photon_a100} to \eqref{mat:photon_a288-inv} refer to the different matrices employed in different flavors of the PHOTON hash function and the respective inverses.
+
+\begin{equation}\label{mat:photon_a100}
+  \begin{bmatrix}
+  1_x & 2_x & 9_x & 9_x & 2_x\\
+  2_x & 5_x & 3_x & 8_x & d_x\\
+  d_x & b_x & a_x & c_x & 1_x\\
+  1_x & f_x & 2_x & 3_x & e_x\\
+  e_x & e_x & 8_x & 5_x & c_x
+  \end{bmatrix}
+  =
+  Companion(1_x,2_x,9_x,9_x,2_x)^5
+\end{equation}
+
+\begin{equation}\label{mat:photon_a100-inv}
+  \begin{bmatrix}
+  c_x & 5_x & 8_x & e_x & e_x\\
+  e_x & 3_x & 2_x & f_x & 1_x\\
+  1_x & c_x & a_x & b_x & d_x\\
+  d_x & 8_x & 3_x & 5_x & 2_x\\
+  2_x & 9_x & 9_x & 2_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a144}
+  \begin{bmatrix}
+  1_x & 2_x & 8_x & 5_x & 8_x & 2_x\\
+  2_x & 5_x & 1_x & 2_x & 6_x & c_x\\
+  c_x & 9_x & f_x & 8_x & 8_x & d_x\\
+  d_x & 5_x & b_x & 3_x & a_x & 1_x\\
+  1_x & f_x & d_x & e_x & b_x & 8_x\\
+  8_x & 2_x & 3_x & 3_x & 2_x & 8_x
+  \end{bmatrix}
+  =
+  Companion(1_x,2_x,8_x,5_x,8_x,2_x)^6
+\end{equation}
+
+\begin{equation}\label{mat:photon_a144-inv}
+  \begin{bmatrix}
+  8_x & 2_x & 3_x & 3_x & 2_x & 8_x\\
+  8_x & b_x & e_x & d_x & f_x & 1_x\\
+  1_x & a_x & 3_x & b_x & 5_x & d_x\\
+  d_x & 8_x & 8_x & f_x & 9_x & c_x\\
+  c_x & 6_x & 2_x & 1_x & 5_x & 2_x\\
+  2_x & 8_x & 5_x & 8_x & 2_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a196}
+  \begin{bmatrix}
+  1_x & 4_x & 6_x & 1_x & 1_x & 6_x & 4_x\\
+  4_x & 2_x & f_x & 2_x & 5_x & a_x & 5_x\\
+  5_x & 3_x & f_x & a_x & 7_x & 8_x & d_x\\
+  d_x & 4_x & b_x & 2_x & 7_x & f_x & 9_x\\
+  9_x & f_x & 7_x & 2_x & b_x & 4_x & d_x\\
+  d_x & 8_x & 7_x & a_x & f_x & 3_x & 5_x\\
+  5_x & a_x & 5_x & 2_x & f_x & 2_x & 4_x
+  \end{bmatrix}
+  =
+  Companion(1_x,4_x,6_x,1_x,1_x,6_x,4_x)^7
+\end{equation}
+
+\begin{equation}\label{mat:photon_a196-inv}
+  \begin{bmatrix}
+  4_x & 2_x & f_x & 2_x & 5_x & a_x & 5_x\\
+  5_x & 3_x & f_x & a_x & 7_x & 8_x & d_x\\
+  d_x & 4_x & b_x & 2_x & 7_x & f_x & 9_x\\
+  9_x & f_x & 7_x & 2_x & b_x & 4_x & d_x\\
+  d_x & 8_x & 7_x & a_x & f_x & 3_x & 5_x\\
+  5_x & a_x & 5_x & 2_x & f_x & 2_x & 4_x\\
+  4_x & 6_x & 1_x & 1_x & 6_x & 4_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a256}
+  \begin{bmatrix}
+  2_x & 4_x & 2_x & b_x & 2_x & 8_x & 5_x & 6_x\\
+  c_x & 9_x & 8_x & d_x & 7_x & 7_x & 5_x & 2_x\\
+  4_x & 4_x & d_x & d_x & 9_x & 4_x & d_x & 9_x\\
+  1_x & 6_x & 5_x & 1_x & c_x & d_x & f_x & e_x\\
+  f_x & c_x & 9_x & d_x & e_x & 5_x & e_x & d_x\\
+  9_x & e_x & 5_x & f_x & 4_x & c_x & 9_x & 6_x\\
+  c_x & 2_x & 2_x & a_x & 3_x & 1_x & 1_x & e_x\\
+  f_x & 1_x & d_x & a_x & 5_x & a_x & 2_x & 3_x
+  \end{bmatrix}
+  =
+  Companion(2_x,4_x,2_x,11_x,2_x,8_x,5_x,6_x)^8
+\end{equation}
+
+\begin{equation}\label{mat:photon_a256-inv}
+  \begin{bmatrix}
+  4_x & 7_x & 9_x & a_x & c_x & c_x & 3_x & f_x\\
+  d_x & d_x & a_x & a_x & 7_x & d_x & a_x & 7_x\\
+  e_x & 2_x & 3_x & e_x & 4_x & a_x & 5_x & b_x\\
+  5_x & 4_x & 7_x & a_x & b_x & 3_x & b_x & a_x\\
+  7_x & b_x & 3_x & 5_x & d_x & 4_x & 7_x & 2_x\\
+  4_x & f_x & f_x & 6_x & 1_x & e_x & e_x & b_x\\
+  5_x & e_x & a_x & 6_x & 3_x & 6_x & f_x & 1_x\\
+  2_x & 1_x & c_x & 1_x & 4_x & b_x & 3_x & 9_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a288}
+  \begin{bmatrix}
+  02_x & 03_x & 01_x & 02_x & 01_x & 04_x\\
+  08_x & 0e_x & 07_x & 09_x & 06_x & 11_x\\
+  22_x & 3b_x & 1f_x & 25_x & 18_x & 42_x\\
+  84_x & e4_x & 79_x & 9b_x & 67_x & 0b_x\\
+  16_x & 99_x & ef_x & 6f_x & 90_x & 4b_x\\
+  96_x & cb_x & d2_x & 79_x & 24_x & a7_x
+  \end{bmatrix}
+  =
+  Companion(2_x,3_x,1_x,2_x,1_x,4_x)^6
+\end{equation}
+
+\begin{equation}\label{mat:photon_a288-inv}
+  \begin{bmatrix}
+  15_x & 50_x & eb_x & 62_x & 79_x & 99_x\\
+  29_x & a5_x & c9_x & c2_x & fb_x & 2b_x\\
+  56_x & 54_x & 8e_x & 9f_x & e9_x & 57_x\\
+  ae_x & af_x & 03_x & 20_x & c8_x & ae_x\\
+  47_x & 47_x & 01_x & 44_x & 8e_x & 46_x\\
+  8c_x & 8d_x & 01_x & 8d_x & 02_x & 8d_x
+  \end{bmatrix}
+\end{equation}

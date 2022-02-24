@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+cp}{\PYGZsh{}define DEGREE\PYGZus{}LIMIT\PYGZus{}MASK 0x100}
-\PYG{c+cp}{\PYGZsh{}define ORDER 8}
-\end{Verbatim}
