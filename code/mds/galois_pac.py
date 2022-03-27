@@ -1161,7 +1161,7 @@ def get_mat_info_for_mds_table(mat, field, dim, name):
 	print(name)
 	alg_mat = int_to_gf_mat(mat, field)
 	print_mat_hex(alg_mat)
-	print(is_mds(alg_mat))
+	print("mds", is_mds(alg_mat))
 	print("xor", matrix_xor_cost(alg_mat, dim))
 	print("xtime", matrix_xtime_cost(alg_mat, dim))
 
@@ -1170,7 +1170,7 @@ def get_mat_info_for_mds_table(mat, field, dim, name):
 	print_mat_hex(inv)
 	print("xor", matrix_xor_cost(inv, dim))
 	print("xtime", matrix_xtime_cost(inv, dim))
-	print(is_mds(inv))
+	print("mds", is_mds(inv))
 
 photon4_a100 = [
 	[1, 2, 9, 9, 2],
@@ -1220,7 +1220,7 @@ photon8_a288 = [
 ]
 
 elcio = [[0x01, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x10, 0x02, 0x1e],
-[0x03, 0x01, 0x05, 0x04, 0x07, 0x06, 0x09, 0x08, 0x0b, 0x0a, 0x0d, 0x0c, 0x10, 0x0d, 0x1d, 0x02],
+[0x03, 0x01, 0x05, 0x04, 0x07, 0x06, 0x09, 0x08, 0x0b, 0x0a, 0x0d, 0x0c, 0x10, 0x0e, 0x1e, 0x02],
 [0x04, 0x05, 0x01, 0x03, 0x08, 0x09, 0x06, 0x07, 0x0c, 0x0d, 0x0a, 0x0b, 0x02, 0x1e, 0x0e, 0x10],
 [0x05, 0x04, 0x03, 0x01, 0x09, 0x08, 0x07, 0x06, 0x0d, 0x0c, 0x0b, 0x0a, 0x1e, 0x02, 0x10, 0x0e],
 [0x06, 0x07, 0x08, 0x09, 0x01, 0x03, 0x04, 0x05, 0x0e, 0x10, 0x02, 0x1e, 0x0a, 0x0b, 0x0c, 0x0d],
@@ -1276,11 +1276,18 @@ def look_for_small_singular_submat(mat, small_dim, field):
 	print("Total de submatrizes singulares:", total_submats)
 	return check
 
-look_for_small_singular_submat(int_to_gf_mat(elcio, rijndael_field), 2, rijndael_field)
-#get_mat_info_for_mds_table(elcio, rijndael_field, 16, "elcio")
-#submatrix_checker(int_to_gf_mat(elcio, rijndael_field), rijndael_field)
-#get_mat_info_for_mds_table(photon4_a100, photon4cells_field, 5, "photon4_a100")
-#get_mat_info_for_mds_table(photon4_a144, photon4cells_field, 6, "photon4_a144")
-#get_mat_info_for_mds_table(photon4_a196, photon4cells_field, 7, "photon4_a196")
-#get_mat_info_for_mds_table(photon4_a256, photon4cells_field, 8, "photon4_a256")
-#get_mat_info_for_mds_table(photon8_a288, photon8cells_field, 6, "photon4_a288")
+photon4x4_mat = [
+	[1, 2, 1, 4],
+	[4, 9, 6, 17],
+	[17, 38, 24, 66],
+	[66, 149, 100, 11]
+]
+
+joltik = [
+	[1, 4, 9, 13],
+	[4, 1, 13, 9],
+	[9, 13, 1, 4],
+	[13, 9, 4, 1]
+]
+
+get_mat_info_for_mds_table(joltik, photon4cells_field, 4, "joltik")
