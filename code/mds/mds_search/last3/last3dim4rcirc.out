@@ -1,0 +1,1001 @@
+(1, 1, 1, 1)
+(1, 1, 1, 2)
+(1, 1, 1, 3)
+(1, 1, 2, 1)
+(1, 1, 2, 2)
+(1, 1, 2, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, 1, x, x + 1],
+    [x + 1, 1, 1, x],
+    [x, x + 1, 1, 1],
+    [1, x, x + 1, 1]], order=2^8)
+Integer representation
+GF([[1, 1, 2, 3],
+    [3, 1, 1, 2],
+    [2, 3, 1, 1],
+    [1, 2, 3, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x1', '0x2', '0x3']
+['0x3', '0x1', '0x1', '0x2']
+['0x2', '0x3', '0x1', '0x1']
+['0x1', '0x2', '0x3', '0x1']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1]], order=2^8)
+Integer representation
+GF([[13,  9, 14, 11],
+    [11, 13,  9, 14],
+    [14, 11, 13,  9],
+    [ 9, 14, 11, 13]], order=2^8)
+Hexadecimal representation
+['0xd', '0x9', '0xe', '0xb']
+['0xb', '0xd', '0x9', '0xe']
+['0xe', '0xb', '0xd', '0x9']
+['0x9', '0xe', '0xb', '0xd']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(1, 1, 3, 1)
+(1, 1, 3, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, 1, x + 1, x],
+    [x, 1, 1, x + 1],
+    [x + 1, x, 1, 1],
+    [1, x + 1, x, 1]], order=2^8)
+Integer representation
+GF([[1, 1, 3, 2],
+    [2, 1, 1, 3],
+    [3, 2, 1, 1],
+    [1, 3, 2, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x1', '0x3', '0x2']
+['0x2', '0x1', '0x1', '0x3']
+['0x3', '0x2', '0x1', '0x1']
+['0x1', '0x3', '0x2', '0x1']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x + 1, x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1]], order=2^8)
+Integer representation
+GF([[11, 14,  9, 13],
+    [13, 11, 14,  9],
+    [ 9, 13, 11, 14],
+    [14,  9, 13, 11]], order=2^8)
+Hexadecimal representation
+['0xb', '0xe', '0x9', '0xd']
+['0xd', '0xb', '0xe', '0x9']
+['0x9', '0xd', '0xb', '0xe']
+['0xe', '0x9', '0xd', '0xb']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(1, 1, 3, 3)
+(1, 2, 1, 1)
+(1, 2, 1, 2)
+(1, 2, 1, 3)
+(1, 2, 2, 1)
+(1, 2, 2, 2)
+(1, 2, 2, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x, x, x + 1],
+    [x + 1, 1, x, x],
+    [x, x + 1, 1, x],
+    [x, x, x + 1, 1]], order=2^8)
+Integer representation
+GF([[1, 2, 2, 3],
+    [3, 1, 2, 2],
+    [2, 3, 1, 2],
+    [2, 2, 3, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x2', '0x2', '0x3']
+['0x3', '0x1', '0x2', '0x2']
+['0x2', '0x3', '0x1', '0x2']
+['0x2', '0x2', '0x3', '0x1']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^6 + x^4 + x^2 + x + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1],
+    [x^4 + 1, x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1, x^5 + x^4 + x,
+     x^6 + x^4 + x^2 + x + 1]], order=2^8)
+Integer representation
+GF([[ 87, 249,  17,  50],
+    [ 50,  87, 249,  17],
+    [ 17,  50,  87, 249],
+    [249,  17,  50,  87]], order=2^8)
+Hexadecimal representation
+['0x57', '0xf9', '0x11', '0x32']
+['0x32', '0x57', '0xf9', '0x11']
+['0x11', '0x32', '0x57', '0xf9']
+['0xf9', '0x11', '0x32', '0x57']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(1, 2, 3, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x, x + 1, 1],
+    [1, 1, x, x + 1],
+    [x + 1, 1, 1, x],
+    [x, x + 1, 1, 1]], order=2^8)
+Integer representation
+GF([[1, 2, 3, 1],
+    [1, 1, 2, 3],
+    [3, 1, 1, 2],
+    [2, 3, 1, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x2', '0x3', '0x1']
+['0x1', '0x1', '0x2', '0x3']
+['0x3', '0x1', '0x1', '0x2']
+['0x2', '0x3', '0x1', '0x1']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x, x^3 + x + 1]], order=2^8)
+Integer representation
+GF([[11, 13,  9, 14],
+    [14, 11, 13,  9],
+    [ 9, 14, 11, 13],
+    [13,  9, 14, 11]], order=2^8)
+Hexadecimal representation
+['0xb', '0xd', '0x9', '0xe']
+['0xe', '0xb', '0xd', '0x9']
+['0x9', '0xe', '0xb', '0xd']
+['0xd', '0x9', '0xe', '0xb']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(1, 2, 3, 2)
+(1, 2, 3, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x, x + 1, x + 1],
+    [x + 1, 1, x, x + 1],
+    [x + 1, x + 1, 1, x],
+    [x, x + 1, x + 1, 1]], order=2^8)
+Integer representation
+GF([[1, 2, 3, 3],
+    [3, 1, 2, 3],
+    [3, 3, 1, 2],
+    [2, 3, 3, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x2', '0x3', '0x3']
+['0x3', '0x1', '0x2', '0x3']
+['0x3', '0x3', '0x1', '0x2']
+['0x2', '0x3', '0x3', '0x1']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^5 + 1, x^4, x^7 + x^2 + 1, x^6 + x],
+    [x^6 + x, x^5 + 1, x^4, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^6 + x, x^5 + 1, x^4],
+    [x^4, x^7 + x^2 + 1, x^6 + x, x^5 + 1]], order=2^8)
+Integer representation
+GF([[ 33,  16, 133,  66],
+    [ 66,  33,  16, 133],
+    [133,  66,  33,  16],
+    [ 16, 133,  66,  33]], order=2^8)
+Hexadecimal representation
+['0x21', '0x10', '0x85', '0x42']
+['0x42', '0x21', '0x10', '0x85']
+['0x85', '0x42', '0x21', '0x10']
+['0x10', '0x85', '0x42', '0x21']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(1, 3, 1, 1)
+(1, 3, 1, 2)
+(1, 3, 1, 3)
+(1, 3, 2, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x + 1, x, 1],
+    [1, 1, x + 1, x],
+    [x, 1, 1, x + 1],
+    [x + 1, x, 1, 1]], order=2^8)
+Integer representation
+GF([[1, 3, 2, 1],
+    [1, 1, 3, 2],
+    [2, 1, 1, 3],
+    [3, 2, 1, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x3', '0x2', '0x1']
+['0x1', '0x1', '0x3', '0x2']
+['0x2', '0x1', '0x1', '0x3']
+['0x3', '0x2', '0x1', '0x1']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1]], order=2^8)
+Integer representation
+GF([[13, 11, 14,  9],
+    [ 9, 13, 11, 14],
+    [14,  9, 13, 11],
+    [11, 14,  9, 13]], order=2^8)
+Hexadecimal representation
+['0xd', '0xb', '0xe', '0x9']
+['0x9', '0xd', '0xb', '0xe']
+['0xe', '0x9', '0xd', '0xb']
+['0xb', '0xe', '0x9', '0xd']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(1, 3, 2, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x + 1, x, x],
+    [x, 1, x + 1, x],
+    [x, x, 1, x + 1],
+    [x + 1, x, x, 1]], order=2^8)
+Integer representation
+GF([[1, 3, 2, 2],
+    [2, 1, 3, 2],
+    [2, 2, 1, 3],
+    [3, 2, 2, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x3', '0x2', '0x2']
+['0x2', '0x1', '0x3', '0x2']
+['0x2', '0x2', '0x1', '0x3']
+['0x3', '0x2', '0x2', '0x1']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^6 + x^4 + x^2 + x + 1, x^5 + x^4 + x, x^4 + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x, x^4 + 1],
+    [x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1,
+     x^6 + x^4 + x^2 + x + 1]], order=2^8)
+Integer representation
+GF([[ 87,  50,  17, 249],
+    [249,  87,  50,  17],
+    [ 17, 249,  87,  50],
+    [ 50,  17, 249,  87]], order=2^8)
+Hexadecimal representation
+['0x57', '0x32', '0x11', '0xf9']
+['0xf9', '0x57', '0x32', '0x11']
+['0x11', '0xf9', '0x57', '0x32']
+['0x32', '0x11', '0xf9', '0x57']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(1, 3, 2, 3)
+(1, 3, 3, 1)
+(1, 3, 3, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[1, x + 1, x + 1, x],
+    [x, 1, x + 1, x + 1],
+    [x + 1, x, 1, x + 1],
+    [x + 1, x + 1, x, 1]], order=2^8)
+Integer representation
+GF([[1, 3, 3, 2],
+    [2, 1, 3, 3],
+    [3, 2, 1, 3],
+    [3, 3, 2, 1]], order=2^8)
+Hexadecimal representation
+['0x1', '0x3', '0x3', '0x2']
+['0x2', '0x1', '0x3', '0x3']
+['0x3', '0x2', '0x1', '0x3']
+['0x3', '0x3', '0x2', '0x1']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^5 + 1, x^6 + x, x^7 + x^2 + 1, x^4],
+    [x^4, x^5 + 1, x^6 + x, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^4, x^5 + 1, x^6 + x],
+    [x^6 + x, x^7 + x^2 + 1, x^4, x^5 + 1]], order=2^8)
+Integer representation
+GF([[ 33,  66, 133,  16],
+    [ 16,  33,  66, 133],
+    [133,  16,  33,  66],
+    [ 66, 133,  16,  33]], order=2^8)
+Hexadecimal representation
+['0x21', '0x42', '0x85', '0x10']
+['0x10', '0x21', '0x42', '0x85']
+['0x85', '0x10', '0x21', '0x42']
+['0x42', '0x85', '0x10', '0x21']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(1, 3, 3, 3)
+(2, 1, 1, 1)
+(2, 1, 1, 2)
+(2, 1, 1, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, 1, 1, x + 1],
+    [x + 1, x, 1, 1],
+    [1, x + 1, x, 1],
+    [1, 1, x + 1, x]], order=2^8)
+Integer representation
+GF([[2, 1, 1, 3],
+    [3, 2, 1, 1],
+    [1, 3, 2, 1],
+    [1, 1, 3, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x1', '0x1', '0x3']
+['0x3', '0x2', '0x1', '0x1']
+['0x1', '0x3', '0x2', '0x1']
+['0x1', '0x1', '0x3', '0x2']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x]], order=2^8)
+Integer representation
+GF([[14,  9, 13, 11],
+    [11, 14,  9, 13],
+    [13, 11, 14,  9],
+    [ 9, 13, 11, 14]], order=2^8)
+Hexadecimal representation
+['0xe', '0x9', '0xd', '0xb']
+['0xb', '0xe', '0x9', '0xd']
+['0xd', '0xb', '0xe', '0x9']
+['0x9', '0xd', '0xb', '0xe']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(2, 1, 2, 1)
+(2, 1, 2, 2)
+(2, 1, 2, 3)
+(2, 1, 3, 1)
+(2, 1, 3, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, 1, x + 1, x],
+    [x, x, 1, x + 1],
+    [x + 1, x, x, 1],
+    [1, x + 1, x, x]], order=2^8)
+Integer representation
+GF([[2, 1, 3, 2],
+    [2, 2, 1, 3],
+    [3, 2, 2, 1],
+    [1, 3, 2, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x1', '0x3', '0x2']
+['0x2', '0x2', '0x1', '0x3']
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x3', '0x2', '0x2']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^5 + x^4 + x, x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^5 + x^4 + x, x^4 + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x, x^4 + 1],
+    [x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x]], order=2^8)
+Integer representation
+GF([[ 50,  17, 249,  87],
+    [ 87,  50,  17, 249],
+    [249,  87,  50,  17],
+    [ 17, 249,  87,  50]], order=2^8)
+Hexadecimal representation
+['0x32', '0x11', '0xf9', '0x57']
+['0x57', '0x32', '0x11', '0xf9']
+['0xf9', '0x57', '0x32', '0x11']
+['0x11', '0xf9', '0x57', '0x32']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(2, 1, 3, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, 1, x + 1, x + 1],
+    [x + 1, x, 1, x + 1],
+    [x + 1, x + 1, x, 1],
+    [1, x + 1, x + 1, x]], order=2^8)
+Integer representation
+GF([[2, 1, 3, 3],
+    [3, 2, 1, 3],
+    [3, 3, 2, 1],
+    [1, 3, 3, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x1', '0x3', '0x3']
+['0x3', '0x2', '0x1', '0x3']
+['0x3', '0x3', '0x2', '0x1']
+['0x1', '0x3', '0x3', '0x2']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^6 + x, x^7 + x^2 + 1, x^4, x^5 + 1],
+    [x^5 + 1, x^6 + x, x^7 + x^2 + 1, x^4],
+    [x^4, x^5 + 1, x^6 + x, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^4, x^5 + 1, x^6 + x]], order=2^8)
+Integer representation
+GF([[ 66, 133,  16,  33],
+    [ 33,  66, 133,  16],
+    [ 16,  33,  66, 133],
+    [133,  16,  33,  66]], order=2^8)
+Hexadecimal representation
+['0x42', '0x85', '0x10', '0x21']
+['0x21', '0x42', '0x85', '0x10']
+['0x10', '0x21', '0x42', '0x85']
+['0x85', '0x10', '0x21', '0x42']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(2, 2, 1, 1)
+(2, 2, 1, 2)
+(2, 2, 1, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, x, 1, x + 1],
+    [x + 1, x, x, 1],
+    [1, x + 1, x, x],
+    [x, 1, x + 1, x]], order=2^8)
+Integer representation
+GF([[2, 2, 1, 3],
+    [3, 2, 2, 1],
+    [1, 3, 2, 2],
+    [2, 1, 3, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x2', '0x1', '0x3']
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x3', '0x2', '0x2']
+['0x2', '0x1', '0x3', '0x2']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^5 + x^4 + x, x^4 + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x, x^4 + 1]], order=2^8)
+Integer representation
+GF([[ 17, 249,  87,  50],
+    [ 50,  17, 249,  87],
+    [ 87,  50,  17, 249],
+    [249,  87,  50,  17]], order=2^8)
+Hexadecimal representation
+['0x11', '0xf9', '0x57', '0x32']
+['0x32', '0x11', '0xf9', '0x57']
+['0x57', '0x32', '0x11', '0xf9']
+['0xf9', '0x57', '0x32', '0x11']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(2, 2, 2, 1)
+(2, 2, 2, 2)
+(2, 2, 2, 3)
+(2, 2, 3, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, x, x + 1, 1],
+    [1, x, x, x + 1],
+    [x + 1, 1, x, x],
+    [x, x + 1, 1, x]], order=2^8)
+Integer representation
+GF([[2, 2, 3, 1],
+    [1, 2, 2, 3],
+    [3, 1, 2, 2],
+    [2, 3, 1, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x2', '0x2', '0x3']
+['0x3', '0x1', '0x2', '0x2']
+['0x2', '0x3', '0x1', '0x2']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1],
+    [x^4 + 1, x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1, x^5 + x^4 + x,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1,
+     x^5 + x^4 + x]], order=2^8)
+Integer representation
+GF([[ 50,  87, 249,  17],
+    [ 17,  50,  87, 249],
+    [249,  17,  50,  87],
+    [ 87, 249,  17,  50]], order=2^8)
+Hexadecimal representation
+['0x32', '0x57', '0xf9', '0x11']
+['0x11', '0x32', '0x57', '0xf9']
+['0xf9', '0x11', '0x32', '0x57']
+['0x57', '0xf9', '0x11', '0x32']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(2, 2, 3, 2)
+(2, 2, 3, 3)
+(2, 3, 1, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, x + 1, 1, 1],
+    [1, x, x + 1, 1],
+    [1, 1, x, x + 1],
+    [x + 1, 1, 1, x]], order=2^8)
+Integer representation
+GF([[2, 3, 1, 1],
+    [1, 2, 3, 1],
+    [1, 1, 2, 3],
+    [3, 1, 1, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x3', '0x1', '0x1']
+['0x1', '0x2', '0x3', '0x1']
+['0x1', '0x1', '0x2', '0x3']
+['0x3', '0x1', '0x1', '0x2']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1],
+    [x^3 + 1, x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x]], order=2^8)
+Integer representation
+GF([[14, 11, 13,  9],
+    [ 9, 14, 11, 13],
+    [13,  9, 14, 11],
+    [11, 13,  9, 14]], order=2^8)
+Hexadecimal representation
+['0xe', '0xb', '0xd', '0x9']
+['0x9', '0xe', '0xb', '0xd']
+['0xd', '0x9', '0xe', '0xb']
+['0xb', '0xd', '0x9', '0xe']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(2, 3, 1, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, x + 1, 1, x],
+    [x, x, x + 1, 1],
+    [1, x, x, x + 1],
+    [x + 1, 1, x, x]], order=2^8)
+Integer representation
+GF([[2, 3, 1, 2],
+    [2, 2, 3, 1],
+    [1, 2, 2, 3],
+    [3, 1, 2, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x3', '0x1', '0x2']
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x2', '0x2', '0x3']
+['0x3', '0x1', '0x2', '0x2']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^4 + 1, x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1],
+    [x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1, x^5 + x^4 + x,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1]], order=2^8)
+Integer representation
+GF([[ 17,  50,  87, 249],
+    [249,  17,  50,  87],
+    [ 87, 249,  17,  50],
+    [ 50,  87, 249,  17]], order=2^8)
+Hexadecimal representation
+['0x11', '0x32', '0x57', '0xf9']
+['0xf9', '0x11', '0x32', '0x57']
+['0x57', '0xf9', '0x11', '0x32']
+['0x32', '0x57', '0xf9', '0x11']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(2, 3, 1, 3)
+(2, 3, 2, 1)
+(2, 3, 2, 2)
+(2, 3, 2, 3)
+(2, 3, 3, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x, x + 1, x + 1, 1],
+    [1, x, x + 1, x + 1],
+    [x + 1, 1, x, x + 1],
+    [x + 1, x + 1, 1, x]], order=2^8)
+Integer representation
+GF([[2, 3, 3, 1],
+    [1, 2, 3, 3],
+    [3, 1, 2, 3],
+    [3, 3, 1, 2]], order=2^8)
+Hexadecimal representation
+['0x2', '0x3', '0x3', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x3', '0x1', '0x2', '0x3']
+['0x3', '0x3', '0x1', '0x2']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^6 + x, x^5 + 1, x^4, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^6 + x, x^5 + 1, x^4],
+    [x^4, x^7 + x^2 + 1, x^6 + x, x^5 + 1],
+    [x^5 + 1, x^4, x^7 + x^2 + 1, x^6 + x]], order=2^8)
+Integer representation
+GF([[ 66,  33,  16, 133],
+    [133,  66,  33,  16],
+    [ 16, 133,  66,  33],
+    [ 33,  16, 133,  66]], order=2^8)
+Hexadecimal representation
+['0x42', '0x21', '0x10', '0x85']
+['0x85', '0x42', '0x21', '0x10']
+['0x10', '0x85', '0x42', '0x21']
+['0x21', '0x10', '0x85', '0x42']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(2, 3, 3, 2)
+(2, 3, 3, 3)
+(3, 1, 1, 1)
+(3, 1, 1, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, 1, 1, x],
+    [x, x + 1, 1, 1],
+    [1, x, x + 1, 1],
+    [1, 1, x, x + 1]], order=2^8)
+Integer representation
+GF([[3, 1, 1, 2],
+    [2, 3, 1, 1],
+    [1, 2, 3, 1],
+    [1, 1, 2, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x1', '0x1', '0x2']
+['0x2', '0x3', '0x1', '0x1']
+['0x1', '0x2', '0x3', '0x1']
+['0x1', '0x1', '0x2', '0x3']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + 1, x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + x + 1, x^3 + x^2 + 1, x^3 + 1]], order=2^8)
+Integer representation
+GF([[ 9, 14, 11, 13],
+    [13,  9, 14, 11],
+    [11, 13,  9, 14],
+    [14, 11, 13,  9]], order=2^8)
+Hexadecimal representation
+['0x9', '0xe', '0xb', '0xd']
+['0xd', '0x9', '0xe', '0xb']
+['0xb', '0xd', '0x9', '0xe']
+['0xe', '0xb', '0xd', '0x9']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(3, 1, 1, 3)
+(3, 1, 2, 1)
+(3, 1, 2, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, 1, x, x],
+    [x, x + 1, 1, x],
+    [x, x, x + 1, 1],
+    [1, x, x, x + 1]], order=2^8)
+Integer representation
+GF([[3, 1, 2, 2],
+    [2, 3, 1, 2],
+    [2, 2, 3, 1],
+    [1, 2, 2, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x1', '0x2', '0x2']
+['0x2', '0x3', '0x1', '0x2']
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x2', '0x2', '0x3']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1, x^5 + x^4 + x,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^4 + 1],
+    [x^4 + 1, x^5 + x^4 + x, x^6 + x^4 + x^2 + x + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1]], order=2^8)
+Integer representation
+GF([[249,  17,  50,  87],
+    [ 87, 249,  17,  50],
+    [ 50,  87, 249,  17],
+    [ 17,  50,  87, 249]], order=2^8)
+Hexadecimal representation
+['0xf9', '0x11', '0x32', '0x57']
+['0x57', '0xf9', '0x11', '0x32']
+['0x32', '0x57', '0xf9', '0x11']
+['0x11', '0x32', '0x57', '0xf9']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(3, 1, 2, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, 1, x, x + 1],
+    [x + 1, x + 1, 1, x],
+    [x, x + 1, x + 1, 1],
+    [1, x, x + 1, x + 1]], order=2^8)
+Integer representation
+GF([[3, 1, 2, 3],
+    [3, 3, 1, 2],
+    [2, 3, 3, 1],
+    [1, 2, 3, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x1', '0x2', '0x3']
+['0x3', '0x3', '0x1', '0x2']
+['0x2', '0x3', '0x3', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^4, x^7 + x^2 + 1, x^6 + x, x^5 + 1],
+    [x^5 + 1, x^4, x^7 + x^2 + 1, x^6 + x],
+    [x^6 + x, x^5 + 1, x^4, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^6 + x, x^5 + 1, x^4]], order=2^8)
+Integer representation
+GF([[ 16, 133,  66,  33],
+    [ 33,  16, 133,  66],
+    [ 66,  33,  16, 133],
+    [133,  66,  33,  16]], order=2^8)
+Hexadecimal representation
+['0x10', '0x85', '0x42', '0x21']
+['0x21', '0x10', '0x85', '0x42']
+['0x42', '0x21', '0x10', '0x85']
+['0x85', '0x42', '0x21', '0x10']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(3, 1, 3, 1)
+(3, 1, 3, 2)
+(3, 1, 3, 3)
+(3, 2, 1, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, x, 1, 1],
+    [1, x + 1, x, 1],
+    [1, 1, x + 1, x],
+    [x, 1, 1, x + 1]], order=2^8)
+Integer representation
+GF([[3, 2, 1, 1],
+    [1, 3, 2, 1],
+    [1, 1, 3, 2],
+    [2, 1, 1, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x2', '0x1', '0x1']
+['0x1', '0x3', '0x2', '0x1']
+['0x1', '0x1', '0x3', '0x2']
+['0x2', '0x1', '0x1', '0x3']
+XOR cost: 16
+XTIME cost: 8
+Inverse matrix:
+Polynomial representation
+GF([[x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x],
+    [x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1, x^3 + x + 1],
+    [x^3 + x + 1, x^3 + x^2 + x, x^3 + 1, x^3 + x^2 + 1],
+    [x^3 + x^2 + 1, x^3 + x + 1, x^3 + x^2 + x, x^3 + 1]], order=2^8)
+Integer representation
+GF([[ 9, 13, 11, 14],
+    [14,  9, 13, 11],
+    [11, 14,  9, 13],
+    [13, 11, 14,  9]], order=2^8)
+Hexadecimal representation
+['0x9', '0xd', '0xb', '0xe']
+['0xe', '0x9', '0xd', '0xb']
+['0xb', '0xe', '0x9', '0xd']
+['0xd', '0xb', '0xe', '0x9']
+XOR cost: 40
+XTIME cost: 48
+which is also MDS.
+(3, 2, 1, 2)
+(3, 2, 1, 3)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, x, 1, x + 1],
+    [x + 1, x + 1, x, 1],
+    [1, x + 1, x + 1, x],
+    [x, 1, x + 1, x + 1]], order=2^8)
+Integer representation
+GF([[3, 2, 1, 3],
+    [3, 3, 2, 1],
+    [1, 3, 3, 2],
+    [2, 1, 3, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x2', '0x1', '0x3']
+['0x3', '0x3', '0x2', '0x1']
+['0x1', '0x3', '0x3', '0x2']
+['0x2', '0x1', '0x3', '0x3']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^7 + x^2 + 1, x^4, x^5 + 1, x^6 + x],
+    [x^6 + x, x^7 + x^2 + 1, x^4, x^5 + 1],
+    [x^5 + 1, x^6 + x, x^7 + x^2 + 1, x^4],
+    [x^4, x^5 + 1, x^6 + x, x^7 + x^2 + 1]], order=2^8)
+Integer representation
+GF([[133,  16,  33,  66],
+    [ 66, 133,  16,  33],
+    [ 33,  66, 133,  16],
+    [ 16,  33,  66, 133]], order=2^8)
+Hexadecimal representation
+['0x85', '0x10', '0x21', '0x42']
+['0x42', '0x85', '0x10', '0x21']
+['0x21', '0x42', '0x85', '0x10']
+['0x10', '0x21', '0x42', '0x85']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(3, 2, 2, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, x, x, 1],
+    [1, x + 1, x, x],
+    [x, 1, x + 1, x],
+    [x, x, 1, x + 1]], order=2^8)
+Integer representation
+GF([[3, 2, 2, 1],
+    [1, 3, 2, 2],
+    [2, 1, 3, 2],
+    [2, 2, 1, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x3', '0x2', '0x2']
+['0x2', '0x1', '0x3', '0x2']
+['0x2', '0x2', '0x1', '0x3']
+XOR cost: 16
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x, x^4 + 1],
+    [x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1, x^6 + x^4 + x^2 + x + 1,
+     x^5 + x^4 + x],
+    [x^5 + x^4 + x, x^4 + 1, x^7 + x^6 + x^5 + x^4 + x^3 + 1,
+     x^6 + x^4 + x^2 + x + 1],
+    [x^6 + x^4 + x^2 + x + 1, x^5 + x^4 + x, x^4 + 1,
+     x^7 + x^6 + x^5 + x^4 + x^3 + 1]], order=2^8)
+Integer representation
+GF([[249,  87,  50,  17],
+    [ 17, 249,  87,  50],
+    [ 50,  17, 249,  87],
+    [ 87,  50,  17, 249]], order=2^8)
+Hexadecimal representation
+['0xf9', '0x57', '0x32', '0x11']
+['0x11', '0xf9', '0x57', '0x32']
+['0x32', '0x11', '0xf9', '0x57']
+['0x57', '0x32', '0x11', '0xf9']
+XOR cost: 60
+XTIME cost: 88
+which is also MDS.
+(3, 2, 2, 2)
+(3, 2, 2, 3)
+(3, 2, 3, 1)
+(3, 2, 3, 2)
+(3, 2, 3, 3)
+(3, 3, 1, 1)
+(3, 3, 1, 2)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, x + 1, 1, x],
+    [x, x + 1, x + 1, 1],
+    [1, x, x + 1, x + 1],
+    [x + 1, 1, x, x + 1]], order=2^8)
+Integer representation
+GF([[3, 3, 1, 2],
+    [2, 3, 3, 1],
+    [1, 2, 3, 3],
+    [3, 1, 2, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x3', '0x1', '0x2']
+['0x2', '0x3', '0x3', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x3', '0x1', '0x2', '0x3']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^7 + x^2 + 1, x^6 + x, x^5 + 1, x^4],
+    [x^4, x^7 + x^2 + 1, x^6 + x, x^5 + 1],
+    [x^5 + 1, x^4, x^7 + x^2 + 1, x^6 + x],
+    [x^6 + x, x^5 + 1, x^4, x^7 + x^2 + 1]], order=2^8)
+Integer representation
+GF([[133,  66,  33,  16],
+    [ 16, 133,  66,  33],
+    [ 33,  16, 133,  66],
+    [ 66,  33,  16, 133]], order=2^8)
+Hexadecimal representation
+['0x85', '0x42', '0x21', '0x10']
+['0x10', '0x85', '0x42', '0x21']
+['0x21', '0x10', '0x85', '0x42']
+['0x42', '0x21', '0x10', '0x85']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(3, 3, 1, 3)
+(3, 3, 2, 1)
+Found MDS matrix for GF 256 and p(x) = Poly(x^8 + x^4 + x^3 + x + 1, GF(2))
+Polynomial representation
+GF([[x + 1, x + 1, x, 1],
+    [1, x + 1, x + 1, x],
+    [x, 1, x + 1, x + 1],
+    [x + 1, x, 1, x + 1]], order=2^8)
+Integer representation
+GF([[3, 3, 2, 1],
+    [1, 3, 3, 2],
+    [2, 1, 3, 3],
+    [3, 2, 1, 3]], order=2^8)
+Hexadecimal representation
+['0x3', '0x3', '0x2', '0x1']
+['0x1', '0x3', '0x3', '0x2']
+['0x2', '0x1', '0x3', '0x3']
+['0x3', '0x2', '0x1', '0x3']
+XOR cost: 20
+XTIME cost: 12
+Inverse matrix:
+Polynomial representation
+GF([[x^4, x^5 + 1, x^6 + x, x^7 + x^2 + 1],
+    [x^7 + x^2 + 1, x^4, x^5 + 1, x^6 + x],
+    [x^6 + x, x^7 + x^2 + 1, x^4, x^5 + 1],
+    [x^5 + 1, x^6 + x, x^7 + x^2 + 1, x^4]], order=2^8)
+Integer representation
+GF([[ 16,  33,  66, 133],
+    [133,  16,  33,  66],
+    [ 66, 133,  16,  33],
+    [ 33,  66, 133,  16]], order=2^8)
+Hexadecimal representation
+['0x10', '0x21', '0x42', '0x85']
+['0x85', '0x10', '0x21', '0x42']
+['0x42', '0x85', '0x10', '0x21']
+['0x21', '0x42', '0x85', '0x10']
+XOR cost: 28
+XTIME cost: 88
+which is also MDS.
+(3, 3, 2, 2)
+(3, 3, 2, 3)
+(3, 3, 3, 1)
+(3, 3, 3, 2)
+(3, 3, 3, 3)
