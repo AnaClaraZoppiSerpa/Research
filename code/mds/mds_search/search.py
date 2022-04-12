@@ -5,6 +5,7 @@ import math
 import sys
 import argparse
 import datetime
+from baselines import *
 
 # Configurações
 GF2 = galois.GF(2)
@@ -13,6 +14,47 @@ debug = True
 experiment_id = ""
 
 # Funções auxiliares
+
+# Funções pra calcular custos de matriz
+def poly_xtime_cost(poly, ORDER):
+    if poly == 0:
+       return 0
+    degree = ORDER
+    degree_mask = 2**ORDER
+
+    while (poly & degree_mask) == 0:
+        degree_mask = degree_mask >> 1
+        degree -= 1
+    return degree
+
+def poly_xor_cost(poly, ORDER):
+    mask = 1
+    set_bits = 0
+    current_bit = 0
+    while current_bit < ORDER:
+        if (poly & mask) != 0:
+            set_bits += 1
+        mask = mask << 1
+        current_bit += 1
+    return set_bits - 1
+
+def matrix_xtime_cost(mat, ORDER):
+    total_cost = 0
+    for row in range(len(mat)):
+        row_cost = 0
+        for col in range(len(mat[row])):
+            row_cost += poly_xtime_cost(mat[row][col], ORDER)
+        total_cost += row_cost
+    return total_cost
+
+def matrix_xor_cost(mat, ORDER):
+    total_cost = 0
+    for row in range(len(mat)):
+        row_cost = len(mat) - 1
+        for col in range(len(mat[row])):
+            row_cost += poly_xor_cost(mat[row][col], ORDER)
+        total_cost += row_cost
+    return total_cost
 
 # Converter um inteiro pra um polinômio do pacote Galois
 def int_to_gf(int_poly):
@@ -56,47 +98,6 @@ def is_mds(mat_in_field):
 					return False
 		z += 1
 	return True
-
-# Funções pra calcular custos de matriz
-def poly_xtime_cost(poly, ORDER):
-    if poly == 0:
-       return 0
-    degree = ORDER
-    degree_mask = 2**ORDER
-
-    while (poly & degree_mask) == 0:
-        degree_mask = degree_mask >> 1
-        degree -= 1
-    return degree
-
-def poly_xor_cost(poly, ORDER):
-    mask = 1
-    set_bits = 0
-    current_bit = 0
-    while current_bit < ORDER:
-        if (poly & mask) != 0:
-            set_bits += 1
-        mask = mask << 1
-        current_bit += 1
-    return set_bits - 1
-
-def matrix_xtime_cost(mat, ORDER):
-    total_cost = 0
-    for row in range(len(mat)):
-        row_cost = 0
-        for col in range(len(mat[row])):
-            row_cost += poly_xtime_cost(mat[row][col], ORDER)
-        total_cost += row_cost
-    return total_cost
-
-def matrix_xor_cost(mat, ORDER):
-    total_cost = 0
-    for row in range(len(mat)):
-        row_cost = len(mat) - 1
-        for col in range(len(mat[row])):
-            row_cost += poly_xor_cost(mat[row][col], ORDER)
-        total_cost += row_cost
-    return total_cost
 
 # Funções principais
 
@@ -157,7 +158,44 @@ def save_matrix_data_gf256_rijndael_poly(matrix, inverse):
     f.write("\ninv:\n")
     f.write(str(inverse))
 
+    log = compare_to_baselines(xor_enc, xtime_enc, xor_dec, xtime_dec, xor_sum, xtime_sum)
+    f.write(log)
+
+    return {
+        "xor_enc": xor_enc,
+        "xtime_enc": xtime_enc,
+        "xor_dec": xor_dec,
+        "xtime_dec": xtime_dec,
+        "xor_sum": xor_sum,
+        "xtime_sum": xtime_sum,
+    }
+
     f.close()
+
+# Avaliar se uma matriz é MDS dado o corpo finito (o limite - 2**8, 2**4, etc - e o polinômio irredutível)
+def is_mds_for_field_returning_data(integer_matrix, upper_bound, poly):
+    field = galois.GF(upper_bound, irreducible_poly=poly)
+    matrix = int_to_gf_mat(integer_matrix, field)
+    is_ = is_mds(matrix)
+
+    data = {
+        "xor_enc": math.inf,
+        "xtime_enc": math.inf,
+        "xor_dec": math.inf,
+        "xtime_dec": math.inf,
+        "xor_sum": math.inf,
+        "xtime_sum": math.inf,
+    }
+
+    if is_:
+        inverse = np.linalg.inv(matrix)
+        assert(is_mds(inverse))
+        data = save_matrix_data_gf256_rijndael_poly(matrix, inverse)
+
+    return {
+        "is_mds": is_,
+        "data": data,
+    }
 
 # Avaliar se uma matriz é MDS dado o corpo finito (o limite - 2**8, 2**4, etc - e o polinômio irredutível)
 def is_mds_for_field(integer_matrix, upper_bound, poly):
