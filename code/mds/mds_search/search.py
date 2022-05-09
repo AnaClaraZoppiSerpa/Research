@@ -6,98 +6,14 @@ import sys
 import argparse
 import datetime
 from baselines import *
+from metrics_and_flags import *
 
 # Configurações
 GF2 = galois.GF(2)
 rijndael_poly = galois.Poly([1, 0, 0, 0, 1, 1, 0, 1, 1], field=GF2)
+photon_poly = galois.Poly.Degrees([4, 1, 0], field=GF2)
 debug = True
-experiment_id = ""
-
-# Funções auxiliares
-
-# Funções pra calcular custos de matriz
-def poly_xtime_cost(poly, ORDER):
-    if poly == 0:
-       return 0
-    degree = ORDER
-    degree_mask = 2**ORDER
-
-    while (poly & degree_mask) == 0:
-        degree_mask = degree_mask >> 1
-        degree -= 1
-    return degree
-
-def poly_xor_cost(poly, ORDER):
-    mask = 1
-    set_bits = 0
-    current_bit = 0
-    while current_bit < ORDER:
-        if (poly & mask) != 0:
-            set_bits += 1
-        mask = mask << 1
-        current_bit += 1
-    return set_bits - 1
-
-def matrix_xtime_cost(mat, ORDER):
-    total_cost = 0
-    for row in range(len(mat)):
-        row_cost = 0
-        for col in range(len(mat[row])):
-            row_cost += poly_xtime_cost(mat[row][col], ORDER)
-        total_cost += row_cost
-    return total_cost
-
-def matrix_xor_cost(mat, ORDER):
-    total_cost = 0
-    for row in range(len(mat)):
-        row_cost = len(mat) - 1
-        for col in range(len(mat[row])):
-            row_cost += poly_xor_cost(mat[row][col], ORDER)
-        total_cost += row_cost
-    return total_cost
-
-# Converter um inteiro pra um polinômio do pacote Galois
-def int_to_gf(int_poly):
-    coeffs = []
-    for x in bin(int_poly)[2:]:
-        coeffs.append(int(x))
-
-    return galois.Poly(coeffs, field=GF2)
-
-# Converter uma matriz de inteiros pra uma matriz com elementos de um corpo finito
-def int_to_gf_mat(int_mat, field):
-    rows = len(int_mat)
-    cols = len(int_mat[0])
-
-    gf_mat = field.Zeros((rows, cols))
-
-    for i in range(rows):
-        for j in range(cols):
-            gf_mat[i][j] = int_mat[i][j]
-
-    return gf_mat
-
-# Ver se uma matriz é MDS, sendo essa matriz uma matriz com elementos de corpos finitos
-def is_mds(mat_in_field):
-	if np.linalg.det(mat_in_field) == 0:
-		return False
-
-	dim = len(mat_in_field)
-
-	dim_list = [i for i in range(dim)]
-
-	z = 1
-	while z < dim:
-		possibilities = list(itertools.combinations(dim_list, z))
-
-		for rows_to_be_removed in possibilities:
-			for columns_to_be_removed in possibilities:
-				submat = np.delete(mat_in_field, rows_to_be_removed, axis=0)
-				submat = np.delete(submat, columns_to_be_removed, axis=1)
-				if np.linalg.det(submat) == 0:
-					return False
-		z += 1
-	return True
+experiment_id = "trying_photon6x6/"
 
 # Funções principais
 
@@ -273,6 +189,7 @@ def array_to_hadamard_matrix(array):
         for j in range(n):
             xor = i ^ j
             mat[i][j] = array[xor]
+    return mat
 
 def array_to_vandermonde_matrix(array):
     print("Array to Vandermonde - Not yet implemented!")
@@ -314,8 +231,18 @@ def look_for_mds(coefficient_upper_bound, array_length, field_upper_bound, field
         is_mds_for_field(equivalent_matrix, field_upper_bound, field_poly)
 
 def gf256_rijndael_poly_experiment(last_coeff, matrix_dim, type):
-    array_length = matrix_dim
+    if type == 'generic':
+        array_length = matrix_dim**2
+    else:
+        array_length = matrix_dim
     look_for_mds(last_coeff+1, array_length, 2**8, rijndael_poly, type)
+
+def gf16_photon_poly_experiment(last_coeff, matrix_dim, type):
+    if type == 'generic':
+        array_length = matrix_dim**2
+    else:
+        array_length = matrix_dim
+    look_for_mds(last_coeff+1, array_length, 2**4, photon_poly, type)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -328,6 +255,7 @@ if __name__ == '__main__':
     last_coeff = int(args.last_coeff)
     dim = int(args.dim)
     type = str(args.type)
-    experiment_id = args.exp_id
+    experiment_id += args.exp_id
 
-    gf256_rijndael_poly_experiment(last_coeff, dim, type)
+    #gf256_rijndael_poly_experiment(last_coeff, dim, type)
+    gf16_photon_poly_experiment(last_coeff, dim, type)

@@ -1,0 +1,20 @@
+xor_enc: 9
+xtime_enc: 5
+=========
+xor_dec: 26
+xtime_dec: 58
+=========
+xor_sum: 35
+xtime_sum: 63
+mat:
+GF([[1, 3, 3],
+    [2, 1, 3],
+    [1, 1, 2]], order=2^8)
+inv:
+GF([[225,  72, 112],
+    [145, 225,  72],
+    [ 56, 217, 145]], order=2^8)
+===================================
+Comparing to curupira_3x3_cheapest
+- beats xor_enc: 9 vs 12
+- beats xtime_enc: 5 vs 15

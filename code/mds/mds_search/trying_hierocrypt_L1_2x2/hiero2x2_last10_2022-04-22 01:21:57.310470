@@ -1,0 +1,17 @@
+xor_enc: 6
+xtime_enc: 10
+=========
+xor_dec: 14
+xtime_dec: 28
+=========
+xor_sum: 20
+xtime_sum: 38
+mat:
+GF([[ 8,  7],
+    [ 6, 10]], order=2^8)
+inv:
+GF([[205, 133],
+    [178, 163]], order=2^8)
+===================================
+Comparing to hierocrypt_L1_2x2
+- beats xor_enc: 6 vs 8

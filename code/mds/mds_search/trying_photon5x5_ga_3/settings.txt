@@ -1,0 +1,24 @@
+settings_upper_bound = 256
+GF2 = galois.GF(2)
+rijndael_poly = galois.Poly([1, 0, 0, 0, 1, 1, 0, 1, 1], field=GF2)
+settings_poly = rijndael_poly
+
+settings_max_iterations = 1000
+crossover_type = "alternating" # alternating | midpoint | random
+mutation_type = "largest_replace_by_one"
+# random_decrease | random_replace_by_random | largest_decrease | largest_replace_by_one | largest_replace_by_random
+selection_type = "most_fit" # randomly | most_fit
+replacement_type = "most_fit" # most_fit | random | only_new
+mutation_rate = 0.5 # between 0 and 1
+
+last_field_element = 255
+
+# Fitness settings - change according to optimization priority
+weights = {
+    'xtime': -0.5,
+    'xor': -0.5,
+    'xtime_inv': -0.0,
+    'xor_inv': -0.0,
+    'xtime_sum': -2.0,
+    'xor_sum': -1.0,
+}

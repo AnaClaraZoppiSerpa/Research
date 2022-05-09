@@ -1,0 +1,14 @@
+xor_enc: 8
+xtime_enc: 14
+=========
+xor_dec: 16
+xtime_dec: 25
+=========
+xor_sum: 24
+xtime_sum: 39
+mat:
+GF([[  1, 142],
+    [  3,  74]], order=2^8)
+inv:
+GF([[103,  34],
+    [254, 163]], order=2^8)

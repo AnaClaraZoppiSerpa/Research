@@ -1,0 +1,13 @@
+Hierocrypt L1 2x2
+['0x5', '0x7']
+['0xa', '0xb']
+mds True
+xor 8
+xtime 10
+inverse
+['0xc', '0xa']
+['0x5', '0xb']
+xor 7
+xtime 11
+mds True
+Not involutory

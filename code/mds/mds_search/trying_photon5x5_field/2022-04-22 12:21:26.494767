@@ -1,0 +1,27 @@
+xor_enc: 25
+xtime_enc: 15
+=========
+xor_dec: 30
+xtime_dec: 55
+=========
+xor_sum: 55
+xtime_sum: 70
+mat:
+GF([[1, 1, 2, 3, 2],
+    [2, 1, 1, 2, 3],
+    [3, 2, 1, 1, 2],
+    [2, 3, 2, 1, 1],
+    [1, 2, 3, 2, 1]], order=2^4)
+inv:
+GF([[ 8,  2, 14,  2,  8],
+    [ 8,  8,  2, 14,  2],
+    [ 2,  8,  8,  2, 14],
+    [14,  2,  8,  8,  2],
+    [ 2, 14,  2,  8,  8]], order=2^4)
+===================================
+Comparing to photon_5x5
+- beats xor_enc: 25 vs 44
+- beats xor_dec: 30 vs 44
+- beats xtime_enc: 15 vs 52
+- beats xor_sum: 55 vs 88
+- beats xtime_sum: 70 vs 104

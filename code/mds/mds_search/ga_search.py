@@ -9,29 +9,32 @@ import galois
 import math
 import pprint
 from search import is_mds_for_field_returning_data
+from aux import get5x5array_1, get5x5array_2, get5x5array_3, get5x5array_4
 
-settings_upper_bound = 256
+settings_upper_bound = 16 #256 for GF(2^8) #16 for GF(2^4)
 GF2 = galois.GF(2)
 rijndael_poly = galois.Poly([1, 0, 0, 0, 1, 1, 0, 1, 1], field=GF2)
-settings_poly = rijndael_poly
+photon_poly = galois.Poly.Degrees([4, 1, 0], field=GF2)
+settings_poly = photon_poly
 
-settings_max_iterations = 5
-crossover_type = "alternating"
-mutation_type = "largest_decrease"
-selection_type = "randomly"
-replacement_type = "random"
-mutation_rate = 0.9
+settings_max_iterations = 1000
+crossover_type = "random" # alternating | midpoint | random
+mutation_type = "random_replace_by_random"
+# random_decrease | random_replace_by_random | largest_decrease | largest_replace_by_one | largest_replace_by_random
+selection_type = "randomly" # randomly | most_fit
+replacement_type = "most_fit" # most_fit | random | only_new
+mutation_rate = 0.9 # between 0 and 1
 
-last_field_element = 255
+last_field_element = 15 # 255 for GF(2^8) # 15 for GF(2^4)
 
 # Fitness settings - change according to optimization priority
 weights = {
-    'xtime': -1.0,
-    'xor': 0.0,
-    'xtime_inv': 0.0,
-    'xor_inv': 0.0,
-    'xtime_sum': -0.5,
-    'xor_sum': 0.0,
+    'xtime': -0.5,
+    'xor': -0.5,
+    'xtime_inv': -0.0,
+    'xor_inv': -0.0,
+    'xtime_sum': -2.0,
+    'xor_sum': -1.0,
 }
 
 def vector_to_matrix(vector):
@@ -294,11 +297,12 @@ def replace_population(population, new_children, new_size):
         return replacement_only_new(population, new_children, new_size)
 
 def initial_population():
-    ini1 = get_vector_dict([1, 2, 3, 4])
-    ini2 = get_vector_dict([5, 6, 7, 8])
-    ini3 = get_vector_dict([9, 10, 11, 12])
-    ini4 = get_vector_dict([12, 13, 14, 15])
-    return [ini1]
+    ini1 = get_vector_dict(get5x5array_1())
+    ini2 = get_vector_dict(get5x5array_2())
+    ini3 = get_vector_dict(get5x5array_3())
+    ini4 = get_vector_dict(get5x5array_4())
+
+    return [ini1, ini2, ini3, ini4]
 
 def filter_for_mds(elements):
     only_mds_elements = []
@@ -309,20 +313,56 @@ def filter_for_mds(elements):
 
 def get_population_stats(population):
     # Best individual and best fitness
+    best_x = {}
+    best_fitness = -math.inf
+    for x in population:
+        if x['fitness'] > best_fitness:
+            best_fitness = x['fitness']
+            best_x = x
+
     # Worst individual and worst fitness
+    worst_x = {}
+    worst_fitness = math.inf
+    for x in population:
+        if x['fitness'] < worst_fitness:
+            worst_fitness = x['fitness']
+            worst_x = x
+
     # Average fitness
+    fitness_sum = 0.0
+    for x in population:
+        fitness_sum += x['fitness']
+
+    fitness_avg = fitness_sum / len(population)
+
+    return {
+        "best_x": best_x,
+        "worst_x": worst_x,
+        "avg_fitness": fitness_avg
+    }
+
 
 def evolution():
     population = filter_for_mds(initial_population())
 
     iterations = 0
 
+    stats = {}
+
     while (iterations < settings_max_iterations and len(population) > 1):
+        stats = get_population_stats(population)
+        print("GA stats: best fitness =", stats['best_x']['fitness'], "worst fitness =", stats['worst_x']['fitness'], "avg fitness =", stats['avg_fitness'])
+
         parents = select_to_reproduce(4, population)
         new_children = reproduce(parents)
         only_mds = filter_for_mds(new_children)
         population = replace_population(population, only_mds, 4)
-        print("GA log: iteration =", iterations, "children:", len(new_children), "MDS children:", len(only_mds), "new population size:", len(population))
+
+        print("GA log: iteration =", str(iterations) + "/" + str(settings_max_iterations), "children:", len(new_children), "MDS children:", len(only_mds), "new population size:", len(population))
+
         iterations += 1
+
+    print("GA ended! Best individual:")
+    pprint.pprint(stats['best_x'])
 
 evolution()

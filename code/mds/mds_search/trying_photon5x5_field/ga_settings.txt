@@ -1,0 +1,15 @@
+settings_upper_bound = 16 #256 for GF(2^8) #16 for GF(2^4)
+GF2 = galois.GF(2)
+rijndael_poly = galois.Poly([1, 0, 0, 0, 1, 1, 0, 1, 1], field=GF2)
+photon_poly = galois.Poly.Degrees([4, 1, 0], field=GF2)
+settings_poly = photon_poly
+
+settings_max_iterations = 1000
+crossover_type = "random" # alternating | midpoint | random
+mutation_type = "random_replace_by_random"
+# random_decrease | random_replace_by_random | largest_decrease | largest_replace_by_one | largest_replace_by_random
+selection_type = "randomly" # randomly | most_fit
+replacement_type = "most_fit" # most_fit | random | only_new
+mutation_rate = 0.9 # between 0 and 1
+
+last_field_element = 15 # 255 for GF(2^8) # 15 for GF(2^4)
