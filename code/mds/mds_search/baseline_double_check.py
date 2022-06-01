@@ -142,7 +142,83 @@ square_mat = [
 
 ################################ Shirai C13 ######################################################################
 
+# Gupta-Ray
+# x8+x4+x3+x+1
+gupta_ray_poly = galois.Poly([1, 0, 0, 0, 1, 1, 0, 1, 1], field=GF2)
+gupta_ray_field = galois.GF(2**8, irreducible_poly=gupta_ray_poly)
+
+gupta_ray_mat_0 = [
+    [0x01, 0x02, 0x03, 0xd0],
+    [0x02, 0x01, 0xd0, 0x03],
+    [0x03, 0xd0, 0x01, 0x02],
+    [0xd0, 0x03, 0x02, 0x01],
+]
+"""
+01_x & 02_x & 03_x & d0_x\\
+02_x & 01_x & d0_x & 03_x\\
+03_x & d0_x & 01_x & 02_x\\
+d0_x & 03_x & 02_x & 01_x
+"""
+
+gupta_ray_3x3 = [
+    [0x7a, 0xf4, 0x8e],
+    [0xf4, 0x7a, 0x01],
+    [0x8e, 0x01, 0x7a]
+]
+
+gupta_ray_example2 = [
+    [0x01, 0x02, 0xfc, 0xfe],
+    [0x02, 0x01, 0xfe, 0xfc],
+    [0xfc, 0xfe, 0x01, 0x02],
+    [0xfe, 0xfc, 0x02, 0x01]
+]
+
+def ff_hadamard_from_row(first_row):
+    n = len(first_row)
+    ff_had = [[0 for i in range(n)] for j in range(n)]
+    for i in range(n):
+        for j in range(n):
+            ff_had[i][j] = first_row[i ^ j]
+    return ff_had
+
+gupta_ray_example3 = ff_hadamard_from_row([0x01, 0x02, 0x06, 0x8c, 0x30, 0xfb, 0x87, 0xc4])
+
+"""
+1_x & 2_x & 6_x & 8c_x & 30_x & fb_x & 87_x & c4_x\\
+2_x & 1_x & 8c_x & 6_x & fb_x & 30_x & c4_x & 87_x\\
+6_x & 8c_x & 1_x & 2_x & 87_x & c4_x & 30_x & fb_x\\
+8c_x & 6_x & 2_x & 1_x & c4_x & 87_x & fb_x & 30_x\\
+30_x & fb_x & 87_x & c4_x & 1_x & 2_x & 6_x & 8c_x\\
+fb_x & 30_x & c4_x & 87_x & 2_x & 1_x & 8c_x & 6_x\\
+87_x & c4_x & 30_x & fb_x & 6_x & 8c_x & 1_x & 2_x\\
+c4_x & 87_x & fb_x & 30_x & 8c_x & 6_x & 2_x & 1_x
+"""
+
+gupta_ray_example4 = ff_hadamard_from_row([0x01, 0x03, 0x08, 0xb2, 0x0d, 0x60, 0xe8, 0x1c, 0x0f, 0x2c, 0xa2, 0x8b, 0xc9, 0x7a, 0xac, 0x35])
+
+gupta_ray_example5 = ff_hadamard_from_row([0x01, 0x02, 0x04, 0x69, 0x07, 0xec, 0xcc, 0x72, 0x0b, 0x54, 0x29, 0xbe, 0x74, 0xf9, 0xc4, 0x87, 0x0e, 0x47, 0xc2, 0xc3, 0x39, 0x8e, 0x1c, 0x85, 0x55, 0x26, 0x1e, 0xaf, 0x68, 0xb6, 0x59, 0x1f])
+
+sim_khoo_poly_0x13 = galois.Poly([1, 0, 0, 1, 1], field=GF2)
+sim_khoo_field_gf4_0x13 = galois.GF(2**4, irreducible_poly=sim_khoo_poly_0x13)
+
+sim_khoo_poly_0x165 = galois.Poly([1,0,1,1,0,0,1,0,1], field=GF2)
+sim_khoo_field_gf8_0x165 = galois.GF(2**8, irreducible_poly=sim_khoo_poly_0x165)
+
+sim_khoo_pg10 = ff_hadamard_from_row([15, 2, 12, 5, 10, 4, 3, 8])
+sim_khoo_157 = ff_hadamard_from_row([0x1, 0x4, 0x9, 0xd])
+sim_khoo_158 = ff_hadamard_from_row([0x01, 0x02, 0xb0, 0xb2])
+
+print(sim_khoo_poly_0x165)
+
+#get_mat_info_for_mds_table(sim_khoo_157, sim_khoo_field_gf4_0x13, sim_khoo_poly_0x13.degree, "Sim Khoo 157")
+#get_mat_info_for_mds_table(sim_khoo_pg10, sim_khoo_field, sim_khoo_poly.degree, "Sim Khoo pg 10")
+#get_mat_info_for_mds_table(gupta_ray_example5, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray Example 4")
+#get_mat_info_for_mds_table(gupta_ray_example4, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray Example 4")
+#get_mat_info_for_mds_table(gupta_ray_example3, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray Example 3")
+#get_mat_info_for_mds_table(gupta_ray_example2, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray Example 2")
+#get_mat_info_for_mds_table(gupta_ray_3x3, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray 3x3 Mat From Example 1")
+#get_mat_info_for_mds_table(gupta_ray_mat_0, gupta_ray_field, gupta_ray_field.irreducible_poly.degree, "Gupta Ray Non Inv Mat From Example 1")
 #get_mat_info_for_mds_table(hierocrypt_2x2_l1_mdsh, hierocrypt_2x2_field, hierocrypt_2x2_field.irreducible_poly.degree, "Hierocrypt L1 2x2")
 #get_mat_info_for_mds_table(curupira_mat, curupira_field, curupira_field.irreducible_poly.degree, "Curupira (3x3 cheapest, involutory)")
 #get_mat_info_for_mds_table(photon5x5_mat, photon_field, photon_field.irreducible_poly.degree, "PHOTON only 5x5")
-get_mat_info_for_mds_table(photon6x6_mat, photon_field, photon_field.irreducible_poly.degree, "PHOTON only 6x6")
+#get_mat_info_for_mds_table(photon6x6_mat, photon_field, photon_field.irreducible_poly.degree, "PHOTON only 6x6")
