@@ -1,0 +1,83 @@
+Matrix (\ref{mat:whirlpool}) is used in the Whirlpool-0 hash function. The irreducible polynomial of the field is $p(x) = x^8+x^4+x^3+x^2+1$, and the inverse matrix is (\ref{mat:whirlpool-inv}).
+
+\begin{equation}\label{mat:whirlpool}
+\begin{bmatrix}
+01_x & 01_x & 03_x & 01_x & 05_x & 08_x & 09_x & 05_x\\
+05_x & 01_x & 01_x & 03_x & 01_x & 05_x & 08_x & 09_x\\
+09_x & 05_x & 01_x & 01_x & 03_x & 01_x & 05_x & 08_x\\
+08_x & 09_x & 05_x & 01_x & 01_x & 03_x & 01_x & 05_x\\
+05_x & 08_x & 09_x & 05_x & 01_x & 01_x & 03_x & 01_x\\
+01_x & 05_x & 08_x & 09_x & 05_x & 01_x & 01_x & 03_x\\
+03_x & 01_x & 05_x & 08_x & 09_x & 05_x & 01_x & 01_x\\
+01_x & 03_x & 01_x & 05_x & 08_x & 09_x & 05_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:whirlpool-inv}
+\begin{bmatrix}
+a5_x & 07_x & 95_x & 9e_x & 0c_x & a7_x & 01_x & ea_x\\
+d1_x & b3_x & e8_x & 5a_x & 01_x & ab_x & 3d_x & 6c_x\\
+f8_x & 3c_x & 8a_x & 12_x & 2e_x & 8b_x & cc_x & 5e_x\\
+73_x & 27_x & 4e_x & e0_x & bf_x & c0_x & 24_x & 4a_x\\
+85_x & 17_x & 1c_x & 47_x & 0d_x & 4e_x & 5b_x & aa_x\\
+17_x & b0_x & d6_x & 2d_x & 6c_x & 26_x & ef_x & cb_x\\
+dd_x & ce_x & 15_x & da_x & 6c_x & 17_x & 03_x & fc_x\\
+ec_x & 78_x & d8_x & ea_x & da_x & 21_x & 17_x & b1_x
+\end{bmatrix}
+\end{equation}
+
+In \cite{Whirlpool2003}, it is claimed that (\ref{mat:whirlpool}) is MDS. However, in \cite{Shirai2003}, Shirai and Shibutani find singular submatrices, which implies that the matrix is, in fact, not MDS. They also present alternative circulant matrices which are MDS.
+
+One of the singular submatrices found in \cite{Shirai2003} is matrix (\ref{mat:singular-whirlpool}). Other singular submatrices were found, for further detail we refer the reader to \cite{Shirai2003}.
+
+\begin{equation}\label{mat:singular-whirlpool}
+\begin{bmatrix}
+  01_x & 05_x\\
+  01_x & 05_x
+\end{bmatrix}
+\end{equation}
+
+Furthermore, Shirai and Shibutani obtain 224 MDS matrices satisfying the desired conditions for Whirlpool:
+\begin{itemize}
+  \item Branch number equal to 9;
+  \item As many 1-elements as possible (namely, 3);
+  \item Hamming weight of any element is at most 2.
+\end{itemize}
+
+Matrices from \eqref{shirai-0} to \eqref{shirai-13} are the ones obtained by Shirai. They point out that, reversing elements and applying rotations to each of the $C_i$, it is possible to obtain additional MDS matrices, totalizing thus 224 MDS matrices. For further detail please refer to \cite{Shirai2003}. The authors of Whirlpool decided to replace the non-MDS matrix by Shirai's $C_7$ matrix, and therefore Whirlpool-0 refers to the version with the non-MDS matrix, prior to the correction, and Whirlpool refers to the corrected version, with the MDS matrix, which was submitted (and accepted) as a standard at ISO/IEC 10118-3. For further detail on the history and the updates of Whirlpool, the reader may refer to the Whirlpool web page \cite{WhirlpoolWebPage}.
+
+\begin{gather}
+C_0 = rcirc(01_x, 01_x, 02_x, 01_x, 05_x, 08_x, 09_x, 04_x)\label{shirai-0}\\
+C_1 = rcirc(01_x, 01_x, 02_x, 01_x, 06_x, 09_x, 08_x, 03_x)\label{shirai-1}\\
+C_2 = rcirc(01_x, 01_x, 02_x, 01_x, 08_x, 09_x, 04_x, 05_x)\label{shirai-2}\\
+C_3 = rcirc(01_x, 01_x, 02_x, 01_x, 09_x, 06_x, 04_x, 03_x)\label{shirai-3}\\
+C_4 = rcirc(01_x, 01_x, 02_x, 06_x, 05_x, 09_x, 01_x, 08_x)\label{shirai-4}\\
+C_5 = rcirc(01_x, 01_x, 03_x, 01_x, 04_x, 09_x, 05_x, 06_x)\label{shirai-5}\\
+C_6 = rcirc(01_x, 01_x, 03_x, 01_x, 08_x, 04_x, 09_x, 06_x)\label{shirai-6}\\
+C_7 = rcirc(01_x, 01_x, 04_x, 01_x, 08_x, 05_x, 02_x, 09_x)\label{shirai-7}\\
+C_8 = rcirc(01_x, 01_x, 04_x, 01_x, 09_x, 03_x, 02_x, 06_x)\label{shirai-8}\\
+C_9 = rcirc(01_x, 01_x, 04_x, 03_x, 06_x, 08_x, 01_x, 09_x)\label{shirai-9}\\
+C_{10} = rcirc(01_x, 01_x, 05_x, 01_x, 04_x, 06_x, 03_x, 09_x)\label{shirai-10}\\
+C_{11} = rcirc(01_x, 01_x, 05_x, 08_x, 02_x, 09_x, 01_x, 06_x)\label{shirai-11}\\
+C_{12} = rcirc(01_x, 01_x, 08_x, 01_x, 06_x, 03_x, 02_x, 09_x)\label{shirai-12}\\
+C_{13} = rcirc(01_x, 01_x, 08_x, 02_x, 04_x, 05_x, 01_x, 09_x)\label{shirai-13}
+\end{gather}
+
+The inverses of Shirai's matrices from $C_0$ to $C_{13}$ are the following.
+
+\begin{gather}
+C_0^{-1} = rcirc(b5_x, 98_x, 23_x, fa_x, 23_x, a5_x, b6_x, 30_x)\label{shirai-0-inv}\\
+C_1^{-1} = rcirc(bb_x, de_x, a0_x, df_x, 4a_x, 55_x, 7a_x, c5_x)\label{shirai-1-inv}\\
+C_2^{-1} = rcirc(04_x, a4_x, cb_x, af_x, c2_x, 3e_x, 0e_x, c2_x)\label{shirai-2-inv}\\
+C_3^{-1} = rcirc(4f_x, aa_x, 2c_x, 0c_x, 84_x, 76_x, 14_x, bb_x)\label{shirai-3-inv}\\
+C_4^{-1} = rcirc(5b_x, e8_x, ed_x, e2_x, 33_x, 98_x, 82_x, 94_x)\label{shirai-4-inv}\\
+C_5^{-1} = rcirc(87_x, d4_x, 76_x, 80_x, 9d_x, e4_x, 24_x, c5_x)\label{shirai-5-inv}\\
+C_6^{-1} = rcirc(ad_x, ef_x, 44_x, 71_x, a8_x, e2_x, 42_x, 7e_x)\label{shirai-6-inv}\\
+C_7^{-1} = rcirc(04_x, af_x, 0e_x, a4_x, c2_x, c2_x, cb_x, 3e_x)\label{shirai-7-inv}\\
+C_8^{-1} = rcirc(4f_x, 0c_x, 14_x, aa_x, 84_x, bb_x, 2c_x, 76_x)\label{shirai-8-inv}\\
+C_9^{-1} = rcirc(e2_x, 44_x, 7e_x, a8_x, ef_x, 42_x, 71_x, ad_x)\label{shirai-9-inv}\\
+C_{10}^{-1} = rcirc(87_x, 80_x, 24_x, d4_x, 9d_x, c5_x, 76_x, e4_x)\label{shirai-10-inv}\\
+C_{11}^{-1} = rcirc(ed_x, 98_x, 5b_x, e2_x, 82_x, e8_x, 33_x, 94_x)\label{shirai-11-inv}\\
+C_{12}^{-1} = rcirc(bb_x, df_x, 7a_x, de_x, 4a_x, c5_x, a0_x, 55_x)\label{shirai-12-inv}\\
+C_{13}^{-1} = rcirc(a5_x, 23_x, 30_x, 23_x, 98_x, b6_x, fa_x, b5_x)\label{shirai-13-inv}
+\end{gather}

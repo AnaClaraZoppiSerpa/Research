@@ -1,0 +1,80 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{breqn}
+\usepackage{adjustbox}
+\usepackage{changepage}
+\usepackage{rotating}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{ntheorem}
+%\usepackage[table_x &xcdraw]{xcolor}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{breqn}
+
+% Definition
+\newtheorem{definition}{Definition}{\bfseries}{\itshape}
+%\newtheorem*{definition*}{Definition}{\bfseries}{\itshape}
+
+% Theorem
+\newtheorem{theorem}{Theorem}{\bfseries}{\itshape}
+\newtheorem{corollary}{Corollary}{\bfseries}{\itshape}
+\newtheorem{fact}{Fact}{\bfseries}{\itshape}
+\newtheorem{lemma}{Lemma}{\bfseries}{\itshape}
+\newtheorem{proposition}{Proposition}{\bfseries}{\itshape}
+
+% Concept
+\newtheorem*{concept}{}{\bfseries}{\itshape}
+
+\title{A history of the application of MDS matrices in cryptography}
+\author{Ana Clara Zoppi Serpa\\ Prof. Dr. Ricardo Dahab \\ Dr. Jorge Nakahara Jr.}
+\date{\today}
+
+\begin{document}
+%\nocite{*}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{A history of the application of MDS matrices in cryptography}
+\input{intro.tex}
+
+\section{Preliminaries}
+\input{prelim.tex}
+
+\section{Computing \textbf{xtime} and \textbf{xor} of the matrices}
+\input{xor_and_xtime.tex}
+
+\section{MDS matrix catalogue}
+
+\input{matrix_table.tex}
+\input{matrix_notes.tex}
+
+\section{A note on Hierocrypt 3 and Hierocrypt-L1}
+\input{hierocrypt.tex}
+
+\section{A note on Whirlpool-0}\label{sec:whirlpool}
+\input{whirlpool.tex}
+
+\section{About Whirlwind and its (possibly) non-MDS matrix}\label{sec:whirlwind-non-mds}
+\input{whirlwind.tex}
+
+\section{Non-MDS matrix catalogue}
+\input{non-mds-table.tex}
+
+\section{About the irreducible polynomials}
+\input{poly-study.tex}
+
+\section{Conclusions}
+\textcolor{red}{yet to be written}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

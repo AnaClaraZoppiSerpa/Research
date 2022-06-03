@@ -1,0 +1,485 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{breqn}
+\usepackage{adjustbox}
+\usepackage{changepage}
+\usepackage{rotating}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{ntheorem}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{longtable}
+\usepackage{caption}
+
+\DeclareCaptionType{Box}
+
+% Definition
+\newtheorem{definition}{Definition}{\bfseries}{\itshape}
+\newtheorem*{definition*}{Definition}{\bfseries}{\itshape}
+
+% Theorem
+\newtheorem{theorem}{Theorem}{\bfseries}{\itshape}
+
+% Concept
+\newtheorem*{concept}{}{\bfseries}{\itshape}
+
+\title{Obtaining Difference Distribution Tables of AES and DES}
+\author{Ana Clara Zoppi Serpa\\ Prof. Dr. Ricardo Dahab \\ Dr. Jorge Nakahara Jr.}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Obtaining Difference Distribution Tables of AES and DES}
+
+Differential Cryptanalysis was invented by Eli Biham and Adi Shamir \cite{Shamir}. In \cite{Shamir} and \cite{ShamirBook}, they describe how to apply this method to the DES cipher. They show it is possible to break a reduced variant of DES (an 8-round DES), and how to break other reduced variants (with up to 15 rounds) in less than $2^{56}$ steps. They are also able to break the full 16-round DES, although the cost is greater than the $2^{64}$ of an exhaustive key search.
+
+The method analyses differences in plaintext and ciphertext pairs. Such differences can be used to assign probabilities to possible keys and, further on, to identify the most probable key.
+
+In this chapter, we focus on the \emph{Difference Distribution Table (DDT)}, which is a core component for a Differential Cryptanalysis (DC) attack. First, we show how to obtain them for the DES cipher \cite{DES-FIPS}, and discuss their relationship with the DES design strategies \cite{Coppersmith1994} against DC attacks. Then, we apply the same method to obtain the DDT for the AES $S$-Box and its inverse.
+
+We assume the reader is familiar with:
+\begin{itemize}
+    \item The AES cipher structure
+    \item The DES cipher structure
+    \item $S$-Boxes
+    \item Bitwise XOR
+\end{itemize}
+
+\section{Notation}
+\begin{itemize}
+    \item $M$, $M^*$: plaintexts
+    \item $M'$: plaintext difference of $M$ and $M^*$
+    \item $X$, $X^*$: intermediate variables during encryption
+    \item $X'$: difference of $X$ and $X^*$
+    \item $Y$, $Y^*$: $S$-Box outputs
+    \item $S_1, S_2, S_3, S_4, S_5, S_6, S_7, S_8$: DES $S$-Boxes
+    \item $IP$: the initial permutation of DES
+    \item $IP^{-1}$: the inverse of the initial permutation of DES
+    \item $P$: the DES bit permutation $P$
+    \item $E$: the DES expansion function $E$
+    \item $K$: key
+    \item $\mathcal{D}$: a Difference Distribution Table (DDT)
+    \item $k_i$: key bits shared between $S$-Box inputs
+    \item $n_s$: input size (in bits) of an $S$-Box
+    \item $n_j$: the size (in bits) of the joint input of neighbor $S$-Boxes
+    \item $sh_k$: number of shared key bits between neighbor $S$-Boxes
+\end{itemize}
+
+\section{Acronyms}
+\begin{itemize}
+    \item DES: Data Encryption Standard
+    \item AES: Advanced Encryption Standard
+    \item DC: Differential Cryptanalysis
+    \item $S$-Box: Substitution Box
+    \item DDT: Difference Distribution Table
+\end{itemize}
+
+\section{Fundamentals}
+
+\subsection{Differences (XORs)}\label{sec:differences}
+
+\begin{concept}[Plaintext difference (XOR)]
+Let $M$ and $M^*$ denote two plaintexts. The plaintext difference, also called \emph{plaintext XOR}, is 
+
+$$
+M' = M \oplus M^*.
+$$
+\end{concept}
+
+\begin{concept}[Intermediate variable difference (XOR)]
+Let $X$ and $X^*$ denote any intermediate variable during the encryption of $M$ and $M^*$, respectively. The difference (XOR) of these intermediate variables is 
+
+$$
+X' = X \oplus X^*.
+$$
+\end{concept}
+
+$S$-Box inputs and outputs are intermediate variables and, therefore, the concept of difference can be applied to them.
+
+\begin{concept}[Input and output difference of an $S$-Box]
+Let $X$ and $X^*$ be inputs to an $S$-Box $S$, and $Y$ and $Y^*$ be the respective outputs. The input difference is 
+
+$$
+X' = X \oplus X^*,
+$$
+
+and the output difference is 
+
+$$
+Y' = Y \oplus Y^* = S(X) \oplus S(X^*).
+$$
+\end{concept}
+
+In \cite{Shamir}, the authors mount a DC attack with a bottom-up approach. They start by considering $S$-boxes input and output differences. Then they expand the concept to the whole $F$ function. Then, to a complete round of the cipher and, finally, they push the analysis forward towards an arbitrary number of rounds $N$.
+
+It is worth noting that the $S$-Boxes, in the case of DES, are the only non-linear component. Other components (e.g $IP$, $P$, $IP^{-1}$ and $E$) are linear. Their output differences are deterministic, whilst $S$-Box output differences are not. Therefore, the DES $S$-Boxes require a probabilistic analysis with \emph{Difference Distribution Tables (DDTs)} (see Definition \ref{def:ddt}). They are highly relevant for the attack development.
+
+Furthermore, the usage of the XOR to compute the difference is due the fact that the key is combined to the cipher state by means of an XOR. Consequently, the usage of differences (instead of any other individual intermediate value of the cipher state) allows the attacker to track the behavior of the DES components throughout the cipher, which would not be possible using individual values, since the key is unknown. For example, an $S$-Box input XOR does not depend on the key. However, the output XOR does. Therefore, choosing input differences and observing output differences, it is possible to exploit probabilistic relationships between the key and intermediate states of the cipher. If the key was combined by means of another operator, it would be necessary to define input and output differences in another way. In a more general way, differences can be defined as follows.
+
+\begin{concept}[Plaintext difference]
+Let $M$ and $M^*$ denote two plaintexts, $\bullet$ be the operator which combines the key to the cipher state, and $M^{*^{-1}}$ be the inverse of $M^*$ with respect to $\bullet$. The plaintext difference is 
+
+$$
+M' = M \bullet M^{*^{-1}}.
+$$
+Note that, when $\bullet$ is the XOR operator, $M^{*^{-1}} = M^*$.
+\end{concept}
+
+\begin{concept}[Intermediate variable difference]
+Let $X$ and $X^*$ denote any intermediate variable during the encryption of $M$ and $M^*$, respectively, $\bullet$ be the operator which combines the key to the cipher state, and $X^{*^{-1}}$ be the inverse of $X^*$ with respect to $\bullet$. The difference of these intermediate variables is 
+
+$$
+X' = X \bullet X^{*^{-1}}.
+$$
+Note that, when $\bullet$ is the XOR operator, $X^{*^{-1}} = X^*$.
+\end{concept}
+
+\begin{concept}[Key information revealed by the output difference]
+Let $X$ and $X^*$ be plaintext bits and $K$ be key bits, and let $V = X \oplus K$ and $V^* = X^* \oplus K$ be inputs to an $S$-Box. The input difference is
+
+$$
+V' = V \oplus V^* = (X \oplus K) \oplus (X^* \oplus K).
+$$
+
+The key dependence ``disappears" because $K$ is XORed twice:
+
+$$
+(X \oplus K) \oplus (X^* \oplus K) = X \oplus X^*.
+$$
+
+Therefore, $V' = X \oplus X^*$, and \emph{the input difference is not key-dependent}. Let $Y$ and $Y^*$ be the respective outputs. Then
+
+$$
+Y = S(V) = S(X \oplus K),
+$$
+
+$$
+Y^* = S(V) = S(X^* \oplus K),
+$$
+
+and
+
+$$
+Y' = Y \oplus Y^* = S(X \oplus K) \oplus S(X^* \oplus K).
+$$
+
+Due to the non-linearity of the $S$-Box, $S(X \oplus K) \neq S(X) \oplus K$, and $Y' \neq S(X) \oplus K \oplus S(X^*) \oplus K$. The key term does not disappear, and thus \emph{the output difference reveals probabilistic information about the unknown key}.
+\end{concept}
+
+\subsection{Difference Distribution Table}
+
+\begin{definition}[Difference Distribution Table of an $S$-Box]\label{def:ddt}
+The Difference Distribution Table (DDT) of an $S$-box is a table that shows the distribution of input XORs and output XORs for an $S$-box \cite{Shamir}.
+\end{definition}
+
+In other words, for a given input XOR $X'$, the table shows how many times an output XOR $Y'$ occurs --- and thus the probability of a given $(X', Y')$ pair. Formally, the Difference Distribution Table (DDT) of an $S$-box $S$: $\mathbb{Z}_2^n \rightarrow \mathbb{Z}_2^m$ is a $2^n \times 2^m$ table $\mathcal{D}$ such that
+
+$$
+\mathcal{D}[X'][Y'] = \#\{(X,X^*) \in \mathbb{Z}_2^n \times \mathbb{Z}_2^n: S(X) \oplus S(X^*) = S(X) \oplus S(X \oplus X') = Y'\},
+$$
+
+where $X' \in \mathbb{Z}_2^n$  is the input difference, $Y' \in \mathbb{Z}_2^m$ is the output difference, and $\oplus$ denotes bitwise exclusive-or. Algorithm \ref{alg:ddt} shows how to compute the DDT of an $S$-Box.
+
+\begin{algorithm}[H]
+\caption{Obtaining the DDT of an $S$-box}
+\label{alg:ddt}
+\begin{algorithmic}[1]
+    \State Initialize $\mathcal{D}$ with zeroes in all entries
+    \For{$X = 0, ..., 2^n - 1$}
+        \For{$X^* = 0, ..., 2^n - 1$}
+            \State $Y \gets S(X)$
+            \State $Y^* \gets S(X^*)$
+            \State $X' \gets X \oplus X^*$
+            \State $Y' \gets Y \oplus Y^*$
+            \State $\mathcal{D}[X'][Y'] \gets \mathcal{D}[X'][Y'] + 1$
+        \EndFor
+    \EndFor
+\State \textbf{return} $\mathcal{D}$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Relevant properties of the DDT}
+
+\subsubsection{The [0][0] entry}
+
+For $X' = 0$, all the output XORs are also zero. That happens because, when $X' = 0$, $X \oplus X^* = 0$, hence $X = X^*$. When $X = X^*$, then $Y = S(X) = Y^* = S(X^*)$, and thus $Y' = 0$, too. 
+
+Since all the output XORs associated to $X' = 0$ are zero, the first DDT entry, $\mathcal{D}[0][0]$, contains the count of all such zeroes. Furthermore, the other entries at row $0$ are also always be zero, because when $X' = 0$ there are no non-zero $Y'$ values.
+
+The count of zeroes stored at $\mathcal{D}[0][0]$ is always $2^n$, because there are $2^n$ cases for which $X' = 0$. $X$ starts at $0$ and ends at $2^n-1$ in the for loop, and so does $X^*$ in the innermost loop. For each $X$, there will be one $X^*$ which is exactly the inverse of $X$ (i.e $X$ with all bits flipped), resulting in $X \oplus X^* = 0$, so the number of output differences equal to zero is $2^n$. In the case of DES, $\mathcal{D}[0][0] = 2^6 = 64$.
+
+\subsubsection{High values and differential uniformity}
+For a Differential Cryptanalysis attack, an attacker looks for the highest counts in the DDT, since they mean highest probability.
+
+\begin{concept}[Differential uniformity \cite{Nyberg1993DifferentiallyUM}]
+The differential uniformity of an $S$-Box $S$ is the maximum value in its Difference Distribution Table, disconsidering the $[0][0]$ entry.
+\end{concept}
+
+According to \cite{Nyberg1993DifferentiallyUM}, an $S$-box is said \emph{differentially x-uniform} if, in its DDT, $x$ is the differential uniformity. The larger $x$ is, the more non-uniform is the distribution of differences in the $S$-Box. Some attacks could exploit $S$-Boxes with high differential uniformity. The differential uniformity of all the 8 DES $S$-Boxes is $16$. In the case of DES, though, Biham and Shamir do not use the maximum DDT entries for their attack.
+
+\subsection{Expanding the concept to the $F$ function}
+
+It is also relevant to understand how the probabilities computed for $S$-box input and output XORs are extended to input and output XORs of the $F$ function.
+
+\begin{concept}[Probability of an input difference causing an output difference]
+We say that $X'$ may cause $Y'$ by an $S$-box $S$ if there is a pair in which the input difference of the $S$-box equals $X'$ and the output difference of the $S$-box equals $Y'$. Furthermore, $X'$ may cause $Y'$ with probability $p$ if, for a fraction $p$ of the pairs with input XOR $X'$, the output XOR is equal to $Y'$. Hence $X'$ may cause $Y'$ with probability $\mathcal{D}[X'][Y'] / 2^n$ where $n_s$ is the input size of the $S$-Box in bits.
+\end{concept}
+
+In the case of DES, $X'$ is a 6-bit $S$-Box input difference and $Y'$ is a 4-bit $S$-Box output difference. Therefore, $X'$ may cause $Y'$ with probability $\mathcal{D}[X'][Y'] / 64$.
+
+In the $F$ function of DES ($F: \mathbb{Z}_2^{32} \rightarrow \mathbb{Z}_2^{32}$), the input is expanded by $E$, resulting in 48 bits. Then, each 6-bit slice is fed to an $S$-Box, which outputs $4$ bits. The 4-bit outputs are concatenated and sent to the permutation $P$, which concludes the application of $F$. Formally, $F = P(S(E(x \oplus k)))$, where $x$ is the cipher state and $k$ is a subkey.
+
+Let $X_i$ be inputs to each $S$-box, $1 \leq i \leq 8$, $Y_i$ be outputs of each $S$-box, $p_i$ be the probability that $X_i$ may cause $Y_i$ by the $i$-th $S$-box, $X = X_1||X_2||X_3||X_4||X_5||X_6||X_7||X_8$ be the output of $E$, and $Y = Y_1||Y_2||Y_3||Y_4||Y_5||Y_6||Y_7||Y_8$ be the output after all $S$-Boxes are applied to the $6$-bit slices.
+
+The probability that $X$ may cause $Y$ by the $F$ function is the product of the $p_i$, hence $p_1\cdot p_2\cdot p_3\cdot p_4\cdot p_5\cdot p_6\cdot p_7\cdot p_8$, because, for $X$ to cause $Y$, $X_1$ must cause $Y_1$, $X_2$ must cause $Y_2$, and so forth.
+
+\subsection{Characteristics}
+
+The concept of \emph{characteristic} allows us to push the analysis to a round of the cipher and further to $N$ rounds.
+
+\begin{concept}[Characteristic]
+Associated with any pair of encryptions are: 
+
+\begin{itemize}
+\item the XOR of the two plaintexts;
+
+\item the XOR of the two ciphertexts;
+
+\item the XORs of the inputs of each round, in the two executions;
+
+\item the XORs of the outputs of each round in the two executions;
+\end{itemize}
+
+These XOR values form an \emph{$N$-round characteristic}, which has a probability. The probability of a characteristic is that a random pair with the chosen plaintext XOR has the round and ciphertext XORs specified.
+\end{concept}
+
+In \cite{Shamir}, the authors show examples of 1-round, 3-round and 5-round characteristics. However, as the number of rounds increases, the probabilities decrease. Thus it is necessary to find characteristics such that concatenating them allows us to reach further rounds of the cipher whilst keeping probabilities that are sufficiently high for key recovery by the end of the attack, if possible, maximum probabilities. A relevant type of characteristic is \emph{the iterative characteristic}, which is a characteristic that can be concatenated to itself. In \cite{Shamir}, they find an iterative characteristic with probability approximately equal to $1/234$.
+
+\subsection{The difficulties incurred by the DES design}\label{sec:des-difficulties}
+
+\begin{concept}[Active $S$-Box]
+An \emph{active} $S$-box is one for which the \emph{input XOR is not zero}.
+\end{concept}
+
+In a Differential Cryptanalysis attack, we try to maximize probabilities. Therefore, it is relevant to be able to activate as few $S$-boxes as possible. If too many $S$-boxes are activated at once, the probabilities decrease exponentially. The data complexity required for a successful attack is inversely proportional to the probability. If more data than available in the codebook is required, then the attack becomes infeasible. Activating only one $S$-box per DES iteration would be the ideal scenario, but DES's design does not allow that, as explained in \cite{Coppersmith1994}. The solution found by \cite{Shamir} is to activate three $S$-boxes.
+
+Due to the expansion function $E$ of DES, bits are shared between $S$-boxes, and thus 6-bit input differences which activate only one $S$-box are restricted to $X'$ of the form $00ab00$, $a, b$ non-zero, i.e $X'$ with all bits zero except the middle two bits, which enter only the $S$-box we would like to activate.
+
+For each single $S$-box of DES, from $S_1$ to $S_8$, the entries of $\mathcal{D}[X'][0]$ happen to be \textbf{zero}, for \textbf{all X' of this form}, thus rendering an attack which activates only one $S$-box infeasible. This design criteria of DES, as explained by \cite{Coppersmith1994}, serves especially to thwart Differential Cryptanalysis. In order to find an input difference $X'$ with adequate form such that $\mathcal{D}[X'][0] \neq 0$, it is necessary to analyse more than one $S$-box at a time, for instance, 2 or 3 $S$-boxes at a time.
+
+When activating more than one $S$-Box at a time, we would also like to take \emph{non-zero input XORs which lead to zero output XORs}. Because of that, the column $0$ of the DDT is very important --- when the output XOR is zero, it is easier to keep maximum probability through the rounds of the cipher.
+
+In \cite{Shamir}, the authors are able to break DES using an iterative characteristic with approximately $1/234$ probability and other selected characteristics with probabilities that allow key recovery by the end of the attack. Furthermore, the authors describe how variants of DES (e.g DES without the permutation $P$, DES with a different $S$-box order) would be much more vulnerable to the attack than the original design.
+
+\section{Joint difference distribution tables}\label{sec:joint-ddt}
+
+A \emph{joint difference distribution table} eases the process of finding characteristics by providing counts of input and output differences, i.e probabilities, associated to adjacent $S$-boxes. One could build joint DDTs for 2 adjacent $S$-boxes, 3, 4, 5, or any number of $S$-boxes. However, the DDTs get bigger and bigger, and so does the computational cost to obtain them. In this chapter, we discuss joint DDTs for 2 $S$-boxes and for 3 $S$-boxes.
+
+The first thing about joint DDTs is that \emph{they are key dependent}, because the key bits change from one $S$-box to another. For a single DES $S$-box, as explained in Section \ref{sec:differences}, it is not necessary to take the key into account when calculating the DDT, because the input difference is key independent.
+
+However, this is not true for \emph{joint DDTs of different $S$-boxes} of DES, because the expansion $E$ causes state bits to be shared between different $S$-boxes and the key bits which are input to two neighbor $S$-Boxes are different. They are not cancelled by the XOR when computing $X'$. For 2 $S$-boxes, it is necessary to take 4 shared key bits into account and, for 3, it is necessary to consider 8 shared key bits. Thus in reality there are 16 joint DDTs for each $S$-box pair, and 256 DDTs for each tuple of 3 $S$-boxes.
+
+Note that joint DDTs refer only to \emph{neighbor $S$-Boxes}, not to any chosen tuple of $S$-Boxes. Neighbor $S$-Boxes are $S$-Boxes which share bits due to the expansion $E$. The possible pairs are: 
+
+\begin{itemize}
+    \item $S_1, S_2$
+    \item $S_2, S_3$
+    \item $S_3, S_4$
+    \item $S_4, S_5$
+    \item $S_5, S_6$
+    \item $S_6, S_7$
+    \item $S_7, S_8$
+    \item $S_8, S_1$
+\end{itemize}
+
+For the joint DDTs of 3 neighbor $S$-Box, the possible tuples are:
+
+\begin{itemize}
+    \item $S_1, S_2, S_3$
+    \item $S_2, S_3, S_4$
+    \item $S_3, S_4, S_5$
+    \item $S_4, S_5, S_6$
+    \item $S_5, S_6, S_7$
+    \item $S_6, S_7, S_8$
+    \item $S_7, S_8, S_1$
+    \item $S_8, S_1, S_2$
+\end{itemize}
+
+\subsection{DDTs for 2 simultaneous $S$-boxes}
+
+As an example, take $S$-boxes $S_1$ and $S_2$ of DES. Algorithm \ref{alg:ddt2des} shows how their joint DDT can be computed. Because of the expansion function of DES, bits are shared between consecutive $S$-boxes, hence if $x_1x_2x_3x_4x_5x_6$ is input to $S_1$, then the bits $x_5$ and $x_6$ are shared with $S_2$. Thus the input of $S_2$ can be described as $x_5x_6x_7x_8x_9x_{10}$, and we can limit the loop to $2^{10}-1$, obtaining the inputs of each $S$-box through bit manipulation on $X$ and $X^*$. Furthermore, we can take into account only 4 key bits, $k_1$ and $k_2$, which are XORed to $x_5$ and $x_6$ on input to $S_1$, and $k_3$ and $k_4$, which are XORed to $x_5$ and $x_6$ on input to $S_2$. There will be 16 DDTs, one for each possible combination of shared key bits.
+
+\begin{algorithm}[H]
+\label{alg:ddt2des}
+\caption{Obtaining Joint DDT of $S_1$ and $S_2$ of DES}
+\begin{algorithmic}[1]
+    \Require $S$-boxes $S_1$ and $S_2$, 4 shared key bits $k_1, k_2, k_3, k_4$  
+    \Ensure A $2^{10} \times 2^8$ table, the joint DDT of $S_1$ and $S_2$
+    \State Initialize $\mathcal{D}$ with zero in all entries
+    \For{$X = 0, ..., 2^{10} - 1$}
+        \For{$X^* = 0, ..., 2^{10} - 1$}
+            \State $X_1 \gets $ the first 6 bits of $X$
+            \State $X_2 \gets $ the last 6 bits of $X$
+            \State $X_1^* \gets $ the first 6 bits of $X^*$
+            \State $X_2^* \gets $ the last 6 bits of $X^*$
+            \State $X_1 \gets X1 \oplus 0000||k_1||k_2$
+            \State $X_2 \gets X_2 \oplus k_3||k_4||0000$
+            \State $Y_1 \gets S_1(X_1)$
+            \State $Y_1^* \gets S_1(X_1^*)$
+            \State $Y_2 \gets S_2(X_2)$
+            \State $Y_2^* \gets S_2(X_2^*)$
+            \State $X' \gets X \oplus X^*$
+            \State $Y' \gets (Y_1 \oplus Y_1^*) || (Y_2 \oplus Y_2^*)$
+            \State $\mathcal{D}[X'][Y'] \gets \mathcal{D}[X'][Y'] + 1$
+        \EndFor
+    \EndFor
+\State \textbf{return} $\mathcal{D}$
+\end{algorithmic}
+\end{algorithm}
+
+The [0,0] entry contains $2^{10} = 1024$, since it accumulates all the $2^{10}$ cases for which $X' = 0$ and thus $Y' = 0$. As for inputs of the form $00abcdef00$ in the 0 column, which activate only $S_1$ and $S_2$ and would be attractive for a DC attack, the entries are \textbf{also zero}, hence the need for calculating joint DDTs of 3 $S$-boxes. As explained by Coppersmith in \cite{Coppersmith1994}, this is intentional in the design of DES, in an attempt to render DC attacks difficult. However, Biham and Shamir \cite{Shamir} succeed by activating 3 adjacent $S$-Boxes.
+
+\subsection{3 simultaneous $S$-boxes}
+
+For 3 $S$-boxes, we must loop from 0 to $2^{14}-1$, so $X = x_1x_2x_3x_4x_5x_6x_7x_8x_9x_{10}x_{11}x_{12}x_{13}x_{14}$, with $x_5$ and $x_6$ being shared between the first two $S$-boxes,  and $x_9$ and $x_{10}$ being shared between the last two $S$-boxes. There are 8 key bits to be taken into account, and therefore 256 DDTs for each tuple of 3 neighbor $S$-boxes.
+
+The [0,0] entry contains $2^{14} = 16384$. The inputs which activate only the 3 $S$-boxes are of the form $X = 00abcdefghij00$ and, this time, input XORs in this form contain non-zero entries in the column 0, with highest values alternating from 112 and 28, depending on the value of the key. In \cite{Knudsen}, it is explained that the $1/234$ probability found by \cite{Shamir} is an average ($112 + 28 = 140$, and $140/2^{14} \approx 1/234$), because for some $S$-boxes it will be $112/2^{14}$ and, for others, $28/2^{14}$. These values, 112 and 28, appear only for the $(S1, S2, S3)$ tuple. For the other tuples, the values are smaller.
+
+\section{DDTs for DES}
+
+\subsection{Single DDTs}
+
+Tables \ref{tab:ddt-s1-des} to \ref{tab:ddt-s8-des} shows the DDTs for $S$-Boxes from $S_1$ to $S_8$ of DES, respectively. The columns from $0_x$ to $F_x$ are output differences, the rows from $0_x$ to $63_x$ are input differences. Input and output differences are presented in hexadecimal notation, but the entries are decimal values. It is possible to observe that the differential uniformity is 16, in all the $S$-Boxes.
+
+\input{ddt1}
+\input{ddt2}
+\input{ddt3}
+\input{ddt4}
+\input{ddt5}
+\input{ddt6}
+\input{ddt7}
+\input{ddt8}
+
+\subsection{Joint DDTs of two $S$-Boxes}
+
+The joint DDTs are unfortunately too large to be displayed in this report with good visualization quality. For this reason, we make them available as \texttt{.csv} files, together with the code used to obtain them, in our GitHub repository: \textcolor{red}{add Git link here}.
+
+\subsection{Joint DDTs of three $S$-Boxes}
+
+The complete DDTs are available at \textcolor{red}{add Git link here}. Box \ref{box:ddts1s2s3} shows, as an example, the relevant entries (the ones with output difference = 0) of the joint DDT of $(S_1, S_2, S_3)$ when the combination of shared key bits is 0. The relevant entries are the ones for which the output difference is zero because they can help constructing characteristics with high probabilities throughout the rounds of DES (see Section \ref{sec:des-difficulties}).\\
+
+\fbox{
+\parbox{\textwidth}{
+Input difference = $328_x$ \rightarrow  84
+
+Input difference = $32c_x$ \rightarrow  28
+
+Input difference = $364_x$ \rightarrow  56
+
+Input difference = $36c_x$ \rightarrow  112
+
+Input difference = $3a4_x$ \rightarrow  40
+
+Input difference = $3ac_x$ \rightarrow  80
+
+Input difference = $3e4_x$ \rightarrow  16
+
+Input difference = $3ec_x$ \rightarrow  32
+
+Input difference = $728_x$ \rightarrow  12
+
+Input difference = $72c_x$ \rightarrow  4
+
+Input difference = $764_x$ \rightarrow  8
+
+Input difference = $76c_x$ \rightarrow  16
+
+Input difference = $7e4_x$ \rightarrow  8
+
+Input difference = $7ec_x$ \rightarrow  16
+
+Input difference = $b28_x$ \rightarrow  12
+
+Input difference = $b2c_x$ \rightarrow  4
+
+Input difference = $b64_x$ \rightarrow  8
+
+Input difference = $b6c_x$ \rightarrow  16
+
+Input difference = $be4_x$ \rightarrow  8
+
+Input difference = $bec_x$ \rightarrow  16
+
+Input difference = $f28_x$ \rightarrow  12
+
+Input difference = $f2c_x$ \rightarrow  4
+
+Input difference = $f64_x$ \rightarrow  8
+
+Input difference = $f6c_x$ \rightarrow  16
+
+Input difference = $fa4_x$ \rightarrow  8
+
+Input difference = $fac_x$ \rightarrow  16
+}
+}
+\captionof{Box}{Relevant entries of the joint DDT of $(S_1, S_2, S_3)$ of DES.}
+\label{box:ddts1s2s3}
+
+\section{DDTs for AES}
+
+The same process (see Algorithm \ref{alg:ddt}) can be applied to the AES $S$-Box and its inverse. Whilst the DES $S$-Boxes have differential uniformity equal to 16, both the AES $S$-Box and the inverse have differential uniformity equal to 4. The AES DDTs are also too large and are therefore available at \textcolor{red}{add Git link here}.
+
+\section{Computational complexity}
+
+\subsection{Asymptotic complexity for a single $n_s$-bit input $S$-Box}
+
+As can be seen in Algorithm \ref{alg:ddt}, for an $n_s$-bit input $S$-Box, it is necessary to compute all the possible $X$ and, for each possible $X$, it is necessary to compute all the possible $X^*$. Therefore, since $X$ and $X^*$ range from $0$ to $2^n - 1$, the computational complexity is $O(2^{(2n)})$. 
+
+\subsection{$S$-Box total lookups}
+
+In terms of $S$-Box lookups, in total $2^{13}$ lookups are performed, since each DDT entry requires $2$ $S$-Box lookups to be incremented. Since DES possesses $8$ $S$-Boxes, extracting DDTs for all $S$-Boxes requires $8 \times 2^{13}$ $S$-Box lookups. For AES, there is a single $S$-Box, $n_s = 8$ and $2$ $S$-Box lookups are required to increment the DDT count, therefore $2^{17}$ lookups in total.
+
+\subsection{$S$-Box total lookups for joint DDTs}
+For the joint DDT of two neighbor $S$-Boxes of DES (see Algorithm \ref{alg:ddt2des}), $2^{20} \times 4$ lookups are necessary, since $S_1$ is looked up twice and $S_2$ is also looked up twice. However, there is a joint DDT for each possible value of the shared key bits. For DES, 4 key bits are shared, therefore there are 16 joint DDTs, totalizing $16 \times 2^{20} \times 4 = 2^{26}$ $S$-Box lookups to obtain the DDTs of two neighbor $S$-Boxes for all possible shared key bits. 
+
+For the joint DDT of 3 neighboring $S$-Boxes of DES, $2^{28} \times 2^{8} \times 6$ lookups are necessary in total, since each DDT entry requires 6 lookups to be incremented and the joint input size is $14$ bits.
+
+\subsection{Asymptotic complexity for joint DDTs}
+If $sh_k$ key bits are shared, the asymptotic complexity to obtain all DDTs of $t$ joint $S$-Boxes is $O(2^{(2n_j)} \times 2^{sh_k} \times 2t)$, with $n_j$ being the size (in bits) of the joint input and $sh_k$ being the amount of shared key bits, and $S$-Box lookups considered constant time.
+
+\subsection{Practical run time remarks}
+Obtaining single DDTs for DES took less than 1 minute in a personal computer. Extracting the joint DDTs for 2 neighbor $S$-Boxes of DES (for one of the possible combinations of shared key bits) took, in a personal computer, less than 5 minutes, and extracting all the DDTs for all possible shared key bits took less than 80 minutes. However, obtaining all the joint DDTs for 3 $S$-Boxes took approximately 72 hours. It is relevant to note that, as $n_j$ and $sh_k$ increase, the run time increases exponentially. Therefore, in this work, we restrict to obtaining joint DDTs for maximum 3 $S$-Boxes of DES. An attempt at extracting joint DDTs for larger tuples of neighbor $S$-Boxes is an interesting avenue for future work.
+
+\section{Conclusions}
+In this chapter, we explained what are Difference Distribution Tables and pointed out their relevant properties with respect to Differential Cryptanalysis attacks. We showed how to obtain them for an $S$-Box, and discussed the DDTs for the DES cipher and the AES cipher. We have also obtained their differential uniformities (16 for all eight DES $S$-Boxes and 4 for the AES $S$-Box and its inverse). Furthermore, we presented the concept of \emph{joint difference distribution table}, which is relevant when activating a single $S$-Box is not possible for a DC attack (as is the case of DES). We leave a detailed discussion of the steps involved in a DC attack and how security against them is achieved by AES as a future work. Table \ref{tbl:summary} summarizes the linear uniformities and dimensions of all $S$-Boxes studied in this chapter.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{$S$-Box}                 & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_1$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_2$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_4$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_4$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_5$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_6$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_7$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}DES\\ $S_8$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}AES\\ $S$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}AES\\ $S$ inv\end{tabular}} \\ \hline
+\textbf{Differential uniformity} & 16                                                           & 16                                                           & 16                                                           & 16                                                           & 16                                                           & 16                                                           & 16                                                           & 16                                                           & 4                                                          & 4                                                              \\ \hline
+\textbf{Input size}              & 6                                                            & 6                                                            & 6                                                            & 6                                                            & 6                                                            & 6                                                            & 6                                                            & 6                                                            & 8                                                          & 8                                                              \\ \hline
+\textbf{Output size}             & 4                                                            & 4                                                            & 4                                                            & 4                                                            & 4                                                            & 4                                                            & 4                                                            & 4                                                            & 8                                                          & 8                                                              \\ \hline
+\end{tabular}%
+}
+\caption{Summary of AES and DES $S$-Boxes properties}
+\label{tbl:summary}
+\end{table}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

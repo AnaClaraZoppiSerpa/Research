@@ -1,0 +1,421 @@
+\subsection{Linear codes}
+\begin{definition}[Hamming weight \cite{SloaneBook}]
+The Hamming weight $w(x)$ of a vector $x$ is the number of nonzero components of the vector $x$.
+\end{definition}
+
+\begin{definition}[Hamming distance \cite{SloaneBook}]
+The Hamming distance between two vectors $x$ and $y$ is $w(x - y)$, which is equal to the Hamming weight of the difference of the two vectors.
+\end{definition}
+
+\begin{definition}[Linear code \cite{SloaneBook}]
+A linear $[n, k, d]$ code over a field $\mathbb{F}$ is a $k$-dimensional subspace of the vector space $\mathbb{F}^n$, where any two different vectors of the subspace have a Hamming distance of at least $d$, and $d$ is the largest number with this property.
+
+The distance $d$ of a linear code equals the minimum weight of a non-zero codeword in the code. A linear code can be described by generator and/or parity-check matrices.
+\end{definition}
+
+\begin{definition}[Generator matrix \cite{SloaneBook}]
+A generator matrix $G$ for an $[n, k, d]$ code $C$ is a $k \times n$ matrix whose rows form a vector space basis for $C$. The choice of a basis in a vector space is not unique, thus a code has many different generator matrices which can be reduced to one another by performing elementary row operations.
+\end{definition}
+
+\begin{definition}[Parity-check matrix \cite{SloaneBook}]
+A parity-check matrix $H$ for an $[n, k, d]$ code $C$ is an $(n-k) \times k$ matrix with the property that a vector $x$ is a codeword of $C$ iff $Hx^T = 0$.
+\end{definition}
+
+\begin{theorem}[Singleton Bound \cite{SloaneBook}]
+If $C$ is an $[n, k, d]$ code, then $d \leq n - k + 1$.
+\end{theorem}
+
+\begin{definition}[MDS code \cite{SloaneBook}]\label{def:mds-code-singleton}
+An \emph{MDS code} is a \emph{linear code} that meets the \emph{Singleton bound}, i.e a linear code with $d = n - k + 1$.
+\end{definition}
+
+An MDS matrix associated to a $[n, k, d]$ code has \emph{branch number} equal to $d$, which is the maximum possible branch number, thus providing optimal diffusion.
+
+\begin{definition}[Branch number \cite{Shirai2003}]\label{def:branch-number}
+The branch number $\mathcal{B}$ of a linear mapping $\theta: GF(2^m)^k \rightarrow GF(2^m)^l$ is defined as:
+
+$$\mathcal{B}(\theta) = \min_{a\neq0}\{w(a) + w(\theta(a))\}.$$
+
+Note that here, $+$ denotes a XOR operation, since the fields have characteristic equal to 2.
+
+Furthermore, given a matrix $M$, associated to a $[n, k, d]$ linear code, the linear mapping defined by $\theta(a) = M \cdot a$ has branch number $\mathcal{B}(\theta) = d$. When the linear code is MDS, i.e when $M$ is MDS, the mapping is an optimal diffusion mapping.
+\end{definition}
+
+\subsection{Matrices}
+
+%\textcolor{red}{Obs: eu escrevi essas primeiras definições (matriz singular, involutória, circulante, circulante à esquerda, circulante à direita) com base no que eu lembrava de matemática mesmo, então por hora ainda não coloquei uma referência bibliográfica, já que são definições mais gerais e não chegam a ser específicas de cripto. Mas posso colocar depois se necessário.}
+
+\begin{definition}[Singular matrix]
+A square matrix $A$ is singular if and only if $det(A) = 0$.
+\end{definition}
+
+\begin{definition}[Non-singular matrix]
+$A$ is non-singular if and only if $det(A) \neq 0$.
+\end{definition}
+
+\begin{definition}[Involutory matrix]
+An $n \times n$ square matrix $A$ is involutory if $A \times A = I_n$, where $I_n$ is the identity matrix. In other words, $A$ is involutory when $A = A^{-1}$.
+\end{definition}
+
+\begin{definition}[Circulant matrix]
+An $n \times n$ matrix $A$ is circulant if each row $i$ is formed by a cyclical shift of $i$ positions of the same set of elements $\{a_0, a_1, a_2, ..., a_{n-1}\}$.
+\end{definition}
+
+\begin{definition}[Left circulant matrix]
+A circulant matrix in which the shift is a cyclical shift to the left, i.e
+
+$$
+A =
+\begin{bmatrix}
+a_0 & a_1 & ... & ... & a_{n-1}\\
+a_1 & a_2 & ... & a_{n-1} & a_0\\
+... & ... & ... & ... & ...\\
+a_{n-1} & a_0 & ... & ... & a_{n-2}
+\end{bmatrix}.
+$$
+\end{definition}
+
+\begin{definition}[Right circulant matrix]
+A circulant matrix in which the shift is a cyclical shift to the right, i.e
+
+$$
+A =
+\begin{bmatrix}
+a_0 & a_1 & ... & ... & a_{n-1}\\
+a_{n-1} & a_0 & a_1 & ... & a_{n-2}\\
+... & ... & ... & ... & ...\\
+a_1 & ... & a_{n-2} & a_{n-1} & a_0
+\end{bmatrix}.
+$$
+\end{definition}
+
+Note that circulant matrices can be defined by just one row, since all the other rows are cyclical shifts of the first. Therefore, they can be denoted as $circ(a_0, a_1, ..., a_{n-1})$. In the case of left circulant and right circulant matrices, respectively, $lcirc(a_0, ..., a_{n-1})$ and $rcirc(a_0, ..., a_{n-1})$. For example, matrices (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael}), used in the Rijndael cipher, can be denoted as $rcirc(02_x, 03_x, 01_x, 01_x)$ and $rcirc(0e_x, 0b_x, 0d_x, 09_x)$. Since a circulant matrix can be defined by one row only, only $n$ elements are required, and this optimizes the process of searching for (and finding) such matrices. However, \emph{there are no guarantees about the MDS property}. One must check whether Theorem \ref{teo:mds} holds to ensure the obtained matrix is MDS. As an example, the circulant matrix initially employed in Whirlpool-0 \cite{Whirlpool2003} is not MDS, and was further replaced by an actual MDS matrix found by Shirai in \cite{Shirai2003}.
+
+\begin{definition}[Transpose matrix]
+The transpose of a matrix $A$, denoted by $A^T$, is the matrix such that $A^T[i][j] = A[j][i]$. In other words, it is the matrix obtained by writing the rows of $A$ as columns. Note that, if $A$ is an $m \times n$ matrix, then $A^T$ will be $n \times m$.
+\end{definition}
+
+\begin{lemma}[\cite{RecursiveMDS2017}]
+The product of two circulant matrices is a circulant matrix. Also the inverse and transpose of a circulant matrix are circulant.
+\end{lemma}
+
+Furthermore, \cite{RecursiveMDS2017} introduces what they call Type-I circulant-like matrix, AlmostType-I circulant-like matrix and Type-II circulant-like matrix.
+
+\begin{definition}
+\textcolor{red}{vou colocar a def de type I, type II, almost type I...}
+\end{definition}
+
+\begin{definition}[Submatrix]
+Given a matrix $M$, a submatrix of $M$ is the matrix obtained after removing $z$ rows and columns of $M$, $z \geq 1$, provided that there are sufficient rows (and columns) to be removed.
+\end{definition}
+
+\begin{theorem}[MDS codes \cite{SloaneBook}]\label{teo:mds}
+An $[n, k, d]$-code $\mathcal{C}$ with generator matrix $G = [I_nB]$, where $B$ is a $k \times (n - k)$ matrix, is MDS if and only if every square submatrix of $B$ is non-singular.
+\end{theorem}
+
+We call the $B$ matrix of Theorem \ref{teo:mds} the \emph{MDS matrix} throughout this work, i.e the MDS matrices we study are the $B$ matrices of the respective MDS codes chosen when designing them.
+Note that Definition \ref{def:mds-code-singleton} establishes the conditions for a code to be MDS, therefore Theorem \ref{teo:mds} is an alternative way of evaluating a code, or a matrix, with respect to the MDS property.
+For further detail on matrices, determinants and linear algebra, the reader may refer to \cite{LangeLinearAlgebra}.
+
+Another characterization of MDS matrices is given by \cite{LwInvolKhoo2015} (see Proposition \ref{prop:khoo} below).
+
+\begin{proposition}[\cite{LwInvolKhoo2015}]\label{prop:khoo}
+A $k \times k$ matrix $M$ is an MDS matrix if and only if the standard form generate matrix $[I_k|M]$ generates a $(2k, k, k+1)$-MDS code.
+\end{proposition}
+
+\begin{fact}[\cite{RecursiveMDS2017}]
+All square submatrices of an MDS matrix are MDS.
+\end{fact}
+
+\begin{corollary}[\cite{RecursiveMDS2017}]
+If $A$ is an MDS matrix, then $A^T$ is also an MDS matrix.
+\end{corollary}
+
+\begin{corollary}[\cite{RecursiveMDS2017}]
+The inverse of an MDS matrix is MDS.
+\end{corollary}
+
+\begin{fact}{\cite{RecursiveMDS2017}}
+A square matrix $A$ of order $n$ is MDS if and only if $\beta_d(A) = \beta_l(A) = n+1$.
+\end{fact}
+
+\begin{definition}{\cite{RecursiveMDS2017}}
+A square matrix $M$ is called orthogonal matrix if $MM^T$ = $I$, where $I$ is the identity matrix.
+\end{definition}
+
+\begin{definition}[Cauchy matrix]\label{def:cauchy}
+Given $x_0, ..., x_{n-1}$ and $y_0, ..., y_{n-1}$, the matrix $A$ where $A[i][j] = \frac{1}{x_i + y_j}$ is called a Cauchy matrix. According to \cite{Youssef1997}, provided that $x_i \neq x_j$ for $0\leq i,j\leq n-1$, that $y_i \neq y_j$ for $0\leq i,j\leq n-1$ and that $x_i + y_j \neq 0$ for all $i, j$, any square submatrix of a Cauchy matrix is nonsingular over any field.
+\end{definition}
+
+It is worth noting that a Cauchy matrix construction directly ensures the MDS property, as can be seen in Definition \ref{def:cauchy}, and it requires only $2n$ choices of elements, since the $x_i$ and the $y_i$ must be defined.
+
+\begin{definition}[Hadamard matrix \cite{beauchamp1975walsh}]\label{def:hadamard}
+Given $n$ elements $a_0, a_1, ..., a_{n-1}$, $n$ being a power of 2, the matrix $H$ such that $H[i][j] = a_{i \oplus j}$ is a Hadamard matrix.
+\end{definition}
+
+In Whirlwind\cite{Whirlwind2010}, the authors make use of \emph{dyadic} matrices, defining them as a matrix $S$ such that $S[i][j] = s_{i\oplus j}$ given a set $s_0, s_1, ... , s_{n-1}$ of $n$ elements. This definition matches Definition \ref{def:hadamard}, which is used in Anubis and Khazad, but referred as Hadamard instead of dyadic. Therefore, for dyadic matrices, the same situation described for Hadamard applies: a dyadic construction allows us to reduce the scope of the element choice, i.e only $n$ elements must be chosen, but there is no guarantee of MDS property. In \cite{Gupta2013OnCO}, they call this type of matrices FFHadamard, but throughout this work we refer to them as Hadamard.
+
+Note that a Hadamard construction, similarly to a circulant construction, requires only $n$ elements to be defined, but it does not guarantee MDS property either. To the best of our knowledge, no proofs about Hadamard matrices being MDS have been presented in the literature at the time of writing. Furthermore, in this work, we believe we present an example of a Hadamard non-MDS matrix. See Section \ref{sec:whirlwind-non-mds} for further detail on this.
+
+In \cite{LwInvolKhoo2015}, the authors explain how to obtain Hadamard involutory matrices. If $H = had(h_0, h_1, …, h_{k-1})$ is a Hadamard matrix, then $H \times H = c^2 \cdot I$, with $c^2 = h_0^2 + h_1^2 + h_2^2 + … + h_{k-1}^2$. In other words, the product of a Hadamard matrix with itself is a multiple of an identity matrix, where the multiple $c^2$ is the sum of the square of the elements from the first row.
+
+Therefore, a Hadamard matrix is involutory if the sum of the elements of the first row is equal to 1. Note that if we deal with a Hadamard matrix for which the sum of the first row is nonzero, we can make it involutory by dividing it by the sum of its first row.
+
+\begin{definition}[Vandermonde matrix \cite{hoffmann1971linear}]
+Given $z$ elements $a_0, a_1, ..., a_{z-1}$, the $z \times n$ matrix $V$ such that
+\begin{equation}\label{eq:cost}
+V =
+\begin{bmatrix}
+1 & a_0 & a_0^2 & ... & a_0^{n-1}\\
+1 & a_1 & a_1^2 & ... & a_1^{n-1}\\
+... & ... & ... & ... & ...\\
+1 & a_{z-1} & a_{z-1}^2 & ... & a_{z-1}^{n-1}
+\end{bmatrix}
+\end{equation}
+is a Vandermonde matrix.
+\end{definition}
+
+Similarly to circulant and Hadamard constructions, in the case of the Vandermonde matrix, $z$ elements are required and then we must choose the number of columns $n$. Not all Vandermonde matrices are square matrices, but the notion of MDS matrix applies only to square matrices. Therefore, $z$ must be equal to $n$ if we wish to construct a Vandermonde MDS matrix. However, again there are no guarantees about the MDS property with a Vandermonde construction. To the best of our knowledge, at the time of writing, there are no such guarantees. The matrices must be constructed and then evaluated with respect to the MDS property, e.g using Theorem \ref{teo:mds}.
+
+In the PHOTON hash function \cite{PHOTON2011} and the LED block cipher \cite{LED2012}, \emph{serial} MDS matrices are used. Serial matrices are especially useful for hardware implementations. In \cite{Gupta2016}, they refer to serial matrices as \emph{recursive} matrices, and show how to obtain them from companion matrices (see Theorem \ref{teo:mds-serial}).
+
+\begin{definition}[Companion matrix \cite{Gupta2016}]
+Let $g(x) = a_0 + a_1x + ... + a_{k-1}x^{k-1} + x^k$ be a monic polynomial over $\mathbb{F}_q$ of degree $k$. The \emph{companion matrix} $C_g$ associated to the polynomial $g$ is given by
+
+$$
+C_g =
+\begin{bmatrix}
+0 & 1 & 0 & ... & 0\\
+... & ... & ... & ... & ...\\
+0 & 0 & ... & ... & 1\\
+-a_0 & -a_1 & ... & ... & -a_{k-1}
+\end{bmatrix}.
+$$
+
+In other words, it is a matrix with the negative coefficients of the polynomial in the last row, and a diagonal of ones above the main diagonal.
+\end{definition}
+
+Note that, in the case of matrix composed by elements of $GF(2^4)$ and $GF(2^8)$, as is the case of the studied companion matrices in this work, we can ignore the negative sign. We denote by $Companion(a_0, a_1, ..., a_{k-1})$ the companion matrix with $a_0, a_1, ..., a_{k-1}$ in the last row.
+
+A recursive MDS matrix, according to \cite{Gupta2016}, is an MDS matrix which can be computed as a power of a simple companion matrix, i.e, an MDS matrix $M = C_g^k$ for some companion matrix corresponding to a polynomial $g(x) \in \mathbb{F}_q[x]$ of degree $k$. We then say that the polynomial $g(x)$ yields a recursive MDS matrix.
+
+\begin{theorem}[Obtaining a serial MDS matrix from a companion matrix \cite{Gupta2016}]\label{teo:mds-serial}
+Let $g(x) \in \mathbb{F}_q[x]$ be a polynomial of degree $k$. Then the matrix $M = C_g^k$ is MDS if and only if the polynomial $g(x)$ has no multiple with weight $\leq k$ and degree $\leq 2k-1$.
+\end{theorem}
+
+In \cite{CuiJin2015}, a specific type of Cauchy matrices is introduced --- compact Cauchy matrices --- as well as a method to obtain involutory matrices of this kind.
+
+\begin{definition}[Compact Cauchy matrix \cite{CuiJin2015}]
+Let $A_X$ be an $n \times n$ Cauchy matrix. If $A_X$ precisely has $n$ distinct entries, we call $A_X$ a \emph{compact Cauchy matrix}.
+\end{definition}
+
+\begin{theorem}[Building involutory compact Cauchy matrices \cite{CuiJin2015}]
+Let $A = (a_{i,j})_{2^n\times2^n}$ be a compact Cauchy matrix over $GF(2^m)$ and $\mu = (\oplus ^{2^n-1}_{k=0} a_{0,k})^{-1}$. Then $\mu A$ is an involution compact Cauchy matrix.
+\end{theorem}
+
+In other words, it is possible to multiply a compact Cauchy matrix $A$ by a constant $\mu$ to make it involutory, where $\mu$ is the inverse of the sum of the entries of a row of $A$.
+
+In \cite{Gupta2013OnCO}, the authors introduce a way of obtaining an MDS matrix from two $n \times n$ Vandermonde matrices A and B.
+
+\begin{lemma}[Building MDS matrix from two Vandermonde matrices \cite{Gupta2013OnCO}]\label{lemma:vandermonde-mds-1}
+For distinct $x_0, x_1, …, x_{n-1}$ and $y_0, y_1, …, y_{n-1}$ such that $x_i + y_j \neq 0$, the matrix $AB^{-1}$ is an MDS matrix, where $A = van(x_0, …, x_{n-1})$ and $B = van(y_0, …, y_{n-1})$.
+\end{lemma}
+
+The construction of Lemma \ref{lemma:vandermonde-mds-1} is also mentioned in \cite{RecursiveMDS2017}, but as a theorem.
+
+\begin{theorem}[\cite{RecursiveMDS2017}]
+Let $V_1 = vand(a_0, a_1, ..., a_{n-1})$ and $V_2 = vand(b_0, b_1, ..., b_{n-1})$ be two Vandermonde matrices such that $a_i$, $b_j$ are $2n$ distinct elements from some field. Then the matrices $V_1^{-1}V_2$ and $V_2^{-1}V_1$ are such that any square submatrix of them is nonsingular and hence MDS matrices.
+\end{theorem}
+
+\begin{corollary}[\cite{RecursiveMDS2017}]
+If $V_1 = vand(a_0, a_1, ..., a_{n-1})$ and $V_2 = vand(b_0, b_1, ..., b_{n-1})$ are two invertible Vandermonde matrices in the field $\mathbb{F}_{2^r}$, satisfying the two properties $a_i = l + b_i$ and $a_i \neq b_j$, for $0 \leq i,j \leq n - 1$, then $V_1^{-1}V_2$ is an involutory MDS matrix.
+\end{corollary}
+
+\begin{lemma}[Hadamard-Cauchy construction \cite{Gupta2013OnCO} and \cite{LwInvolKhoo2015}]\label{lemma:hadamard-cauchy-gupta}
+Let $G = (x_0, x_1, …, x_{d-1})$ be an additive subgroup of $\mathbb{F}_{2^m}$. Let us consider the coset $r+G, r \not\in G$ of $G$ having elements $y_j = r + x_j, j = 0, …, d-1$. Then the $d \times d$ matrix $A = ((a_{i,j}))$, where $a_{i,j} = \frac{1}{x_i+y_j}$, for all $0 \leq i,j \leq d - 1$ is an MDS matrix. 
+\end{lemma}
+
+\begin{corollary}[\cite{Gupta2013OnCO}]
+The matrix $A$ of Lemma \ref{lemma:hadamard-cauchy-gupta} is symmetric.
+\end{corollary}
+
+In \cite{LwInvolKhoo2015}, the construction from Lemma \ref{lemma:hadamard-cauchy-gupta} is called Hadamard-Cauchy, whilst \cite{Gupta2013OnCO} presents it but does not give it a specific name. Note that, for this kind of matrix, a matrix of order $d$ depends on $d$ elements to be defined (like a Hadamard matrix), but the coefficients are computed in the same way we would for a Cauchy construction. Furthermore, it is symmetric ($h_{i,j} = h_{j,i}$), and it depends only on the first row $(x_0, x_1, …, x_{d-1})$ with elements characterized by $h_{i,j} = x_{i \oplus j}$. Hadamard-Cauchy matrices are denoted by $hc(x_0, x_1, …, x_{d-1})$. Also, note that Lemma \ref{lemma:inv-had-cauchy} and Corollary \ref{cor:inv-had-cauchy} give us a way of building involutory Hadamard-Cauchy matrices.
+
+\begin{lemma}[\cite{Gupta2013OnCO}]\label{lemma:inv-had-cauchy}
+Let $A = ((a_{i,j}))$ be the $d \times d$ matrix formed by Lemma \ref{lemma:hadamard-cauchy-gupta}. Then $A^2 = c^2I$, where $c = \sum_{k=0}^{d-1} \frac{1}{r+x_k}$.
+\end{lemma}
+
+\begin{corollary}[\cite{Gupta2013OnCO}]\label{cor:inv-had-cauchy}
+The matrix $A$ of Lemma \ref{lemma:hadamard-cauchy-gupta} is involutory if the sum of the elements of any row is 1.
+\end{corollary}
+
+\begin{definition}[\cite{RecursiveMDS2017}]
+The $n \times n$ matrix
+
+$$
+H = 
+\begin{bmatrix}
+a_0 & a_1 & a_2 & \cdots & a_{n-2} & a_{n-1} \\
+a_1 & a_2 & a_3 & \cdots & a_{n-1} & a_{n} \\
+a_2 & a_3 & a_4 & \cdots & a_{n} & a_{n+1} \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+a_{n-1} & a_{n} & a_{n+1} & \cdots & a_{2n-3} & a_{2n-2}
+\end{bmatrix}
+$$
+
+is called a Hankel matrix. Note that a Hankel matrix is defined by its first row and last column, i.e the elements $a_0, a_1, a_2, ..., a_{n-1}, a_n, a_{n+1}, ..., a_{2n-2}$.
+\end{definition}
+
+\begin{theorem}[\cite{RecursiveMDS2017}]
+Suppose $q = 2^r$ and $\gamma$ is an arbitrary primitive element of the field $\mathbb{F}_q$. Let $S_q$ be a triangular array whose coefficients are constants along skew diagonal in a Hankel matrix fashion defined as
+
+$$
+S_q = 
+\begin{matrix}
+a_1 & a_2 & a_3 & ... & a_{q-3} & a_{q-2} \\
+a_2 & a_3 & a_4 & ... & a_{q-2} \\
+a_3 & a_4 & ... & a_{q-2} \\
+a_4 & ... \\
+\vdots & \vdots \\
+a_{q-3} & a_{q-2} \\
+a_{q-2}
+\end{matrix}
+$$
+
+Where $a_i = (1 - \gamma^i)^{-1}$ for $1 \leq i \leq q - 2$. Then every square submatrix of $S_q$ is nonsingular and hence MDS.
+\end{theorem}
+
+\subsubsection{A summary on the types of matrices}
+An $n\times n$ matrix possesses $n^2$ elements and thus, when constructing one e.g by selecting random elements, $n^2$ choices must be made. However, Cauchy, circulant, Vandermonde, Hadamard (dyadic) and serial constructions allow us to lower the number of elements we need to select. Circulant, Vandermonde, serial and Hadamard constructions allow us to select only $n$ elements, whilst Cauchy constructions require selecting $2n$ elements. The Cauchy construction ensures MDS property, the serial construction also ensures MDS property if Theorem \ref{teo:mds-serial} is satisfied, whilst the other constructions do not and e.g Theorem \ref{teo:mds} must be used to evaluate MDS property. Furthermore, it is relevant to note that, albeit most matrices in this work have their dimension $n$ be a power of two such as 4 or 8, this is not a requirement for the construction. One can construct $n \times n$ circulant (or Cauchy, or Vandermonde, or serial) matrices for any arbitrary $n$. The dimension $n$ must only be a power of two for the Hadamard (dyadic) construction.
+
+There is a great interest in building involutory MDS matrices such as e.g the ones employed in ANUBIS \cite{ANUBIS2000} and KHAZAD \cite{KHAZAD2000}. However, although their constructions are Hadamard, it is relevant to note that a Hadamard construction does not imply involutory property. As an example, the matrices $M_0$ and $M_1$ used in Whirlwind \cite{Whirlwind2010} are Hadamard (dyadic), but not involutory (see Table \ref{tbl:mds-list}). Furthermore, \cite{Youssef1997} has shown how to obtain an involutory MDS matrix from a Cauchy construction. However, a Cauchy matrix itself is not necessarily involutory. In order to obtain an involutory matrix, additional manipulation on the coefficients is necessary. For further detail the reader may refer to \cite{Youssef1997}. Table \ref{tab:matrix-types} summarizes the matrix types and properties studied in this work.
+
+\begin{footnotesize}
+\begin{longtable}{|l|l|l|l|l|}
+\hline
+\textbf{Type} & \shortstack{\textbf{Elements} \\ \textbf{to select}} & \shortstack{\textbf{MDS} \\ \textbf{guarantee}} & \shortstack{\textbf{$n$ must be} \\ \textbf{power of two}} & \shortstack{\textbf{Involution} \\ \textbf{guarantee}} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+Circulant         & $n$ & no & no & no \\ \hline
+Hadamard (dyadic) & $n$ & no & yes & \shortstack{with additional \\ coefficient \\ manipulation} \\ \hline
+Vandermonde       & $n$ & no & no & no \\ \hline
+Cauchy            & $2n$ & yes & no & \shortstack{with additional \\ coefficient \\ manipulation} \\ \hline
+serial       & $n$ & \shortstack{with adequate \\ polynomial \\ (see Theorem \ref{teo:mds-serial})} & no & no \\ \hline
+random            & $n^2$ & no & no & no \\ \hline
+\caption{Matrix classification summary}
+\label{tab:matrix-types}\\
+\end{longtable}
+\end{footnotesize}
+
+\subsection{Evaluating a matrix for MDS property}
+\textcolor{red}{this section will be re-written soon because the sentences were confusing}
+%If Theorem \ref{teo:mds} is used, the determinant of the matrix itself must be calculated, as well as the determinants of its submatrices. First, we derive a formula for the cost of calculating the determinant of an $n \times n$ matrix. Our cost unit is \emph{the number of multiplications in a finite field}, since it is the most expensive operation.
+
+%The determinant of a  $2 \times 2$ matrix $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$ can be computed by means of the formula $ad - bc$, requiring therefore two multiplications.
+
+%The determinant of a $3 \times 3$ matrix can be computed by calculating cofactors of $2 \times 2$ submatrices obtained by removing a row $i$ and a column $j$. For example, the determinant of $\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix}$ can be computed as $a \begin{vmatrix}e & f\\h & i \end{vmatrix} + b \begin{vmatrix}d & f\\ g & i\end{vmatrix} + c \begin{vmatrix}d & e\\g & h\end{vmatrix}$, where $\begin{vmatrix}e & f\\h & i \end{vmatrix}$ denotes the determinant of the submatrix $\begin{bmatrix}e & f\\h & i \end{bmatrix}$.
+
+%The cost is therefore $3 + 3t(2)$, where $t(2)$ is the number of multiplications required to compute the determinant of a $2\times2$ matrix. We know that $t(2) = 2$, therefore the cost to obtain the determinant of a $3\times3$ matrix is $3+3\times2 = 9$, i.e $t(3) = 9$. Extending this logic, let $t(n)$ be the cost of obtaining the determinant of an $n\times n$ matrix. Then $t(n) = n + nt(n-1) = n + n(n-1 + (n-1) t(n-2)) = n + n(n-1) + n(n-1)t(n-2) = n + n(n-1) + n(n-1)(n-2) + ... + n(n-1)(n-2)..2$. For example, for $n = 4$, $t(4) = 4 + 4\times3 + 4\times3\times2 = 4 + 12 + 24 = 40$ multiplications in a finite field.
+
+%In order to evaluate a matrix for MDS property, we must compute the determinants of all its square submatrices. Let $A$ be an $n \times n$ matrix. A submatrix of $A$ is obtained by removing $z$ rows and columns of $A$. The possible values of $z$ range from $1$ to $n - 1$. When removing $n-1$ rows and columns though, only single matrix elements remain. We evaluate if they are zero or not, and this does not require multiplications in the underlying finite field, only equality checks. When removing $z$ rows and columns, $(n - z) \times (n - z)$ submatrices are obtained, and computing a determinant costs $t(n-z)$ multiplications in a finite field. There are $2^z$ ways of choosing which rows are to be removed, and $2^z$ ways of choosing which columns are to be removed. Therefore, $2^z \times 2^z = 2^{2z}$ possible $(n - z) \times (n - z)$ submatrices, totalizing $2^{2z}$ determinants to evaluate. The cost is therefore $2^{2z}\times t(n-z)$ multiplications for a given $z$. Let $t'(z) = 2^{2z} \times t(n-z)$. Since $z$ ranges from $1$ to $n-2$, the total cost to evaluate a matrix for MDS property will be $t'(1) + t(2) + ... + t'(n-2)$.
+
+\subsection{Abstract algebra}
+\textcolor{red}{Aqui pretendo colocar definições de grupo, grupo abeliano, corpo etc. A parte de álgebra abstrata que não é específica de corpos finitos e que a gente geralmente vê na faculdade}
+
+\subsection{Finite fields --- GF($2^m$)}
+
+\begin{concept}[Finite field \cite{DesignOfRijndael2002}]
+A \emph{finite field} is a field with a finite number of elements. The number of elements in the set is called the \emph{order} of the field.
+\end{concept}
+
+\begin{concept}[Characteristic and order \cite{DesignOfRijndael2002}]
+A field with order $r$ exists if and only if $r$ is a prime power, i.e $r = p^m$ for some integer $m$, where $p$ is a prime integer. $p$ is called the \emph{characteristic} of the field. For each prime power there is exactly one finite field, denoted by GF($p^m$).
+\end{concept}
+
+\begin{concept}[Representing finite fields with prime order \cite{DesignOfRijndael2002}]
+Elements of a finite field GF($p$) can be represented by the integers $0, 1, ..., p - 1$, and the field operations are integer addition modulo $p$ and integer multiplication modulo $p$.
+\end{concept}
+
+\begin{concept}[Representing finite fields with non-prime order \cite{DesignOfRijndael2002}]
+For finite fields with an order $r = p^m$ that is not prime, addition and multiplication cannot be represented by addition and multiplication modulo $r$, and instead other representations must be used. One of the possible representations for GF($p^m$) is by means of \emph{polynomials over GF($p$) with degree at most $m-1$}. Addition and multiplication are then defined modulo an \emph{irreducible polynomial of degree $m$}.
+\end{concept}
+
+\begin{concept}[Polynomial \cite{DesignOfRijndael2002}]
+A polynomial over a field $\mathbb{F}$ is an expression of the form
+
+$$
+b(x) = b_{m-1}x^{m-1} + b_{m-2}x^{m-2} + ... + b_2x^2 + b_1x + b_0,
+$$
+
+where $x$ is the \emph{indeterminate} and $b_i \in \mathbb{F}$ are the coefficients. The \emph{degree} of the polynomial equals $l$ if $b_j = 0$ for all $j > l$ and $l$ is the smallest number with this property.
+\end{concept}
+
+Note that, when using polynomials over GF($p$) to represent the GF($p^m$) field, the degree is at most $m-1$.
+
+In this chapter, we focus particularly on fields with characteristic $p = 2$, due to their wide application in cryptography.
+
+Addition and multiplication are defined on polynomials as follows.
+
+\begin{concept}[Polynomial addition \cite{DesignOfRijndael2002}]
+Summing two polynomials $a(x)$ and $b(x)$ consists of summing the coefficients with equal powers of $x$, with the sum occuring in the underlying field $\mathbb{F}$. The neutral element is 0 (the polynomial with all coefficients equal to 0). The inverse element can be found by replacing each coefficient by its inverse element in $\mathbb{F}$. The degree of $a(x) + b(x)$ is at most the maximum of the degrees of $a(x)$ and $b(x)$, therefore addition is closed.
+\end{concept}
+
+For polynomials over GF($2$) stored as integers in a cryptographic software implementation, addition can be implemented with a bitwise XOR instruction.
+
+\begin{concept}[Polynomial multiplication \cite{DesignOfRijndael2002}]
+In order to make multiplication closed, we select a polynomial $p(x)$ of degree $l$, called the \emph{reduction polynomial}. Multiplication of $a(x)$ and $b(x)$ is then defined as the algebraic product of the polynomials modulo the reduction polynomial $p(x)$.
+
+The neutral element is 1 (the polynomial of degree 0 and with coefficient of $x^0$ equal to 1). The inverse element of $a(x)$ is $a^{-1}(x)$ such that $a(x) \times a^{-1}(x) = 1 \text{mod} p(x)$. Note that $a^{-1}(x)$ exists only when $a(x) \neq 0$.
+\end{concept}
+
+For polynomials over GF($2$) stored as integers in a cryptographic software implementation, multiplication by $x$ can be implemented as a logical bit shift followed by conditional XOR (i.e subtraction) of the reduction polynomial (the \textbf{xtime} operation). Multiplication by other polynomials can be implemented as a series of \textbf{xtime}.
+
+The reduction polynomial is chosen as an irreducible polynomial.
+
+\begin{concept}[Irreducible polynomial \cite{DesignOfRijndael2002}]
+A polynomial $d(x)$ is irreducible over the field GF($p$) if and only if there exist no two polynomials $a(x)$ and $b(x)$ with coefficients in GF($p$) such that $d(x) = a(x) \times b(x)$, where $a(x)$ and $b(x)$ are of degree greater than 0.
+\end{concept}
+
+For further reference on abstract algebra and Finite Fields, the reader may refer to \cite{panario2007topicos}, \cite{panario2013handbook} and \cite{Handbook1996}.
+
+\subsection{Computational cost unit}\label{sec:comp-cost}
+
+\subsubsection{Computational cost of multiplication in GF($2^8$)}
+Consider $T$ a state byte, which we multiply by the polynomial $2e_x = 00101110_2 = x^5 + x^3 + x^2 + x$ in GF($2^8$). Note that
+
+$$
+T \cdot 2e_x = T \cdot x^5 + T \cdot x^3 + T \cdot x^2 + T \cdot x = T \cdot x \cdot x \cdot x \cdot x \cdot x + T \cdot x \cdot x \cdot x + T \cdot x \cdot x + T \cdot x,
+$$
+
+where $\cdot$ denotes multiplication and $+$ denotes addition (which, in GF($2^8$), is equivalent to a bitwise XOR). Multiplication by the $x$ polynomial is performed by \textbf{xtime}, and addition is performed by \textbf{xor}.
+
+Let $T \cdot x = Y$. Then $T \cdot 2e_x = Y + Y \cdot x + Y \cdot x \cdot x + Y \cdot x \cdot x \cdot x \cdot $.
+
+Let $Y \cdot x = W$. Then $T \cdot 2e_x = Y + W + W \cdot x + W \cdot x \cdot x \cdot x$.
+
+Let $W \cdot x = Z$. Then $T \cdot 2e_x = Y + W + Z + Z \cdot x \cdot x$.
+
+The total number of \textbf{xtime} operations in this process is 5 (1 to obtain $Y$ from $T$, 1 to obtain $W$ from $Y$, 1 to obtain $Z$ from $W$, 2 to compute $Z \cdot x \cdot x$), since we can reuse intermediate \textbf{xtime} calls. The total number of \textbf{xor} operations is 3. For multiplication in GF($2^8$), in the worst case, 7 \textbf{xtime} would be necessary, since the maximum degree of polynomials in GF($2^8$) is 7.
+
+\subsubsection{Computational cost of a matrix}
+The computational cost of an $n\times n$ matrix $A$ is given by the necessary \textbf{xor} and \textbf{xtime} operations when multiplying a $n\times1$ column vector by $A$. As an example, we calculate the cost of matrix (\ref{mat:square}), used in the SQUARE \cite{SQUARE1997} cipher.
+
+A row of matrix (\ref{mat:square}) contains the elements $01_x = 1, 02_x = x$ and $03_x = x + 1$ only. Multiplying by $01_x$ does not require \textbf{xtime} or \textbf{xor}, since $01_x \cdot T = T$. Computing $02_x \cdot T = x \cdot T$ requires 1 \textbf{xtime}. Computing $03_x \cdot T = (x + 1) \cdot T = T \cdot x + T$ requires 1 \textbf{xtime} and 1 \textbf{xor}. Furthermore, adding the row multiplication results costs 3 \textbf{xor}. Therefore, the cost of a row is 2 \textbf{xtime} and 4 \textbf{xor}. Equation \ref{eq:cost} illustrates this, with $t_1, t_2, t_3$ and $t_4$ being bytes of the state column vector.
+
+\begin{equation}\label{eq:cost}
+\begin{bmatrix}
+02_x & 01_x & 01_x & 03_x\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+t_1\\
+t_2\\
+t_3\\
+t_4
+\end{bmatrix}
+= 02_x \cdot t_1 + 01_x \cdot t_2 + 01_x \cdot t_3 + 03_x \cdot t_4
+\end{equation}
+
+Note that matrix (\ref{mat:square}) contains 4 rows, yielding a total cost of 8 \textbf{xtime} and 16 \textbf{xor}.

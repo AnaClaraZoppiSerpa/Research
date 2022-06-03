@@ -1,0 +1,684 @@
+Matrix (\ref{mat:shark}) and its inverse (\ref{mat:shark-inv}) are used in the SHARK \cite{SHARK1996} cipher.
+
+\begin{equation}\label{mat:shark}
+\begin{bmatrix}
+ce_x & 95_x & 57_x & 82_x & 8a_x & 19_x & b0_x & 01_x\\
+e7_x & fe_x & 05_x & d2_x & 52_x & c1_x & 88_x & f1_x\\
+b9_x & da_x & 4d_x & d1_x & 9e_x & 17_x & 83_x & 86_x\\
+d0_x & 9d_x & 26_x & 2c_x & 5d_x & 9f_x & 6d_x & 75_x\\
+52_x & a9_x & 07_x & 6c_x & b9_x & 8f_x & 70_x & 17_x\\
+87_x & 28_x & 3a_x & 5a_x & f4_x & 33_x & 0b_x & 6c_x\\
+74_x & 51_x & 15_x & cf_x & 09_x & a4_x & 62_x & 09_x\\
+0b_x & 31_x & 7f_x & 86_x & be_x & 05_x & 83_x & 34_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:shark-inv}
+\begin{bmatrix}
+e7_x &30_x &90_x &85_x &d0_x &4b_x &91_x &41_x\\
+53_x &95_x &9b_x &a5_x &96_x &bc_x &a1_x &68_x\\
+02_x &45_x &f7_x &65_x &5c_x &1f_x &b6_x &52_x\\
+a2_x &ca_x &22_x &94_x &44_x &63_x &2a_x &a2_x\\
+fc_x &67_x &8e_x &10_x &29_x &75_x &85_x &71_x\\
+24_x &45_x &a2_x &cf_x &2f_x &22_x &c1_x &0e_x\\
+a1_x &f1_x &71_x &40_x &91_x &27_x &18_x &a5_x\\
+56_x &f4_x &af_x &32_x &d2_x &a4_x &dc_x &71_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:square}) and its inverse (\ref{mat:square-inv}) are used in the SQUARE \cite{SQUARE1997} cipher. They are right-circulant.
+
+\begin{equation}\label{mat:square}
+\begin{bmatrix}
+02_x & 01_x & 01_x & 03_x\\
+03_x & 02_x & 01_x & 01_x\\
+01_x & 03_x & 02_x & 01_x\\
+01_x & 01_x & 03_x & 02_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:square-inv}
+\begin{bmatrix}
+0e_x & 09_x & 0d_x & 0b_x\\
+0b_x & 0e_x & 09_x & 0d_x\\
+0d_x & 0b_x & 0e_x & 09_x\\
+09_x & 0d_x & 0b_x & 0e_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:tavares}) is involutory, and was obtained by \cite{Youssef1997} with a Cauchy construction.
+
+\begin{equation}\label{mat:tavares}
+\begin{bmatrix}
+93_x & 13_x & 57_x & da_x & 58_x & 47_x & 0c_x & 1f_x\\
+13_x & 93_x & da_x & 57_x & 47_x & 58_x & 1f_x & 0c_x\\
+57_x & da_x & 93_x & 13_x & 0c_x & 1f_x & 58_x & 47_x\\
+da_x & 57_x & 13_x & 93_x & 1f_x & 0c_x & 47_x & 58_x\\
+58_x & 47_x & 0c_x & 1f_x & 93_x & 13_x & 57_x & da_x\\
+47_x & 58_x & 1f_x & 0c_x & 13_x & 93_x & da_x & 57_x\\
+0c_x & 1f_x & 58_x & 47_x & 57_x & da_x & 93_x & 13_x\\
+1f_x & 0c_x & 47_x & 58_x & da_x & 57_x & 13_x & 93_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:khazad}) is Hadamard and involutory. It is used in the KHAZAD \cite{KHAZAD2000} cipher.
+
+\begin{equation}\label{mat:khazad}
+\begin{bmatrix}
+01_x & 03_x & 04_x & 05_x & 06_x & 08_x & 0b_x & 07_x\\
+03_x & 01_x & 05_x & 04_x & 08_x & 06_x & 07_x & 0b_x\\
+04_x & 05_x & 01_x & 03_x & 0b_x & 07_x & 06_x & 08_x\\
+05_x & 04_x & 03_x & 01_x & 07_x & 0b_x & 08_x & 06_x\\
+06_x & 08_x & 0b_x & 07_x & 01_x & 03_x & 04_x & 05_x\\
+08_x & 06_x & 07_x & 0b_x & 03_x & 01_x & 05_x & 04_x\\
+0b_x & 07_x & 06_x & 08_x & 04_x & 05_x & 01_x & 03_x\\
+07_x & 0b_x & 08_x & 06_x & 05_x & 04_x & 03_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:anubis}) is Hadamard and involutory. It is used in the ANUBIS \cite{ANUBIS2000} cipher.
+
+\begin{equation}\label{mat:anubis}
+\begin{bmatrix}
+01_x & 02_x & 04_x & 06_x\\
+02_x & 01_x & 06_x & 04_x\\
+04_x & 06_x & 01_x & 02_x\\
+06_x & 04_x & 02_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+Still regarding the ANUBIS cipher, while (\ref{mat:anubis}) is used as its linear transformation layer, (\ref{mat:anubis-ke}) is used in the key extraction. It is a Vandermonde construction. When $N = 4$, it is an MDS matrix (see Theorem \ref{teo:mds}). Matrix (\ref{mat:anubis-ke-inv}) is the inverse of (\ref{mat:anubis-ke}).
+
+\begin{equation}\label{mat:anubis-ke}
+\begin{bmatrix}
+01_x & 01_x & 01_x & ... & 01_x\\
+01_x & 02_x & 02_x^2 & ... & 02_x^{N-1}\\
+01_x & 06_x & 06_x^2 & ... & 06_x^{N-1}\\
+01_x & 08_x & 08_x^2 & ... & 08_x^{N-1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 01_x\\
+01_x & 02_x & 04_x & 08_x\\
+01_x & 06_x & 14_x & 78_x\\
+01_x & 08_x & 40_x & 3a_x
+\end{bmatrix} \text{for } N=4
+\end{equation}
+
+\begin{equation}\label{mat:anubis-ke-inv}
+\begin{bmatrix}
+71_x & 53_x & 7c_x & 5f_x\\
+8c_x & 25_x & c3_x & 6a_x\\
+a3_x & ad_x & 71_x & 7f_x\\
+5f_x & db_x & ce_x & 4a_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:rijndael}) and its inverse (\ref{mat:rijndael-inv}) are used in the Rijndael \cite{DesignOfRijndael2002} cipher, which was selected to become AES. They are right-circulant. We show the hexadecimal notation and the corresponding polynomials to emphasize that, albeit stored as integers in cryptographic software implementation, all matrix elements are actually polynomials in a Finite Field. This applies not only to the Rijndael cipher's matrices but to all matrices listed in this work.
+
+\begin{equation}\label{mat:rijndael}
+\begin{bmatrix}
+02_x & 03_x & 01_x & 01_x\\
+01_x & 02_x & 03_x & 01_x\\
+01_x & 01_x & 02_x & 03_x\\
+03_x & 01_x & 01_x & 02_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+x & x+1 & 1 & 1\\
+1 & x & x+1 & 1\\
+1 & 1 & x & x+1\\
+x+1 & 1 & 1 & x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:rijndael-inv}
+\begin{bmatrix}
+0e_x & 0b_x & 0d_x & 09_x\\
+09_x & 0e_x & 0b_x & 0d_x\\
+0d_x & 09_x & 0e_x & 0b_x\\
+0b_x & 0d_x & 09_x & 0e_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+x^3+x^2+x & x^3+x+1 & x^3+x^2+1 & x^3+1\\
+x^3+1 & x^3+x^2+x & x^3+x+1 & x^3+x^2+1\\
+x^3+x^2+1 & x^3+1 & x^3+x^2+x & x^3+x+1\\
+x^3+x+1 & x^3+x^2+1 & x^3+1 & x^3+x^2+x
+\end{bmatrix}
+\end{equation}
+
+Furthermore, it is interesting to note that Rijndael's matrix (\ref{mat:rijndael}) is the transpose of SQUARE's matrix (\ref{mat:square}) and this also happens to the inverses (matrix (\ref{mat:square-inv}) is the transpose of (\ref{mat:rijndael-inv})).
+
+Matrices (\ref{mat:bksq}) and its inverse (\ref{mat:bksq-inv}) are used in the BKSQ \cite{BKSQ1998} cipher. They are right-circulant.
+
+\begin{equation}\label{mat:bksq}
+\begin{bmatrix}
+03_x & 02_x & 02_x\\
+02_x & 03_x & 02_x\\
+02_x & 02_x & 03_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:bksq-inv}
+\begin{bmatrix}
+ac_x & ad_x & ad_x\\
+ad_x & ac_x & ad_x\\
+ad_x & ad_x & ac_x
+\end{bmatrix}
+\end{equation}
+
+The Hierocrypt-3 cipher makes use of two MDS matrices, one for lower level diffusion and another for higher level diffusion on the cipher, which follows a nested Substitution Permutation Network design (for more detail the reader may refer to \cite{Hierocrypt2000}). Matrix (\ref{mat:hierocrypt-3-lower}) and its inverse (\ref{mat:hierocrypt-3-lower-inv}) are used for lower level diffusion. (\ref{mat:hierocrypt-3-higher}) and (\ref{mat:hierocrypt-3-higher-inv}) (the inverse) are used for higher level diffusion. It is worth noting that, for lower level diffusion, the finite field is $GF(2^8)$, whilst, for higher level diffusion, the authors choose $GF(2^4)$.
+
+\begin{equation}\label{mat:hierocrypt-3-lower}
+\begin{bmatrix}
+c4_x & 65_x & c8_x & 8b_x\\
+8b_x & c4_x & 65_x & c8_x\\
+c8_x & 8b_x & c4_x & 65_x\\
+65_x & c8_x & 8b_x & c4_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-lower-inv}
+\begin{bmatrix}
+82_x & c4_x & 34_x & f6_x\\
+f6_x & 82_x & c4_x & 34_x\\
+34_x & f6_x & 82_x & c4_x\\
+c4_x & 34_x & f6_x & 82_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-higher}
+\begin{bmatrix}
+5_x & 5_x & a_x & e_x\\
+e_x & 5_x & 5_x & a_x\\
+a_x & e_x & 5_x & 5_x\\
+5_x & a_x & e_x & 5_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-3-higher-inv}
+\begin{bmatrix}
+b_x & e_x & e_x & 6_x\\
+6_x & b_x & e_x & e_x\\
+e_x & 6_x & b_x & e_x\\
+e_x & e_x & 6_x & b_x
+\end{bmatrix}
+\end{equation}
+
+The Hierocrypt-L1 cipher too uses matrix (\ref{mat:hierocrypt-3-lower}) and the inverse (\ref{mat:hierocrypt-3-lower-inv}) in its lower diffusion layer. However, for the higher layer, (\ref{mat:hierocrypt-l1-higher}) and (\ref{mat:hierocrypt-l1-higher-inv}) (inverse) are used. Analogously to Hierocrypt-3, the higher layer uses $GF(2^4)$.
+
+\begin{equation}\label{mat:hierocrypt-l1-higher}
+\begin{bmatrix}
+5_x & 7_x\\
+a_x & b_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:hierocrypt-l1-higher-inv}
+\begin{bmatrix}
+c_x & a_x\\
+5_x & b_x
+\end{bmatrix}
+\end{equation}
+
+Matrices (\ref{mat:fox-mu4}) (inverse: (\ref{mat:fox-mu4-inv})) and (\ref{mat:fox-mu8}) (inverse: (\ref{mat:fox-mu8-inv})) are used in the FOX block cipher family, with $z = x^7+x^6+x^5+x^4+x^3+x^2+1, a = x+1, b = x^7+x, c = x, d = x^2, e = x^7+x^6+x^5+x^4+x^3+x^2$ and $f = x^6+x^5+x^4+x^3+x^2+x$.
+
+\begin{equation}\label{mat:fox-mu4}
+\begin{bmatrix}
+1 & 1 & 1 & x\\
+1 & z & x & 1\\
+z & x & 1 & 1\\
+x & 1 & z & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 02_x\\
+01_x & fd_x & 02_x & 01_x\\
+fd_x & 02_x & 01_x & 01_x\\
+02_x & 01_x & fd_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu8}
+\begin{bmatrix}
+1 & 1 & 1 & 1 & 1 & 1 & 1 & a\\
+1 & a & b & c & d & e & f & 1\\
+a & b & c & d & e & f & 1 & 1\\
+b & c & d & e & f & 1 & a & 1\\
+c & d & e & f & 1 & a & b & 1\\
+d & e & f & 1 & a & b & c & 1\\
+e & f & 1 & a & b & c & d & 1\\
+f & 1 & a & b & c & d & e & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+01_x & 01_x & 01_x & 01_x & 01_x & 01_x & 01_x & 03_x\\
+01_x & 03_x & 82_x & 02_x & 04_x & fc_x & 7e_x & 01_x\\
+03_x & 82_x & 02_x & 04_x & fc_x & 7e_x & 01_x & 01_x\\
+82_x & 02_x & 04_x & fc_x & 7e_x & 01_x & 03_x & 01_x\\
+02_x & 04_x & fc_x & 7e_x & 01_x & 03_x & 82_x & 01_x\\
+04_x & fc_x & 7e_x & 01_x & 03_x & 82_x & 02_x & 01_x\\
+fc_x & 7e_x & 01_x & 03_x & 82_x & 02_x & 04_x & 01_x\\
+7e_x & 01_x & 03_x & 82_x & 02_x & 04_x & fc_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu4-inv}
+\begin{bmatrix}
+7e_x & e1_x & ad_x & b0_x\\
+7e_x & ad_x & b0_x & e1_x\\
+7e_x & b0_x & e1_x & ad_x\\
+c3_x & 7e_x & 7e_x & 7e_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:fox-mu8-inv}
+\begin{bmatrix}
+c6_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x & b7_x\\
+c6_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x & b7_x & fe_x\\
+c6_x & 73_x & 6d_x & 0c_x & d2_x & b7_x & fe_x & 3a_x\\
+c6_x & 6d_x & 0c_x & d2_x & b7_x & fe_x & 3a_x & 73_x\\
+c6_x & 0c_x & d2_x & b7_x & fe_x & 3a_x & 73_x & 6d_x\\
+c6_x & d2_x & b7_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x\\
+c6_x & b7_x & fe_x & 3a_x & 73_x & 6d_x & 0c_x & d2_x\\
+ea_x & c6_x & c6_x & c6_x & c6_x & c6_x & c6_x & c6_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:curupira}) is used in Curupira's diffusion layer. It is involutory.
+
+\begin{equation}\label{mat:curupira}
+\begin{bmatrix}
+03_x & 02_x & 02_x\\
+04_x & 05_x & 04_x\\
+06_x & 06_x & 07_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:curupira-ke}) is used in Curupira's key scheduling process, with $c(x) = x^4 + x^3 + x^2$.
+
+\begin{equation}\label{mat:curupira-ke}
+\begin{bmatrix}
+1+c(x) & c(x) & c(x)\\
+c(x) & 1+c(x) & c(x)\\
+c(x) & c(x) & 1+c(x)
+\end{bmatrix}
+=
+\begin{bmatrix}
+1d_x & 1c_x & 1c_x\\
+1c_x & 1d_x & 1c_x\\
+1c_x & 1c_x & 1d_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:curupira-ke-inv}) is the inverse of (\ref{mat:curupira-ke}).
+\begin{equation}\label{mat:curupira-ke-inv}
+\begin{bmatrix}
+1c_x & 1d_x & 1d_x\\
+1d_x & 1c_x & 1d_x\\
+1d_x & 1d_x & 1c_x
+\end{bmatrix}
+\end{equation}
+
+Matrix (\ref{mat:grostl}) is used in the Gr{\o}stl hash function. It is right-circulant. Its inverse is (\ref{mat:grostl-inv}).
+
+\begin{equation}\label{mat:grostl}
+\begin{bmatrix}
+02_x & 02_x & 03_x & 04_x & 05_x & 03_x & 05_x & 07_x\\
+07_x & 02_x & 02_x & 03_x & 04_x & 05_x & 03_x & 05_x\\
+05_x & 07_x & 02_x & 02_x & 03_x & 04_x & 05_x & 03_x\\
+03_x & 05_x & 07_x & 02_x & 02_x & 03_x & 04_x & 05_x\\
+05_x & 03_x & 05_x & 07_x & 02_x & 02_x & 03_x & 04_x\\
+04_x & 05_x & 03_x & 05_x & 07_x & 02_x & 02_x & 03_x\\
+03_x & 04_x & 05_x & 03_x & 05_x & 07_x & 02_x & 02_x\\
+02_x & 03_x & 04_x & 05_x & 03_x & 05_x & 07_x & 02_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:grostl-inv}
+\begin{bmatrix}
+13_x & 5a_x & 54_x & 72_x & 50_x & df_x & 45_x & 53_x\\
+53_x & 13_x & 5a_x & 54_x & 72_x & 50_x & df_x & 45_x\\
+45_x & 53_x & 13_x & 5a_x & 54_x & 72_x & 50_x & df_x\\
+df_x & 45_x & 53_x & 13_x & 5a_x & 54_x & 72_x & 50_x\\
+50_x & df_x & 45_x & 53_x & 13_x & 5a_x & 54_x & 72_x\\
+72_x & 50_x & df_x & 45_x & 53_x & 13_x & 5a_x & 54_x\\
+54_x & 72_x & 50_x & df_x & 45_x & 53_x & 13_x & 5a_x\\
+5a_x & 54_x & 72_x & 50_x & df_x & 45_x & 53_x & 13_x
+\end{bmatrix}
+\end{equation}
+
+Matrix \eqref{mat:led} is used in the LED block cipher. Its inverse is matrix \eqref{mat:led-inv}.
+
+\begin{equation}\label{mat:led}
+\begin{bmatrix}
+  4_x & 1_x & 2_x & 2_x\\
+  8_x & 6_x & 5_x & 6_x\\
+  b_x & e_x & a_x & 9_x\\
+  2_x & 2_x & f_x & b_x
+\end{bmatrix}
+=
+\begin{bmatrix}
+  0_x & 1_x & 0_x & 0_x\\
+  0_x & 0_x & 1_x & 0_x\\
+  0_x & 0_x & 0_x & 1_x\\
+  4_x & 1_x & 2_x & 2_x
+\end{bmatrix}^4
+=
+Companion(4_x,1_x,2_x,2_x)^4
+\end{equation}
+
+\begin{equation}\label{mat:led-inv}
+  \begin{bmatrix}
+  c_x & c_x & d_x & 4_x\\
+  3_x & 8_x & 4_x & 5_x\\
+  7_x & 6_x & 2_x & e_x\\
+  d_x & 9_x & 9_x & d_x
+  \end{bmatrix}
+\end{equation}
+
+Matrices \eqref{mat:photon4x4} to \eqref{mat:photon_a288-inv} refer to the different matrices employed in different flavors of the PHOTON hash function and the respective inverses.
+
+\begin{equation}\label{mat:photon4x4}
+    \begin{bmatrix}
+    01_x & 02_x & 01_x & 04_x\\
+    04_x & 09_x & 06_x & 11_x\\
+    11_x & 26_x & 18_x & 42_x\\
+    42_x & 95_x & 64_x & 0b_x
+    \end{bmatrix}
+    =
+    Companion(01_x, 02_x, 01_x, 04_x)
+\end{equation}
+
+\begin{equation}\label{mat:photon4x4-inv}
+    \begin{bmatrix}
+    14_x & 1a_x & 35_x & 0c_x\\
+    0c_x & 0c_x & 16_x & 05_x\\
+    05_x & 06_x & 09_x & 02_x\\
+    02_x & 01_x & 04_x & 01_x
+    \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a100}
+  \begin{bmatrix}
+  1_x & 2_x & 9_x & 9_x & 2_x\\
+  2_x & 5_x & 3_x & 8_x & d_x\\
+  d_x & b_x & a_x & c_x & 1_x\\
+  1_x & f_x & 2_x & 3_x & e_x\\
+  e_x & e_x & 8_x & 5_x & c_x
+  \end{bmatrix}
+  =
+  Companion(1_x,2_x,9_x,9_x,2_x)^5
+\end{equation}
+
+\begin{equation}\label{mat:photon_a100-inv}
+  \begin{bmatrix}
+  c_x & 5_x & 8_x & e_x & e_x\\
+  e_x & 3_x & 2_x & f_x & 1_x\\
+  1_x & c_x & a_x & b_x & d_x\\
+  d_x & 8_x & 3_x & 5_x & 2_x\\
+  2_x & 9_x & 9_x & 2_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a144}
+  \begin{bmatrix}
+  1_x & 2_x & 8_x & 5_x & 8_x & 2_x\\
+  2_x & 5_x & 1_x & 2_x & 6_x & c_x\\
+  c_x & 9_x & f_x & 8_x & 8_x & d_x\\
+  d_x & 5_x & b_x & 3_x & a_x & 1_x\\
+  1_x & f_x & d_x & e_x & b_x & 8_x\\
+  8_x & 2_x & 3_x & 3_x & 2_x & 8_x
+  \end{bmatrix}
+  =
+  Companion(1_x,2_x,8_x,5_x,8_x,2_x)^6
+\end{equation}
+
+\begin{equation}\label{mat:photon_a144-inv}
+  \begin{bmatrix}
+  8_x & 2_x & 3_x & 3_x & 2_x & 8_x\\
+  8_x & b_x & e_x & d_x & f_x & 1_x\\
+  1_x & a_x & 3_x & b_x & 5_x & d_x\\
+  d_x & 8_x & 8_x & f_x & 9_x & c_x\\
+  c_x & 6_x & 2_x & 1_x & 5_x & 2_x\\
+  2_x & 8_x & 5_x & 8_x & 2_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a196}
+  \begin{bmatrix}
+  1_x & 4_x & 6_x & 1_x & 1_x & 6_x & 4_x\\
+  4_x & 2_x & f_x & 2_x & 5_x & a_x & 5_x\\
+  5_x & 3_x & f_x & a_x & 7_x & 8_x & d_x\\
+  d_x & 4_x & b_x & 2_x & 7_x & f_x & 9_x\\
+  9_x & f_x & 7_x & 2_x & b_x & 4_x & d_x\\
+  d_x & 8_x & 7_x & a_x & f_x & 3_x & 5_x\\
+  5_x & a_x & 5_x & 2_x & f_x & 2_x & 4_x
+  \end{bmatrix}
+  =
+  Companion(1_x,4_x,6_x,1_x,1_x,6_x,4_x)^7
+\end{equation}
+
+\begin{equation}\label{mat:photon_a196-inv}
+  \begin{bmatrix}
+  4_x & 2_x & f_x & 2_x & 5_x & a_x & 5_x\\
+  5_x & 3_x & f_x & a_x & 7_x & 8_x & d_x\\
+  d_x & 4_x & b_x & 2_x & 7_x & f_x & 9_x\\
+  9_x & f_x & 7_x & 2_x & b_x & 4_x & d_x\\
+  d_x & 8_x & 7_x & a_x & f_x & 3_x & 5_x\\
+  5_x & a_x & 5_x & 2_x & f_x & 2_x & 4_x\\
+  4_x & 6_x & 1_x & 1_x & 6_x & 4_x & 1_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a256}
+  \begin{bmatrix}
+  2_x & 4_x & 2_x & b_x & 2_x & 8_x & 5_x & 6_x\\
+  c_x & 9_x & 8_x & d_x & 7_x & 7_x & 5_x & 2_x\\
+  4_x & 4_x & d_x & d_x & 9_x & 4_x & d_x & 9_x\\
+  1_x & 6_x & 5_x & 1_x & c_x & d_x & f_x & e_x\\
+  f_x & c_x & 9_x & d_x & e_x & 5_x & e_x & d_x\\
+  9_x & e_x & 5_x & f_x & 4_x & c_x & 9_x & 6_x\\
+  c_x & 2_x & 2_x & a_x & 3_x & 1_x & 1_x & e_x\\
+  f_x & 1_x & d_x & a_x & 5_x & a_x & 2_x & 3_x
+  \end{bmatrix}
+  =
+  Companion(2_x,4_x,2_x,11_x,2_x,8_x,5_x,6_x)^8
+\end{equation}
+
+\begin{equation}\label{mat:photon_a256-inv}
+  \begin{bmatrix}
+  4_x & 7_x & 9_x & a_x & c_x & c_x & 3_x & f_x\\
+  d_x & d_x & a_x & a_x & 7_x & d_x & a_x & 7_x\\
+  e_x & 2_x & 3_x & e_x & 4_x & a_x & 5_x & b_x\\
+  5_x & 4_x & 7_x & a_x & b_x & 3_x & b_x & a_x\\
+  7_x & b_x & 3_x & 5_x & d_x & 4_x & 7_x & 2_x\\
+  4_x & f_x & f_x & 6_x & 1_x & e_x & e_x & b_x\\
+  5_x & e_x & a_x & 6_x & 3_x & 6_x & f_x & 1_x\\
+  2_x & 1_x & c_x & 1_x & 4_x & b_x & 3_x & 9_x
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:photon_a288}
+  \begin{bmatrix}
+  02_x & 03_x & 01_x & 02_x & 01_x & 04_x\\
+  08_x & 0e_x & 07_x & 09_x & 06_x & 11_x\\
+  22_x & 3b_x & 1f_x & 25_x & 18_x & 42_x\\
+  84_x & e4_x & 79_x & 9b_x & 67_x & 0b_x\\
+  16_x & 99_x & ef_x & 6f_x & 90_x & 4b_x\\
+  96_x & cb_x & d2_x & 79_x & 24_x & a7_x
+  \end{bmatrix}
+  =
+  Companion(2_x,3_x,1_x,2_x,1_x,4_x)^6
+\end{equation}
+
+\begin{equation}\label{mat:photon_a288-inv}
+  \begin{bmatrix}
+  15_x & 50_x & eb_x & 62_x & 79_x & 99_x\\
+  29_x & a5_x & c9_x & c2_x & fb_x & 2b_x\\
+  56_x & 54_x & 8e_x & 9f_x & e9_x & 57_x\\
+  ae_x & af_x & 03_x & 20_x & c8_x & ae_x\\
+  47_x & 47_x & 01_x & 44_x & 8e_x & 46_x\\
+  8c_x & 8d_x & 01_x & 8d_x & 02_x & 8d_x
+  \end{bmatrix}
+\end{equation}
+
+Matrix \eqref{mat:joltik} is used in the Joltik \cite{joltik2015} cipher. It is involutory.
+
+\begin{equation}\label{mat:joltik}
+\begin{bmatrix}
+	1_x & 4_x & 9_x & d_x\\
+	4_x & 1_x & d_x & 9_x\\
+	9_x & d_x & 1_x & 4_x\\
+	d_x & 9_x & 4_x & 1_x
+\end{bmatrix}
+\end{equation}
+
+Matrix \eqref{mat:cui_jin} is shown in \cite{CuiJin2015} as an example of compact Cauchy involutory MDS matrix.
+
+\begin{equation}\label{mat:cui_jin}
+\begin{bmatrix}
+01_x & 12_x & 04_x & 16_x\\
+12_x & 01_x & 16_x & 04_x\\
+04_x & 16_x & 01_x & 12_x\\
+16_x & 04_x & 12_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+Matrices from \eqref{mat:gupta_ray_1} to \eqref{mat:gupta_ray_5} were found in \cite{Gupta2013OnCO}.
+
+\begin{equation}\label{mat:gupta_ray_1}
+\begin{bmatrix}
+7a_x & f4_x & 8e_x & 01_x\\
+f4_x & 7a_x & 01_x & 8e_x\\
+8e_x & 01_x & 7a_x & f4_x\\
+01_x & 8e_x & f4_x & 7a_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:gupta_ray_2}
+\begin{bmatrix}
+01_x & 02_x & fc_x & fe_x\\
+02_x & 01_x & fe_x & fc_x\\
+fc_x & fe_x & 01_x & 02_x\\
+fe_x & fc_x & 02_x & 01_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:gupta_ray_3}
+had(01_x, 02_x, 06_x, 8c_x, 30_x, fb_x, 87_x, c4_x)
+\end{equation}
+
+\begin{tiny}
+\begin{equation}\label{mat:gupta_ray_4}
+\begin{bmatrix}
+01_x 03_x 08_x b2_x 0d_x 60_x e8_x 1c_x 0f_x 2c_x a2_x 8b_x c9_x 7a_x ac_x 35_x\\
+03_x 01_x b2_x 08_x 60_x 0d_x 1c_x e8_x 2c_x 0f_x 8b_x a2_x 7a_x c9_x 35_x ac_x\\
+08_x b2_x 01_x 03_x e8_x 1c_x 0d_x 60_x a2_x 8b_x 0f_x 2c_x ac_x 35_x c9_x 7a_x\\
+b2_x 08_x 03_x 01_x 1c_x e8_x 60_x 0d_x 8b_x a2_x 2c_x 0f_x 35_x ac_x 7a_x c9_x\\
+0d_x 60_x e8_x 1c_x 01_x 03_x 08_x b2_x c9_x 7a_x ac_x 35_x 0f_x 2c_x a2_x 8b_x\\
+60_x 0d_x 1c_x e8_x 03_x 01_x b2_x 08_x 7a_x c9_x 35_x ac_x 2c_x 0f_x 8b_x a2_x\\
+e8_x 1c_x 0d_x 60_x 08_x b2_x 01_x 03_x ac_x 35_x c9_x 7a_x a2_x 8b_x 0f_x 2c_x\\
+1c_x e8_x 60_x 0d_x b2_x 08_x 03_x 01_x 35_x ac_x 7a_x c9_x 8b_x a2_x 2c_x 0f_x\\
+0f_x 2c_x a2_x 8b_x c9_x 7a_x ac_x 35_x 01_x 03_x 08_x b2_x 0d_x 60_x e8_x 1c_x\\
+2c_x 0f_x 8b_x a2_x 7a_x c9_x 35_x ac_x 03_x 01_x b2_x 08_x 60_x 0d_x 1c_x e8_x\\
+a2_x 8b_x 0f_x 2c_x ac_x 35_x c9_x 7a_x 08_x b2_x 01_x 03_x e8_x 1c_x 0d_x 60_x\\
+8b_x a2_x 2c_x 0f_x 35_x ac_x 7a_x c9_x b2_x 08_x 03_x 01_x 1c_x e8_x 60_x 0d_x\\
+c9_x 7a_x ac_x 35_x 0f_x 2c_x a2_x 8b_x 0d_x 60_x e8_x 1c_x 01_x 03_x 08_x b2_x\\
+7a_x c9_x 35_x ac_x 2c_x 0f_x 8b_x a2_x 60_x 0d_x 1c_x e8_x 03_x 01_x b2_x 08_x\\
+ac_x 35_x c9_x 7a_x a2_x 8b_x 0f_x 2c_x e8_x 1c_x 0d_x 60_x 08_x b2_x 01_x 03_x\\
+35_x ac_x 7a_x c9_x 8b_x a2_x 2c_x 0f_x 1c_x e8_x 60_x 0d_x b2_x 08_x 03_x 01_x
+\end{bmatrix}
+\end{equation}
+\end{tiny}
+
+%\begin{tiny}
+\begin{align}\label{mat:gupta_ray_5}
+had(01_x, 02_x, 04_x, 69_x, 07_x, ec_x, cc_x, 72_x, 0b_x, 54_x, 29_x, be_x, 74_x, f9_x, c4_x, 87_x, \nonumber\\ 0e_x, 47_x, c2_x, c3_x, 39_x, 8e_x, 1c_x, 85_x, 55_x, 26_x, 1e_x, af_x, 68_x, b6_x, 59_x, 1f_x)
+\end{align}
+%\end{tiny}
+
+Matrix \eqref{mat:khoo} is a Hadamard-Cauchy involution matrix, presented in \cite{LwInvolKhoo2015}.
+
+\begin{equation}\label{mat:khoo}
+hc(0f_x, 02_x, 0c_x, 05_x, 0a_x, 04_x, 03_x, 08_x)
+\end{equation}
+
+% Khoo tabela 1
+
+Matrices from \eqref{mat:khoo-1} to \eqref{mat:khoo-6} are also presented in \cite{LwInvolKhoo2015}.
+
+\begin{equation}\label{mat:khoo-1}
+had(1_x, 4_x, 9_x, d_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-2}
+had(01_x, 02_x, b0_x, b2_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-3}
+had(01_x, 02_x, 03_x, 91_x, 04_x, 70_x, 05_x, e1_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-4}
+had(2_x, 3_x, 4_x, c_x, 5_x, a_x, 8_x, f_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-5}
+hc(08_x, 16_x, 8a_x, 01_x, 70_x, 8d_x, 24_x, 76_x, a8_x, 91_x, ad_x, 48_x, 05_x, b5_x, af_x , f8_x)
+\end{equation}
+
+%\begin{tiny}
+\begin{align}\label{mat:khoo-6}
+hc(d2_x, 06_x, 05_x, 4d_x, 21_x, f8_x, 11_x, 62_x, 08_x, d8_x, e9_x, 28_x, 4b_x, a6_x, 10_x, 2c_x, \nonumber\\ a1_x, 49_x, 4c_x, d1_x, 59_x, b2_x, 13_x, a4_x, 03_x, c3_x, 42_x, 79_x, a0_x, 6f_x, ab_x, 41_x)
+\end{align}
+%\end{tiny}
+
+% Khoo tabela 2
+
+\begin{equation}\label{mat:khoo-7}
+had(1_x,2_x,8_x,9_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-8}
+had(01_x, 02_x, 04_x, 91_x) 
+\end{equation}
+
+\begin{equation}\label{mat:khoo-9}
+had(01_x, 02_x, 03_x, 08_x, 04_x, 91_x, e1_x, a9_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-10}
+had(1_x, 2_x, 6_x, 8_x, 9_x, c_x, d_x, a_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-11}
+hc(b1_x, 1c_x, 30_x, 09_x, 08_x, 91_x, 18_x, e4_x, 98_x, 12_x, 70_x, b5_x, 97_x, 90_x, a9_x, 5b_x)
+\end{equation}
+
+\begin{align}\label{mat:khoo-12}
+hc(b9_x, 7c_x, 93_x, bc_x, bd_x, 26_x, fa_x, a9_x, 32_x, 31_x, 24_x, b5_x, bb_x, 06_x, a0_x, 44_x, \nonumber\\ 95_x, b3_x, 0c_x, 1c_x, 07_x, e5_x, a4_x, 2e_x, 56_x, 4c_x, 55_x, 02_x, 66_x, 39_x, 48_x, 08_x)
+\end{align}
+
+% Khoo tabela 3
+
+\begin{equation}\label{mat:khoo-13}
+had(1_x,4_x,9_x,d_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-14}
+had(1_x,2_x,6_x,4_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-15}
+had(1_x,2_x,8_x,9_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-16}
+had(2_x, 3_x, 4_x, c_x, 5_x, a_x, 8_x, f_x)
+\end{equation}
+
+\begin{equation}\label{mat:khoo-17}
+had(1_x, 2_x, 6_x, 8_x, 9_x, c_x, d_x, a_x)
+\end{equation}
