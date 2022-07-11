@@ -98,7 +98,7 @@ def get_mat_info_for_mds_table(mat, field, poly_order, name):
     print(name)
     alg_mat = int_to_gf_mat(mat, field)
     print_mat_hex(alg_mat)
-    #print("mds", is_mds(alg_mat))
+    print("mds", is_mds(alg_mat))
     print("xor", matrix_xor_cost(alg_mat, poly_order))
     print("xtime", matrix_xtime_cost(alg_mat, poly_order))
 
@@ -109,7 +109,7 @@ def get_mat_info_for_mds_table(mat, field, poly_order, name):
     print_mat_hex(inv)
     print("xor", matrix_xor_cost(inv, poly_order))
     print("xtime", matrix_xtime_cost(inv, poly_order))
-    #print("mds", is_mds(inv))
+    print("mds", is_mds(inv))
 
     if np.array_equal(np.matmul(alg_mat, alg_mat), identity):
         print("Involutory")

@@ -201,6 +201,9 @@ gupta_ray_example5 = ff_hadamard_from_row([0x01, 0x02, 0x04, 0x69, 0x07, 0xec, 0
 sim_khoo_poly_0x13 = galois.Poly([1, 0, 0, 1, 1], field=GF2)
 sim_khoo_field_gf4_0x13 = galois.GF(2**4, irreducible_poly=sim_khoo_poly_0x13)
 
+sim_khoo_poly_0x19 = galois.Poly([1,1,0,0,1], field=GF2)
+sim_khoo_field_gf4_0x19 = galois.GF(2**4, irreducible_poly=sim_khoo_poly_0x19)
+
 sim_khoo_poly_0x165 = galois.Poly([1,0,1,1,0,0,1,0,1], field=GF2)
 sim_khoo_field_gf8_0x165 = galois.GF(2**8, irreducible_poly=sim_khoo_poly_0x165)
 
@@ -222,7 +225,127 @@ sim_khoo_167 = ff_hadamard_from_row([0x01, 0x02, 0x03, 0x08, 0x04, 0x91, 0xe1, 0
 sim_khoo_169 = ff_hadamard_from_row([0x1, 0x2, 0x6, 0x8, 0x9, 0xc, 0xd, 0xa])
 sim_khoo_171 = ff_hadamard_from_row([0xb1, 0x1c, 0x30, 0x09, 0x08, 0x91, 0x18, 0xe4, 0x98, 0x12, 0x70, 0xb5, 0x97, 0x90, 0xa9, 0x5b])
 
-get_mat_info_for_mds_table(sim_khoo_171, sim_khoo_field_gf8_0x1c3, sim_khoo_poly_0x1c3.degree, "Sim Khoo 171")
+sim_khoo_173 = ff_hadamard_from_row([0xb9, 0x7c, 0x93, 0xbc, 0xbd, 0x26, 0xfa, 0xa9, 0x32, 0x31, 0x24, 0xb5, 0xbb, 0x06, 0xa0, 0x44, 0x95, 0xb3, 0x0c, 0x1c, 0x07, 0xe5, 0xa4, 0x2e, 0x56, 0x4c, 0x55, 0x02, 0x66, 0x39, 0x48, 0x08])
+
+sim_khoo_174 = ff_hadamard_from_row([1,2,6,4])
+
+sim_khoo_175 = ff_hadamard_from_row([0x2, 0x3, 0x4, 0xc, 0x5, 0xa, 0x8, 0xf])
+
+########### Liu Sim ########################################################## 
+
+liu_sim_poly_0x1c3 = galois.Poly.Int(0x1c3, field=GF2)
+liu_sim_field_gf256_0x1c3 = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x1c3)
+
+liu_sim_poly_0x11b = galois.Poly.Int(0x11b, field=GF2)
+liu_sim_field_gf256_0x11b = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x11b)
+
+liu_sim_poly_0x11d = galois.Poly.Int(0x11d, field=GF2)
+liu_sim_field_gf256_0x11d = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x11d)
+
+liu_sim_poly_0x169 = galois.Poly.Int(0x169, field=GF2)
+liu_sim_field_gf256_0x169 = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x169)
+
+liu_sim_poly_0x165 = galois.Poly.Int(0x165, field=GF2)
+liu_sim_field_gf256_0x165 = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x165)
+
+liu_sim_poly_0x139 = galois.Poly.Int(0x139, field=GF2)
+liu_sim_field_gf256_0x139 = galois.GF(2**8, irreducible_poly=liu_sim_poly_0x139)
+
+liu_sim_poly_0x13 = galois.Poly.Int(0x13, field=GF2)
+liu_sim_field_gf16_0x13 = galois.GF(2**4, irreducible_poly=liu_sim_poly_0x13)
+
+liu_sim_poly_0x1f = galois.Poly.Int(0x1f, field=GF2)
+liu_sim_field_gf16_0x1f = galois.GF(2**4, irreducible_poly=liu_sim_poly_0x1f)
+
+def lcirc(row):
+	first_row = list(row)
+	dim = len(first_row)
+	rows = []
+	prev_row = []
+
+	for i in range(dim):
+		if i == 0:
+			rows.append(first_row)
+			prev_row = first_row
+		else:
+			new_row = prev_row[1:]
+			new_last = prev_row[0]
+			new_row += [new_last]
+			rows.append(new_row)
+			prev_row = new_row
+	return rows
+
+# GF((2^8))
+# 0x1c3
+
+mat_liu_sim_1 = lcirc((0x01, 0x01, 0x02))
+mat_liu_sim_2 = lcirc((0x01, 0x01, 0x02, 0x91))
+mat_liu_sim_3 = lcirc((0x01, 0x01, 0x02, 0x91, 0x02))
+mat_liu_sim_4 = lcirc((0x01, 0x02, 0xe1, 0x91, 0x01, 0x08))
+mat_liu_sim_5 = lcirc((0x01, 0x01, 0x91, 0x02, 0x04, 0x02, 0x91))
+mat_liu_sim_6 = lcirc((0x01, 0x01, 0x02, 0xe1, 0x08, 0xe0, 0x01, 0xa9))
+
+# GF((2^4))
+# 0x13
+
+mat_liu_sim_7 = lcirc((1, 1, 2))
+mat_liu_sim_8 = lcirc((1, 1, 9, 4))
+mat_liu_sim_9 = lcirc((2, 2, 9, 1, 9))
+mat_liu_sim_10 = lcirc((1, 1, 9, 0xc, 9, 3))
+
+# 0x1c3
+mat_liu_sim_11 = lcirc((0x01, 0x01, 0x91, 0x02, 0x04, 0x02, 0x12, 0x91))
+mat_liu_sim_12 = lcirc((0x01, 0x01, 0x04, 0x02, 0xa9, 0x91, 0x02, 0x03))
+mat_liu_sim_13 = lcirc((0x01, 0x01, 0x02, 0xe0, 0x06, 0xe1, 0x91, 0x04))
+mat_liu_sim_14 = lcirc((0x01, 0x02, 0x91, 0x08, 0x04, 0x06, 0xe1, 0x03))
+
+current_poly = liu_sim_poly_0x1c3
+current_field = liu_sim_field_gf256_0x1c3
+mats_liu_sim = [
+	(mat_liu_sim_11,11),
+	(mat_liu_sim_12,12),
+	(mat_liu_sim_13,13),
+	(mat_liu_sim_14,14),
+]
+
+for m in mats_liu_sim:
+	#print("mat_liu_sim_", m[1])
+	#print_mat_hex(m[0])
+	get_mat_info_for_mds_table(m[0], current_field, current_poly.degree, "mat_liu_sim_"+str(m[1]))
+
+# 0x11b
+mat_liu_sim_15 = lcirc((0x01, 0x01, 0x02, 0x01, 0x74, 0x8d, 0x46, 0x04))
+
+# 0x11d
+mat_liu_sim_16 = lcirc((0x01, 0x01, 0x02, 0x8e, 0x47, 0x10, 0x01, 0x46))
+
+# Involutory
+
+# GF((2^8))
+
+# 0x169
+mat_liu_sim_17 = lcirc((0x5a, 0x0a, 0x51))
+
+# 0x165
+mat_liu_sim_18 = lcirc((0x01, 0x02, 0xb3, 0xbb, 0x0a))
+mat_liu_sim_19 = lcirc((0x01, 0x01, 0xb3, 0x2c, 0x04, 0x9a))
+mat_liu_sim_20 = lcirc((0x01, 0x02, 0x10, 0xb2, 0x58, 0xa4, 0x5c))
+
+# 0x139
+mat_liu_sim_21 = lcirc((0x01, 0x01, 0x21, 0x08, 0x96, 0x26, 0x98))
+
+# GF((2^4))
+
+# 0x1f
+mat_liu_sim_22 = lcirc((2, 0xf, 0xc))
+
+# 0x13
+mat_liu_sim_23 = lcirc((1, 2, 5, 4, 3))
+
+#get_mat_info_for_mds_table(sim_khoo_175, sim_khoo_field_gf4_0x13, sim_khoo_poly_0x13.degree, "Sim Khoo 175")
+#get_mat_info_for_mds_table(sim_khoo_174, sim_khoo_field_gf4_0x19, sim_khoo_poly_0x19.degree, "Sim Khoo 174")
+#get_mat_info_for_mds_table(sim_khoo_173, sim_khoo_field_gf8_0x1c3, sim_khoo_poly_0x1c3.degree, "Sim Khoo 173")
+#get_mat_info_for_mds_table(sim_khoo_171, sim_khoo_field_gf8_0x1c3, sim_khoo_poly_0x1c3.degree, "Sim Khoo 171")
 #get_mat_info_for_mds_table(sim_khoo_169, sim_khoo_field_gf4_0x13, sim_khoo_poly_0x13.degree, "Sim Khoo 169")
 #get_mat_info_for_mds_table(sim_khoo_165, sim_khoo_field_gf8_0x1c3, sim_khoo_poly_0x1c3.degree, "Sim Khoo 165")
 #get_mat_info_for_mds_table(sim_khoo_163, sim_khoo_field_gf4_0x13, sim_khoo_poly_0x13.degree, "Sim Khoo 163")
