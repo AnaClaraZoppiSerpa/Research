@@ -1,0 +1,62 @@
+\begin{equation}\label{mat:liu-sim-1-inv}
+\begin{bmatrix}
+5f_x & 5f_x & e1_x \\
+5f_x & e1_x & 5f_x \\
+e1_x & 5f_x & 5f_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-2-inv}
+\begin{bmatrix}
+55_x & 41_x & 71_x & 5a_x \\
+41_x & 71_x & 5a_x & 55_x \\
+71_x & 5a_x & 55_x & 41_x \\
+5a_x & 55_x & 41_x & 71_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-3-inv}
+\begin{bmatrix}
+09_x & 09_x & c2_x & 04_x & c2_x \\
+09_x & c2_x & 04_x & c2_x & 09_x \\
+c2_x & 04_x & c2_x & 09_x & 09_x \\
+04_x & c2_x & 09_x & 09_x & c2_x \\
+c2_x & 09_x & 09_x & c2_x & 04_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-4-inv}
+\begin{bmatrix}
+11_x & 58_x & 90_x & 0f_x & 54_x & c0_x \\
+58_x & 90_x & 0f_x & 54_x & c0_x & 11_x \\
+90_x & 0f_x & 54_x & c0_x & 11_x & 58_x \\
+0f_x & 54_x & c0_x & 11_x & 58_x & 90_x \\
+54_x & c0_x & 11_x & 58_x & 90_x & 0f_x \\
+c0_x & 11_x & 58_x & 90_x & 0f_x & 54_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-5-inv}
+\begin{bmatrix}
+e6_x & e6_x & 70_x & 0f_x & 91_x & 0f_x & 70_x \\
+e6_x & 70_x & 0f_x & 91_x & 0f_x & 70_x & e6_x \\
+70_x & 0f_x & 91_x & 0f_x & 70_x & e6_x & e6_x \\
+0f_x & 91_x & 0f_x & 70_x & e6_x & e6_x & 70_x \\
+91_x & 0f_x & 70_x & e6_x & e6_x & 70_x & 0f_x \\
+0f_x & 70_x & e6_x & e6_x & 70_x & 0f_x & 91_x \\
+70_x & e6_x & e6_x & 70_x & 0f_x & 91_x & 0f_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-6-inv}
+\begin{bmatrix}
+5d_x & c4_x & b8_x & 81_x & 5f_x & 5a_x & 22_x & 96_x \\
+c4_x & b8_x & 81_x & 5f_x & 5a_x & 22_x & 96_x & 5d_x \\
+b8_x & 81_x & 5f_x & 5a_x & 22_x & 96_x & 5d_x & c4_x \\
+81_x & 5f_x & 5a_x & 22_x & 96_x & 5d_x & c4_x & b8_x \\
+5f_x & 5a_x & 22_x & 96_x & 5d_x & c4_x & b8_x & 81_x \\
+5a_x & 22_x & 96_x & 5d_x & c4_x & b8_x & 81_x & 5f_x \\
+22_x & 96_x & 5d_x & c4_x & b8_x & 81_x & 5f_x & 5a_x \\
+96_x & 5d_x & c4_x & b8_x & 81_x & 5f_x & 5a_x & 22_x
+\end{bmatrix}
+\end{equation}

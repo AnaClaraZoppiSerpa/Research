@@ -1,0 +1,115 @@
+\begin{equation}\label{mat:liu-sim-7-inv}
+\begin{bmatrix}
+7_x & 7_x & 9_x \\
+7_x & 9_x & 7_x \\
+9_x & 7_x & 7_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-8-inv}
+\begin{bmatrix}
+c_x & 8_x & 7_x & 7_x \\
+8_x & 7_x & 7_x & c_x \\
+7_x & 7_x & c_x & 8_x \\
+7_x & c_x & 8_x & 7_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-9-inv}
+\begin{bmatrix}
+5_x & 5_x & 9_x & 1_x & 9_x \\
+5_x & 9_x & 1_x & 9_x & 5_x \\
+9_x & 1_x & 9_x & 5_x & 5_x \\
+1_x & 9_x & 5_x & 5_x & 9_x \\
+9_x & 5_x & 5_x & 9_x & 1_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-10-inv}
+\begin{bmatrix}
+9_x & c_x & 2_x & 6_x & 7_x & e_x \\
+c_x & 2_x & 6_x & 7_x & e_x & 9_x \\
+2_x & 6_x & 7_x & e_x & 9_x & c_x \\
+6_x & 7_x & e_x & 9_x & c_x & 2_x \\
+7_x & e_x & 9_x & c_x & 2_x & 6_x \\
+e_x & 9_x & c_x & 2_x & 6_x & 7_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-11-inv}
+\begin{bmatrix}
+d6_x & fa_x & ee_x & f7_x & f8_x & c7_x & f8_x & 21_x \\
+fa_x & ee_x & f7_x & f8_x & c7_x & f8_x & 21_x & d6_x \\
+ee_x & f7_x & f8_x & c7_x & f8_x & 21_x & d6_x & fa_x \\
+f7_x & f8_x & c7_x & f8_x & 21_x & d6_x & fa_x & ee_x \\
+f8_x & c7_x & f8_x & 21_x & d6_x & fa_x & ee_x & f7_x \\
+c7_x & f8_x & 21_x & d6_x & fa_x & ee_x & f7_x & f8_x \\
+f8_x & 21_x & d6_x & fa_x & ee_x & f7_x & f8_x & c7_x \\
+21_x & d6_x & fa_x & ee_x & f7_x & f8_x & c7_x & f8_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-12-inv}
+\begin{bmatrix}
+8c_x & ec_x & 43_x & 0a_x & 98_x & 36_x & 79_x & 6d_x \\
+ec_x & 43_x & 0a_x & 98_x & 36_x & 79_x & 6d_x & 8c_x \\
+43_x & 0a_x & 98_x & 36_x & 79_x & 6d_x & 8c_x & ec_x \\
+0a_x & 98_x & 36_x & 79_x & 6d_x & 8c_x & ec_x & 43_x \\
+98_x & 36_x & 79_x & 6d_x & 8c_x & ec_x & 43_x & 0a_x \\
+36_x & 79_x & 6d_x & 8c_x & ec_x & 43_x & 0a_x & 98_x \\
+79_x & 6d_x & 8c_x & ec_x & 43_x & 0a_x & 98_x & 36_x \\
+6d_x & 8c_x & ec_x & 43_x & 0a_x & 98_x & 36_x & 79_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-13-inv}
+\begin{bmatrix}
+4b_x & 43_x & 8c_x & 85_x & 65_x & 92_x & 04_x & 99_x \\
+43_x & 8c_x & 85_x & 65_x & 92_x & 04_x & 99_x & 4b_x \\
+8c_x & 85_x & 65_x & 92_x & 04_x & 99_x & 4b_x & 43_x \\
+85_x & 65_x & 92_x & 04_x & 99_x & 4b_x & 43_x & 8c_x \\
+65_x & 92_x & 04_x & 99_x & 4b_x & 43_x & 8c_x & 85_x \\
+92_x & 04_x & 99_x & 4b_x & 43_x & 8c_x & 85_x & 65_x \\
+04_x & 99_x & 4b_x & 43_x & 8c_x & 85_x & 65_x & 92_x \\
+99_x & 4b_x & 43_x & 8c_x & 85_x & 65_x & 92_x & 04_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-14-inv}
+\begin{bmatrix}
+2a_x & 9d_x & 12_x & 27_x & ba_x & 0f_x & d2_x & a7_x \\
+9d_x & 12_x & 27_x & ba_x & 0f_x & d2_x & a7_x & 2a_x \\
+12_x & 27_x & ba_x & 0f_x & d2_x & a7_x & 2a_x & 9d_x \\
+27_x & ba_x & 0f_x & d2_x & a7_x & 2a_x & 9d_x & 12_x \\
+ba_x & 0f_x & d2_x & a7_x & 2a_x & 9d_x & 12_x & 27_x \\
+0f_x & d2_x & a7_x & 2a_x & 9d_x & 12_x & 27_x & ba_x \\
+d2_x & a7_x & 2a_x & 9d_x & 12_x & 27_x & ba_x & 0f_x \\
+a7_x & 2a_x & 9d_x & 12_x & 27_x & ba_x & 0f_x & d2_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-15-inv}
+\begin{bmatrix}
+22_x & c4_x & 68_x & e7_x & e9_x & 38_x & 49_x & 54_x \\
+c4_x & 68_x & e7_x & e9_x & 38_x & 49_x & 54_x & 22_x \\
+68_x & e7_x & e9_x & 38_x & 49_x & 54_x & 22_x & c4_x \\
+e7_x & e9_x & 38_x & 49_x & 54_x & 22_x & c4_x & 68_x \\
+e9_x & 38_x & 49_x & 54_x & 22_x & c4_x & 68_x & e7_x \\
+38_x & 49_x & 54_x & 22_x & c4_x & 68_x & e7_x & e9_x \\
+49_x & 54_x & 22_x & c4_x & 68_x & e7_x & e9_x & 38_x \\
+54_x & 22_x & c4_x & 68_x & e7_x & e9_x & 38_x & 49_x
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}\label{mat:liu-sim-16-inv}
+\begin{bmatrix}
+25_x & c6_x & c7_x & a9_x & fb_x & f2_x & b3_x & 9b_x \\
+c6_x & c7_x & a9_x & fb_x & f2_x & b3_x & 9b_x & 25_x \\
+c7_x & a9_x & fb_x & f2_x & b3_x & 9b_x & 25_x & c6_x \\
+a9_x & fb_x & f2_x & b3_x & 9b_x & 25_x & c6_x & c7_x \\
+fb_x & f2_x & b3_x & 9b_x & 25_x & c6_x & c7_x & a9_x \\
+f2_x & b3_x & 9b_x & 25_x & c6_x & c7_x & a9_x & fb_x \\
+b3_x & 9b_x & 25_x & c6_x & c7_x & a9_x & fb_x & f2_x \\
+9b_x & 25_x & c6_x & c7_x & a9_x & fb_x & f2_x & b3_x
+\end{bmatrix}
+\end{equation}

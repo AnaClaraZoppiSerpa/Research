@@ -299,20 +299,6 @@ mat_liu_sim_12 = lcirc((0x01, 0x01, 0x04, 0x02, 0xa9, 0x91, 0x02, 0x03))
 mat_liu_sim_13 = lcirc((0x01, 0x01, 0x02, 0xe0, 0x06, 0xe1, 0x91, 0x04))
 mat_liu_sim_14 = lcirc((0x01, 0x02, 0x91, 0x08, 0x04, 0x06, 0xe1, 0x03))
 
-current_poly = liu_sim_poly_0x1c3
-current_field = liu_sim_field_gf256_0x1c3
-mats_liu_sim = [
-	(mat_liu_sim_11,11),
-	(mat_liu_sim_12,12),
-	(mat_liu_sim_13,13),
-	(mat_liu_sim_14,14),
-]
-
-for m in mats_liu_sim:
-	#print("mat_liu_sim_", m[1])
-	#print_mat_hex(m[0])
-	get_mat_info_for_mds_table(m[0], current_field, current_poly.degree, "mat_liu_sim_"+str(m[1]))
-
 # 0x11b
 mat_liu_sim_15 = lcirc((0x01, 0x01, 0x02, 0x01, 0x74, 0x8d, 0x46, 0x04))
 
@@ -341,6 +327,21 @@ mat_liu_sim_22 = lcirc((2, 0xf, 0xc))
 
 # 0x13
 mat_liu_sim_23 = lcirc((1, 2, 5, 4, 3))
+
+##### MOVE THIS #####
+
+current_poly = liu_sim_poly_0x13
+current_field = liu_sim_field_gf16_0x13
+mats_liu_sim = [
+	(mat_liu_sim_23,23),
+]
+
+for m in mats_liu_sim:
+	#print("mat_liu_sim_", m[1])
+	#print_mat_hex(m[0])
+	get_mat_info_for_mds_table(m[0], current_field, current_poly.degree, "mat_liu_sim_"+str(m[1]))
+
+##### MOVING ENDS ####
 
 #get_mat_info_for_mds_table(sim_khoo_175, sim_khoo_field_gf4_0x13, sim_khoo_poly_0x13.degree, "Sim Khoo 175")
 #get_mat_info_for_mds_table(sim_khoo_174, sim_khoo_field_gf4_0x19, sim_khoo_poly_0x19.degree, "Sim Khoo 174")
