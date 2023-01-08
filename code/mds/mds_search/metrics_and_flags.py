@@ -81,6 +81,10 @@ def is_mds(mat_in_field):
 				submat = np.delete(mat_in_field, rows_to_be_removed, axis=0)
 				submat = np.delete(submat, columns_to_be_removed, axis=1)
 				if np.linalg.det(submat) == 0:
+					print("non mds matrix detected")
+					print("submat", submat)
+					print("rows to remove", rows_to_be_removed)
+					print("cols to remove", columns_to_be_removed)
 					return False
 		z += 1
 	return True
