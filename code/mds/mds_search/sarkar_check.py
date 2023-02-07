@@ -1,5 +1,7 @@
 from metrics_and_flags import *
 
+# TODO: Check Toep and Hank because there might be a mistake in them!
+
 def toep(values, n):
     A = [[0 for i in range(n)] for j in range(n)]
     for i in range(n):
