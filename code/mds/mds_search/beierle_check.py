@@ -11,8 +11,11 @@ def circ():
 def alpha_power():
     pass
 
-beierle_2x2=[
+alpha=0
 
+beierle_2x2=[
+    [1, alpha],
+    [alpha, 1],
 ]
 
 #\begin{equation}\label{mat:beierle-2x2}
@@ -23,8 +26,11 @@ beierle_2x2=[
 #\end{bmatrix}
 #\end{equation}
 
-beierle_2x2_inv=[
+negative_alpha=0
 
+beierle_2x2_inv=[
+    [1, negative_alpha],
+    [negative_alpha, 1],
 ]
 
 #\begin{equation}\label{mat:beierle-2x2-inv}
@@ -35,8 +41,12 @@ beierle_2x2_inv=[
 #\end{bmatrix}
 #\end{equation}
 
-beierle_3x3=[
+alpha=0
 
+beierle_3x3=[
+    [1, 1, alpha],
+    [alpha, 1, 1],
+    [1, alpha, 1],
 ]
 
 #\begin{equation}\label{mat:beierle-3x3}
@@ -49,7 +59,9 @@ beierle_3x3=[
 #\end{equation}
 
 beierle_3x3_inv=[
-
+    #1-\alpha & \alpha^2-1 & 1-\alpha \\
+    #1-\alpha & 1-\alpha & \alpha^2-1 \\
+    #\alpha^2-1 & 1-\alpha & 1-\alpha
 ]
 
 #\begin{equation}\label{mat:beierle-3x3-inv}
