@@ -11,6 +11,9 @@ def circ():
 def alpha_power():
     pass
 
+def alpha_sub(alpha, v):
+    pass
+
 alpha=0
 
 beierle_2x2=[
@@ -58,10 +61,14 @@ beierle_3x3=[
 #\end{bmatrix}
 #\end{equation}
 
+one_minus_alpha=0
+alpha_pow_2=0
+alpha_pow_2_minus_1=0
+
 beierle_3x3_inv=[
-    #1-\alpha & \alpha^2-1 & 1-\alpha \\
-    #1-\alpha & 1-\alpha & \alpha^2-1 \\
-    #\alpha^2-1 & 1-\alpha & 1-\alpha
+    [one_minus_alpha & alpha_pow_2_minus_1 & one_minus_alpha],
+    [one_minus_alpha & one_minus_alpha & alpha_pow_2_minus_1],
+    [alpha_pow_2_minus_1 & one_minus_alpha & one_minus_alpha],
 ]
 
 #\begin{equation}\label{mat:beierle-3x3-inv}
@@ -73,9 +80,9 @@ beierle_3x3_inv=[
 #\end{bmatrix}
 #\end{equation}
 
-beierle_4x4=[
+alpha_pow_minus_2 = 0
 
-]
+beierle_4x4=circ(1, 1, alpha, alpha_pow_minus_2)
 
 #Matrix \eqref{mat:beierle-4x4} is MDS for $m > 3$ and any $\alpha$ that is not a root of the following polynomials:
 
@@ -102,9 +109,7 @@ beierle_4x4=[
 #circ(1, 1, \alpha, \alpha^{-2})
 #\end{equation}
 
-beierle_5x5=[
-
-]
+beierle_5x5=circ(1,1,alpha,alpha_pow_minus_2,alpha)
 
 #Matrix \eqref{mat:beierle-5x5} is MDS for $m > 3$ and any $\alpha$ that is not a root of the following polynomials:
 
@@ -135,9 +140,10 @@ beierle_5x5=[
 
 #% m > 5, see Beierle for the list of restrictions
 
-beierle_6x6=[
+alpha_pow_minus_1=0
+alpha_pow_3=0
 
-]
+beierle_6x6=circ(1, alpha, alpha_pow_minus_1, alpha_pow_minus_2, 1, alpha_pow_3)
 
 #\begin{equation}\label{mat:beierle-6x6}
 #circ(1, \alpha, \alpha^{-1}, \alpha^{-2}, 1, \alpha^3)
@@ -147,9 +153,7 @@ beierle_6x6=[
 
 #% m > 5, see Beierle for the list of restrictions
 
-beierle_7x7=[
-
-]
+beierle_7x7=circ(1, 1, alpha_pow_minus_2, alpha, alpha_pow_2, alpha_pow_minus_2)
 
 #\begin{equation}\label{mat:beierle-7x7}
 #circ(1, 1, \alpha^{-2}, \alpha, \alpha^2, \alpha, \alpha^{-2})
@@ -157,8 +161,9 @@ beierle_7x7=[
 
 #Matrix \eqref{mat:beierle-8x8} is MDS for $m > 7$. For this matrix, we refer the reader to \cite{LightweightGF22016}, because the list of restricted polynomials is bigger.
 
-beierle_8x8=[
-]
+alpha_pow_4 = 0
+
+beierle_8x8=circ(1,1,alpha_pow_minus_1,alpha,alpha_pow_minus_1,alpha_pow_3,alpha_pow_4,)
 
 #% m > 7, see Beierle for the list of restrictions
 #\begin{equation}\label{mat:beierle-8x8}

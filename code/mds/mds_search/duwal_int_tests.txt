@@ -1,0 +1,4732 @@
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x3', '0x1', '0x1']
+['0x1', '0x3', '0x1']
+['0x1', '0x1', '0x3']
+xor 9
+xtime 3
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_1_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_1_int  ]
+('duwal_1_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr9', 'ixt3')
+('duwal_1_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_1_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_1_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_1_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0x2', '0x3', '0x3']
+['0x3', '0x2', '0x3']
+['0x3', '0x3', '0x2']
+xor 12
+xtime 9
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xe', '0xf', '0xf']
+['0xf', '0xe', '0xf']
+['0xf', '0xf', '0xe']
+xor 30
+xtime 27
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xe', '0xf', '0xf']
+['0xf', '0xe', '0xf']
+['0xf', '0xf', '0xe']
+xor 30
+xtime 27
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xe', '0xf', '0xf']
+['0xf', '0xe', '0xf']
+['0xf', '0xf', '0xe']
+xor 30
+xtime 27
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_2_int
+['0x3', '0x2', '0x2']
+['0x2', '0x3', '0x2']
+['0x2', '0x2', '0x3']
+mds True
+xor 9
+xtime 9
+inverse
+['0xf4', '0xf5', '0xf5']
+['0xf5', '0xf4', '0xf5']
+['0xf5', '0xf5', '0xf4']
+xor 48
+xtime 63
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_2_int  ]
+('duwal_2_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr12', 'ixt9')
+('duwal_2_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr9', 'xt9', 'ixr30', 'ixt27')
+('duwal_2_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr9', 'xt9', 'ixr30', 'ixt27')
+('duwal_2_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr30', 'ixt27')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+('duwal_2_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr9', 'xt9', 'ixr48', 'ixt63')
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_3_int
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+mds True
+xor 8
+xtime 4
+inverse
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+xor 8
+xtime 4
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_3_int  ]
+('duwal_3_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_3_inv_int
+['0x3', '0x1', '0x2']
+['0x1', '0x1', '0x1']
+['0x2', '0x1', '0x3']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x3', '0x1', '0x2']
+xor 8
+xtime 4
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_3_inv_int  ]
+('duwal_3_inv_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_3_inv_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0x2', '0x1', '0x3']
+['0x1', '0x1', '0x1']
+['0x2', '0x3', '0x1']
+xor 8
+xtime 4
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xe', '0x5', '0xb']
+['0x1', '0x1', '0x1']
+['0xe', '0xb', '0x5']
+xor 16
+xtime 16
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xe', '0x5', '0xb']
+['0x1', '0x1', '0x1']
+['0xe', '0xb', '0x5']
+xor 16
+xtime 16
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xe', '0x5', '0xb']
+['0x1', '0x1', '0x1']
+['0xe', '0xb', '0x5']
+xor 16
+xtime 16
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_4_int
+['0x3', '0x1', '0x3']
+['0x1', '0x1', '0x2']
+['0x2', '0x1', '0x1']
+mds True
+xor 8
+xtime 4
+inverse
+['0xf4', '0x53', '0xa7']
+['0x1', '0x1', '0x1']
+['0xf4', '0xa7', '0x53']
+xor 28
+xtime 40
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_4_int  ]
+('duwal_4_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr8', 'ixt4')
+('duwal_4_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr16', 'ixt16')
+('duwal_4_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr16', 'ixt16')
+('duwal_4_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr16', 'ixt16')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+('duwal_4_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr8', 'xt4', 'ixr28', 'ixt40')
+(testing for field= <class 'galois.GF(2^2)'> poly= x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x3', '0x1', '0x1']
+['0x1', '0x3', '0x1']
+['0x1', '0x1', '0x3']
+xor 9
+xtime 3
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x9', '0x7', '0x7']
+['0x7', '0x9', '0x7']
+['0x7', '0x7', '0x9']
+xor 21
+xtime 21
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_5_int
+['0x2', '0x1', '0x1']
+['0x1', '0x2', '0x1']
+['0x1', '0x1', '0x2']
+mds True
+xor 6
+xtime 3
+inverse
+['0x8e', '0x7a', '0x7a']
+['0x7a', '0x8e', '0x7a']
+['0x7a', '0x7a', '0x8e']
+xor 39
+xtime 57
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_5_int  ]
+('duwal_5_int', "<class 'galois.GF(2^2)'>", 'x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr9', 'ixt3')
+('duwal_5_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_5_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_5_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr21', 'ixt21')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+('duwal_5_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr6', 'xt3', 'ixr39', 'ixt57')
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x9', '0x8', '0x2']
+['0x3', '0x8', '0x9', '0x2']
+xor 18
+xtime 22
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x9', '0x8', '0x2']
+['0x3', '0x8', '0x9', '0x2']
+xor 18
+xtime 22
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x9', '0x8', '0x2']
+['0x3', '0x8', '0x9', '0x2']
+xor 18
+xtime 22
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_6_int
+['0x2', '0x2', '0x3', '0x1']
+['0x1', '0x3', '0x6', '0x4']
+['0x3', '0x1', '0x4', '0x4']
+['0x3', '0x2', '0x1', '0x3']
+mds True
+xor 18
+xtime 16
+inverse
+['0x3', '0x2', '0x2', '0x1']
+['0x1', '0x2', '0x3', '0x3']
+['0x2', '0x8e', '0x8f', '0x2']
+['0x3', '0x8f', '0x8e', '0x2']
+xor 30
+xtime 38
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_6_int  ]
+('duwal_6_int', "<class 'galois.GF(2^2)'>", 'invalid because elements are bigger than the max')
+('duwal_6_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr18', 'xt16', 'ixr18', 'ixt22')
+('duwal_6_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr18', 'xt16', 'ixr18', 'ixt22')
+('duwal_6_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr18', 'ixt22')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+('duwal_6_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr18', 'xt16', 'ixr30', 'ixt38')
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8', '0x9', '0xb']
+['0x1', '0x9', '0xc', '0xc']
+['0x2', '0x9', '0xf', '0xe']
+['0x5', '0x8', '0x8', '0xa']
+xor 26
+xtime 41
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8', '0x9', '0xb']
+['0x1', '0x9', '0xc', '0xc']
+['0x2', '0x9', '0xf', '0xe']
+['0x5', '0x8', '0x8', '0xa']
+xor 26
+xtime 41
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^4)'> poly= x^4 + x^3 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8', '0x9', '0xb']
+['0x1', '0x9', '0xc', '0xc']
+['0x2', '0x9', '0xf', '0xe']
+['0x5', '0x8', '0x8', '0xa']
+xor 26
+xtime 41
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^4 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^3 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^3 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+(testing for field= <class 'galois.GF(2^8)'> poly= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 )
+duwal_13_int
+['0x1', '0x2', '0x4', '0x3']
+['0x2', '0x3', '0x2', '0x3']
+['0x3', '0x3', '0x5', '0x1']
+['0x3', '0x1', '0x1', '0x3']
+mds True
+xor 20
+xtime 14
+inverse
+['0x4', '0x8f', '0x43', '0x41']
+['0x1', '0x8e', '0x46', '0x46']
+['0x2', '0x8e', '0x45', '0x44']
+['0x5', '0x8f', '0x42', '0x40']
+xor 38
+xtime 81
+mds True
+Not involutory
+[ TEST RESULTS FOR duwal_13_int  ]
+('duwal_13_int', "<class 'galois.GF(2^2)'>", 'invalid because elements are bigger than the max')
+('duwal_13_int', "<class 'galois.GF(2^4)'>", 'x^4 + x + 1', True, True, 'xr20', 'xt14', 'ixr26', 'ixt41')
+('duwal_13_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + 1', True, True, 'xr20', 'xt14', 'ixr26', 'ixt41')
+('duwal_13_int', "<class 'galois.GF(2^4)'>", 'x^4 + x^3 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr26', 'ixt41')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^4 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^5 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^3 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^6 + x^5 + x^4 + x^3 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^4 + x^3 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^3 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^3 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^2 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')
+('duwal_13_int', "<class 'galois.GF(2^8)'>", 'x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1', True, True, 'xr20', 'xt14', 'ixr38', 'ixt81')

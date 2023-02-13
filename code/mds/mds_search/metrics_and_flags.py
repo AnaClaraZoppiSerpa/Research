@@ -98,24 +98,41 @@ def print_mat_hex(m):
 
 def get_mat_info_for_mds_table(mat, field, poly_order, name):
     dim = len(mat)
+    is_mds_mat = False
+    is_mds_inv = False
 
     print(name)
     alg_mat = int_to_gf_mat(mat, field)
     print_mat_hex(alg_mat)
-    print("mds", is_mds(alg_mat))
-    print("xor", matrix_xor_cost(alg_mat, poly_order))
-    print("xtime", matrix_xtime_cost(alg_mat, poly_order))
+
+    is_mds_mat = is_mds(alg_mat)
+
+    mat_xor = matrix_xor_cost(alg_mat, poly_order)
+    mat_xtime = matrix_xtime_cost(alg_mat, poly_order)
+
+    print("mds", is_mds_mat)
+    print("xor", mat_xor)
+    print("xtime", mat_xtime)
 
     identity = np.identity(dim)
 
     inv = np.linalg.inv(alg_mat)
     print("inverse")
     print_mat_hex(inv)
-    print("xor", matrix_xor_cost(inv, poly_order))
-    print("xtime", matrix_xtime_cost(inv, poly_order))
-    print("mds", is_mds(inv))
+
+    inv_xor = matrix_xor_cost(inv, poly_order)
+    inv_xtime = matrix_xtime_cost(inv, poly_order)
+
+    print("xor", inv_xor)
+    print("xtime", inv_xtime)
+
+    is_mds_inv = is_mds(inv)
+
+    print("mds", is_mds_inv)
 
     if np.array_equal(np.matmul(alg_mat, alg_mat), identity):
         print("Involutory")
     else:
         print("Not involutory")
+    
+    return (is_mds_mat, is_mds_inv, "xr"+str(mat_xor), "xt"+str(mat_xtime), "ixr"+str(inv_xor), "ixt"+str(inv_xtime))
