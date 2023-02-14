@@ -43,7 +43,7 @@ other_test_fields = [GF2_3, GF2_5, GF2_6, GF2_7]
 other_test_fields_bigger = [GF2_9, GF2_10, GF2_11, GF2_12, GF2_13, GF2_14, GF2_15, GF2_16]
 
 other_test_degrees = [3,5,6,7]
-other_test_fields_bigger = [9,10,11,12,13,14,15,16]
+other_test_degrees_bigger = [9,10,11,12,13,14,15,16]
 
 def is_matrix_valid_for_field(matrix, valid_scalar_max):
     for row in matrix:
@@ -80,6 +80,15 @@ def minimal_test(int_mat, mat_name):
     print("[ TEST RESULTS FOR", mat_name, " ]")
     print_test_results(test_results)
 
+def smaller_test(int_mat, mat_name):
+    test_results = test_duwal_matrix(int_mat, mat_name, other_test_fields, other_test_degrees)
+    print("[ TEST RESULTS FOR", mat_name, " ]")
+    print_test_results(test_results)
+
+def bigger_test(int_mat, mat_name):
+    test_results = test_duwal_matrix(int_mat, mat_name, other_test_fields_bigger, other_test_degrees_bigger)
+    print("[ TEST RESULTS FOR", mat_name, " ]")
+    print_test_results(test_results)
 
 #print(GF2_4.properties)
 #polys = list(galois.irreducible_polys(2, 4))
@@ -169,4 +178,6 @@ int_mats_and_names = [
     ]
 
 for pair in int_mats_and_names:
-    minimal_test(pair[0], pair[1])
+    #minimal_test(pair[0], pair[1]) # DONE!
+    #smaller_test(pair[0], pair[1]) # DONE!
+    bigger_test(pair[0], pair[1])
