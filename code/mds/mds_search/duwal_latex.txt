@@ -69,7 +69,7 @@ The following matrices have been reported by Duval and Leurent \cite{LwCircuits2
 \end{bmatrix}
 \end{equation}
 
-\begin{equation}\label{mat:duwal-7}
+\begin{equation}\label{mat:duwal-7} # Apêndice B
 \begin{bmatrix}
 \beta         & 1        & \beta+1        & 1 \\
 \gamma        & \alpha   & \gamma         & \alpha+1 \\

@@ -5,14 +5,36 @@
 
 #Matrices \eqref{mat:beierle-2x2} (inverse: \eqref{mat:beierle-2x2-inv}) and \eqref{mat:beierle-3x3} (inverse: \eqref{mat:beierle-3x3-inv}) are MDS for all $\alpha \neq 0, 1$.
 
-def circ():
-    pass
+def pmat(m):
+	for r in m:
+		print(r)
+
+def circ(first_row):
+	dim = len(first_row)
+
+	rows = []
+	prev_row = []
+
+	for i in range(dim):
+		if i == 0:
+			rows.append(first_row)
+			prev_row = first_row
+		else:
+			new_first = prev_row[-1]
+			new_row = [new_first]
+			new_row += prev_row[0:-1]
+			rows.append(new_row)
+			prev_row = new_row
+	return rows
+	print(rows)
 
 def alpha_power():
     pass
 
 def alpha_sub(alpha, v):
     pass
+
+# Instância: m = 4, m = 8, alfa_int > 2 e < 2^4 e 2^8
 
 alpha=0
 
@@ -35,6 +57,8 @@ beierle_2x2_inv=[
     [1, negative_alpha],
     [negative_alpha, 1],
 ]
+
+# TODO: corrigir!!!!!! faltou a multiplicação pela fração
 
 #\begin{equation}\label{mat:beierle-2x2-inv}
 #\frac{1}{1-\alpha^2} \cdot
@@ -82,7 +106,7 @@ beierle_3x3_inv=[
 
 alpha_pow_minus_2 = 0
 
-beierle_4x4=circ(1, 1, alpha, alpha_pow_minus_2)
+beierle_4x4=circ([1, 1, alpha, alpha_pow_minus_2])
 
 #Matrix \eqref{mat:beierle-4x4} is MDS for $m > 3$ and any $\alpha$ that is not a root of the following polynomials:
 
@@ -109,7 +133,7 @@ beierle_4x4=circ(1, 1, alpha, alpha_pow_minus_2)
 #circ(1, 1, \alpha, \alpha^{-2})
 #\end{equation}
 
-beierle_5x5=circ(1,1,alpha,alpha_pow_minus_2,alpha)
+beierle_5x5=circ([1,1,alpha,alpha_pow_minus_2,alpha])
 
 #Matrix \eqref{mat:beierle-5x5} is MDS for $m > 3$ and any $\alpha$ that is not a root of the following polynomials:
 
@@ -143,7 +167,7 @@ beierle_5x5=circ(1,1,alpha,alpha_pow_minus_2,alpha)
 alpha_pow_minus_1=0
 alpha_pow_3=0
 
-beierle_6x6=circ(1, alpha, alpha_pow_minus_1, alpha_pow_minus_2, 1, alpha_pow_3)
+beierle_6x6=circ([1, alpha, alpha_pow_minus_1, alpha_pow_minus_2, 1, alpha_pow_3])
 
 #\begin{equation}\label{mat:beierle-6x6}
 #circ(1, \alpha, \alpha^{-1}, \alpha^{-2}, 1, \alpha^3)
@@ -153,7 +177,7 @@ beierle_6x6=circ(1, alpha, alpha_pow_minus_1, alpha_pow_minus_2, 1, alpha_pow_3)
 
 #% m > 5, see Beierle for the list of restrictions
 
-beierle_7x7=circ(1, 1, alpha_pow_minus_2, alpha, alpha_pow_2, alpha_pow_minus_2)
+beierle_7x7=circ([1, 1, alpha_pow_minus_2, alpha, alpha_pow_2, alpha_pow_minus_2])
 
 #\begin{equation}\label{mat:beierle-7x7}
 #circ(1, 1, \alpha^{-2}, \alpha, \alpha^2, \alpha, \alpha^{-2})
@@ -162,8 +186,9 @@ beierle_7x7=circ(1, 1, alpha_pow_minus_2, alpha, alpha_pow_2, alpha_pow_minus_2)
 #Matrix \eqref{mat:beierle-8x8} is MDS for $m > 7$. For this matrix, we refer the reader to \cite{LightweightGF22016}, because the list of restricted polynomials is bigger.
 
 alpha_pow_4 = 0
+alpha_pow_minus_3 = 0
 
-beierle_8x8=circ(1,1,alpha_pow_minus_1,alpha,alpha_pow_minus_1,alpha_pow_3,alpha_pow_4,)
+beierle_8x8=circ([1,1,alpha_pow_minus_1,alpha,alpha_pow_minus_1,alpha_pow_3,alpha_pow_4,alpha_pow_minus_3])
 
 #% m > 7, see Beierle for the list of restrictions
 #\begin{equation}\label{mat:beierle-8x8}

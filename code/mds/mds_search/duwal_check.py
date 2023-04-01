@@ -27,6 +27,7 @@ GF2_3 = galois.GF(2**3)
 GF2_5 = galois.GF(2**5)
 GF2_6 = galois.GF(2**6)
 GF2_7 = galois.GF(2**7)
+
 GF2_9 = galois.GF(2**9)
 GF2_10 = galois.GF(2**10)
 GF2_11 = galois.GF(2**11)
@@ -167,14 +168,18 @@ duwal_14 = [
     ]
 
 int_mats_and_names = [
-    (duwal_1_int, "duwal_1_int"),
-    (duwal_2_int, "duwal_2_int"),
-    (duwal_3_int, "duwal_3_int"),
-    (duwal_3_inv_int, "duwal_3_inv_int"),
-    (duwal_4_int, "duwal_4_int"),
-    (duwal_5_int, "duwal_5_int"),
-    (duwal_6_int, "duwal_6_int"),
-    (duwal_13_int, "duwal_13_int"),
+    #(duwal_1_int, "duwal_1_int"),
+    #(duwal_2_int, "duwal_2_int"),
+    #(duwal_3_int, "duwal_3_int"),
+    #(duwal_3_inv_int, "duwal_3_inv_int"),
+    #(duwal_4_int, "duwal_4_int"),
+    #(duwal_5_int, "duwal_5_int"),
+    #(duwal_6_int, "duwal_6_int"),
+    #(duwal_8_int, "duwal_8_int"),
+    #(duwal_9_int, "duwal_9_int"),
+    #(duwal_10_int, "duwal_10_int"),
+    (duwal_11_int, "duwal_11_int"),
+    #(duwal_13_int, "duwal_13_int"),
     ]
 
 for pair in int_mats_and_names:
