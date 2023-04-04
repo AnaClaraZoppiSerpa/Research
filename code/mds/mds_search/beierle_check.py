@@ -34,7 +34,7 @@ def alpha_power():
 def alpha_sub(alpha, v):
     pass
 
-# Instância: m = 4, m = 8, alfa_int > 2 e < 2^4 e 2^8
+# Instância: m = 4, m = 8, alfa_int > 1 e < 2^4 e 2^8
 
 alpha=0
 
@@ -58,7 +58,7 @@ beierle_2x2_inv=[
     [negative_alpha, 1],
 ]
 
-# TODO: corrigir!!!!!! faltou a multiplicação pela fração
+# TODO: corrigir!!!!!! faltou a multiplicação pela fração na 2x2-inv
 
 #\begin{equation}\label{mat:beierle-2x2-inv}
 #\frac{1}{1-\alpha^2} \cdot
