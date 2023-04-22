@@ -1,0 +1,129 @@
+1996 & 8 & --- & no & \shortstack{SHARK} & \cite{SHARK1996} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x^2 + 1$} & \shortstack{235 \\  223} & \shortstack{369 \\ 393} & \shortstack{(\ref{mat:shark}) \\  (\ref{mat:shark-inv})} \\ \hline
+1997 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{SQUARE} &  \cite{SQUARE1997} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{16 \\ 40} & \shortstack{8 \\  48} & \shortstack{\\ (\ref{mat:square}) \\  (\ref{mat:square-inv})} \\ \hline
+1997 & 8 & Cauchy & yes & \shortstack{---} & \cite{Youssef1997} & \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 240 & 344 & (\ref{mat:tavares}) \\ \hline
+1998 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{BKSQ} & \cite{BKSQ1998} & \shortstack{$x^8 + x^7 + x^6 + x^5$\\$+ x^4 + x ^2 + 1$} & \shortstack{9 \\ 39} & \shortstack{9 \\ 63} & \shortstack{\\ (\ref{mat:bksq}) \\  (\ref{mat:bksq-inv})} \\ \hline
+1999 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Rijndael \\ (AES)} & \cite{DesignOfRijndael2002} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{16 \\ 40} & \shortstack{8 \\ 48} & \shortstack{\\ (\ref{mat:rijndael}) \\  (\ref{mat:rijndael-inv})} \\ \hline
+2000 & 8 & Hadamard & yes & \shortstack{KHAZAD} & \cite{KHAZAD2000}& \shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 112 & 120 & (\ref{mat:khazad}) \\ \hline
+2000 & 4 & Hadamard & yes & \shortstack{ANUBIS} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & 16 & 20 & (\ref{mat:anubis}) \\ \hline
+2000 & 4 & Vandermonde & no & \shortstack{ANUBIS \\ key schedule} & \cite{ANUBIS2000} &\shortstack{$x^8 + x^4 + x^3$\\$+ x^2 + 1$} & \shortstack{20\\ 69} & \shortstack{32\\ 101} & \shortstack{(\ref{mat:anubis-ke}) \\  (\ref{mat:anubis-ke-inv})} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3, \\ Hierocrypt-L1} & \shortstack{\cite{Hierocrypt2000}, \\ \cite{Hierocrypt-L1-2000}} & \shortstack{$x^8 + x^6 + x^5$\\$+x+1$} & \shortstack{52\\ 52} & \shortstack{108\\ 104} & \shortstack{(\ref{mat:hierocrypt-3-lower}) \\  (\ref{mat:hierocrypt-3-lower-inv})} \\ \hline
+2000 & 4 & \shortstack{\\ right \\ circulant} & no & \shortstack{Hierocrypt-3} & \cite{Hierocrypt2000} & $x^4+x+1$ & \shortstack{32\\ 40} & \shortstack{40\\ 44} & \shortstack{(\ref{mat:hierocrypt-3-higher}) \\  (\ref{mat:hierocrypt-3-higher-inv})} \\ \hline
+2000 & 2 & --- & no & \shortstack{Hierocrypt-L1} & \cite{Hierocrypt-L1-2000} & $x^4+x+1$ & \shortstack{8\\ 7} & \shortstack{10\\ 11} & \shortstack{(\ref{mat:hierocrypt-l1-higher}) \\  (\ref{mat:hierocrypt-l1-higher-inv})} \\ \hline
+%2003 & 8 & \shortstack{\\ right \\ circulant} & no & Whirlpool & \cite{Whirlpool2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{89\\247} & \shortstack{87\\366} & \shortstack{(\ref{mat:whirlpool})\\(\ref{mat:whirlpool-inv})} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_0$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\ 240} & \shortstack{88\\ 400} & \shortstack{\eqref{shirai-0}\\ \eqref{shirai-0-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_1$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 288} & \shortstack{80\\ 424} & \shortstack{\eqref{shirai-1}\\ \eqref{shirai-1-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_2$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\ 224} & \shortstack{88\\ 360} & \shortstack{\eqref{shirai-2}\\ \eqref{shirai-2-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_3$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 224} & \shortstack{72\\ 360} & \shortstack{\eqref{shirai-3}\\ \eqref{shirai-3-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_4$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 240} & \shortstack{88\\ 424} & \shortstack{\eqref{shirai-4}\\ \eqref{shirai-4-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_5$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{88\\ 224} & \shortstack{80\\ 424} & \shortstack{\eqref{shirai-5}\\ \eqref{shirai-5-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_6$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 256} & \shortstack{88\\ 416} & \shortstack{\eqref{shirai-6}\\ \eqref{shirai-6-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{\\ Shirai $C_7$ \\ (adopted for \\ Whirlpool \\ standard \\ ISO/IEC \\ 10118-3)} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\ 224} & \shortstack{88\\ 360} & \shortstack{\eqref{shirai-7}\\ \eqref{shirai-7-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_8$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 224} & \shortstack{72\\ 360} & \shortstack{\eqref{shirai-8}\\ \eqref{shirai-8-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_9$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 256} & \shortstack{88\\ 416} & \shortstack{\eqref{shirai-9}\\ \eqref{shirai-9-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_{10}$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{88\\ 224} & \shortstack{80\\ 424} & \shortstack{\eqref{shirai-10}\\ \eqref{shirai-10-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_{11}$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 240} & \shortstack{88\\ 424} & \shortstack{\eqref{shirai-11}\\ \eqref{shirai-11-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_{12}$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{80\\ 288} & \shortstack{80\\ 424} & \shortstack{\eqref{shirai-12}\\ \eqref{shirai-12-inv}} \\ \hline
+2003 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Shirai $C_{13}$} & \cite{Shirai2003} & \shortstack{$x^8+x^4+x^3$\\$+x^2+1$} & \shortstack{72\\ 240} & \shortstack{88\\ 400} & \shortstack{\eqref{shirai-13}\\ \eqref{shirai-13-inv}} \\ \hline
+2004 & 4 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{30\\72} & \shortstack{25\\106} & \shortstack{(\ref{mat:fox-mu4})\\(\ref{mat:fox-mu4-inv})} \\ \hline
+2004 & 8 & --- & no & \shortstack{FOX} & \cite{FOX2004} & \shortstack{$x^8+x^7+x^6+x^5$\\$+x^4+x^3+1$} & \shortstack{141\\284} & \shortstack{169\\392} & \shortstack{(\ref{mat:fox-mu8})\\(\ref{mat:fox-mu8-inv})} \\ \hline
+2007 & 3 & --- & yes & \shortstack{Curupira} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & 12 & 15 & (\ref{mat:curupira}) \\ \hline
+2007 & 3 & \shortstack{\\ right \\ circulant} & no & \shortstack{Curupira \\ key schedule} & \cite{barreto2007curupira} & \shortstack{$x^8+x^6+x^3$\\$+x^2+1$} & \shortstack{27\\30} & \shortstack{36\\36} & \shortstack{(\ref{mat:curupira-ke}) \\ (\ref{mat:curupira-ke-inv})} \\ \hline
+2009 & 8 & \shortstack{\\ right \\ circulant} & no & \shortstack{Gr{\o}stl} & \cite{Grostl2009} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{104 \\ 232} & \shortstack{96 \\ 376} & \shortstack{(\ref{mat:grostl}) \\ (\ref{mat:grostl-inv})} \\ \hline
+%2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{104\\128} & \shortstack{136\\136} & \shortstack{(\ref{mat:whirlwind-m0}) \\ (\ref{mat:whirlwind-m0-inv})} \\ \hline
+%2010 & 8 & dyadic & no & \shortstack{Whirlwind} & \cite{Whirlwind2010} & $x^4+x+1$ & \shortstack{128\\128} & \shortstack{128\\128} & \shortstack{(\ref{mat:whirlwind-m1}) \\ (\ref{mat:whirlwind-m1-inv})} \\ \hline
+2011 & 4 & serial & no & PHOTON & \cite{PHOTON2011} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{28\\55} & \shortstack{27\\39} & \shortstack{(\ref{mat:photon4x4})\\(\ref{mat:photon4x4-inv})} \\ \hline
+2011 & 5 & serial & no & PHOTON & \cite{PHOTON2011} & $x^4+x+1$ & \shortstack{44\\44} & \shortstack{52\\52} & \shortstack{(\ref{mat:photon_a100})\\(\ref{mat:photon_a100-inv})} \\ \hline
+2011 & 6 & serial & no & PHOTON & \cite{PHOTON2011} & $x^4+x+1$ & \shortstack{59\\74} & \shortstack{59\\74} & \shortstack{(\ref{mat:photon_a144})\\(\ref{mat:photon_a144-inv})} \\ \hline
+2011 & 7 & serial & no & PHOTON & \cite{PHOTON2011} & $x^4+x+1$ & \shortstack{96\\104} & \shortstack{96\\104} & \shortstack{(\ref{mat:photon_a196})\\(\ref{mat:photon_a196-inv})} \\ \hline
+2011 & 8 & serial & no & PHOTON & \cite{PHOTON2011} & $x^4+x+1$ & \shortstack{125\\136} & \shortstack{143\\143} & \shortstack{(\ref{mat:photon_a256})\\(\ref{mat:photon_a256-inv})} \\ \hline
+2011 & 6 & serial & no & PHOTON & \cite{PHOTON2011} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{108\\163} & \shortstack{126\\207} & \shortstack{(\ref{mat:photon_a288})\\(\ref{mat:photon_a288-inv})} \\ \hline
+2012 & 4 & serial & no & LED & \cite{LED2012} & $x^4+x+1$ & \shortstack{26\\29} & \shortstack{33\\39} & \shortstack{(\ref{mat:led})\\(\ref{mat:led-inv})} \\ \hline
+2013 & 4 & \begin{tiny}Hadamard-Cauchy\end{tiny} & no & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{24\\64} & \shortstack{36\\100} & \shortstack{\eqref{mat:gupta_ray_0} \\ \eqref{mat:gupta_ray_0-inv}} \\ \hline
+2013 & 4 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 56 & 80 & \eqref{mat:gupta_ray_1} \\ \hline
+2013 & 3 & \begin{tiny}Hadamard-Cauchy\end{tiny} & no & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & \shortstack{32\\34} & \shortstack{46\\53} & \shortstack{\eqref{mat:gupta_ray_3x3}\\\eqref{mat:gupta_ray_3x3-inv}} \\ \hline
+2013 & 4 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 56 & 60 & \eqref{mat:gupta_ray_2} \\ \hline
+2013 & 8 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 176 & 288 & \eqref{mat:gupta_ray_3} \\ \hline
+2013 & 16 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 800 & 1248 & \eqref{mat:gupta_ray_4} \\ \hline
+2013 & 32 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{Gupta2013OnCO} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 3712 & 5440 & \eqref{mat:gupta_ray_5} \\ \hline
+2014 & 4 & Hadamard & yes & Pr{\o}st & \cite{proest:2014}, \cite{LwInvolKhoo2015} & $GF(2^4)/19_x$ & 16 & 20 & \eqref{mat:khoo-14} \\ \hline
+2015 & 4 & Hadamard & yes & Joltik & \cite{joltik2015}, \cite{LwInvolKhoo2015} & $x^4+x+1$ & 24 & 32 & \eqref{mat:joltik} \\ \hline
+2015 & 4 & \shortstack{compact \\ Cauchy} & yes & --- & \cite{CuiJin2015} & \shortstack{$x^8 + x^4 + x^3$\\$+ x + 1$} & 24 & 40 & \eqref{mat:cui_jin} \\ \hline
+2015 & 8 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & 112 & 144 & \eqref{mat:khoo} \\ \hline
+%2015 & 4 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & 24 & 32 & \eqref{mat:khoo-1} \\ \hline
+2015 & 4 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/165_x$ & 32 & 60 & \eqref{mat:khoo-2} \\ \hline
+2015 & 8 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & 128 & 208 & \eqref{mat:khoo-3} \\ \hline
+2015 & 8 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & 112 & 144 & \eqref{mat:khoo-4} \\ \hline
+2015 & 16 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & 832 & 1408 & \eqref{mat:khoo-5} \\ \hline
+2015 & 32 & \begin{tiny}Hadamard-Cauchy\end{tiny} & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/165_x$ & 3264 & 5728 & \eqref{mat:khoo-6} \\ \hline
+2015 & 4 & Hadamard & no & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & \shortstack{16\\28} & \shortstack{36\\40} & \shortstack{\eqref{mat:khoo-7}\\\eqref{mat:khoo-7-inv}} \\ \hline
+2015 & 4 & Hadamard & no & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & \shortstack{20\\64} & \shortstack{40\\96} & \shortstack{\eqref{mat:khoo-8}\\\eqref{mat:khoo-8-inv}} \\ \hline
+2015 & 8 & Hadamard & no & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & \shortstack{128\\216} & \shortstack{224\\352} & \shortstack{\eqref{mat:khoo-9}\\\eqref{mat:khoo-9-inv}} \\ \hline
+2015 & 8 & Hadamard & no & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & \shortstack{104\\144} & \shortstack{144\\144} & \shortstack{\eqref{mat:khoo-10}\\\eqref{mat:khoo-10-inv}} \\ \hline
+2015 & 16 & \begin{tiny}Hadamard-Cauchy\end{tiny} & no & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & \shortstack{784\\1232} & \shortstack{1456\\1600} & \shortstack{\eqref{mat:khoo-11}\\\eqref{mat:khoo-11-inv}} \\ \hline
+2015 & 32 & \begin{tiny}Hadamard-Cauchy\end{tiny} & no & --- & \cite{LwInvolKhoo2015} & $GF(2^8)/1c3_x$ & \shortstack{3648\\4608} & \shortstack{5696\\6336} & \shortstack{\eqref{mat:khoo-12}\\ \eqref{mat:khoo-12-inv}} \\ \hline
+%2015 & 4 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & xor & xtime & \eqref{mat:khoo-13} \\ \hline
+%2015 & 4 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & xor & xtime & \eqref{mat:khoo-15} \\ \hline
+%2015 & 8 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & 112 & 144 & \eqref{mat:khoo-16} \\ \hline
+%2015 & 8 & Hadamard & yes & --- & \cite{LwInvolKhoo2015} & $GF(2^4)/13_x$ & xor & xtime & \eqref{mat:khoo-17} \\ \hline
+2015 & 3 & Cauchy & no & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & \shortstack{19\\17} & \shortstack{21\\21} & \shortstack{\eqref{mat:gupta-pandey-1}\\\eqref{mat:gupta-pandey-1-inv}} \\ \hline 
+2015 & 3 & Cauchy & no & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & \shortstack{10\\14} & \shortstack{12\\16} & \shortstack{\eqref{mat:gupta-pandey-2}\\\eqref{mat:gupta-pandey-2-inv}} \\ \hline 
+2015 & 4 & \shortstack{compact \\ Cauchy} & no & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & \shortstack{36\\24} & \shortstack{36\\32} & \shortstack{\eqref{mat:gupta-pandey-3}\\\eqref{mat:gupta-pandey-3-inv}} \\ \hline 
+2015 & 4 & \shortstack{compact \\ Cauchy} & yes & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & 24 & 32 & \eqref{mat:gupta-pandey-3-made-involutory} \\ \hline 
+2015 & 3 & \shortstack{product of \\ Vandermonde} & no & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & \shortstack{14\\18} & \shortstack{16\\24} & \shortstack{\eqref{mat:gupta-pandey-5}\\\eqref{mat:gupta-pandey-5-inv}} \\ \hline
+2015 & 3 & \shortstack{product of \\ Vandermonde} & yes & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & 20 & 24 & \eqref{mat:gupta-pandey-6} \\ \hline 
+2015 & 8 & circulant & no & --- & \cite{GuptaCirculant2015} & \shortstack{$x^{16}+x^5$\\$+x^3+x^2+1$} & \shortstack{72\\456} & \shortstack{88\\824} & \shortstack{\eqref{mat:gupta-pandey-IDEA}\\\eqref{mat:gupta-pandey-IDEA-inv}} \\ \hline 
+2015 & 2 & circulant & \shortstack{no \\ \tiny{(ort.)}} & --- & \cite{GuptaCirculant2015} & $x^4+x+1$ & \shortstack{4\\4} & \shortstack{4\\4} & \shortstack{\eqref{mat:gupta-pandey-23}\\\eqref{mat:gupta-pandey-23-inv}} \\ \hline 
+2015 & 3 & circulant & \shortstack{no \\ \tiny{(ort.)}} & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^4$\\$+x^3+x+1$} & \shortstack{30\\30} & \shortstack{39\\39} & \shortstack{\eqref{mat:gupta-pandey-24-1}\\\eqref{mat:gupta-pandey-24-1-inv}} \\ \hline 
+2015 & 6 & circulant & \shortstack{no \\ \tiny{(ort.)}} & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^4$\\$+x^3+x+1$} & \shortstack{84\\84} & \shortstack{120\\120} & \shortstack{\eqref{mat:gupta-pandey-24-2}\\\eqref{mat:gupta-pandey-24-2-inv}} \\ \hline 
+2015 & 5 & \shortstack{left \\ circulant} & yes & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^6$\\$+x^5+x^2+1$} & 70 & 90 & \eqref{mat:gupta-pandey-31-1} \\ \hline 
+2015 & 6 & \shortstack{left \\ circulant} & yes & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^6$\\$+x^5+x^2+1$} & 94 & 126 & \eqref{mat:gupta-pandey-31-2} \\ \hline
+2015 & 3 & Toeplitz & \shortstack{\\ no \\ \tiny{(ort.)}} & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^4$\\$+x^3+x+1$} & 30 & 39 & \eqref{mat:gupta-pandey-34-1} \\ \hline 
+2015 & 6 & Toeplitz & \shortstack{\\ no \\ \tiny{(ort.)}} & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^4$\\$+x^3+x+1$} & 84 & 120 & \eqref{mat:gupta-pandey-34-2} \\ \hline
+2015 & 5 & Hankel & yes & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^6$\\$+x^5+x^2+1$} & 70 & 90 & \eqref{mat:gupta-pandey-36-1} \\ \hline 
+2015 & 6 & Hankel & yes & --- & \cite{GuptaCirculant2015} & \shortstack{$x^8+x^6$\\$+x^5+x^2+1$} & 84 & 126 & \eqref{mat:gupta-pandey-36-2} \\ \hline
+2016+ & 2 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \shortstack{\eqref{mat:beierle-2x2} \\ \eqref{mat:beierle-2x2-inv}} \\ \hline
+2016 & 3 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \shortstack{\eqref{mat:beierle-3x3} \\ \eqref{mat:beierle-3x3-inv}} \\ \hline
+2016 & 4 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \eqref{mat:beierle-4x4} \\ \hline
+2016 & 5 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \eqref{mat:beierle-5x5} \\ \hline
+2016 & 6 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \eqref{mat:beierle-6x6} \\ \hline
+2016 & 7 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \eqref{mat:beierle-7x7} \\ \hline
+2016+ & 8 & circulant & no & --- & \cite{LightweightGF22016} & NA & NA & NA & \eqref{mat:beierle-8x8} \\ \hline
+2016 & 3 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{6\\45} & \shortstack{3\\57} & \shortstack{\eqref{mat:liu-sim-1}\\\eqref{mat:liu-sim-1-inv}} \\ \hline
+2016 & 4 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{20\\52} & \shortstack{32\\96} & \shortstack{\eqref{mat:liu-sim-2}\\\eqref{mat:liu-sim-2-inv}} \\ \hline
+2016 & 5 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{30\\50} & \shortstack{45\\110} & \shortstack{\eqref{mat:liu-sim-3}\\\eqref{mat:liu-sim-3-inv}} \\ \hline
+2016 & 6 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{60\\90} & \shortstack{108\\198} & \shortstack{\eqref{mat:liu-sim-4}\\\eqref{mat:liu-sim-4-inv}} \\ \hline
+2016 & 7 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{70\\182} & \shortstack{126\\273} & \shortstack{\eqref{mat:liu-sim-5}\\\eqref{mat:liu-sim-5-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{120\\232} & \shortstack{200\\408} & \shortstack{\eqref{mat:liu-sim-6}\\\eqref{mat:liu-sim-6-inv}} \\ \hline
+2016 & 3 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/13_x$ & \shortstack{6\\21} & \shortstack{3\\21} & \shortstack{\eqref{mat:liu-sim-7}\\\eqref{mat:liu-sim-7-inv}} \\ \hline
+2016 & 4 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/13_x$ & \shortstack{16\\32} & \shortstack{20\\40} & \shortstack{\eqref{mat:liu-sim-8}\\\eqref{mat:liu-sim-8-inv}} \\ \hline
+2016 & 5 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/13_x$ & \shortstack{30\\40} & \shortstack{40\\50} & \shortstack{\eqref{mat:liu-sim-9}\\\eqref{mat:liu-sim-9-inv}} \\ \hline
+2016 & 6 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/13_x$ & \shortstack{54\\72} & \shortstack{60\\84} & \shortstack{\eqref{mat:liu-sim-10}\\\eqref{mat:liu-sim-10-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{96\\320} & \shortstack{176\\432} & \shortstack{\eqref{mat:liu-sim-11}\\\eqref{mat:liu-sim-11-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{104\\232} & \shortstack{152\\376} & \shortstack{\eqref{mat:liu-sim-12}\\\eqref{mat:liu-sim-12-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{120\\192} & \shortstack{208\\384} & \shortstack{\eqref{mat:liu-sim-13}\\\eqref{mat:liu-sim-13-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/1c3_x$ & \shortstack{112\\248} & \shortstack{184\\360} & \shortstack{\eqref{mat:liu-sim-14}\\\eqref{mat:liu-sim-14-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/11b_x$ & \shortstack{120\\216} & \shortstack{176\\392} & \shortstack{\eqref{mat:liu-sim-15}\\\eqref{mat:liu-sim-15-inv}} \\ \hline
+2016 & 8 & \shortstack{left \\ circulant} & no & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/11d_x$ & \shortstack{120\\296} & \shortstack{192\\432} & \shortstack{\eqref{mat:liu-sim-16}\\\eqref{mat:liu-sim-16-inv}} \\ \hline
+2016 & 3 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/169_x$ & 24 & 45 & \eqref{mat:liu-sim-17} \\ \hline
+2016 & 5 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/165_x$ & 70 & 90 & \eqref{mat:liu-sim-18} \\ \hline
+2016 & 6 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/165_x$ & 84 & 126 & \eqref{mat:liu-sim-19} \\ \hline
+2016 & 7 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/165_x$ & 112 & 217 & \eqref{mat:liu-sim-20} \\ \hline
+2016 & 7 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^8)/139_x$ & 98 & 189 & \eqref{mat:liu-sim-21} \\ \hline
+2016 & 3 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/1f_x$ & 18 & 21 & \eqref{mat:liu-sim-22} \\ \hline
+2016 & 5 & \shortstack{left \\ circulant} & yes & --- & \cite{LiuMeichengCirculant2016} & $GF(2^4)/13_x$ & 30 & 30 & \eqref{mat:liu-sim-23} \\ \hline
+2017 & 8 & Toeplitz & no & --- & \cite{ToeplitzMDS2017} & $x^4+x+1$ & \shortstack{xr\\xr} & \shortstack{xt\\xt} & \shortstack{\eqref{mat:sarkar-1}\\\eqref{mat:sarkar-1-inv}} \\ \hline
+2017 & 8 & Toeplitz & no  & --- & \cite{ToeplitzMDS2017} & \shortstack{$x^8+x^7$\\$+x^6+x+1$} & \shortstack{xr\\xr} & \shortstack{xt\\xt} & \shortstack{\eqref{mat:sarkar-2}\\\eqref{mat:sarkar-2-inv}} \\ \hline
+2018 & 3 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{6\\$\star$} & \shortstack{3\\$\star$} & \shortstack{\eqref{mat:duwal-1}\\$\star$} \\ \hline
+2018 & 3 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{9\\$\star$} & \shortstack{9\\$\star$} & \shortstack{\eqref{mat:duwal-2}\\$\star$} \\ \hline
+2018 & 3 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{8\\$\star$} & \shortstack{4\\$\star$} & \shortstack{\eqref{mat:duwal-3}\\\eqref{mat:duwal-3-inv}} \\ \hline
+2018 & 3 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{8\\$\star$} & \shortstack{4\\$\star$} & \shortstack{\eqref{mat:duwal-4}\\$\star$} \\ \hline
+2018 & 3 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{6\\$\star$} & \shortstack{3\\$\star$} & \shortstack{\eqref{mat:duwal-5}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{18\\$\star$} & \shortstack{16\\$\star$} & \shortstack{\eqref{mat:duwal-6}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{---\\$\star$} & \shortstack{---\\$\star$} & \shortstack{\eqref{mat:duwal-7}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{18\\$\star$} & \shortstack{16\\$\star$} & \shortstack{\eqref{mat:duwal-8}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{22\\$\star$} & \shortstack{18\\$\star$} & \shortstack{\eqref{mat:duwal-9}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{22\\$\star$} & \shortstack{16\\$\star$} & \shortstack{\eqref{mat:duwal-10}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{18\\$\star$} & \shortstack{16\\$\star$} & \shortstack{\eqref{mat:duwal-11}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{---\\$\star$} & \shortstack{---\\$\star$} & \shortstack{\eqref{mat:duwal-12}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{20\\$\star$} & \shortstack{14\\$\star$} & \shortstack{\eqref{mat:duwal-13}\\$\star$} \\ \hline
+2018 & 4 & --- & no & --- & \cite{LwCircuits2018} & $GF(2^{2,4,8})$ & \shortstack{---\\$\star$} & \shortstack{---\\$\star$} & \shortstack{\eqref{mat:duwal-14}\\$\star$}
