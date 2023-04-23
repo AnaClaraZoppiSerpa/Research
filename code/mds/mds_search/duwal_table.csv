@@ -1,0 +1,369 @@
+3,LwCircuits2018,,xr6,ixr9,xt3,ixt3,duwal_1_int_x^2 + x + 1,duwal_1_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_1_int_x^4 + x + 1,duwal_1_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_1_int_x^4 + x^3 + 1,duwal_1_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_1_int_x^4 + x^3 + x^2 + x + 1,duwal_1_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^4 + x^3 + x + 1,duwal_1_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^5 + x^3 + x + 1,duwal_1_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_1_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_1_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_1_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x + 1,duwal_1_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_1_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_1_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_1_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^2 + x + 1,duwal_1_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^3 + x + 1,duwal_1_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_1_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^5 + x + 1,duwal_1_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_1_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_1_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x + 1,duwal_1_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_1_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,,xr9,ixr12,xt9,ixt9,duwal_2_int_x^2 + x + 1,duwal_2_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr9,ixr30,xt9,ixt27,duwal_2_int_x^4 + x + 1,duwal_2_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr9,ixr30,xt9,ixt27,duwal_2_int_x^4 + x^3 + 1,duwal_2_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr9,ixr30,xt9,ixt27,duwal_2_int_x^4 + x^3 + x^2 + x + 1,duwal_2_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^4 + x^3 + x + 1,duwal_2_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^5 + x^3 + x + 1,duwal_2_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_2_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_2_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_2_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x + 1,duwal_2_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_2_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_2_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_2_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^2 + x + 1,duwal_2_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^3 + x + 1,duwal_2_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_2_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^5 + x + 1,duwal_2_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_2_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_2_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x + 1,duwal_2_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_2_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr9,ixr48,xt9,ixt63,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,,xr8,ixr8,xt4,ixt4,duwal_3_int_x^2 + x + 1,duwal_3_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_int_x^4 + x + 1,duwal_3_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_int_x^4 + x^3 + 1,duwal_3_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_int_x^4 + x^3 + x^2 + x + 1,duwal_3_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^4 + x^3 + x + 1,duwal_3_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^5 + x^3 + x + 1,duwal_3_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_3_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_3_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_3_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x + 1,duwal_3_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_3_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_3_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_3_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^2 + x + 1,duwal_3_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^3 + x + 1,duwal_3_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_3_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^5 + x + 1,duwal_3_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_3_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_3_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x + 1,duwal_3_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_3_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^2 + x + 1,duwal_3_inv_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^4 + x + 1,duwal_3_inv_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^4 + x^3 + 1,duwal_3_inv_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^4 + x^3 + x^2 + x + 1,duwal_3_inv_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^4 + x^3 + x + 1,duwal_3_inv_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^5 + x^3 + x + 1,duwal_3_inv_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^3 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^5 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_3_inv_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr8,xt4,ixt4,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,,xr8,ixr8,xt4,ixt4,duwal_4_int_x^2 + x + 1,duwal_4_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr16,xt4,ixt16,duwal_4_int_x^4 + x + 1,duwal_4_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr8,ixr16,xt4,ixt16,duwal_4_int_x^4 + x^3 + 1,duwal_4_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr8,ixr16,xt4,ixt16,duwal_4_int_x^4 + x^3 + x^2 + x + 1,duwal_4_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^4 + x^3 + x + 1,duwal_4_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^5 + x^3 + x + 1,duwal_4_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_4_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_4_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_4_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x + 1,duwal_4_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_4_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_4_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_4_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^2 + x + 1,duwal_4_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^3 + x + 1,duwal_4_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_4_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^5 + x + 1,duwal_4_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_4_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_4_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x + 1,duwal_4_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_4_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr8,ixr28,xt4,ixt40,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,,xr6,ixr9,xt3,ixt3,duwal_5_int_x^2 + x + 1,duwal_5_int_x^2 + x + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_5_int_x^4 + x + 1,duwal_5_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_5_int_x^4 + x^3 + 1,duwal_5_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr6,ixr21,xt3,ixt21,duwal_5_int_x^4 + x^3 + x^2 + x + 1,duwal_5_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^4 + x^3 + x + 1,duwal_5_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^5 + x^3 + x + 1,duwal_5_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_5_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_5_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_5_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x + 1,duwal_5_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_5_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_5_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_5_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^2 + x + 1,duwal_5_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^3 + x + 1,duwal_5_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_5_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^5 + x + 1,duwal_5_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_5_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_5_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x + 1,duwal_5_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_5_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr6,ixr39,xt3,ixt57,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_6_int_x^4 + x + 1,duwal_6_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_6_int_x^4 + x^3 + 1,duwal_6_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_6_int_x^4 + x^3 + x^2 + x + 1,duwal_6_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^4 + x^3 + x + 1,duwal_6_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^5 + x^3 + x + 1,duwal_6_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_6_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_6_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_6_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x + 1,duwal_6_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_6_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_6_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_6_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^2 + x + 1,duwal_6_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^3 + x + 1,duwal_6_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_6_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^5 + x + 1,duwal_6_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_6_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_6_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x + 1,duwal_6_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_6_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr20,ixr26,xt14,ixt41,duwal_13_int_x^4 + x + 1,duwal_13_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr20,ixr26,xt14,ixt41,duwal_13_int_x^4 + x^3 + 1,duwal_13_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr20,ixr26,xt14,ixt41,duwal_13_int_x^4 + x^3 + x^2 + x + 1,duwal_13_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^4 + x^3 + x + 1,duwal_13_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^5 + x^3 + x + 1,duwal_13_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_13_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_13_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_13_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x + 1,duwal_13_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_13_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_13_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_13_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^2 + x + 1,duwal_13_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^3 + x + 1,duwal_13_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_13_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^5 + x + 1,duwal_13_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_13_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_13_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x + 1,duwal_13_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_13_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr20,ixr38,xt14,ixt81,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_8_int_x^4 + x + 1,duwal_8_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_8_int_x^4 + x^3 + 1,duwal_8_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr18,ixr18,xt16,ixt22,duwal_8_int_x^4 + x^3 + x^2 + x + 1,duwal_8_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^4 + x^3 + x + 1,duwal_8_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^5 + x^3 + x + 1,duwal_8_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_8_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_8_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_8_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x + 1,duwal_8_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_8_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_8_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_8_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^2 + x + 1,duwal_8_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^3 + x + 1,duwal_8_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_8_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^5 + x + 1,duwal_8_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_8_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_8_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x + 1,duwal_8_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_8_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr18,ixr30,xt16,ixt38,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr22,ixr38,xt18,ixt40,duwal_9_int_x^4 + x + 1,duwal_9_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr22,ixr38,xt18,ixt40,duwal_9_int_x^4 + x^3 + 1,duwal_9_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr22,ixr38,xt18,ixt40,duwal_9_int_x^4 + x^3 + x^2 + x + 1,duwal_9_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^4 + x^3 + x + 1,duwal_9_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^5 + x^3 + x + 1,duwal_9_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_9_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_9_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_9_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x + 1,duwal_9_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_9_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_9_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_9_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^2 + x + 1,duwal_9_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^3 + x + 1,duwal_9_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_9_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^5 + x + 1,duwal_9_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_9_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_9_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x + 1,duwal_9_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_9_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt18,ixt106,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr22,ixr40,xt16,ixt40,duwal_10_int_x^4 + x + 1,duwal_10_int_x^4 + x + 1_inv
+3,LwCircuits2018,4,xr22,ixr40,xt16,ixt40,duwal_10_int_x^4 + x^3 + 1,duwal_10_int_x^4 + x^3 + 1_inv
+3,LwCircuits2018,4,xr22,ixr40,xt16,ixt40,duwal_10_int_x^4 + x^3 + x^2 + x + 1,duwal_10_int_x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^4 + x^3 + x + 1,duwal_10_int_x^8 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^4 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^5 + x^3 + x + 1,duwal_10_int_x^8 + x^5 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^5 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^5 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^5 + x^4 + x^3 + 1,duwal_10_int_x^8 + x^5 + x^4 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1,duwal_10_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^6 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,duwal_10_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x + 1,duwal_10_int_x^8 + x^6 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x^2 + 1,duwal_10_int_x^8 + x^6 + x^5 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x^3 + 1,duwal_10_int_x^8 + x^6 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x^4 + 1,duwal_10_int_x^8 + x^6 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1,duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1,duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^2 + x + 1,duwal_10_int_x^8 + x^7 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^3 + x + 1,duwal_10_int_x^8 + x^7 + x^3 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^7 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1,duwal_10_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^5 + x + 1,duwal_10_int_x^8 + x^7 + x^5 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^5 + x^3 + 1,duwal_10_int_x^8 + x^7 + x^5 + x^3 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^5 + x^4 + 1,duwal_10_int_x^8 + x^7 + x^5 + x^4 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x + 1,duwal_10_int_x^8 + x^7 + x^6 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1,duwal_10_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1,duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1,duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1_inv
+3,LwCircuits2018,8,xr22,ixr64,xt16,ixt104,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1,duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1_inv

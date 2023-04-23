@@ -1,0 +1,122 @@
+Dim,Paper,Field Power,XOR , iXOR,XTIME , iXTIME,ID \\ iID
+8,SHARK1996,8,235 ,  223,369 , 393,(\refmat:shark) \\  (\refmat:shark-inv) \\
+4,SQUARE1997,8,16 , 40,8 ,  48,\\ (\refmat:square) \\  (\refmat:square-inv) \\
+8,Youssef1997,8,240,*,344,*,(\refmat:tavares) \\
+3,BKSQ1998,8,9 , 39,9 , 63,\\ (\refmat:bksq) \\  (\refmat:bksq-inv) \\
+4,DesignOfRijndael2002,8,16 , 40,8 , 48,\\ (\refmat:rijndael) \\  (\refmat:rijndael-inv) \\
+8,KHAZAD2000,8,112,*,120,*,(\refmat:khazad) \\
+4,ANUBIS2000,8,16,*,20,*,(\refmat:anubis) \\
+4,ANUBIS2000,8,20, 69,32, 101,(\refmat:anubis-ke) \\  (\refmat:anubis-ke-inv) \\
+4,Hierocrypt2000-Hierocrypt-L1-2000,8,52, 52,108, 104,(\refmat:hierocrypt-3-lower) \\  (\refmat:hierocrypt-3-lower-inv) \\
+4,Hierocrypt2000,4,32, 40,40, 44,(\refmat:hierocrypt-3-higher) \\  (\refmat:hierocrypt-3-higher-inv) \\
+2,Hierocrypt-L1-2000,4,8, 7,10, 11,(\refmat:hierocrypt-l1-higher) \\  (\refmat:hierocrypt-l1-higher-inv) \\
+8,Shirai2003,8,72, 240,88, 400,\eqrefshirai-0\\ \eqrefshirai-0-inv \\
+8,Shirai2003,8,80, 288,80, 424,\eqrefshirai-1\\ \eqrefshirai-1-inv \\
+8,Shirai2003,8,72, 224,88, 360,\eqrefshirai-2\\ \eqrefshirai-2-inv \\
+8,Shirai2003,8,80, 224,72, 360,\eqrefshirai-3\\ \eqrefshirai-3-inv \\
+8,Shirai2003,8,80, 240,88, 424,\eqrefshirai-4\\ \eqrefshirai-4-inv \\
+8,Shirai2003,8,88, 224,80, 424,\eqrefshirai-5\\ \eqrefshirai-5-inv \\
+8,Shirai2003,8,80, 256,88, 416,\eqrefshirai-6\\ \eqrefshirai-6-inv \\
+8,Shirai2003,8,72, 224,88, 360,\eqrefshirai-7\\ \eqrefshirai-7-inv \\
+8,Shirai2003,8,80, 224,72, 360,\eqrefshirai-8\\ \eqrefshirai-8-inv \\
+8,Shirai2003,8,80, 256,88, 416,\eqrefshirai-9\\ \eqrefshirai-9-inv \\
+8,Shirai2003,8,88, 224,80, 424,\eqrefshirai-10\\ \eqrefshirai-10-inv \\
+8,Shirai2003,8,80, 240,88, 424,\eqrefshirai-11\\ \eqrefshirai-11-inv \\
+8,Shirai2003,8,80, 288,80, 424,\eqrefshirai-12\\ \eqrefshirai-12-inv \\
+8,Shirai2003,8,72, 240,88, 400,\eqrefshirai-13\\ \eqrefshirai-13-inv \\
+4,FOX2004,8,30,72,25,106,(\refmat:fox-mu4)\\(\refmat:fox-mu4-inv) \\
+8,FOX2004,8,141,284,169,392,(\refmat:fox-mu8)\\(\refmat:fox-mu8-inv) \\
+3,barreto2007curupira,8,12,*,15,*,(\refmat:curupira) \\
+3,barreto2007curupira,8,27,30,36,36,(\refmat:curupira-ke) \\ (\refmat:curupira-ke-inv) \\
+8,Grostl2009,8,104 , 232,96 , 376,(\refmat:grostl) \\ (\refmat:grostl-inv) \\
+4,PHOTON2011,8,28,55,27,39,(\refmat:photon4x4)\\(\refmat:photon4x4-inv) \\
+5,PHOTON2011,4,44,44,52,52,(\refmat:photon_a100)\\(\refmat:photon_a100-inv) \\
+6,PHOTON2011,4,59,74,59,74,(\refmat:photon_a144)\\(\refmat:photon_a144-inv) \\
+7,PHOTON2011,4,96,104,96,104,(\refmat:photon_a196)\\(\refmat:photon_a196-inv) \\
+8,PHOTON2011,4,125,136,143,143,(\refmat:photon_a256)\\(\refmat:photon_a256-inv) \\
+6,PHOTON2011,8,108,163,126,207,(\refmat:photon_a288)\\(\refmat:photon_a288-inv) \\
+4,LED2012,4,26,29,33,39,(\refmat:led)\\(\refmat:led-inv) \\
+4,Gupta2013OnCO,8,24,64,36,100,\eqrefmat:gupta_ray_0 \\ \eqrefmat:gupta_ray_0-inv \\
+4,Gupta2013OnCO,8,56,*,80,*,\eqrefmat:gupta_ray_1 \\
+3,Gupta2013OnCO,8,32,34,46,53,\eqrefmat:gupta_ray_3x3\\\eqrefmat:gupta_ray_3x3-inv \\
+4,Gupta2013OnCO,8,56,*,60,*,\eqrefmat:gupta_ray_2 \\
+8,Gupta2013OnCO,8,176,*,288,*,\eqrefmat:gupta_ray_3 \\
+16,Gupta2013OnCO,8,800,*,1248,*,\eqrefmat:gupta_ray_4 \\
+32,Gupta2013OnCO,8,3712,*,5440,*,\eqrefmat:gupta_ray_5 \\
+4,proest:2014-LwInvolKhoo2015,4,16,*,20,*,\eqrefmat:khoo-14 \\
+4,joltik2015-LwInvolKhoo2015,4,24,*,32,*,\eqrefmat:joltik \\
+4,CuiJin2015,8,24,*,40,*,\eqrefmat:cui_jin \\
+8,LwInvolKhoo2015,4,112,*,144,*,\eqrefmat:khoo \\
+4,LwInvolKhoo2015,8,32,*,60,*,\eqrefmat:khoo-2 \\
+8,LwInvolKhoo2015,8,128,*,208,*,\eqrefmat:khoo-3 \\
+8,LwInvolKhoo2015,4,112,*,144,*,\eqrefmat:khoo-4 \\
+16,LwInvolKhoo2015,8,832,*,1408,*,\eqrefmat:khoo-5 \\
+32,LwInvolKhoo2015,8,3264,*,5728,*,\eqrefmat:khoo-6 \\
+4,LwInvolKhoo2015,4,16,28,36,40,\eqrefmat:khoo-7\\\eqrefmat:khoo-7-inv \\
+4,LwInvolKhoo2015,8,20,64,40,96,\eqrefmat:khoo-8\\\eqrefmat:khoo-8-inv \\
+8,LwInvolKhoo2015,8,128,216,224,352,\eqrefmat:khoo-9\\\eqrefmat:khoo-9-inv \\
+8,LwInvolKhoo2015,4,104,144,144,144,\eqrefmat:khoo-10\\\eqrefmat:khoo-10-inv \\
+16,LwInvolKhoo2015,8,784,1232,1456,1600,\eqrefmat:khoo-11\\\eqrefmat:khoo-11-inv \\
+32,LwInvolKhoo2015,8,3648,4608,5696,6336,\eqrefmat:khoo-12\\ \eqrefmat:khoo-12-inv \\
+3,GuptaCirculant2015,4,19,17,21,21,\eqrefmat:gupta-pandey-1\\\eqrefmat:gupta-pandey-1-inv \\
+3,GuptaCirculant2015,4,10,14,12,16,\eqrefmat:gupta-pandey-2\\\eqrefmat:gupta-pandey-2-inv \\
+4,GuptaCirculant2015,4,36,24,36,32,\eqrefmat:gupta-pandey-3\\\eqrefmat:gupta-pandey-3-inv \\
+4,GuptaCirculant2015,4,24,*,32,*,\eqrefmat:gupta-pandey-3-made-involutory \\
+3,GuptaCirculant2015,4,14,18,16,24,\eqrefmat:gupta-pandey-5\\\eqrefmat:gupta-pandey-5-inv \\
+3,GuptaCirculant2015,4,20,*,24,*,\eqrefmat:gupta-pandey-6 \\
+8,GuptaCirculant2015,16,72,456,88,824,\eqrefmat:gupta-pandey-IDEA\\\eqrefmat:gupta-pandey-IDEA-inv \\
+2,GuptaCirculant2015,4,4,4,4,4,\eqrefmat:gupta-pandey-23\\\eqrefmat:gupta-pandey-23-inv \\
+3,GuptaCirculant2015,8,30,30,39,39,\eqrefmat:gupta-pandey-24-1\\\eqrefmat:gupta-pandey-24-1-inv \\
+6,GuptaCirculant2015,8,84,84,120,120,\eqrefmat:gupta-pandey-24-2\\\eqrefmat:gupta-pandey-24-2-inv \\
+5,GuptaCirculant2015,8,70,*,90,*,\eqrefmat:gupta-pandey-31-1 \\
+6,GuptaCirculant2015,8,94,*,126,*,\eqrefmat:gupta-pandey-31-2 \\
+3,GuptaCirculant2015,8,30,*,39,*,\eqrefmat:gupta-pandey-34-1 \\
+6,GuptaCirculant2015,8,84,*,120,*,\eqrefmat:gupta-pandey-34-2 \\
+5,GuptaCirculant2015,8,70,*,90,*,\eqrefmat:gupta-pandey-36-1 \\
+6,GuptaCirculant2015,8,84,*,126,*,\eqrefmat:gupta-pandey-36-2 \\
+2,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-2x2 \\ \eqrefmat:beierle-2x2-inv \\
+3,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-3x3 \\ \eqrefmat:beierle-3x3-inv \\
+4,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-4x4 \\
+5,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-5x5 \\
+6,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-6x6 \\
+7,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-7x7 \\
+8,LightweightGF22016,NA,NA,*,NA,*,\eqrefmat:beierle-8x8 \\
+3,LiuMeichengCirculant2016,8,6,45,3,57,\eqrefmat:liu-sim-1\\\eqrefmat:liu-sim-1-inv \\
+4,LiuMeichengCirculant2016,8,20,52,32,96,\eqrefmat:liu-sim-2\\\eqrefmat:liu-sim-2-inv \\
+5,LiuMeichengCirculant2016,8,30,50,45,110,\eqrefmat:liu-sim-3\\\eqrefmat:liu-sim-3-inv \\
+6,LiuMeichengCirculant2016,8,60,90,108,198,\eqrefmat:liu-sim-4\\\eqrefmat:liu-sim-4-inv \\
+7,LiuMeichengCirculant2016,8,70,182,126,273,\eqrefmat:liu-sim-5\\\eqrefmat:liu-sim-5-inv \\
+8,LiuMeichengCirculant2016,8,120,232,200,408,\eqrefmat:liu-sim-6\\\eqrefmat:liu-sim-6-inv \\
+3,LiuMeichengCirculant2016,4,6,21,3,21,\eqrefmat:liu-sim-7\\\eqrefmat:liu-sim-7-inv \\
+4,LiuMeichengCirculant2016,4,16,32,20,40,\eqrefmat:liu-sim-8\\\eqrefmat:liu-sim-8-inv \\
+5,LiuMeichengCirculant2016,4,30,40,40,50,\eqrefmat:liu-sim-9\\\eqrefmat:liu-sim-9-inv \\
+6,LiuMeichengCirculant2016,4,54,72,60,84,\eqrefmat:liu-sim-10\\\eqrefmat:liu-sim-10-inv \\
+8,LiuMeichengCirculant2016,8,96,320,176,432,\eqrefmat:liu-sim-11\\\eqrefmat:liu-sim-11-inv \\
+8,LiuMeichengCirculant2016,8,104,232,152,376,\eqrefmat:liu-sim-12\\\eqrefmat:liu-sim-12-inv \\
+8,LiuMeichengCirculant2016,8,120,192,208,384,\eqrefmat:liu-sim-13\\\eqrefmat:liu-sim-13-inv \\
+8,LiuMeichengCirculant2016,8,112,248,184,360,\eqrefmat:liu-sim-14\\\eqrefmat:liu-sim-14-inv \\
+8,LiuMeichengCirculant2016,8,120,216,176,392,\eqrefmat:liu-sim-15\\\eqrefmat:liu-sim-15-inv \\
+8,LiuMeichengCirculant2016,8,120,296,192,432,\eqrefmat:liu-sim-16\\\eqrefmat:liu-sim-16-inv \\
+3,LiuMeichengCirculant2016,8,24,*,45,*,\eqrefmat:liu-sim-17 \\
+5,LiuMeichengCirculant2016,8,70,*,90,*,\eqrefmat:liu-sim-18 \\
+6,LiuMeichengCirculant2016,8,84,*,126,*,\eqrefmat:liu-sim-19 \\
+7,LiuMeichengCirculant2016,8,112,*,217,*,\eqrefmat:liu-sim-20 \\
+7,LiuMeichengCirculant2016,8,98,*,189,*,\eqrefmat:liu-sim-21 \\
+3,LiuMeichengCirculant2016,4,18,*,21,*,\eqrefmat:liu-sim-22 \\
+5,LiuMeichengCirculant2016,4,30,*,30,*,\eqrefmat:liu-sim-23 \\
+8,ToeplitzMDS2017,4,NA,*,NA,*,\eqrefmat:sarkar-1\\\eqrefmat:sarkar-1-inv \\
+8,ToeplitzMDS2017,8,NA,*,NA,*,\eqrefmat:sarkar-2\\\eqrefmat:sarkar-2-inv \\
+3,LwCircuits2018,NA,6,*,3,*,\eqrefmat:duwal-1 \\
+3,LwCircuits2018,NA,9,*,9,*,\eqrefmat:duwal-2 \\
+3,LwCircuits2018,NA,8,*,4,*,\eqrefmat:duwal-3\\\eqrefmat:duwal-3-inv \\
+3,LwCircuits2018,NA,8,*,4,*,\eqrefmat:duwal-4 \\
+3,LwCircuits2018,NA,6,*,3,*,\eqrefmat:duwal-5 \\
+4,LwCircuits2018,NA,18,*,16,*,\eqrefmat:duwal-6 \\
+4,LwCircuits2018,NA,---,*,---,*,\eqrefmat:duwal-7 \\
+4,LwCircuits2018,NA,18,*,16,*,\eqrefmat:duwal-8 \\
+4,LwCircuits2018,NA,22,*,18,*,\eqrefmat:duwal-9 \\
+4,LwCircuits2018,NA,22,*,16,*,\eqrefmat:duwal-10 \\
+4,LwCircuits2018,NA,18,*,16,*,\eqrefmat:duwal-11 \\
+4,LwCircuits2018,NA,---,*,---,*,\eqrefmat:duwal-12 \\
+4,LwCircuits2018,NA,20,*,14,*,\eqrefmat:duwal-13 \\
+4,LwCircuits2018,NA,---,*,---,*,\eqrefmat:duwal-14

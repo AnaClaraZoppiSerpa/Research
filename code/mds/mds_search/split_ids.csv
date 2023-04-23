@@ -1,0 +1,102 @@
+ID , iID
+mat:shark ,  mat:shark-inv
+mat:square ,  mat:square-inv
+mat:tavares ,
+mat:bksq ,  mat:bksq-inv
+mat:rijndael ,  mat:rijndael-inv
+mat:khazad ,
+mat:anubis ,
+mat:anubis-ke ,  mat:anubis-ke-inv
+mat:hierocrypt-3-lower ,  mat:hierocrypt-3-lower-inv
+mat:hierocrypt-3-higher ,  mat:hierocrypt-3-higher-inv
+mat:hierocrypt-l1-higher ,  mat:hierocrypt-l1-higher-inv
+shirai-0, shirai-0-inv
+shirai-1, shirai-1-inv
+shirai-2, shirai-2-inv
+shirai-3, shirai-3-inv
+shirai-4, shirai-4-inv
+shirai-5, shirai-5-inv
+shirai-6, shirai-6-inv
+shirai-7, shirai-7-inv
+shirai-8, shirai-8-inv
+shirai-9, shirai-9-inv
+shirai-10, shirai-10-inv
+shirai-11, shirai-11-inv
+shirai-12, shirai-12-inv
+shirai-13, shirai-13-inv
+mat:fox-mu4,mat:fox-mu4-inv
+mat:fox-mu8,mat:fox-mu8-inv
+mat:curupira ,
+mat:curupira-ke , mat:curupira-ke-inv
+mat:grostl , mat:grostl-inv
+mat:photon4x4,mat:photon4x4-inv
+mat:photon_a100,mat:photon_a100-inv
+mat:photon_a144,mat:photon_a144-inv
+mat:photon_a196,mat:photon_a196-inv
+mat:photon_a256,mat:photon_a256-inv
+mat:photon_a288,mat:photon_a288-inv
+mat:led,mat:led-inv
+mat:gupta_ray_0 , mat:gupta_ray_0-inv
+mat:gupta_ray_1 ,
+mat:gupta_ray_3x3,mat:gupta_ray_3x3-inv
+mat:gupta_ray_2 ,
+mat:gupta_ray_3 ,
+mat:gupta_ray_4 ,
+mat:gupta_ray_5 ,
+mat:khoo-14 ,
+mat:joltik ,
+mat:cui_jin ,
+mat:khoo ,
+mat:khoo-2 ,
+mat:khoo-3 ,
+mat:khoo-4 ,
+mat:khoo-5 ,
+mat:khoo-6 ,
+mat:khoo-7,mat:khoo-7-inv
+mat:khoo-8,mat:khoo-8-inv
+mat:khoo-9,mat:khoo-9-inv
+mat:khoo-10,mat:khoo-10-inv
+mat:khoo-11,mat:khoo-11-inv
+mat:khoo-12, mat:khoo-12-inv
+mat:gupta-pandey-1,mat:gupta-pandey-1-inv
+mat:gupta-pandey-2,mat:gupta-pandey-2-inv
+mat:gupta-pandey-3,mat:gupta-pandey-3-inv
+mat:gupta-pandey-3-made-involutory ,
+mat:gupta-pandey-5,mat:gupta-pandey-5-inv
+mat:gupta-pandey-6 ,
+mat:gupta-pandey-IDEA,mat:gupta-pandey-IDEA-inv
+mat:gupta-pandey-23,mat:gupta-pandey-23-inv
+mat:gupta-pandey-24-1,mat:gupta-pandey-24-1-inv
+mat:gupta-pandey-24-2,mat:gupta-pandey-24-2-inv
+mat:gupta-pandey-31-1 ,
+mat:gupta-pandey-31-2 ,
+mat:gupta-pandey-34-1 ,
+mat:gupta-pandey-34-2 ,
+mat:gupta-pandey-36-1 ,
+mat:gupta-pandey-36-2 ,
+mat:beierle-2x2 , mat:beierle-2x2-inv
+mat:beierle-3x3 , mat:beierle-3x3-inv
+mat:beierle-4x4 ,
+mat:beierle-5x5 ,
+mat:beierle-6x6 ,
+mat:beierle-7x7 ,
+mat:beierle-8x8 ,
+mat:liu-sim-1,mat:liu-sim-1-inv
+mat:liu-sim-2,mat:liu-sim-2-inv
+mat:liu-sim-3,mat:liu-sim-3-inv
+mat:liu-sim-4,mat:liu-sim-4-inv
+mat:liu-sim-5,mat:liu-sim-5-inv
+mat:liu-sim-6,mat:liu-sim-6-inv
+mat:liu-sim-7,mat:liu-sim-7-inv
+mat:liu-sim-8,mat:liu-sim-8-inv
+mat:liu-sim-9,mat:liu-sim-9-inv
+mat:liu-sim-10,mat:liu-sim-10-inv
+mat:liu-sim-11,mat:liu-sim-11-inv
+mat:liu-sim-12,mat:liu-sim-12-inv
+mat:liu-sim-13,mat:liu-sim-13-inv
+mat:liu-sim-14,mat:liu-sim-14-inv
+mat:liu-sim-15,mat:liu-sim-15-inv
+mat:liu-sim-16,mat:liu-sim-16-inv
+mat:sarkar-1,mat:sarkar-1-inv
+mat:sarkar-2,mat:sarkar-2-inv
+mat:duwal-3,mat:duwal-3-inv

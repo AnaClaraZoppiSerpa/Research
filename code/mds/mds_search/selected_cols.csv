@@ -7,7 +7,7 @@ Dim;Paper;Field Power;XOR \\ iXOR;XTIME \\ iXTIME;ID \\ iID
 8;KHAZAD2000;8;112;120;(\refmat:khazad) \\
 4;ANUBIS2000;8;16;20;(\refmat:anubis) \\
 4;ANUBIS2000;8;20\\ 69;32\\ 101;(\refmat:anubis-ke) \\  (\refmat:anubis-ke-inv) \\
-4;Hierocrypt2000, Hierocrypt-L1-2000;8;52\\ 52;108\\ 104;(\refmat:hierocrypt-3-lower) \\  (\refmat:hierocrypt-3-lower-inv) \\
+4;Hierocrypt2000-Hierocrypt-L1-2000;8;52\\ 52;108\\ 104;(\refmat:hierocrypt-3-lower) \\  (\refmat:hierocrypt-3-lower-inv) \\
 4;Hierocrypt2000;4;32\\ 40;40\\ 44;(\refmat:hierocrypt-3-higher) \\  (\refmat:hierocrypt-3-higher-inv) \\
 2;Hierocrypt-L1-2000;4;8\\ 7;10\\ 11;(\refmat:hierocrypt-l1-higher) \\  (\refmat:hierocrypt-l1-higher-inv) \\
 8;Shirai2003;8;72\\ 240;88\\ 400;\eqrefshirai-0\\ \eqrefshirai-0-inv \\
@@ -43,8 +43,8 @@ Dim;Paper;Field Power;XOR \\ iXOR;XTIME \\ iXTIME;ID \\ iID
 8;Gupta2013OnCO;8;176;288;\eqrefmat:gupta_ray_3 \\
 16;Gupta2013OnCO;8;800;1248;\eqrefmat:gupta_ray_4 \\
 32;Gupta2013OnCO;8;3712;5440;\eqrefmat:gupta_ray_5 \\
-4;proest:2014, LwInvolKhoo2015;4;16;20;\eqrefmat:khoo-14 \\
-4;joltik2015, LwInvolKhoo2015;4;24;32;\eqrefmat:joltik \\
+4;proest:2014-LwInvolKhoo2015;4;16;20;\eqrefmat:khoo-14 \\
+4;joltik2015-LwInvolKhoo2015;4;24;32;\eqrefmat:joltik \\
 4;CuiJin2015;8;24;40;\eqrefmat:cui_jin \\
 8;LwInvolKhoo2015;4;112;144;\eqrefmat:khoo \\
 4;LwInvolKhoo2015;8;32;60;\eqrefmat:khoo-2 \\

@@ -259,20 +259,18 @@ get_mat_info_for_mds_table(gupta_pandey_31_2_mat, GF2_8_different_poly, c.degree
 # n+1 -> -2
 # n+2 -> -3
 
-def toep(values, n):
-    A = [[0 for i in range(n)] for j in range(n)]
+def toep(sequence, n):
+    n = len(sequence) // 2
+    first_column = sequence[n:]
+    first_row = sequence[:n]
+    matrix = [[0] * n for i in range(n)]
     for i in range(n):
         for j in range(n):
-            toep_index = j - i
-            if toep_index >= 0:
-                #print("toep index", toep_index)
-                A[i][j] = values[toep_index]
+            if j >= i:
+                matrix[i][j] = first_row[j-i]
             else:
-                #print("tindex", toep_index)
-                val_index = n+(-toep_index)-1
-                #print("val index", val_index)
-                A[i][j] = values[val_index]
-    return A
+                matrix[i][j] = first_column[i-j]
+    return matrix
 
 #values = ["a0", "a1", "a2", "a3", "a-1", "a-2", "a-3"]
 #toep_test = toep(values, 4)
