@@ -1,0 +1,103 @@
+dim = 8
+shirai-3 , 296
+shirai-8 , 296
+dim = 4
+mat:square , 40
+mat:rijndael , 40
+dim = 3
+mat:liu-sim-1 , 15
+mat:liu-sim-7 , 15
+mat:duwal-1 , 15
+mat:duwal-5 , 15
+beierle_3x3 , 15
+beierle_3x3 , 15
+duwal_1_int_x^2 + x + 1 , 15
+duwal_1_int_x^4 + x + 1 , 15
+duwal_1_int_x^4 + x^3 + 1 , 15
+duwal_1_int_x^4 + x^3 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^4 + x^3 + x + 1 , 15
+duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^5 + x^3 + x + 1 , 15
+duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^5 + x^4 + x^3 + 1 , 15
+duwal_1_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^6 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x^3 + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x^4 + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^3 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^5 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^5 + x^3 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^5 + x^4 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 , 15
+duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 , 15
+duwal_5_int_x^2 + x + 1 , 15
+duwal_5_int_x^4 + x + 1 , 15
+duwal_5_int_x^4 + x^3 + 1 , 15
+duwal_5_int_x^4 + x^3 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^4 + x^3 + x + 1 , 15
+duwal_5_int_x^8 + x^4 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^5 + x^3 + x + 1 , 15
+duwal_5_int_x^8 + x^5 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^5 + x^4 + x^3 + 1 , 15
+duwal_5_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^6 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x^3 + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x^4 + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^3 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^5 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^5 + x^3 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^5 + x^4 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1 , 15
+duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1 , 15
+dim = 2
+beierle_2x2 , 8
+beierle_2x2 , 8
+dim = 5
+mat:liu-sim-23 , 120
+dim = 6
+mat:liu-sim-10 , 234
+dim = 7
+mat:photon_a196 , 384
+dim = 16
+mat:gupta_ray_4 , 4544
+dim = 32
+mat:gupta_ray_5 , 20032
+dim = 8 mat count = 2 cost = 296
+dim = 4 mat count = 2 cost = 40
+dim = 3 mat count = 74 cost = 15
+dim = 2 mat count = 2 cost = 8
+dim = 5 mat count = 1 cost = 120
+dim = 6 mat count = 1 cost = 234
+dim = 7 mat count = 1 cost = 384
+dim = 16 mat count = 1 cost = 4544
+dim = 32 mat count = 1 cost = 20032

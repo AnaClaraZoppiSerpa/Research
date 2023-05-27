@@ -1,0 +1,1945 @@
+Dim
+- ID
+8
+- mat:shark
+- mat:tavares
+- mat:khazad
+- shirai-0
+- shirai-1
+- shirai-2
+- shirai-3
+- shirai-4
+- shirai-5
+- shirai-6
+- shirai-7
+- shirai-8
+- shirai-9
+- shirai-10
+- shirai-11
+- shirai-12
+- shirai-13
+- mat:fox-mu8
+- mat:grostl
+- mat:photon_a256
+- mat:gupta_ray_3
+- mat:khoo
+- mat:khoo-3
+- mat:khoo-4
+- mat:khoo-9
+- mat:khoo-10
+- mat:gupta-pandey-IDEA
+- mat:beierle-8x8
+- mat:liu-sim-6
+- mat:liu-sim-11
+- mat:liu-sim-12
+- mat:liu-sim-13
+- mat:liu-sim-14
+- mat:liu-sim-15
+- mat:liu-sim-16
+- mat:sarkar-1
+- mat:sarkar-2
+- beierle_8x8_alpha_30
+- beierle_8x8_alpha_67
+- beierle_8x8_alpha_73
+- beierle_8x8_alpha_90
+- beierle_8x8_alpha_140
+- beierle_8x8_alpha_148
+- beierle_8x8_alpha_158
+- beierle_8x8_alpha_200
+4
+- mat:square
+- mat:rijndael
+- mat:anubis
+- mat:anubis-ke
+- mat:hierocrypt-3-lower
+- mat:hierocrypt-3-higher
+- mat:fox-mu4
+- mat:photon4x4
+- mat:led
+- mat:gupta_ray_0
+- mat:gupta_ray_1
+- mat:gupta_ray_2
+- mat:khoo-14
+- mat:joltik
+- mat:cui_jin
+- mat:khoo-2
+- mat:khoo-7
+- mat:khoo-8
+- mat:gupta-pandey-3
+- mat:gupta-pandey-3-made-involutory
+- mat:beierle-4x4
+- mat:liu-sim-2
+- mat:liu-sim-8
+- mat:duwal-6
+- mat:duwal-7
+- mat:duwal-8
+- mat:duwal-9
+- mat:duwal-10
+- mat:duwal-11
+- mat:duwal-12
+- mat:duwal-13 
+- mat:duwal-14
+- beierle_4x4_alpha_2
+- beierle_4x4_alpha_3
+- beierle_4x4_alpha_4
+- beierle_4x4_alpha_5
+- beierle_4x4_alpha_9
+- beierle_4x4_alpha_11
+- beierle_4x4_alpha_13
+- beierle_4x4_alpha_14
+- beierle_4x4_alpha_2
+- beierle_4x4_alpha_3
+- beierle_4x4_alpha_4
+- beierle_4x4_alpha_5
+- beierle_4x4_alpha_6
+- beierle_4x4_alpha_7
+- beierle_4x4_alpha_8
+- beierle_4x4_alpha_9
+- beierle_4x4_alpha_11
+- beierle_4x4_alpha_12
+- beierle_4x4_alpha_13
+- beierle_4x4_alpha_14
+- beierle_4x4_alpha_15
+- beierle_4x4_alpha_16
+- beierle_4x4_alpha_17
+- beierle_4x4_alpha_18
+- beierle_4x4_alpha_19
+- beierle_4x4_alpha_20
+- beierle_4x4_alpha_21
+- beierle_4x4_alpha_22
+- beierle_4x4_alpha_23
+- beierle_4x4_alpha_24
+- beierle_4x4_alpha_25
+- beierle_4x4_alpha_26
+- beierle_4x4_alpha_27
+- beierle_4x4_alpha_28
+- beierle_4x4_alpha_29
+- beierle_4x4_alpha_30
+- beierle_4x4_alpha_31
+- beierle_4x4_alpha_32
+- beierle_4x4_alpha_33
+- beierle_4x4_alpha_34
+- beierle_4x4_alpha_35
+- beierle_4x4_alpha_36
+- beierle_4x4_alpha_37
+- beierle_4x4_alpha_38
+- beierle_4x4_alpha_39
+- beierle_4x4_alpha_40
+- beierle_4x4_alpha_41
+- beierle_4x4_alpha_42
+- beierle_4x4_alpha_43
+- beierle_4x4_alpha_44
+- beierle_4x4_alpha_45
+- beierle_4x4_alpha_46
+- beierle_4x4_alpha_47
+- beierle_4x4_alpha_48
+- beierle_4x4_alpha_49
+- beierle_4x4_alpha_50
+- beierle_4x4_alpha_51
+- beierle_4x4_alpha_52
+- beierle_4x4_alpha_53
+- beierle_4x4_alpha_54
+- beierle_4x4_alpha_55
+- beierle_4x4_alpha_56
+- beierle_4x4_alpha_57
+- beierle_4x4_alpha_58
+- beierle_4x4_alpha_59
+- beierle_4x4_alpha_60
+- beierle_4x4_alpha_61
+- beierle_4x4_alpha_62
+- beierle_4x4_alpha_63
+- beierle_4x4_alpha_64
+- beierle_4x4_alpha_65
+- beierle_4x4_alpha_66
+- beierle_4x4_alpha_67
+- beierle_4x4_alpha_69
+- beierle_4x4_alpha_70
+- beierle_4x4_alpha_71
+- beierle_4x4_alpha_72
+- beierle_4x4_alpha_73
+- beierle_4x4_alpha_74
+- beierle_4x4_alpha_75
+- beierle_4x4_alpha_76
+- beierle_4x4_alpha_77
+- beierle_4x4_alpha_78
+- beierle_4x4_alpha_79
+- beierle_4x4_alpha_80
+- beierle_4x4_alpha_81
+- beierle_4x4_alpha_82
+- beierle_4x4_alpha_83
+- beierle_4x4_alpha_84
+- beierle_4x4_alpha_85
+- beierle_4x4_alpha_86
+- beierle_4x4_alpha_87
+- beierle_4x4_alpha_88
+- beierle_4x4_alpha_89
+- beierle_4x4_alpha_90
+- beierle_4x4_alpha_91
+- beierle_4x4_alpha_92
+- beierle_4x4_alpha_93
+- beierle_4x4_alpha_94
+- beierle_4x4_alpha_95
+- beierle_4x4_alpha_96
+- beierle_4x4_alpha_97
+- beierle_4x4_alpha_98
+- beierle_4x4_alpha_99
+- beierle_4x4_alpha_100
+- beierle_4x4_alpha_101
+- beierle_4x4_alpha_102
+- beierle_4x4_alpha_103
+- beierle_4x4_alpha_104
+- beierle_4x4_alpha_105
+- beierle_4x4_alpha_106
+- beierle_4x4_alpha_107
+- beierle_4x4_alpha_108
+- beierle_4x4_alpha_109
+- beierle_4x4_alpha_110
+- beierle_4x4_alpha_111
+- beierle_4x4_alpha_112
+- beierle_4x4_alpha_113
+- beierle_4x4_alpha_114
+- beierle_4x4_alpha_115
+- beierle_4x4_alpha_116
+- beierle_4x4_alpha_117
+- beierle_4x4_alpha_118
+- beierle_4x4_alpha_119
+- beierle_4x4_alpha_120
+- beierle_4x4_alpha_121
+- beierle_4x4_alpha_122
+- beierle_4x4_alpha_123
+- beierle_4x4_alpha_124
+- beierle_4x4_alpha_125
+- beierle_4x4_alpha_126
+- beierle_4x4_alpha_127
+- beierle_4x4_alpha_128
+- beierle_4x4_alpha_129
+- beierle_4x4_alpha_130
+- beierle_4x4_alpha_131
+- beierle_4x4_alpha_132
+- beierle_4x4_alpha_133
+- beierle_4x4_alpha_134
+- beierle_4x4_alpha_135
+- beierle_4x4_alpha_136
+- beierle_4x4_alpha_137
+- beierle_4x4_alpha_138
+- beierle_4x4_alpha_139
+- beierle_4x4_alpha_140
+- beierle_4x4_alpha_141
+- beierle_4x4_alpha_142
+- beierle_4x4_alpha_143
+- beierle_4x4_alpha_144
+- beierle_4x4_alpha_145
+- beierle_4x4_alpha_147
+- beierle_4x4_alpha_148
+- beierle_4x4_alpha_149
+- beierle_4x4_alpha_150
+- beierle_4x4_alpha_151
+- beierle_4x4_alpha_152
+- beierle_4x4_alpha_153
+- beierle_4x4_alpha_154
+- beierle_4x4_alpha_155
+- beierle_4x4_alpha_156
+- beierle_4x4_alpha_157
+- beierle_4x4_alpha_158
+- beierle_4x4_alpha_159
+- beierle_4x4_alpha_160
+- beierle_4x4_alpha_161
+- beierle_4x4_alpha_162
+- beierle_4x4_alpha_163
+- beierle_4x4_alpha_164
+- beierle_4x4_alpha_165
+- beierle_4x4_alpha_166
+- beierle_4x4_alpha_167
+- beierle_4x4_alpha_168
+- beierle_4x4_alpha_169
+- beierle_4x4_alpha_170
+- beierle_4x4_alpha_171
+- beierle_4x4_alpha_172
+- beierle_4x4_alpha_173
+- beierle_4x4_alpha_174
+- beierle_4x4_alpha_175
+- beierle_4x4_alpha_176
+- beierle_4x4_alpha_177
+- beierle_4x4_alpha_178
+- beierle_4x4_alpha_179
+- beierle_4x4_alpha_180
+- beierle_4x4_alpha_181
+- beierle_4x4_alpha_182
+- beierle_4x4_alpha_183
+- beierle_4x4_alpha_184
+- beierle_4x4_alpha_185
+- beierle_4x4_alpha_186
+- beierle_4x4_alpha_187
+- beierle_4x4_alpha_188
+- beierle_4x4_alpha_189
+- beierle_4x4_alpha_190
+- beierle_4x4_alpha_191
+- beierle_4x4_alpha_192
+- beierle_4x4_alpha_193
+- beierle_4x4_alpha_194
+- beierle_4x4_alpha_195
+- beierle_4x4_alpha_196
+- beierle_4x4_alpha_197
+- beierle_4x4_alpha_198
+- beierle_4x4_alpha_199
+- beierle_4x4_alpha_200
+- beierle_4x4_alpha_201
+- beierle_4x4_alpha_202
+- beierle_4x4_alpha_203
+- beierle_4x4_alpha_204
+- beierle_4x4_alpha_205
+- beierle_4x4_alpha_206
+- beierle_4x4_alpha_207
+- beierle_4x4_alpha_208
+- beierle_4x4_alpha_209
+- beierle_4x4_alpha_210
+- beierle_4x4_alpha_211
+- beierle_4x4_alpha_212
+- beierle_4x4_alpha_213
+- beierle_4x4_alpha_216
+- beierle_4x4_alpha_217
+- beierle_4x4_alpha_218
+- beierle_4x4_alpha_219
+- beierle_4x4_alpha_220
+- beierle_4x4_alpha_222
+- beierle_4x4_alpha_223
+- beierle_4x4_alpha_224
+- beierle_4x4_alpha_225
+- beierle_4x4_alpha_226
+- beierle_4x4_alpha_227
+- beierle_4x4_alpha_228
+- beierle_4x4_alpha_229
+- beierle_4x4_alpha_230
+- beierle_4x4_alpha_231
+- beierle_4x4_alpha_232
+- beierle_4x4_alpha_233
+- beierle_4x4_alpha_234
+- beierle_4x4_alpha_235
+- beierle_4x4_alpha_236
+- beierle_4x4_alpha_237
+- beierle_4x4_alpha_238
+- beierle_4x4_alpha_239
+- beierle_4x4_alpha_240
+- beierle_4x4_alpha_241
+- beierle_4x4_alpha_242
+- beierle_4x4_alpha_243
+- beierle_4x4_alpha_244
+- beierle_4x4_alpha_245
+- beierle_4x4_alpha_246
+- beierle_4x4_alpha_247
+- beierle_4x4_alpha_248
+- beierle_4x4_alpha_249
+- beierle_4x4_alpha_250
+- beierle_4x4_alpha_251
+- beierle_4x4_alpha_252
+- beierle_4x4_alpha_253
+- beierle_4x4_alpha_254
+- beierle_4x4_alpha_255
+3
+- mat:bksq
+- mat:curupira
+- mat:curupira-ke
+- mat:gupta_ray_3x3
+- mat:gupta-pandey-1
+- mat:gupta-pandey-2
+- mat:gupta-pandey-5
+- mat:gupta-pandey-6
+- mat:gupta-pandey-24-1
+- mat:gupta-pandey-34-1
+- mat:beierle-3x3
+- mat:liu-sim-1
+- mat:liu-sim-7
+- mat:liu-sim-17
+- mat:liu-sim-22
+- mat:duwal-1
+- mat:duwal-2
+- mat:duwal-3
+- mat:duwal-4
+- mat:duwal-5
+- beierle_3x3
+- beierle_3x3
+- beierle_3x3_inv_alpha_2
+- beierle_3x3_inv_alpha_3
+- beierle_3x3_inv_alpha_4
+- beierle_3x3_inv_alpha_5
+- beierle_3x3_inv_alpha_6
+- beierle_3x3_inv_alpha_7
+- beierle_3x3_inv_alpha_8
+- beierle_3x3_inv_alpha_9
+- beierle_3x3_inv_alpha_10
+- beierle_3x3_inv_alpha_11
+- beierle_3x3_inv_alpha_12
+- beierle_3x3_inv_alpha_13
+- beierle_3x3_inv_alpha_14
+- beierle_3x3_inv_alpha_15
+- beierle_3x3_inv_alpha_2
+- beierle_3x3_inv_alpha_3
+- beierle_3x3_inv_alpha_4
+- beierle_3x3_inv_alpha_5
+- beierle_3x3_inv_alpha_6
+- beierle_3x3_inv_alpha_7
+- beierle_3x3_inv_alpha_8
+- beierle_3x3_inv_alpha_9
+- beierle_3x3_inv_alpha_10
+- beierle_3x3_inv_alpha_11
+- beierle_3x3_inv_alpha_12
+- beierle_3x3_inv_alpha_13
+- beierle_3x3_inv_alpha_14
+- beierle_3x3_inv_alpha_15
+- beierle_3x3_inv_alpha_16
+- beierle_3x3_inv_alpha_17
+- beierle_3x3_inv_alpha_18
+- beierle_3x3_inv_alpha_19
+- beierle_3x3_inv_alpha_20
+- beierle_3x3_inv_alpha_21
+- beierle_3x3_inv_alpha_22
+- beierle_3x3_inv_alpha_23
+- beierle_3x3_inv_alpha_24
+- beierle_3x3_inv_alpha_25
+- beierle_3x3_inv_alpha_26
+- beierle_3x3_inv_alpha_27
+- beierle_3x3_inv_alpha_28
+- beierle_3x3_inv_alpha_29
+- beierle_3x3_inv_alpha_30
+- beierle_3x3_inv_alpha_31
+- beierle_3x3_inv_alpha_32
+- beierle_3x3_inv_alpha_33
+- beierle_3x3_inv_alpha_34
+- beierle_3x3_inv_alpha_35
+- beierle_3x3_inv_alpha_36
+- beierle_3x3_inv_alpha_37
+- beierle_3x3_inv_alpha_38
+- beierle_3x3_inv_alpha_39
+- beierle_3x3_inv_alpha_40
+- beierle_3x3_inv_alpha_41
+- beierle_3x3_inv_alpha_42
+- beierle_3x3_inv_alpha_43
+- beierle_3x3_inv_alpha_44
+- beierle_3x3_inv_alpha_45
+- beierle_3x3_inv_alpha_46
+- beierle_3x3_inv_alpha_47
+- beierle_3x3_inv_alpha_48
+- beierle_3x3_inv_alpha_49
+- beierle_3x3_inv_alpha_50
+- beierle_3x3_inv_alpha_51
+- beierle_3x3_inv_alpha_52
+- beierle_3x3_inv_alpha_53
+- beierle_3x3_inv_alpha_54
+- beierle_3x3_inv_alpha_55
+- beierle_3x3_inv_alpha_56
+- beierle_3x3_inv_alpha_57
+- beierle_3x3_inv_alpha_58
+- beierle_3x3_inv_alpha_59
+- beierle_3x3_inv_alpha_60
+- beierle_3x3_inv_alpha_61
+- beierle_3x3_inv_alpha_62
+- beierle_3x3_inv_alpha_63
+- beierle_3x3_inv_alpha_64
+- beierle_3x3_inv_alpha_65
+- beierle_3x3_inv_alpha_66
+- beierle_3x3_inv_alpha_67
+- beierle_3x3_inv_alpha_68
+- beierle_3x3_inv_alpha_69
+- beierle_3x3_inv_alpha_70
+- beierle_3x3_inv_alpha_71
+- beierle_3x3_inv_alpha_72
+- beierle_3x3_inv_alpha_73
+- beierle_3x3_inv_alpha_74
+- beierle_3x3_inv_alpha_75
+- beierle_3x3_inv_alpha_76
+- beierle_3x3_inv_alpha_77
+- beierle_3x3_inv_alpha_78
+- beierle_3x3_inv_alpha_79
+- beierle_3x3_inv_alpha_80
+- beierle_3x3_inv_alpha_81
+- beierle_3x3_inv_alpha_82
+- beierle_3x3_inv_alpha_83
+- beierle_3x3_inv_alpha_84
+- beierle_3x3_inv_alpha_85
+- beierle_3x3_inv_alpha_86
+- beierle_3x3_inv_alpha_87
+- beierle_3x3_inv_alpha_88
+- beierle_3x3_inv_alpha_89
+- beierle_3x3_inv_alpha_90
+- beierle_3x3_inv_alpha_91
+- beierle_3x3_inv_alpha_92
+- beierle_3x3_inv_alpha_93
+- beierle_3x3_inv_alpha_94
+- beierle_3x3_inv_alpha_95
+- beierle_3x3_inv_alpha_96
+- beierle_3x3_inv_alpha_97
+- beierle_3x3_inv_alpha_98
+- beierle_3x3_inv_alpha_99
+- beierle_3x3_inv_alpha_100
+- beierle_3x3_inv_alpha_101
+- beierle_3x3_inv_alpha_102
+- beierle_3x3_inv_alpha_103
+- beierle_3x3_inv_alpha_104
+- beierle_3x3_inv_alpha_105
+- beierle_3x3_inv_alpha_106
+- beierle_3x3_inv_alpha_107
+- beierle_3x3_inv_alpha_108
+- beierle_3x3_inv_alpha_109
+- beierle_3x3_inv_alpha_110
+- beierle_3x3_inv_alpha_111
+- beierle_3x3_inv_alpha_112
+- beierle_3x3_inv_alpha_113
+- beierle_3x3_inv_alpha_114
+- beierle_3x3_inv_alpha_115
+- beierle_3x3_inv_alpha_116
+- beierle_3x3_inv_alpha_117
+- beierle_3x3_inv_alpha_118
+- beierle_3x3_inv_alpha_119
+- beierle_3x3_inv_alpha_120
+- beierle_3x3_inv_alpha_121
+- beierle_3x3_inv_alpha_122
+- beierle_3x3_inv_alpha_123
+- beierle_3x3_inv_alpha_124
+- beierle_3x3_inv_alpha_125
+- beierle_3x3_inv_alpha_126
+- beierle_3x3_inv_alpha_127
+- beierle_3x3_inv_alpha_128
+- beierle_3x3_inv_alpha_129
+- beierle_3x3_inv_alpha_130
+- beierle_3x3_inv_alpha_131
+- beierle_3x3_inv_alpha_132
+- beierle_3x3_inv_alpha_133
+- beierle_3x3_inv_alpha_134
+- beierle_3x3_inv_alpha_135
+- beierle_3x3_inv_alpha_136
+- beierle_3x3_inv_alpha_137
+- beierle_3x3_inv_alpha_138
+- beierle_3x3_inv_alpha_139
+- beierle_3x3_inv_alpha_140
+- beierle_3x3_inv_alpha_141
+- beierle_3x3_inv_alpha_142
+- beierle_3x3_inv_alpha_143
+- beierle_3x3_inv_alpha_144
+- beierle_3x3_inv_alpha_145
+- beierle_3x3_inv_alpha_146
+- beierle_3x3_inv_alpha_147
+- beierle_3x3_inv_alpha_148
+- beierle_3x3_inv_alpha_149
+- beierle_3x3_inv_alpha_150
+- beierle_3x3_inv_alpha_151
+- beierle_3x3_inv_alpha_152
+- beierle_3x3_inv_alpha_153
+- beierle_3x3_inv_alpha_154
+- beierle_3x3_inv_alpha_155
+- beierle_3x3_inv_alpha_156
+- beierle_3x3_inv_alpha_157
+- beierle_3x3_inv_alpha_158
+- beierle_3x3_inv_alpha_159
+- beierle_3x3_inv_alpha_160
+- beierle_3x3_inv_alpha_161
+- beierle_3x3_inv_alpha_162
+- beierle_3x3_inv_alpha_163
+- beierle_3x3_inv_alpha_164
+- beierle_3x3_inv_alpha_165
+- beierle_3x3_inv_alpha_166
+- beierle_3x3_inv_alpha_167
+- beierle_3x3_inv_alpha_168
+- beierle_3x3_inv_alpha_169
+- beierle_3x3_inv_alpha_170
+- beierle_3x3_inv_alpha_171
+- beierle_3x3_inv_alpha_172
+- beierle_3x3_inv_alpha_173
+- beierle_3x3_inv_alpha_174
+- beierle_3x3_inv_alpha_175
+- beierle_3x3_inv_alpha_176
+- beierle_3x3_inv_alpha_177
+- beierle_3x3_inv_alpha_178
+- beierle_3x3_inv_alpha_179
+- beierle_3x3_inv_alpha_180
+- beierle_3x3_inv_alpha_181
+- beierle_3x3_inv_alpha_182
+- beierle_3x3_inv_alpha_183
+- beierle_3x3_inv_alpha_184
+- beierle_3x3_inv_alpha_185
+- beierle_3x3_inv_alpha_186
+- beierle_3x3_inv_alpha_187
+- beierle_3x3_inv_alpha_188
+- beierle_3x3_inv_alpha_189
+- beierle_3x3_inv_alpha_190
+- beierle_3x3_inv_alpha_191
+- beierle_3x3_inv_alpha_192
+- beierle_3x3_inv_alpha_193
+- beierle_3x3_inv_alpha_194
+- beierle_3x3_inv_alpha_195
+- beierle_3x3_inv_alpha_196
+- beierle_3x3_inv_alpha_197
+- beierle_3x3_inv_alpha_198
+- beierle_3x3_inv_alpha_199
+- beierle_3x3_inv_alpha_200
+- beierle_3x3_inv_alpha_201
+- beierle_3x3_inv_alpha_202
+- beierle_3x3_inv_alpha_203
+- beierle_3x3_inv_alpha_204
+- beierle_3x3_inv_alpha_205
+- beierle_3x3_inv_alpha_206
+- beierle_3x3_inv_alpha_207
+- beierle_3x3_inv_alpha_208
+- beierle_3x3_inv_alpha_209
+- beierle_3x3_inv_alpha_210
+- beierle_3x3_inv_alpha_211
+- beierle_3x3_inv_alpha_212
+- beierle_3x3_inv_alpha_213
+- beierle_3x3_inv_alpha_214
+- beierle_3x3_inv_alpha_215
+- beierle_3x3_inv_alpha_216
+- beierle_3x3_inv_alpha_217
+- beierle_3x3_inv_alpha_218
+- beierle_3x3_inv_alpha_219
+- beierle_3x3_inv_alpha_220
+- beierle_3x3_inv_alpha_221
+- beierle_3x3_inv_alpha_222
+- beierle_3x3_inv_alpha_223
+- beierle_3x3_inv_alpha_224
+- beierle_3x3_inv_alpha_225
+- beierle_3x3_inv_alpha_226
+- beierle_3x3_inv_alpha_227
+- beierle_3x3_inv_alpha_228
+- beierle_3x3_inv_alpha_229
+- beierle_3x3_inv_alpha_230
+- beierle_3x3_inv_alpha_231
+- beierle_3x3_inv_alpha_232
+- beierle_3x3_inv_alpha_233
+- beierle_3x3_inv_alpha_234
+- beierle_3x3_inv_alpha_235
+- beierle_3x3_inv_alpha_236
+- beierle_3x3_inv_alpha_237
+- beierle_3x3_inv_alpha_238
+- beierle_3x3_inv_alpha_239
+- beierle_3x3_inv_alpha_240
+- beierle_3x3_inv_alpha_241
+- beierle_3x3_inv_alpha_242
+- beierle_3x3_inv_alpha_243
+- beierle_3x3_inv_alpha_244
+- beierle_3x3_inv_alpha_245
+- beierle_3x3_inv_alpha_246
+- beierle_3x3_inv_alpha_247
+- beierle_3x3_inv_alpha_248
+- beierle_3x3_inv_alpha_249
+- beierle_3x3_inv_alpha_250
+- beierle_3x3_inv_alpha_251
+- beierle_3x3_inv_alpha_252
+- beierle_3x3_inv_alpha_253
+- beierle_3x3_inv_alpha_254
+- beierle_3x3_inv_alpha_255
+- duwal_1_int_x^2 + x + 1
+- duwal_1_int_x^4 + x + 1
+- duwal_1_int_x^4 + x^3 + 1
+- duwal_1_int_x^4 + x^3 + x^2 + x + 1
+- duwal_1_int_x^8 + x^4 + x^3 + x + 1
+- duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^5 + x^3 + x + 1
+- duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_1_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_1_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_1_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_1_int_x^8 + x^7 + x^2 + x + 1
+- duwal_1_int_x^8 + x^7 + x^3 + x + 1
+- duwal_1_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_1_int_x^8 + x^7 + x^5 + x + 1
+- duwal_1_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_1_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_1_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_1_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_2_int_x^2 + x + 1
+- duwal_2_int_x^4 + x + 1
+- duwal_2_int_x^4 + x^3 + 1
+- duwal_2_int_x^4 + x^3 + x^2 + x + 1
+- duwal_2_int_x^8 + x^4 + x^3 + x + 1
+- duwal_2_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^5 + x^3 + x + 1
+- duwal_2_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_2_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_2_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_2_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_2_int_x^8 + x^7 + x^2 + x + 1
+- duwal_2_int_x^8 + x^7 + x^3 + x + 1
+- duwal_2_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_2_int_x^8 + x^7 + x^5 + x + 1
+- duwal_2_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_2_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_2_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_2_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_3_int_x^2 + x + 1
+- duwal_3_int_x^4 + x + 1
+- duwal_3_int_x^4 + x^3 + 1
+- duwal_3_int_x^4 + x^3 + x^2 + x + 1
+- duwal_3_int_x^8 + x^4 + x^3 + x + 1
+- duwal_3_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^5 + x^3 + x + 1
+- duwal_3_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_3_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_3_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_3_int_x^8 + x^7 + x^2 + x + 1
+- duwal_3_int_x^8 + x^7 + x^3 + x + 1
+- duwal_3_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_int_x^8 + x^7 + x^5 + x + 1
+- duwal_3_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_3_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_3_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_3_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_3_inv_int_x^2 + x + 1
+- duwal_3_inv_int_x^4 + x + 1
+- duwal_3_inv_int_x^4 + x^3 + 1
+- duwal_3_inv_int_x^4 + x^3 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^4 + x^3 + x + 1
+- duwal_3_inv_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^5 + x^3 + x + 1
+- duwal_3_inv_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_3_inv_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^3 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^5 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_3_inv_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_4_int_x^2 + x + 1
+- duwal_4_int_x^4 + x + 1
+- duwal_4_int_x^4 + x^3 + 1
+- duwal_4_int_x^4 + x^3 + x^2 + x + 1
+- duwal_4_int_x^8 + x^4 + x^3 + x + 1
+- duwal_4_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^5 + x^3 + x + 1
+- duwal_4_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_4_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_4_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_4_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_4_int_x^8 + x^7 + x^2 + x + 1
+- duwal_4_int_x^8 + x^7 + x^3 + x + 1
+- duwal_4_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_4_int_x^8 + x^7 + x^5 + x + 1
+- duwal_4_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_4_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_4_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_4_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_5_int_x^2 + x + 1
+- duwal_5_int_x^4 + x + 1
+- duwal_5_int_x^4 + x^3 + 1
+- duwal_5_int_x^4 + x^3 + x^2 + x + 1
+- duwal_5_int_x^8 + x^4 + x^3 + x + 1
+- duwal_5_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^5 + x^3 + x + 1
+- duwal_5_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_5_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_5_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_5_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_5_int_x^8 + x^7 + x^2 + x + 1
+- duwal_5_int_x^8 + x^7 + x^3 + x + 1
+- duwal_5_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_5_int_x^8 + x^7 + x^5 + x + 1
+- duwal_5_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_5_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_5_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_5_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_6_int_x^4 + x + 1
+- duwal_6_int_x^4 + x^3 + 1
+- duwal_6_int_x^4 + x^3 + x^2 + x + 1
+- duwal_6_int_x^8 + x^4 + x^3 + x + 1
+- duwal_6_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^5 + x^3 + x + 1
+- duwal_6_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_6_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_6_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_6_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_6_int_x^8 + x^7 + x^2 + x + 1
+- duwal_6_int_x^8 + x^7 + x^3 + x + 1
+- duwal_6_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_6_int_x^8 + x^7 + x^5 + x + 1
+- duwal_6_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_6_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_6_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_6_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_13_int_x^4 + x + 1
+- duwal_13_int_x^4 + x^3 + 1
+- duwal_13_int_x^4 + x^3 + x^2 + x + 1
+- duwal_13_int_x^8 + x^4 + x^3 + x + 1
+- duwal_13_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^5 + x^3 + x + 1
+- duwal_13_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_13_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_13_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_13_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_13_int_x^8 + x^7 + x^2 + x + 1
+- duwal_13_int_x^8 + x^7 + x^3 + x + 1
+- duwal_13_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_13_int_x^8 + x^7 + x^5 + x + 1
+- duwal_13_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_13_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_13_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_13_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_8_int_x^4 + x + 1
+- duwal_8_int_x^4 + x^3 + 1
+- duwal_8_int_x^4 + x^3 + x^2 + x + 1
+- duwal_8_int_x^8 + x^4 + x^3 + x + 1
+- duwal_8_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^5 + x^3 + x + 1
+- duwal_8_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_8_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_8_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_8_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_8_int_x^8 + x^7 + x^2 + x + 1
+- duwal_8_int_x^8 + x^7 + x^3 + x + 1
+- duwal_8_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_8_int_x^8 + x^7 + x^5 + x + 1
+- duwal_8_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_8_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_8_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_8_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_9_int_x^4 + x + 1
+- duwal_9_int_x^4 + x^3 + 1
+- duwal_9_int_x^4 + x^3 + x^2 + x + 1
+- duwal_9_int_x^8 + x^4 + x^3 + x + 1
+- duwal_9_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^5 + x^3 + x + 1
+- duwal_9_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_9_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_9_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_9_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_9_int_x^8 + x^7 + x^2 + x + 1
+- duwal_9_int_x^8 + x^7 + x^3 + x + 1
+- duwal_9_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_9_int_x^8 + x^7 + x^5 + x + 1
+- duwal_9_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_9_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_9_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_9_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+- duwal_10_int_x^4 + x + 1
+- duwal_10_int_x^4 + x^3 + 1
+- duwal_10_int_x^4 + x^3 + x^2 + x + 1
+- duwal_10_int_x^8 + x^4 + x^3 + x + 1
+- duwal_10_int_x^8 + x^4 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^5 + x^3 + x + 1
+- duwal_10_int_x^8 + x^5 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^5 + x^4 + x^3 + 1
+- duwal_10_int_x^8 + x^5 + x^4 + x^3 + x^2 + x + 1
+- duwal_10_int_x^8 + x^6 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^6 + x^4 + x^3 + x^2 + x + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x^2 + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x^3 + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x^4 + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^2 + x + 1
+- duwal_10_int_x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
+- duwal_10_int_x^8 + x^7 + x^2 + x + 1
+- duwal_10_int_x^8 + x^7 + x^3 + x + 1
+- duwal_10_int_x^8 + x^7 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^7 + x^4 + x^3 + x^2 + x + 1
+- duwal_10_int_x^8 + x^7 + x^5 + x + 1
+- duwal_10_int_x^8 + x^7 + x^5 + x^3 + 1
+- duwal_10_int_x^8 + x^7 + x^5 + x^4 + 1
+- duwal_10_int_x^8 + x^7 + x^5 + x^4 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^3 + x^2 + x + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^2 + x + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^4 + x^3 + x^2 + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^2 + x + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^2 + 1
+- duwal_10_int_x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + 1
+2
+- mat:hierocrypt-l1-higher
+- mat:gupta-pandey-23
+- mat:beierle-2x2
+- beierle_2x2
+- beierle_2x2
+- beierle_2x2_inv_alpha_2
+- beierle_2x2_inv_alpha_3
+- beierle_2x2_inv_alpha_4
+- beierle_2x2_inv_alpha_5
+- beierle_2x2_inv_alpha_6
+- beierle_2x2_inv_alpha_7
+- beierle_2x2_inv_alpha_8
+- beierle_2x2_inv_alpha_9
+- beierle_2x2_inv_alpha_10
+- beierle_2x2_inv_alpha_11
+- beierle_2x2_inv_alpha_12
+- beierle_2x2_inv_alpha_13
+- beierle_2x2_inv_alpha_14
+- beierle_2x2_inv_alpha_15
+- beierle_2x2_inv_alpha_2
+- beierle_2x2_inv_alpha_3
+- beierle_2x2_inv_alpha_4
+- beierle_2x2_inv_alpha_5
+- beierle_2x2_inv_alpha_6
+- beierle_2x2_inv_alpha_7
+- beierle_2x2_inv_alpha_8
+- beierle_2x2_inv_alpha_9
+- beierle_2x2_inv_alpha_10
+- beierle_2x2_inv_alpha_11
+- beierle_2x2_inv_alpha_12
+- beierle_2x2_inv_alpha_13
+- beierle_2x2_inv_alpha_14
+- beierle_2x2_inv_alpha_15
+- beierle_2x2_inv_alpha_16
+- beierle_2x2_inv_alpha_17
+- beierle_2x2_inv_alpha_18
+- beierle_2x2_inv_alpha_19
+- beierle_2x2_inv_alpha_20
+- beierle_2x2_inv_alpha_21
+- beierle_2x2_inv_alpha_22
+- beierle_2x2_inv_alpha_23
+- beierle_2x2_inv_alpha_24
+- beierle_2x2_inv_alpha_25
+- beierle_2x2_inv_alpha_26
+- beierle_2x2_inv_alpha_27
+- beierle_2x2_inv_alpha_28
+- beierle_2x2_inv_alpha_29
+- beierle_2x2_inv_alpha_30
+- beierle_2x2_inv_alpha_31
+- beierle_2x2_inv_alpha_32
+- beierle_2x2_inv_alpha_33
+- beierle_2x2_inv_alpha_34
+- beierle_2x2_inv_alpha_35
+- beierle_2x2_inv_alpha_36
+- beierle_2x2_inv_alpha_37
+- beierle_2x2_inv_alpha_38
+- beierle_2x2_inv_alpha_39
+- beierle_2x2_inv_alpha_40
+- beierle_2x2_inv_alpha_41
+- beierle_2x2_inv_alpha_42
+- beierle_2x2_inv_alpha_43
+- beierle_2x2_inv_alpha_44
+- beierle_2x2_inv_alpha_45
+- beierle_2x2_inv_alpha_46
+- beierle_2x2_inv_alpha_47
+- beierle_2x2_inv_alpha_48
+- beierle_2x2_inv_alpha_49
+- beierle_2x2_inv_alpha_50
+- beierle_2x2_inv_alpha_51
+- beierle_2x2_inv_alpha_52
+- beierle_2x2_inv_alpha_53
+- beierle_2x2_inv_alpha_54
+- beierle_2x2_inv_alpha_55
+- beierle_2x2_inv_alpha_56
+- beierle_2x2_inv_alpha_57
+- beierle_2x2_inv_alpha_58
+- beierle_2x2_inv_alpha_59
+- beierle_2x2_inv_alpha_60
+- beierle_2x2_inv_alpha_61
+- beierle_2x2_inv_alpha_62
+- beierle_2x2_inv_alpha_63
+- beierle_2x2_inv_alpha_64
+- beierle_2x2_inv_alpha_65
+- beierle_2x2_inv_alpha_66
+- beierle_2x2_inv_alpha_67
+- beierle_2x2_inv_alpha_68
+- beierle_2x2_inv_alpha_69
+- beierle_2x2_inv_alpha_70
+- beierle_2x2_inv_alpha_71
+- beierle_2x2_inv_alpha_72
+- beierle_2x2_inv_alpha_73
+- beierle_2x2_inv_alpha_74
+- beierle_2x2_inv_alpha_75
+- beierle_2x2_inv_alpha_76
+- beierle_2x2_inv_alpha_77
+- beierle_2x2_inv_alpha_78
+- beierle_2x2_inv_alpha_79
+- beierle_2x2_inv_alpha_80
+- beierle_2x2_inv_alpha_81
+- beierle_2x2_inv_alpha_82
+- beierle_2x2_inv_alpha_83
+- beierle_2x2_inv_alpha_84
+- beierle_2x2_inv_alpha_85
+- beierle_2x2_inv_alpha_86
+- beierle_2x2_inv_alpha_87
+- beierle_2x2_inv_alpha_88
+- beierle_2x2_inv_alpha_89
+- beierle_2x2_inv_alpha_90
+- beierle_2x2_inv_alpha_91
+- beierle_2x2_inv_alpha_92
+- beierle_2x2_inv_alpha_93
+- beierle_2x2_inv_alpha_94
+- beierle_2x2_inv_alpha_95
+- beierle_2x2_inv_alpha_96
+- beierle_2x2_inv_alpha_97
+- beierle_2x2_inv_alpha_98
+- beierle_2x2_inv_alpha_99
+- beierle_2x2_inv_alpha_100
+- beierle_2x2_inv_alpha_101
+- beierle_2x2_inv_alpha_102
+- beierle_2x2_inv_alpha_103
+- beierle_2x2_inv_alpha_104
+- beierle_2x2_inv_alpha_105
+- beierle_2x2_inv_alpha_106
+- beierle_2x2_inv_alpha_107
+- beierle_2x2_inv_alpha_108
+- beierle_2x2_inv_alpha_109
+- beierle_2x2_inv_alpha_110
+- beierle_2x2_inv_alpha_111
+- beierle_2x2_inv_alpha_112
+- beierle_2x2_inv_alpha_113
+- beierle_2x2_inv_alpha_114
+- beierle_2x2_inv_alpha_115
+- beierle_2x2_inv_alpha_116
+- beierle_2x2_inv_alpha_117
+- beierle_2x2_inv_alpha_118
+- beierle_2x2_inv_alpha_119
+- beierle_2x2_inv_alpha_120
+- beierle_2x2_inv_alpha_121
+- beierle_2x2_inv_alpha_122
+- beierle_2x2_inv_alpha_123
+- beierle_2x2_inv_alpha_124
+- beierle_2x2_inv_alpha_125
+- beierle_2x2_inv_alpha_126
+- beierle_2x2_inv_alpha_127
+- beierle_2x2_inv_alpha_128
+- beierle_2x2_inv_alpha_129
+- beierle_2x2_inv_alpha_130
+- beierle_2x2_inv_alpha_131
+- beierle_2x2_inv_alpha_132
+- beierle_2x2_inv_alpha_133
+- beierle_2x2_inv_alpha_134
+- beierle_2x2_inv_alpha_135
+- beierle_2x2_inv_alpha_136
+- beierle_2x2_inv_alpha_137
+- beierle_2x2_inv_alpha_138
+- beierle_2x2_inv_alpha_139
+- beierle_2x2_inv_alpha_140
+- beierle_2x2_inv_alpha_141
+- beierle_2x2_inv_alpha_142
+- beierle_2x2_inv_alpha_143
+- beierle_2x2_inv_alpha_144
+- beierle_2x2_inv_alpha_145
+- beierle_2x2_inv_alpha_146
+- beierle_2x2_inv_alpha_147
+- beierle_2x2_inv_alpha_148
+- beierle_2x2_inv_alpha_149
+- beierle_2x2_inv_alpha_150
+- beierle_2x2_inv_alpha_151
+- beierle_2x2_inv_alpha_152
+- beierle_2x2_inv_alpha_153
+- beierle_2x2_inv_alpha_154
+- beierle_2x2_inv_alpha_155
+- beierle_2x2_inv_alpha_156
+- beierle_2x2_inv_alpha_157
+- beierle_2x2_inv_alpha_158
+- beierle_2x2_inv_alpha_159
+- beierle_2x2_inv_alpha_160
+- beierle_2x2_inv_alpha_161
+- beierle_2x2_inv_alpha_162
+- beierle_2x2_inv_alpha_163
+- beierle_2x2_inv_alpha_164
+- beierle_2x2_inv_alpha_165
+- beierle_2x2_inv_alpha_166
+- beierle_2x2_inv_alpha_167
+- beierle_2x2_inv_alpha_168
+- beierle_2x2_inv_alpha_169
+- beierle_2x2_inv_alpha_170
+- beierle_2x2_inv_alpha_171
+- beierle_2x2_inv_alpha_172
+- beierle_2x2_inv_alpha_173
+- beierle_2x2_inv_alpha_174
+- beierle_2x2_inv_alpha_175
+- beierle_2x2_inv_alpha_176
+- beierle_2x2_inv_alpha_177
+- beierle_2x2_inv_alpha_178
+- beierle_2x2_inv_alpha_179
+- beierle_2x2_inv_alpha_180
+- beierle_2x2_inv_alpha_181
+- beierle_2x2_inv_alpha_182
+- beierle_2x2_inv_alpha_183
+- beierle_2x2_inv_alpha_184
+- beierle_2x2_inv_alpha_185
+- beierle_2x2_inv_alpha_186
+- beierle_2x2_inv_alpha_187
+- beierle_2x2_inv_alpha_188
+- beierle_2x2_inv_alpha_189
+- beierle_2x2_inv_alpha_190
+- beierle_2x2_inv_alpha_191
+- beierle_2x2_inv_alpha_192
+- beierle_2x2_inv_alpha_193
+- beierle_2x2_inv_alpha_194
+- beierle_2x2_inv_alpha_195
+- beierle_2x2_inv_alpha_196
+- beierle_2x2_inv_alpha_197
+- beierle_2x2_inv_alpha_198
+- beierle_2x2_inv_alpha_199
+- beierle_2x2_inv_alpha_200
+- beierle_2x2_inv_alpha_201
+- beierle_2x2_inv_alpha_202
+- beierle_2x2_inv_alpha_203
+- beierle_2x2_inv_alpha_204
+- beierle_2x2_inv_alpha_205
+- beierle_2x2_inv_alpha_206
+- beierle_2x2_inv_alpha_207
+- beierle_2x2_inv_alpha_208
+- beierle_2x2_inv_alpha_209
+- beierle_2x2_inv_alpha_210
+- beierle_2x2_inv_alpha_211
+- beierle_2x2_inv_alpha_212
+- beierle_2x2_inv_alpha_213
+- beierle_2x2_inv_alpha_214
+- beierle_2x2_inv_alpha_215
+- beierle_2x2_inv_alpha_216
+- beierle_2x2_inv_alpha_217
+- beierle_2x2_inv_alpha_218
+- beierle_2x2_inv_alpha_219
+- beierle_2x2_inv_alpha_220
+- beierle_2x2_inv_alpha_221
+- beierle_2x2_inv_alpha_222
+- beierle_2x2_inv_alpha_223
+- beierle_2x2_inv_alpha_224
+- beierle_2x2_inv_alpha_225
+- beierle_2x2_inv_alpha_226
+- beierle_2x2_inv_alpha_227
+- beierle_2x2_inv_alpha_228
+- beierle_2x2_inv_alpha_229
+- beierle_2x2_inv_alpha_230
+- beierle_2x2_inv_alpha_231
+- beierle_2x2_inv_alpha_232
+- beierle_2x2_inv_alpha_233
+- beierle_2x2_inv_alpha_234
+- beierle_2x2_inv_alpha_235
+- beierle_2x2_inv_alpha_236
+- beierle_2x2_inv_alpha_237
+- beierle_2x2_inv_alpha_238
+- beierle_2x2_inv_alpha_239
+- beierle_2x2_inv_alpha_240
+- beierle_2x2_inv_alpha_241
+- beierle_2x2_inv_alpha_242
+- beierle_2x2_inv_alpha_243
+- beierle_2x2_inv_alpha_244
+- beierle_2x2_inv_alpha_245
+- beierle_2x2_inv_alpha_246
+- beierle_2x2_inv_alpha_247
+- beierle_2x2_inv_alpha_248
+- beierle_2x2_inv_alpha_249
+- beierle_2x2_inv_alpha_250
+- beierle_2x2_inv_alpha_251
+- beierle_2x2_inv_alpha_252
+- beierle_2x2_inv_alpha_253
+- beierle_2x2_inv_alpha_254
+- beierle_2x2_inv_alpha_255
+5
+- mat:photon_a100
+- mat:gupta-pandey-31-1
+- mat:gupta-pandey-36-1
+- mat:beierle-5x5
+- mat:liu-sim-3
+- mat:liu-sim-9
+- mat:liu-sim-18
+- mat:liu-sim-23
+- beierle_5x5_alpha_8
+- beierle_5x5_alpha_10
+- beierle_5x5_alpha_12
+- beierle_5x5_alpha_15
+- beierle_5x5_alpha_2
+- beierle_5x5_alpha_3
+- beierle_5x5_alpha_4
+- beierle_5x5_alpha_5
+- beierle_5x5_alpha_6
+- beierle_5x5_alpha_7
+- beierle_5x5_alpha_8
+- beierle_5x5_alpha_9
+- beierle_5x5_alpha_10
+- beierle_5x5_alpha_12
+- beierle_5x5_alpha_13
+- beierle_5x5_alpha_14
+- beierle_5x5_alpha_15
+- beierle_5x5_alpha_16
+- beierle_5x5_alpha_17
+- beierle_5x5_alpha_18
+- beierle_5x5_alpha_19
+- beierle_5x5_alpha_20
+- beierle_5x5_alpha_21
+- beierle_5x5_alpha_22
+- beierle_5x5_alpha_23
+- beierle_5x5_alpha_24
+- beierle_5x5_alpha_25
+- beierle_5x5_alpha_26
+- beierle_5x5_alpha_27
+- beierle_5x5_alpha_28
+- beierle_5x5_alpha_29
+- beierle_5x5_alpha_30
+- beierle_5x5_alpha_31
+- beierle_5x5_alpha_32
+- beierle_5x5_alpha_33
+- beierle_5x5_alpha_34
+- beierle_5x5_alpha_35
+- beierle_5x5_alpha_36
+- beierle_5x5_alpha_37
+- beierle_5x5_alpha_38
+- beierle_5x5_alpha_39
+- beierle_5x5_alpha_40
+- beierle_5x5_alpha_41
+- beierle_5x5_alpha_42
+- beierle_5x5_alpha_43
+- beierle_5x5_alpha_44
+- beierle_5x5_alpha_45
+- beierle_5x5_alpha_46
+- beierle_5x5_alpha_47
+- beierle_5x5_alpha_48
+- beierle_5x5_alpha_49
+- beierle_5x5_alpha_50
+- beierle_5x5_alpha_51
+- beierle_5x5_alpha_52
+- beierle_5x5_alpha_53
+- beierle_5x5_alpha_54
+- beierle_5x5_alpha_55
+- beierle_5x5_alpha_56
+- beierle_5x5_alpha_57
+- beierle_5x5_alpha_58
+- beierle_5x5_alpha_59
+- beierle_5x5_alpha_60
+- beierle_5x5_alpha_61
+- beierle_5x5_alpha_62
+- beierle_5x5_alpha_63
+- beierle_5x5_alpha_64
+- beierle_5x5_alpha_65
+- beierle_5x5_alpha_66
+- beierle_5x5_alpha_67
+- beierle_5x5_alpha_68
+- beierle_5x5_alpha_70
+- beierle_5x5_alpha_71
+- beierle_5x5_alpha_72
+- beierle_5x5_alpha_73
+- beierle_5x5_alpha_74
+- beierle_5x5_alpha_75
+- beierle_5x5_alpha_76
+- beierle_5x5_alpha_77
+- beierle_5x5_alpha_80
+- beierle_5x5_alpha_81
+- beierle_5x5_alpha_82
+- beierle_5x5_alpha_83
+- beierle_5x5_alpha_84
+- beierle_5x5_alpha_85
+- beierle_5x5_alpha_86
+- beierle_5x5_alpha_87
+- beierle_5x5_alpha_88
+- beierle_5x5_alpha_89
+- beierle_5x5_alpha_90
+- beierle_5x5_alpha_91
+- beierle_5x5_alpha_92
+- beierle_5x5_alpha_93
+- beierle_5x5_alpha_94
+- beierle_5x5_alpha_95
+- beierle_5x5_alpha_96
+- beierle_5x5_alpha_97
+- beierle_5x5_alpha_98
+- beierle_5x5_alpha_99
+- beierle_5x5_alpha_100
+- beierle_5x5_alpha_101
+- beierle_5x5_alpha_102
+- beierle_5x5_alpha_103
+- beierle_5x5_alpha_104
+- beierle_5x5_alpha_105
+- beierle_5x5_alpha_106
+- beierle_5x5_alpha_107
+- beierle_5x5_alpha_108
+- beierle_5x5_alpha_109
+- beierle_5x5_alpha_110
+- beierle_5x5_alpha_111
+- beierle_5x5_alpha_112
+- beierle_5x5_alpha_113
+- beierle_5x5_alpha_114
+- beierle_5x5_alpha_115
+- beierle_5x5_alpha_116
+- beierle_5x5_alpha_117
+- beierle_5x5_alpha_118
+- beierle_5x5_alpha_119
+- beierle_5x5_alpha_120
+- beierle_5x5_alpha_121
+- beierle_5x5_alpha_122
+- beierle_5x5_alpha_123
+- beierle_5x5_alpha_124
+- beierle_5x5_alpha_125
+- beierle_5x5_alpha_126
+- beierle_5x5_alpha_127
+- beierle_5x5_alpha_128
+- beierle_5x5_alpha_129
+- beierle_5x5_alpha_130
+- beierle_5x5_alpha_131
+- beierle_5x5_alpha_132
+- beierle_5x5_alpha_133
+- beierle_5x5_alpha_134
+- beierle_5x5_alpha_135
+- beierle_5x5_alpha_136
+- beierle_5x5_alpha_137
+- beierle_5x5_alpha_138
+- beierle_5x5_alpha_139
+- beierle_5x5_alpha_140
+- beierle_5x5_alpha_141
+- beierle_5x5_alpha_142
+- beierle_5x5_alpha_143
+- beierle_5x5_alpha_144
+- beierle_5x5_alpha_145
+- beierle_5x5_alpha_146
+- beierle_5x5_alpha_148
+- beierle_5x5_alpha_149
+- beierle_5x5_alpha_150
+- beierle_5x5_alpha_151
+- beierle_5x5_alpha_154
+- beierle_5x5_alpha_155
+- beierle_5x5_alpha_156
+- beierle_5x5_alpha_157
+- beierle_5x5_alpha_158
+- beierle_5x5_alpha_159
+- beierle_5x5_alpha_160
+- beierle_5x5_alpha_161
+- beierle_5x5_alpha_162
+- beierle_5x5_alpha_163
+- beierle_5x5_alpha_164
+- beierle_5x5_alpha_165
+- beierle_5x5_alpha_166
+- beierle_5x5_alpha_167
+- beierle_5x5_alpha_168
+- beierle_5x5_alpha_169
+- beierle_5x5_alpha_170
+- beierle_5x5_alpha_171
+- beierle_5x5_alpha_172
+- beierle_5x5_alpha_173
+- beierle_5x5_alpha_174
+- beierle_5x5_alpha_175
+- beierle_5x5_alpha_176
+- beierle_5x5_alpha_177
+- beierle_5x5_alpha_178
+- beierle_5x5_alpha_179
+- beierle_5x5_alpha_180
+- beierle_5x5_alpha_181
+- beierle_5x5_alpha_182
+- beierle_5x5_alpha_183
+- beierle_5x5_alpha_184
+- beierle_5x5_alpha_185
+- beierle_5x5_alpha_186
+- beierle_5x5_alpha_187
+- beierle_5x5_alpha_188
+- beierle_5x5_alpha_189
+- beierle_5x5_alpha_190
+- beierle_5x5_alpha_191
+- beierle_5x5_alpha_192
+- beierle_5x5_alpha_193
+- beierle_5x5_alpha_194
+- beierle_5x5_alpha_195
+- beierle_5x5_alpha_196
+- beierle_5x5_alpha_197
+- beierle_5x5_alpha_198
+- beierle_5x5_alpha_199
+- beierle_5x5_alpha_200
+- beierle_5x5_alpha_201
+- beierle_5x5_alpha_202
+- beierle_5x5_alpha_203
+- beierle_5x5_alpha_204
+- beierle_5x5_alpha_205
+- beierle_5x5_alpha_206
+- beierle_5x5_alpha_207
+- beierle_5x5_alpha_208
+- beierle_5x5_alpha_209
+- beierle_5x5_alpha_210
+- beierle_5x5_alpha_211
+- beierle_5x5_alpha_212
+- beierle_5x5_alpha_213
+- beierle_5x5_alpha_216
+- beierle_5x5_alpha_217
+- beierle_5x5_alpha_218
+- beierle_5x5_alpha_219
+- beierle_5x5_alpha_221
+- beierle_5x5_alpha_222
+- beierle_5x5_alpha_223
+- beierle_5x5_alpha_224
+- beierle_5x5_alpha_225
+- beierle_5x5_alpha_226
+- beierle_5x5_alpha_227
+- beierle_5x5_alpha_228
+- beierle_5x5_alpha_229
+- beierle_5x5_alpha_230
+- beierle_5x5_alpha_231
+- beierle_5x5_alpha_232
+- beierle_5x5_alpha_233
+- beierle_5x5_alpha_234
+- beierle_5x5_alpha_235
+- beierle_5x5_alpha_236
+- beierle_5x5_alpha_237
+- beierle_5x5_alpha_238
+- beierle_5x5_alpha_239
+- beierle_5x5_alpha_240
+- beierle_5x5_alpha_241
+- beierle_5x5_alpha_242
+- beierle_5x5_alpha_243
+- beierle_5x5_alpha_244
+- beierle_5x5_alpha_245
+- beierle_5x5_alpha_246
+- beierle_5x5_alpha_247
+- beierle_5x5_alpha_248
+- beierle_5x5_alpha_249
+- beierle_5x5_alpha_250
+- beierle_5x5_alpha_251
+- beierle_5x5_alpha_252
+- beierle_5x5_alpha_253
+- beierle_5x5_alpha_254
+- beierle_5x5_alpha_255
+6
+- mat:photon_a144
+- mat:photon_a288
+- mat:gupta-pandey-24-2
+- mat:gupta-pandey-31-2
+- mat:gupta-pandey-34-2
+- mat:gupta-pandey-36-2
+- mat:beierle-6x6
+- mat:liu-sim-4
+- mat:liu-sim-10
+- mat:liu-sim-19
+- beierle_6x6_alpha_3
+- beierle_6x6_alpha_5
+- beierle_6x6_alpha_6
+- beierle_6x6_alpha_7
+- beierle_6x6_alpha_8
+- beierle_6x6_alpha_9
+- beierle_6x6_alpha_12
+- beierle_6x6_alpha_13
+- beierle_6x6_alpha_14
+- beierle_6x6_alpha_15
+- beierle_6x6_alpha_17
+- beierle_6x6_alpha_18
+- beierle_6x6_alpha_19
+- beierle_6x6_alpha_20
+- beierle_6x6_alpha_21
+- beierle_6x6_alpha_22
+- beierle_6x6_alpha_23
+- beierle_6x6_alpha_24
+- beierle_6x6_alpha_25
+- beierle_6x6_alpha_26
+- beierle_6x6_alpha_27
+- beierle_6x6_alpha_28
+- beierle_6x6_alpha_30
+- beierle_6x6_alpha_31
+- beierle_6x6_alpha_32
+- beierle_6x6_alpha_33
+- beierle_6x6_alpha_34
+- beierle_6x6_alpha_35
+- beierle_6x6_alpha_36
+- beierle_6x6_alpha_38
+- beierle_6x6_alpha_40
+- beierle_6x6_alpha_41
+- beierle_6x6_alpha_42
+- beierle_6x6_alpha_43
+- beierle_6x6_alpha_44
+- beierle_6x6_alpha_46
+- beierle_6x6_alpha_47
+- beierle_6x6_alpha_48
+- beierle_6x6_alpha_49
+- beierle_6x6_alpha_51
+- beierle_6x6_alpha_52
+- beierle_6x6_alpha_53
+- beierle_6x6_alpha_54
+- beierle_6x6_alpha_55
+- beierle_6x6_alpha_56
+- beierle_6x6_alpha_57
+- beierle_6x6_alpha_59
+- beierle_6x6_alpha_60
+- beierle_6x6_alpha_61
+- beierle_6x6_alpha_62
+- beierle_6x6_alpha_63
+- beierle_6x6_alpha_64
+- beierle_6x6_alpha_65
+- beierle_6x6_alpha_66
+- beierle_6x6_alpha_67
+- beierle_6x6_alpha_70
+- beierle_6x6_alpha_71
+- beierle_6x6_alpha_72
+- beierle_6x6_alpha_73
+- beierle_6x6_alpha_74
+- beierle_6x6_alpha_77
+- beierle_6x6_alpha_80
+- beierle_6x6_alpha_81
+- beierle_6x6_alpha_82
+- beierle_6x6_alpha_84
+- beierle_6x6_alpha_85
+- beierle_6x6_alpha_86
+- beierle_6x6_alpha_87
+- beierle_6x6_alpha_88
+- beierle_6x6_alpha_89
+- beierle_6x6_alpha_90
+- beierle_6x6_alpha_91
+- beierle_6x6_alpha_92
+- beierle_6x6_alpha_93
+- beierle_6x6_alpha_94
+- beierle_6x6_alpha_96
+- beierle_6x6_alpha_98
+- beierle_6x6_alpha_99
+- beierle_6x6_alpha_100
+- beierle_6x6_alpha_102
+- beierle_6x6_alpha_103
+- beierle_6x6_alpha_104
+- beierle_6x6_alpha_105
+- beierle_6x6_alpha_106
+- beierle_6x6_alpha_107
+- beierle_6x6_alpha_108
+- beierle_6x6_alpha_110
+- beierle_6x6_alpha_111
+- beierle_6x6_alpha_112
+- beierle_6x6_alpha_113
+- beierle_6x6_alpha_114
+- beierle_6x6_alpha_115
+- beierle_6x6_alpha_116
+- beierle_6x6_alpha_117
+- beierle_6x6_alpha_118
+- beierle_6x6_alpha_119
+- beierle_6x6_alpha_120
+- beierle_6x6_alpha_121
+- beierle_6x6_alpha_122
+- beierle_6x6_alpha_123
+- beierle_6x6_alpha_124
+- beierle_6x6_alpha_125
+- beierle_6x6_alpha_126
+- beierle_6x6_alpha_127
+- beierle_6x6_alpha_128
+- beierle_6x6_alpha_129
+- beierle_6x6_alpha_130
+- beierle_6x6_alpha_131
+- beierle_6x6_alpha_132
+- beierle_6x6_alpha_134
+- beierle_6x6_alpha_135
+- beierle_6x6_alpha_137
+- beierle_6x6_alpha_138
+- beierle_6x6_alpha_139
+- beierle_6x6_alpha_140
+- beierle_6x6_alpha_141
+- beierle_6x6_alpha_142
+- beierle_6x6_alpha_143
+- beierle_6x6_alpha_144
+- beierle_6x6_alpha_145
+- beierle_6x6_alpha_148
+- beierle_6x6_alpha_149
+- beierle_6x6_alpha_150
+- beierle_6x6_alpha_151
+- beierle_6x6_alpha_154
+- beierle_6x6_alpha_156
+- beierle_6x6_alpha_158
+- beierle_6x6_alpha_159
+- beierle_6x6_alpha_160
+- beierle_6x6_alpha_161
+- beierle_6x6_alpha_162
+- beierle_6x6_alpha_163
+- beierle_6x6_alpha_164
+- beierle_6x6_alpha_165
+- beierle_6x6_alpha_166
+- beierle_6x6_alpha_167
+- beierle_6x6_alpha_169
+- beierle_6x6_alpha_170
+- beierle_6x6_alpha_171
+- beierle_6x6_alpha_172
+- beierle_6x6_alpha_173
+- beierle_6x6_alpha_174
+- beierle_6x6_alpha_176
+- beierle_6x6_alpha_177
+- beierle_6x6_alpha_178
+- beierle_6x6_alpha_179
+- beierle_6x6_alpha_180
+- beierle_6x6_alpha_181
+- beierle_6x6_alpha_182
+- beierle_6x6_alpha_183
+- beierle_6x6_alpha_185
+- beierle_6x6_alpha_186
+- beierle_6x6_alpha_187
+- beierle_6x6_alpha_188
+- beierle_6x6_alpha_189
+- beierle_6x6_alpha_190
+- beierle_6x6_alpha_191
+- beierle_6x6_alpha_192
+- beierle_6x6_alpha_193
+- beierle_6x6_alpha_194
+- beierle_6x6_alpha_195
+- beierle_6x6_alpha_196
+- beierle_6x6_alpha_197
+- beierle_6x6_alpha_198
+- beierle_6x6_alpha_200
+- beierle_6x6_alpha_201
+- beierle_6x6_alpha_202
+- beierle_6x6_alpha_204
+- beierle_6x6_alpha_205
+- beierle_6x6_alpha_206
+- beierle_6x6_alpha_207
+- beierle_6x6_alpha_208
+- beierle_6x6_alpha_209
+- beierle_6x6_alpha_211
+- beierle_6x6_alpha_212
+- beierle_6x6_alpha_216
+- beierle_6x6_alpha_217
+- beierle_6x6_alpha_218
+- beierle_6x6_alpha_219
+- beierle_6x6_alpha_222
+- beierle_6x6_alpha_223
+- beierle_6x6_alpha_224
+- beierle_6x6_alpha_225
+- beierle_6x6_alpha_226
+- beierle_6x6_alpha_228
+- beierle_6x6_alpha_229
+- beierle_6x6_alpha_230
+- beierle_6x6_alpha_231
+- beierle_6x6_alpha_233
+- beierle_6x6_alpha_235
+- beierle_6x6_alpha_236
+- beierle_6x6_alpha_237
+- beierle_6x6_alpha_239
+- beierle_6x6_alpha_240
+- beierle_6x6_alpha_241
+- beierle_6x6_alpha_242
+- beierle_6x6_alpha_243
+- beierle_6x6_alpha_244
+- beierle_6x6_alpha_245
+- beierle_6x6_alpha_246
+- beierle_6x6_alpha_247
+- beierle_6x6_alpha_248
+- beierle_6x6_alpha_249
+- beierle_6x6_alpha_250
+- beierle_6x6_alpha_251
+- beierle_6x6_alpha_252
+- beierle_6x6_alpha_253
+- beierle_6x6_alpha_255
+7
+- mat:photon_a196
+- mat:beierle-7x7
+- mat:liu-sim-5
+- mat:liu-sim-20
+- mat:liu-sim-21
+- beierle_7x7_alpha_2
+- beierle_7x7_alpha_3
+- beierle_7x7_alpha_4
+- beierle_7x7_alpha_5
+- beierle_7x7_alpha_6
+- beierle_7x7_alpha_7
+- beierle_7x7_alpha_8
+- beierle_7x7_alpha_9
+- beierle_7x7_alpha_12
+- beierle_7x7_alpha_13
+- beierle_7x7_alpha_15
+- beierle_7x7_alpha_16
+- beierle_7x7_alpha_17
+- beierle_7x7_alpha_18
+- beierle_7x7_alpha_19
+- beierle_7x7_alpha_20
+- beierle_7x7_alpha_21
+- beierle_7x7_alpha_22
+- beierle_7x7_alpha_23
+- beierle_7x7_alpha_24
+- beierle_7x7_alpha_25
+- beierle_7x7_alpha_26
+- beierle_7x7_alpha_28
+- beierle_7x7_alpha_29
+- beierle_7x7_alpha_30
+- beierle_7x7_alpha_31
+- beierle_7x7_alpha_33
+- beierle_7x7_alpha_34
+- beierle_7x7_alpha_36
+- beierle_7x7_alpha_37
+- beierle_7x7_alpha_38
+- beierle_7x7_alpha_39
+- beierle_7x7_alpha_40
+- beierle_7x7_alpha_42
+- beierle_7x7_alpha_44
+- beierle_7x7_alpha_45
+- beierle_7x7_alpha_47
+- beierle_7x7_alpha_48
+- beierle_7x7_alpha_50
+- beierle_7x7_alpha_51
+- beierle_7x7_alpha_52
+- beierle_7x7_alpha_54
+- beierle_7x7_alpha_57
+- beierle_7x7_alpha_58
+- beierle_7x7_alpha_59
+- beierle_7x7_alpha_60
+- beierle_7x7_alpha_63
+- beierle_7x7_alpha_64
+- beierle_7x7_alpha_65
+- beierle_7x7_alpha_66
+- beierle_7x7_alpha_67
+- beierle_7x7_alpha_70
+- beierle_7x7_alpha_71
+- beierle_7x7_alpha_72
+- beierle_7x7_alpha_73
+- beierle_7x7_alpha_75
+- beierle_7x7_alpha_76
+- beierle_7x7_alpha_77
+- beierle_7x7_alpha_80
+- beierle_7x7_alpha_81
+- beierle_7x7_alpha_83
+- beierle_7x7_alpha_85
+- beierle_7x7_alpha_86
+- beierle_7x7_alpha_87
+- beierle_7x7_alpha_89
+- beierle_7x7_alpha_90
+- beierle_7x7_alpha_91
+- beierle_7x7_alpha_92
+- beierle_7x7_alpha_93
+- beierle_7x7_alpha_94
+- beierle_7x7_alpha_95
+- beierle_7x7_alpha_96
+- beierle_7x7_alpha_97
+- beierle_7x7_alpha_99
+- beierle_7x7_alpha_100
+- beierle_7x7_alpha_101
+- beierle_7x7_alpha_102
+- beierle_7x7_alpha_105
+- beierle_7x7_alpha_107
+- beierle_7x7_alpha_108
+- beierle_7x7_alpha_109
+- beierle_7x7_alpha_110
+- beierle_7x7_alpha_111
+- beierle_7x7_alpha_112
+- beierle_7x7_alpha_115
+- beierle_7x7_alpha_117
+- beierle_7x7_alpha_119
+- beierle_7x7_alpha_121
+- beierle_7x7_alpha_123
+- beierle_7x7_alpha_125
+- beierle_7x7_alpha_126
+- beierle_7x7_alpha_127
+- beierle_7x7_alpha_128
+- beierle_7x7_alpha_129
+- beierle_7x7_alpha_130
+- beierle_7x7_alpha_131
+- beierle_7x7_alpha_132
+- beierle_7x7_alpha_133
+- beierle_7x7_alpha_134
+- beierle_7x7_alpha_135
+- beierle_7x7_alpha_136
+- beierle_7x7_alpha_138
+- beierle_7x7_alpha_139
+- beierle_7x7_alpha_140
+- beierle_7x7_alpha_141
+- beierle_7x7_alpha_142
+- beierle_7x7_alpha_143
+- beierle_7x7_alpha_145
+- beierle_7x7_alpha_148
+- beierle_7x7_alpha_149
+- beierle_7x7_alpha_150
+- beierle_7x7_alpha_155
+- beierle_7x7_alpha_156
+- beierle_7x7_alpha_157
+- beierle_7x7_alpha_158
+- beierle_7x7_alpha_159
+- beierle_7x7_alpha_161
+- beierle_7x7_alpha_162
+- beierle_7x7_alpha_164
+- beierle_7x7_alpha_166
+- beierle_7x7_alpha_168
+- beierle_7x7_alpha_169
+- beierle_7x7_alpha_171
+- beierle_7x7_alpha_173
+- beierle_7x7_alpha_174
+- beierle_7x7_alpha_175
+- beierle_7x7_alpha_177
+- beierle_7x7_alpha_178
+- beierle_7x7_alpha_179
+- beierle_7x7_alpha_181
+- beierle_7x7_alpha_182
+- beierle_7x7_alpha_183
+- beierle_7x7_alpha_184
+- beierle_7x7_alpha_185
+- beierle_7x7_alpha_187
+- beierle_7x7_alpha_188
+- beierle_7x7_alpha_191
+- beierle_7x7_alpha_193
+- beierle_7x7_alpha_194
+- beierle_7x7_alpha_195
+- beierle_7x7_alpha_196
+- beierle_7x7_alpha_197
+- beierle_7x7_alpha_199
+- beierle_7x7_alpha_200
+- beierle_7x7_alpha_201
+- beierle_7x7_alpha_203
+- beierle_7x7_alpha_204
+- beierle_7x7_alpha_205
+- beierle_7x7_alpha_206
+- beierle_7x7_alpha_207
+- beierle_7x7_alpha_208
+- beierle_7x7_alpha_209
+- beierle_7x7_alpha_210
+- beierle_7x7_alpha_213
+- beierle_7x7_alpha_216
+- beierle_7x7_alpha_217
+- beierle_7x7_alpha_218
+- beierle_7x7_alpha_219
+- beierle_7x7_alpha_223
+- beierle_7x7_alpha_225
+- beierle_7x7_alpha_226
+- beierle_7x7_alpha_227
+- beierle_7x7_alpha_229
+- beierle_7x7_alpha_231
+- beierle_7x7_alpha_232
+- beierle_7x7_alpha_233
+- beierle_7x7_alpha_234
+- beierle_7x7_alpha_235
+- beierle_7x7_alpha_236
+- beierle_7x7_alpha_237
+- beierle_7x7_alpha_238
+- beierle_7x7_alpha_239
+- beierle_7x7_alpha_240
+- beierle_7x7_alpha_241
+- beierle_7x7_alpha_242
+- beierle_7x7_alpha_243
+- beierle_7x7_alpha_245
+- beierle_7x7_alpha_247
+- beierle_7x7_alpha_248
+- beierle_7x7_alpha_250
+- beierle_7x7_alpha_251
+- beierle_7x7_alpha_252
+- beierle_7x7_alpha_254
+- beierle_7x7_alpha_255
+16
+- mat:gupta_ray_4
+- mat:khoo-5
+- mat:khoo-11
+32
+- mat:gupta_ray_5
+- mat:khoo-6
+- mat:khoo-12
