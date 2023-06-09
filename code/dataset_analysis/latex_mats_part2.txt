@@ -1,0 +1,47 @@
+"mat:gupta_ray_5":'''
+01_x & 02_x & 04_x & 69_x & 07_x & ec_x & cc_x & 72_x & 0b_x & 54_x & 29_x & be_x & 74_x & f9_x & c4_x & 87_x & 0e_x & 47_x & c2_x & c3_x & 39_x & 8e_x & 1c_x & 85_x & 55_x & 26_x & 1e_x & af_x & 68_x & b6_x & 59_x & 1f_x'''
+,
+"mat:khoo":'''
+0f_x & 02_x & 0c_x & 05_x & 0a_x & 04_x & 03_x & 08_x'''
+,
+"mat:khoo-2":'''
+01_x & 02_x & b0_x & b2_x'''
+,
+"mat:khoo-3":'''
+01_x & 02_x & 03_x & 91_x & 04_x & 70_x & 05_x & e1_x'''
+,
+"mat:khoo-4":'''
+2_x & 3_x & 4_x & c_x & 5_x & a_x & 8_x & f_x'''
+,
+"mat:khoo-5":'''
+08_x & 16_x & 8a_x & 01_x & 70_x & 8d_x & 24_x & 76_x & a8_x & 91_x & ad_x & 48_x & 05_x & b5_x & af_x  & f8_x'''
+,
+"mat:khoo-6":'''
+d2_x & 06_x & 05_x & 4d_x & 21_x & f8_x & 11_x & 62_x & 08_x & d8_x & e9_x & 28_x & 4b_x & a6_x & 10_x & 2c_x & a1_x & 49_x & 4c_x & d1_x & 59_x & b2_x & 13_x & a4_x & 03_x & c3_x & 42_x & 79_x & a0_x & 6f_x & ab_x & 41_x'''
+,
+"mat:khoo-9":'''
+01_x & 02_x & 03_x & 08_x & 04_x & 91_x & e1_x & a9_x'''
+,
+"mat:khoo-9-inv":'''
+1a_x & 34_x & 2e_x & d0_x & 68_x & e7_x & 0d_x & 92_x'''
+,
+"mat:khoo-10":'''
+1_x & 2_x & 6_x & 8_x & 9_x & c_x & d_x & a_x'''
+,
+"mat:khoo-10-inv":'''
+c_x & b_x & e_x & a_x & 6_x & f_x & 3_x & 1_x'''
+,
+"mat:khoo-11":'''
+b1_x & 1c_x & 30_x & 09_x & 08_x & 91_x & 18_x & e4_x & 98_x & 12_x & 70_x & b5_x & 97_x & 90_x & a9_x & 5b_x'''
+,
+"mat:khoo-11-inv":'''
+4c_x & 8b_x & bf_x & f6_x & 6a_x & 27_x & be_x & e7_x & d1_x & 2f_x & 69_x & 79_x & e9_x & bb_x & f2_x & 0f_x'''
+,
+"mat:khoo-12":'''
+b9_x & 7c_x & 93_x & bc_x & bd_x & 26_x & fa_x & a9_x & 32_x & 31_x & 24_x & b5_x & bb_x & 06_x & a0_x & 44_x & 95_x & b3_x & 0c_x & 1c_x & 07_x & e5_x & a4_x & 2e_x & 56_x & 4c_x & 55_x & 02_x & 66_x & 39_x & 48_x & 08_x'''
+,
+"mat:khoo-12-inv":'''
+a9_x & b7_x & 7f_x & b2_x & b5_x & f2_x & a3_x & d9_x & 9e_x & 97_x & fc_x & 8d_x & a7_x & 12_x & e6_x & 1f_x & 6d_x & 9f_x & 24_x & 54_x & 15_x & fe_x & fa_x & ca_x & 61_x & 27_x & 68_x & e &_x f1_x & af_x & 3b_x & 38_x'''
+,
+"mat:khoo-14":'''
+1_x &2_x &6_x &4_x'''

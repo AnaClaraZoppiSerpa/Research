@@ -1,0 +1,34 @@
+1- Ver se a matriz duwal_11 é MDS ou não nos logs de resultado => aparentemente não, eu discuti com o Jorge isso inclusive um tempo atrás.
+2- Codar a parte de extrair dado do CSV => OK
+3- Agrupamento das baselines => OK
+4- Codar as matrizes já existentes pra lookup
+4.1 parte 1 => OK
+4.2 parte 2 versão preguiçosa = checar apenas primeira linha já que é tudo definido pela primeira linha mesmo
+5- Testar o lookup => OK
+///
+6- Experimentos
+
+///
+Não esquecer de revisar o construtor da classe quando for mudar a métrica de custo dos experimentos.
+Não esquecer de converter pra string ixtime e ixor quando for otimizar pra decriptação.
+
+///
+Plano de experimentos:
+
+1. Um dia por dimensão por métrica de custo.
+
+///
+
+Como fazer para saber se alguma matriz encontrada em experimentos é na verdade apenas uma instância do Beierle, ou do Duwal?
+=> 1. os custos seram iguais ao da instância.
+=> 2. a primeira linha estará presente em algum dos txts dessa pasta, e depois a matriz inteira. Converter a linha para hex e usar CTRL F. Verificar o formato da string.
+=> Dá para automatizar isso juntando os txts da pasta que sejam relevantes em uma string e fazendo lookup após o experimento também. Tem só que checar o formato.
+
+///
+
+Como fazer pros que estão com versão em polinômio, tipo uns do Gupta?
+> 
+
+/// 
+
+Se der errado e só encontrar matrizes repetidas, documentar quais foram encontradas e os parâmetros utilizados.

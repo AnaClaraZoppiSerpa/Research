@@ -1,0 +1,6 @@
+1. Manipular os lcirc que não sejam polinômios. (part4)
+2. Dar um jeito nos polinômios (eu tive que fazer antes pra calcular o custo, investigar um pouco por uns 30 min deve ser suficiente pra achar a solução).
+3. Manipular os circ que são polinômios. (idem 3)
+4. Matrizes do Shirai não estão aqui ainda. Tem que ver onde elas estão no LaTeX e colocá-las. 
+4.1 Ver se tem mais alguma situação do tipo, de ter alguma matriz faltando.
+5. Check: ver se todas as matrizes que não sejam Duwal Instance e Beierle Instance estão no dicionário. Pode ser feito usando o CSV completo como referência, pegando somente as linhas que não sejam Duwal Instance e Bierle Instance, e dando um assert de que todos os ids são iguais. Ou checar se a contagem é igual mesmo.

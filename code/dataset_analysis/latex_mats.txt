@@ -715,6 +715,8 @@ Matrix \eqref{mat:khoo-14} is from \cite{proest:2014} (Pr{\o}st algorithm) and a
 had(1_x,2_x,6_x,4_x)
 \end{equation}
 
+# latex_mats_part2.txt ends here
+
 % Gupta-Pandey
 
 The following matrices, where $x$ is a primitive element of $GF(2^4)$, have been reported by Gupta and Pandey \cite{GuptaCirculant2015}. The matrices reported in the paper are in polynomial notation, whilst the respective inverses (when they are not involutory) are in hexadecimal notation because we computed them for our research and our Python code outputs them in hexadecimal format. \todo{referencia ta errada, a referencia certa é o survey do julio, tem que corrigir aqui e na tabela}
