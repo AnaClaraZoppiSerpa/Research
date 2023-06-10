@@ -119,3 +119,8 @@ sarkar2_vals = [power_table[i] for i in sarkar2_powers]
 sarkar2_str = toep(sarkar2_vals, 8)
 sarkar2 = poly_string_to_integer(sarkar2_str)
 get_mat_info_for_mds_table(sarkar2, GF2_8, b.degree, "Sarkar 2")
+print("====")
+print("sarkar1")
+print(sarkar1)
+print("sarkar2")
+print(sarkar2)

@@ -125,6 +125,8 @@ def get_mat_info_for_mds_table(mat, field, poly_order, name):
     else:
         print("inverse")
         print_mat_hex(inv)
+        print("as integers")
+        print(inv)
 
         inv_xor = matrix_xor_cost(inv, poly_order)
         inv_xtime = matrix_xtime_cost(inv, poly_order)

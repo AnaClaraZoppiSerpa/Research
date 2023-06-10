@@ -1,4 +1,8 @@
 import pprint
+import galois
+from analysis import *
+
+GF2 = galois.GF(2)
 
 matrices_as_strings = {
 # latex_marts_part1.txt
@@ -712,7 +716,109 @@ c_x & 6_x & 2_x\\
 6_x & 1_x & d_x\\
 c_x & d_x & c_x\\
 4_x & 7_x & d_x
-'''
+''',
+
+# part4 - should circ
+
+"mat:liu-sim-1":'''
+01_x & 01_x & 02_x'''
+,
+"mat:liu-sim-2":'''
+01_x & 01_x & 02_x & 91_x'''
+,
+"mat:liu-sim-3":'''
+01_x & 01_x & 02_x & 91_x & 02_x'''
+,
+"mat:liu-sim-4":'''
+01_x & 02_x & e1_x & 91_x & 01_x & 08_x'''
+,
+"mat:liu-sim-5":'''
+01_x & 01_x & 91_x & 02_x & 04_x & 02_x & 91_x'''
+,
+"mat:liu-sim-6":'''
+01_x & 01_x & 02_x & e1_x & 08_x & e0_x & 01_x & a9_x'''
+,
+"mat:liu-sim-7":'''
+1_x & 1_x & 2_x'''
+,
+"mat:liu-sim-8":'''
+1_x & 1_x & 9_x & 4_x'''
+,
+"mat:liu-sim-9":'''
+2_x & 2_x & 9_x & 1_x & 9_x'''
+,
+"mat:liu-sim-10":'''
+1_x & 1_x & 9_x & c_x & 9_x & 3_x'''
+,
+"mat:liu-sim-11":'''
+01_x & 01_x & 91_x & 02_x & 04_x & 02_x & 12_x & 91_x'''
+,
+"mat:liu-sim-12":'''
+01_x & 01_x & 04_x & 02_x & a9_x & 91_x & 02_x & 03_x'''
+,
+"mat:liu-sim-13":'''
+01_x & 01_x & 02_x & e0_x & 06_x & e1_x & 91_x & 04_x'''
+,
+"mat:liu-sim-14":'''
+01_x & 02_x & 91_x & 08_x & 04_x & 06_x & e1_x & 03_x'''
+,
+"mat:liu-sim-15":'''
+01_x & 01_x & 02_x & 01_x & 74_x & 8d_x & 46_x & 04_x'''
+,
+"mat:liu-sim-16":'''
+01_x & 01_x & 02_x & 8e_x & 47_x & 10_x & 01_x & 46_x'''
+,
+"mat:liu-sim-17":'''
+5a_x & 0a_x & 51_x'''
+,
+"mat:liu-sim-18":'''
+01_x & 02_x & b3_x & bb_x & 0a_x'''
+,
+"mat:liu-sim-19":'''
+01_x & 01_x & b3_x & 2c_x & 04_x & 9a_x'''
+,
+"mat:liu-sim-20":'''
+01_x & 02_x & 10_x & b2_x & 58_x & a4_x & 5c_x'''
+,
+"mat:liu-sim-21":'''
+01_x & 01_x & 21_x & 08_x & 96_x & 26_x & 98_x'''
+,
+"mat:liu-sim-22":'''
+2_x & f_x & c_x'''
+,
+"mat:liu-sim-23":'''
+1_x & 2_x & 5_x & 4_x & 3_x''',
+
+# Shirai's - should rcirc
+
+"shirai-0":"01_x & 01_x & 02_x & 01_x & 05_x & 08_x & 09_x & 04_x",
+"shirai-1":"01_x & 01_x & 02_x & 01_x & 06_x & 09_x & 08_x & 03_x",
+"shirai-2":"01_x & 01_x & 02_x & 01_x & 08_x & 09_x & 04_x & 05_x",
+"shirai-3":"01_x & 01_x & 02_x & 01_x & 09_x & 06_x & 04_x & 03_x",
+"shirai-4":"01_x & 01_x & 02_x & 06_x & 05_x & 09_x & 01_x & 08_x",
+"shirai-5":"01_x & 01_x & 03_x & 01_x & 04_x & 09_x & 05_x & 06_x",
+"shirai-6":"01_x & 01_x & 03_x & 01_x & 08_x & 04_x & 09_x & 06_x",
+"shirai-7":"01_x & 01_x & 04_x & 01_x & 08_x & 05_x & 02_x & 09_x",
+"shirai-8":"01_x & 01_x & 04_x & 01_x & 09_x & 03_x & 02_x & 06_x",
+"shirai-9":"01_x & 01_x & 04_x & 03_x & 06_x & 08_x & 01_x & 09_x",
+"shirai-10":"01_x & 01_x & 05_x & 01_x & 04_x & 06_x & 03_x & 09_x",
+"shirai-11":"01_x & 01_x & 05_x & 08_x & 02_x & 09_x & 01_x & 06_x",
+"shirai-12":"01_x & 01_x & 08_x & 01_x & 06_x & 03_x & 02_x & 09_x",
+"shirai-13":"01_x & 01_x & 08_x & 02_x & 04_x & 05_x & 01_x & 09_x",
+"shirai-0-inv":"b5_x & 98_x & 23_x & fa_x & 23_x & a5_x & b6_x & 30_x",
+"shirai-1-inv":"bb_x & de_x & a0_x & df_x & 4a_x & 55_x & 7a_x & c5_x",
+"shirai-2-inv":"04_x & a4_x & cb_x & af_x & c2_x & 3e_x & 0e_x & c2_x",
+"shirai-3-inv":"4f_x & aa_x & 2c_x & 0c_x & 84_x & 76_x & 14_x & bb_x",
+"shirai-4-inv":"5b_x & e8_x & ed_x & e2_x & 33_x & 98_x & 82_x & 94_x",
+"shirai-5-inv":"87_x & d4_x & 76_x & 80_x & 9d_x & e4_x & 24_x & c5_x",
+"shirai-6-inv":"ad_x & ef_x & 44_x & 71_x & a8_x & e2_x & 42_x & 7e_x",
+"shirai-7-inv":"04_x & af_x & 0e_x & a4_x & c2_x & c2_x & cb_x & 3e_x",
+"shirai-8-inv":"4f_x & 0c_x & 14_x & aa_x & 84_x & bb_x & 2c_x & 76_x",
+"shirai-9-inv":"e2_x & 44_x & 7e_x & a8_x & ef_x & 42_x & 71_x & ad_x",
+"shirai-10-inv":"87_x & 80_x & 24_x & d4_x & 9d_x & c5_x & 76_x & e4_x",
+"shirai-11-inv":"ed_x & 98_x & 5b_x & e2_x & 82_x & e8_x & 33_x & 94_x",
+"shirai-12-inv":"bb_x & df_x & 7a_x & de_x & 4a_x & c5_x & a0_x & 55_x",
+"shirai-13-inv":"a5_x & 23_x & 30_x & 23_x & 98_x & b6_x & fa_x & b5_x",
 }
 
 should_ff_had = [
@@ -734,6 +840,157 @@ should_ff_had = [
 "mat:khoo-14"
 ]
 
+should_lcirc = [
+"mat:liu-sim-1",
+"mat:liu-sim-2",
+"mat:liu-sim-3",
+"mat:liu-sim-4",
+"mat:liu-sim-5",
+"mat:liu-sim-6",
+"mat:liu-sim-7",
+"mat:liu-sim-8",
+"mat:liu-sim-9",
+"mat:liu-sim-10",
+"mat:liu-sim-11",
+"mat:liu-sim-12",
+"mat:liu-sim-13",
+"mat:liu-sim-14",
+"mat:liu-sim-15",
+"mat:liu-sim-16",
+"mat:liu-sim-17",
+"mat:liu-sim-18",
+"mat:liu-sim-19",
+"mat:liu-sim-20",
+"mat:liu-sim-21",
+"mat:liu-sim-22",
+"mat:liu-sim-23"
+]
+
+should_rcirc = [
+"shirai-0",
+"shirai-1",
+"shirai-2",
+"shirai-3",
+"shirai-4",
+"shirai-5",
+"shirai-6",
+"shirai-7",
+"shirai-8",
+"shirai-9",
+"shirai-10",
+"shirai-11",
+"shirai-12",
+"shirai-13",
+"shirai-0-inv",
+"shirai-1-inv",
+"shirai-2-inv",
+"shirai-3-inv",
+"shirai-4-inv",
+"shirai-5-inv",
+"shirai-6-inv",
+"shirai-7-inv",
+"shirai-8-inv",
+"shirai-9-inv",
+"shirai-10-inv",
+"shirai-11-inv",
+"shirai-12-inv",
+"shirai-13-inv",
+]
+
+gupta_pandey_1 = [
+            ["1", "x^3 + x^2 + x + 1", "x^2 + x + 1"],
+            ["x^3 + 1", "x^2 + 1", "x^3 + x + 1"],
+            ["x^3 + x^2 + 1", "x^2", "x^3 + x^2 + x"]
+         ]
+
+gupta_pandey_2 = [
+            ["1", "x^2 + x", "x^2 + 1"],
+            ["x^2 + x", "1", "x^2"],
+            ["x^2 + 1", "x^2", "1"]
+         ]
+
+gupta_pandey_3 = [
+    ["x^3+x^2+1" , "x^2+x+1"   , "x^3+x"      , "x+1"],
+    ["x^2+x+1"   , "x^3+x^2+1" , "x+1"        , "x^3+x"],
+    ["x^3+x"     , "x+1"       , "x^3+x^2+1"  , "x^2+x+1"],
+    ["x+1"       , "x^3+x"     , "x^2+x+1"    , "x^3+x^2+1"],
+]
+
+gupta_pandey_3_made_involutory = [[10, 12, 6, 1], [12, 10, 1, 6], [6, 1, 10, 12], [1, 6, 12, 10]]
+
+gupta_pandey_5 = [
+    ["x^3 + x^2", "x^2 + 1", "1"],
+    ["x^2 + 1", "x^3 + x + 1  ", "1"],
+    ["x^3", "x^3 + x^2 + x + 1", "1"],
+]
+
+gupta_pandey_6 = [
+    ["x^3", "x^3+1", "x^3+1"],
+    ["x^3+x^2+x", "x^3+x^2+x+1", "x^3+x^2+x"],
+    ["x^2+x+1", "x^2+x+1", "x^2+x"],
+]
+
+gupta_pandey_idea = [
+    ["1", "1", "x^2", "1", "x^3", "1+x^2", "x", "1+x^3"],
+    ["1+x^3", "1", "1", "x^2", "1", "x^3", "1+x^2", "x"],
+    ["x", "1+x^3", "1", "1", "x^2", "1", "x^3", "1+x^2"],
+    ["1+x^2", "x", "1+x^3", "1", "1", "x^2", "1", "x^3"],
+    ["x^3", "1+x^2", "x", "1+x^3", "1", "1", "x^2", "1"],
+    ["1", "x^3", "1+x^2", "x", "1+x^3", "1", "1", "x^2"],
+    ["x^2", "1", "x^3", "1+x^2", "x", "1+x^3", "1", "1"],
+    ["1", "x^2", "1", "x^3", "1+x^2", "x", "1+x^3", "1"],
+]
+
+gupta_pandey_23 = [
+    ["x", "x+1"],
+    ["x+1", "x"]
+]
+
+gupta_pandey_24_1 = [
+    ["x", "1+x^2+x^3+x^4+x^6", "x+x^2+x^3+x^4+x^6"],
+    ["x+x^2+x^3+x^4+x^6", "x", "1+x^2+x^3+x^4+x^6"],
+    ["1+x^2+x^3+x^4+x^6", "x+x^2+x^3+x^4+x^6", "x"],
+]
+
+gupta_pandey_24_2 = [
+    ["1", "1", "x", "1+x^2+x^3+x^5+x^6+x^7", "x+x^5", "x^2+x^3+x^6+x^7"],
+    ["x^2+x^3+x^6+x^7", "1", "1", "x", "1+x^2+x^3+x^5+x^6+x^7", "x+x^5"],
+    ["x+x^5", "x^2+x^3+x^6+x^7", "1", "1", "x", "1+x^2+x^3+x^5+x^6+x^7"],
+    ["1+x^2+x^3+x^5+x^6+x^7", "x+x^5", "x^2+x^3+x^6+x^7", "1", "1", "x"],
+    ["x", "1+x^2+x^3+x^5+x^6+x^7", "x+x^5", "x^2+x^3+x^6+x^7", "1", "1"],
+    ["1", "x", "1+x^2+x^3+x^5+x^6+x^7", "x+x^5", "x^2+x^3+x^6+x^7", "1"],
+]
+
+gupta_x = [
+     ("mat:gupta-pandey-1", gupta_pandey_1),
+     ("mat:gupta-pandey-2", gupta_pandey_2),
+     ("mat:gupta-pandey-3", gupta_pandey_3),
+     ("mat:gupta-pandey-5", gupta_pandey_5),
+     ("mat:gupta-pandey-6", gupta_pandey_6),
+     ("mat:gupta-pandey-IDEA", gupta_pandey_idea),
+     ("mat:gupta-pandey-23", gupta_pandey_23),
+     ("mat:gupta-pandey-24-1", gupta_pandey_24_1),
+     ("mat:gupta-pandey-24-2", gupta_pandey_24_2)
+]
+
+def rcirc_from_row(first_row):
+    dim = len(first_row)
+    
+    rows = []
+    prev_row = []
+
+    for i in range(dim):
+        if i == 0:
+            rows.append(first_row)
+            prev_row = first_row
+        else:
+            new_first = prev_row[-1]
+            new_row = [new_first]
+            new_row += prev_row[0:-1]
+            rows.append(new_row)
+            prev_row = new_row
+    return rows
+
 def ff_hadamard_from_row(first_row):
     n = len(first_row)
     ff_had = [[0 for i in range(n)] for j in range(n)]
@@ -741,6 +998,113 @@ def ff_hadamard_from_row(first_row):
         for j in range(n):
             ff_had[i][j] = first_row[i ^ j]
     return ff_had
+
+def lcirc_from_row(first_row):
+	dim = len(first_row)
+	rows = []
+	prev_row = []
+
+	for i in range(dim):
+		if i == 0:
+			rows.append(first_row)
+			prev_row = first_row
+		else:
+			new_row = prev_row[1:]
+			new_last = prev_row[0]
+			new_row += [new_last]
+			rows.append(new_row)
+			prev_row = new_row
+	return rows
+
+def poly_string_to_integer(poly_string_mat):
+    rows = len(poly_string_mat)
+    cols = len(poly_string_mat[0])
+
+    output_mat = [[0 for j in range(cols)] for i in range(rows)]
+
+    for i in range(rows):
+        for j in range(cols):
+            poly_string = poly_string_mat[i][j]
+            poly = galois.Poly.Str(poly_string, field=GF2)
+            integer = poly._integer
+            output_mat[i][j] = integer
+    
+    return output_mat
+
+def toep(sequence, n):
+    n = len(sequence) // 2
+    first_column = sequence[n:]
+    first_row = sequence[:n]
+    matrix = [[0] * n for i in range(n)]
+    for i in range(n):
+        for j in range(n):
+            if j >= i:
+                matrix[i][j] = first_row[j-i]
+            else:
+                matrix[i][j] = first_column[i-j]
+    return matrix
+
+def hank(values, n):
+    A = [[0 for i in range(n)] for j in range(n)]
+    for i in range(n):
+        for j in range(n):
+            hank_index = i+j
+            A[i][j] = values[hank_index]
+    return A
+
+gupta_pandey_31_1_first_row = ["1", "x", "x^7+x^5+x^4+x+1", "x^7+x^5+x^4+x^3+x+1", "x^3+x"]
+gupta_pandey_31_1_strings = lcirc_from_row(gupta_pandey_31_1_first_row)
+gupta_pandey_31_1_mat = poly_string_to_integer(gupta_pandey_31_1_strings)
+
+gupta_pandey_31_2_first_row = ["1", "1", "x^7+x^5+x^4+x+1", "x^5+x^3+x^2", "x^2", "x^7+x^4+x^3+x"]
+gupta_pandey_31_2_strings = lcirc_from_row(gupta_pandey_31_2_first_row)
+gupta_pandey_31_2_mat = poly_string_to_integer(gupta_pandey_31_2_strings)
+
+gp_34_1_vals = ["x", "1+x^2+x^3+x^4+x^6", "x+x^2+x^3+x^4+x^6", "x+x^2+x^3+x^4+x^6", "1+x^2+x^3+x^4+x^6"]
+gp_34_1_str = toep(gp_34_1_vals, 3)
+gp_34_1_mat = poly_string_to_integer(gp_34_1_str)
+
+gp_34_2_vals = ["1","1","x","1+x^2+x^3+x^5+x^6+x^7", "x+x^5", "x^2+x^3+x^6+x^7", "x^2+x^3+x^6+x^7", "x+x^5", "1+x^2+x^3+x^5+x^6+x^7", "x","1"]
+gp_34_2_str = toep(gp_34_2_vals, 6)
+gp_34_2_mat = poly_string_to_integer(gp_34_2_str)
+
+gp_36_1_vals = ["1", "x", "x^7+x^5+x^4+x+1", "x^7+x^5+x^4+x^3+x+1","x^3+x", "1","x","x^7+x^5+x^4+x+1", "x^7+x^5+x^4+x^3+x+1"]
+gp_36_1_str = hank(gp_36_1_vals, 5)
+gp_36_1_mat = poly_string_to_integer(gp_36_1_str)
+
+gp_36_2_vals = ["1","1","x^7+x^5+x^4+x+1","x^5+x^3+x^2","x^2","x^7+x^4+x^3+x","1","1","x^7+x^5+x^4+x+1","x^5+x^3+x^2","x^2"]
+gp_36_2_str = hank(gp_36_2_vals, 6)
+gp_36_2_mat = poly_string_to_integer(gp_36_2_str)
+
+gupta_alpha = [
+     ("mat:gupta-pandey-31-1", gupta_pandey_31_1_mat),
+     ("mat:gupta-pandey-31-2", gupta_pandey_31_2_mat),
+     ("mat:gupta-pandey-34-1", gp_34_1_mat),
+     ("mat:gupta-pandey-34-2", gp_34_2_mat),
+     ("mat:gupta-pandey-36-1", gp_36_1_mat),
+     ("mat:gupta-pandey-36-2", gp_36_2_mat),
+]
+
+sarkar1 = [[2, 1, 3, 1, 6, 9, 11, 5], [8, 2, 1, 3, 1, 6, 9, 11], [12, 8, 2, 1, 3, 1, 6, 9], [9, 12, 8, 2, 1, 3, 1, 6], [9, 9, 12, 8, 2, 1, 3, 1], [5, 9, 9, 12, 8, 2, 1, 3], [12, 5, 9, 9, 12, 8, 2, 1], [8, 12, 5, 9, 9, 12, 8, 2]]
+sarkar2 = [[1, 1, 2, 145, 1, 145, 169, 3], [6, 1, 1, 2, 145, 1, 145, 169], [145, 6, 1, 1, 2, 145, 1, 145], [225, 145, 6, 1, 1, 2, 145, 1], [2, 225, 145, 6, 1, 1, 2, 145], [225, 2, 225, 145, 6, 1, 1, 2], [4, 225, 2, 225, 145, 6, 1, 1], [2, 4, 225, 2, 225, 145, 6, 1]]
+
+sarkar1inv = [[ 6,  9, 14,  3, 11,  4,  9,  1],
+ [ 1,  5,  3, 11,  8,  3, 15,  9],
+ [ 6,  5,  8,  6, 14,  6,  3,  4],
+ [ 1, 14,  2,  4, 11, 14,  8, 11],
+ [ 4,  3,  4, 13,  4,  6, 11,  3],
+ [14, 10, 13,  4,  2,  8,  3, 14],
+ [ 7, 10, 10,  3, 14,  5,  5,  9],
+ [ 3,  7, 14,  4,  1,  6,  1,  6]]
+
+sarkar2inv = [[240,  99,  21,   8, 119,  12, 187, 181],
+ [169, 240,  99,  21,   8, 119,  12, 187],
+ [181, 169, 240,  99,  21,   8, 119,  12],
+ [ 24, 181, 169, 240,  99,  21,   8, 119],
+ [238,  24, 181, 169, 240,  99,  21,   8],
+ [ 16, 238,  24, 181, 169, 240,  99,  21],
+ [ 42,  16, 238,  24, 181, 169, 240,  99],
+ [198,  42,  16, 238,  24, 181, 169, 240]]
 
 def convert(mat_str):
     integer_matrix = []
@@ -758,13 +1122,32 @@ def g(id):
 def integer_dict():
     matrices_as_ints = {}
     for id in matrices_as_strings:
-        print(id)
+        #print(id)
         integer_mat = convert(g(id))
 
         if id in should_ff_had:
             integer_mat = ff_hadamard_from_row(integer_mat[0])
+        
+        if id in should_lcirc:
+            integer_mat = lcirc_from_row(integer_mat[0])
+
+        if id in should_rcirc:
+            integer_mat = rcirc_from_row(integer_mat[0])
 
         matrices_as_ints[id] = integer_mat
+    
+    for gupta_poly_string_tuple in gupta_x:
+        integer_mat = poly_string_to_integer(gupta_poly_string_tuple[1])
+        matrices_as_ints[gupta_poly_string_tuple[0]] = integer_mat
+    
+    for gupta_id in gupta_alpha:
+        matrices_as_ints[gupta_id[0]] = gupta_id[1]
+    
+    matrices_as_ints["mat:gupta-pandey-3-made-involutory"] = gupta_pandey_3_made_involutory
+    matrices_as_ints["mat:sarkar-1"] = sarkar1
+    matrices_as_ints["mat:sarkar-2"] = sarkar2
+    matrices_as_ints["mat:sarkar-1-inv"] = sarkar1inv
+    matrices_as_ints["mat:sarkar-2-inv"] = sarkar2inv
     return matrices_as_ints
 
 def equals(mat1, mat2):
@@ -802,6 +1185,28 @@ def test_lookup():
     print(exists(ms, cui_jin))
     print(exists(ms, other))
 
-d = integer_dict()
-pprint.pprint(d)
-print(len(d))
+def check_that_i_have_all_matrices_on_my_lookup():
+    lookup_d = integer_dict()
+    pprint.pprint(lookup_d)
+    print(len(lookup_d))
+
+    objs, dicts = get_datapoint_list_from_csv()
+    for datapoint in objs:
+        id = datapoint.mat_id
+        inv_id = datapoint.mat_inv_id
+        if id not in lookup_d:
+            print("id", id, "is missing")
+        if inv_id not in lookup_d:
+            print("inv_id", inv_id, "is missing (id: ", id, "), involutory: ", datapoint.involutory)
+
+#check_that_i_have_all_matrices_on_my_lookup()
+
+def export_lookup():
+    lookup_d = integer_dict()
+    #pprint.pprint(lookup_d)
+    #print(len(lookup_d))
+    print(lookup_d)
+    return lookup_d
+
+export_lookup()
+
