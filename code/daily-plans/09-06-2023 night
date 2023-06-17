@@ -1,0 +1,17 @@
+1. Reler os códigos de algoritmos genéticos que já fiz antes.
+2. Todo experimento precisa:
+- Verificar se a matriz gerada é MDS.
+- Verificar se a matriz gerada já não existe.
+3. Quero guardar algumas estatísticas.
+- Tempo de execução.
+- Tempo de geração, de cada matriz candidata.
+- Tempo para avaliar se a matriz é MDS.
+- Quantidade de matrizes MDS encontradas.
+- Quantidade de matrizes não MDS encontradas.
+- Quantidade de matrizes repetidas encontradas, e quais.
+- Cada matriz candidata deve ter um ID.
+- Separar os resultados em arquivos distintos, para as MDS e não MDS.
+4. Estabelecer tempo limite por experimento, para cronometrar e controlar quanto tempo dedicarei à tentativa.
+5. Pensar nos experimentos alternativos com RL e RNN.
+6. Preciso remontar a tabela de matrizes MDS, talvez deixá-la em modo paisagem, para caber tudo que eu gostaria de colocar.
+7. Preciso revisar o texto e fazer meus ajustes também, e enviar para o Jorge.
