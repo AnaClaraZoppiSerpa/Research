@@ -11,18 +11,7 @@ from reproduction_functions import *
 from crossover_functions import *
 from mutation_functions import *
 from replacement_functions import *
-
-"""
-dim = 8 mat count = 2 cost = 296
-dim = 4 mat count = 2 cost = 40
-dim = 3 mat count = 74 cost = 15
-dim = 2 mat count = 2 cost = 8
-dim = 5 mat count = 1 cost = 120
-dim = 6 mat count = 1 cost = 234
-dim = 7 mat count = 1 cost = 384
-dim = 16 mat count = 1 cost = 4544
-dim = 32 mat count = 1 cost = 20032
-"""
+from lookup import *
 
 BASELINES = {
     8: 296,
@@ -35,8 +24,6 @@ BASELINES = {
     16: 4544,
     32: 20032,
 }
-
-# SETUP
 
 GF2_4 = galois.GF(2 ** 4)
 GF2_8 = galois.GF(2 ** 8)
@@ -57,7 +44,6 @@ class Arguments:
         self.mutation_prob = mutation_prob
 
 
-
 class ExperimentSettings:
     def __init__(self, order, dimension, field):
         self.order = order
@@ -74,6 +60,81 @@ class ChosenFunctions:
         self.crossover_f = crossover_f
         self.mutation_f = mutation_f
         self.replacement_f = replacement_f
+
+class Results:
+    def __init__(self):
+        self.discovered_mds_candidates = []
+        self.already_existing_candidates = []
+        self.discovered_mds_with_same_cost = []
+        self.discovered_mds_with_better_cost = []
+        self.mds_count = 0
+        self.non_mds_count = 0
+
+    def mds_discovery(self, candidate):
+        self.discovered_mds_candidates.append(candidate)
+
+    def repeated(self, candidate):
+        self.already_existing_candidates.append(candidate)
+
+    def mds_same_cost_discovery(self, candidate):
+        self.discovered_mds_with_same_cost.append(candidate)
+
+    def mds_better_cost_discovery(self, candidate):
+        self.discovered_mds_with_better_cost.append(candidate)
+
+    def count_mds(self):
+        self.mds_count += 1
+
+    def count_non_mds(self):
+        self.non_mds_count += 1
+
+    def print_compact(self):
+        print("MDS count X non-mds count:", self.mds_count, "X", self.non_mds_count)
+        print("MDS worse discovered:", len(self.discovered_mds_candidates))
+        print("Repeated:", len(self.already_existing_candidates))
+        print("MDS same:", len(self.discovered_mds_with_same_cost))
+        print("MDS better:", len(self.discovered_mds_with_better_cost))
+
+    def print_full(self):
+        print("MDS count X non-mds count:", self.mds_count, "X", self.non_mds_count)
+        print("MDS worse discovered:", len(self.discovered_mds_candidates))
+        print("Repeated:", len(self.already_existing_candidates))
+        print("MDS same:", len(self.discovered_mds_with_same_cost))
+        print("MDS better:", len(self.discovered_mds_with_better_cost))
+
+        # Imprimir quais foram as matrizes repetidas, se existirem
+        # Imprimir as MDS piores
+        # Imprimir as MDS melhores
+        # Imprimir as MDS iguais
+
+        print("The repeated matrices found were these:")
+        for candidate in self.already_existing_candidates:
+            print(candidate.dataset_id)
+
+        print("The MDS matrices found were these:")
+        for candidate in self.discovered_mds_candidates:
+            print("cost =", candidate.cost, "baseline diff =", candidate.baseline_diff)
+            print("dim", candidate.dim)
+            print("xor", candidate.xor)
+            print("xtime", candidate.xtime)
+            print(candidate.matrix)
+
+        print("The MDS matrices with same cost as baseline found were these:")
+        for candidate in self.discovered_mds_with_same_cost:
+            print("cost =", candidate.cost, "baseline diff =", candidate.baseline_diff)
+            print("dim", candidate.dim)
+            print("xor", candidate.xor)
+            print("xtime", candidate.xtime)
+            print(candidate.matrix)
+
+        print("The MDS matrices with better cost found were these:")
+        for candidate in self.discovered_mds_with_better_cost:
+            print("cost =", candidate.cost, "baseline diff =", candidate.baseline_diff)
+            print("dim", candidate.dim)
+            print("xor", candidate.xor)
+            print("xtime", candidate.xtime)
+            print(candidate.matrix)
+
 
 class Candidate:
     def __init__(self, matrix, mds, invertible, xor, xtime, inverse, dim):
@@ -93,6 +154,14 @@ class Candidate:
             self.ranking = "SAME"
         if self.baseline_diff < 0:
             self.ranking = "BETTER"
+
+        self.already_exists = False
+        self.dataset_id = ""
+
+        lookup = exists_in_dataset(LOOKUP_DICT, self.matrix)
+        if lookup[0]:
+            self.already_exists = True
+            self.dataset_id = lookup[1]
 
     def fitness(self):
         return -self.cost
@@ -124,40 +193,76 @@ def to_candidates(list_of_matrices, E):
     return candidates
 
 
+def log(candidates, log_string):
+    print(log_string)
+    print("len =", len(candidates))
+    for (i, candidate) in enumerate(candidates):
+        print("candidate", i)
+        print("fitness", candidate.fitness())
+        print("ranking", candidate.ranking)
+        print("diff", candidate.baseline_diff)
+        print("exists?", candidate.already_exists)
+        print("id", candidate.dataset_id)
+        print("mds?", candidate.mds)
+        print(candidate.matrix)
+
+def result_storage(candidates, R):
+    for (i, candidate) in enumerate(candidates):
+        if candidate.mds:
+           R.count_mds()
+        else:
+            R.count_non_mds()
+
+        if candidate.already_exists:
+            R.repeated(candidate)
+        elif candidate.mds:
+            if candidate.ranking == "SAME":
+                R.mds_same_cost_discovery(candidate)
+            elif candidate.ranking == "BETTER":
+                R.mds_better_cost_discovery(candidate)
+            else:
+                R.mds_discovery(candidate)
+
 def evolve(E, A, F):
+    R_population = Results()
+    R_offspring = Results()
+
     population = to_candidates(
         F.initialization_f(A.initial_population_size, E.integer_upper_limit, E.dimension, E.dimension, A), E)
 
     iteration_count = 0
 
     while iteration_count < A.max_iterations:
+        print("ITERATION", iteration_count+1, "/", A.max_iterations)
+
+        result_storage(population, R_population)
+        log(population, "starting population, iteration:" + str(iteration_count))
+
         selected_parents = F.selection_f(population, A.selection_num_parents)
         parent_pairs = F.pairing_f(selected_parents, A)
         offspring = to_candidates(reproduction(parent_pairs, A.mutation_prob, F.crossover_f, F.mutation_f, A), E)
+
+        result_storage(offspring, R_offspring)
+        log(offspring, "offspring, iteration:" + str(iteration_count))
+
         population = F.replacement_f(population, offspring, A)
 
         iteration_count += 1
-        #print(iteration_count, "/", A.max_iterations)
-    #print("OK")
 
+    print("Population analysis:")
+    R_population.print_full()
+    print("Offspring analysis:")
+    R_offspring.print_full()
 
-E = ExperimentSettings(4, 3, GF2_4)
-A = Arguments(E.integer_upper_limit, 6, 6, 6, 3, 10, 10, 8, 0.1)
+def test():
+    E = ExperimentSettings(4, 3, GF2_4)
+    A = Arguments(E.integer_upper_limit, 6, 6, 6, 3, 10, 400, 8, 0.1)
+    F = ChosenFunctions(random_initialization,
+                        selection1,
+                        pairing1,
+                        crossover1,
+                        mutation1,
+                        replacement1)
+    evolve(E, A, F)
 
-combination = 0
-for ini in [random_initialization]: # 1 * 5 * 5 * 6 * 4 * 4
-    for se in [selection1, selection2, selection3, selection4, selection5]:
-        for pa in [pairing1, pairing2, pairing3, pairing4, pairing5]:
-            for cr in [crossover1, crossover2, crossover3, crossover4, crossover5, crossover6]:
-                for mu in [mutation1, mutation2, mutation3, mutation4]:
-                    for re in [replacement1, replacement2, replacement3, replacement4]:
-                        combination += 1
-                        F = ChosenFunctions(ini, se, pa, cr, mu, re)
-                        try:
-                            evolve(E, A, F)
-                        except:
-                            print("errored combination:", combination)
-                            print(ini, se, pa, cr, mu, re)
-                            continue
-                        else:
-                            print("ok combination: ", combination)
+test()
