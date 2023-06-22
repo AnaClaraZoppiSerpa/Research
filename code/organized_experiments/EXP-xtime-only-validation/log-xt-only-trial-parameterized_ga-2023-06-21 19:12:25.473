@@ -1,0 +1,29 @@
+EXPERIMENT IDENTIFICATION: xt-only-trial parameterized_ga 2023-06-21 19:12:25.473
+EXPERIMENT PARAMETERS
+{'order': 4, 'integer_upper_limit': 15, 'dimension': 5, 'field': <class 'galois.GF(2^4)'>}
+{'upper': 15, 'num_elites': 10, 'num_survivors': 10, 'tournament_size': 10, 'pairing_tournament_size': 10, 'initial_population_size': 40, 'max_iterations': 100, 'selection_num_parents': 20, 'mutation_prob': 0.5}
+{'initialization_f': <function random_initialization at 0x1235fc9a0>, 'selection_f': <function rank_based_selection at 0x1236832e0>, 'pairing_f': <function sequential_pairing at 0x1236831a0>, 'crossover_f': <function alternating_crossover at 0x123682e80>, 'mutation_f': <function mutation4 at 0x1236c7ba0>, 'replacement_f': <function generational_replacement at 0x1236c5f80>, 'fitness_f': <function fitness_3 at 0x1236c5580>}
+ITERATION 1 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 2 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 3 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 4 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 5 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 6 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 7 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 8 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 9 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 10 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 11 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0
+ITERATION 12 / 100
+n=40 mds=0 min=300 max=300 sum=12000 avg=300.0

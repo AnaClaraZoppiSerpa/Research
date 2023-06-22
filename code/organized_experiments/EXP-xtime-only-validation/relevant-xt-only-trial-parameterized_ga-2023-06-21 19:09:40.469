@@ -1,0 +1,202 @@
+EXPERIMENT IDENTIFICATION: xt-only-trial parameterized_ga 2023-06-21 19:09:40.469
+ITERATION 1 / 100
+n=40 mds=19 min=76 max=300 sum=7827 avg=195.675
+ITERATION 2 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 3 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 4 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 5 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 6 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 7 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 8 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 9 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 10 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 11 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 12 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 13 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 14 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 15 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 16 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 17 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 18 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 19 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 20 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 21 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 22 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 23 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 24 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 25 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 26 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 27 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 28 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 29 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 30 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 31 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 32 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 33 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 34 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 35 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 36 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 37 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 38 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 39 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 40 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 41 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 42 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 43 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 44 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 45 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 46 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 47 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 48 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 49 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 50 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 51 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 52 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 53 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 54 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 55 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 56 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 57 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 58 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 59 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 60 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 61 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 62 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 63 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 64 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 65 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 66 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 67 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 68 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 69 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 70 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 71 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 72 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 73 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 74 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 75 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 76 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 77 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 78 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 79 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 80 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 81 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 82 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 83 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 84 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 85 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 86 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 87 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 88 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 89 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 90 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 91 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 92 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 93 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 94 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 95 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 96 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 97 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 98 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 99 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+ITERATION 100 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+MDS better 0, MDS same 0, MDS worse 290, total 4040, ratio = 0.07178217821782178

@@ -1,0 +1,2262 @@
+EXPERIMENT IDENTIFICATION: xt-only-trial parameterized_ga 2023-06-21 19:09:40.469
+EXPERIMENT PARAMETERS
+{'order': 4, 'integer_upper_limit': 15, 'dimension': 3, 'field': <class 'galois.GF(2^4)'>}
+{'upper': 15, 'num_elites': 10, 'num_survivors': 10, 'tournament_size': 10, 'pairing_tournament_size': 10, 'initial_population_size': 40, 'max_iterations': 100, 'selection_num_parents': 20, 'mutation_prob': 0.5}
+{'initialization_f': <function random_initialization at 0x1225a49a0>, 'selection_f': <function fitness_proportionate_selection at 0x12262be20>, 'pairing_f': <function random_pairing at 0x12262ba60>, 'crossover_f': <function midpoint_crossover1 at 0x12262b920>, 'mutation_f': <function mutation1 at 0x12266f740>, 'replacement_f': <function fitness_based_replacement at 0x12266f7e0>, 'fitness_f': <function fitness_3 at 0x12266d580>}
+ITERATION 1 / 100
+n=40 mds=19 min=76 max=300 sum=7827 avg=195.675
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[5, 13, 6], [4, 13, 14], [11, 9, 1]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[15, 10, 14], [9, 12, 2], [1, 1, 15]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[10, 9, 13], [13, 9, 15], [7, 2, 8]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[6, 12, 7], [2, 11, 8], [11, 3, 3]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[1, 2, 9], [14, 14, 14], [9, 5, 3]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[8, 6, 12], [10, 3, 11], [3, 11, 3]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[5, 4, 14], [4, 12, 4], [5, 1, 9]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[14, 8, 3], [11, 4, 2], [3, 15, 2]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[2, 2, 15], [15, 10, 15], [12, 5, 6]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[15, 10, 5], [2, 1, 14], [10, 2, 8]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[1, 10, 4], [15, 8, 12], [10, 13, 15]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[14, 7, 5], [14, 6, 7], [10, 4, 4]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[2, 2, 4], [2, 15, 3], [7, 9, 10]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[11, 7, 15], [2, 8, 4], [3, 8, 8]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[3, 14, 7], [4, 6, 9], [7, 3, 6]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[4, 5, 9], [3, 3, 4], [3, 12, 14]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[9, 8, 4], [3, 6, 8], [13, 3, 1]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[9, 2, 12], [5, 5, 8], [10, 6, 11]]
+(population) MDS candidate present at iteration 0 ranking= WORSE
+[[3, 11, 3], [4, 9, 2], [14, 3, 3]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[5, 13, 6], [4, 14, 11], [11, 4, 1]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[4, 14, 1], [4, 6, 5], [12, 9, 14]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[11, 13, 2], [14, 8, 4], [3, 8, 8]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[2, 2, 15], [15, 6, 15], [6, 2, 4]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[15, 10, 1], [9, 6, 5], [12, 9, 14]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[11, 10, 8], [5, 3, 8], [12, 6, 11]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[7, 14, 5], [9, 3, 4], [3, 12, 14]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 0 ranking= WORSE
+[[15, 7, 4], [10, 3, 8], [12, 6, 11]]
+ITERATION 2 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[7, 11, 6], [7, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[7, 14, 1], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 1 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+ITERATION 3 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[8, 1, 10], [4, 12, 11], [6, 3, 1]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[11, 13, 2], [14, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[15, 7, 4], [10, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[1, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 2 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [10, 6, 6]]
+ITERATION 4 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[7, 11, 1], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[7, 1, 15], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[3, 4, 13], [10, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 3 ranking= WORSE
+[[4, 1, 11], [4, 10, 10], [10, 5, 15]]
+ITERATION 5 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[11, 13, 2], [14, 1, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[5, 6, 14], [10, 13, 1], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[8, 1, 10], [4, 13, 14], [5, 1, 1]]
+(offspring) MDS candidate present at iteration 4 ranking= WORSE
+[[15, 7, 4], [1, 10, 10], [10, 5, 15]]
+ITERATION 6 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[7, 11, 6], [7, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 5 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+ITERATION 7 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[15, 7, 4], [10, 3, 5], [1, 2, 10]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 1]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[7, 11, 6], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[7, 14, 15], [3, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 6 ranking= WORSE
+[[3, 4, 13], [10, 1, 12], [1, 5, 14]]
+ITERATION 8 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[1, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[4, 14, 11], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[8, 1, 10], [4, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[1, 5, 8], [3, 13, 1], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 7 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+ITERATION 9 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [1, 2, 10]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[3, 4, 13], [10, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[2, 12, 4], [1, 1, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[4, 14, 11], [4, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 8 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+ITERATION 10 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[7, 14, 15], [3, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[7, 1, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[11, 1, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 9 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+ITERATION 11 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[7, 14, 15], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[7, 11, 6], [7, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[11, 13, 2], [14, 10, 1], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[2, 1, 4], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 10 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 5, 1]]
+ITERATION 12 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[11, 1, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[4, 14, 11], [4, 1, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [1, 13, 12]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[1, 6, 14], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 11 ranking= WORSE
+[[8, 1, 10], [4, 4, 4], [10, 1, 6]]
+ITERATION 13 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 12 ranking= WORSE
+[[1, 5, 8], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 12 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 12 ranking= WORSE
+[[7, 14, 15], [3, 11, 8], [15, 10, 1]]
+(offspring) MDS candidate present at iteration 12 ranking= WORSE
+[[7, 11, 1], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 12 ranking= WORSE
+[[4, 14, 11], [1, 12, 3], [13, 13, 12]]
+ITERATION 14 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[7, 1, 15], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[7, 11, 6], [7, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[1, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 1]]
+(offspring) MDS candidate present at iteration 13 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+ITERATION 15 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 14 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 14 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 14 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 14 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 14 ranking= WORSE
+[[7, 1, 6], [7, 12, 3], [13, 13, 12]]
+ITERATION 16 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[4, 1, 11], [4, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[4, 14, 11], [4, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 15 ranking= WORSE
+[[4, 14, 11], [4, 4, 4], [10, 6, 1]]
+ITERATION 17 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[11, 13, 2], [14, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[7, 14, 1], [3, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 16 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+ITERATION 18 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[4, 1, 11], [4, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[7, 14, 15], [1, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[2, 1, 4], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[7, 14, 1], [3, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 17 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+ITERATION 19 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[11, 13, 1], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[15, 7, 4], [10, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[1, 7, 4], [10, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[1, 5, 8], [3, 13, 14], [1, 3, 1]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 18 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [1, 5, 15]]
+ITERATION 20 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[2, 12, 4], [1, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[15, 7, 4], [10, 1, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[7, 14, 15], [3, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[5, 6, 14], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[3, 4, 13], [10, 3, 5], [7, 2, 1]]
+(offspring) MDS candidate present at iteration 19 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 1, 1]]
+ITERATION 21 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 20 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 20 ranking= WORSE
+[[7, 14, 15], [3, 11, 8], [15, 10, 1]]
+(offspring) MDS candidate present at iteration 20 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 20 ranking= WORSE
+[[11, 13, 2], [14, 12, 1], [6, 3, 6]]
+(offspring) MDS candidate present at iteration 20 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 5, 1]]
+ITERATION 22 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[7, 14, 15], [3, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[7, 11, 6], [7, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 21 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+ITERATION 23 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[15, 7, 4], [10, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[8, 1, 10], [4, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[1, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[8, 1, 10], [4, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 22 ranking= WORSE
+[[11, 13, 2], [14, 12, 3], [13, 13, 1]]
+ITERATION 24 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[4, 1, 11], [4, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[11, 13, 2], [14, 1, 11], [6, 3, 6]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 23 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 1, 15]]
+ITERATION 25 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[1, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [1, 2, 10]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[7, 14, 15], [3, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[4, 14, 1], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 24 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+ITERATION 26 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[15, 7, 4], [10, 10, 1], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[4, 14, 11], [4, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[5, 6, 14], [10, 11, 8], [15, 1, 7]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[7, 11, 6], [7, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 25 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+ITERATION 27 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 1, 12]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[1, 13, 2], [14, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 26 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+ITERATION 28 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[2, 12, 4], [1, 12, 1], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [1, 13, 12]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[3, 4, 13], [10, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[5, 6, 14], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[7, 1, 15], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 27 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 1, 1]]
+ITERATION 29 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 1, 15]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[4, 14, 11], [4, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[7, 11, 6], [7, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 28 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+ITERATION 30 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[3, 4, 13], [10, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[15, 7, 1], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[2, 12, 1], [1, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 29 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+ITERATION 31 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[1, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[7, 11, 6], [7, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 30 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+ITERATION 32 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 31 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [1, 6, 2]]
+ITERATION 33 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[3, 4, 13], [10, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[15, 7, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 32 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+ITERATION 34 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 33 ranking= WORSE
+[[1, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 33 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 33 ranking= WORSE
+[[7, 1, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 33 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+ITERATION 35 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 34 ranking= WORSE
+[[5, 1, 14], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 34 ranking= WORSE
+[[7, 14, 15], [3, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 34 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [1, 13, 12]]
+(offspring) MDS candidate present at iteration 34 ranking= WORSE
+[[1, 6, 14], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 34 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+ITERATION 36 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[11, 13, 2], [14, 12, 1], [6, 3, 6]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[7, 1, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[7, 1, 6], [7, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 35 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+ITERATION 37 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[7, 14, 1], [3, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[15, 7, 4], [1, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[8, 1, 10], [4, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 36 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 1]]
+ITERATION 38 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 1, 10]]
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[4, 14, 1], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 37 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [1, 2, 10]]
+ITERATION 39 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[1, 5, 8], [3, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 1]]
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 38 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 1]]
+ITERATION 40 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 39 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 39 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 39 ranking= WORSE
+[[8, 1, 1], [4, 1, 4], [13, 6, 2]]
+ITERATION 41 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [1, 6, 2]]
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[1, 5, 8], [3, 3, 1], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 40 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+ITERATION 42 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 41 ranking= WORSE
+[[5, 6, 14], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 41 ranking= WORSE
+[[1, 13, 2], [14, 1, 4], [13, 6, 2]]
+ITERATION 43 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 42 ranking= WORSE
+[[1, 13, 2], [14, 11, 8], [15, 10, 7]]
+ITERATION 44 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 43 ranking= WORSE
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 43 ranking= WORSE
+[[7, 11, 6], [7, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 43 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 43 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 43 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+ITERATION 45 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[7, 11, 6], [7, 1, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[2, 12, 4], [1, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[1, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[1, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[1, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 44 ranking= WORSE
+[[7, 11, 1], [7, 6, 15], [4, 6, 1]]
+ITERATION 46 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 45 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 45 ranking= WORSE
+[[2, 12, 4], [1, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 45 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+ITERATION 47 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 1, 1]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[1, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 1, 14]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[7, 11, 6], [7, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 46 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 1, 1]]
+ITERATION 48 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[4, 1, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[3, 4, 13], [10, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 47 ranking= WORSE
+[[2, 12, 4], [1, 1, 15], [4, 6, 1]]
+ITERATION 49 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[7, 1, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[15, 7, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[2, 12, 4], [1, 1, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[7, 1, 6], [7, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[8, 1, 10], [4, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 48 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+ITERATION 50 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 49 ranking= WORSE
+[[11, 13, 2], [14, 1, 10], [10, 5, 15]]
+ITERATION 51 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[8, 1, 10], [4, 6, 15], [1, 6, 1]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[2, 12, 4], [1, 12, 1], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[11, 13, 1], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[3, 4, 13], [10, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 50 ranking= WORSE
+[[4, 1, 11], [4, 3, 5], [7, 2, 10]]
+ITERATION 52 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[5, 6, 14], [10, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[1, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[11, 1, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[2, 12, 4], [1, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[1, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 51 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+ITERATION 53 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[7, 11, 6], [1, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[2, 12, 4], [1, 1, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[5, 6, 14], [1, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[5, 6, 14], [10, 3, 1], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 52 ranking= WORSE
+[[15, 7, 4], [1, 12, 12], [1, 5, 14]]
+ITERATION 54 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 53 ranking= WORSE
+[[2, 12, 4], [1, 1, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 53 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 53 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 53 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 53 ranking= WORSE
+[[1, 5, 8], [3, 12, 1], [6, 3, 6]]
+ITERATION 55 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[11, 13, 1], [14, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[7, 14, 15], [3, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[8, 1, 1], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[8, 1, 10], [4, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[1, 5, 1], [3, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 54 ranking= WORSE
+[[1, 1, 10], [4, 3, 5], [7, 2, 10]]
+ITERATION 56 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[1, 6, 14], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[8, 1, 10], [4, 1, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[3, 4, 13], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[1, 6, 14], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[7, 1, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[5, 6, 14], [10, 11, 8], [1, 10, 7]]
+(offspring) MDS candidate present at iteration 55 ranking= WORSE
+[[7, 14, 1], [3, 1, 4], [13, 6, 2]]
+ITERATION 57 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 56 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 56 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 56 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 56 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 56 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+ITERATION 58 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[1, 7, 4], [10, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[2, 12, 1], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[11, 13, 2], [14, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[15, 7, 4], [10, 12, 11], [6, 3, 1]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[7, 1, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[7, 11, 6], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 57 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+ITERATION 59 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[11, 13, 2], [14, 1, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[5, 6, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[7, 14, 15], [3, 11, 8], [15, 10, 1]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 1, 15]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[8, 1, 10], [4, 12, 11], [6, 3, 1]]
+(offspring) MDS candidate present at iteration 58 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+ITERATION 60 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[3, 4, 13], [10, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[3, 4, 1], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[15, 7, 4], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 59 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 1, 12]]
+ITERATION 61 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [1, 2, 10]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[3, 4, 13], [10, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[7, 1, 15], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[1, 5, 8], [3, 1, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[5, 6, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 60 ranking= WORSE
+[[3, 1, 13], [10, 12, 12], [1, 5, 14]]
+ITERATION 62 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[1, 1, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 1]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[3, 1, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 61 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+ITERATION 63 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[3, 4, 13], [10, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 62 ranking= WORSE
+[[15, 7, 4], [1, 3, 5], [7, 2, 10]]
+ITERATION 64 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[1, 6, 14], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[8, 1, 10], [4, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 63 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 1]]
+ITERATION 65 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 64 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 64 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 64 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 64 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 64 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+ITERATION 66 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 65 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 65 ranking= WORSE
+[[15, 7, 4], [10, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 65 ranking= WORSE
+[[2, 1, 4], [1, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 65 ranking= WORSE
+[[7, 11, 6], [1, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 65 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+ITERATION 67 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[1, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[1, 6, 14], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[15, 7, 4], [10, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[15, 7, 4], [10, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 66 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+ITERATION 68 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 67 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 67 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 67 ranking= WORSE
+[[5, 6, 14], [10, 3, 5], [7, 2, 1]]
+ITERATION 69 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[7, 11, 6], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[7, 11, 6], [7, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[15, 7, 4], [10, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[5, 6, 14], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 68 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+ITERATION 70 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 69 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+ITERATION 71 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[2, 12, 4], [1, 13, 14], [5, 1, 1]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[11, 13, 2], [14, 11, 1], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[15, 7, 4], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 70 ranking= WORSE
+[[7, 14, 15], [1, 12, 3], [13, 13, 12]]
+ITERATION 72 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[3, 4, 13], [10, 13, 14], [5, 1, 1]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[1, 5, 8], [3, 3, 1], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[11, 13, 2], [14, 1, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[11, 13, 1], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 71 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+ITERATION 73 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[1, 5, 1], [3, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[8, 1, 10], [4, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[1, 5, 8], [1, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[4, 14, 11], [4, 4, 1], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[1, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[7, 11, 6], [7, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 72 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+ITERATION 74 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 73 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 73 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 73 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 73 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 73 ranking= WORSE
+[[3, 4, 13], [10, 12, 11], [6, 1, 6]]
+ITERATION 75 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[15, 7, 4], [10, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[5, 6, 14], [10, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[2, 12, 4], [1, 10, 10], [10, 5, 1]]
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 74 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [1, 5, 15]]
+ITERATION 76 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[2, 12, 4], [1, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[15, 7, 4], [10, 1, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 75 ranking= WORSE
+[[15, 7, 4], [1, 12, 3], [13, 13, 12]]
+ITERATION 77 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[1, 5, 8], [3, 12, 1], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[7, 11, 6], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[11, 13, 2], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[1, 5, 1], [3, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 76 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+ITERATION 78 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 77 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 77 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+ITERATION 79 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[1, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[8, 1, 10], [4, 10, 1], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[4, 14, 11], [4, 1, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[5, 6, 14], [10, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 78 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [1, 6, 2]]
+ITERATION 80 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[7, 11, 1], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[11, 13, 1], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[15, 7, 4], [1, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 79 ranking= WORSE
+[[7, 1, 15], [3, 1, 4], [13, 6, 2]]
+ITERATION 81 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 80 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 80 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 80 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 80 ranking= WORSE
+[[4, 14, 11], [1, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 80 ranking= WORSE
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+ITERATION 82 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[4, 14, 11], [4, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[7, 14, 15], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[15, 7, 4], [10, 13, 1], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[8, 1, 10], [4, 12, 11], [6, 1, 6]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 81 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+ITERATION 83 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[1, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[7, 11, 6], [7, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[1, 5, 8], [3, 12, 1], [6, 3, 6]]
+(offspring) MDS candidate present at iteration 82 ranking= WORSE
+[[11, 13, 2], [14, 10, 1], [10, 5, 15]]
+ITERATION 84 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 83 ranking= WORSE
+[[2, 1, 4], [1, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 83 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 83 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 83 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 1]]
+ITERATION 85 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[11, 13, 2], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[3, 4, 13], [10, 1, 11], [6, 3, 6]]
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 1, 1]]
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[3, 4, 13], [10, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 84 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+ITERATION 86 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[11, 13, 2], [1, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[1, 7, 4], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 85 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+ITERATION 87 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 86 ranking= WORSE
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 86 ranking= WORSE
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 86 ranking= WORSE
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 86 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [10, 6, 6]]
+(offspring) MDS candidate present at iteration 86 ranking= WORSE
+[[3, 4, 13], [10, 1, 10], [10, 5, 15]]
+ITERATION 88 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 87 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 87 ranking= WORSE
+[[7, 14, 15], [3, 4, 4], [10, 6, 1]]
+(offspring) MDS candidate present at iteration 87 ranking= WORSE
+[[1, 1, 10], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 87 ranking= WORSE
+[[7, 14, 15], [3, 1, 1], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 87 ranking= WORSE
+[[8, 1, 10], [4, 6, 15], [4, 1, 1]]
+ITERATION 89 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[3, 4, 13], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[1, 14, 15], [3, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[2, 12, 4], [1, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 88 ranking= WORSE
+[[11, 13, 2], [14, 10, 1], [10, 5, 15]]
+ITERATION 90 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 1]]
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 1]]
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[8, 1, 10], [4, 11, 8], [15, 1, 7]]
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[2, 1, 4], [1, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 89 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+ITERATION 91 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[11, 13, 2], [14, 11, 1], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[1, 5, 1], [3, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[2, 12, 4], [1, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 1, 14]]
+(offspring) MDS candidate present at iteration 90 ranking= WORSE
+[[1, 13, 2], [14, 13, 14], [5, 3, 1]]
+ITERATION 92 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 91 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 1, 12]]
+(offspring) MDS candidate present at iteration 91 ranking= WORSE
+[[8, 1, 10], [4, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 91 ranking= WORSE
+[[5, 6, 14], [10, 3, 5], [7, 2, 1]]
+(offspring) MDS candidate present at iteration 91 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 1, 12]]
+(offspring) MDS candidate present at iteration 91 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+ITERATION 93 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[4, 14, 11], [4, 1, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[7, 1, 15], [3, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 1, 7]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[4, 14, 1], [4, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 92 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+ITERATION 94 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 93 ranking= WORSE
+[[8, 1, 10], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 93 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 93 ranking= WORSE
+[[7, 14, 15], [3, 10, 10], [10, 1, 15]]
+(offspring) MDS candidate present at iteration 93 ranking= WORSE
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+ITERATION 95 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[4, 14, 11], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[7, 11, 6], [7, 1, 4], [13, 6, 1]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[7, 14, 15], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[1, 6, 14], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 94 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 1, 10]]
+ITERATION 96 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[3, 4, 1], [10, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[7, 1, 15], [3, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[7, 11, 6], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[4, 14, 11], [4, 12, 12], [1, 5, 1]]
+(offspring) MDS candidate present at iteration 95 ranking= WORSE
+[[4, 14, 11], [4, 3, 5], [1, 2, 10]]
+ITERATION 97 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[2, 12, 4], [1, 1, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[4, 14, 1], [4, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[7, 11, 6], [7, 10, 10], [10, 1, 15]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[7, 11, 6], [1, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 96 ranking= WORSE
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+ITERATION 98 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[1, 5, 8], [3, 4, 4], [10, 1, 6]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 97 ranking= WORSE
+[[7, 14, 15], [1, 12, 12], [1, 5, 14]]
+ITERATION 99 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[3, 4, 13], [10, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[8, 1, 10], [4, 10, 10], [1, 5, 15]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+(offspring) MDS candidate present at iteration 98 ranking= WORSE
+[[8, 1, 10], [4, 12, 12], [1, 5, 1]]
+ITERATION 100 / 100
+n=10 mds=0 min=300 max=300 sum=3000 avg=300.0
+(offspring) MDS candidate present at iteration 99 ranking= WORSE
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+(offspring) MDS candidate present at iteration 99 ranking= WORSE
+[[15, 7, 4], [10, 1, 4], [13, 1, 2]]
+(offspring) MDS candidate present at iteration 99 ranking= WORSE
+[[11, 13, 2], [14, 12, 3], [13, 13, 1]]
+SUMMARY
+MDS better
+MDS same
+MDS worse
+xor 17 xtime 21 baseline diff 18
+[[5, 13, 6], [4, 13, 14], [11, 9, 1]]
+xor 17 xtime 19 baseline diff 16
+[[15, 10, 14], [9, 12, 2], [1, 1, 15]]
+xor 18 xtime 24 baseline diff 21
+[[10, 9, 13], [13, 9, 15], [7, 2, 8]]
+xor 16 xtime 19 baseline diff 16
+[[6, 12, 7], [2, 11, 8], [11, 3, 3]]
+xor 16 xtime 19 baseline diff 16
+[[1, 2, 9], [14, 14, 14], [9, 5, 3]]
+xor 16 xtime 20 baseline diff 17
+[[8, 6, 12], [10, 3, 11], [3, 11, 3]]
+xor 12 xtime 19 baseline diff 16
+[[5, 4, 14], [4, 12, 4], [5, 1, 9]]
+xor 15 xtime 18 baseline diff 15
+[[14, 8, 3], [11, 4, 2], [3, 15, 2]]
+xor 19 xtime 21 baseline diff 18
+[[2, 2, 15], [15, 10, 15], [12, 5, 6]]
+xor 14 xtime 19 baseline diff 16
+[[15, 10, 5], [2, 1, 14], [10, 2, 8]]
+xor 17 xtime 23 baseline diff 20
+[[1, 10, 4], [15, 8, 12], [10, 13, 15]]
+xor 17 xtime 21 baseline diff 18
+[[14, 7, 5], [14, 6, 7], [10, 4, 4]]
+xor 14 xtime 17 baseline diff 14
+[[2, 2, 4], [2, 15, 3], [7, 9, 10]]
+xor 14 xtime 21 baseline diff 18
+[[11, 7, 15], [2, 8, 4], [3, 8, 8]]
+xor 17 xtime 18 baseline diff 15
+[[3, 14, 7], [4, 6, 9], [7, 3, 6]]
+xor 14 xtime 18 baseline diff 15
+[[4, 5, 9], [3, 3, 4], [3, 12, 14]]
+xor 12 xtime 18 baseline diff 15
+[[9, 8, 4], [3, 6, 8], [13, 3, 1]]
+xor 14 xtime 22 baseline diff 19
+[[9, 2, 12], [5, 5, 8], [10, 6, 11]]
+xor 15 xtime 16 baseline diff 13
+[[3, 11, 3], [4, 9, 2], [14, 3, 3]]
+xor 16 xtime 20 baseline diff 17
+[[5, 13, 6], [4, 14, 11], [11, 4, 1]]
+xor 14 xtime 20 baseline diff 17
+[[4, 14, 1], [4, 6, 5], [12, 9, 14]]
+xor 13 xtime 22 baseline diff 19
+[[11, 13, 2], [14, 8, 4], [3, 8, 8]]
+xor 17 xtime 18 baseline diff 15
+[[2, 2, 15], [15, 6, 15], [6, 2, 4]]
+xor 17 xtime 22 baseline diff 19
+[[15, 10, 1], [9, 6, 5], [12, 9, 14]]
+xor 15 xtime 23 baseline diff 20
+[[11, 10, 8], [5, 3, 8], [12, 6, 11]]
+xor 17 xtime 20 baseline diff 17
+[[7, 14, 5], [9, 3, 4], [3, 12, 14]]
+xor 15 xtime 18 baseline diff 15
+[[11, 13, 2], [14, 1, 4], [13, 6, 2]]
+xor 17 xtime 22 baseline diff 19
+[[15, 7, 4], [10, 3, 8], [12, 6, 11]]
+xor 21 xtime 22 baseline diff 19
+[[7, 14, 15], [3, 12, 3], [13, 13, 12]]
+xor 18 xtime 21 baseline diff 18
+[[15, 7, 4], [10, 10, 10], [1, 5, 15]]
+xor 14 xtime 22 baseline diff 19
+[[8, 1, 10], [4, 10, 10], [10, 5, 15]]
+xor 19 xtime 19 baseline diff 16
+[[7, 11, 6], [7, 1, 3], [13, 13, 12]]
+xor 18 xtime 19 baseline diff 16
+[[7, 14, 1], [3, 12, 3], [13, 13, 12]]
+xor 16 xtime 17 baseline diff 14
+[[7, 11, 6], [7, 1, 4], [13, 6, 2]]
+xor 12 xtime 19 baseline diff 16
+[[8, 1, 10], [4, 12, 12], [1, 5, 14]]
+xor 18 xtime 19 baseline diff 16
+[[11, 13, 2], [14, 13, 14], [5, 3, 1]]
+xor 19 xtime 23 baseline diff 20
+[[15, 7, 4], [10, 12, 3], [13, 13, 12]]
+xor 12 xtime 17 baseline diff 14
+[[8, 1, 10], [4, 12, 11], [6, 3, 1]]
+xor 15 xtime 18 baseline diff 15
+[[11, 13, 2], [14, 12, 12], [1, 5, 1]]
+xor 18 xtime 18 baseline diff 15
+[[7, 11, 6], [7, 6, 15], [4, 6, 1]]
+xor 14 xtime 19 baseline diff 16
+[[15, 7, 4], [10, 4, 4], [10, 1, 6]]
+xor 14 xtime 19 baseline diff 16
+[[1, 4, 13], [10, 12, 12], [1, 5, 14]]
+xor 15 xtime 19 baseline diff 16
+[[15, 7, 4], [10, 1, 4], [10, 6, 6]]
+xor 15 xtime 18 baseline diff 15
+[[3, 4, 13], [10, 6, 15], [4, 6, 1]]
+xor 19 xtime 18 baseline diff 15
+[[7, 14, 15], [3, 3, 5], [7, 2, 10]]
+xor 17 xtime 16 baseline diff 13
+[[7, 11, 1], [7, 6, 15], [4, 6, 1]]
+xor 20 xtime 20 baseline diff 17
+[[7, 1, 15], [3, 11, 8], [15, 10, 7]]
+xor 16 xtime 19 baseline diff 16
+[[3, 4, 13], [10, 1, 3], [13, 13, 12]]
+xor 18 xtime 18 baseline diff 15
+[[7, 11, 6], [7, 3, 5], [7, 2, 10]]
+xor 15 xtime 21 baseline diff 18
+[[4, 1, 11], [4, 10, 10], [10, 5, 15]]
+xor 16 xtime 17 baseline diff 14
+[[11, 13, 2], [14, 1, 15], [4, 6, 1]]
+xor 15 xtime 16 baseline diff 13
+[[5, 6, 14], [10, 13, 1], [5, 3, 1]]
+xor 13 xtime 15 baseline diff 12
+[[1, 5, 8], [3, 3, 5], [7, 2, 10]]
+xor 12 xtime 16 baseline diff 13
+[[8, 1, 10], [4, 13, 14], [5, 1, 1]]
+xor 18 xtime 21 baseline diff 18
+[[15, 7, 4], [1, 10, 10], [10, 5, 15]]
+xor 16 xtime 15 baseline diff 12
+[[7, 11, 6], [7, 1, 1], [13, 6, 2]]
+xor 16 xtime 20 baseline diff 17
+[[1, 5, 8], [3, 11, 8], [15, 10, 7]]
+xor 17 xtime 21 baseline diff 18
+[[15, 7, 4], [10, 12, 12], [1, 5, 14]]
+xor 17 xtime 23 baseline diff 20
+[[3, 4, 13], [10, 10, 10], [10, 5, 15]]
+xor 15 xtime 17 baseline diff 14
+[[15, 7, 4], [10, 3, 5], [1, 2, 10]]
+xor 15 xtime 15 baseline diff 12
+[[7, 11, 6], [7, 1, 4], [13, 1, 2]]
+xor 17 xtime 15 baseline diff 12
+[[7, 11, 6], [7, 3, 5], [7, 2, 1]]
+xor 14 xtime 15 baseline diff 12
+[[7, 11, 6], [1, 1, 4], [13, 6, 2]]
+xor 17 xtime 15 baseline diff 12
+[[7, 14, 15], [3, 1, 1], [13, 6, 2]]
+xor 17 xtime 22 baseline diff 19
+[[3, 4, 13], [10, 12, 3], [13, 13, 12]]
+xor 20 xtime 24 baseline diff 21
+[[11, 13, 2], [14, 11, 8], [15, 10, 7]]
+xor 14 xtime 17 baseline diff 14
+[[3, 4, 13], [10, 1, 12], [1, 5, 14]]
+xor 14 xtime 18 baseline diff 15
+[[1, 7, 4], [10, 12, 12], [1, 5, 14]]
+xor 15 xtime 18 baseline diff 15
+[[15, 7, 4], [10, 1, 4], [13, 6, 2]]
+xor 15 xtime 17 baseline diff 14
+[[4, 14, 11], [1, 6, 15], [4, 6, 1]]
+xor 10 xtime 14 baseline diff 11
+[[8, 1, 10], [4, 1, 1], [13, 6, 2]]
+xor 12 xtime 12 baseline diff 9
+[[1, 5, 8], [3, 13, 1], [5, 3, 1]]
+xor 17 xtime 19 baseline diff 16
+[[11, 13, 2], [14, 6, 15], [4, 6, 1]]
+xor 11 xtime 13 baseline diff 10
+[[1, 5, 8], [3, 3, 5], [1, 2, 10]]
+xor 13 xtime 16 baseline diff 13
+[[3, 4, 13], [10, 1, 4], [13, 6, 1]]
+xor 13 xtime 17 baseline diff 14
+[[2, 12, 4], [1, 1, 10], [10, 5, 15]]
+xor 16 xtime 20 baseline diff 17
+[[4, 14, 11], [4, 1, 3], [13, 13, 12]]
+xor 12 xtime 15 baseline diff 12
+[[2, 12, 4], [1, 3, 5], [7, 2, 10]]
+xor 17 xtime 19 baseline diff 16
+[[5, 6, 14], [10, 13, 14], [5, 3, 1]]
+xor 14 xtime 21 baseline diff 18
+[[8, 1, 10], [4, 12, 3], [13, 13, 12]]
+xor 13 xtime 17 baseline diff 14
+[[1, 5, 8], [3, 11, 8], [1, 10, 7]]
+xor 16 xtime 15 baseline diff 12
+[[7, 1, 6], [7, 6, 15], [4, 6, 1]]
+xor 15 xtime 16 baseline diff 13
+[[11, 1, 2], [14, 6, 15], [4, 6, 1]]
+xor 15 xtime 19 baseline diff 16
+[[4, 14, 11], [4, 3, 5], [7, 2, 10]]
+xor 20 xtime 21 baseline diff 18
+[[7, 14, 15], [1, 12, 3], [13, 13, 12]]
+xor 18 xtime 19 baseline diff 16
+[[7, 11, 6], [7, 12, 11], [6, 1, 6]]
+xor 18 xtime 21 baseline diff 18
+[[11, 13, 2], [14, 10, 1], [10, 5, 15]]
+xor 11 xtime 12 baseline diff 9
+[[2, 1, 4], [1, 6, 15], [4, 6, 1]]
+xor 18 xtime 20 baseline diff 17
+[[7, 14, 15], [3, 10, 10], [10, 5, 1]]
+xor 13 xtime 15 baseline diff 12
+[[11, 1, 2], [14, 1, 4], [13, 6, 2]]
+xor 14 xtime 17 baseline diff 14
+[[4, 14, 11], [4, 1, 15], [4, 6, 1]]
+xor 12 xtime 16 baseline diff 13
+[[2, 12, 4], [1, 12, 3], [1, 13, 12]]
+xor 15 xtime 17 baseline diff 14
+[[1, 6, 14], [10, 6, 15], [4, 6, 1]]
+xor 9 xtime 17 baseline diff 14
+[[8, 1, 10], [4, 4, 4], [10, 1, 6]]
+xor 12 xtime 14 baseline diff 11
+[[1, 5, 8], [1, 3, 5], [7, 2, 10]]
+xor 20 xtime 21 baseline diff 18
+[[7, 14, 15], [3, 11, 8], [15, 10, 1]]
+xor 17 xtime 21 baseline diff 18
+[[4, 14, 11], [1, 12, 3], [13, 13, 12]]
+xor 14 xtime 16 baseline diff 13
+[[1, 5, 8], [3, 12, 3], [13, 13, 1]]
+xor 17 xtime 23 baseline diff 20
+[[4, 14, 11], [4, 12, 3], [13, 13, 12]]
+xor 18 xtime 19 baseline diff 16
+[[7, 1, 6], [7, 12, 3], [13, 13, 12]]
+xor 16 xtime 21 baseline diff 18
+[[4, 1, 11], [4, 11, 8], [15, 10, 7]]
+xor 13 xtime 19 baseline diff 16
+[[4, 14, 11], [4, 1, 4], [10, 6, 6]]
+xor 12 xtime 19 baseline diff 16
+[[4, 14, 11], [4, 4, 4], [10, 6, 1]]
+xor 14 xtime 19 baseline diff 16
+[[2, 12, 4], [1, 12, 3], [13, 13, 12]]
+xor 15 xtime 21 baseline diff 18
+[[4, 14, 11], [4, 12, 12], [1, 5, 14]]
+xor 16 xtime 17 baseline diff 14
+[[7, 14, 1], [3, 12, 12], [1, 5, 14]]
+xor 17 xtime 17 baseline diff 14
+[[7, 14, 15], [3, 1, 4], [13, 6, 2]]
+xor 20 xtime 22 baseline diff 19
+[[7, 14, 15], [1, 10, 10], [10, 5, 15]]
+xor 20 xtime 23 baseline diff 20
+[[11, 13, 1], [14, 11, 8], [15, 10, 7]]
+xor 18 xtime 20 baseline diff 17
+[[15, 7, 4], [10, 1, 3], [13, 13, 12]]
+xor 17 xtime 21 baseline diff 18
+[[1, 7, 4], [10, 11, 8], [15, 10, 7]]
+xor 10 xtime 15 baseline diff 12
+[[8, 1, 10], [4, 1, 4], [13, 6, 1]]
+xor 13 xtime 13 baseline diff 10
+[[1, 5, 8], [3, 13, 14], [1, 3, 1]]
+xor 16 xtime 20 baseline diff 17
+[[3, 4, 13], [10, 10, 10], [1, 5, 15]]
+xor 11 xtime 14 baseline diff 11
+[[2, 12, 4], [1, 1, 12], [1, 5, 14]]
+xor 19 xtime 24 baseline diff 21
+[[11, 13, 2], [14, 10, 10], [10, 5, 15]]
+xor 16 xtime 17 baseline diff 14
+[[15, 7, 4], [10, 1, 15], [4, 6, 1]]
+xor 20 xtime 21 baseline diff 18
+[[7, 14, 15], [3, 12, 1], [13, 13, 12]]
+xor 15 xtime 16 baseline diff 13
+[[5, 6, 14], [1, 6, 15], [4, 6, 1]]
+xor 14 xtime 15 baseline diff 12
+[[3, 4, 13], [10, 3, 5], [7, 2, 1]]
+xor 16 xtime 17 baseline diff 14
+[[11, 13, 2], [14, 6, 15], [4, 1, 1]]
+xor 16 xtime 18 baseline diff 15
+[[11, 13, 2], [14, 12, 1], [6, 3, 6]]
+xor 13 xtime 17 baseline diff 14
+[[3, 4, 13], [10, 12, 12], [1, 5, 1]]
+xor 16 xtime 17 baseline diff 14
+[[7, 11, 6], [7, 12, 12], [1, 5, 1]]
+xor 18 xtime 19 baseline diff 16
+[[15, 7, 4], [10, 13, 14], [5, 3, 1]]
+xor 16 xtime 18 baseline diff 15
+[[15, 7, 4], [10, 1, 12], [1, 5, 14]]
+xor 12 xtime 19 baseline diff 16
+[[8, 1, 10], [4, 11, 8], [1, 10, 7]]
+xor 18 xtime 20 baseline diff 17
+[[11, 13, 2], [14, 12, 3], [13, 13, 1]]
+xor 17 xtime 18 baseline diff 15
+[[11, 13, 2], [14, 1, 11], [6, 3, 6]]
+xor 17 xtime 21 baseline diff 18
+[[11, 13, 2], [14, 11, 8], [1, 10, 7]]
+xor 20 xtime 21 baseline diff 18
+[[7, 14, 15], [3, 10, 10], [10, 1, 15]]
+xor 16 xtime 21 baseline diff 18
+[[1, 7, 4], [10, 10, 10], [10, 5, 15]]
+xor 10 xtime 16 baseline diff 13
+[[8, 1, 10], [4, 1, 4], [13, 6, 2]]
+xor 16 xtime 16 baseline diff 13
+[[7, 11, 6], [7, 3, 5], [1, 2, 10]]
+xor 16 xtime 18 baseline diff 15
+[[7, 14, 15], [3, 4, 4], [10, 6, 1]]
+xor 11 xtime 15 baseline diff 12
+[[4, 14, 1], [4, 1, 4], [13, 6, 2]]
+xor 18 xtime 21 baseline diff 18
+[[15, 7, 4], [10, 10, 1], [10, 5, 15]]
+xor 16 xtime 22 baseline diff 19
+[[4, 14, 11], [4, 12, 1], [13, 13, 12]]
+xor 18 xtime 21 baseline diff 18
+[[5, 6, 14], [10, 11, 8], [15, 1, 7]]
+xor 19 xtime 21 baseline diff 18
+[[7, 11, 6], [7, 12, 1], [13, 13, 12]]
+xor 14 xtime 21 baseline diff 18
+[[4, 14, 11], [4, 10, 10], [10, 5, 1]]
+xor 15 xtime 19 baseline diff 16
+[[3, 4, 13], [10, 12, 3], [13, 1, 12]]
+xor 15 xtime 16 baseline diff 13
+[[1, 13, 2], [14, 3, 5], [7, 2, 10]]
+xor 15 xtime 20 baseline diff 17
+[[3, 4, 13], [10, 12, 12], [1, 5, 14]]
+xor 11 xtime 14 baseline diff 11
+[[2, 12, 4], [1, 12, 1], [1, 5, 14]]
+xor 19 xtime 19 baseline diff 16
+[[7, 14, 15], [3, 12, 3], [1, 13, 12]]
+xor 12 xtime 18 baseline diff 15
+[[3, 4, 13], [10, 4, 4], [10, 6, 1]]
+xor 17 xtime 20 baseline diff 17
+[[5, 6, 14], [1, 12, 3], [13, 13, 12]]
+xor 17 xtime 16 baseline diff 13
+[[7, 11, 6], [7, 6, 15], [4, 1, 1]]
+xor 15 xtime 19 baseline diff 16
+[[11, 13, 2], [14, 1, 4], [10, 6, 6]]
+xor 14 xtime 18 baseline diff 15
+[[4, 14, 11], [4, 1, 12], [1, 5, 14]]
+xor 17 xtime 19 baseline diff 16
+[[15, 7, 1], [10, 12, 12], [1, 5, 14]]
+xor 14 xtime 18 baseline diff 15
+[[2, 12, 1], [1, 10, 10], [10, 5, 15]]
+xor 17 xtime 16 baseline diff 13
+[[1, 14, 15], [3, 3, 5], [7, 2, 10]]
+xor 15 xtime 18 baseline diff 15
+[[7, 11, 6], [7, 4, 4], [10, 6, 1]]
+xor 13 xtime 15 baseline diff 12
+[[11, 13, 2], [14, 1, 4], [1, 6, 2]]
+xor 12 xtime 15 baseline diff 12
+[[3, 4, 13], [10, 1, 4], [13, 1, 2]]
+xor 16 xtime 16 baseline diff 13
+[[15, 7, 4], [1, 3, 5], [7, 2, 10]]
+xor 12 xtime 15 baseline diff 12
+[[1, 7, 4], [10, 1, 4], [13, 6, 2]]
+xor 17 xtime 21 baseline diff 18
+[[5, 1, 14], [10, 12, 3], [13, 13, 12]]
+xor 17 xtime 22 baseline diff 19
+[[1, 6, 14], [10, 10, 10], [10, 5, 15]]
+xor 9 xtime 14 baseline diff 11
+[[8, 1, 10], [4, 1, 4], [13, 1, 2]]
+xor 17 xtime 15 baseline diff 12
+[[7, 1, 6], [7, 13, 14], [5, 3, 1]]
+xor 16 xtime 18 baseline diff 15
+[[15, 7, 4], [1, 12, 12], [1, 5, 14]]
+xor 12 xtime 18 baseline diff 15
+[[8, 1, 10], [4, 12, 11], [6, 1, 6]]
+xor 15 xtime 18 baseline diff 15
+[[4, 14, 11], [4, 3, 5], [7, 1, 10]]
+xor 15 xtime 19 baseline diff 16
+[[1, 5, 8], [3, 12, 3], [13, 13, 12]]
+xor 14 xtime 18 baseline diff 15
+[[1, 5, 8], [3, 12, 1], [13, 13, 12]]
+xor 18 xtime 20 baseline diff 17
+[[15, 7, 4], [10, 12, 3], [13, 13, 1]]
+xor 9 xtime 13 baseline diff 10
+[[8, 1, 1], [4, 1, 4], [13, 6, 2]]
+xor 17 xtime 24 baseline diff 21
+[[4, 14, 11], [4, 10, 10], [10, 5, 15]]
+xor 15 xtime 14 baseline diff 11
+[[7, 14, 15], [3, 1, 4], [1, 6, 2]]
+xor 12 xtime 13 baseline diff 10
+[[1, 5, 8], [3, 3, 1], [7, 2, 10]]
+xor 13 xtime 15 baseline diff 12
+[[1, 13, 2], [14, 1, 4], [13, 6, 2]]
+xor 18 xtime 21 baseline diff 18
+[[1, 13, 2], [14, 11, 8], [15, 10, 7]]
+xor 19 xtime 24 baseline diff 21
+[[15, 7, 4], [10, 10, 10], [10, 5, 15]]
+xor 19 xtime 20 baseline diff 17
+[[7, 11, 6], [7, 1, 10], [10, 5, 15]]
+xor 10 xtime 15 baseline diff 12
+[[2, 12, 4], [1, 1, 4], [10, 6, 6]]
+xor 16 xtime 16 baseline diff 13
+[[1, 11, 6], [7, 3, 5], [7, 2, 10]]
+xor 12 xtime 16 baseline diff 13
+[[1, 1, 10], [4, 12, 12], [1, 5, 14]]
+xor 16 xtime 16 baseline diff 13
+[[1, 13, 2], [14, 13, 14], [5, 3, 1]]
+xor 9 xtime 15 baseline diff 12
+[[2, 12, 4], [1, 4, 4], [10, 6, 1]]
+xor 16 xtime 18 baseline diff 15
+[[5, 6, 14], [10, 13, 14], [5, 1, 1]]
+xor 11 xtime 17 baseline diff 14
+[[8, 1, 10], [4, 12, 12], [1, 1, 14]]
+xor 16 xtime 16 baseline diff 13
+[[7, 11, 6], [7, 1, 4], [13, 6, 1]]
+xor 15 xtime 17 baseline diff 14
+[[15, 7, 4], [10, 1, 4], [13, 6, 1]]
+xor 16 xtime 21 baseline diff 18
+[[3, 4, 13], [10, 12, 1], [13, 13, 12]]
+xor 11 xtime 13 baseline diff 10
+[[2, 12, 4], [1, 1, 15], [4, 6, 1]]
+xor 18 xtime 20 baseline diff 17
+[[15, 7, 4], [1, 12, 3], [13, 13, 12]]
+xor 13 xtime 17 baseline diff 14
+[[2, 12, 4], [1, 1, 8], [15, 10, 7]]
+xor 11 xtime 14 baseline diff 11
+[[3, 4, 1], [10, 1, 4], [13, 6, 2]]
+xor 18 xtime 21 baseline diff 18
+[[11, 13, 2], [14, 1, 10], [10, 5, 15]]
+xor 12 xtime 15 baseline diff 12
+[[8, 1, 10], [4, 6, 15], [1, 6, 1]]
+xor 19 xtime 23 baseline diff 20
+[[11, 13, 1], [14, 10, 10], [10, 5, 15]]
+xor 16 xtime 18 baseline diff 15
+[[7, 11, 6], [7, 1, 4], [10, 6, 6]]
+xor 12 xtime 18 baseline diff 15
+[[3, 4, 13], [10, 4, 4], [10, 1, 6]]
+xor 13 xtime 16 baseline diff 13
+[[4, 1, 11], [4, 3, 5], [7, 2, 10]]
+xor 17 xtime 20 baseline diff 17
+[[5, 6, 14], [10, 1, 3], [13, 13, 12]]
+xor 16 xtime 16 baseline diff 13
+[[1, 11, 6], [7, 6, 15], [4, 6, 1]]
+xor 17 xtime 21 baseline diff 18
+[[11, 1, 2], [14, 10, 10], [10, 5, 15]]
+xor 12 xtime 16 baseline diff 13
+[[2, 12, 4], [1, 12, 11], [6, 1, 6]]
+xor 16 xtime 20 baseline diff 17
+[[1, 7, 4], [10, 12, 3], [13, 13, 12]]
+xor 18 xtime 21 baseline diff 18
+[[7, 11, 6], [1, 10, 10], [10, 5, 15]]
+xor 15 xtime 18 baseline diff 15
+[[5, 6, 14], [1, 12, 12], [1, 5, 14]]
+xor 15 xtime 17 baseline diff 14
+[[5, 6, 14], [10, 3, 1], [7, 2, 10]]
+xor 14 xtime 16 baseline diff 13
+[[15, 7, 4], [10, 1, 4], [13, 1, 2]]
+xor 12 xtime 14 baseline diff 11
+[[1, 5, 8], [3, 12, 1], [6, 3, 6]]
+xor 17 xtime 20 baseline diff 17
+[[11, 13, 1], [14, 12, 12], [1, 5, 14]]
+xor 13 xtime 18 baseline diff 15
+[[8, 1, 10], [4, 1, 3], [13, 13, 12]]
+xor 15 xtime 17 baseline diff 14
+[[1, 5, 1], [3, 10, 10], [10, 5, 15]]
+xor 12 xtime 14 baseline diff 11
+[[1, 1, 10], [4, 3, 5], [7, 2, 10]]
+xor 17 xtime 21 baseline diff 18
+[[1, 6, 14], [10, 12, 3], [13, 13, 12]]
+xor 11 xtime 15 baseline diff 12
+[[8, 1, 10], [4, 1, 15], [4, 6, 1]]
+xor 14 xtime 15 baseline diff 12
+[[3, 4, 13], [1, 6, 15], [4, 6, 1]]
+xor 19 xtime 19 baseline diff 16
+[[7, 1, 15], [3, 12, 3], [13, 13, 12]]
+xor 16 xtime 21 baseline diff 18
+[[5, 6, 14], [10, 11, 8], [1, 10, 7]]
+xor 14 xtime 14 baseline diff 11
+[[7, 14, 1], [3, 1, 4], [13, 6, 2]]
+xor 10 xtime 12 baseline diff 9
+[[2, 12, 1], [1, 1, 4], [13, 6, 2]]
+xor 17 xtime 19 baseline diff 16
+[[15, 7, 4], [10, 12, 11], [6, 3, 1]]
+xor 12 xtime 15 baseline diff 12
+[[5, 6, 1], [10, 1, 4], [13, 6, 2]]
+xor 16 xtime 22 baseline diff 19
+[[4, 14, 11], [4, 10, 10], [10, 1, 15]]
+xor 15 xtime 20 baseline diff 17
+[[3, 4, 1], [10, 10, 10], [10, 5, 15]]
+xor 14 xtime 15 baseline diff 12
+[[15, 7, 4], [1, 1, 4], [13, 6, 2]]
+xor 15 xtime 20 baseline diff 17
+[[4, 14, 11], [4, 12, 3], [13, 1, 12]]
+xor 13 xtime 17 baseline diff 14
+[[4, 14, 11], [4, 3, 5], [1, 2, 10]]
+xor 13 xtime 18 baseline diff 15
+[[3, 4, 13], [10, 1, 4], [10, 6, 6]]
+xor 14 xtime 17 baseline diff 14
+[[1, 5, 8], [3, 1, 8], [15, 10, 7]]
+xor 15 xtime 18 baseline diff 15
+[[3, 1, 13], [10, 12, 12], [1, 5, 14]]
+xor 15 xtime 18 baseline diff 15
+[[1, 1, 8], [3, 11, 8], [15, 10, 7]]
+xor 17 xtime 21 baseline diff 18
+[[3, 1, 13], [10, 10, 10], [10, 5, 15]]
+xor 15 xtime 19 baseline diff 16
+[[3, 4, 13], [10, 12, 11], [6, 1, 6]]
+xor 15 xtime 17 baseline diff 14
+[[11, 13, 2], [14, 1, 4], [13, 6, 1]]
+xor 14 xtime 17 baseline diff 14
+[[2, 1, 4], [1, 11, 8], [15, 10, 7]]
+xor 16 xtime 21 baseline diff 18
+[[1, 4, 13], [10, 12, 3], [13, 13, 12]]
+xor 13 xtime 16 baseline diff 13
+[[1, 6, 14], [10, 1, 4], [13, 6, 2]]
+xor 17 xtime 20 baseline diff 17
+[[15, 7, 4], [10, 12, 11], [6, 1, 6]]
+xor 15 xtime 16 baseline diff 13
+[[5, 6, 14], [10, 3, 5], [7, 2, 1]]
+xor 16 xtime 16 baseline diff 13
+[[7, 11, 6], [1, 6, 15], [4, 6, 1]]
+xor 15 xtime 16 baseline diff 13
+[[5, 6, 14], [1, 3, 5], [7, 2, 10]]
+xor 12 xtime 14 baseline diff 11
+[[2, 12, 4], [1, 13, 14], [5, 1, 1]]
+xor 20 xtime 21 baseline diff 18
+[[11, 13, 2], [14, 11, 1], [15, 10, 7]]
+xor 15 xtime 17 baseline diff 14
+[[3, 4, 13], [10, 13, 14], [5, 1, 1]]
+xor 16 xtime 21 baseline diff 18
+[[4, 14, 11], [4, 10, 10], [1, 5, 15]]
+xor 17 xtime 18 baseline diff 15
+[[11, 13, 1], [14, 6, 15], [4, 6, 1]]
+xor 14 xtime 20 baseline diff 17
+[[3, 4, 13], [10, 10, 10], [10, 5, 1]]
+xor 13 xtime 14 baseline diff 11
+[[1, 5, 8], [1, 13, 14], [5, 3, 1]]
+xor 13 xtime 19 baseline diff 16
+[[4, 14, 11], [4, 4, 1], [10, 6, 6]]
+xor 10 xtime 13 baseline diff 10
+[[1, 1, 10], [4, 1, 4], [13, 6, 2]]
+xor 15 xtime 18 baseline diff 15
+[[7, 11, 6], [7, 4, 4], [10, 1, 6]]
+xor 11 xtime 17 baseline diff 14
+[[2, 12, 4], [1, 10, 10], [10, 5, 1]]
+xor 18 xtime 21 baseline diff 18
+[[15, 7, 4], [10, 1, 10], [10, 5, 15]]
+xor 15 xtime 16 baseline diff 13
+[[11, 13, 2], [1, 6, 15], [4, 6, 1]]
+xor 15 xtime 17 baseline diff 14
+[[1, 14, 11], [4, 3, 5], [7, 2, 10]]
+xor 13 xtime 19 baseline diff 16
+[[8, 1, 10], [4, 10, 1], [10, 5, 15]]
+xor 13 xtime 19 baseline diff 16
+[[5, 6, 14], [10, 4, 4], [10, 6, 1]]
+xor 13 xtime 15 baseline diff 12
+[[15, 7, 4], [10, 1, 4], [1, 6, 2]]
+xor 15 xtime 15 baseline diff 12
+[[7, 11, 1], [7, 1, 4], [13, 6, 2]]
+xor 15 xtime 14 baseline diff 11
+[[7, 1, 15], [3, 1, 4], [13, 6, 2]]
+xor 15 xtime 19 baseline diff 16
+[[4, 14, 11], [1, 12, 12], [1, 5, 14]]
+xor 13 xtime 17 baseline diff 14
+[[4, 14, 11], [4, 1, 4], [13, 6, 1]]
+xor 16 xtime 16 baseline diff 13
+[[15, 7, 4], [10, 13, 1], [5, 3, 1]]
+xor 15 xtime 19 baseline diff 16
+[[1, 14, 11], [4, 12, 12], [1, 5, 14]]
+xor 11 xtime 14 baseline diff 11
+[[2, 1, 4], [1, 12, 12], [1, 5, 14]]
+xor 15 xtime 17 baseline diff 14
+[[3, 4, 13], [10, 1, 11], [6, 3, 6]]
+xor 17 xtime 18 baseline diff 15
+[[15, 7, 4], [10, 13, 14], [5, 1, 1]]
+xor 16 xtime 16 baseline diff 13
+[[11, 13, 2], [1, 13, 14], [5, 3, 1]]
+xor 16 xtime 20 baseline diff 17
+[[3, 4, 13], [10, 1, 10], [10, 5, 15]]
+xor 11 xtime 15 baseline diff 12
+[[8, 1, 10], [4, 6, 15], [4, 1, 1]]
+xor 16 xtime 19 baseline diff 16
+[[3, 4, 13], [1, 12, 3], [13, 13, 12]]
+xor 17 xtime 18 baseline diff 15
+[[1, 14, 15], [3, 12, 12], [1, 5, 14]]
+xor 12 xtime 12 baseline diff 9
+[[1, 5, 8], [3, 3, 5], [7, 2, 1]]
+xor 11 xtime 12 baseline diff 9
+[[2, 12, 4], [1, 3, 5], [7, 2, 1]]
+xor 14 xtime 19 baseline diff 16
+[[8, 1, 10], [4, 11, 8], [15, 1, 7]]
+xor 9 xtime 12 baseline diff 9
+[[2, 12, 4], [1, 1, 4], [13, 1, 2]]
+xor 17 xtime 15 baseline diff 12
+[[7, 1, 15], [3, 6, 15], [4, 6, 1]]
+xor 19 xtime 21 baseline diff 18
+[[11, 13, 2], [14, 11, 8], [15, 1, 7]]
+xor 13 xtime 18 baseline diff 15
+[[4, 14, 1], [4, 12, 12], [1, 5, 14]]
+xor 12 xtime 15 baseline diff 12
+[[8, 1, 10], [1, 3, 5], [7, 2, 10]]
+xor 15 xtime 17 baseline diff 14
+[[4, 14, 11], [1, 3, 5], [7, 2, 10]]
+xor 13 xtime 14 baseline diff 11
+[[1, 5, 8], [3, 3, 5], [7, 1, 10]]
+xor 13 xtime 15 baseline diff 12
+[[3, 4, 1], [10, 6, 15], [4, 6, 1]]
+xor 17 xtime 15 baseline diff 12
+[[7, 1, 15], [3, 3, 5], [7, 2, 10]]
+xor 16 xtime 16 baseline diff 13
+[[7, 11, 6], [1, 3, 5], [7, 2, 10]]
+xor 13 xtime 18 baseline diff 15
+[[4, 14, 11], [4, 12, 12], [1, 5, 1]]
+xor 15 xtime 20 baseline diff 17
+[[4, 14, 1], [4, 12, 3], [13, 13, 12]]
+xor 19 xtime 21 baseline diff 18
+[[7, 11, 6], [7, 10, 10], [10, 1, 15]]
+xor 10 xtime 15 baseline diff 12
+[[1, 5, 8], [3, 4, 4], [10, 1, 6]]
+xor 18 xtime 19 baseline diff 16
+[[7, 14, 15], [1, 12, 12], [1, 5, 14]]
+xor 13 xtime 19 baseline diff 16
+[[8, 1, 10], [4, 10, 10], [1, 5, 15]]
+xor 10 xtime 16 baseline diff 13
+[[8, 1, 10], [4, 12, 12], [1, 5, 1]]
+MDS better 0, MDS same 0, MDS worse 290, total 4040, ratio = 0.07178217821782178

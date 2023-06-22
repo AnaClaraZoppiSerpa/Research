@@ -1,0 +1,202 @@
+EXPERIMENT IDENTIFICATION: xt-only-trial parameterized_ga 2023-06-21 19:12:47.940
+ITERATION 1 / 100
+n=40 mds=11 min=-60 max=300 sum=8125 avg=203.125
+ITERATION 2 / 100
+n=40 mds=17 min=-62 max=300 sum=5999 avg=149.975
+ITERATION 3 / 100
+n=40 mds=19 min=-64 max=300 sum=5293 avg=132.325
+ITERATION 4 / 100
+n=40 mds=10 min=-62 max=300 sum=8504 avg=212.6
+ITERATION 5 / 100
+n=40 mds=16 min=-58 max=300 sum=6390 avg=159.75
+ITERATION 6 / 100
+n=40 mds=12 min=-64 max=300 sum=7796 avg=194.9
+ITERATION 7 / 100
+n=40 mds=9 min=-64 max=300 sum=8810 avg=220.25
+ITERATION 8 / 100
+n=40 mds=14 min=-61 max=300 sum=7098 avg=177.45
+ITERATION 9 / 100
+n=40 mds=15 min=-60 max=300 sum=6761 avg=169.025
+ITERATION 10 / 100
+n=40 mds=17 min=-57 max=300 sum=6087 avg=152.175
+ITERATION 11 / 100
+n=40 mds=15 min=-60 max=300 sum=6801 avg=170.025
+ITERATION 12 / 100
+n=40 mds=14 min=-60 max=300 sum=7107 avg=177.675
+ITERATION 13 / 100
+n=40 mds=12 min=-59 max=300 sum=7828 avg=195.7
+ITERATION 14 / 100
+n=40 mds=11 min=-56 max=300 sum=8167 avg=204.175
+ITERATION 15 / 100
+n=40 mds=16 min=-59 max=300 sum=6397 avg=159.925
+ITERATION 16 / 100
+n=40 mds=16 min=-58 max=300 sum=6401 avg=160.025
+ITERATION 17 / 100
+n=40 mds=15 min=-63 max=300 sum=6740 avg=168.5
+ITERATION 18 / 100
+n=40 mds=14 min=-63 max=300 sum=7119 avg=177.975
+ITERATION 19 / 100
+n=40 mds=13 min=-61 max=300 sum=7506 avg=187.65
+ITERATION 20 / 100
+n=40 mds=14 min=-56 max=300 sum=7162 avg=179.05
+ITERATION 21 / 100
+n=40 mds=19 min=-59 max=300 sum=5464 avg=136.6
+ITERATION 22 / 100
+n=40 mds=19 min=-53 max=300 sum=5482 avg=137.05
+ITERATION 23 / 100
+n=40 mds=19 min=-54 max=300 sum=5472 avg=136.8
+ITERATION 24 / 100
+n=40 mds=16 min=-55 max=300 sum=6445 avg=161.125
+ITERATION 25 / 100
+n=40 mds=14 min=-54 max=300 sum=7163 avg=179.075
+ITERATION 26 / 100
+n=40 mds=15 min=-63 max=300 sum=6774 avg=169.35
+ITERATION 27 / 100
+n=40 mds=18 min=-58 max=300 sum=5718 avg=142.95
+ITERATION 28 / 100
+n=40 mds=15 min=-64 max=300 sum=6750 avg=168.75
+ITERATION 29 / 100
+n=40 mds=11 min=-58 max=300 sum=8168 avg=204.2
+ITERATION 30 / 100
+n=40 mds=13 min=-61 max=300 sum=7464 avg=186.6
+ITERATION 31 / 100
+n=40 mds=12 min=-68 max=300 sum=7826 avg=195.65
+ITERATION 32 / 100
+n=40 mds=18 min=-66 max=300 sum=5612 avg=140.3
+ITERATION 33 / 100
+n=40 mds=15 min=-57 max=300 sum=6752 avg=168.8
+ITERATION 34 / 100
+n=40 mds=8 min=-59 max=300 sum=9181 avg=229.525
+ITERATION 35 / 100
+n=40 mds=21 min=-63 max=300 sum=4666 avg=116.65
+ITERATION 36 / 100
+n=40 mds=9 min=-54 max=300 sum=8876 avg=221.9
+ITERATION 37 / 100
+n=40 mds=9 min=-64 max=300 sum=8882 avg=222.05
+ITERATION 38 / 100
+n=40 mds=19 min=-60 max=300 sum=5349 avg=133.725
+ITERATION 39 / 100
+n=40 mds=11 min=-55 max=300 sum=8176 avg=204.4
+ITERATION 40 / 100
+n=40 mds=19 min=-62 max=300 sum=5436 avg=135.9
+ITERATION 41 / 100
+n=40 mds=19 min=-60 max=300 sum=5359 avg=133.975
+ITERATION 42 / 100
+n=40 mds=10 min=-57 max=300 sum=8498 avg=212.45
+ITERATION 43 / 100
+n=40 mds=12 min=-53 max=300 sum=7848 avg=196.2
+ITERATION 44 / 100
+n=40 mds=14 min=-58 max=300 sum=7120 avg=178.0
+ITERATION 45 / 100
+n=40 mds=12 min=-59 max=300 sum=7776 avg=194.4
+ITERATION 46 / 100
+n=40 mds=9 min=-61 max=300 sum=8844 avg=221.1
+ITERATION 47 / 100
+n=40 mds=17 min=-63 max=300 sum=6017 avg=150.425
+ITERATION 48 / 100
+n=40 mds=16 min=-71 max=300 sum=6389 avg=159.725
+ITERATION 49 / 100
+n=40 mds=10 min=-61 max=300 sum=8479 avg=211.975
+ITERATION 50 / 100
+n=40 mds=18 min=-59 max=300 sum=5716 avg=142.9
+ITERATION 51 / 100
+n=40 mds=16 min=-56 max=300 sum=6451 avg=161.275
+ITERATION 52 / 100
+n=40 mds=22 min=-57 max=300 sum=4329 avg=108.225
+ITERATION 53 / 100
+n=40 mds=18 min=-65 max=300 sum=5663 avg=141.575
+ITERATION 54 / 100
+n=40 mds=13 min=-64 max=300 sum=7426 avg=185.65
+ITERATION 55 / 100
+n=40 mds=9 min=-64 max=300 sum=8854 avg=221.35
+ITERATION 56 / 100
+n=40 mds=15 min=-61 max=300 sum=6739 avg=168.475
+ITERATION 57 / 100
+n=40 mds=16 min=-59 max=300 sum=6407 avg=160.175
+ITERATION 58 / 100
+n=40 mds=17 min=-67 max=300 sum=6025 avg=150.625
+ITERATION 59 / 100
+n=40 mds=17 min=-61 max=300 sum=6062 avg=151.55
+ITERATION 60 / 100
+n=40 mds=9 min=-64 max=300 sum=8821 avg=220.525
+ITERATION 61 / 100
+n=40 mds=16 min=-56 max=300 sum=6404 avg=160.1
+ITERATION 62 / 100
+n=40 mds=14 min=-59 max=300 sum=7147 avg=178.675
+ITERATION 63 / 100
+n=40 mds=12 min=-58 max=300 sum=7841 avg=196.025
+ITERATION 64 / 100
+n=40 mds=11 min=-57 max=300 sum=8165 avg=204.125
+ITERATION 65 / 100
+n=40 mds=16 min=-56 max=300 sum=6467 avg=161.675
+ITERATION 66 / 100
+n=40 mds=22 min=-63 max=300 sum=4411 avg=110.275
+ITERATION 67 / 100
+n=40 mds=12 min=-58 max=300 sum=7846 avg=196.15
+ITERATION 68 / 100
+n=40 mds=14 min=-59 max=300 sum=7112 avg=177.8
+ITERATION 69 / 100
+n=40 mds=12 min=-59 max=300 sum=7823 avg=195.575
+ITERATION 70 / 100
+n=40 mds=15 min=-60 max=300 sum=6763 avg=169.075
+ITERATION 71 / 100
+n=40 mds=18 min=-60 max=300 sum=5764 avg=144.1
+ITERATION 72 / 100
+n=40 mds=18 min=-57 max=300 sum=5785 avg=144.625
+ITERATION 73 / 100
+n=40 mds=20 min=-60 max=300 sum=5115 avg=127.875
+ITERATION 74 / 100
+n=40 mds=16 min=-57 max=300 sum=6470 avg=161.75
+ITERATION 75 / 100
+n=40 mds=13 min=-56 max=300 sum=7478 avg=186.95
+ITERATION 76 / 100
+n=40 mds=13 min=-57 max=300 sum=7500 avg=187.5
+ITERATION 77 / 100
+n=40 mds=12 min=-56 max=300 sum=7851 avg=196.275
+ITERATION 78 / 100
+n=40 mds=13 min=-55 max=300 sum=7512 avg=187.8
+ITERATION 79 / 100
+n=40 mds=15 min=-64 max=300 sum=6760 avg=169.0
+ITERATION 80 / 100
+n=40 mds=12 min=-53 max=300 sum=7869 avg=196.725
+ITERATION 81 / 100
+n=40 mds=17 min=-59 max=300 sum=6081 avg=152.025
+ITERATION 82 / 100
+n=40 mds=15 min=-58 max=300 sum=6775 avg=169.375
+ITERATION 83 / 100
+n=40 mds=15 min=-58 max=300 sum=6839 avg=170.975
+ITERATION 84 / 100
+n=40 mds=11 min=-56 max=300 sum=8207 avg=205.175
+ITERATION 85 / 100
+n=40 mds=17 min=-56 max=300 sum=6105 avg=152.625
+ITERATION 86 / 100
+n=40 mds=17 min=-63 max=300 sum=6116 avg=152.9
+ITERATION 87 / 100
+n=40 mds=10 min=-51 max=300 sum=8576 avg=214.4
+ITERATION 88 / 100
+n=40 mds=14 min=-55 max=300 sum=7151 avg=178.775
+ITERATION 89 / 100
+n=40 mds=15 min=-58 max=300 sum=6799 avg=169.975
+ITERATION 90 / 100
+n=40 mds=16 min=-56 max=300 sum=6503 avg=162.575
+ITERATION 91 / 100
+n=40 mds=16 min=-58 max=300 sum=6409 avg=160.225
+ITERATION 92 / 100
+n=40 mds=12 min=-53 max=300 sum=7873 avg=196.825
+ITERATION 93 / 100
+n=40 mds=9 min=-56 max=300 sum=8881 avg=222.025
+ITERATION 94 / 100
+n=40 mds=6 min=-53 max=300 sum=9933 avg=248.325
+ITERATION 95 / 100
+n=40 mds=18 min=-63 max=300 sum=5759 avg=143.975
+ITERATION 96 / 100
+n=40 mds=11 min=-58 max=300 sum=8151 avg=203.775
+ITERATION 97 / 100
+n=40 mds=10 min=-53 max=300 sum=8555 avg=213.875
+ITERATION 98 / 100
+n=40 mds=14 min=-55 max=300 sum=7191 avg=179.775
+ITERATION 99 / 100
+n=40 mds=8 min=-59 max=300 sum=9230 avg=230.75
+ITERATION 100 / 100
+n=40 mds=10 min=-57 max=300 sum=8532 avg=213.3
+MDS better 0, MDS same 0, MDS worse 1367, total 4040, ratio = 0.3383663366336634
