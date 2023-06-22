@@ -17,7 +17,8 @@ class Datapoint:
         self.xor = int(self.xor)
     
     def cost_formula_1xtime_equals_3xor(self):
-        return XTIME_WEIGHT * self.xtime + XOR_WEIGHT * self.xor
+        #return XTIME_WEIGHT * self.xtime + XOR_WEIGHT * self.xor
+        return self.xtime
 
 def get_datapoint_list_from_csv():
     csv_filename = 'complete_table_with_all_matrices_and_instances_backup.csv'  # Replace with your CSV file path

@@ -14,6 +14,7 @@ from mutation_functions import *
 from replacement_functions import *
 from lookup import *
 from tee import *
+from fitness_functions import *
 
 BASELINES = {
     8: 296,
@@ -27,9 +28,12 @@ BASELINES = {
     32: 20032,
 }
 
+ONLY_XTIME_BASELINES = {2: 2, 3: 3, 4: 8, 5: 30, 6: 59, 7: 96, 8: 72, 16: 1248, 32: 5440}
+
 GF2_4 = galois.GF(2 ** 4)
 GF2_8 = galois.GF(2 ** 8)
 
+FITNESS_FUNCTION = fitness_1
 
 class Arguments:
     def __init__(self, upper, replacement_num_elites, replacement_num_survivors, replacement_tournament_size,
@@ -55,13 +59,14 @@ class ExperimentSettings:
 
 
 class ChosenFunctions:
-    def __init__(self, initialization_f, selection_f, pairing_f, crossover_f, mutation_f, replacement_f):
+    def __init__(self, initialization_f, selection_f, pairing_f, crossover_f, mutation_f, replacement_f, fitness_f):
         self.initialization_f = initialization_f
         self.selection_f = selection_f
         self.pairing_f = pairing_f
         self.crossover_f = crossover_f
         self.mutation_f = mutation_f
         self.replacement_f = replacement_f
+        self.fitness_f = fitness_f
 
 class ExperimentReport:
     def __init__(self, settings, arguments, functions):
@@ -101,8 +106,13 @@ class Candidate:
         self.xtime = xtime
         self.inverse = inverse
         self.dim = dim
-        self.cost = 3 * self.xtime + 1 * self.xor
-        self.baseline_diff = self.cost - BASELINES[dim]
+
+        if len(sys.argv) > 2 and "xt-only" in sys.argv:
+            self.cost = self.xtime
+            self.baseline_diff = self.cost - ONLY_XTIME_BASELINES[dim]
+        else:
+            self.cost = 3 * self.xtime + 1 * self.xor
+            self.baseline_diff = self.cost - BASELINES[dim]
 
         if self.baseline_diff > 0:
             self.ranking = "WORSE"
@@ -120,7 +130,7 @@ class Candidate:
             self.dataset_id = lookup[1]
 
     def fitness(self):
-        return -self.cost
+        return FITNESS_FUNCTION(self)
 
 
 def get_candidate_data(mat, field, poly_order):
@@ -205,21 +215,59 @@ def print_summary(R):
         print("xor", m["xor"], "xtime", m["xtime"], "baseline diff", m["baseline_diff"])
         print(m["matrix"])
 
+def evolution_stats(candidates):
+    # Check if the list is empty
+    if not candidates:
+        print("Empty population.")
+        return
+
+    # Initialize variables
+    min_fitness = float('inf')
+    max_fitness = float('-inf')
+    fitness_sum = 0
+    num_elements = 0
+    num_mds = 0
+
+    # Iterate through the candidates
+    for candidate in candidates:
+        candidate_fitness = candidate.fitness()
+        min_fitness = min(min_fitness, candidate_fitness)
+        max_fitness = max(max_fitness, candidate_fitness)
+        fitness_sum += candidate_fitness
+        num_elements += 1
+        if candidate.mds:
+            num_mds += 1
+
+    # Calculate the average fitness
+    average_fitness = fitness_sum / num_elements
+
+    # Print the results
+    print(f"n={num_elements} mds={num_mds} min={min_fitness} max={max_fitness} sum={fitness_sum} avg={average_fitness}")
+
+
 def evolve(E, A, F, fun):
+    global FITNESS_FUNCTION
+
+    FITNESS_FUNCTION = F.fitness_f
+
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     command_line = ""
     if len(sys.argv) > 1:
         command_line = sys.argv[1]
+
     log_file_path = "EXP/log-" + command_line + "-" + fun + "-" + timestamp
     log_file = open(log_file_path, 'w')
     full_data_path = "EXP/full-" + command_line + "-" + fun + "-" + timestamp
     full_data_file = open(full_data_path, 'w')
-
-    sys.stdout = Tee(sys.stdout, log_file)
+    compact_path = "EXP/relevant-" + command_line + "-" + fun + "-" + timestamp
+    compact_file = open(compact_path, "w")
 
     R = ExperimentReport(E.__dict__, A.__dict__, F.__dict__)
 
+    sys.stdout = Tee(sys.__stdout__, log_file, compact_file)
     print("EXPERIMENT IDENTIFICATION:", command_line, fun, timestamp)
+
+    sys.stdout = Tee(log_file)
     print("EXPERIMENT PARAMETERS")
     print(E.__dict__)
     print(A.__dict__)
@@ -231,9 +279,11 @@ def evolve(E, A, F, fun):
     iteration_count = 0
 
     while iteration_count < A.max_iterations:
+        sys.stdout = Tee(log_file, sys.__stdout__, compact_file)
         print(f"ITERATION {iteration_count+1} / {A.max_iterations}")
 
         R.population_tracker.append(to_dict_array(population))
+        evolution_stats(population)
 
         selected_parents = F.selection_f(population, A.selection_num_parents)
         parent_pairs = F.pairing_f(selected_parents, A)
@@ -241,6 +291,7 @@ def evolve(E, A, F, fun):
 
         R.offspring_tracker.append(to_dict_array(offspring))
 
+        sys.stdout = Tee(log_file)
         store_relevant_info(R, iteration_count)
 
         population = F.replacement_f(population, offspring, A)
@@ -254,9 +305,15 @@ def evolve(E, A, F, fun):
 
     sys.stdout = Tee(full_data_file)
 
-    print("EXPERIMENT FULL DATA")
+    print("EXPERIMENT FULL DATA", command_line, fun, timestamp)
     pprint.pprint(R.__dict__)
+
+    sys.stdout = Tee(sys.__stdout__, log_file, compact_file)
+    total_matrices_generated_estimate = A.selection_num_parents * 2 * A.max_iterations + A.initial_population_size
+    ratio = (len(R.u_mds_better) + len(R.u_mds_same) + len(R.u_mds_worse)) / total_matrices_generated_estimate
+    print(f"MDS better {len(R.u_mds_better)}, MDS same {len(R.u_mds_same)}, MDS worse {len(R.u_mds_worse)}, total {total_matrices_generated_estimate}, ratio = {ratio}")
 
     sys.stdout = sys.__stdout__
     log_file.close()
     full_data_file.close()
+    compact_file.close()

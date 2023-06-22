@@ -33,11 +33,12 @@ def randomized_sequential_pairing(selected_parents, args):
         pairs.append((parent1, parent2))
     return pairs
 
-def tournament_selection(selected_parents, args):
+def p_tournament_selection(selected_parents, args):
     selected_pairs = []
     while len(selected_parents) >= 2:
+        print(len(selected_parents), args.pairing_tournament_size)
         # Randomly select parents for the tournament
-        tournament = random.sample(selected_parents, args.pairing_tournament_size)
+        tournament = random.sample(selected_parents, min(args.pairing_tournament_size, len(selected_parents)))
         # Compete in the tournament and select the fitter parent
         parent1 = max(tournament, key=lambda candidate: candidate.fitness())
         tournament.remove(parent1)
@@ -71,5 +72,5 @@ def fitness_proportionate_pairing(selected_parents, args):
 pairing1 = random_pairing
 pairing2 = sequential_pairing
 pairing3 = randomized_sequential_pairing
-pairing4 = tournament_selection
+pairing4 = p_tournament_selection
 pairing5 = fitness_proportionate_pairing

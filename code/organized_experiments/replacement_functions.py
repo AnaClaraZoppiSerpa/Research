@@ -8,7 +8,7 @@ def elitism(old_population, offspring, args):
     new_population = elites + offspring[:len(old_population) - args.num_elites]
     return new_population
 
-def tournament_selection(population, offspring, args):
+def r_tournament_selection(population, offspring, args):
     combined_population = population + offspring
     new_population = []
     while len(new_population) < args.num_survivors:
@@ -24,5 +24,5 @@ def fitness_based_replacement(old_population, offspring, args):
 
 replacement1 = generational_replacement
 replacement2 = elitism
-replacement3 = tournament_selection
+replacement3 = r_tournament_selection
 replacement4 = fitness_based_replacement
