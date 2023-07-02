@@ -117,12 +117,33 @@ def get_top_k_according_to_formula(dataset, formula, k):
 def formula_3xtime_1xor(datapoint):
     if datapoint["xtime"] == 0 or datapoint["xor"] == 0:
         return math.inf
+
     return 3 * datapoint["xtime"] + datapoint["xor"]
 
 def formula_xt_only(datapoint):
     if datapoint["xtime"] == 0 or datapoint["xor"] == 0:
         return math.inf
     return datapoint["xtime"]
+
+
+def formula_duwal_3xtime_1xor(datapoint):
+    if datapoint["xtime"] == 0 or datapoint["xor"] == 0:
+        return math.inf
+
+    if datapoint["ixtime"] == "---" or datapoint["ixor"] == "---":
+        return math.inf
+
+    return 3 * int(datapoint["ixtime"]) + int(datapoint["ixor"])
+
+
+def formula_duwal_xt_only(datapoint):
+    if datapoint["xtime"] == 0 or datapoint["xor"] == 0:
+        return math.inf
+
+    if datapoint["ixtime"] == "---" or datapoint["ixor"] == "---":
+        return math.inf
+
+    return int(datapoint["ixtime"])
 
 def get_dataset():
     objs, dicts = get_datapoint_list_from_csv()
@@ -199,8 +220,8 @@ def cprint(results):
 
 def full_table_for_dim_and_sub(dim, sub=None):
     initial_dataset = get_dataset()
-    res_xt_only = query(initial_dataset, dim, substring=sub, formula=formula_xt_only, k=10)
-    res_3xt_1xr = query(initial_dataset, dim, substring=sub, formula=formula_3xtime_1xor, k=10)
+    res_xt_only = query(initial_dataset, dim, substring=sub, formula=formula_duwal_xt_only, k=20)
+    res_3xt_1xr = query(initial_dataset, dim, substring=sub, formula=formula_duwal_3xtime_1xor, k=20)
 
     #rows = [["dim","mat_id", "xtime1", "xor1", "ixtime1", "ixor1", "xtime2", "xor2", "ixtime2", "ixor2"]]
     rows = []
@@ -208,25 +229,11 @@ def full_table_for_dim_and_sub(dim, sub=None):
         if i < len(res_xt_only):
             a = res_xt_only[i]
             b = res_3xt_1xr[i]
-            row_a = [dim, a["mat_id"], a["xtime"], a["xor"], a["ixtime"], a["ixor"]]
-            row_b = [b["mat_id"], b["xtime"], b["xor"], b["ixtime"], b["ixor"]]
+            row_a = [dim, a["mat_id"], a["xtime"], a["xor"], a["ixtime"], a["ixor"], a["involutory"]]
+            row_b = [b["mat_id"], b["xtime"], b["xor"], b["ixtime"], b["ixor"], b["involutory"]]
             full_row = row_a + row_b
             rows.append(full_row)
 
     return rows
 
-all_rows = []
-for sub in ["duwal"]:
-    for dim in range(2,33):
-        all_rows.extend(full_table_for_dim_and_sub(dim, sub))
-
-for r in all_rows:
-    print(r)
-
-with open(sys.argv[1], 'w', newline='') as file:
-    # Create a CSV writer object
-    writer = csv.writer(file)
-
-    # Write each row to the CSV file
-    for row in all_rows:
-        writer.writerow(row)
+print(query(get_dataset(), 3, substring="duwal", formula=formula_duwal_3xtime_1xor, k=10))
