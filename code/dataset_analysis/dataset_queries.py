@@ -2,6 +2,7 @@ import pprint
 import csv
 import math
 import heapq
+import sys
 
 XTIME_WEIGHT=3
 XOR_WEIGHT=1
@@ -195,9 +196,37 @@ def cheapest_per_dim_all():
 def cprint(results):
     for res in results:
         print(res["mat_id"], res["xtime"], res["xor"], res["ixtime"], res["ixor"])
-def test():
-    cheapest_per_dim_beierle()
-    cheapest_per_dim_duwal()
-    cheapest_per_dim_all()
 
-test()
+def full_table_for_dim_and_sub(dim, sub=None):
+    initial_dataset = get_dataset()
+    res_xt_only = query(initial_dataset, dim, substring=sub, formula=formula_xt_only, k=10)
+    res_3xt_1xr = query(initial_dataset, dim, substring=sub, formula=formula_3xtime_1xor, k=10)
+
+    #rows = [["dim","mat_id", "xtime1", "xor1", "ixtime1", "ixor1", "xtime2", "xor2", "ixtime2", "ixor2"]]
+    rows = []
+    for i in range(10):
+        if i < len(res_xt_only):
+            a = res_xt_only[i]
+            b = res_3xt_1xr[i]
+            row_a = [dim, a["mat_id"], a["xtime"], a["xor"], a["ixtime"], a["ixor"]]
+            row_b = [b["mat_id"], b["xtime"], b["xor"], b["ixtime"], b["ixor"]]
+            full_row = row_a + row_b
+            rows.append(full_row)
+
+    return rows
+
+all_rows = []
+for sub in ["duwal"]:
+    for dim in range(2,33):
+        all_rows.extend(full_table_for_dim_and_sub(dim, sub))
+
+for r in all_rows:
+    print(r)
+
+with open(sys.argv[1], 'w', newline='') as file:
+    # Create a CSV writer object
+    writer = csv.writer(file)
+
+    # Write each row to the CSV file
+    for row in all_rows:
+        writer.writerow(row)

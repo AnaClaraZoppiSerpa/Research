@@ -1,0 +1,27 @@
+2,beierle_2x2,2,2,10,8,beierle_2x2,2,2,10,8
+2,beierle_2x2,2,2,26,16,beierle_2x2,2,2,26,16
+2,mat:gupta-pandey-23,4,4,4,4,mat:gupta-pandey-23,4,4,4,4
+3,mat:liu-sim-1,3,6,57,45,mat:liu-sim-1,3,6,57,45
+3,mat:liu-sim-7,3,6,21,21,mat:liu-sim-7,3,6,21,21
+3,mat:duwal-1,3,6,---,---,mat:duwal-1,3,6,---,---
+4,mat:square,8,16,48,40,mat:square,8,16,48,40
+4,mat:rijndael,8,16,48,40,mat:rijndael,8,16,48,40
+4,mat:duwal-13 ,14,20,---,---,mat:duwal-13 ,14,20,---,---
+5,mat:liu-sim-23,30,30,---,---,mat:liu-sim-23,30,30,---,---
+5,mat:liu-sim-9,40,30,50,40,mat:liu-sim-9,40,30,50,40
+5,beierle_5x5_alpha_2,40,35,140,100,beierle_5x5_alpha_2,40,35,140,100
+6,mat:photon_a144,59,59,74,74,mat:liu-sim-10,60,54,84,72
+6,mat:liu-sim-10,60,54,84,72,mat:photon_a144,59,59,74,74
+6,beierle_6x6_alpha_71,102,66,216,132,beierle_6x6_alpha_71,102,66,216,132
+7,mat:photon_a196,96,96,104,104,mat:photon_a196,96,96,104,104
+7,beierle_7x7_alpha_2,112,84,182,147,beierle_7x7_alpha_2,112,84,182,147
+7,mat:liu-sim-5,126,70,273,182,mat:liu-sim-5,126,70,273,182
+8,shirai-3,72,80,360,224,shirai-3,72,80,360,224
+8,shirai-8,72,80,360,224,shirai-8,72,80,360,224
+8,shirai-1,80,80,424,288,shirai-1,80,80,424,288
+16,mat:gupta_ray_4,1248,800,---,---,mat:gupta_ray_4,1248,800,---,---
+16,mat:khoo-5,1408,832,---,---,mat:khoo-5,1408,832,---,---
+16,mat:khoo-11,1456,784,1600,1232,mat:khoo-11,1456,784,1600,1232
+32,mat:gupta_ray_5,5440,3712,---,---,mat:gupta_ray_5,5440,3712,---,---
+32,mat:khoo-12,5696,3648,6336,4608,mat:khoo-6,5728,3264,---,---
+32,mat:khoo-6,5728,3264,---,---,mat:khoo-12,5696,3648,6336,4608
