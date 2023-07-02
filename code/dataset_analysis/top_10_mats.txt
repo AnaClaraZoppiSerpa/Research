@@ -1,0 +1,379 @@
+beierle
+xt-only
+=======
+dim = 2
+beierle_2x2 2 2 10 8
+beierle_2x2 2 2 26 16
+beierle_2x2_inv_alpha_6 4 6 4 4
+beierle_2x2_inv_alpha_7 4 4 4 6
+beierle_2x2_inv_alpha_10 6 6 6 4
+beierle_2x2_inv_alpha_12 6 8 6 4
+beierle_2x2_inv_alpha_4 8 4 4 2
+beierle_2x2_inv_alpha_5 8 8 4 4
+beierle_2x2_inv_alpha_8 8 4 6 2
+beierle_2x2_inv_alpha_11 8 10 6 6
+dim = 3
+beierle_3x3 3 6 21 21
+beierle_3x3 3 6 57 39
+beierle_3x3_inv_alpha_6 6 12 6 9
+beierle_3x3_inv_alpha_7 6 9 6 12
+beierle_3x3_inv_alpha_2 21 21 3 6
+beierle_3x3_inv_alpha_3 21 24 3 9
+beierle_3x3_inv_alpha_4 21 18 6 6
+beierle_3x3_inv_alpha_5 21 18 6 9
+beierle_3x3_inv_alpha_9 21 18 9 9
+beierle_3x3_inv_alpha_14 21 21 9 12
+dim = 4
+beierle_4x4_alpha_2 16 20 24 24
+beierle_4x4_alpha_3 16 24 24 28
+beierle_4x4_alpha_11 16 20 40 24
+beierle_4x4_alpha_13 16 24 40 36
+beierle_4x4_alpha_4 20 20 28 28
+beierle_4x4_alpha_5 20 20 28 28
+beierle_4x4_alpha_9 20 16 40 32
+beierle_4x4_alpha_14 20 24 40 44
+beierle_4x4_alpha_2 28 24 100 60
+beierle_4x4_alpha_7 28 36 112 76
+dim = 5
+beierle_5x5_alpha_2 40 35 140 100
+beierle_5x5_alpha_8 45 25 45 55
+beierle_5x5_alpha_10 45 45 45 30
+beierle_5x5_alpha_12 45 30 45 45
+beierle_5x5_alpha_15 45 55 45 25
+beierle_5x5_alpha_3 45 50 150 115
+beierle_5x5_alpha_7 45 60 110 90
+beierle_5x5_alpha_5 50 45 110 65
+beierle_5x5_alpha_15 50 60 150 125
+beierle_5x5_alpha_4 55 35 150 70
+dim = 6
+beierle_6x6_alpha_71 102 66 216 132
+beierle_6x6_alpha_142 102 72 186 126
+beierle_6x6_alpha_167 102 78 228 156
+beierle_6x6_alpha_244 102 84 234 168
+beierle_6x6_alpha_3 108 102 210 138
+beierle_6x6_alpha_62 108 108 216 144
+beierle_6x6_alpha_170 108 84 210 126
+beierle_6x6_alpha_15 114 84 234 162
+beierle_6x6_alpha_122 114 96 198 132
+beierle_6x6_alpha_7 120 114 234 138
+dim = 7
+beierle_7x7_alpha_2 112 84 182 147
+beierle_7x7_alpha_3 126 119 301 182
+beierle_7x7_alpha_7 126 140 259 182
+beierle_7x7_alpha_5 140 105 238 133
+beierle_7x7_alpha_15 140 133 238 168
+beierle_7x7_alpha_24 140 112 287 210
+beierle_7x7_alpha_21 147 133 287 182
+beierle_7x7_alpha_4 154 84 189 105
+beierle_7x7_alpha_6 154 91 287 168
+beierle_7x7_alpha_8 154 84 203 133
+dim = 8
+beierle_8x8_alpha_30 248 184 336 216
+beierle_8x8_alpha_90 264 216 376 248
+beierle_8x8_alpha_148 288 200 296 208
+beierle_8x8_alpha_73 296 128 384 248
+beierle_8x8_alpha_140 304 168 408 264
+beierle_8x8_alpha_67 312 216 416 240
+beierle_8x8_alpha_200 320 208 440 272
+beierle_8x8_alpha_158 336 208 432 288
+mat:beierle-8x8 0 0 --- ---
+3:1
+=======
+dim = 2
+beierle_2x2 2 2 10 8
+beierle_2x2 2 2 26 16
+beierle_2x2_inv_alpha_7 4 4 4 6
+beierle_2x2_inv_alpha_6 4 6 4 4
+beierle_2x2_inv_alpha_10 6 6 6 4
+beierle_2x2_inv_alpha_12 6 8 6 4
+beierle_2x2_inv_alpha_13 8 2 6 6
+beierle_2x2_inv_alpha_4 8 4 4 2
+beierle_2x2_inv_alpha_8 8 4 6 2
+beierle_2x2_inv_alpha_143 8 4 14 10
+dim = 3
+beierle_3x3 3 6 21 21
+beierle_3x3 3 6 57 39
+beierle_3x3_inv_alpha_7 6 9 6 12
+beierle_3x3_inv_alpha_6 6 12 6 9
+beierle_3x3_inv_alpha_4 21 18 6 6
+beierle_3x3_inv_alpha_5 21 18 6 9
+beierle_3x3_inv_alpha_9 21 18 9 9
+beierle_3x3_inv_alpha_215 21 18 21 21
+beierle_3x3_inv_alpha_2 21 21 3 6
+beierle_3x3_inv_alpha_14 21 21 9 12
+dim = 4
+beierle_4x4_alpha_2 16 20 24 24
+beierle_4x4_alpha_11 16 20 40 24
+beierle_4x4_alpha_3 16 24 24 28
+beierle_4x4_alpha_13 16 24 40 36
+beierle_4x4_alpha_9 20 16 40 32
+beierle_4x4_alpha_4 20 20 28 28
+beierle_4x4_alpha_5 20 20 28 28
+beierle_4x4_alpha_14 20 24 40 44
+beierle_4x4_alpha_2 28 24 100 60
+beierle_4x4_alpha_24 28 24 112 72
+dim = 5
+beierle_5x5_alpha_2 40 35 140 100
+beierle_5x5_alpha_8 45 25 45 55
+beierle_5x5_alpha_12 45 30 45 45
+beierle_5x5_alpha_10 45 45 45 30
+beierle_5x5_alpha_3 45 50 150 115
+beierle_5x5_alpha_15 45 55 45 25
+beierle_5x5_alpha_5 50 45 110 65
+beierle_5x5_alpha_7 45 60 110 90
+beierle_5x5_alpha_4 55 35 150 70
+beierle_5x5_alpha_8 55 35 170 100
+dim = 6
+beierle_6x6_alpha_71 102 66 216 132
+beierle_6x6_alpha_142 102 72 186 126
+beierle_6x6_alpha_167 102 78 228 156
+beierle_6x6_alpha_244 102 84 234 168
+beierle_6x6_alpha_170 108 84 210 126
+beierle_6x6_alpha_3 108 102 210 138
+beierle_6x6_alpha_15 114 84 234 162
+beierle_6x6_alpha_62 108 108 216 144
+beierle_6x6_alpha_24 120 78 216 138
+beierle_6x6_alpha_122 114 96 198 132
+dim = 7
+beierle_7x7_alpha_2 112 84 182 147
+beierle_7x7_alpha_3 126 119 301 182
+beierle_7x7_alpha_7 126 140 259 182
+beierle_7x7_alpha_5 140 105 238 133
+beierle_7x7_alpha_24 140 112 287 210
+beierle_7x7_alpha_4 154 84 189 105
+beierle_7x7_alpha_8 154 84 203 133
+beierle_7x7_alpha_6 154 91 287 168
+beierle_7x7_alpha_12 154 91 245 154
+beierle_7x7_alpha_15 140 133 238 168
+dim = 8
+beierle_8x8_alpha_30 248 184 336 216
+beierle_8x8_alpha_90 264 216 376 248
+beierle_8x8_alpha_73 296 128 384 248
+beierle_8x8_alpha_148 288 200 296 208
+beierle_8x8_alpha_140 304 168 408 264
+beierle_8x8_alpha_67 312 216 416 240
+beierle_8x8_alpha_200 320 208 440 272
+beierle_8x8_alpha_158 336 208 432 288
+mat:beierle-8x8 0 0 --- ---
+duwal
+xt-only
+=======
+dim = 3
+mat:duwal-1 3 6 --- ---
+mat:duwal-5 3 6 --- ---
+duwal_1_int_x^2 + x + 1 3 6 3 9
+duwal_1_int_x^4 + x + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + x^2 + x + 1 3 6 21 21
+duwal_1_int_x^8 + x^4 + x^3 + x + 1 3 6 57 39
+duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1 3 6 57 39
+duwal_1_int_x^8 + x^5 + x^3 + x + 1 3 6 57 39
+duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1 3 6 57 39
+dim = 4
+mat:duwal-13  14 20 --- ---
+mat:duwal-6 16 18 --- ---
+mat:duwal-8 16 18 --- ---
+mat:duwal-10 16 22 --- ---
+mat:duwal-11 16 18 --- ---
+mat:duwal-9 18 22 --- ---
+mat:duwal-7 0 0 --- ---
+mat:duwal-12 0 0 --- ---
+mat:duwal-14 0 0 --- ---
+3:1
+=======
+dim = 3
+mat:duwal-1 3 6 --- ---
+mat:duwal-5 3 6 --- ---
+duwal_1_int_x^2 + x + 1 3 6 3 9
+duwal_1_int_x^4 + x + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + x^2 + x + 1 3 6 21 21
+duwal_1_int_x^8 + x^4 + x^3 + x + 1 3 6 57 39
+duwal_1_int_x^8 + x^4 + x^3 + x^2 + 1 3 6 57 39
+duwal_1_int_x^8 + x^5 + x^3 + x + 1 3 6 57 39
+duwal_1_int_x^8 + x^5 + x^3 + x^2 + 1 3 6 57 39
+dim = 4
+mat:duwal-13  14 20 --- ---
+mat:duwal-6 16 18 --- ---
+mat:duwal-8 16 18 --- ---
+mat:duwal-11 16 18 --- ---
+mat:duwal-10 16 22 --- ---
+mat:duwal-9 18 22 --- ---
+mat:duwal-7 0 0 --- ---
+mat:duwal-12 0 0 --- ---
+mat:duwal-14 0 0 --- ---
+all
+xt-only
+=======
+dim = 2
+beierle_2x2 2 2 10 8
+beierle_2x2 2 2 26 16
+mat:gupta-pandey-23 4 4 4 4
+beierle_2x2_inv_alpha_6 4 6 4 4
+beierle_2x2_inv_alpha_7 4 4 4 6
+beierle_2x2_inv_alpha_10 6 6 6 4
+beierle_2x2_inv_alpha_12 6 8 6 4
+beierle_2x2_inv_alpha_4 8 4 4 2
+beierle_2x2_inv_alpha_5 8 8 4 4
+beierle_2x2_inv_alpha_8 8 4 6 2
+dim = 3
+mat:liu-sim-1 3 6 57 45
+mat:liu-sim-7 3 6 21 21
+mat:duwal-1 3 6 --- ---
+mat:duwal-5 3 6 --- ---
+beierle_3x3 3 6 21 21
+beierle_3x3 3 6 57 39
+duwal_1_int_x^2 + x + 1 3 6 3 9
+duwal_1_int_x^4 + x + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + x^2 + x + 1 3 6 21 21
+dim = 4
+mat:square 8 16 48 40
+mat:rijndael 8 16 48 40
+mat:duwal-13  14 20 --- ---
+mat:duwal-6 16 18 --- ---
+mat:duwal-8 16 18 --- ---
+mat:duwal-10 16 22 --- ---
+mat:duwal-11 16 18 --- ---
+beierle_4x4_alpha_2 16 20 24 24
+beierle_4x4_alpha_3 16 24 24 28
+beierle_4x4_alpha_11 16 20 40 24
+dim = 5
+mat:liu-sim-23 30 30 --- ---
+mat:liu-sim-9 40 30 50 40
+beierle_5x5_alpha_2 40 35 140 100
+mat:liu-sim-3 45 30 110 50
+beierle_5x5_alpha_8 45 25 45 55
+beierle_5x5_alpha_10 45 45 45 30
+beierle_5x5_alpha_12 45 30 45 45
+beierle_5x5_alpha_15 45 55 45 25
+beierle_5x5_alpha_3 45 50 150 115
+beierle_5x5_alpha_7 45 60 110 90
+dim = 6
+mat:photon_a144 59 59 74 74
+mat:liu-sim-10 60 54 84 72
+beierle_6x6_alpha_71 102 66 216 132
+beierle_6x6_alpha_142 102 72 186 126
+beierle_6x6_alpha_167 102 78 228 156
+beierle_6x6_alpha_244 102 84 234 168
+mat:liu-sim-4 108 60 198 90
+beierle_6x6_alpha_3 108 102 210 138
+beierle_6x6_alpha_62 108 108 216 144
+beierle_6x6_alpha_170 108 84 210 126
+dim = 7
+mat:photon_a196 96 96 104 104
+beierle_7x7_alpha_2 112 84 182 147
+mat:liu-sim-5 126 70 273 182
+beierle_7x7_alpha_3 126 119 301 182
+beierle_7x7_alpha_7 126 140 259 182
+beierle_7x7_alpha_5 140 105 238 133
+beierle_7x7_alpha_15 140 133 238 168
+beierle_7x7_alpha_24 140 112 287 210
+beierle_7x7_alpha_21 147 133 287 182
+beierle_7x7_alpha_4 154 84 189 105
+dim = 8
+shirai-3 72 80 360 224
+shirai-8 72 80 360 224
+shirai-1 80 80 424 288
+shirai-5 80 88 424 224
+shirai-10 80 88 424 224
+shirai-12 80 80 424 288
+shirai-0 88 72 400 240
+shirai-2 88 72 360 224
+shirai-4 88 80 424 240
+shirai-6 88 80 416 256
+dim = 16
+mat:gupta_ray_4 1248 800 --- ---
+mat:khoo-5 1408 832 --- ---
+mat:khoo-11 1456 784 1600 1232
+dim = 32
+mat:gupta_ray_5 5440 3712 --- ---
+mat:khoo-12 5696 3648 6336 4608
+mat:khoo-6 5728 3264 --- ---
+3:1
+=======
+dim = 2
+beierle_2x2 2 2 10 8
+beierle_2x2 2 2 26 16
+mat:gupta-pandey-23 4 4 4 4
+beierle_2x2_inv_alpha_7 4 4 4 6
+beierle_2x2_inv_alpha_6 4 6 4 4
+beierle_2x2_inv_alpha_10 6 6 6 4
+beierle_2x2_inv_alpha_12 6 8 6 4
+beierle_2x2_inv_alpha_13 8 2 6 6
+beierle_2x2_inv_alpha_4 8 4 4 2
+beierle_2x2_inv_alpha_8 8 4 6 2
+dim = 3
+mat:liu-sim-1 3 6 57 45
+mat:liu-sim-7 3 6 21 21
+mat:duwal-1 3 6 --- ---
+mat:duwal-5 3 6 --- ---
+beierle_3x3 3 6 21 21
+beierle_3x3 3 6 57 39
+duwal_1_int_x^2 + x + 1 3 6 3 9
+duwal_1_int_x^4 + x + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + 1 3 6 21 21
+duwal_1_int_x^4 + x^3 + x^2 + x + 1 3 6 21 21
+dim = 4
+mat:square 8 16 48 40
+mat:rijndael 8 16 48 40
+mat:duwal-13  14 20 --- ---
+mat:duwal-6 16 18 --- ---
+mat:duwal-8 16 18 --- ---
+mat:duwal-11 16 18 --- ---
+beierle_4x4_alpha_2 16 20 24 24
+beierle_4x4_alpha_11 16 20 40 24
+mat:duwal-10 16 22 --- ---
+beierle_4x4_alpha_3 16 24 24 28
+dim = 5
+mat:liu-sim-23 30 30 --- ---
+mat:liu-sim-9 40 30 50 40
+beierle_5x5_alpha_2 40 35 140 100
+beierle_5x5_alpha_8 45 25 45 55
+mat:liu-sim-3 45 30 110 50
+beierle_5x5_alpha_12 45 30 45 45
+beierle_5x5_alpha_10 45 45 45 30
+beierle_5x5_alpha_3 45 50 150 115
+beierle_5x5_alpha_15 45 55 45 25
+beierle_5x5_alpha_5 50 45 110 65
+dim = 6
+mat:liu-sim-10 60 54 84 72
+mat:photon_a144 59 59 74 74
+beierle_6x6_alpha_71 102 66 216 132
+beierle_6x6_alpha_142 102 72 186 126
+mat:liu-sim-4 108 60 198 90
+beierle_6x6_alpha_167 102 78 228 156
+beierle_6x6_alpha_244 102 84 234 168
+beierle_6x6_alpha_170 108 84 210 126
+beierle_6x6_alpha_3 108 102 210 138
+beierle_6x6_alpha_15 114 84 234 162
+dim = 7
+mat:photon_a196 96 96 104 104
+beierle_7x7_alpha_2 112 84 182 147
+mat:liu-sim-5 126 70 273 182
+beierle_7x7_alpha_3 126 119 301 182
+beierle_7x7_alpha_7 126 140 259 182
+beierle_7x7_alpha_5 140 105 238 133
+beierle_7x7_alpha_24 140 112 287 210
+beierle_7x7_alpha_4 154 84 189 105
+beierle_7x7_alpha_8 154 84 203 133
+beierle_7x7_alpha_6 154 91 287 168
+dim = 8
+shirai-3 72 80 360 224
+shirai-8 72 80 360 224
+shirai-1 80 80 424 288
+shirai-12 80 80 424 288
+shirai-5 80 88 424 224
+shirai-10 80 88 424 224
+shirai-0 88 72 400 240
+shirai-2 88 72 360 224
+shirai-7 88 72 360 224
+shirai-13 88 72 400 240
+dim = 16
+mat:gupta_ray_4 1248 800 --- ---
+mat:khoo-5 1408 832 --- ---
+mat:khoo-11 1456 784 1600 1232
+dim = 32
+mat:gupta_ray_5 5440 3712 --- ---
+mat:khoo-6 5728 3264 --- ---
+mat:khoo-12 5696 3648 6336 4608

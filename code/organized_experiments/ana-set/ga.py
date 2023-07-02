@@ -35,6 +35,33 @@ GF2_8 = galois.GF(2 ** 8)
 
 FITNESS_FUNCTION = fitness_1
 
+def get_existing_per_dim():
+    existing_per_dimension = {}
+    for matrix_id in LOOKUP_DICT:
+        matrix = LOOKUP_DICT[matrix_id]
+        dimension = len(matrix)
+        if dimension in existing_per_dimension:
+            existing_per_dimension[dimension].append(matrix)
+        else:
+            existing_per_dimension[dimension] = []
+            existing_per_dimension[dimension].append(matrix)
+
+    return existing_per_dimension
+
+def applicable_in_field(m, upper_bound):
+    for i in range(len(m)):
+        for j in range(len(m[0])):
+            if m[i][j] > upper_bound:
+                return False
+    return True
+def filter_solutions_per_field_applicability(solutions, upper_bound):
+    filtered = []
+    for s in solutions:
+        if applicable_in_field(s, upper_bound):
+            filtered.append(s)
+    return filtered
+
+
 class Arguments:
     def __init__(self, upper, replacement_num_elites, replacement_num_survivors, replacement_tournament_size,
                  pairing_tournament_size, initial_population_size, max_iterations, selection_num_parents,
@@ -246,6 +273,8 @@ def evolution_stats(candidates):
 
 
 def evolve(E, A, F, fun):
+    A.existing_solutions = filter_solutions_per_field_applicability(get_existing_per_dim()[E.dimension], E.integer_upper_limit)
+
     global FITNESS_FUNCTION
 
     FITNESS_FUNCTION = F.fitness_f

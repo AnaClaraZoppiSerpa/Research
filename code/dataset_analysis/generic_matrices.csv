@@ -1,0 +1,19 @@
+Year,Dim.,Type,Ref.,FF,#xor,Inv. #xor,#xtime,Inv. #xtime,Mat.,Inv.,Why empty?,Obs
+2016,2,circulant,LightweightGF22016,any $GF(2^m)$ for $m$ and $\alpha$ satisfying conditions,will depend on the instance,"will depend on the instance, field and chosen poly",will depend on the instance,"will depend on the instance, field and chosen poly",mat:beierle-2x2,mat:beierle-2x2-inv,beierle generic,-
+2016,3,circulant,LightweightGF22017,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-3x3,mat:beierle-3x3-inv,beierle generic,-
+2016,4,circulant,LightweightGF22018,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-4x4,,beierle generic,-
+2016,5,circulant,LightweightGF22019,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-5x5,,beierle generic,-
+2016,6,circulant,LightweightGF22020,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-6x6,,beierle generic,-
+2016,7,circulant,LightweightGF22021,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-7x7,,beierle generic,-
+2016,8,circulant,LightweightGF22022,\triangle,\triangle,\triangle,\triangle,\triangle,mat:beierle-8x8,,beierle generic,-
+2018,3,---,LwCircuits2018,at least $GF(2^4)$ and $GF(2^8)$,6,will depend on the chosen field and poly,3,will depend on the chosen field and poly,mat:duwal-1,---,duwal generic,-
+2018,3,---,LwCircuits2018,\triangle,9,\triangle,9,\triangle,mat:duwal-2,---,duwal generic,-
+2018,3,---,LwCircuits2018,\triangle,8,\triangle,4,\triangle,mat:duwal-3,mat:duwal-3-inv,duwal generic,-
+2018,3,---,LwCircuits2018,\triangle,8,\triangle,4,\triangle,mat:duwal-4,---,duwal generic,-
+2018,3,---,LwCircuits2018,\triangle,6,\triangle,3,\triangle,mat:duwal-5,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,18,\triangle,16,\triangle,mat:duwal-6,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,18,\triangle,16,\triangle,mat:duwal-8,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,22,\triangle,18,\triangle,mat:duwal-9,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,22,\triangle,16,\triangle,mat:duwal-10,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,18,\triangle,16,\triangle,mat:duwal-11,---,duwal generic,-
+2018,4,---,LwCircuits2018,\triangle,20,\triangle,14,\triangle,mat:duwal-13 ,---,duwal generic,-

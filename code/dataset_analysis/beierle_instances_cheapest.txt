@@ -1,0 +1,128 @@
+xt-only
+=======
+dim = 2
+[{'year': '2016', 'dim': 2, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 2, 'ixor': '8', 'xtime': 2, 'ixtime': '10', 'mat_id': 'beierle_2x2', 'mat_inv_id': 'beierle_2x2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 3
+[{'year': '2016', 'dim': 3, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 6, 'ixor': '21', 'xtime': 3, 'ixtime': '21', 'mat_id': 'beierle_3x3', 'mat_inv_id': 'beierle_3x3-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 4
+[{'year': '2016', 'dim': 4, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 20, 'ixor': '24', 'xtime': 16, 'ixtime': '24', 'mat_id': 'beierle_4x4_alpha_2', 'mat_inv_id': 'beierle_4x4_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 5
+[{'year': '2016', 'dim': 5, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 35, 'ixor': '100', 'xtime': 40, 'ixtime': '140', 'mat_id': 'beierle_5x5_alpha_2', 'mat_inv_id': 'beierle_5x5_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 6
+[{'year': '2016', 'dim': 6, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 66, 'ixor': '132', 'xtime': 102, 'ixtime': '216', 'mat_id': 'beierle_6x6_alpha_71', 'mat_inv_id': 'beierle_6x6_alpha_71-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 7
+[{'year': '2016', 'dim': 7, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 84, 'ixor': '147', 'xtime': 112, 'ixtime': '182', 'mat_id': 'beierle_7x7_alpha_2', 'mat_inv_id': 'beierle_7x7_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 8
+[{'year': '2016', 'dim': 8, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 184, 'ixor': '216', 'xtime': 248, 'ixtime': '336', 'mat_id': 'beierle_8x8_alpha_30', 'mat_inv_id': 'beierle_8x8_alpha_30-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 9
+[]
+dim = 10
+[]
+dim = 11
+[]
+dim = 12
+[]
+dim = 13
+[]
+dim = 14
+[]
+dim = 15
+[]
+dim = 16
+[]
+dim = 17
+[]
+dim = 18
+[]
+dim = 19
+[]
+dim = 20
+[]
+dim = 21
+[]
+dim = 22
+[]
+dim = 23
+[]
+dim = 24
+[]
+dim = 25
+[]
+dim = 26
+[]
+dim = 27
+[]
+dim = 28
+[]
+dim = 29
+[]
+dim = 30
+[]
+dim = 31
+[]
+dim = 32
+[]
+3:1
+=======
+dim = 2
+[{'year': '2016', 'dim': 2, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 2, 'ixor': '8', 'xtime': 2, 'ixtime': '10', 'mat_id': 'beierle_2x2', 'mat_inv_id': 'beierle_2x2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 3
+[{'year': '2016', 'dim': 3, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 6, 'ixor': '21', 'xtime': 3, 'ixtime': '21', 'mat_id': 'beierle_3x3', 'mat_inv_id': 'beierle_3x3-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 4
+[{'year': '2016', 'dim': 4, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '4', 'poly': 'default galois library poly', 'xor': 20, 'ixor': '24', 'xtime': 16, 'ixtime': '24', 'mat_id': 'beierle_4x4_alpha_2', 'mat_inv_id': 'beierle_4x4_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 5
+[{'year': '2016', 'dim': 5, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 35, 'ixor': '100', 'xtime': 40, 'ixtime': '140', 'mat_id': 'beierle_5x5_alpha_2', 'mat_inv_id': 'beierle_5x5_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 6
+[{'year': '2016', 'dim': 6, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 66, 'ixor': '132', 'xtime': 102, 'ixtime': '216', 'mat_id': 'beierle_6x6_alpha_71', 'mat_inv_id': 'beierle_6x6_alpha_71-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 7
+[{'year': '2016', 'dim': 7, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 84, 'ixor': '147', 'xtime': 112, 'ixtime': '182', 'mat_id': 'beierle_7x7_alpha_2', 'mat_inv_id': 'beierle_7x7_alpha_2-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 8
+[{'year': '2016', 'dim': 8, 'mat_type': 'beierle instance', 'involutory': '-', 'use': '---', 'paper': 'LightweightGF22016', 'field_power': '8', 'poly': 'default galois library poly', 'xor': 184, 'ixor': '216', 'xtime': 248, 'ixtime': '336', 'mat_id': 'beierle_8x8_alpha_30', 'mat_inv_id': 'beierle_8x8_alpha_30-inv', 'why_empty': '-', 'obs': 'beierle instance'}]
+dim = 9
+[]
+dim = 10
+[]
+dim = 11
+[]
+dim = 12
+[]
+dim = 13
+[]
+dim = 14
+[]
+dim = 15
+[]
+dim = 16
+[]
+dim = 17
+[]
+dim = 18
+[]
+dim = 19
+[]
+dim = 20
+[]
+dim = 21
+[]
+dim = 22
+[]
+dim = 23
+[]
+dim = 24
+[]
+dim = 25
+[]
+dim = 26
+[]
+dim = 27
+[]
+dim = 28
+[]
+dim = 29
+[]
+dim = 30
+[]
+dim = 31
+[]
+dim = 32
+[]

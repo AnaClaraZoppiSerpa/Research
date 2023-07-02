@@ -1,0 +1,30 @@
+\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Year & Dim. & Type & Ref. & FF & #xor & Inv. #xor & #xtime & Inv. #xtime & Mat. & Inv. \\
+\hline
+\endfirsthead
+\hline
+Year & Dim. & Type & Ref. & FF & #xor & Inv. #xor & #xtime & Inv. #xtime & Mat. & Inv. \\
+\hline
+\endhead
+\hline
+\endfoot
+\shortstack{2016} & \shortstack{2} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22016}} & \shortstack{any \\ $GF(2^m)$ \\ for \\ $m$ \\ and \\ $\alpha$ \\ satisfying \\ conditions} & \shortstack{will \\ depend \\ on \\ the \\ instance} & \shortstack{will \\ depend \\ on \\ the \\ instance, \\ field \\ and \\ chosen \\ poly} & \shortstack{will \\ depend \\ on \\ the \\ instance} & \shortstack{will \\ depend \\ on \\ the \\ instance, \\ field \\ and \\ chosen \\ poly} & \shortstack{\eqref{mat:beierle-2x2}} & \shortstack{\eqref{mat:beierle-2x2-inv}} \\ \hline 
+\shortstack{2016} & \shortstack{3} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22017}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-3x3}} & \shortstack{\eqref{mat:beierle-3x3-inv}} \\ \hline 
+\shortstack{2016} & \shortstack{4} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22018}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-4x4}} & \shortstack{\eqref{}} \\ \hline 
+\shortstack{2016} & \shortstack{5} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22019}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-5x5}} & \shortstack{\eqref{}} \\ \hline 
+\shortstack{2016} & \shortstack{6} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22020}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-6x6}} & \shortstack{\eqref{}} \\ \hline 
+\shortstack{2016} & \shortstack{7} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22021}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-7x7}} & \shortstack{\eqref{}} \\ \hline 
+\shortstack{2016} & \shortstack{8} & \shortstack{circulant} & \shortstack{\cite{LightweightGF22022}} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\triangle} & \shortstack{\eqref{mat:beierle-8x8}} & \shortstack{\eqref{}} \\ \hline 
+\shortstack{2018} & \shortstack{3} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{at \\ least \\ $GF(2^4)$ \\ and \\ $GF(2^8)$} & \shortstack{6} & \shortstack{will \\ depend \\ on \\ the \\ chosen \\ field \\ and \\ poly} & \shortstack{3} & \shortstack{will \\ depend \\ on \\ the \\ chosen \\ field \\ and \\ poly} & \shortstack{\eqref{mat:duwal-1}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{3} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{9} & \shortstack{\triangle} & \shortstack{9} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-2}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{3} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{8} & \shortstack{\triangle} & \shortstack{4} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-3}} & \shortstack{\eqref{mat:duwal-3-inv}} \\ \hline 
+\shortstack{2018} & \shortstack{3} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{8} & \shortstack{\triangle} & \shortstack{4} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-4}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{3} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{6} & \shortstack{\triangle} & \shortstack{3} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-5}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{18} & \shortstack{\triangle} & \shortstack{16} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-6}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{18} & \shortstack{\triangle} & \shortstack{16} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-8}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{22} & \shortstack{\triangle} & \shortstack{18} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-9}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{22} & \shortstack{\triangle} & \shortstack{16} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-10}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{18} & \shortstack{\triangle} & \shortstack{16} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-11}} & \shortstack{---} \\ \hline 
+\shortstack{2018} & \shortstack{4} & \shortstack{---} & \shortstack{\cite{LwCircuits2018}} & \shortstack{\triangle} & \shortstack{20} & \shortstack{\triangle} & \shortstack{14} & \shortstack{\triangle} & \shortstack{\eqref{mat:duwal-13 }} & \shortstack{---} \\ \hline 
+\end{longtable}

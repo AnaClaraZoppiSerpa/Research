@@ -17,6 +17,8 @@ def fitness_3(candidate):
         return 300
 
 def fitness_4(candidate):
+    if candidate.cost == 0:
+        return -1
     if candidate.mds:
         return 2 + 1.0/candidate.cost
     else:

@@ -1,5 +1,4 @@
 import random
-
 def random_initialization(population_size, upper_bound, rows, cols, args):
     population = []
     for _ in range(population_size):
